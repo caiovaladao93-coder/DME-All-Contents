@@ -50,7 +50,7 @@
     },
     {
       "cena": "value",
-      "texto": "Com mais clareza... para quem atende, opera... e coordena a equipe.",
+      "texto": "Com mais clareza para quem atende, opera e coordena a equipe.",
       "legenda": true
     },
     {
@@ -194,13 +194,13 @@
     {
       "cena": "value",
       "inicio": 2377,
-      "fim": 2488,
+      "fim": 2439,
       "texto": "Com mais clareza para quem atende,"
     },
     {
       "cena": "value",
-      "inicio": 2488,
-      "fim": 2599,
+      "inicio": 2439,
+      "fim": 2505,
       "texto": "opera e coordena a equipe."
     },
     {

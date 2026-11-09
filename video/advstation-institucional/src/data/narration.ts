@@ -10,7 +10,7 @@ export const NARRATION: Array<{scene: SceneKey; text: string; caption?: boolean;
   {scene: 'maternidade', text: 'Para quem atua com salário-maternidade, o Maternidade Legal ajuda a organizar clientes, informações e o acompanhamento de cada caso, do protocolo ao deferimento ou recurso, de acordo com os fluxos do sistema.'},
   {scene: 'previdenciario', text: 'Para escritórios que trabalham com aposentadorias, benefícios por incapacidade, pensão por morte e auxílio-acidente, o Previdenciário Geral oferece uma estrutura de gestão alinhada a essas rotinas.'},
   {scene: 'twoProducts', text: 'Em ambos, o foco é transformar informações dispersas em processos acompanháveis.'},
-  {scene: 'value', text: 'Com mais clareza... para quem atende, opera... e coordena a equipe.', speed: 0.85},
+  {scene: 'value', text: 'Com mais clareza para quem atende, opera e coordena a equipe.'},
   {scene: 'human', text: 'Porque nenhuma ferramenta substitui a análise e a experiência jurídica. A tecnologia deve apoiar o trabalho, não complicá-lo.'},
   {scene: 'signature', text: 'ADV Station. Duas soluções especializadas para um mesmo compromisso: organizar a advocacia previdenciária. Conheça o Maternidade Legal e o Previdenciário Geral.', caption: false},
 ];

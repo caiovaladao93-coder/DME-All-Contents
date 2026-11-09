@@ -158,12 +158,22 @@ def vinheta(t0, titulo=False):
         for i, m in enumerate([65, 69, 72, 77]): add(fx, chime(m, dur=3.5, g=0.16), t0 + 2.85 + i * 0.035)  # título entra (Fá maior)
 
 M = T['marks']
-vinheta(M['intro_t0'])
-add(fx, whoosh(0.7, 3000, 300, rising=False, g=0.32), M['intro_wipe'] - 0.1)  # marinho sobe e abre a cena 01
-add(fx, chime(77, dur=1.6, g=0.14), M['final_dot'])                            # linhas convergem na estação central
-add(fx, whoosh(0.7, 300, 3500, rising=True, g=0.3), M['final_t0'] - 0.45)     # o ponto abre o creme
-vinheta(M['final_t0'], titulo=True)
-add(fx, chime(84, dur=1.8, g=0.12), M['final_cta'])                            # CTA
+# ASSINATURA SONORA DA SÉRIE (manual §01.8: reutilizar a assinatura sonora): o jingle oficial das vinhetas,
+# recortado da referência enviada pelo cliente (1,15 s → 4,85 s, sem a narração), no início de cada vinheta.
+def load_flac(p):
+    raw = subprocess.run(['ffmpeg', '-v', 'error', '-i', p, '-ac', '2', '-ar', str(SR), '-f', 'f32le', '-'], capture_output=True).stdout
+    return np.frombuffer(raw, np.float32).reshape(-1, 2).astype(float)
+JINGLE = load_flac('public/assets/audio/jingle-vinheta.flac')
+JW = []  # janelas do jingle (a trilha sai de cena para não embolar)
+for t0 in (M['intro_t0'], M['final_t0']):
+    add(fx, JINGLE, t0); JW.append((t0, t0 + len(JINGLE) / SR))
+gate = np.ones(N); fd = int(0.3 * SR)
+for a, b in JW:
+    ia, ib = max(0, int((a - 0.3) * SR)), min(N, int(b * SR))
+    gate[ia:ib] = 0
+    if ia > 0: gate[max(0, ia - fd):ia] = np.minimum(gate[max(0, ia - fd):ia], np.linspace(1, 0, ia - max(0, ia - fd)))
+    gate[ib:min(N, ib + fd)] = np.minimum(gate[ib:min(N, ib + fd)], np.linspace(0, 1, min(N, ib + fd) - ib))
+music *= gate[:, None]
 
 # ---------- níveis: trilha ~10 dB abaixo da voz fora das falas; ducking −9 dB sob a narração ----------
 def lufs(x):
@@ -185,7 +195,7 @@ g = np.empty(N); s = 0.0
 for i in range(N):  # envelope com ataque 150 ms e liberação 500 ms
     tgt = duck[i]; s += (k_att if tgt > s else k_rel) * (tgt - s); g[i] = s
 music *= (1 - (1 - 10 ** (-9 / 20)) * g)[:, None]
-fx *= 10 ** ((voz_lufs - 6 - lufs(fx)) / 20) if np.abs(fx).max() > 0 else 1
+fx *= 10 ** ((voz_lufs - 5 - lufs(fx)) / 20) if np.abs(fx).max() > 0 else 1
 for nm, x in (('trilha', music), ('efeitos', fx)):
     pk = np.abs(x).max()
     if pk > 0.89: x *= 0.89 / pk

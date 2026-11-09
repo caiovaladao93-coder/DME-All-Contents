@@ -83,11 +83,11 @@ Em ambos, o foco é transformar informações
 dispersas em processos acompanháveis.
 
 22
-00:01:19,233 --> 00:01:22,933
+00:01:19,233 --> 00:01:21,300
 Com mais clareza para quem atende,
 
 23
-00:01:22,933 --> 00:01:26,633
+00:01:21,300 --> 00:01:23,500
 opera e coordena a equipe.
 
 24

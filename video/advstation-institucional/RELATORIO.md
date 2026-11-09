@@ -38,11 +38,11 @@ As capturas foram usadas sem recolorir nem alterar. A câmera só aproxima e enq
 
 1. ~~**Locução (Guilherme)**~~ **Concluída.** São 9 falas geradas pela API (`scripts/gerar_voz.mjs`, com cache por hash de texto, voz, modelo e ajustes), salvas com o alinhamento em `public/assets/audio/falas/`. As legendas e as entradas de texto seguem as palavras reais. A mixagem final ficou em **−14,0 LUFS, pico real −2,3 dBTP** (`out/validacao.txt`).
 2. **Telas que faltam (opcionais):** Previdenciário Geral · Judicial e · Prazos Processuais. O filme já cobre esses temas com o Dashboard; com as telas, a navegação da cena 05 fica mais completa.
-3. ~~**Trilha da série**~~ **Concluída.** A trilha é procedural, gerada em código (`scripts/trilha.py`, sem amostras ou loops de terceiros). Segue a harmonia do manual: Fá maior na Maternidade e Ré menor no Previdenciário, resolvendo em Fá maior. Tem *ducking* de −9 dB sob a voz (ataque de 150 ms, liberação de 500 ms) e fica cerca de 10 dB abaixo da voz entre as falas. Os efeitos das duas vinhetas acompanham os movimentos da animação original: plataforma, mola do A, bolha, 14 faíscas, letras, título e CTA.
+3. ~~**Trilha da série**~~ **Concluída.** A trilha é procedural, gerada em código (`scripts/trilha.py`, sem amostras ou loops de terceiros). Segue a harmonia do manual: Fá maior na Maternidade e Ré menor no Previdenciário, resolvendo em Fá maior. Tem *ducking* de −9 dB sob a voz (ataque de 150 ms, liberação de 500 ms) e fica cerca de 10 dB abaixo da voz entre as falas. As duas vinhetas usam o **jingle oficial da série** (manual §01.8: reutilizar a assinatura sonora), recortado da referência enviada pelo cliente (`public/assets/audio/jingle-vinheta.flac`, de 1,15 s a 4,85 s, sem a narração). Ele entra no início de cada vinheta e a trilha sai de cena enquanto ele toca. Os efeitos procedurais anteriores foram descartados por pedido do cliente. **Recomendação:** substituir pelo arquivo original do jingle, porque a referência é uma gravação de tela do WhatsApp em AAC 44,1 kHz.
 4. **Ajustes de voz (revisão do cliente):**
    - as cenas 03, 05 e 08 foram regeneradas com os mesmos parâmetros. A tomada foi escolhida por medição (`scripts/escolher_take.py`): o chiado agudo acima de 9 kHz caiu de −24,6, −21,6 e −28,4 dB para cerca de −33 a −37 dB;
    - as cenas 06 e 07 viraram frases completas e independentes, com ponto final;
-   - a cena 07 é falada pausadamente (speed 0.85, com pausas naturais).
+   - a cena 07 voltou à velocidade padrão (0.94), sem reticências. A versão pausada ficou lenta demais na avaliação do cliente.
 5. **Fontes comerciais:** Iowan Old Style e Avenir Next. Hoje usam as substitutas Gelasio e Nunito Sans (OFL).
 
 ## 5. Decisões
