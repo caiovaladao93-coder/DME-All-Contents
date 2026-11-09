@@ -1,4 +1,4 @@
-# Relatório de produção · ADV STATION institucional (versão de revisão 2)
+# Relatório de produção · ADV STATION institucional (v3, com locução)
 
 ## 1. Planejamento (manual §01.12)
 
@@ -6,7 +6,7 @@
 |---|---|
 | Família | Editorial, horizontal |
 | Formato | 16:9 · 1920×1080 · 30 fps · H.264 High · yuv420p |
-| Duração | 95 s (2.850 frames). Será recalculada com a locução real |
+| Duração | **114,9 s (3.445 frames)**, definida pela locução real. Cada cena dura o tempo da sua fala mais um respiro, e a voz não foi acelerada (prompt §5). Para chegar perto de 90 s, é preciso encurtar o texto |
 | Estrutura | Vinheta de abertura + 9 cenas do storyboard, com a vinheta de encerramento na cena 09 |
 | Voz | ElevenLabs **Guilherme** (`CS07DI8x8kLXeSktyWLG`), `eleven_multilingual_v2`, com os mesmos parâmetros do comercial de referência (`comercial.json`): stability 0.6, similarity_boost 0.8, style 0.12, use_speaker_boost true, speed 0.94, `convert_with_timestamps`. Escolha do cliente |
 | Visual | **Sem pessoas e sem banco de imagens** (decisão do cliente). Todo o visual é motion design gerado em código, mais as telas reais |
@@ -36,7 +36,7 @@ As capturas foram usadas sem recolorir nem alterar. A câmera só aproxima e enq
 
 ## 4. Pendências
 
-1. **Locução (Guilherme).** Não há acesso à ElevenLabs nesta sessão. Gere com os parâmetros acima o texto de `out/locucao.txt`, em uma única geração com `convert_with_timestamps`, e envie o áudio e o JSON. Depois disso, as legendas e as entradas de texto passam a seguir as palavras reais (`wordAt`).
+1. ~~**Locução (Guilherme)**~~ **Concluída.** São 9 falas geradas pela API (`scripts/gerar_voz.mjs`, com cache por hash de texto, voz, modelo e ajustes), salvas com o alinhamento em `public/assets/audio/falas/`. As legendas e as entradas de texto seguem as palavras reais. A mixagem final ficou em **−14,0 LUFS, pico real −2,3 dBTP** (`out/validacao.txt`).
 2. **Telas que faltam (opcionais):** Previdenciário Geral · Judicial e · Prazos Processuais. O filme já cobre esses temas com o Dashboard; com as telas, a navegação da cena 05 fica mais completa.
 3. **Trilha da série** e mixagem (ducking de até −9 dB, cerca de −14 LUFS, pico real ≤ −1,5 dBTP).
 4. **Fontes comerciais:** Iowan Old Style e Avenir Next. Hoje usam as substitutas Gelasio e Nunito Sans (OFL).

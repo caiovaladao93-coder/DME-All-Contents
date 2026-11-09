@@ -1,13 +1,13 @@
 # ADV STATION · Filme institucional horizontal (VERSÃO DE REVISÃO)
 
-Projeto Remotion (React + TypeScript): 1920×1080, 30 fps, 2.850 frames (95 s), H.264 High, yuv420p.
-Esta versão usa as telas reais enviadas, não tem pessoas nem fotos de banco e **não tem áudio** (a locução Guilherme está pendente). Os pendentes estão em `RELATORIO.md`.
+Projeto Remotion (React + TypeScript): 1920×1080, 30 fps, 3.445 frames (114,9 s), H.264 High, yuv420p, AAC 48 kHz.
+Esta versão usa as telas reais enviadas, sem pessoas nem fotos de banco, com a locução ElevenLabs "Guilherme". A trilha ainda está pendente. Os pendentes estão em `RELATORIO.md`.
 
 ## Entregáveis (`out/`)
 
 | Arquivo | Conteúdo |
 |---|---|
-| `ADV-STATION-Institucional-16x9-REVISAO.mp4` | Versão de revisão (sem áudio, com marcadores) |
+| `ADV-STATION-Institucional-16x9.mp4` | Filme com locução (−14 LUFS), sem trilha |
 | `capa.png` | Capa horizontal 1920×1080 |
 | `legendas.srt` / `legendas.vtt` | Legendas com tempos **estimados** |
 | `roteiro.json` | Falas, cenas e blocos de legenda (fonte única: `src/data`) |
@@ -31,7 +31,7 @@ node scripts/legendas.mjs                      # SRT, VTT, roteiro.json e locuca
 
 - **Tempos:** `src/data/storyboard.ts` (cenas) e `src/data/narration.ts` (início de cada fala).
 - **Telas e fotos:** coloque os arquivos em `public/assets/maternidade-legal/`, `public/assets/previdenciario-geral/` e `public/assets/photography/`, e preencha `src` em `src/data/assets.ts`. O marcador some sozinho.
-- **Voz:** com a narração gerada (ElevenLabs, `convert_with_timestamps`), salve o áudio em `public/assets/audio/` e preencha `AUDIO.narration`. Depois troque os tempos estimados de `narration.ts` pelos tempos por palavra do alinhamento.
+- **Voz:** edite o texto em `src/data/narration.ts` e rode `NODE_USE_ENV_PROXY=1 NODE_EXTRA_CA_CERTS=/root/.ccr/ca-bundle.crt node scripts/gerar_voz.mjs`. Só as falas alteradas são geradas de novo, e as durações das cenas e as legendas se recalculam sozinhas.
 - **Cores e fontes:** `src/theme/`. Para usar as fontes licenciadas, coloque os arquivos `.woff2` em `public/fonts/` e registre-os em `src/components/Fonts.ts`.
 
 ## Estrutura
