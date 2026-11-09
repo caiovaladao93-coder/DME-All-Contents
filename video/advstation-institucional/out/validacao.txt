@@ -1,13 +1,13 @@
 == ffprobe
 stream|codec_name=h264|profile=High|codec_type=video|width=1920|height=1080|pix_fmt=yuv420p|r_frame_rate=30/1|nb_frames=3421
 stream|codec_name=aac|profile=LC|codec_type=audio|sample_rate=48000|channels=2|r_frame_rate=0/0|nb_frames=5347
-format|duration=114.048000|size=47227282
+format|duration=114.048000|size=47192877
 == Loudness (EBU R128, voz + trilha + jingle, 2 passadas)
-    I:         -14.5 LUFS
+    I:         -14.6 LUFS
     LRA:         5.2 LU
-    Peak:       -2.0 dBFS
-== Voz (média nas falas): -14.2 dBFS RMS, pico 0.8 dBFS
-== Jingle abertura: pico 0.5 dBFS, RMS no ápice -10.9 dBFS
-== Jingle encerramento: pico -1.2 dBFS, RMS no ápice -14.2 dBFS
-== Fala cena 07: 3.95 s (antes 7,10 s)
+    Peak:       -2.1 dBFS
+== Voz (média nas falas): -17.2 dBFS RMS
+== Jingle abertura: RMS no ápice -22.4 dBFS (-5.3 dB em relação à voz)
+== Jingle encerramento: RMS no ápice -21.7 dBFS (-4.5 dB em relação à voz)
+== Fala cena 07: 3.95 s
 == QA de movimento: quadros 3421 | trechos parados > 1 s: []
