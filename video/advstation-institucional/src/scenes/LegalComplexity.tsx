@@ -3,6 +3,7 @@ import {AbsoluteFill, useCurrentFrame} from 'remotion';
 import {NavyBackground} from '../components/Atmosphere';
 import {EditorialHeadline, FeatureLabel} from '../components/Editorial';
 import {wordAt} from '../data/narration';
+import {EXTRA} from '../data/storyboard';
 import {C} from '../theme/colors';
 import {EASE_IN, EASE_IO, EASE_OUT, lerp, prog} from '../theme/animation';
 import {SANS} from '../theme/typography';
@@ -70,26 +71,27 @@ const CARDS: Card[] = [
 
 export const LegalComplexity: React.FC = () => {
   const f = useCurrentFrame();
+  const E = EXTRA('complexity'); // frames extras da locução real
   const aSheet = wordAt('complexity', 'planilhas,') - 4;
   const aMsg = wordAt('complexity', 'mensagens') - 4;
   const aCtrl = wordAt('complexity', 'controles') - 4;
   const cardsAt = wordAt('complexity', 'acompanhar') - 6;
-  const dark = prog(f, 236, 16);
-  const conv = prog(f, 272, 26, EASE_IN);
+  const dark = prog(f, 236 + E, 16);
+  const conv = prog(f, 272 + E, 26, EASE_IN);
   const fl = (ph: number) => Math.sin(f / 22 + ph) * 5;
   const scatter = (x: number, y: number): React.CSSProperties => ({
-    transform: `translate(${((960 - x) * conv).toFixed(1)}px, ${((470 - y) * conv).toFixed(1)}px) scale(${lerp(1, 0.2, conv)})`, opacity: 1 - prog(f, 284, 14),
+    transform: `translate(${((960 - x) * conv).toFixed(1)}px, ${((470 - y) * conv).toFixed(1)}px) scale(${lerp(1, 0.2, conv)})`, opacity: 1 - prog(f, 284 + E, 14),
   });
   return (
     <AbsoluteFill style={{opacity: prog(f, 0, 14)}}>
       <NavyBackground />
-      <div style={{position: 'absolute', inset: 0, ...scatter(380, 360), opacity: (1 - dark * 0.7) * (1 - prog(f, 284, 14))}}>
+      <div style={{position: 'absolute', inset: 0, ...scatter(380, 360), opacity: (1 - dark * 0.7) * (1 - prog(f, 284 + E, 14))}}>
         <Frame x={150} y={200} w={500} h={330} tilt={8} e={prog(f, aSheet, 18, EASE_OUT)} label="PLANILHAS" float={fl(0)}><Sheet /></Frame>
       </div>
-      <div style={{position: 'absolute', inset: 0, ...scatter(920, 420), opacity: (1 - dark * 0.7) * (1 - prog(f, 284, 14))}}>
+      <div style={{position: 'absolute', inset: 0, ...scatter(920, 420), opacity: (1 - dark * 0.7) * (1 - prog(f, 284 + E, 14))}}>
         <Frame x={720} y={250} w={420} h={380} tilt={-4} e={prog(f, aMsg, 18, EASE_OUT)} label="MENSAGENS" float={fl(1.7)}><Messages f={f} at={aMsg} /></Frame>
       </div>
-      <div style={{position: 'absolute', inset: 0, ...scatter(1470, 380), opacity: (1 - dark * 0.7) * (1 - prog(f, 284, 14))}}>
+      <div style={{position: 'absolute', inset: 0, ...scatter(1470, 380), opacity: (1 - dark * 0.7) * (1 - prog(f, 284 + E, 14))}}>
         <Frame x={1220} y={210} w={500} h={360} tilt={-9} e={prog(f, aCtrl, 18, EASE_OUT)} label="CONTROLES PARALELOS" float={fl(3.1)}><Controls /></Frame>
       </div>
       {/* ligações tracejadas que não se completam */}
@@ -105,7 +107,7 @@ export const LegalComplexity: React.FC = () => {
         </div>;
       })}
       <AbsoluteFill style={{background: `rgba(14,27,51,${(dark * 0.55).toFixed(3)})`}} />
-      <EditorialHeadline text="Quando tudo fica disperso,|a gestão perde [clareza]." start={242} x={150} y={400} width={1620} size={78} align="center" lineStagger={10} />
+      <EditorialHeadline text="Quando tudo fica disperso,|a gestão perde [clareza]." start={242 + E} x={150} y={400} width={1620} size={78} align="center" lineStagger={10} />
     </AbsoluteFill>
   );
 };

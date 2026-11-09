@@ -6,6 +6,7 @@ import {ProductScreenshot, ScreenSpotlight} from '../components/ProductScreensho
 import {AnimatedStationLine, linePoint, Seg, Station} from '../components/StationMap';
 import {SCREENS} from '../data/assets';
 import {wordAt} from '../data/narration';
+import {EXTRA} from '../data/storyboard';
 import {C} from '../theme/colors';
 import {EASE_IN, EASE_IO, EASE_OUT, prog} from '../theme/animation';
 import {SANS} from '../theme/typography';
@@ -23,6 +24,7 @@ const STAGES = [
 /** CENA 04 — Produto 01: Maternidade Legal (telas reais: Clientes e Setor de Protocolo). */
 export const MaternidadeLegal: React.FC = () => {
   const f = useCurrentFrame();
+  const E = EXTRA('maternidade'); // frames extras da locução real
   const draw = prog(f, 0, 44, EASE_IO);
   const intro = 1 - prog(f, 52, 12, EASE_IN);
   const winIn = prog(f, 58, 22);
@@ -76,13 +78,13 @@ export const MaternidadeLegal: React.FC = () => {
           {f >= swapAt ? (
             <ProductScreenshot screen={SCREENS.mlProtocolo} product="Maternidade Legal · Setor de Protocolo" {...WIN}
               style={{opacity: swap, transform: `translateX(${((1 - swap) * 50).toFixed(1)}px)`}}
-              focus={[{at: swapAt + 8, dur: 30, s: 1.3, cx: 1020, cy: 250}, {at: 352, dur: 40, s: 1, cx: 959, cy: 300}]}
-              overlay={<ScreenSpotlight x={322} y={182} w={1398} h={76} start={wProt} end={350} />} />
+              focus={[{at: swapAt + 8, dur: 30, s: 1.3, cx: 1020, cy: 250}, {at: 352 + E, dur: 40, s: 1, cx: 959, cy: 300}]}
+              overlay={<ScreenSpotlight x={322} y={182} w={1398} h={76} start={wProt} end={350 + E} />} />
           ) : null}
         </div>
       ) : null}
-      <ScreenHeadline label="MATERNIDADE LEGAL" text="Do protocolo ao deferimento ou recurso." x={800} y={640} w={780} start={wordAt('maternidade', 'recurso,') + 4} exit={356} />
-      <ScreenHeadline label="MATERNIDADE LEGAL" text="Uma rotina especializada." x={800} y={660} w={640} start={366} />
+      <ScreenHeadline label="MATERNIDADE LEGAL" text="Do protocolo ao deferimento ou recurso." x={800} y={640} w={780} start={wordAt('maternidade', 'recurso,') + 4} exit={356 + E} />
+      <ScreenHeadline label="MATERNIDADE LEGAL" text="Uma rotina especializada." x={800} y={660} w={640} start={366 + E} />
     </AbsoluteFill>
   );
 };

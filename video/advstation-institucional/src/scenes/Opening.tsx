@@ -4,6 +4,7 @@ import {NavyBackground} from '../components/Atmosphere';
 import {EditorialHeadline} from '../components/Editorial';
 import {AnimatedStationLine, linePoint, Seg, Station} from '../components/StationMap';
 import {wordAt} from '../data/narration';
+import {EXTRA} from '../data/storyboard';
 import {C} from '../theme/colors';
 import {EASE_IO, EASE_OUT, prog} from '../theme/animation';
 import {SANS} from '../theme/typography';
@@ -23,8 +24,9 @@ const NEEDS = [{t: 'ETAPAS', w: 'etapas,', b: 0}, {t: 'DOCUMENTOS', w: 'document
 
 export const Opening: React.FC = () => {
   const f = useCurrentFrame();
+  const E = EXTRA('opening'); // frames extras da locução real
   const trunk = prog(f, 4, 36, EASE_IO);
-  const out = prog(f, 246, 24, EASE_IO);
+  const out = prog(f, 246 + E, 24, EASE_IO);
   return (
     <AbsoluteFill style={{opacity: prog(f, 0, 12)}}>
       <NavyBackground />
@@ -64,9 +66,9 @@ export const Opening: React.FC = () => {
           );
         })}
       </AbsoluteFill>
-      <EditorialHeadline text="Cada benefício|tem seu [caminho]." start={wordAt('opening', 'caminho') - 34} x={150} y={110} width={1000} size={84} modes={['fade', 'mask']} lineStagger={14} exit={250} />
+      <EditorialHeadline text="Cada benefício|tem seu [caminho]." start={wordAt('opening', 'caminho') - 34} x={150} y={110} width={1000} size={84} modes={['fade', 'mask']} lineStagger={14} exit={250 + E} />
       <div style={{position: 'absolute', left: 150, top: 330, width: 330, fontFamily: SANS, fontWeight: 600, fontSize: 26, lineHeight: 1.4, color: '#B9C4D6',
-        opacity: prog(f, 150, 18) * (1 - prog(f, 250, 12))}}>
+        opacity: prog(f, 150, 18) * (1 - prog(f, 250 + E, 12))}}>
         Na advocacia previdenciária, cada benefício segue etapas, prazos e decisões próprias.
       </div>
     </AbsoluteFill>

@@ -1,123 +1,123 @@
 1
-00:00:04,467 --> 00:00:07,067
+00:00:04,400 --> 00:00:07,600
 A advocacia previdenciária não segue um caminho
 
 2
-00:00:07,067 --> 00:00:10,033
+00:00:07,600 --> 00:00:12,267
 único. Cada benefício exige atenção a etapas,
 
 3
-00:00:10,033 --> 00:00:12,200
+00:00:12,267 --> 00:00:16,400
 documentos, pessoas e decisões diferentes.
 
 4
-00:00:13,667 --> 00:00:16,267
+00:00:17,533 --> 00:00:19,567
 E quando tudo isso fica espalhado em
 
 5
-00:00:16,267 --> 00:00:18,333
+00:00:19,567 --> 00:00:23,067
 planilhas, mensagens e controles paralelos,
 
 6
-00:00:18,333 --> 00:00:21,133
+00:00:23,100 --> 00:00:26,333
 acompanhar a operação se torna mais difícil.
 
 7
-00:00:24,333 --> 00:00:26,933
+00:00:28,200 --> 00:00:30,667
 Foi para essa realidade que nasceu a
 
 8
-00:00:26,933 --> 00:00:29,800
+00:00:30,667 --> 00:00:34,167
 ADV Station: uma família de soluções de
 
 9
-00:00:29,800 --> 00:00:30,733
+00:00:34,167 --> 00:00:36,000
 gestão especializada.
 
 10
-00:00:32,267 --> 00:00:34,233
+00:00:36,767 --> 00:00:39,600
 Para quem atua com salário-maternidade,
 
 11
-00:00:34,233 --> 00:00:36,933
+00:00:39,600 --> 00:00:43,367
 o Maternidade Legal ajuda a organizar clientes,
 
 12
-00:00:36,933 --> 00:00:39,667
+00:00:43,367 --> 00:00:46,833
 informações e o acompanhamento de cada caso,
 
 13
-00:00:39,667 --> 00:00:42,000
+00:00:46,833 --> 00:00:50,133
 do protocolo ao deferimento ou recurso,
 
 14
-00:00:42,000 --> 00:00:44,800
+00:00:50,133 --> 00:00:52,833
 de acordo com os fluxos do sistema.
 
 15
-00:00:46,333 --> 00:00:48,667
+00:00:53,667 --> 00:00:56,833
 Para escritórios que trabalham com aposentadorias,
 
 16
-00:00:48,667 --> 00:00:49,900
+00:00:56,833 --> 00:00:59,033
 benefícios por incapacidade,
 
 17
-00:00:49,900 --> 00:00:51,867
+00:00:59,033 --> 00:01:02,100
 pensão por morte e auxílio-acidente,
 
 18
-00:00:51,867 --> 00:00:54,467
+00:01:02,167 --> 00:01:05,333
 o Previdenciário Geral oferece uma estrutura de
 
 19
-00:00:54,467 --> 00:00:56,500
+00:01:05,333 --> 00:01:08,500
 gestão alinhada a essas rotinas.
 
 20
-00:01:01,000 --> 00:01:03,700
+00:01:09,967 --> 00:01:12,633
 Em ambos, o foco é transformar informações
 
 21
-00:01:03,700 --> 00:01:05,400
+00:01:12,633 --> 00:01:16,000
 dispersas em processos acompanháveis,
 
 22
-00:01:10,267 --> 00:01:12,600
+00:01:19,233 --> 00:01:21,267
 com mais clareza para quem atende,
 
 23
-00:01:12,600 --> 00:01:14,667
+00:01:21,267 --> 00:01:23,367
 opera e coordena a equipe.
 
 24
-00:01:19,200 --> 00:01:21,800
+00:01:28,300 --> 00:01:32,100
 Porque nenhuma ferramenta substitui a análise e
 
 25
-00:01:21,800 --> 00:01:23,100
+00:01:32,100 --> 00:01:33,867
 a experiência jurídica.
 
 26
-00:01:23,167 --> 00:01:25,533
+00:01:34,400 --> 00:01:37,400
 A tecnologia deve apoiar o trabalho,
 
 27
-00:01:25,533 --> 00:01:26,133
+00:01:37,400 --> 00:01:38,867
 não complicá-lo.
 
 28
-00:01:26,133 --> 00:01:29,000
+00:01:41,000 --> 00:01:45,467
 ADV Station. Duas soluções especializadas para um
 
 29
-00:01:29,000 --> 00:01:31,700
+00:01:45,467 --> 00:01:49,700
 mesmo compromisso: organizar a advocacia previdenciária.
 
 30
-00:01:31,800 --> 00:01:34,367
+00:01:50,000 --> 00:01:53,300
 Conheça o Maternidade Legal e o Previdenciário
 
 31
-00:01:34,367 --> 00:01:34,933
+00:01:53,300 --> 00:01:54,300
 Geral.

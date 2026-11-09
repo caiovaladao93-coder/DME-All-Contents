@@ -1,21 +1,39 @@
-// Fonte única de tempos (30 fps). Ajustar após medir a locução real (ElevenLabs, convert_with_timestamps).
+import {vozDur} from './voz';
+
+// Fonte única de tempos (30 fps). A duração de cada cena = o maior entre a base do storyboard e
+// (início da fala + duração REAL da locução + respiro). A voz nunca é acelerada.
 export const WIDTH = 1920;
 export const HEIGHT = 1080;
 export const FPS = 30;
 
-export const SCENES = {
-  intro: {from: 0, dur: 120}, // 00:00–00:04 vinheta de abertura (marca)
-  opening: {from: 120, dur: 270}, // 00:04–00:13 cada benefício, um caminho
-  complexity: {from: 390, dur: 300}, // 00:13–00:23 planilhas, mensagens, controles paralelos
-  brand: {from: 690, dur: 270}, // 00:23–00:32 conheça a ADV Station
-  maternidade: {from: 960, dur: 420}, // 00:32–00:46
-  previdenciario: {from: 1380, dur: 420}, // 00:46–01:00
-  twoProducts: {from: 1800, dur: 300}, // 01:00–01:10
-  value: {from: 2100, dur: 270}, // 01:10–01:19
-  human: {from: 2370, dur: 210}, // 01:19–01:26
-  signature: {from: 2580, dur: 270}, // 01:26–01:35 vinheta de encerramento + CTA
-} as const;
+const ORDER = ['intro', 'opening', 'complexity', 'brand', 'maternidade', 'previdenciario', 'twoProducts', 'value', 'human', 'signature'] as const;
+export type SceneKey = (typeof ORDER)[number];
 
-export type SceneKey = keyof typeof SCENES;
-export const TOTAL_FRAMES = 2850; // 95 s
+/** duração-base (frames) do storyboard aprovado */
+export const BASE: Record<SceneKey, number> = {
+  intro: 120, opening: 270, complexity: 300, brand: 270, maternidade: 420, previdenciario: 420, twoProducts: 300, value: 270, human: 210, signature: 270,
+};
+/** início da fala dentro da cena (frames) */
+export const VOICE_OFFSET: Partial<Record<SceneKey, number>> = {
+  opening: 14, complexity: 20, brand: 40, maternidade: 8, previdenciario: 10, twoProducts: 30, value: 8, human: 10, signature: 50,
+};
+const TAIL = 24; // respiro após a última palavra antes do corte
+
+const dur = (k: SceneKey) => {
+  const off = VOICE_OFFSET[k];
+  const need = off == null ? 0 : off + Math.ceil(vozDur(k) * FPS) + TAIL;
+  return Math.max(BASE[k], need);
+};
+
+export const SCENES = (() => {
+  let from = 0;
+  const s = {} as Record<SceneKey, {from: number; dur: number}>;
+  for (const k of ORDER) { const d = dur(k); s[k] = {from, dur: d}; from += d; }
+  return s;
+})();
+
+/** frames acrescentados à cena pela locução real — eventos de fim de cena somam este valor */
+export const EXTRA = (k: SceneKey) => SCENES[k].dur - BASE[k];
+
+export const TOTAL_FRAMES = SCENES.signature.from + SCENES.signature.dur;
 export const OVERLAP = 18;

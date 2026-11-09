@@ -4,6 +4,7 @@ import {NavyBackground} from '../components/Atmosphere';
 import {Selo, Vinheta} from '../components/Brand';
 import {AnimatedStationLine, Seg} from '../components/StationMap';
 import {C} from '../theme/colors';
+import {wordAt} from '../data/narration';
 import {EASE_IO, EASE_OUT, prog} from '../theme/animation';
 import {SANS, SERIF} from '../theme/typography';
 
@@ -22,7 +23,7 @@ export const BrandSignature: React.FC = () => {
   const draw = prog(f, 0, 40, EASE_IO);
   const dot = prog(f, 38, 14, EASE_OUT);
   const iris = prog(f, 52, 22, EASE_IO);
-  const cta = prog(f, VINHETA_T0 + 150, 18);
+  const cta = prog(f, Math.max(VINHETA_T0 + 150, wordAt('signature', 'conheça') - 6), 18);
   return (
     <AbsoluteFill>
       <NavyBackground />

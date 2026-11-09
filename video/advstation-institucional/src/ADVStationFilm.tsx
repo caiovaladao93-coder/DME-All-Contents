@@ -4,7 +4,8 @@ import {DarkVignette, Grain} from './components/Atmosphere';
 import {loadFonts} from './components/Fonts';
 import {SubtitleTrack} from './components/SubtitleTrack';
 import {AUDIO} from './data/assets';
-import {OVERLAP, SCENES, SceneKey, TOTAL_FRAMES} from './data/storyboard';
+import {OVERLAP, SCENES, SceneKey, TOTAL_FRAMES, VOICE_OFFSET} from './data/storyboard';
+import {hasVoz} from './data/voz';
 import {BrandIntroduction} from './scenes/BrandIntroduction';
 import {BrandSignature} from './scenes/BrandSignature';
 import {BusinessValue} from './scenes/BusinessValue';
@@ -37,7 +38,12 @@ export const ADVStationFilm: React.FC = () => (
     <SubtitleTrack />
     <DarkVignette strength={0.35} />
     <Grain />
-    {AUDIO.narration ? <Audio src={staticFile(AUDIO.narration)} /> : null}
+    {/* locução real: uma fala por cena (ElevenLabs, Guilherme) */}
+    {ORDER.filter(([k]) => VOICE_OFFSET[k] != null && hasVoz(k)).map(([k]) => (
+      <Sequence key={'voz-' + k} name={'voz-' + k} from={SCENES[k].from + (VOICE_OFFSET[k] as number)}>
+        <Audio src={staticFile(`assets/audio/falas/${k}.mp3`)} />
+      </Sequence>
+    ))}
     {AUDIO.music ? <Audio src={staticFile(AUDIO.music)} volume={0.3} /> : null}
   </AbsoluteFill>
 );

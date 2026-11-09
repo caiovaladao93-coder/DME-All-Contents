@@ -3,12 +3,15 @@ import {AbsoluteFill, Img, staticFile, useCurrentFrame} from 'remotion';
 import {NavyBackground} from '../components/Atmosphere';
 import {EditorialHeadline} from '../components/Editorial';
 import {SCREENS} from '../data/assets';
+import {wordAt} from '../data/narration';
+import {SCENES} from '../data/storyboard';
 import {C} from '../theme/colors';
 import {EASE_IO, lerp, prog} from '../theme/animation';
 
 /**
  * CENA 08 — A experiência jurídica continua no centro. Sem pessoas:
  * as telas (a tecnologia) recuam para as laterais, desfocadas, e abrem o centro para a frase.
+ * Sincronia com a fala real: "...a experiência jurídica." → título 1; "A tecnologia deve apoiar..." → título 2.
  */
 const Panel: React.FC<{src: string; side: -1 | 1; p: number}> = ({src, side, p}) => (
   <div style={{position: 'absolute', top: 250, left: side < 0 ? lerp(330, -260, p) : lerp(630, 1220, p), width: 960, height: 540, borderRadius: 16, overflow: 'hidden',
@@ -21,7 +24,10 @@ const Panel: React.FC<{src: string; side: -1 | 1; p: number}> = ({src, side, p})
 
 export const HumanExperience: React.FC = () => {
   const f = useCurrentFrame();
-  const apart = prog(f, 80, 50, EASE_IO);
+  const D = SCENES.human.dur;
+  const wExp = wordAt('human', 'experiência');
+  const wTec = wordAt('human', 'tecnologia');
+  const apart = prog(f, wExp - 30, 50, EASE_IO);
   return (
     <AbsoluteFill style={{opacity: prog(f, 0, 16)}}>
       <NavyBackground />
@@ -29,9 +35,9 @@ export const HumanExperience: React.FC = () => {
       <Panel src={SCREENS.pgDashboard.src!} side={1} p={apart} />
       <AbsoluteFill style={{background: `radial-gradient(ellipse 40% 45% at 50% 50%, rgba(194,155,60,${(0.16 * apart).toFixed(3)}), rgba(22,40,74,0) 70%)`}} />
       <AbsoluteFill style={{background: `rgba(14,27,51,${(0.35 - 0.15 * apart).toFixed(3)})`}} />
-      <EditorialHeadline text="A tecnologia apoia." start={8} x={150} y={460} width={1620} size={78} align="center" exit={84} />
-      <EditorialHeadline text="A experiência jurídica|continua no [centro]." start={96} x={150} y={400} width={1620} size={70} align="center" lineScale={[1, 1.22]} lineStagger={12} exit={168} />
-      <AbsoluteFill style={{background: C.navy, opacity: prog(f, 172, 38)}} />
+      <EditorialHeadline text="A experiência jurídica|continua no [centro]." start={wExp - 8} x={150} y={400} width={1620} size={70} align="center" lineScale={[1, 1.22]} lineStagger={12} exit={wTec - 14} />
+      <EditorialHeadline text="A tecnologia apoia." start={wTec - 2} x={150} y={460} width={1620} size={78} align="center" exit={D - 40} />
+      <AbsoluteFill style={{background: C.navy, opacity: prog(f, D - 36, 36)}} />
     </AbsoluteFill>
   );
 };

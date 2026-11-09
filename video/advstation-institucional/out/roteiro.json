@@ -20,55 +20,46 @@
   "falas": [
     {
       "cena": "opening",
-      "offset_frames": 14,
       "texto": "A advocacia previdenciária não segue um caminho único. Cada benefício exige atenção a etapas, documentos, pessoas e decisões diferentes.",
       "legenda": true
     },
     {
       "cena": "complexity",
-      "offset_frames": 20,
       "texto": "E quando tudo isso fica espalhado em planilhas, mensagens e controles paralelos, acompanhar a operação se torna mais difícil.",
       "legenda": true
     },
     {
       "cena": "brand",
-      "offset_frames": 40,
       "texto": "Foi para essa realidade que nasceu a ADV Station: uma família de soluções de gestão especializada.",
       "legenda": true
     },
     {
       "cena": "maternidade",
-      "offset_frames": 8,
       "texto": "Para quem atua com salário-maternidade, o Maternidade Legal ajuda a organizar clientes, informações e o acompanhamento de cada caso, do protocolo ao deferimento ou recurso, de acordo com os fluxos do sistema.",
       "legenda": true
     },
     {
       "cena": "previdenciario",
-      "offset_frames": 10,
       "texto": "Para escritórios que trabalham com aposentadorias, benefícios por incapacidade, pensão por morte e auxílio-acidente, o Previdenciário Geral oferece uma estrutura de gestão alinhada a essas rotinas.",
       "legenda": true
     },
     {
       "cena": "twoProducts",
-      "offset_frames": 30,
       "texto": "Em ambos, o foco é transformar informações dispersas em processos acompanháveis,",
       "legenda": true
     },
     {
       "cena": "value",
-      "offset_frames": 8,
       "texto": "com mais clareza para quem atende, opera e coordena a equipe.",
       "legenda": true
     },
     {
       "cena": "human",
-      "offset_frames": 6,
       "texto": "Porque nenhuma ferramenta substitui a análise e a experiência jurídica. A tecnologia deve apoiar o trabalho, não complicá-lo.",
       "legenda": true
     },
     {
       "cena": "signature",
-      "offset_frames": 4,
       "texto": "ADV Station. Duas soluções especializadas para um mesmo compromisso: organizar a advocacia previdenciária. Conheça o Maternidade Legal e o Previdenciário Geral.",
       "legenda": false
     }
@@ -76,188 +67,188 @@
   "legendas": [
     {
       "cena": "opening",
-      "inicio": 134,
-      "fim": 212,
+      "inicio": 132,
+      "fim": 228,
       "texto": "A advocacia previdenciária não segue um caminho"
     },
     {
       "cena": "opening",
-      "inicio": 212,
-      "fim": 301,
+      "inicio": 228,
+      "fim": 368,
       "texto": "único. Cada benefício exige atenção a etapas,"
     },
     {
       "cena": "opening",
-      "inicio": 301,
-      "fim": 366,
+      "inicio": 368,
+      "fim": 492,
       "texto": "documentos, pessoas e decisões diferentes."
     },
     {
       "cena": "complexity",
-      "inicio": 410,
-      "fim": 488,
+      "inicio": 526,
+      "fim": 587,
       "texto": "E quando tudo isso fica espalhado em"
     },
     {
       "cena": "complexity",
-      "inicio": 488,
-      "fim": 550,
+      "inicio": 587,
+      "fim": 692,
       "texto": "planilhas, mensagens e controles paralelos,"
     },
     {
       "cena": "complexity",
-      "inicio": 550,
-      "fim": 634,
+      "inicio": 693,
+      "fim": 790,
       "texto": "acompanhar a operação se torna mais difícil."
     },
     {
       "cena": "brand",
-      "inicio": 730,
-      "fim": 808,
+      "inicio": 846,
+      "fim": 920,
       "texto": "Foi para essa realidade que nasceu a"
     },
     {
       "cena": "brand",
-      "inicio": 808,
-      "fim": 894,
+      "inicio": 920,
+      "fim": 1025,
       "texto": "ADV Station: uma família de soluções de"
     },
     {
       "cena": "brand",
-      "inicio": 894,
-      "fim": 922,
+      "inicio": 1025,
+      "fim": 1080,
       "texto": "gestão especializada."
     },
     {
       "cena": "maternidade",
-      "inicio": 968,
-      "fim": 1027,
+      "inicio": 1103,
+      "fim": 1188,
       "texto": "Para quem atua com salário-maternidade,"
     },
     {
       "cena": "maternidade",
-      "inicio": 1027,
-      "fim": 1108,
+      "inicio": 1188,
+      "fim": 1301,
       "texto": "o Maternidade Legal ajuda a organizar clientes,"
     },
     {
       "cena": "maternidade",
-      "inicio": 1108,
-      "fim": 1190,
+      "inicio": 1301,
+      "fim": 1405,
       "texto": "informações e o acompanhamento de cada caso,"
     },
     {
       "cena": "maternidade",
-      "inicio": 1190,
-      "fim": 1260,
+      "inicio": 1405,
+      "fim": 1504,
       "texto": "do protocolo ao deferimento ou recurso,"
     },
     {
       "cena": "maternidade",
-      "inicio": 1260,
-      "fim": 1344,
+      "inicio": 1504,
+      "fim": 1585,
       "texto": "de acordo com os fluxos do sistema."
     },
     {
       "cena": "previdenciario",
-      "inicio": 1390,
-      "fim": 1460,
+      "inicio": 1610,
+      "fim": 1705,
       "texto": "Para escritórios que trabalham com aposentadorias,"
     },
     {
       "cena": "previdenciario",
-      "inicio": 1460,
-      "fim": 1497,
+      "inicio": 1705,
+      "fim": 1771,
       "texto": "benefícios por incapacidade,"
     },
     {
       "cena": "previdenciario",
-      "inicio": 1497,
-      "fim": 1556,
+      "inicio": 1771,
+      "fim": 1863,
       "texto": "pensão por morte e auxílio-acidente,"
     },
     {
       "cena": "previdenciario",
-      "inicio": 1556,
-      "fim": 1634,
+      "inicio": 1865,
+      "fim": 1960,
       "texto": "o Previdenciário Geral oferece uma estrutura de"
     },
     {
       "cena": "previdenciario",
-      "inicio": 1634,
-      "fim": 1695,
+      "inicio": 1960,
+      "fim": 2055,
       "texto": "gestão alinhada a essas rotinas."
     },
     {
       "cena": "twoProducts",
-      "inicio": 1830,
-      "fim": 1911,
+      "inicio": 2099,
+      "fim": 2179,
       "texto": "Em ambos, o foco é transformar informações"
     },
     {
       "cena": "twoProducts",
-      "inicio": 1911,
-      "fim": 1962,
+      "inicio": 2179,
+      "fim": 2280,
       "texto": "dispersas em processos acompanháveis,"
     },
     {
       "cena": "value",
-      "inicio": 2108,
-      "fim": 2178,
+      "inicio": 2377,
+      "fim": 2438,
       "texto": "com mais clareza para quem atende,"
     },
     {
       "cena": "value",
-      "inicio": 2178,
-      "fim": 2240,
+      "inicio": 2438,
+      "fim": 2501,
       "texto": "opera e coordena a equipe."
     },
     {
       "cena": "human",
-      "inicio": 2376,
-      "fim": 2454,
+      "inicio": 2649,
+      "fim": 2763,
       "texto": "Porque nenhuma ferramenta substitui a análise e"
     },
     {
       "cena": "human",
-      "inicio": 2454,
-      "fim": 2493,
+      "inicio": 2763,
+      "fim": 2816,
       "texto": "a experiência jurídica."
     },
     {
       "cena": "human",
-      "inicio": 2495,
-      "fim": 2566,
+      "inicio": 2832,
+      "fim": 2922,
       "texto": "A tecnologia deve apoiar o trabalho,"
     },
     {
       "cena": "human",
-      "inicio": 2566,
-      "fim": 2584,
+      "inicio": 2922,
+      "fim": 2966,
       "texto": "não complicá-lo."
     },
     {
       "cena": "signature",
-      "inicio": 2584,
-      "fim": 2670,
+      "inicio": 3030,
+      "fim": 3164,
       "texto": "ADV Station. Duas soluções especializadas para um"
     },
     {
       "cena": "signature",
-      "inicio": 2670,
-      "fim": 2751,
+      "inicio": 3164,
+      "fim": 3291,
       "texto": "mesmo compromisso: organizar a advocacia previdenciária."
     },
     {
       "cena": "signature",
-      "inicio": 2754,
-      "fim": 2831,
+      "inicio": 3300,
+      "fim": 3399,
       "texto": "Conheça o Maternidade Legal e o Previdenciário"
     },
     {
       "cena": "signature",
-      "inicio": 2831,
-      "fim": 2848,
+      "inicio": 3399,
+      "fim": 3429,
       "texto": "Geral."
     }
   ]

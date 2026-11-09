@@ -5,6 +5,8 @@ import {BrandMark} from '../components/Brand';
 import {EditorialHeadline} from '../components/Editorial';
 import {AnimatedStationLine, CENTER, linePoint, LOWER, Station, UPPER} from '../components/StationMap';
 import {C} from '../theme/colors';
+import {EXTRA} from '../data/storyboard';
+import {wordAt} from '../data/narration';
 import {EASE_IO, EASE_OUT, lerp, prog} from '../theme/animation';
 
 // Linhas dispersas (posição inicial) que se organizam em arcos ao redor do centro.
@@ -17,12 +19,13 @@ const DISP = Array.from({length: N}, (_, i) => {
 /** CENA 03 — Conheça a ADV Station. */
 export const BrandIntroduction: React.FC = () => {
   const f = useCurrentFrame();
+  const E = EXTRA('brand'); // frames extras da locução real
   const gather = prog(f, 0, 50, EASE_IO);
   const logo = prog(f, 50, 40, EASE_OUT);
-  const shrink = prog(f, 196, 28, EASE_IO);
-  const lines = prog(f, 200, 50, EASE_IO);
-  const camS = lerp(1.06, 1, prog(f, 200, 60, EASE_IO));
-  const pan = prog(f, 252, 30, EASE_IO);
+  const shrink = prog(f, 196 + E, 28, EASE_IO);
+  const lines = prog(f, 200 + E, 50, EASE_IO);
+  const camS = lerp(1.06, 1, prog(f, 200 + E, 60, EASE_IO));
+  const pan = prog(f, 252 + E, 30, EASE_IO);
   return (
     <AbsoluteFill style={{opacity: prog(f, 0, 14)}}>
       <NavyBackground />
@@ -38,10 +41,10 @@ export const BrandIntroduction: React.FC = () => {
               transform={`rotate(${ang} ${x} ${y})`} opacity={lerp(0.6, 0.35, gather) * (1 - shrink * 0.7)} />;
           })}
           <circle cx={CENTER[0]} cy={CENTER[1]} r={250} fill="none" stroke="rgba(194,155,60,.18)" strokeWidth={1.5} opacity={gather * (1 - shrink)} />
-          <AnimatedStationLine segs={UPPER} draw={lines * 0.6} dotT={f > 236 ? lines * 0.58 : null} />
-          <AnimatedStationLine segs={LOWER} draw={lines * 0.6} dotT={f > 240 ? lines * 0.56 : null} />
-          {lines > 0.92 ? <Station p={linePoint(UPPER, 0.5)} label="MATERNIDADE LEGAL" labelSide="top" opacity={prog(f, 244, 10)} /> : null}
-          {lines > 0.92 ? <Station p={linePoint(LOWER, 0.5)} label="PREVIDENCIÁRIO GERAL" labelSide="bottom" opacity={prog(f, 248, 10)} /> : null}
+          <AnimatedStationLine segs={UPPER} draw={lines * 0.6} dotT={f > 236 + E ? lines * 0.58 : null} />
+          <AnimatedStationLine segs={LOWER} draw={lines * 0.6} dotT={f > 240 + E ? lines * 0.56 : null} />
+          {lines > 0.92 ? <Station p={linePoint(UPPER, 0.5)} label="MATERNIDADE LEGAL" labelSide="top" opacity={prog(f, 244 + E, 10)} /> : null}
+          {lines > 0.92 ? <Station p={linePoint(LOWER, 0.5)} label="PREVIDENCIÁRIO GERAL" labelSide="bottom" opacity={prog(f, 248 + E, 10)} /> : null}
         </svg>
         {/* logo oficial (versão para fundo escuro): revelação por máscara de opacidade, sem animar partes internas */}
         <div style={{position: 'absolute', left: 0, right: 0, top: CENTER[1] - 175, display: 'flex', justifyContent: 'center',
@@ -51,7 +54,7 @@ export const BrandIntroduction: React.FC = () => {
           <BrandMark size={230} variant="dark" nameSize={50} />
         </div>
       </AbsoluteFill>
-      <EditorialHeadline text="Uma família de soluções|para a advocacia previdenciária." start={126} x={150} y={760} width={1620} size={56} align="center" lineStagger={10} exit={196} />
+      <EditorialHeadline text="Uma família de soluções|para a advocacia previdenciária." start={wordAt('brand', 'família') - 10} x={150} y={760} width={1620} size={56} align="center" lineStagger={10} exit={196 + E} />
     </AbsoluteFill>
   );
 };
