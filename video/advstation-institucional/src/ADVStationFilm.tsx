@@ -14,12 +14,13 @@ import {MaternidadeLegal} from './scenes/MaternidadeLegal';
 import {Opening} from './scenes/Opening';
 import {PrevidenciarioGeral} from './scenes/PrevidenciarioGeral';
 import {TwoProducts} from './scenes/TwoProducts';
+import {VinhetaIntro} from './scenes/VinhetaIntro';
 import {C} from './theme/colors';
 
 loadFonts();
 
 const ORDER: Array<[SceneKey, React.FC]> = [
-  ['opening', Opening], ['complexity', LegalComplexity], ['brand', BrandIntroduction], ['maternidade', MaternidadeLegal],
+  ['intro', VinhetaIntro], ['opening', Opening], ['complexity', LegalComplexity], ['brand', BrandIntroduction], ['maternidade', MaternidadeLegal],
   ['previdenciario', PrevidenciarioGeral], ['twoProducts', TwoProducts], ['value', BusinessValue], ['human', HumanExperience], ['signature', BrandSignature],
 ];
 

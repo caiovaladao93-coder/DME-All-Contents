@@ -19,7 +19,7 @@ export const ScreenHeadline: React.FC<{label: string; text: string; x: number; y
 };
 
 /** Coluna de identificação do produto (rótulo, nome, subtítulo). */
-export const ProductTitle: React.FC<{n: string; name: React.ReactNode; sub: string; x: number; y: number; w: number; start: number; align?: 'left' | 'right'}> = ({n, name, sub, x, y, w, start, align = 'left'}) => {
+export const ProductTitle: React.FC<{n: string; name: React.ReactNode; sub: string; x: number; y: number; w: number; start: number; align?: 'left' | 'right'; size?: number}> = ({n, name, sub, x, y, w, start, align = 'left', size = 56}) => {
   const f = useCurrentFrame();
   const a = prog(f, start, 16), b = prog(f, start + 8, 18), c = prog(f, start + 18, 16);
   return (
@@ -28,7 +28,7 @@ export const ProductTitle: React.FC<{n: string; name: React.ReactNode; sub: stri
         <span style={{width: 40 * a, height: 2, background: C.gold}} />
         <span style={{fontFamily: SANS, fontWeight: 800, fontSize: 22, letterSpacing: '.26em', color: C.gold}}>{n}</span>
       </div>
-      <div style={{marginTop: 18, fontFamily: SERIF, fontWeight: 700, fontSize: 56, lineHeight: 1.06, color: C.white, textTransform: 'uppercase',
+      <div style={{marginTop: 18, fontFamily: SERIF, fontWeight: 700, fontSize: size, lineHeight: 1.06, color: C.white, textTransform: 'uppercase',
         clipPath: `inset(-10% ${(100 - b * 100).toFixed(1)}% -10% 0)`, transform: `translateY(${((1 - b) * 20).toFixed(1)}px)`}}>{name}</div>
       <div style={{marginTop: 18, fontFamily: SANS, fontWeight: 600, fontSize: 28, lineHeight: 1.35, color: '#C9D2E0', opacity: c,
         transform: `translateY(${((1 - c) * 14).toFixed(1)}px)`}}>{sub}</div>

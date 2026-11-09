@@ -4,17 +4,18 @@ export const HEIGHT = 1080;
 export const FPS = 30;
 
 export const SCENES = {
-  opening: {from: 0, dur: 240}, // 00:00–00:08
-  complexity: {from: 240, dur: 300}, // 00:08–00:18
-  brand: {from: 540, dur: 270}, // 00:18–00:27
-  maternidade: {from: 810, dur: 420}, // 00:27–00:41
-  previdenciario: {from: 1230, dur: 420}, // 00:41–00:55
-  twoProducts: {from: 1650, dur: 300}, // 00:55–01:05
-  value: {from: 1950, dur: 270}, // 01:05–01:14
-  human: {from: 2220, dur: 210}, // 01:14–01:21
-  signature: {from: 2430, dur: 270}, // 01:21–01:30
+  intro: {from: 0, dur: 120}, // 00:00–00:04 vinheta de abertura (marca)
+  opening: {from: 120, dur: 270}, // 00:04–00:13 cada benefício, um caminho
+  complexity: {from: 390, dur: 300}, // 00:13–00:23 planilhas, mensagens, controles paralelos
+  brand: {from: 690, dur: 270}, // 00:23–00:32 conheça a ADV Station
+  maternidade: {from: 960, dur: 420}, // 00:32–00:46
+  previdenciario: {from: 1380, dur: 420}, // 00:46–01:00
+  twoProducts: {from: 1800, dur: 300}, // 01:00–01:10
+  value: {from: 2100, dur: 270}, // 01:10–01:19
+  human: {from: 2370, dur: 210}, // 01:19–01:26
+  signature: {from: 2580, dur: 270}, // 01:26–01:35 vinheta de encerramento + CTA
 } as const;
 
 export type SceneKey = keyof typeof SCENES;
-export const TOTAL_FRAMES = 2700;
-export const OVERLAP = 18; // a cena seguinte é desenhada por cima durante a transição
+export const TOTAL_FRAMES = 2850; // 95 s
+export const OVERLAP = 18;

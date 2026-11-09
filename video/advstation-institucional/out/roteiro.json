@@ -2,11 +2,20 @@
   "versao": "revisao",
   "fps": 30,
   "resolucao": "1920x1080",
-  "duracao_frames": 2700,
+  "duracao_frames": 2850,
   "voz": {
     "servico": "ElevenLabs",
     "model_id": "eleven_multilingual_v2",
-    "decisao_pendente": "Leo Antonio (EbiSUflQjzm4g7S895SC, editorial) ou Guilherme (CS07DI8x8kLXeSktyWLG, voz do comercial de referência)"
+    "voice_id": "CS07DI8x8kLXeSktyWLG",
+    "nome": "Guilherme",
+    "voice_settings": {
+      "stability": 0.6,
+      "similarity_boost": 0.8,
+      "style": 0.12,
+      "use_speaker_boost": true,
+      "speed": 0.94
+    },
+    "saida": "convert_with_timestamps"
   },
   "falas": [
     {
@@ -67,188 +76,188 @@
   "legendas": [
     {
       "cena": "opening",
-      "inicio": 14,
-      "fim": 92,
+      "inicio": 134,
+      "fim": 212,
       "texto": "A advocacia previdenciária não segue um caminho"
     },
     {
       "cena": "opening",
-      "inicio": 92,
-      "fim": 181,
+      "inicio": 212,
+      "fim": 301,
       "texto": "único. Cada benefício exige atenção a etapas,"
     },
     {
       "cena": "opening",
-      "inicio": 181,
-      "fim": 247,
+      "inicio": 301,
+      "fim": 366,
       "texto": "documentos, pessoas e decisões diferentes."
     },
     {
       "cena": "complexity",
-      "inicio": 260,
-      "fim": 338,
+      "inicio": 410,
+      "fim": 488,
       "texto": "E quando tudo isso fica espalhado em"
     },
     {
       "cena": "complexity",
-      "inicio": 338,
-      "fim": 400,
+      "inicio": 488,
+      "fim": 550,
       "texto": "planilhas, mensagens e controles paralelos,"
     },
     {
       "cena": "complexity",
-      "inicio": 400,
-      "fim": 484,
+      "inicio": 550,
+      "fim": 634,
       "texto": "acompanhar a operação se torna mais difícil."
     },
     {
       "cena": "brand",
-      "inicio": 580,
-      "fim": 658,
+      "inicio": 730,
+      "fim": 808,
       "texto": "Foi para essa realidade que nasceu a"
     },
     {
       "cena": "brand",
-      "inicio": 658,
-      "fim": 744,
+      "inicio": 808,
+      "fim": 894,
       "texto": "ADV Station: uma família de soluções de"
     },
     {
       "cena": "brand",
-      "inicio": 744,
-      "fim": 772,
+      "inicio": 894,
+      "fim": 922,
       "texto": "gestão especializada."
     },
     {
       "cena": "maternidade",
-      "inicio": 818,
-      "fim": 877,
+      "inicio": 968,
+      "fim": 1027,
       "texto": "Para quem atua com salário-maternidade,"
     },
     {
       "cena": "maternidade",
-      "inicio": 877,
-      "fim": 958,
+      "inicio": 1027,
+      "fim": 1108,
       "texto": "o Maternidade Legal ajuda a organizar clientes,"
     },
     {
       "cena": "maternidade",
-      "inicio": 958,
-      "fim": 1040,
+      "inicio": 1108,
+      "fim": 1190,
       "texto": "informações e o acompanhamento de cada caso,"
     },
     {
       "cena": "maternidade",
-      "inicio": 1040,
-      "fim": 1110,
+      "inicio": 1190,
+      "fim": 1260,
       "texto": "do protocolo ao deferimento ou recurso,"
     },
     {
       "cena": "maternidade",
-      "inicio": 1110,
-      "fim": 1194,
+      "inicio": 1260,
+      "fim": 1344,
       "texto": "de acordo com os fluxos do sistema."
     },
     {
       "cena": "previdenciario",
-      "inicio": 1240,
-      "fim": 1310,
+      "inicio": 1390,
+      "fim": 1460,
       "texto": "Para escritórios que trabalham com aposentadorias,"
     },
     {
       "cena": "previdenciario",
-      "inicio": 1310,
-      "fim": 1347,
+      "inicio": 1460,
+      "fim": 1497,
       "texto": "benefícios por incapacidade,"
     },
     {
       "cena": "previdenciario",
-      "inicio": 1347,
-      "fim": 1406,
+      "inicio": 1497,
+      "fim": 1556,
       "texto": "pensão por morte e auxílio-acidente,"
     },
     {
       "cena": "previdenciario",
-      "inicio": 1406,
-      "fim": 1484,
+      "inicio": 1556,
+      "fim": 1634,
       "texto": "o Previdenciário Geral oferece uma estrutura de"
     },
     {
       "cena": "previdenciario",
-      "inicio": 1484,
-      "fim": 1545,
+      "inicio": 1634,
+      "fim": 1695,
       "texto": "gestão alinhada a essas rotinas."
     },
     {
       "cena": "twoProducts",
-      "inicio": 1680,
-      "fim": 1761,
+      "inicio": 1830,
+      "fim": 1911,
       "texto": "Em ambos, o foco é transformar informações"
     },
     {
       "cena": "twoProducts",
-      "inicio": 1761,
-      "fim": 1812,
+      "inicio": 1911,
+      "fim": 1962,
       "texto": "dispersas em processos acompanháveis,"
     },
     {
       "cena": "value",
-      "inicio": 1958,
-      "fim": 2028,
+      "inicio": 2108,
+      "fim": 2178,
       "texto": "com mais clareza para quem atende,"
     },
     {
       "cena": "value",
-      "inicio": 2028,
-      "fim": 2090,
+      "inicio": 2178,
+      "fim": 2240,
       "texto": "opera e coordena a equipe."
     },
     {
       "cena": "human",
-      "inicio": 2226,
-      "fim": 2304,
+      "inicio": 2376,
+      "fim": 2454,
       "texto": "Porque nenhuma ferramenta substitui a análise e"
     },
     {
       "cena": "human",
-      "inicio": 2304,
-      "fim": 2343,
+      "inicio": 2454,
+      "fim": 2493,
       "texto": "a experiência jurídica."
     },
     {
       "cena": "human",
-      "inicio": 2345,
-      "fim": 2416,
+      "inicio": 2495,
+      "fim": 2566,
       "texto": "A tecnologia deve apoiar o trabalho,"
     },
     {
       "cena": "human",
-      "inicio": 2416,
-      "fim": 2434,
+      "inicio": 2566,
+      "fim": 2584,
       "texto": "não complicá-lo."
     },
     {
       "cena": "signature",
-      "inicio": 2434,
-      "fim": 2520,
+      "inicio": 2584,
+      "fim": 2670,
       "texto": "ADV Station. Duas soluções especializadas para um"
     },
     {
       "cena": "signature",
-      "inicio": 2520,
-      "fim": 2601,
+      "inicio": 2670,
+      "fim": 2751,
       "texto": "mesmo compromisso: organizar a advocacia previdenciária."
     },
     {
       "cena": "signature",
-      "inicio": 2604,
-      "fim": 2681,
+      "inicio": 2754,
+      "fim": 2831,
       "texto": "Conheça o Maternidade Legal e o Previdenciário"
     },
     {
       "cena": "signature",
-      "inicio": 2681,
-      "fim": 2698,
+      "inicio": 2831,
+      "fim": 2848,
       "texto": "Geral."
     }
   ]

@@ -7,13 +7,13 @@ import {SCREENS} from '../data/assets';
 import {C} from '../theme/colors';
 import {EASE_IN, EASE_IO, lerp, prog} from '../theme/animation';
 
-const W = 760, H = 475, Y = 300;
-const L = {x: 960 - 40 - W, y: Y, w: W, h: H};
-const R = {x: 960 + 40, y: Y, w: W, h: H};
+const W = 780, H = 470, Y = 330;
+const L = {x: 960 - 30 - W, y: Y, w: W, h: H};
+const R = {x: 960 + 30, y: Y, w: W, h: H};
 
 /**
  * CENA 06 — Duas soluções, uma mesma visão (ProductComparison).
- * Colunas simétricas, capturas DIFERENTES de cada produto, nenhum produto maior que o outro.
+ * Colunas simétricas com o Dashboard Executivo REAL de cada produto (capturas diferentes).
  */
 export const TwoProducts: React.FC = () => {
   const f = useCurrentFrame();
@@ -30,10 +30,10 @@ export const TwoProducts: React.FC = () => {
           <line x1={960} y1={Y - 40} x2={960} y2={Y - 40 + (H + 80) * div} stroke={C.gold} strokeWidth={2} />
         </svg>
         <div style={{position: 'absolute', inset: 0, opacity: a, transform: `translateX(${((1 - a) * -260).toFixed(1)}px)`}}>
-          <ProductScreenshot src={SCREENS.mlDashboard.src} desc={SCREENS.mlDashboard.desc} product="Maternidade Legal" {...L} />
+          <ProductScreenshot screen={SCREENS.mlDashboard} product="Maternidade Legal" {...L} focus={[{at: 150, dur: 120, s: 1.12, cx: 1000, cy: 330}]} />
         </div>
         <div style={{position: 'absolute', inset: 0, opacity: b, transform: `translateX(${((1 - b) * 260).toFixed(1)}px)`}}>
-          <ProductScreenshot src={SCREENS.pgDashboard.src} desc={SCREENS.pgDashboard.desc} product="Previdenciário Geral" {...R} />
+          <ProductScreenshot screen={SCREENS.pgDashboard} product="Previdenciário Geral" {...R} focus={[{at: 150, dur: 120, s: 1.12, cx: 1000, cy: 330}]} />
         </div>
         <GoldLabel text="Maternidade Legal" start={130} x={L.x} y={Y - 52} width={W} />
         <GoldLabel text="Previdenciário Geral" start={138} x={R.x} y={Y - 52} width={W} />

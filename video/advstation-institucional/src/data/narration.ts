@@ -26,6 +26,16 @@ const pauseAfter = (w: string) => (/[.:;!?]$/.test(w) ? 0.28 : /,$/.test(w) ? 0.
 export type Word = {w: string; start: number; end: number}; // frames absolutos
 export type Cue = {start: number; end: number; words: Word[]; caption: boolean; scene: SceneKey};
 
+const norm = (s: string) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9-]/g, '');
+
+/** Frame LOCAL (relativo à cena) em que a palavra `needle` é dita — gatilho de animação (manual: texto entra pela palavra da locução). */
+export const wordAt = (scene: SceneKey, needle: string, nth = 0): number => {
+  const cues = buildCues().filter((c) => c.scene === scene);
+  const hits = cues.flatMap((c) => c.words).filter((w) => norm(w.w) === norm(needle));
+  const hit = hits[nth] ?? hits[0];
+  return hit ? hit.start - SCENES[scene].from : 0;
+};
+
 /** Gera palavras com tempos estimados e blocos de legenda (≤ 7 palavras, quebra na pontuação). */
 export const buildCues = (): Cue[] => {
   const cues: Cue[] = [];

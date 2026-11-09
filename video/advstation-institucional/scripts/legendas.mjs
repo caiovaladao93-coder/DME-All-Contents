@@ -13,8 +13,8 @@ fs.writeFileSync('out/legendas.srt', cues.map((c, i) => `${i + 1}\n${ts(c.start,
 fs.writeFileSync('out/legendas.vtt', 'WEBVTT\n\nNOTE Tempos estimados (versão de revisão). Substituir pelo alinhamento ElevenLabs.\n\n' + cues.map((c) => `${ts(c.start, '.')} --> ${ts(c.end, '.')}\n${txt(c)}\n`).join('\n'));
 fs.writeFileSync('out/locucao.txt', NARRATION.map((n) => n.text).join('\n\n') + '\n');
 fs.writeFileSync('out/roteiro.json', JSON.stringify({
-  versao: 'revisao', fps: 30, resolucao: '1920x1080', duracao_frames: 2700,
-  voz: {servico: 'ElevenLabs', model_id: 'eleven_multilingual_v2', decisao_pendente: 'Leo Antonio (EbiSUflQjzm4g7S895SC, editorial) ou Guilherme (CS07DI8x8kLXeSktyWLG, voz do comercial de referência)'},
+  versao: 'revisao', fps: 30, resolucao: '1920x1080', duracao_frames: 2850,
+  voz: {servico: 'ElevenLabs', model_id: 'eleven_multilingual_v2', voice_id: 'CS07DI8x8kLXeSktyWLG', nome: 'Guilherme', voice_settings: {stability: 0.6, similarity_boost: 0.8, style: 0.12, use_speaker_boost: true, speed: 0.94}, saida: 'convert_with_timestamps'},
   falas: NARRATION.map((n) => ({cena: n.scene, offset_frames: n.offset, texto: n.text, legenda: n.caption !== false})),
   legendas: cues.map((c) => ({cena: c.scene, inicio: c.start, fim: c.end, texto: txt(c)})),
 }, null, 2));

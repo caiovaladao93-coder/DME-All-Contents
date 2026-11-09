@@ -1,7 +1,7 @@
 # ADV STATION · Filme institucional horizontal (VERSÃO DE REVISÃO)
 
-Projeto Remotion (React + TypeScript): 1920×1080, 30 fps, 2.700 frames (90 s), H.264 High, yuv420p.
-Esta versão tem **marcadores visíveis** ("CAPTURA PENDENTE", "FOTOGRAFIA PENDENTE") e **não tem áudio**. Os pendentes estão em `RELATORIO.md`.
+Projeto Remotion (React + TypeScript): 1920×1080, 30 fps, 2.850 frames (95 s), H.264 High, yuv420p.
+Esta versão usa as telas reais enviadas, não tem pessoas nem fotos de banco e **não tem áudio** (a locução Guilherme está pendente). Os pendentes estão em `RELATORIO.md`.
 
 ## Entregáveis (`out/`)
 
