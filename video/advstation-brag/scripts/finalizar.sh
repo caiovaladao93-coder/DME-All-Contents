@@ -3,9 +3,10 @@
 set -e
 cd "$(dirname "$0")/.."
 W=brag-output/work
-M=$(ffmpeg -hide_banner -i $W/mix.wav -af loudnorm=I=-14:TP=-2.2:LRA=11:print_format=json -f null - 2>&1 | sed -n '/^{/,/^}/p')
+ffmpeg -y -v error -i $W/mix.wav -af "alimiter=limit=0.5:attack=3:release=60:level=disabled" $W/mix-lim.wav
+M=$(ffmpeg -hide_banner -i $W/mix-lim.wav -af loudnorm=I=-14:TP=-2.2:LRA=11:print_format=json -f null - 2>&1 | sed -n '/^{/,/^}/p')
 g(){ echo "$M" | python3 -c "import json,sys;print(json.load(sys.stdin)['$1'])"; }
-ffmpeg -y -v error -i $W/video-mudo.mp4 -i $W/mix.wav -map 0:v -map 1:a -c:v copy \
+ffmpeg -y -v error -i $W/video-mudo.mp4 -i $W/mix-lim.wav -map 0:v -map 1:a -c:v copy \
   -af "loudnorm=I=-14:TP=-2.2:LRA=11:measured_I=$(g input_i):measured_TP=$(g input_tp):measured_LRA=$(g input_lra):measured_thresh=$(g input_thresh):offset=$(g target_offset):linear=true,aresample=48000" \
   -c:a aac -b:a 192k -shortest -movflags +faststart brag-output/brag.mp4
 ffmpeg -y -v error -i brag-output/brag.mp4 -frames:v 1 -q:v 2 brag-output/brag.jpg

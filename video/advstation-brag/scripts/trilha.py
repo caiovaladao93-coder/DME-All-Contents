@@ -5,6 +5,8 @@ uso: python3 scripts/trilha.py brag-output/work/eventos.json brag-output/work/ji
 """
 import json, subprocess, sys
 import numpy as np
+import musica_score
+
 
 SR = 48000
 DUR = 32.0
@@ -136,24 +138,19 @@ def main(ev_path, jingle_path, out_path):
             add(fx, whoosh(.45), e['t'] - .2, .35); add(fx, kick(), e['t'] + .3, .7)
     clat = np.tanh(clat * 1.6) / 1.6
 
-    # harmonia por compasso (2 s): F · Dm · B♭ · C
-    prog = [[53, 57, 60, 65], [50, 57, 62, 65], [46, 58, 62, 65], [48, 55, 60, 64]]
-    roots = [41, 38, 34, 36]
-    for bar in range(int(T_VIN / 2) + 1):
-        t0 = bar * 2.0
-        if t0 >= T_VIN: break
-        add(mus, pad(prog[bar % 4], min(2.25, T_VIN - t0 + .2)), t0, .16)
-        if t0 >= 3.0:
-            for b in range(4):
-                tb = t0 + b * BEAT
-                if tb >= T_VIN: break
-                if T_CAOS_FIM - .5 <= tb < T_CAOS_FIM: continue  # respiro antes da virada
-                add(mus, bass(roots[bar % 4]), tb, .30)
-                if b in (0, 2): add(mus, kick(), tb, .45)
+    # trilha original no estilo épico (scripts/musica_score.py), alinhada às cenas
+    sec = {'intro': 0.0, 'verso': 3.0, 'build': T_CAOS, 'respiro': T_CAOS_FIM - .5, 'refrao': T_CAOS_FIM,
+           'saida': out_t(17.0), 'fim': T_VIN}
+    mus = musica_score.build(N, sec)                       # estéreo (N, 2)
     L = T_CAOS_FIM - T_CAOS
-    add(fx, whoosh(L) * np.linspace(.2, 1, int(SR * L)), T_CAOS, .30)
     tt = np.arange(N) / SR
-    bed = (mus + fx + clat * .9) * np.clip((T_VIN - tt) / .12, 0, 1)
+    rms0 = lambda x: np.sqrt(np.mean(x ** 2) + 1e-12)
+    mr = rms0(mus[int(3 * SR):int(T_VIN * SR)].mean(1))
+    # estalos ~5 dB abaixo da música (medidos onde há estalos); efeitos (sinos, viradas) ~3 dB abaixo
+    clat *= mr / rms0(clat[np.abs(clat) > 1e-4]) * 10 ** (-5 / 20)
+    fx *= mr / rms0(fx[np.abs(fx) > 1e-4]) * 10 ** (-3 / 20)
+    sfx = (fx + clat)[:, None]
+    bed = (mus + sfx) * np.clip((T_VIN - tt) / .12, 0, 1)[:, None]
 
     # locução: posiciona as falas e monta o envelope de presença de voz
     for nome, t0 in FALAS:
@@ -162,33 +159,36 @@ def main(ev_path, jingle_path, out_path):
         a = json.load(open(f'voz/{nome}.json'))['alignment']
         i0, i1 = int((t0 + a['character_start_times_seconds'][0]) * SR), int((t0 + a['character_end_times_seconds'][-1]) * SR)
         fala[i0:i1] = 1
-    # ducking: −8 dB sob a voz (ataque 150 ms, liberação 500 ms)
+    # ducking: −6 dB sob a voz (ataque 150 ms, liberação 500 ms)
     env_d = np.zeros(N); g = 0.0; aa, rr = np.exp(-1 / (.15 * SR)), np.exp(-1 / (.5 * SR))
     for k in range(N):
         c = aa if fala[k] > g else rr
         g = c * g + (1 - c) * fala[k]; env_d[k] = g
-    duck = 10 ** (-8 * env_d / 20)
+    duck = (10 ** (-6 * env_d / 20))[:, None]
     rms = lambda x: np.sqrt(np.mean(x ** 2) + 1e-12)
     vr = rms(voz[fala > 0])
-    br = rms(bed[int(3 * SR):int(T_VIN * SR)])
-    voz *= (br * 10 ** (7 / 20)) / vr  # voz 7 dB acima da cama (15 dB acima sob o ducking)
-    mix = bed * duck + voz
+    voz *= (mr * 10 ** (4 / 20)) / vr  # voz 4 dB acima da música (10 dB acima sob o ducking): trilha presente
+    mix = bed * duck + voz[:, None]
+    import os
+    if os.environ.get('STEMS'):
+        for nm, arr in (('bed', bed * duck), ('voz', np.stack([voz, voz], 1))):
+            subprocess.run(['ffmpeg', '-y', '-v', 'error', '-f', 'f32le', '-ar', str(SR), '-ac', '2', '-i', '-', f'brag-output/work/stem-{nm}.wav'], input=arr.astype(np.float32).tobytes(), check=True)
 
     # jingle oficial da série: ~5 dB abaixo da voz, como no institucional
     jin = load(jingle_path)
     jin *= rms(voz[fala > 0]) / rms(jin) * 10 ** (-5.0 / 20)
-    add(mix, jin, T_VIN)
-    add(mix, pad([53, 57, 60, 65], 3.0), T_VIN + 3.6, .05)
-    mix *= np.clip((DUR - tt) / .25, 0, 1)
+    i0 = int(T_VIN * SR); mix[i0:i0 + len(jin)] += jin[:N - i0, None]
+    tail = pad([50, 57, 62, 65], 3.0) * .05; i1 = int((T_VIN + 3.6) * SR); mix[i1:i1 + len(tail)] += tail[:N - i1, None]
+    mix *= np.clip((DUR - tt) / .25, 0, 1)[:, None]
     mix /= np.max(np.abs(mix)) * 1.12
-    st = np.stack([mix, mix], 1).astype(np.float32)
+    st = mix.astype(np.float32)
     subprocess.run(['ffmpeg', '-y', '-v', 'error', '-f', 'f32le', '-ar', str(SR), '-ac', '2', '-i', '-', out_path], input=st.tobytes(), check=True)
     with open(out_path.rsplit('/', 1)[0] + '/../marcas-som.txt', 'w') as f:
         f.write('Marcas de som (s) · ADV STATION /brag narrado\n')
         for nome, t0 in FALAS:
             a = json.load(open(f'voz/{nome}.json'))['alignment']
             f.write(f"{t0:6.2f}–{t0 + a['character_end_times_seconds'][-1]:6.2f}  voz {nome}: {json.load(open(f'voz/{nome}.json'))['text']}\n")
-        f.write(f"{T_CAOS:6.2f}–{T_CAOS_FIM:6.2f}  subida (caos)\n")
+        f.write(f"{T_CAOS:6.2f}–{T_CAOS_FIM:6.2f}  subida (caos), caixa acelerando e respiro antes do refrão\n")
         for e in ev:
             if e['k'] in ('virada', 'anel', 'tick', 'jingle'): f.write(f"{e['t']:6.2f}         {e['k']}\n")
 

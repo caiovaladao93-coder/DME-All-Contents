@@ -16,7 +16,7 @@ Este vídeo foi feito com a skill `brag-slim` (github.com/latent-spaces/brag), c
 ## Plano
 
 - **Formato:** paisagem 1920×1080, 30 fps, 32 s com locução (a versão sem voz tinha 24 s).
-- **Trilha:** 120 BPM (batida de 0,5 s, compasso de 2 s), em Fá maior, como a família editorial do manual. O estalo das plaquinhas é a percussão, quantizado em semicolcheias na mesma grade. Todo corte cai numa batida.
+- **Trilha:** 120 BPM (batida de 0,5 s, compasso de 2 s), em Ré menor (Dm · B♭ · F · C). É original, no estilo épico de pop-rock do The Score, sem copiar melodia nem gravação. Os estalos das plaquinhas seguem a mesma grade, e todo corte cai numa batida.
 - **Locução:** voz do Guilherme no ElevenLabs (`eleven_multilingual_v2`, mesmos ajustes do institucional: stability 0.6, similarity 0.8, style 0.12, speed 0.94). Foram geradas 3 tomadas por fala, e a mais limpa foi escolhida por medição (`scripts/escolher_take.py`). A voz não foi acelerada. Para caber cada fala, o vídeo ganhou pausas em momentos parados, em múltiplos de 0,5 s para manter a grade de batidas, e o caos ficou mais lento (`WARP` no `video.html` e no `scripts/trilha.py`).
 
 ### Falas (tempos de saída)
@@ -46,7 +46,14 @@ Na versão narrada, as cenas começam em 0 · 3,0 · 8,5 · 11,5 · 17,0 · 22,0
 ## Som
 
 - **Estalos:** 6.969 eventos de plaquinha exportados do próprio `video.html` (`work/eventos.json`), cada um com um clique sintetizado (ruído + "tic" ressonante). Os estalos sincronizam com a imagem por construção.
-- **Trilha:** procedural em `scripts/trilha.py`. Pad F · Dm · B♭ · C, baixo e bumbo nas batidas a partir de 3,0 s, subida de ruído no caos, "virada" (sopro e batida) nas trocas de painel e sinos dourados nos anéis (C5 → E5 → A5).
-- **Voz e mixagem:** a cama (trilha e estalos) abaixa 8 dB sob a voz, com ataque de 150 ms e liberação de 500 ms.
+- **Trilha (pedido do cliente: estilo The Score):** original e procedural, em `scripts/musica_score.py`. Segue a linguagem do estilo, sem reproduzir nenhuma música.
+  - **Intro (0–3 s):** pisada-pisada-palma, coral grave e uma subida até o impacto em 3,0 s.
+  - **Verso (3–8,5 s):** guitarras abafadas em colcheias, abertas em L/R, com baixo, bumbo e cordas em ostinato.
+  - **Subida (8,5–11 s):** caixa acelerando (semínimas → colcheias → semicolcheias), coral crescendo, virada de tons e prato reverso.
+  - **Respiro (11–11,5 s):** silêncio, para o refrão entrar com força.
+  - **Refrão (11,5–22 s):** bateria cheia com caixa grande e palmas, power chords sustentados, cordas uma oitava acima, coral pleno e prato a cada 2 compassos.
+  - **Saída (22–25,5 s):** de volta à pisada e palma com acordes longos, virada de tons e batida seca em 25,0 s. Fica meio segundo de silêncio antes do jingle.
+  - Reverb de sala grande, estéreo descorrelacionado.
+- **Voz e mixagem:** a voz fica 4 dB acima da média da música. A música abaixa 6 dB sob a voz, com ataque de 150 ms e liberação de 500 ms. Os estalos ficam cerca de 5 dB abaixo da música.
 - **Jingle:** o oficial da série a partir de 25,5 s, cerca de 5 dB abaixo da voz, como no institucional. A trilha sai antes de ele entrar, e a última fala vem depois dele.
-- **Master:** −14,5 LUFS, pico real de −2,1 dBTP (loudnorm linear em 2 passos).
+- **Master:** limitador seguido de loudnorm linear em 2 passos. Resultado: −14,2 LUFS e pico real de −1,3 dBTP.
