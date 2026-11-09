@@ -6,7 +6,7 @@ import {SystemCard} from '../components/SystemCard';
 import {ASSETS} from '../data/assets';
 import {APP_BLOCKS} from '../data/scenes';
 import {C} from '../theme/colors';
-import {prog} from '../theme/motion';
+import {EASE_IO, prog} from '../theme/motion';
 import {FONT_UI, TITLE_STYLE} from '../theme/typography';
 
 const Heading: React.FC<{f: number; title: string; sub: string; start: number}> = ({f, title, sub, start}) => {
@@ -24,30 +24,49 @@ const Heading: React.FC<{f: number; title: string; sub: string; start: number}> 
 };
 
 const Chip: React.FC<{label: string; on?: boolean}> = ({label, on}) => (
-  <span style={{fontFamily: FONT_UI, fontWeight: 700, fontSize: 22, letterSpacing: '.08em', textTransform: 'uppercase', padding: '8px 14px', borderRadius: 20,
-    color: on ? '#F4F6F8' : '#C0C6CC', background: on ? 'rgba(58,110,165,.55)' : 'rgba(192,198,204,.1)', border: '1px solid rgba(192,198,204,.25)'}}>{label}</span>
+  <ChipLevel label={label} k={on ? 1 : 0} />
 );
 
-/* A — Atendimento: cartões de solicitações em cascata */
-const BlockAtendimento: React.FC<{f: number; dur: number}> = ({f, dur}) => (
-  <AbsoluteFill>
-    <CinematicImage src={ASSETS.images.s06a ?? undefined} dur={dur} cam={{s0: 1.05, s1: 1.05, x0: 30, x1: -30}}><AttendanceDesk /></CinematicImage>
-    <Heading f={f} title="ATENDIMENTO" sub="Informações mais organizadas." start={4} />
-    {['Nova solicitação', 'Em andamento', 'Concluída'].map((s, i) => {
-      const e = prog(f, 18 + i * 7, 16);
-      return (
-        <div key={i} style={{position: 'absolute', left: 140 + i * 18, top: 1130 + i * 92, width: 800 - i * 36, height: 80, borderRadius: 18, opacity: e,
-          transform: `translateY(${((1 - e) * 40).toFixed(1)}px)`, display: 'flex', alignItems: 'center', gap: 18, padding: '0 22px',
-          background: 'linear-gradient(160deg,rgba(42,47,53,.97),rgba(26,29,33,.97))', border: '1px solid rgba(192,198,204,.2)', boxShadow: '0 20px 40px rgba(0,0,0,.5)'}}>
-          <span style={{width: 40, height: 40, borderRadius: 10, background: i === 0 ? 'rgba(58,110,165,.6)' : 'rgba(192,198,204,.14)'}} />
-          <span style={{flex: 1}}><span style={{display: 'block', height: 12, width: '64%', borderRadius: 6, background: 'rgba(192,198,204,.3)'}} />
-            <span style={{display: 'block', height: 10, width: '40%', borderRadius: 5, marginTop: 8, background: 'rgba(192,198,204,.15)'}} /></span>
-          <Chip label={s} on={i === 0} />
-        </div>
-      );
-    })}
-  </AbsoluteFill>
+/* chip com intensidade 0..1 (azul de destaque que "passa" de uma etapa para a outra) */
+const mix = (a: number, b: number, k: number) => Math.round(a + (b - a) * k);
+const ChipLevel: React.FC<{label: string; k: number}> = ({label, k}) => (
+  <span style={{fontFamily: FONT_UI, fontWeight: 700, fontSize: 22, letterSpacing: '.08em', textTransform: 'uppercase', padding: '8px 14px', borderRadius: 20,
+    color: `rgb(${mix(192, 244, k)},${mix(198, 246, k)},${mix(204, 248, k)})`,
+    background: `rgba(${mix(192, 58, k)},${mix(198, 110, k)},${mix(204, 165, k)},${(0.1 + 0.45 * k).toFixed(3)})`,
+    border: `1px solid rgba(${mix(192, 120, k)},${mix(198, 160, k)},${mix(204, 205, k)},${(0.25 + 0.5 * k).toFixed(3)})`}}>{label}</span>
 );
+
+/* A — Atendimento: a solicitação percorre as etapas; o azul passa de "Nova solicitação" até "Concluída" */
+const BlockAtendimento: React.FC<{f: number; dur: number}> = ({f, dur}) => {
+  // posição do destaque: 0 → 1 → 2 (com transições suaves)
+  const pos = prog(f, 50, 10, EASE_IO) + prog(f, 72, 10, EASE_IO);
+  return (
+    <AbsoluteFill>
+      <CinematicImage src={ASSETS.images.s06a ?? undefined} dur={dur} cam={{s0: 1.05, s1: 1.05, x0: 30, x1: -30}}><AttendanceDesk /></CinematicImage>
+      <Heading f={f} title="ATENDIMENTO" sub="Informações mais organizadas." start={4} />
+      {['Nova solicitação', 'Em andamento', 'Concluída'].map((s, i) => {
+        const e = prog(f, 18 + i * 7, 16);
+        const k = Math.max(0, 1 - Math.abs(pos - i)) * prog(f, 30, 8);
+        const done = i === 2 ? prog(f, 80, 10) : 0;
+        return (
+          <div key={i} style={{position: 'absolute', left: 140 + i * 18, top: 1130 + i * 92, width: 800 - i * 36, height: 80, borderRadius: 18, opacity: e,
+            transform: `translateY(${((1 - e) * 40).toFixed(1)}px) scale(${(1 + 0.02 * k).toFixed(4)})`, display: 'flex', alignItems: 'center', gap: 18, padding: '0 22px',
+            background: 'linear-gradient(160deg,rgba(42,47,53,.97),rgba(26,29,33,.97))',
+            border: `1px solid rgba(${mix(192, 58, k)},${mix(198, 110, k)},${mix(204, 165, k)},${(0.2 + 0.7 * k).toFixed(3)})`,
+            boxShadow: `0 20px 40px rgba(0,0,0,.5)${k > 0.05 ? `, 0 0 ${Math.round(24 * k)}px rgba(58,110,165,${(0.3 * k).toFixed(3)})` : ''}`}}>
+            <span style={{width: 40, height: 40, borderRadius: 10, display: 'flex', alignItems: 'center', justifyContent: 'center',
+              background: `rgba(${mix(192, 58, k)},${mix(198, 110, k)},${mix(204, 165, k)},${(0.14 + 0.5 * k).toFixed(3)})`}}>
+              {i === 2 ? <svg width={24} height={24} viewBox="0 0 24 24" style={{opacity: done}}><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="#fff" strokeWidth={2.6} strokeLinecap="round" strokeLinejoin="round" /></svg> : null}
+            </span>
+            <span style={{flex: 1}}><span style={{display: 'block', height: 12, width: '64%', borderRadius: 6, background: 'rgba(192,198,204,.3)'}} />
+              <span style={{display: 'block', height: 10, width: '40%', borderRadius: 5, marginTop: 8, background: 'rgba(192,198,204,.15)'}} /></span>
+            <ChipLevel label={s} k={k} />
+          </div>
+        );
+      })}
+    </AbsoluteFill>
+  );
+};
 
 /* B — Comercial: três colunas de acompanhamento (sem números) */
 const BlockComercial: React.FC<{f: number; dur: number}> = ({f, dur}) => (

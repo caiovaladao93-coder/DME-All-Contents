@@ -27,7 +27,7 @@ export const Scene07Benefits: React.FC = () => {
       <AbsoluteFill style={{background: `rgba(6,7,8,${(0.2 + scrim).toFixed(3)})`}} />
 
       {/* cartões desconectados em primeiro plano que somem aos poucos */}
-      {FG_CARDS.map(([x, y, d], i) => {
+      {(ASSETS.images.s07 ? [] : FG_CARDS).map(([x, y, d], i) => {
         const gone = prog(f, 26 + d, 22, EASE_IN);
         return <div key={i} style={{position: 'absolute', left: x, top: y, width: 200, height: 110, borderRadius: 14, opacity: (1 - gone) * 0.9 * prog(f, 0, 10),
           filter: `blur(${(gone * 10 + (i % 2) * 2).toFixed(1)}px)`, transform: `scale(${lerp(1, 0.9, gone)})`,

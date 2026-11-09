@@ -48,7 +48,8 @@ export const Scene02Problems: React.FC = () => {
           <CinematicImage src={ASSETS.images.s02a ?? undefined} dur={100} cam={{s0: 1.01, s1: 1.08, x0: 0, x1: -24, y0: 0, y1: -30}}>
             <DeskTop />
           </CinematicImage>
-          {[[120, 760, 260, 150, 10], [680, 620, 280, 170, 18], [620, 1180, 300, 160, 26], [150, 1240, 240, 140, 34]].map(([x, y, w, h, s], i) => {
+          {/* janelas translúcidas só na versão ilustrada; com vídeo real elas atrapalhariam a leitura */}
+          {(ASSETS.images.s02a ? [] : [[120, 760, 260, 150, 10], [680, 620, 280, 170, 18], [620, 1180, 300, 160, 26], [150, 1240, 240, 140, 34]]).map(([x, y, w, h, s], i) => {
             const e = prog(f, s, 14);
             return <div key={i} style={{position: 'absolute', left: x, top: y + (1 - e) * 20, width: w, height: h, borderRadius: 16, opacity: e * 0.9,
               background: 'rgba(160,190,225,.08)', border: '1.5px solid rgba(200,220,240,.35)', boxShadow: '0 20px 40px rgba(0,0,0,.35)'}}>

@@ -67,7 +67,7 @@ export const Scene04Method: React.FC = () => {
         <div style={{position: 'absolute', inset: 0, transform: `translateY(${lerp(0, 40, reorg)}px)`, opacity: lerp(1, 0.75, reorg)}}>
           <div style={{position: 'absolute', left: 70, top: 760, width: 940, height: 300, borderRadius: 28, background: 'rgba(10,11,12,.72)',
             border: '1px solid rgba(192,198,204,.12)', opacity: prog(f, 100, 14)}} />
-          <WorkflowDiagram start={104} x={90} y={780} scale={1} />
+          <WorkflowDiagram start={104} x={90} y={780} scale={1} labels={['DESAFIO', 'DIAGNÓSTICO', 'AUTOMAÇÃO', 'INTEGRAÇÃO']} />
         </div>
       ) : null}
 

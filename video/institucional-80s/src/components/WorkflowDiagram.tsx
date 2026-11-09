@@ -15,7 +15,7 @@ export const WorkflowDiagram: React.FC<{start: number; x: number; y: number; sca
         <g key={i} opacity={p}>
           <rect x={nx} y={ny} width={w} height={84} rx={18} fill="rgba(28,31,34,.85)" stroke={i === 2 ? C.accent : 'rgba(192,198,204,.6)'} strokeWidth={2.5}
             pathLength={1} strokeDasharray="1 1" strokeDashoffset={1 - p} />
-          {label ? <text x={nx + w / 2} y={ny + 52} textAnchor="middle" fontFamily={FONT_UI} fontWeight={700} fontSize={24} letterSpacing="2" fill="#E6EAEE">{label}</text> : null}
+          {label ? <text x={nx + w / 2} y={ny + 52} textAnchor="middle" fontFamily={FONT_UI} fontWeight={700} fontSize={22} letterSpacing="1.5" fill="#E6EAEE">{label}</text> : null}
         </g>
       );
     };
