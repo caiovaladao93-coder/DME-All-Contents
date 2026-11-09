@@ -55,4 +55,7 @@ Repositório de conteúdo da **DME Technology**: roteiros e vídeos curtos (Reel
 - `video/reels-versao-da-verdade/`: primeiro vídeo (descartado).
 - `video/brand/dme-logo.svg`: logo vetorial.
 - `video/institucional-80s/`: filme institucional de 80 s em **Remotion** (React/TS), com componentes por cena, legendas, SRT e capa. Leia o `README.md` e o `ASSETS-PENDENTES.md` dessa pasta, que listam as fotos e o áudio que ainda faltam. Para peças longas ou com fotografia, prefira esse projeto como base. Para Reels curtos, use o modelo HTML.
-- Bancos de imagem (Pexels e Unsplash) são bloqueados no ambiente cloud. Sem fotos fornecidas pelo usuário, use ilustrações vetoriais sem pessoas e registre o que falta.
+- **Pexels:** o ambiente `dme-all-contents` libera `images.pexels.com`, `videos.pexels.com` e `www.pexels.com`. Busca no site (403) e API (a emissão de chaves está pausada) **não funcionam**. O usuário envia links, e eu extraio o número do item:
+  - foto: `https://images.pexels.com/photos/<ID>/pexels-photo-<ID>.jpeg`;
+  - vídeo: `https://www.pexels.com/download/video/<ID>/` (redireciona para o MP4).
+  Em vídeos com pessoas, as pessoas não podem ser apresentadas como equipe ou clientes da DME. Unsplash continua bloqueado. Sem links, use ilustrações vetoriais sem pessoas.
