@@ -1,26 +1,10 @@
 == ffprobe
-stream|codec_name=h264|profile=High|codec_type=video|width=1920|height=1080|pix_fmt=yuv420p|r_frame_rate=30/1|nb_frames=3445
-stream|codec_name=aac|profile=LC|codec_type=audio|sample_rate=48000|channels=2|r_frame_rate=0/0|nb_frames=5383
-format|duration=114.900000|size=46795435
-== Loudness (EBU R128) — após normalização em 2 passadas (alvo -14 LUFS, pico real ≤ -1,5 dBTP)
-    I:         -14.0 LUFS
-    LRA:         6.3 LU
-    Peak:       -2.3 dBFS
-== Trechos de fala (silencedetect -35 dB)
-silence_start: 0	silence_end: 4.50146
-silence_start: 8.07923	silence_end: 8.93467
-silence_start: 15.8022	silence_end: 17.6792
-silence_start: 25.6954	silence_end: 28.2757
-silence_start: 35.705	silence_end: 36.9271
-silence_start: 52.2158	silence_end: 53.7349
-silence_start: 68.1767	silence_end: 70.0683
-silence_start: 75.4633	silence_end: 79.449
-silence_start: 82.833	silence_end: 88.3759
-silence_start: 98.5484	silence_end: 101.085
-silence_start: 102.241	silence_end: 103.035
-silence_start: 106.447	silence_end: 107.023
-silence_start: 109.24	silence_end: 110.128
-silence_start: 113.742	silence_end: 114.9
-== QA de movimento: quadros 3445 | trechos parados > 1 s: []
-== Locução: ElevenLabs Guilherme (CS07DI8x8kLXeSktyWLG), eleven_multilingual_v2, stab 0.6 / sim 0.8 / style 0.12 / boost / speed 0.94; 9 falas, sem aceleração
-== Legendas: tempos das palavras do alinhamento real (convert_with_timestamps)
+stream|codec_name=h264|profile=High|codec_type=video|width=1920|height=1080|pix_fmt=yuv420p|r_frame_rate=30/1|nb_frames=3421
+stream|codec_name=aac|profile=LC|codec_type=audio|sample_rate=48000|channels=2|r_frame_rate=0/0|nb_frames=5347
+format|duration=114.048000|size=47205854
+== Loudness (EBU R128, mix final voz+trilha+efeitos, 2 passadas)
+    I:         -14.5 LUFS
+    LRA:         5.1 LU
+    Peak:       -1.8 dBFS
+== QA de movimento: quadros 3421 | trechos parados > 1 s: []
+== Mix: nível médio durante falas -14.2 dBFS | só trilha entre falas -20.8 dBFS
