@@ -15,9 +15,23 @@ Este vídeo foi feito com a skill `brag-slim` (github.com/latent-spaces/brag), c
 
 ## Plano
 
-- **Formato:** paisagem 1920×1080, 30 fps, 24 s.
+- **Formato:** paisagem 1920×1080, 30 fps, 32 s com locução (a versão sem voz tinha 24 s).
 - **Trilha:** 120 BPM (batida de 0,5 s, compasso de 2 s), em Fá maior, como a família editorial do manual. O estalo das plaquinhas é a percussão, quantizado em semicolcheias na mesma grade. Todo corte cai numa batida.
-- **Sem voz.** É o padrão da skill. O manual exige ElevenLabs quando há locução, e a voz do Guilherme pode ser adicionada se o cliente quiser.
+- **Locução:** voz do Guilherme no ElevenLabs (`eleven_multilingual_v2`, mesmos ajustes do institucional: stability 0.6, similarity 0.8, style 0.12, speed 0.94). Foram geradas 3 tomadas por fala, e a mais limpa foi escolhida por medição (`scripts/escolher_take.py`). A voz não foi acelerada. Para caber cada fala, o vídeo ganhou pausas em momentos parados, em múltiplos de 0,5 s para manter a grade de batidas, e o caos ficou mais lento (`WARP` no `video.html` e no `scripts/trilha.py`).
+
+### Falas (tempos de saída)
+
+| Tempo | Fala |
+|---|---|
+| 0,35 | Seu escritório é uma estação. |
+| 3,35 | Cada cliente tem um destino. E cada caso, uma etapa diferente. |
+| 8,60 | Sem sistema, o painel vira caos. |
+| 11,90 | No Previdenciário Geral, cada cliente aparece na etapa certa. |
+| 17,40 | No Maternidade Legal, você acompanha do protocolo à concessão. |
+| 22,45 | Próxima parada: ADV Station. |
+| 29,30 | Cada cliente no trilho certo. (depois do jingle) |
+
+Na versão narrada, as cenas começam em 0 · 3,0 · 8,5 · 11,5 · 17,0 · 22,0 · 25,5 e o vídeo termina em 32,0. A tabela abaixo traz os tempos da composição original, sem as pausas.
 
 | Tempo | Cena | O que acontece |
 |---|---|---|
@@ -33,5 +47,6 @@ Este vídeo foi feito com a skill `brag-slim` (github.com/latent-spaces/brag), c
 
 - **Estalos:** 6.969 eventos de plaquinha exportados do próprio `video.html` (`work/eventos.json`), cada um com um clique sintetizado (ruído + "tic" ressonante). Os estalos sincronizam com a imagem por construção.
 - **Trilha:** procedural em `scripts/trilha.py`. Pad F · Dm · B♭ · C, baixo e bumbo nas batidas a partir de 3,0 s, subida de ruído no caos, "virada" (sopro e batida) nas trocas de painel e sinos dourados nos anéis (C5 → E5 → A5).
-- **Jingle:** o oficial da série a partir de 19,0 s, nivelado 1 dB abaixo do corpo do vídeo. A trilha sai antes de ele entrar.
-- **Master:** −14,0 LUFS, pico real de −1,3 dBTP (loudnorm linear em 2 passos).
+- **Voz e mixagem:** a cama (trilha e estalos) abaixa 8 dB sob a voz, com ataque de 150 ms e liberação de 500 ms.
+- **Jingle:** o oficial da série a partir de 25,5 s, cerca de 5 dB abaixo da voz, como no institucional. A trilha sai antes de ele entrar, e a última fala vem depois dele.
+- **Master:** −14,5 LUFS, pico real de −2,1 dBTP (loudnorm linear em 2 passos).

@@ -1,0 +1,27 @@
+1
+00:00:00,350 --> 00:00:02,365
+Seu escritório é uma estação.
+
+2
+00:00:03,350 --> 00:00:08,244
+Cada cliente tem um destino. E cada caso, uma etapa diferente.
+
+3
+00:00:08,600 --> 00:00:11,265
+Sem sistema, o painel vira caos.
+
+4
+00:00:11,900 --> 00:00:16,330
+No Previdenciário Geral, cada cliente aparece na etapa certa.
+
+5
+00:00:17,400 --> 00:00:21,597
+No Maternidade Legal, você acompanha do protocolo à concessão.
+
+6
+00:00:22,450 --> 00:00:25,115
+Próxima parada: ADV Station.
+
+7
+00:00:29,300 --> 00:00:31,315
+Cada cliente no trilho certo.

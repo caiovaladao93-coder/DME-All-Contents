@@ -67,6 +67,13 @@ html,body{width:1920px;height:1080px;overflow:hidden;background:#0B1528}
 const DUR = 24.0;
 const S = {hook: 0, partidas: 3.0, caos: 7.5, pg: 9.5, ml: 13.5, embarque: 17.0, vin: 19.0};
 const FD = 0.06; // duração de um estalo de plaquinha
+// Linha do tempo com locução: pausas (múltiplos de 0,5 s, mantém a grade de batidas) em momentos parados,
+// e o caos desacelerado em vez de congelado. Nós = [tempo de saída, tempo original].
+const WARP = [[0, 0], [7.2, 7.2], [8.2, 7.2], [8.5, 7.5], [11.5, 9.5], [15.2, 13.2], [16.7, 13.2], [19.7, 16.2], [21.2, 16.2],
+  [23.5, 18.5], [25.0, 18.5], [30.4, 23.9], [31.9, 23.9], [32.0, 24.0]];
+const OUT_DUR = 32.0;
+const orig = T => { for (let i = 1; i < WARP.length; i++) { const [a, x] = WARP[i - 1], [b, y] = WARP[i]; if (T <= b) return b === a ? y : x + (y - x) * (T - a) / (b - a); } return 24.0; };
+const outT = t => { for (let i = 1; i < WARP.length; i++) { const [a, x] = WARP[i - 1], [b, y] = WARP[i]; if (y > x && t <= y) return a + (b - a) * (t - x) / (y - x); } return OUT_DUR; };
 
 // ───────────────────────── utilitários ─────────────────────────
 const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
@@ -250,7 +257,7 @@ function vinheta(t) {
 const bw = document.getElementById('boardWrap'), sw = document.getElementById('screenWrap'), card = document.getElementById('card');
 const t2 = document.getElementById('t2'), lab = document.getElementById('boardLabel'), sLabel = document.getElementById('sLabel'), sTitle = document.getElementById('sTitle');
 function render(T) {
-  const t = T === 0 ? 2.4 : T; // quadro 0 = capa (gancho já assentado)
+  const t = T === 0 ? 2.4 : orig(T); // quadro 0 = capa (gancho já assentado)
   const vin = t >= S.vin;
   document.getElementById('vin').style.display = vin ? 'block' : 'none';
   if (vin) { vinheta(t - S.vin); return; }
@@ -327,7 +334,7 @@ window.flipEvents = () => {
   for (let i = 0; i < 6; i++) ev.push({t: 10.5 + i * .5, k: 'tick'});
   [14.5, 15.0, 15.5].forEach(t => ev.push({t, k: 'anel'}));
   ev.push({t: 7.0, k: 'anel'}, {t: 13.0, k: 'anel'}, {t: S.vin, k: 'jingle'});
-  return ev.sort((a, b) => a.t - b.t);
+  return ev.map(e => ({...e, t: +outT(e.t).toFixed(4)})).sort((a, b) => a.t - b.t);
 };
 Promise.all([document.fonts.load("800 30px 'Nunito Sans'"), document.fonts.load("600 30px Gelasio"), document.fonts.load("700 30px 'Nunito Sans'"),
   new Promise(r => { const a = new Image(), b = new Image(); let n = 0; a.onload = b.onload = () => ++n === 2 && r(); a.src = SHOTS.pg.src; b.src = SHOTS.ml.src; })])

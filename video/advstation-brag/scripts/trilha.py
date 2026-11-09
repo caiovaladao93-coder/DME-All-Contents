@@ -7,7 +7,7 @@ import json, subprocess, sys
 import numpy as np
 
 SR = 48000
-DUR = 24.0
+DUR = 32.0
 BEAT = 0.5
 N = int(SR * DUR)
 rng = np.random.default_rng(7)
@@ -95,9 +95,33 @@ def whoosh(dur, up=True):
     return out * (np.sin(np.pi * t / dur) ** 2)
 
 
+# Linha do tempo com locução (mesmos nós do video.html: [saída, original]).
+WARP = [[0, 0], [7.2, 7.2], [8.2, 7.2], [8.5, 7.5], [11.5, 9.5], [15.2, 13.2], [16.7, 13.2], [19.7, 16.2], [21.2, 16.2],
+        [23.5, 18.5], [25.0, 18.5], [30.4, 23.9], [31.9, 23.9], [32.0, 24.0]]
+
+
+def out_t(t):
+    for (a, x), (b, y) in zip(WARP, WARP[1:]):
+        if y > x and t <= y:
+            return a + (b - a) * (t - x) / (y - x)
+    return DUR
+
+
+T_CAOS, T_CAOS_FIM, T_VIN = out_t(7.5), out_t(9.5), out_t(19.0)  # 8,5 · 11,5 · 25,5
+
+# Locução (Guilherme): início de cada fala em segundos de saída
+FALAS = [('gancho', 0.35), ('partidas', 3.35), ('caos', 8.6), ('pg', 11.9), ('ml', 17.4), ('embarque', 22.45), ('assinatura', 29.3)]
+
+
+def load(path):
+    raw = subprocess.run(['ffmpeg', '-v', 'error', '-i', path, '-ac', '1', '-ar', str(SR), '-f', 'f32le', '-'], capture_output=True, check=True).stdout
+    return np.frombuffer(raw, dtype=np.float32).astype(np.float64)
+
+
 def main(ev_path, jingle_path, out_path):
     ev = json.load(open(ev_path))
-    clat = np.zeros(N); mus = np.zeros(N); fx = np.zeros(N)
+    clat = np.zeros(N); mus = np.zeros(N); fx = np.zeros(N); voz = np.zeros(N); fala = np.zeros(N)
+    aneis = iter([81, 81, 72, 76, 81])
 
     for i, e in enumerate(ev):
         if e['k'] == 'flap':
@@ -107,47 +131,66 @@ def main(ev_path, jingle_path, out_path):
         elif e['k'] == 'tick':
             add(fx, flap(True) * 1.2, e['t'], .55); add(fx, bell(84, .5), e['t'], .10)
         elif e['k'] == 'anel':
-            add(fx, bell({7.0: 81, 13.0: 81, 14.5: 72, 15.0: 76, 15.5: 81}.get(round(e['t'], 1), 77)), e['t'], .32)
+            add(fx, bell(next(aneis, 77)), e['t'], .32)
         elif e['k'] == 'virada':
             add(fx, whoosh(.45), e['t'] - .2, .35); add(fx, kick(), e['t'] + .3, .7)
-    # compressão suave do barulho das plaquinhas (densidade muda muito)
     clat = np.tanh(clat * 1.6) / 1.6
 
     # harmonia por compasso (2 s): F · Dm · B♭ · C
     prog = [[53, 57, 60, 65], [50, 57, 62, 65], [46, 58, 62, 65], [48, 55, 60, 64]]
     roots = [41, 38, 34, 36]
-    for bar in range(int(19 / 2) + 1):
+    for bar in range(int(T_VIN / 2) + 1):
         t0 = bar * 2.0
-        if t0 >= 19.0: break
-        ch = prog[bar % 4]; g = .16
-        add(mus, pad(ch, min(2.25, 19.0 - t0 + .2)), t0, g)
+        if t0 >= T_VIN: break
+        add(mus, pad(prog[bar % 4], min(2.25, T_VIN - t0 + .2)), t0, .16)
         if t0 >= 3.0:
             for b in range(4):
                 tb = t0 + b * BEAT
-                if tb >= 19.0: break
-                if 9.0 <= tb < 9.5: continue  # respiro antes da virada
+                if tb >= T_VIN: break
+                if T_CAOS_FIM - .5 <= tb < T_CAOS_FIM: continue  # respiro antes da virada
                 add(mus, bass(roots[bar % 4]), tb, .30)
                 if b in (0, 2): add(mus, kick(), tb, .45)
-    # subida no caos (7,5 → 9,5)
-    add(fx, whoosh(2.0) * np.linspace(.2, 1, int(SR * 2.0)), 7.5, .30)
-    # trilha sai antes do jingle
+    L = T_CAOS_FIM - T_CAOS
+    add(fx, whoosh(L) * np.linspace(.2, 1, int(SR * L)), T_CAOS, .30)
     tt = np.arange(N) / SR
-    gate = np.clip((19.0 - tt) / .12, 0, 1)
-    mix = (mus + fx + clat * .9) * gate
+    bed = (mus + fx + clat * .9) * np.clip((T_VIN - tt) / .12, 0, 1)
 
-    # jingle oficial da série no início da vinheta, nivelado pelo corpo do vídeo
-    j = subprocess.run(['ffmpeg', '-v', 'error', '-i', jingle_path, '-ac', '1', '-ar', str(SR), '-f', 'f32le', '-'], capture_output=True, check=True).stdout
-    jin = np.frombuffer(j, dtype=np.float32).astype(np.float64)
-    body = mix[int(3 * SR):int(17 * SR)]
+    # locução: posiciona as falas e monta o envelope de presença de voz
+    for nome, t0 in FALAS:
+        x = load(f'voz/{nome}.mp3')
+        add(voz, x, t0)
+        a = json.load(open(f'voz/{nome}.json'))['alignment']
+        i0, i1 = int((t0 + a['character_start_times_seconds'][0]) * SR), int((t0 + a['character_end_times_seconds'][-1]) * SR)
+        fala[i0:i1] = 1
+    # ducking: −8 dB sob a voz (ataque 150 ms, liberação 500 ms)
+    env_d = np.zeros(N); g = 0.0; aa, rr = np.exp(-1 / (.15 * SR)), np.exp(-1 / (.5 * SR))
+    for k in range(N):
+        c = aa if fala[k] > g else rr
+        g = c * g + (1 - c) * fala[k]; env_d[k] = g
+    duck = 10 ** (-8 * env_d / 20)
     rms = lambda x: np.sqrt(np.mean(x ** 2) + 1e-12)
-    jin *= rms(body) / rms(jin) * 10 ** (-1.0 / 20)
-    add(mix, jin, 19.0)
-    # cauda: acorde de Fá bem baixo enquanto o título da vinheta fica na tela
-    add(mix, pad([53, 57, 60, 65], 2.4), 21.6, .05)
+    vr = rms(voz[fala > 0])
+    br = rms(bed[int(3 * SR):int(T_VIN * SR)])
+    voz *= (br * 10 ** (7 / 20)) / vr  # voz 7 dB acima da cama (15 dB acima sob o ducking)
+    mix = bed * duck + voz
+
+    # jingle oficial da série: ~5 dB abaixo da voz, como no institucional
+    jin = load(jingle_path)
+    jin *= rms(voz[fala > 0]) / rms(jin) * 10 ** (-5.0 / 20)
+    add(mix, jin, T_VIN)
+    add(mix, pad([53, 57, 60, 65], 3.0), T_VIN + 3.6, .05)
     mix *= np.clip((DUR - tt) / .25, 0, 1)
     mix /= np.max(np.abs(mix)) * 1.12
     st = np.stack([mix, mix], 1).astype(np.float32)
     subprocess.run(['ffmpeg', '-y', '-v', 'error', '-f', 'f32le', '-ar', str(SR), '-ac', '2', '-i', '-', out_path], input=st.tobytes(), check=True)
+    with open(out_path.rsplit('/', 1)[0] + '/../marcas-som.txt', 'w') as f:
+        f.write('Marcas de som (s) · ADV STATION /brag narrado\n')
+        for nome, t0 in FALAS:
+            a = json.load(open(f'voz/{nome}.json'))['alignment']
+            f.write(f"{t0:6.2f}–{t0 + a['character_end_times_seconds'][-1]:6.2f}  voz {nome}: {json.load(open(f'voz/{nome}.json'))['text']}\n")
+        f.write(f"{T_CAOS:6.2f}–{T_CAOS_FIM:6.2f}  subida (caos)\n")
+        for e in ev:
+            if e['k'] in ('virada', 'anel', 'tick', 'jingle'): f.write(f"{e['t']:6.2f}         {e['k']}\n")
 
 
 if __name__ == '__main__':
