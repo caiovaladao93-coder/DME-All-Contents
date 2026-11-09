@@ -21,5 +21,5 @@ export const AUDIO = {
   // voice_id CS07DI8x8kLXeSktyWLG · eleven_multilingual_v2 · stability 0.6 · similarity_boost 0.8 ·
   // style 0.12 · use_speaker_boost true · speed 0.94 · convert_with_timestamps (áudio + alinhamento).
   narration: null as string | null,
-  music: null as string | null,
+  music: 'assets/audio/trilha.flac' as string | null, // procedural (scripts/trilha.py) + efeitos.flac
 };

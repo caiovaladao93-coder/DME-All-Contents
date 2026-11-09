@@ -2,14 +2,15 @@ import {SCENES, SceneKey, VOICE_OFFSET} from './storyboard';
 import {hasVoz, vozWords} from './voz';
 
 /** Narração oficial (prompt §5), uma fala por cena (manual §01.5). Tempos = alinhamento REAL da ElevenLabs. */
-export const NARRATION: Array<{scene: SceneKey; text: string; caption?: boolean}> = [
+// speed: ajuste de velocidade por fala (manual: preservar velocidades específicas da cena). Reticências = pausa natural.
+export const NARRATION: Array<{scene: SceneKey; text: string; caption?: boolean; speed?: number}> = [
   {scene: 'opening', text: 'A advocacia previdenciária não segue um caminho único. Cada benefício exige atenção a etapas, documentos, pessoas e decisões diferentes.'},
   {scene: 'complexity', text: 'E quando tudo isso fica espalhado em planilhas, mensagens e controles paralelos, acompanhar a operação se torna mais difícil.'},
   {scene: 'brand', text: 'Foi para essa realidade que nasceu a ADV Station: uma família de soluções de gestão especializada.'},
   {scene: 'maternidade', text: 'Para quem atua com salário-maternidade, o Maternidade Legal ajuda a organizar clientes, informações e o acompanhamento de cada caso, do protocolo ao deferimento ou recurso, de acordo com os fluxos do sistema.'},
   {scene: 'previdenciario', text: 'Para escritórios que trabalham com aposentadorias, benefícios por incapacidade, pensão por morte e auxílio-acidente, o Previdenciário Geral oferece uma estrutura de gestão alinhada a essas rotinas.'},
-  {scene: 'twoProducts', text: 'Em ambos, o foco é transformar informações dispersas em processos acompanháveis,'},
-  {scene: 'value', text: 'com mais clareza para quem atende, opera e coordena a equipe.'},
+  {scene: 'twoProducts', text: 'Em ambos, o foco é transformar informações dispersas em processos acompanháveis.'},
+  {scene: 'value', text: 'Com mais clareza... para quem atende, opera... e coordena a equipe.', speed: 0.85},
   {scene: 'human', text: 'Porque nenhuma ferramenta substitui a análise e a experiência jurídica. A tecnologia deve apoiar o trabalho, não complicá-lo.'},
   {scene: 'signature', text: 'ADV Station. Duas soluções especializadas para um mesmo compromisso: organizar a advocacia previdenciária. Conheça o Maternidade Legal e o Previdenciário Geral.', caption: false},
 ];
@@ -24,7 +25,7 @@ const pauseAfter = (w: string) => (/[.:;!?]$/.test(w) ? 0.28 : /,$/.test(w) ? 0.
 
 const wordsFor = (n: (typeof NARRATION)[number]): Word[] => {
   const base = SCENES[n.scene].from + (VOICE_OFFSET[n.scene] ?? 0);
-  if (hasVoz(n.scene)) return vozWords(n.scene).map((v) => ({w: v.w, start: base + Math.round(v.t0 * 30), end: base + Math.round(v.t1 * 30)}));
+  if (hasVoz(n.scene)) return vozWords(n.scene).map((v) => ({w: v.w.replace(/\.\.\.|…/g, ''), start: base + Math.round(v.t0 * 30), end: base + Math.round(v.t1 * 30)}));
   let t = base / 30;
   return n.text.split(' ').map((w) => { const s = t; t += SEC_PER_WORD; const e = t; t += pauseAfter(w); return {w, start: Math.round(s * 30), end: Math.round(e * 30)}; });
 };

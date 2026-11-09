@@ -44,6 +44,8 @@ export const ADVStationFilm: React.FC = () => (
         <Audio src={staticFile(`assets/audio/falas/${k}.mp3`)} />
       </Sequence>
     ))}
-    {AUDIO.music ? <Audio src={staticFile(AUDIO.music)} volume={0.3} /> : null}
+    {/* trilha procedural (com ducking −9 dB sob a voz) e efeitos das vinhetas — scripts/trilha.py */}
+    <Audio src={staticFile('assets/audio/trilha.flac')} />
+    <Audio src={staticFile('assets/audio/efeitos.flac')} />
   </AbsoluteFill>
 );

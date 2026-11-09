@@ -45,12 +45,12 @@
     },
     {
       "cena": "twoProducts",
-      "texto": "Em ambos, o foco é transformar informações dispersas em processos acompanháveis,",
+      "texto": "Em ambos, o foco é transformar informações dispersas em processos acompanháveis.",
       "legenda": true
     },
     {
       "cena": "value",
-      "texto": "com mais clareza para quem atende, opera e coordena a equipe.",
+      "texto": "Com mais clareza... para quem atende, opera... e coordena a equipe.",
       "legenda": true
     },
     {
@@ -110,73 +110,73 @@
     {
       "cena": "brand",
       "inicio": 920,
-      "fim": 1025,
+      "fim": 1019,
       "texto": "ADV Station: uma família de soluções de"
     },
     {
       "cena": "brand",
-      "inicio": 1025,
-      "fim": 1080,
+      "inicio": 1019,
+      "fim": 1072,
       "texto": "gestão especializada."
     },
     {
       "cena": "maternidade",
-      "inicio": 1103,
-      "fim": 1188,
+      "inicio": 1094,
+      "fim": 1179,
       "texto": "Para quem atua com salário-maternidade,"
     },
     {
       "cena": "maternidade",
-      "inicio": 1188,
-      "fim": 1301,
+      "inicio": 1179,
+      "fim": 1292,
       "texto": "o Maternidade Legal ajuda a organizar clientes,"
     },
     {
       "cena": "maternidade",
-      "inicio": 1301,
-      "fim": 1405,
+      "inicio": 1292,
+      "fim": 1396,
       "texto": "informações e o acompanhamento de cada caso,"
     },
     {
       "cena": "maternidade",
-      "inicio": 1405,
-      "fim": 1504,
+      "inicio": 1396,
+      "fim": 1495,
       "texto": "do protocolo ao deferimento ou recurso,"
     },
     {
       "cena": "maternidade",
-      "inicio": 1504,
-      "fim": 1585,
+      "inicio": 1495,
+      "fim": 1576,
       "texto": "de acordo com os fluxos do sistema."
     },
     {
       "cena": "previdenciario",
-      "inicio": 1610,
-      "fim": 1705,
+      "inicio": 1601,
+      "fim": 1699,
       "texto": "Para escritórios que trabalham com aposentadorias,"
     },
     {
       "cena": "previdenciario",
-      "inicio": 1705,
-      "fim": 1771,
+      "inicio": 1699,
+      "fim": 1766,
       "texto": "benefícios por incapacidade,"
     },
     {
       "cena": "previdenciario",
-      "inicio": 1771,
-      "fim": 1863,
+      "inicio": 1766,
+      "fim": 1859,
       "texto": "pensão por morte e auxílio-acidente,"
     },
     {
       "cena": "previdenciario",
-      "inicio": 1865,
-      "fim": 1960,
+      "inicio": 1860,
+      "fim": 1956,
       "texto": "o Previdenciário Geral oferece uma estrutura de"
     },
     {
       "cena": "previdenciario",
-      "inicio": 1960,
-      "fim": 2055,
+      "inicio": 1956,
+      "fim": 2054,
       "texto": "gestão alinhada a essas rotinas."
     },
     {
@@ -188,67 +188,67 @@
     {
       "cena": "twoProducts",
       "inicio": 2179,
-      "fim": 2280,
-      "texto": "dispersas em processos acompanháveis,"
+      "fim": 2265,
+      "texto": "dispersas em processos acompanháveis."
     },
     {
       "cena": "value",
       "inicio": 2377,
-      "fim": 2438,
-      "texto": "com mais clareza para quem atende,"
+      "fim": 2488,
+      "texto": "Com mais clareza para quem atende,"
     },
     {
       "cena": "value",
-      "inicio": 2438,
-      "fim": 2501,
+      "inicio": 2488,
+      "fim": 2599,
       "texto": "opera e coordena a equipe."
     },
     {
       "cena": "human",
       "inicio": 2649,
-      "fim": 2763,
+      "fim": 2760,
       "texto": "Porque nenhuma ferramenta substitui a análise e"
     },
     {
       "cena": "human",
-      "inicio": 2763,
-      "fim": 2816,
+      "inicio": 2760,
+      "fim": 2811,
       "texto": "a experiência jurídica."
     },
     {
       "cena": "human",
-      "inicio": 2832,
-      "fim": 2922,
+      "inicio": 2823,
+      "fim": 2900,
       "texto": "A tecnologia deve apoiar o trabalho,"
     },
     {
       "cena": "human",
-      "inicio": 2922,
-      "fim": 2966,
+      "inicio": 2900,
+      "fim": 2942,
       "texto": "não complicá-lo."
     },
     {
       "cena": "signature",
-      "inicio": 3030,
-      "fim": 3164,
+      "inicio": 3006,
+      "fim": 3140,
       "texto": "ADV Station. Duas soluções especializadas para um"
     },
     {
       "cena": "signature",
-      "inicio": 3164,
-      "fim": 3291,
+      "inicio": 3140,
+      "fim": 3267,
       "texto": "mesmo compromisso: organizar a advocacia previdenciária."
     },
     {
       "cena": "signature",
-      "inicio": 3300,
-      "fim": 3399,
+      "inicio": 3276,
+      "fim": 3375,
       "texto": "Conheça o Maternidade Legal e o Previdenciário"
     },
     {
       "cena": "signature",
-      "inicio": 3399,
-      "fim": 3429,
+      "inicio": 3375,
+      "fim": 3405,
       "texto": "Geral."
     }
   ]

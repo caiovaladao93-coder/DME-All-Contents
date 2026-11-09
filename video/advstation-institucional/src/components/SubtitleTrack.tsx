@@ -19,7 +19,7 @@ export const SubtitleTrack: React.FC = () => {
       <div style={{fontFamily: SANS, fontWeight: 700, fontSize: 42, lineHeight: 1.18, color: C.white, padding: '10px 26px', borderRadius: 12,
         background: 'rgba(14,27,51,.72)', textAlign: 'center', maxWidth: 1500}}>
         {c.words.map((w, i) => {
-          const gold = GOLD_WORDS.has(w.w) || GOLD_WORDS.has(w.w.replace(/[.,:;]$/, ''));
+          const gold = GOLD_WORDS.has(w.w) || GOLD_WORDS.has(w.w.replace(/[.,:;…]+$/, ''));
           const said = f >= w.start - 1;
           return <span key={i} style={{color: gold && said ? C.gold : undefined, opacity: said ? 1 : 0.7}}>{w.w}{i < c.words.length - 1 ? ' ' : ''}</span>;
         })}

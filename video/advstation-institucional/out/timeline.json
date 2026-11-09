@@ -1,0 +1,100 @@
+{
+ "fps": 30,
+ "total": 114.03333333333333,
+ "scenes": {
+  "intro": {
+   "start": 0,
+   "dur": 4
+  },
+  "opening": {
+   "start": 4,
+   "dur": 12.933333333333334
+  },
+  "complexity": {
+   "start": 16.933333333333334,
+   "dur": 10
+  },
+  "brand": {
+   "start": 26.933333333333334,
+   "dur": 9.333333333333334
+  },
+  "maternidade": {
+   "start": 36.266666666666666,
+   "dur": 16.833333333333332
+  },
+  "previdenciario": {
+   "start": 53.1,
+   "dur": 15.933333333333334
+  },
+  "twoProducts": {
+   "start": 69.03333333333333,
+   "dur": 10
+  },
+  "value": {
+   "start": 79.03333333333333,
+   "dur": 9
+  },
+  "human": {
+   "start": 88.03333333333333,
+   "dur": 10.566666666666666
+  },
+  "signature": {
+   "start": 98.6,
+   "dur": 15.433333333333334
+  }
+ },
+ "voz": [
+  {
+   "cena": "opening",
+   "start": 4.466666666666667,
+   "dur": 11.656
+  },
+  {
+   "cena": "complexity",
+   "start": 17.6,
+   "dur": 8.452
+  },
+  {
+   "cena": "brand",
+   "start": 28.266666666666666,
+   "dur": 7.198
+  },
+  {
+   "cena": "maternidade",
+   "start": 36.53333333333333,
+   "dur": 15.743
+  },
+  {
+   "cena": "previdenciario",
+   "start": 53.43333333333333,
+   "dur": 14.768
+  },
+  {
+   "cena": "twoProducts",
+   "start": 70.03333333333333,
+   "dur": 5.201
+  },
+  {
+   "cena": "value",
+   "start": 79.3,
+   "dur": 7.059
+  },
+  {
+   "cena": "human",
+   "start": 88.36666666666666,
+   "dur": 9.427
+  },
+  {
+   "cena": "signature",
+   "start": 100.26666666666667,
+   "dur": 12.957
+  }
+ ],
+ "marks": {
+  "intro_t0": 0,
+  "intro_wipe": 3.3333333333333335,
+  "final_dot": 99.86666666666666,
+  "final_t0": 100.73333333333333,
+  "final_cta": 109.06666666666666
+ }
+}
