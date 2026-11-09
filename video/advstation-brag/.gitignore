@@ -7,3 +7,4 @@ brag-output/work/video-mudo.mp4
 brag-output/work/render.log
 brag-output/work/contato*.png
 voz/takes/
+__pycache__/
