@@ -1,0 +1,45 @@
+MARCAS DE SOM E LOCUÇÃO · DME Reels "Se você tirar férias" · 34 s · 30 fps · 1080x1920
+Trilha: instrumental licenciada, 104 BPM (1 batida ≈ 0,58 s), elegante e com pulso.
+Energia: baixa e tensa até 7,9 s · silêncio de 1 batida em 7,95 s · entrada cheia em 8,05 ("Agora") · sobe até 25,9 · respiro emocional de 25,9 a 30,2 · assinatura.
+Mix final: -14 LUFS, pico real < -1 dBTP; trilha ~20 dB abaixo da voz.
+
+LOCUÇÃO OPCIONAL (o vídeo funciona sem ela; todo o texto está na tela)
+0,05  "Se você tirar férias, sua empresa para?"
+2,75  "Você aprova."
+3,60  "Você cobra."
+4,50  "Você lembra todo mundo."
+5,75  "Isso não é dedicação."
+6,80  "É gargalo."
+8,05  "Agora quem segura é o processo."
+13,05 "Diagnóstico, mapeamento, padronização, automação."
+17,65 "No automático."
+19,75 "Segunda. Quarta. Sexta."
+25,95 "Então, enquanto você cuida da estratégia,"
+28,05 "o processo cuida da rotina."
+31,50 "Envie COMERCIAL no direct."
+
+EFEITOS
+0,20  calendário entra (whoosh grave)
+0,55  barra "Férias" desliza (swoosh curto)
+1,35  alerta "Aguardando você" cai sobre o calendário (impacto + tremor)
+2,85 / 3,70 / 4,60  notificações (3 pings discretos, no tempo)
+4,95 / 5,15  mais duas notificações (pings rápidos)
+5,00  vibração de celular (buzz contínuo até 5,55)
+5,95 a 6,90  blocos caindo no funil (8 toques de madeira/metal)
+6,80  "É gargalo." (impacto grave)
+7,95  íris clara abre (silêncio de 1 batida antes)
+8,05  "Agora" (hit com a trilha entrando cheia)
+9,45  cortina escura sobe (whoosh)
+9,80 / 10,35 / 10,90 / 11,45  caixas do fluxo acendem (4 cliques ascendentes)
+13,10 / 14,25 / 15,40 / 16,55  troca de item da lista (tick)
+16,70  interruptor do cartão liga (clique)
+18,35  interruptor grande liga (clique + brilho sonoro)
+19,75 / 20,95 / 22,15  troca de dia (whoosh curto)
+20,30 / 21,30 / 22,50  notificações no celular (ping)
+23,45 a 25,30  verbos rolando (tick a cada 0,62 s)
+25,95  chips de vida flutuam (pad suave)
+28,20  chip "Férias" acende (sino suave)
+30,30 a 30,70  peças do logo se encaixam (4 cliques metálicos)
+31,20  reflexo no logo (shimmer)
+31,50  botão do CTA (impacto suave)
+33,50  quadro final parado
