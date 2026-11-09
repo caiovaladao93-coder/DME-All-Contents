@@ -21,7 +21,7 @@ export const Scene01Hook: React.FC = () => {
       <CinematicImage src={ASSETS.images.s01 ?? undefined} dur={dur} cam={{s0: 1, s1: 1.06, x0: 0, x1: -30}}>
         <OfficeNight />
       </CinematicImage>
-      <AbsoluteFill style={{background: `rgba(6,7,8,${(0.25 + darken).toFixed(3)})`}} />
+      <AbsoluteFill style={{background: `rgba(6,7,8,${((ASSETS.images.s01 ? 0.08 : 0.25) + darken).toFixed(3)})`}} />
       {/* área de leitura: escurece o centro sem apagar a luz do monitor */}
       <AbsoluteFill style={{background: 'radial-gradient(ellipse 60% 16% at 50% 50%, rgba(6,7,8,.72), rgba(6,7,8,0) 100%)'}} />
 

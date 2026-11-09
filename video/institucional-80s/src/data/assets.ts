@@ -6,7 +6,9 @@
  */
 export const ASSETS = {
   images: {
-    s01: null as string | null, // profissional diante do monitor, close lateral 45°, 50 mm, luz azul de recorte
+    // Pexels 30284959 (licença Pexels: uso comercial livre). Logo de terceiros no monitor desfocado por rastreamento
+    // (scripts/track.py + scripts/blur.py), cor ajustada para azul-aço. Fonte bruta: public/assets/video/s01-raw.mp4 (fora do git).
+    s01: 'assets/video/s01.mp4' as string | null,
     s02a: null as string | null, // mesa vista de cima (35°), notebook com planilhas, documentos
     s04: null as string | null, // reunião consultiva, 3–4 pessoas, plano médio lateral 30°, 35 mm
     s06a: null as string | null, // profissional com notebook e headset discreto (atendimento)

@@ -4,7 +4,7 @@ O storyboard pede fotografia realista em 8 momentos. Neste ambiente, os bancos d
 
 | Campo | Cena | Foto necessária (direção do storyboard) |
 |---|---|---|
-| `s01` | 01 · 00:00–00:06 | Profissional diante do monitor, close lateral a 45°, 50 mm, profundidade de campo reduzida, monitor iluminando o rosto e luz azul de recorte. Expressão concentrada. |
+| ~~`s01`~~ ✅ Pexels 30284959 | 01 · 00:00–00:06 | Profissional diante do monitor, close lateral a 45°, 50 mm, profundidade de campo reduzida, monitor iluminando o rosto e luz azul de recorte. Expressão concentrada. |
 | `s02a` | 02 · 00:06–00:09 | Mesa profissional vista de cima (35°), notebook com planilhas, documentos, sem marcas nem dados pessoais. |
 | `s04` | 04 · 00:24–00:34 | Reunião consultiva com 3 ou 4 pessoas, plano médio lateral (30°), 35 mm, mesa escura, fluxogramas em papel, luz natural com azul frio. Ninguém olhando para a câmera. |
 | `s06a` | 06 · Atendimento | Profissional com notebook e headset discreto, plano médio lateral, luz azul suave. |

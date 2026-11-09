@@ -1,5 +1,5 @@
 import React from 'react';
-import {AbsoluteFill, Img, staticFile, useCurrentFrame} from 'remotion';
+import {AbsoluteFill, Img, OffthreadVideo, staticFile, useCurrentFrame} from 'remotion';
 import {camera} from '../theme/motion';
 
 /**
@@ -8,13 +8,15 @@ import {camera} from '../theme/motion';
  * renderiza a ilustração vetorial temporária (children). Ver ASSETS-PENDENTES.md.
  */
 export const CinematicImage: React.FC<{
-  src?: string; dur: number; cam?: Parameters<typeof camera>[2]; children?: React.ReactNode; grade?: string;
-}> = ({src, dur, cam, children, grade}) => {
+  src?: string; dur: number; cam?: Parameters<typeof camera>[2]; children?: React.ReactNode; grade?: string; startFrom?: number;
+}> = ({src, dur, cam, children, grade, startFrom = 0}) => {
   const f = useCurrentFrame();
   return (
     <AbsoluteFill style={{overflow: 'hidden'}}>
       <AbsoluteFill style={{transform: camera(f, dur, cam), transformOrigin: '50% 50%'}}>
-        {src ? <Img src={staticFile(src)} style={{width: '100%', height: '100%', objectFit: 'cover'}} /> : children}
+        {src && /\.(mp4|mov|webm)$/i.test(src) ? (
+          <OffthreadVideo src={staticFile(src)} muted startFrom={startFrom} style={{width: '100%', height: '100%', objectFit: 'cover'}} />
+        ) : src ? <Img src={staticFile(src)} style={{width: '100%', height: '100%', objectFit: 'cover'}} /> : children}
       </AbsoluteFill>
       {/* correção de cor comum: preto profundo + azul frio nas sombras */}
       <AbsoluteFill style={{background: grade ?? 'linear-gradient(180deg,rgba(6,7,8,.55) 0%,rgba(6,7,8,.05) 35%,rgba(6,7,8,.1) 65%,rgba(6,7,8,.6) 100%)'}} />

@@ -3,3 +3,4 @@ out/testes/
 out/review/
 out/*.mp4.part
 *.log
+public/assets/video/*-raw.mp4
