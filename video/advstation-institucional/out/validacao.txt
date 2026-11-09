@@ -1,5 +1,5 @@
 == ffprobe
-stream|codec_name=h264|profile=High|width=1920|height=1080|pix_fmt=yuv420p|r_frame_rate=30/1|nb_frames=2700
-format|duration=90.000000|size=32558695
-== QA de movimento: quadros 2700 | trechos parados > 1 s: []
-== Áudio: nenhum (versão de revisão sem locução)
+stream|codec_name=h264|profile=High|width=1920|height=1080|pix_fmt=yuv420p|r_frame_rate=30/1|nb_frames=2850
+format|duration=95.000000|size=40348827
+== QA de movimento: quadros 2850 | trechos parados > 1 s: []
+== Áudio: nenhum (aguardando locução Guilherme)
