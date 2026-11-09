@@ -195,7 +195,7 @@ g = np.empty(N); s = 0.0
 for i in range(N):  # envelope com ataque 150 ms e liberação 500 ms
     tgt = duck[i]; s += (k_att if tgt > s else k_rel) * (tgt - s); g[i] = s
 music *= (1 - (1 - 10 ** (-9 / 20)) * g)[:, None]
-fx *= 10 ** ((voz_lufs - 5 - lufs(fx)) / 20) if np.abs(fx).max() > 0 else 1
+fx *= 10 ** ((voz_lufs - 11 - lufs(fx)) / 20) if np.abs(fx).max() > 0 else 1
 for nm, x in (('trilha', music), ('efeitos', fx)):
     pk = np.abs(x).max()
     if pk > 0.89: x *= 0.89 / pk
