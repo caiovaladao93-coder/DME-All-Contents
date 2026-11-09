@@ -16,13 +16,16 @@ Repositório de conteúdo da **DME Technology**: roteiros e vídeos curtos (Reel
 - **Fontes:** Sora (títulos) e Manrope (interface). Os arquivos woff2 com licença OFL estão em `video/reels-ferias-v2/fonts/`.
 - **Logo:** `video/brand/dme-logo.svg`, um vetor redesenhado a partir do mockup oficial. Não distorcer nem recolorir. A única exceção é a animação de montagem das 4 peças.
 - **Estética:** escura, aço escovado, cinematográfica. **Sem neon**, glow, partículas, emojis, fotos ou pessoas.
-- **CTA padrão:** "Envie COMERCIAL no direct."
+- **CTA padrão:** "Envie COMERCIAL no direct." No institucional: "Converse com a DME."
+- **Slogan:** "Automatizamos processos. Devolvemos tempo."
 
 ## Fatos confirmados pelo cliente (únicas afirmações de produto permitidas)
 
 - O CRM personalizado faz retornos automáticos.
 - O agente de voz com IA atende fora do horário, qualifica, registra no CRM e transfere para uma pessoa da equipe.
 - A DME oferece diagnóstico, mapeamento, padronização e automação de processos.
+- A DME atua com inteligência artificial, automações, integração de sistemas e desenvolvimento de soluções digitais personalizadas.
+- Abordagem: entender os desafios de cada empresa, identificar gargalos e desenvolver soluções sob medida (método Entender → Planejar → Desenvolver).
 
 **Proibido:** inventar métricas, depoimentos, clientes, integrações, telas de produto reais ou garantias. Dados de interface são fictícios e levam o selo "Exemplo ilustrativo". Frases que soem como promessa ("pode marcar as férias", "nunca mais perde cliente") precisam da aprovação do usuário.
 
@@ -51,3 +54,5 @@ Repositório de conteúdo da **DME Technology**: roteiros e vídeos curtos (Reel
 - `video/reels-ferias/`: v1 do mesmo vídeo, com a pasta `audio/` do teste de voz sintética.
 - `video/reels-versao-da-verdade/`: primeiro vídeo (descartado).
 - `video/brand/dme-logo.svg`: logo vetorial.
+- `video/institucional-80s/`: filme institucional de 80 s em **Remotion** (React/TS), com componentes por cena, legendas, SRT e capa. Leia o `README.md` e o `ASSETS-PENDENTES.md` dessa pasta, que listam as fotos e o áudio que ainda faltam. Para peças longas ou com fotografia, prefira esse projeto como base. Para Reels curtos, use o modelo HTML.
+- Bancos de imagem (Pexels e Unsplash) são bloqueados no ambiente cloud. Sem fotos fornecidas pelo usuário, use ilustrações vetoriais sem pessoas e registre o que falta.

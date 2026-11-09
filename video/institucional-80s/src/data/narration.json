@@ -1,0 +1,48 @@
+{
+  "_info": "Locução planejada. start/end em frames absolutos (30 fps). 'caption': false = não exibir legenda (o título na tela já é a própria frase).",
+  "chunks": [
+    {"start": 6, "end": 92, "text": "Sua empresa não precisa trabalhar mais.", "caption": false},
+    {"start": 122, "end": 172, "text": "Precisa operar melhor.", "caption": false},
+
+    {"start": 192, "end": 240, "text": "Quando processos dependem"},
+    {"start": 242, "end": 285, "text": "de planilhas soltas,"},
+    {"start": 287, "end": 325, "text": "tarefas manuais"},
+    {"start": 330, "end": 405, "text": "e sistemas que não se conectam,"},
+    {"start": 410, "end": 470, "text": "crescer fica mais difícil."},
+
+    {"start": 492, "end": 578, "text": "É aqui que entra a DME Technology."},
+    {"start": 596, "end": 648, "text": "Transformamos operações complexas"},
+    {"start": 650, "end": 712, "text": "em sistemas mais inteligentes."},
+
+    {"start": 732, "end": 772, "text": "Começamos ouvindo."},
+    {"start": 780, "end": 825, "text": "Entendemos os desafios,"},
+    {"start": 828, "end": 874, "text": "identificamos gargalos"},
+    {"start": 878, "end": 925, "text": "e desenhamos soluções"},
+    {"start": 928, "end": 1008, "text": "que fazem sentido para cada negócio."},
+
+    {"start": 1032, "end": 1092, "text": "Aplicamos inteligência artificial,"},
+    {"start": 1096, "end": 1150, "text": "automações e integrações"},
+    {"start": 1154, "end": 1204, "text": "para conectar informações,"},
+    {"start": 1208, "end": 1250, "text": "simplificar rotinas"},
+    {"start": 1254, "end": 1338, "text": "e fazer os processos fluírem melhor."},
+
+    {"start": 1358, "end": 1434, "text": "Isso pode transformar o atendimento,"},
+    {"start": 1454, "end": 1492, "text": "o comercial"},
+    {"start": 1546, "end": 1608, "text": "e a gestão do dia a dia,"},
+    {"start": 1611, "end": 1647, "text": "com menos retrabalho"},
+    {"start": 1650, "end": 1706, "text": "e mais clareza para a equipe."},
+
+    {"start": 1722, "end": 1770, "text": "Porque tecnologia de verdade"},
+    {"start": 1772, "end": 1832, "text": "não deve criar mais complexidade."},
+    {"start": 1846, "end": 1882, "text": "Deve liberar tempo,"},
+    {"start": 1885, "end": 1914, "text": "apoiar decisões"},
+    {"start": 1917, "end": 1962, "text": "e preparar sua operação"},
+    {"start": 1965, "end": 2030, "text": "para crescer com controle."},
+
+    {"start": 2046, "end": 2118, "text": "Na DME, a tecnologia trabalha nos bastidores.", "caption": false},
+    {"start": 2124, "end": 2180, "text": "O seu negócio avança.", "caption": false},
+
+    {"start": 2200, "end": 2238, "text": "DME Technology.", "caption": false},
+    {"start": 2242, "end": 2302, "text": "Automatizamos processos. Devolvemos tempo.", "caption": false}
+  ]
+}
