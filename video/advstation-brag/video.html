@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>ADV STATION · Painel de partidas</title>
+<style>
+@font-face{font-family:'Nunito Sans';font-weight:600;src:url(fonts/nunito-sans-latin-600-normal.woff2) format('woff2')}
+@font-face{font-family:'Nunito Sans';font-weight:700;src:url(fonts/nunito-sans-latin-700-normal.woff2) format('woff2')}
+@font-face{font-family:'Nunito Sans';font-weight:800;src:url(fonts/nunito-sans-latin-800-normal.woff2) format('woff2')}
+@font-face{font-family:'Gelasio';font-weight:600;src:url(fonts/gelasio-latin-600-normal.woff2) format('woff2')}
+@font-face{font-family:'Gelasio';font-weight:700;src:url(fonts/gelasio-latin-700-normal.woff2) format('woff2')}
+:root{--navy:#16284A;--deep:#0E1B33;--gold:#C29B3C;--cream:#F7F1E3;--vnavy:hsl(221 54% 19%);--vgold:hsl(42 53% 50%);--sans:'Nunito Sans','Helvetica Neue',sans-serif;--serif:Gelasio,Georgia,serif}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1920px;height:1080px;overflow:hidden;background:#0B1528}
+#stage{position:absolute;inset:0;overflow:hidden;background:radial-gradient(ellipse at 50% 42%,#1A2F55 0%,#122241 48%,#0A1428 100%);perspective:2200px}
+.abs{position:absolute}
+#boardWrap{position:absolute;inset:0;transform-origin:50% 100%}
+#board{position:absolute;left:0;top:0}
+.label{font-family:var(--sans);font-weight:800;font-size:22px;letter-spacing:.26em;color:var(--gold);white-space:nowrap}
+.title{font-family:var(--serif);font-weight:600;color:#fff;white-space:nowrap;text-align:center;left:0;right:0}
+.title b{font-weight:600;color:var(--gold)}
+.title span{display:inline-block}
+#card{position:absolute;left:150px;top:262px;width:1620px;height:750px;border-radius:18px;overflow:hidden;background:#f7f1e3;
+  box-shadow:0 40px 90px rgba(0,0,0,.45),0 0 0 1px rgba(255,255,255,.08);transform-origin:50% 0%}
+#card img{position:absolute;left:0;top:0;transform-origin:0 0}
+#card svg{position:absolute;left:0;top:0;overflow:visible}
+#vin{position:absolute;inset:0;overflow:hidden;background:radial-gradient(circle at 30% 20%,#fffaf0 0%,#f7f1e3 55%,#eadfca 100%);color:var(--vnavy);display:none}
+.selo{display:inline-flex;align-items:center;gap:12px;padding:10px 22px 10px 12px;border-radius:999px;background:var(--vnavy);color:#fff;font-family:var(--sans);font-size:24px;font-weight:600}
+.selo i{display:flex;width:40px;height:40px;border-radius:10px;background:var(--vgold);align-items:center;justify-content:center}
+.selo svg{stroke:var(--vnavy);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+</style>
+</head>
+<body>
+<div id="stage">
+  <div id="boardWrap">
+    <canvas id="board" width="1920" height="1080"></canvas>
+    <div id="boardLabel" class="abs label" style="left:148px;top:196px">PARTIDAS · ADV STATION</div>
+    <div id="t2" class="abs title" style="top:742px;font-size:80px"></div>
+  </div>
+  <div id="screenWrap" class="abs" style="inset:0;transform-origin:50% 0%">
+    <div id="sLabel" class="abs label" style="left:0;right:0;top:112px;text-align:center"></div>
+    <div id="sTitle" class="abs title" style="top:142px;font-size:72px"></div>
+    <div id="card"><img id="shot_pg" src="img/pg-administrativo.png"><img id="shot_ml" src="img/ml-protocolo.png"><svg id="ov" width="1620" height="750"></svg></div>
+  </div>
+  <div id="vin">
+    <div id="bolha" class="abs" style="border-radius:50%;background:var(--vgold);width:900px;height:900px;left:510px;top:30px"></div>
+    <div id="faiscas"></div>
+    <div id="marca" class="abs" style="left:0;right:0;top:0;bottom:0;display:flex;flex-direction:column;align-items:center;justify-content:center">
+      <svg viewBox="0 0 100 100" width="380" height="380" style="overflow:visible;display:block">
+        <path id="vA" d="M50 12 L81 79 H69 L50 34 L31 79 H19 Z" fill="hsl(221 54% 19%)"/>
+        <rect id="vPlat" x="9" y="79" width="82" height="8" rx="4" fill="hsl(42 53% 50%)"/>
+      </svg>
+      <div id="vNome" style="margin-top:30px;font-size:64px;font-weight:800;letter-spacing:.32em;line-height:1.2;display:flex;white-space:nowrap;font-family:var(--sans)"></div>
+    </div>
+    <div id="vTit" class="abs" style="top:58%;left:0;right:0;text-align:center">
+      <div style="display:flex;justify-content:center;gap:16px;margin-bottom:22px">
+        <span class="selo"><i><svg viewBox="0 0 24 24" width="24" height="24"><circle cx="12" cy="7" r="3"/><path d="M7 21v-4a5 5 0 0 1 10 0v4"/><path d="M9 14c1.5 1 4.5 1 6 0"/></svg></i>Maternidade Legal</span>
+        <span class="selo"><i><svg viewBox="0 0 24 24" width="24" height="24"><path d="M16 16l3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></svg></i>Previdenciário Geral</span>
+      </div>
+      <div style="font-family:var(--serif);font-size:96px;font-weight:600;line-height:1.05;color:var(--vnavy)">Cada cliente no trilho <span style="color:var(--vgold)">certo.</span></div>
+      <div style="margin-top:16px;font-size:30px;color:#4B5563;font-family:var(--sans);font-weight:700;letter-spacing:.04em">advstation.io</div>
+    </div>
+  </div>
+</div>
+<script>
+// ───────────────────────── tempo (120 BPM: batida = 0,5 s) ─────────────────────────
+const DUR = 24.0;
+const S = {hook: 0, partidas: 3.0, caos: 7.5, pg: 9.5, ml: 13.5, embarque: 17.0, vin: 19.0};
+const FD = 0.06; // duração de um estalo de plaquinha
+
+// ───────────────────────── utilitários ─────────────────────────
+const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
+const lerp = (a, b, p) => a + (b - a) * p;
+const prog = (t, d, len) => clamp((t - d) / len);
+const eOut = p => 1 - Math.pow(1 - p, 3);
+const eIn = p => p * p * p;
+const eIO = p => (p < .5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2);
+function bezier(x1, y1, x2, y2) {
+  const cx = 3 * x1, bx = 3 * (x2 - x1) - cx, ax = 1 - cx - bx, cy = 3 * y1, by = 3 * (y2 - y1) - cy, ay = 1 - cy - by;
+  const X = s => ((ax * s + bx) * s + cx) * s, Y = s => ((ay * s + by) * s + cy) * s, dX = s => (3 * ax * s + 2 * bx) * s + cx;
+  return x => { if (x <= 0) return 0; if (x >= 1) return 1; let s = x; for (let i = 0; i < 8; i++) { const d = dX(s); if (Math.abs(d) < 1e-6) break; s -= (X(s) - x) / d; } return Y(clamp(s)); };
+}
+const progE = (t, d, len, e) => (t <= d ? 0 : t >= d + len ? e(1) : e((t - d) / len));
+function hash(n) { n = (n ^ 61) ^ (n >>> 16); n = n + (n << 3); n = n ^ (n >>> 4); n = Math.imul(n, 0x27d4eb2d); n = n ^ (n >>> 15); return (n >>> 0) / 4294967296; }
+
+// ───────────────────────── painel split-flap ─────────────────────────
+const ALFA = ' ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.-:';
+const EVENTS = []; // eventos de som (exportados para a trilha)
+class Cell {
+  constructor(id, x, y, w, h, fs) { Object.assign(this, {id, x, y, w, h, fs}); this.keys = [{t: -1, ch: ' ', n: 0, seq: [' ']}]; this.gold = []; }
+  go(t, ch, n) { // a partir de t, vira n vezes até mostrar ch
+    const prev = this.keys[this.keys.length - 1].ch;
+    if (prev === ch && n <= 1) return;
+    const seq = [prev];
+    for (let k = 1; k < n; k++) seq.push(ALFA[1 + Math.floor(hash(this.id * 977 + Math.round(t * 1000) + k * 131) * (ALFA.length - 1))]);
+    seq.push(ch);
+    this.keys.push({t, ch, n, seq});
+    for (let k = 0; k < n; k++) EVENTS.push({t: +(t + k * FD).toFixed(4), k: this.fs > 60 ? 'flapG' : 'flap'});
+  }
+  state(t) {
+    let K = this.keys[0];
+    for (const k of this.keys) if (k.t <= t) K = k; else break;
+    const e = (t - K.t) / FD, i = Math.floor(e);
+    if (K.n === 0 || i >= K.n) return {cur: K.ch, nxt: null, p: 0};
+    return {cur: K.seq[i], nxt: K.seq[i + 1], p: e - i};
+  }
+}
+const cv = document.getElementById('board'), ctx = cv.getContext('2d');
+function face(x, y, w, h, top, shade) {
+  const r = Math.min(8, w * .14);
+  ctx.beginPath();
+  if (top) ctx.roundRect(x, y, w, h, [r, r, 0, 0]); else ctx.roundRect(x, y, w, h, [0, 0, r, r]);
+  const g = ctx.createLinearGradient(0, y, 0, y + h);
+  if (top) { g.addColorStop(0, '#22304A'); g.addColorStop(1, '#1A263D'); } else { g.addColorStop(0, '#162137'); g.addColorStop(1, '#111A2D'); }
+  ctx.fillStyle = g; ctx.fill();
+  if (shade) { ctx.fillStyle = `rgba(0,0,0,${shade})`; ctx.fill(); }
+}
+function glyph(c, ch, top, color) {
+  if (ch === ' ') return;
+  ctx.save();
+  ctx.beginPath(); ctx.rect(c.x, top ? c.y : c.y + c.h / 2, c.w, c.h / 2); ctx.clip();
+  ctx.fillStyle = color; ctx.font = `800 ${c.fs}px 'Nunito Sans'`; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+  ctx.fillText(ch, c.x + c.w / 2, c.y + c.h / 2 + c.fs * .06);
+  ctx.restore();
+}
+function drawCell(c, t, color) {
+  const {cur, nxt, p} = c.state(t), hh = c.h / 2, cy = c.y + hh;
+  // metade de cima: próxima letra (se virando) · metade de baixo: letra atual
+  face(c.x, c.y, c.w, hh, true, 0); glyph(c, nxt ?? cur, true, color);
+  face(c.x, cy, c.w, hh, false, 0); glyph(c, cur, false, color);
+  if (nxt !== null) {
+    const k = Math.cos(p * Math.PI);
+    ctx.save(); ctx.translate(0, cy);
+    if (k > 0) { ctx.scale(1, k); ctx.translate(0, -cy); face(c.x, c.y, c.w, hh, true, .35 * (1 - k)); glyph(c, cur, true, color); }
+    else { ctx.scale(1, -k); ctx.translate(0, -cy); face(c.x, cy, c.w, hh, false, .45 * (1 + k)); glyph(c, nxt, false, color); }
+    ctx.restore();
+  }
+  ctx.fillStyle = 'rgba(7,13,26,.55)'; ctx.fillRect(c.x, cy - (c.fs > 60 ? 1.5 : .75), c.w, c.fs > 60 ? 3 : 1.5); // fenda do meio
+}
+
+// painel grande (gancho e embarque): 2 linhas × 15
+const BIG = [];
+for (let r = 0; r < 2; r++) for (let j = 0; j < 15; j++) BIG.push(new Cell(1000 + r * 15 + j, 154 + j * 108, 282 + r * 174, 100, 158, 116));
+const pad15 = s => { const l = Math.floor((15 - [...s].length) / 2); return (' '.repeat(l) + s).padEnd(15, ' '); };
+function bigMsg(lines, t0, gapRow, step, base, spread, out = false) {
+  lines.forEach((ln, r) => [...pad15(ln)].forEach((ch, j) => {
+    const c = BIG[r * 15 + j];
+    if (out) { if (c.keys[c.keys.length - 1].ch !== ' ') c.go(t0 + j * step, ' ', 2); return; }
+    if (ch === ' ') return;
+    c.go(t0 + r * gapRow + j * step, ch, base + Math.floor(hash(c.id * 31 + Math.round(t0 * 10)) * spread));
+  }));
+}
+bigMsg(['SEU ESCRITÓRIO', 'É UMA ESTAÇÃO.'], 0.12, 0.25, 0.035, 4, 5);
+bigMsg(['', ''], 2.62, 0, 0.022, 0, 0, true);
+bigMsg(['PRÓXIMA PARADA:', 'ADVSTATION.IO'], 17.3, 0.25, 0.028, 4, 4);
+
+// painel de partidas: 6 linhas × 58 (PLAT 2 · CLIENTE 16 · BENEFÍCIO 16 · ETAPA 21)
+const COLS = [2, 16, 16, 21], CW = 25, CH = 44, GAP = 3;
+const ROWS = [ // dados da tela de demonstração (Previdenciário Geral · Administrativo)
+  ['01', 'ANTÔNIO RIBEIRO', 'BPC IDOSO', 'COLETANDO DOCUMENTOS'],
+  ['02', 'BEATRIZ LIMA', 'BPC DEFICIENTE', 'PROTOCOLADO INSS'],
+  ['03', 'FERNANDA COSTA', 'AUXÍLIO-ACIDENTE', 'RECEBIDO DO COMERCIAL'],
+  ['04', 'GABRIEL ROCHA', 'BPC DEFICIENTE', 'EXIGÊNCIA INSS'],
+  ['05', 'IGOR CARDOSO', 'BPC IDOSO', 'PREPARANDO PROTOCOLO'],
+  ['06', 'JULIANA FREITAS', 'BPC DEFICIENTE', 'BENEFÍCIO CONCEDIDO'],
+];
+const rowStr = r => r.map((s, i) => s.padEnd(COLS[i], ' ')).join(' ');
+const NCOL = rowStr(ROWS[0]).length; // 58
+const X0 = Math.round((1920 - NCOL * (CW + GAP) + GAP) / 2), Y0 = 300, RH = 62;
+const DEP = ROWS.map((r, i) => [...rowStr(r)].map((ch, j) => new Cell(2000 + i * 100 + j, X0 + j * (CW + GAP), Y0 + i * RH, CW, CH, 30)));
+const colX = []; { let j = 0; COLS.forEach(n => { colX.push(X0 + j * (CW + GAP)); j += n + 1; }); }
+// entrada linha a linha, uma por batida
+ROWS.forEach((r, i) => [...rowStr(r)].forEach((ch, j) => { if (ch !== ' ') DEP[i][j].go(3.25 + i * .5 + j * .012, ch, 3 + Math.floor(hash(i * 100 + j) * 5)); }));
+// caos: tudo gira a cada ~0,3 s, depois volta à ordem
+for (let i = 0; i < 6; i++) for (let j = 0; j < NCOL; j++) {
+  const c = DEP[i][j];
+  for (let t = 7.5 + hash(i * 77 + j) * .2; t < 8.5; t += .26 + hash(i * 13 + j * 7 + Math.round(t * 100)) * .12) {
+    c.go(t, ALFA[1 + Math.floor(hash(c.id + Math.round(t * 1000)) * 26)], 3);
+  }
+  const ch = rowStr(ROWS[i])[j];
+  c.go(8.55 + j * .006 + i * .04, ch, 4 + Math.floor(hash(i * 5 + j * 3) * 4));
+}
+EVENTS.sort((a, b) => a.t - b.t);
+
+function drawBoard(t, which) {
+  ctx.clearRect(0, 0, 1920, 1080);
+  if (which === 'big') {
+    // carcaça + plataforma dourada (motivo do logo)
+    ctx.fillStyle = 'rgba(5,10,22,.55)'; ctx.beginPath(); ctx.roundRect(126, 254, 1668, 378, 22); ctx.fill();
+    BIG.forEach(c => drawCell(c, t, '#F4EBD8'));
+    const pl = which === 'big' ? (t < 3 ? eOut(prog(t, .2, .5)) : eOut(prog(t, 17.25, .5))) : 0;
+    const w = 1612 * pl; ctx.fillStyle = '#C29B3C'; ctx.beginPath(); ctx.roundRect(960 - w / 2, 664, w, 12, 6); ctx.fill();
+  } else {
+    ctx.fillStyle = 'rgba(5,10,22,.55)'; ctx.beginPath(); ctx.roundRect(X0 - 26, 236, 1920 - 2 * (X0 - 26), 448, 20); ctx.fill();
+    ctx.font = "800 18px 'Nunito Sans'"; ctx.fillStyle = 'rgba(194,155,60,.95)'; ctx.textBaseline = 'alphabetic'; ctx.textAlign = 'left';
+    ['PLAT.', 'CLIENTE', 'BENEFÍCIO', 'ETAPA'].forEach((s, i) => { ctx.save(); ctx.letterSpacing = '4px'; ctx.fillText(s, colX[i] + 2, 282); ctx.restore(); });
+    const gl = t >= 7.0 && t < 7.5 ? 1 : 0; // linha 06 acende em dourado na batida 7,0
+    DEP.forEach((row, i) => {
+      const g = i === 5 ? gl : 0;
+      if (g) { ctx.fillStyle = 'rgba(194,155,60,.16)'; ctx.beginPath(); ctx.roundRect(X0 - 12, Y0 + i * RH - 9, 1920 - 2 * (X0 - 12), CH + 18, 10); ctx.fill(); }
+      row.forEach((c, j) => drawCell(c, t, g ? '#E2BE62' : '#F4EBD8'));
+    });
+  }
+}
+
+// ───────────────────────── títulos ─────────────────────────
+function setTitle(el, html) { if (el.__h !== html) { el.innerHTML = html.split(' ').map(w => `<span>${w}</span>`).join(' '); el.__h = html; } }
+function animTitle(el, t, t0, tOut) {
+  [...el.querySelectorAll('span')].forEach((s, i) => {
+    const p = eOut(prog(t, t0 + i * .07, .4)), q = tOut ? eIn(prog(t, tOut, .2)) : 0;
+    s.style.opacity = p * (1 - q); s.style.transform = `translateY(${(1 - p) * 26 - q * 14}px)`;
+  });
+}
+
+// ───────────────────────── telas reais ─────────────────────────
+const SHOTS = {
+  pg: {src: 'img/pg-administrativo.png', w: 1918, h: 1077},
+  ml: {src: 'img/ml-protocolo.png', w: 1918, h: 1075},
+};
+const ov = document.getElementById('ov');
+const CARD_W = 1620, CARD_H = 750;
+function camera(rA, rB, p) { const x = lerp(rA[0], rB[0], p), y = lerp(rA[1], rB[1], p), w = lerp(rA[2], rB[2], p); return [x, y, w]; }
+function rectSvg(x, y, w, h, cam, style) { const s = CARD_W / cam[2]; return `<rect x="${(x - cam[0]) * s}" y="${(y - cam[1]) * s}" width="${w * s}" height="${h * s}" ${style}/>`; }
+
+// ───────────────────────── vinheta original (.asvv) ─────────────────────────
+const E_EASEOUT = bezier(0, 0, .58, 1), E_FAISCA = bezier(.2, .8, .3, 1), E_SOBE = bezier(.6, 0, .2, 1), E_PLAT = bezier(.2, .9, .2, 1),
+  E_A = bezier(.3, 1.6, .5, 1), E_LETRA = bezier(.3, 1.4, .5, 1), E_TIT = bezier(.3, 1.3, .5, 1);
+const vNome = document.getElementById('vNome');
+'ADV STATION'.split('').forEach(l => { const s = document.createElement('span'); s.style.display = 'inline-block'; s.textContent = l === ' ' ? ' ' : l; vNome.appendChild(s); });
+const fx = document.getElementById('faiscas');
+for (let i = 0; i < 14; i++) { const d = document.createElement('div'); d.className = 'abs'; Object.assign(d.style, {width: '14px', height: '14px', borderRadius: '3px', left: '953px', top: '480px', background: 'hsl(42 53% 50%)'}); fx.appendChild(d); }
+function vinheta(t) {
+  const bolha = progE(t, 1.05, 1.6, E_EASEOUT), plat = progE(t, .15, .55, E_PLAT), a = progE(t, .55, .75, E_A), sobe = progE(t, 2.55, .7, E_SOBE), tit = progE(t, 2.85, .6, E_TIT);
+  const b = document.getElementById('bolha');
+  b.style.display = t > 1.05 && t < 2.65 ? 'block' : 'none'; b.style.transform = `scale(${bolha})`; b.style.opacity = .55 * (1 - bolha);
+  [...fx.children].forEach((d, i) => {
+    const ang = (i / 14) * Math.PI * 2, r = 220 + (i % 3) * 60, dx = Math.round(Math.cos(ang) * r), dy = Math.round(Math.sin(ang) * r), delay = 1.1 + (i % 4) * .03;
+    if (t < delay || t > delay + .9) { d.style.display = 'none'; return; }
+    const p = progE(t, delay, .9, E_FAISCA);
+    d.style.display = 'block'; d.style.opacity = 1 - p; d.style.transform = `translate(${dx * p}px,${dy * p}px) rotate(${220 * p}deg) scale(${.4 + .6 * p})`;
+  });
+  document.getElementById('marca').style.transform = `translateY(${-215 * sobe}px) scale(${1 - .5 * sobe})`;
+  document.getElementById('vA').setAttribute('transform', `translate(0 87) scale(1 ${a}) translate(0 -87)`);
+  document.getElementById('vPlat').setAttribute('transform', `translate(50 83) scale(${plat} 1) translate(-50 -83)`);
+  [...vNome.children].forEach((s, i) => { const p = progE(t, 1.15 + i * .05, .45, E_LETRA); s.style.opacity = clamp(p); s.style.transform = `translateY(${24 * (1 - p)}px)`; });
+  const vt = document.getElementById('vTit'); vt.style.opacity = clamp(tit); vt.style.transform = `translateY(${40 * (1 - tit)}px)`;
+}
+
+// ───────────────────────── render(t) ─────────────────────────
+const bw = document.getElementById('boardWrap'), sw = document.getElementById('screenWrap'), card = document.getElementById('card');
+const t2 = document.getElementById('t2'), lab = document.getElementById('boardLabel'), sLabel = document.getElementById('sLabel'), sTitle = document.getElementById('sTitle');
+function render(T) {
+  const t = T === 0 ? 2.4 : T; // quadro 0 = capa (gancho já assentado)
+  const vin = t >= S.vin;
+  document.getElementById('vin').style.display = vin ? 'block' : 'none';
+  if (vin) { vinheta(t - S.vin); return; }
+
+  // ── painel ──
+  const bigPhase = t < S.partidas || t >= S.embarque;
+  const boardOn = t < S.pg + .4 || t >= S.embarque + .1;
+  bw.style.display = boardOn ? 'block' : 'none';
+  if (boardOn) {
+    drawBoard(t, bigPhase ? 'big' : 'dep');
+    let tr = '';
+    if (t < S.partidas) tr = `scale(${1 + .035 * eIO(prog(t, 0, 3))})`;
+    else if (t < S.embarque) { const p = eIn(prog(t, S.pg, .38)); tr = `rotateX(${-88 * p}deg)`; bw.style.opacity = 1 - prog(t, S.pg + .25, .13); }
+    else { const p = eOut(prog(t, S.embarque + .1, .4)); tr = `rotateX(${88 * (1 - p)}deg)`; bw.style.opacity = 1; }
+    if (t < S.pg) bw.style.opacity = 1;
+    bw.style.transformOrigin = t >= S.embarque ? '50% 0%' : (t < S.partidas ? '50% 45%' : '50% 100%');
+    bw.style.transform = tr;
+    lab.style.opacity = !bigPhase ? eOut(prog(t, S.partidas + .1, .4)) : 0;
+    if (!bigPhase) {
+      if (t < S.caos) { setTitle(t2, 'Cada cliente, um <b>destino.</b>'); animTitle(t2, t, 3.5, S.caos - .2); }
+      else { setTitle(t2, 'Sem sistema, vira <b>caos.</b>'); animTitle(t2, t, S.caos + .05, 0); }
+      t2.style.display = 'block';
+    } else t2.style.display = 'none';
+  }
+
+  // ── telas ──
+  const scrOn = t >= S.pg + .32 && t < S.embarque + .45;
+  sw.style.display = scrOn ? 'block' : 'none';
+  if (scrOn) {
+    const isPG = t < S.ml, sh = isPG ? SHOTS.pg : SHOTS.ml, L = t - (isPG ? S.pg : S.ml);
+    const img = document.getElementById(isPG ? 'shot_pg' : 'shot_ml'); document.getElementById(isPG ? 'shot_ml' : 'shot_pg').style.display = 'none'; img.style.display = 'block';
+    // entrada (vira de cima, como uma plaquinha) e saída
+    let tr = '';
+    if (isPG) { const p = eOut(prog(t, S.pg + .32, .4)); tr = `rotateX(${78 * (1 - p)}deg)`; sw.style.opacity = prog(t, S.pg + .32, .1); }
+    else { const q = eIn(prog(t, S.embarque, .38)); tr = `rotateX(${-80 * q}deg)`; sw.style.opacity = 1 - prog(t, S.embarque + .28, .14); }
+    sw.style.transformOrigin = isPG ? '50% 24%' : '50% 24%';
+    sw.style.transform = tr;
+    let cam, svg = '';
+    if (isPG) {
+      sLabel.textContent = 'PREVIDENCIÁRIO GERAL · ADMINISTRATIVO';
+      setTitle(sTitle, 'Cada cliente na <b>etapa certa.</b>'); animTitle(sTitle, t, S.pg + .3, S.ml - .2);
+      cam = camera([0, 0, 1918], [296, 86, 1214], eIO(prog(L, .55, .6)));
+      // destaque dourado desce uma linha por batida (10,5 → 13,0)
+      const k = (t - 10.5) / .5, i0 = clamp(Math.floor(k), 0, 5), fr = clamp((k - Math.floor(k)) / .4);
+      if (t >= 10.3) {
+        const ri = Math.floor(k) >= 5 ? 5 : lerp(i0, i0 + 1, eIO(t < 10.5 ? 0 : fr)), y = 213 + 39 * ri, on = eOut(prog(t, 10.3, .2));
+        svg += rectSvg(306, y + 1, 1548, 37, cam, `rx="6" fill="rgba(194,155,60,${.10 * on})" stroke="rgba(194,155,60,${on})" stroke-width="3"`);
+        if (t >= 13.0) svg += rectSvg(1246, 213 + 39 * 5 + 5, 140, 29, cam, `rx="6" fill="rgba(194,155,60,${.22 * eOut(prog(t, 13.0, .25))})"`);
+      }
+    } else {
+      sLabel.textContent = 'MATERNIDADE LEGAL · SETOR DE PROTOCOLO';
+      setTitle(sTitle, 'Do protocolo à <b>concessão.</b>'); animTitle(sTitle, t, S.ml + .15, S.embarque - .2);
+      cam = camera([0, 0, 1918], [318, 96, 1420], eIO(prog(L, .4, .6)));
+      [[728, 846, 14.5], [857, 965, 15.0], [1603, 1713, 15.5]].forEach(([x0, x1, tt], n) => {
+        const p = progE(t, tt, .35, bezier(.3, 1.5, .5, 1)); if (p <= 0) return;
+        const s = CARD_W / cam[2], cx = ((x0 + x1) / 2 - cam[0]) * s, cy = (201 - cam[1]) * s, w = (x1 - x0 + 14) * s, h = 40 * s;
+        svg += `<g transform="translate(${cx} ${cy}) scale(${.6 + .4 * p})" opacity="${clamp(p)}"><rect x="${-w / 2}" y="${-h / 2}" width="${w}" height="${h}" rx="${h / 2}" fill="rgba(194,155,60,${n === 2 && t >= 15.5 ? .2 : .08})" stroke="#C29B3C" stroke-width="3.5"/>`
+          + `<circle cx="0" cy="${-h / 2 - 30}" r="17" fill="#C29B3C"/><text x="0" y="${-h / 2 - 23.5}" text-anchor="middle" font-family="Nunito Sans" font-weight="800" font-size="19" fill="#16284A">${n + 1}</text></g>`;
+      });
+      // trilho dourado ligando as etapas
+      const lp = eIO(prog(t, 14.6, 1.1)), s = CARD_W / cam[2];
+      if (lp > 0) { const xa = (787 - cam[0]) * s, xb = (1658 - cam[0]) * s, y = (201 - cam[1]) * s - 20 * s - 30; svg = `<line x1="${xa}" y1="${y}" x2="${lerp(xa, xb, lp)}" y2="${y}" stroke="#C29B3C" stroke-width="3" stroke-dasharray="2 9" stroke-linecap="round"/>` + svg; }
+    }
+    const s = CARD_W / cam[2];
+    img.style.width = sh.w + 'px'; img.style.height = sh.h + 'px';
+    img.style.transform = `translate(${-cam[0] * s}px,${-cam[1] * s}px) scale(${s})`;
+    ov.innerHTML = svg;
+  }
+}
+window.renderAt = t => render(t);
+window.flipEvents = () => {
+  const ev = EVENTS.filter(e => e.t < S.vin).slice();
+  ev.push({t: S.pg, k: 'virada'}, {t: S.embarque, k: 'virada'});
+  for (let i = 0; i < 6; i++) ev.push({t: 10.5 + i * .5, k: 'tick'});
+  [14.5, 15.0, 15.5].forEach(t => ev.push({t, k: 'anel'}));
+  ev.push({t: 7.0, k: 'anel'}, {t: 13.0, k: 'anel'}, {t: S.vin, k: 'jingle'});
+  return ev.sort((a, b) => a.t - b.t);
+};
+Promise.all([document.fonts.load("800 30px 'Nunito Sans'"), document.fonts.load("600 30px Gelasio"), document.fonts.load("700 30px 'Nunito Sans'"),
+  new Promise(r => { const a = new Image(), b = new Image(); let n = 0; a.onload = b.onload = () => ++n === 2 && r(); a.src = SHOTS.pg.src; b.src = SHOTS.ml.src; })])
+  .then(() => { render(0); window.__ready = true; });
+</script>
+</body>
+</html>
