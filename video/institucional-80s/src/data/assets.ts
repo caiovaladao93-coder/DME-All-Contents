@@ -1,21 +1,23 @@
 /**
  * Arquivos externos do filme. Enquanto um valor for null, a cena usa a ilustração vetorial
- * temporária (fotos) ou fica sem a faixa de áudio correspondente.
+ * temporária ou fica sem a faixa de áudio correspondente.
  * Para trocar: coloque o arquivo em public/assets/... e informe o caminho relativo a public/.
- * Ex.: images.s01 = 'assets/images/s01-profissional-monitor.jpg'
+ *
+ * Vídeos: Pexels (licença Pexels — uso comercial livre, sem atribuição obrigatória).
+ * As pessoas ilustram situações e NÃO são apresentadas como equipe ou clientes da DME.
+ * Todos foram cortados para 1080x1920 a 30 fps e receberam a mesma correção de cor (azul-aço).
+ * As fontes brutas (*-raw.mp4) ficam fora do git. Para regenerar, veja scripts/README-videos.md.
  */
 export const ASSETS = {
   images: {
-    // Pexels 30284959 (licença Pexels: uso comercial livre). Logo de terceiros no monitor desfocado por rastreamento
-    // (scripts/track.py + scripts/blur.py), cor ajustada para azul-aço. Fonte bruta: public/assets/video/s01-raw.mp4 (fora do git).
-    s01: 'assets/video/s01.mp4' as string | null,
-    s02a: null as string | null, // mesa vista de cima (35°), notebook com planilhas, documentos
-    s04: null as string | null, // reunião consultiva, 3–4 pessoas, plano médio lateral 30°, 35 mm
-    s06a: null as string | null, // profissional com notebook e headset discreto (atendimento)
-    s06b: null as string | null, // sobre o ombro, notebook com etapas comerciais
-    s06c: null as string | null, // equipe administrativa analisando uma tela
-    s07: null as string | null, // sobre o ombro, profissional observando monitor, luz equilibrada
-    s08: null as string | null, // equipe colaborando, imagem mais clara (de preferência a equipe real da DME)
+    s01: 'assets/video/s01.mp4' as string | null, // Pexels 30284959 · nome no monitor desfocado por rastreamento
+    s02a: 'assets/video/s02a.mp4' as string | null, // Pexels 7477059 · Kampus Production
+    s04: 'assets/video/s04.mp4' as string | null, // Pexels 8189159 · Kampus Production
+    s06a: 'assets/video/s06a.mp4' as string | null, // Pexels 7706633 · MART PRODUCTION
+    s06b: 'assets/video/s06b.mp4' as string | null, // Pexels 5716235 · Artem Podrez
+    s06c: 'assets/video/s06c.mp4' as string | null, // Pexels 8348725 · Kampus Production
+    s07: 'assets/video/s07.mp4' as string | null, // Pexels 8347697 · Kampus Production
+    s08: 'assets/video/s08.mp4' as string | null, // Pexels 8632192 · Kampus Production
   },
   narration: null as string | null, // ex.: 'assets/audio/narracao.wav' (locução humana)
   music: null as string | null, // ex.: 'assets/audio/trilha.wav' (licenciada)

@@ -1,5 +1,6 @@
 import React from 'react';
 import {AbsoluteFill, Img, staticFile, useCurrentFrame} from 'remotion';
+import {CinematicImage} from '../components/CinematicImage';
 import {MeetingBack, MeetingFront} from '../components/Illustrations';
 import {lineReveal} from '../components/SceneTransition';
 import {WorkflowDiagram} from '../components/WorkflowDiagram';
@@ -48,7 +49,7 @@ export const Scene04Method: React.FC = () => {
     <AbsoluteFill style={{clipPath: lineReveal(f, 0, 18, BRAND_LINE_Y), background: C.carbon, opacity: 1 - out}}>
       {/* travelling lateral ~60 px com duas camadas (parallax) */}
       {ASSETS.images.s04 ? (
-        <AbsoluteFill style={{transform: `translateX(${lerp(20, -40, t)}px) scale(1.06)`}}><Img src={staticFile(ASSETS.images.s04)} style={{width: '100%', height: '100%', objectFit: 'cover'}} /></AbsoluteFill>
+        <CinematicImage src={ASSETS.images.s04} dur={300} cam={{s0: 1.07, s1: 1.07, x0: 30, x1: -30}} grade="transparent" />
       ) : (
         <>
           <AbsoluteFill style={{transform: `translateX(${lerp(10, -15, t)}px) scale(1.04)`}}><MeetingBack /></AbsoluteFill>

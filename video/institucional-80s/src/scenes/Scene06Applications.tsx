@@ -57,11 +57,12 @@ const BlockComercial: React.FC<{f: number; dur: number}> = ({f, dur}) => (
     {['Contato', 'Proposta', 'Negociação'].map((col, i) => {
       const e = prog(f, 14 + i * 9, 16);
       return (
-        <div key={i} style={{position: 'absolute', left: 130 + i * 280, top: 640, width: 256, height: 560, borderRadius: 18, opacity: e,
-          transform: `translateY(${((1 - e) * 36).toFixed(1)}px)`, background: 'rgba(28,31,34,.92)', border: '1px solid rgba(192,198,204,.18)', padding: 16}}>
+        <div key={i} style={{position: 'absolute', left: 100 + i * 296, top: 1040, width: 280, height: 360, borderRadius: 18, opacity: e,
+          transform: `translateY(${((1 - e) * 36).toFixed(1)}px)`, background: 'rgba(22,25,28,.9)', border: '1px solid rgba(192,198,204,.2)', padding: 16,
+          boxShadow: '0 24px 50px rgba(0,0,0,.5)'}}>
           <div style={{fontFamily: FONT_UI, fontWeight: 700, fontSize: 24, letterSpacing: '.12em', textTransform: 'uppercase', color: '#E6EAEE'}}>{col}</div>
           <div style={{height: 3, width: 60, background: i === 1 ? C.accent : 'rgba(192,198,204,.35)', marginTop: 10, borderRadius: 2}} />
-          {Array.from({length: 3 - (i === 2 ? 1 : 0)}).map((_, k) => {
+          {Array.from({length: 2}).map((_, k) => {
             const ek = prog(f, 26 + i * 9 + k * 5, 14);
             return <div key={k} style={{marginTop: 18, height: 110, borderRadius: 14, opacity: ek, background: 'linear-gradient(160deg,#2A2F35,#1E2226)',
               border: `1px solid ${i === 1 && k === 0 ? 'rgba(58,110,165,.9)' : 'rgba(192,198,204,.16)'}`, padding: 14}}>
@@ -81,10 +82,8 @@ const BlockGestao: React.FC<{f: number; dur: number}> = ({f, dur}) => (
     <CinematicImage src={ASSETS.images.s06c ?? undefined} dur={dur} cam={{s0: 1.1, s1: 1.0}}><ManagementScreen /></CinematicImage>
     <Heading f={f} title="GESTÃO" sub="Mais clareza na operação." start={4} />
     {[
-      {x: 110, y: 610, w: 420, h: 290, v: 'chart'},
-      {x: 550, y: 610, w: 420, h: 290, v: 'line'},
-      {x: 110, y: 920, w: 420, h: 280, v: 'donut'},
-      {x: 550, y: 920, w: 400, h: 280, v: 'list'},
+      {x: 100, y: 1090, w: 430, h: 300, v: 'chart'},
+      {x: 550, y: 1090, w: 400, h: 300, v: 'line'},
     ].map((c, i) => {
       const e = prog(f, 16 + i * 7, 16);
       return (
