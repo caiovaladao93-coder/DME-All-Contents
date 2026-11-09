@@ -1,0 +1,40 @@
+MARCAS DE SOM E LOCUÇÃO · DME Reels "Qual versão da verdade?" · 28 s · 30 fps
+Trilha: instrumental licenciada, 96 BPM, pulso grave, sem drop; ~20 dB abaixo da voz. Mix final -14 LUFS, pico < -1 dBTP.
+
+LOCUÇÃO (entrar no início de cada janela)
+0,15 s  "Sua IA responde com qual versão da verdade?"
+3,20 s  "O documento mudou. A IA ainda consulta a versão antiga."
+7,10 s  "Quando a equipe percebe, a resposta já saiu."
+11,20 s "Por isso, cada informação precisa de um dono."
+15,15 s "Toda mudança registrada, com versão e revisão."
+19,15 s "E, na dúvida, checagem e passagem para uma pessoa."
+24,90 s "Qual informação muda toda semana na sua empresa? Converse com a DME."
+
+EFEITOS
+0,30 s  entrada do documento (whoosh curto e grave)
+0,85 s  risco no "18h" (traço de caneta suave)
+1,30 s  digitação "19h" (3 teclas discretas)
+1,95 s  chip "Atualizado hoje" (clique suave)
+2,65 s  linha de aço varre a tela (sweep metálico)
+3,00 s  abertura da cena 2 (corte)
+3,75 s  mensagem do cliente (notificação discreta)
+4,15 s  indicador de digitação
+4,70 s  resposta "Até 18h." (notificação)
+5,30 s  rack focus (respiro / low-pass)
+7,00 s  corte seco + impacto grave
+8,60 s  colchete conecta os cartões
+9,15 s  chip "Divergência identificada"
+9,50 s  chips da equipe (3 cliques, 120 ms)
+10,45 s fusão do "≠" em linha (whoosh reverso)
+12,00 s digitação "Ana · Operações"
+13,25 s chip "Responsável definido"
+14,50 s cartão sobe (whoosh)
+16,10 s linha do tempo avança v1 → v2
+17,45 s check de revisão
+18,30 s linha dobra para baixo (transição)
+19,35 s a 21,50 s nós do fluxo (cliques em sequência)
+22,50 s faixa de luz suave (shimmer leve)
+23,15 s síntese, linhas entram
+25,75 s botão CTA (impacto suave)
+26,40 s reflexo no botão
+27,50 s quadro final parado
