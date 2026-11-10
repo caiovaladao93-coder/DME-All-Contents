@@ -57,6 +57,7 @@ Repositório de conteúdo da **DME Technology**: roteiros e vídeos curtos (Reel
 - `roteiros/reels-ia-versao-da-verdade.md`: primeiro roteiro, descartado por ser fraco. Fica como referência do que evitar.
 - `video/reels-ferias-v2/`: vídeo mais recente e aprovado, que é o **modelo de referência**.
 - `video/reels-ferias-v3/`: a v2 com **narração** (Guilherme) e **trilha original**. A animação é sincronizada à fala pelo `warp.json`, há silêncio antes do "Agora" e as palavras entram com desfoque de movimento mais forte. Saídas: `dme-reels-ferias-v3-narrado.mp4` (35,4 s) e a versão sem áudio.
+- `video/reels-ferias-v4/`: a versão **3D (three.js)** do mesmo Reels. A câmera percorre 12 estações sem cortes, com materiais de aço escovado, chão espelhado e logo DME extrudado do vetor. Todas as partes têm narração (Guilherme) e a trilha é original, sincronizada aos eventos 3D. O código fica em `src/main.js`, empacotado em `dist/bundle.js` com esbuild. O `render.js` usa WebGL por SwiftShader (cerca de 0,8 s por quadro). Os tempos vêm das falas (`scripts/linha_tempo.py` → `src/timeline.json`).
 - `video/reels-ferias/`: v1 do mesmo vídeo, com a pasta `audio/` do teste de voz sintética.
 - `video/reels-versao-da-verdade/`: primeiro vídeo (descartado).
 - `video/brand/dme-logo.svg`: logo vetorial.
