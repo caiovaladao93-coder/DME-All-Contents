@@ -1,0 +1,590 @@
+{
+ "fps": 30,
+ "dur": 39.498,
+ "frames": 1185,
+ "scenes": [
+  {
+   "key": "interrupcao",
+   "fala": "n1",
+   "t0": 0.0,
+   "t1": 4.04,
+   "v0": 0.35,
+   "v1": 3.74,
+   "texto": "Você saiu de férias. A empresa deixou você descansar?"
+  },
+  {
+   "key": "dependencias",
+   "fala": "n2",
+   "t0": 4.04,
+   "t1": 10.245,
+   "v0": 4.14,
+   "v1": 9.945,
+   "texto": "Uma aprovação. Um arquivo. Outra decisão esperando."
+  },
+  {
+   "key": "viaja",
+   "fala": "n3",
+   "t0": 10.245,
+   "t1": 14.448,
+   "v0": 10.345,
+   "v1": 13.828,
+   "texto": "Quando tudo passa por você, o trabalho também viaja."
+  },
+  {
+   "key": "estrutura",
+   "fala": "n4",
+   "t0": 14.448,
+   "t1": 23.207,
+   "v0": 14.548,
+   "v1": 22.907,
+   "texto": "A DME desenvolve sistemas, automações e integrações sob medida para organizar processos e conectar informações."
+  },
+  {
+   "key": "clareza",
+   "fala": "n5",
+   "t0": 23.207,
+   "t1": 29.253,
+   "v0": 23.307,
+   "v1": 28.973,
+   "texto": "Responsáveis definidos. Menos tarefas manuais. Mais clareza para a equipe seguir."
+  },
+  {
+   "key": "presente",
+   "fala": "n6",
+   "t0": 29.253,
+   "t1": 32.764,
+   "v0": 29.353,
+   "v1": 32.464,
+   "texto": "E mais espaço para você estar presente onde também importa."
+  },
+  {
+   "key": "assinatura",
+   "fala": "n7",
+   "t0": 32.764,
+   "t1": 39.498,
+   "v0": 32.864,
+   "v1": 38.948,
+   "texto": "DME Technology. Sua operação conectada. Seu tempo de volta. Fale com a DME."
+  }
+ ],
+ "words": {
+  "interrupcao": [
+   [
+    "Você",
+    0.35,
+    0.629
+   ],
+   [
+    "saiu",
+    0.698,
+    0.884
+   ],
+   [
+    "de",
+    0.93,
+    1.0
+   ],
+   [
+    "férias.",
+    1.081,
+    1.627
+   ],
+   [
+    "A",
+    1.952,
+    1.987
+   ],
+   [
+    "empresa",
+    2.01,
+    2.347
+   ],
+   [
+    "deixou",
+    2.393,
+    2.626
+   ],
+   [
+    "você",
+    2.66,
+    2.823
+   ],
+   [
+    "descansar?",
+    2.893,
+    3.74
+   ]
+  ],
+  "dependencias": [
+   [
+    "Uma",
+    4.14,
+    4.558
+   ],
+   [
+    "aprovação.",
+    4.941,
+    5.963
+   ],
+   [
+    "Um",
+    6.775,
+    6.88
+   ],
+   [
+    "arquivo.",
+    6.926,
+    7.46
+   ],
+   [
+    "Outra",
+    8.412,
+    8.749
+   ],
+   [
+    "decisão",
+    8.796,
+    9.132
+   ],
+   [
+    "esperando.",
+    9.167,
+    9.945
+   ]
+  ],
+  "viaja": [
+   [
+    "Quando",
+    10.345,
+    10.612
+   ],
+   [
+    "tudo",
+    10.658,
+    10.833
+   ],
+   [
+    "passa",
+    10.879,
+    11.111
+   ],
+   [
+    "por",
+    11.158,
+    11.274
+   ],
+   [
+    "você,",
+    11.309,
+    11.796
+   ],
+   [
+    "o",
+    12.307,
+    12.365
+   ],
+   [
+    "trabalho",
+    12.423,
+    12.806
+   ],
+   [
+    "também",
+    12.853,
+    13.108
+   ],
+   [
+    "viaja.",
+    13.143,
+    13.828
+   ]
+  ],
+  "estrutura": [
+   [
+    "A",
+    14.548,
+    14.652
+   ],
+   [
+    "Dê",
+    14.722,
+    14.92
+   ],
+   [
+    "Eme",
+    14.943,
+    15.233
+   ],
+   [
+    "É",
+    15.93,
+    16.011
+   ],
+   [
+    "desenvolve",
+    16.092,
+    16.615
+   ],
+   [
+    "sistemas,",
+    16.649,
+    17.334
+   ],
+   [
+    "automações",
+    17.392,
+    18.159
+   ],
+   [
+    "e",
+    18.24,
+    18.275
+   ],
+   [
+    "integrações",
+    18.321,
+    19.006
+   ],
+   [
+    "sob",
+    19.029,
+    19.18
+   ],
+   [
+    "medida",
+    19.296,
+    19.738
+   ],
+   [
+    "para",
+    19.947,
+    20.167
+   ],
+   [
+    "organizar",
+    20.214,
+    20.678
+   ],
+   [
+    "processos",
+    20.725,
+    21.305
+   ],
+   [
+    "e",
+    21.351,
+    21.375
+   ],
+   [
+    "conectar",
+    21.421,
+    21.851
+   ],
+   [
+    "informações.",
+    21.897,
+    22.907
+   ]
+  ],
+  "clareza": [
+   [
+    "Responsáveis",
+    23.307,
+    24.062
+   ],
+   [
+    "definidos.",
+    24.108,
+    24.874
+   ],
+   [
+    "Menos",
+    25.199,
+    25.49
+   ],
+   [
+    "tarefas",
+    25.525,
+    25.884
+   ],
+   [
+    "manuais.",
+    25.942,
+    26.546
+   ],
+   [
+    "Mais",
+    26.929,
+    27.115
+   ],
+   [
+    "clareza",
+    27.185,
+    27.603
+   ],
+   [
+    "para",
+    27.649,
+    27.823
+   ],
+   [
+    "a",
+    27.847,
+    27.87
+   ],
+   [
+    "equipe",
+    27.928,
+    28.288
+   ],
+   [
+    "seguir.",
+    28.323,
+    28.973
+   ]
+  ],
+  "presente": [
+   [
+    "E",
+    29.353,
+    29.446
+   ],
+   [
+    "mais",
+    29.527,
+    29.69
+   ],
+   [
+    "espaço",
+    29.736,
+    30.166
+   ],
+   [
+    "para",
+    30.212,
+    30.34
+   ],
+   [
+    "você",
+    30.375,
+    30.549
+   ],
+   [
+    "estar",
+    30.584,
+    30.769
+   ],
+   [
+    "presente",
+    30.804,
+    31.187
+   ],
+   [
+    "onde",
+    31.222,
+    31.362
+   ],
+   [
+    "também",
+    31.408,
+    31.64
+   ],
+   [
+    "importa.",
+    31.663,
+    32.464
+   ]
+  ],
+  "assinatura": [
+   [
+    "Dê",
+    32.864,
+    33.096
+   ],
+   [
+    "Eme",
+    33.154,
+    33.34
+   ],
+   [
+    "É",
+    33.375,
+    33.398
+   ],
+   [
+    "Technology.",
+    33.456,
+    34.153
+   ],
+   [
+    "Sua",
+    34.362,
+    34.559
+   ],
+   [
+    "operação",
+    34.582,
+    35.07
+   ],
+   [
+    "conectada.",
+    35.105,
+    35.801
+   ],
+   [
+    "Seu",
+    36.045,
+    36.219
+   ],
+   [
+    "tempo",
+    36.289,
+    36.544
+   ],
+   [
+    "de",
+    36.579,
+    36.637
+   ],
+   [
+    "volta.",
+    36.684,
+    37.113
+   ],
+   [
+    "Fale",
+    37.438,
+    37.752
+   ],
+   [
+    "com",
+    37.798,
+    37.891
+   ],
+   [
+    "a",
+    37.938,
+    37.961
+   ],
+   [
+    "Dê",
+    38.03,
+    38.158
+   ],
+   [
+    "Eme",
+    38.205,
+    38.437
+   ],
+   [
+    "É.",
+    38.472,
+    38.948
+   ]
+  ]
+ },
+ "captions": [
+  {
+   "start": 0.35,
+   "end": 1.827,
+   "text": "Você saiu de férias.",
+   "scene": "interrupcao"
+  },
+  {
+   "start": 1.952,
+   "end": 3.9400000000000004,
+   "text": "A empresa deixou você descansar?",
+   "scene": "interrupcao"
+  },
+  {
+   "start": 4.14,
+   "end": 6.163,
+   "text": "Uma aprovação.",
+   "scene": "dependencias"
+  },
+  {
+   "start": 6.775,
+   "end": 7.66,
+   "text": "Um arquivo.",
+   "scene": "dependencias"
+  },
+  {
+   "start": 8.412,
+   "end": 10.145,
+   "text": "Outra decisão esperando.",
+   "scene": "dependencias"
+  },
+  {
+   "start": 10.345,
+   "end": 14.027999999999999,
+   "text": "Quando tudo passa por você, o trabalho também viaja.",
+   "scene": "viaja"
+  },
+  {
+   "start": 14.548,
+   "end": 18.24,
+   "text": "A DME desenvolve sistemas, automações",
+   "scene": "estrutura"
+  },
+  {
+   "start": 18.24,
+   "end": 19.938,
+   "text": "e integrações sob medida",
+   "scene": "estrutura"
+  },
+  {
+   "start": 19.947,
+   "end": 23.107,
+   "text": "para organizar processos e conectar informações.",
+   "scene": "estrutura"
+  },
+  {
+   "start": 23.307,
+   "end": 25.073999999999998,
+   "text": "Responsáveis definidos.",
+   "scene": "clareza"
+  },
+  {
+   "start": 25.199,
+   "end": 26.746,
+   "text": "Menos tarefas manuais.",
+   "scene": "clareza"
+  },
+  {
+   "start": 26.929,
+   "end": 29.173,
+   "text": "Mais clareza para a equipe seguir.",
+   "scene": "clareza"
+  },
+  {
+   "start": 29.353,
+   "end": 32.664,
+   "text": "E mais espaço para você estar presente onde também importa.",
+   "scene": "presente"
+  },
+  {
+   "start": 32.864,
+   "end": 34.353,
+   "text": "DME Technology.",
+   "scene": "assinatura"
+  },
+  {
+   "start": 34.362,
+   "end": 36.001000000000005,
+   "text": "Sua operação conectada.",
+   "scene": "assinatura"
+  },
+  {
+   "start": 36.045,
+   "end": 37.313,
+   "text": "Seu tempo de volta.",
+   "scene": "assinatura"
+  },
+  {
+   "start": 37.438,
+   "end": 39.148,
+   "text": "Fale com a DME.",
+   "scene": "assinatura"
+  }
+ ]
+}

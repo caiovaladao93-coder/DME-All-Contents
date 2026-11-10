@@ -1,0 +1,37 @@
+MARCAS · DME "O trabalho também viaja" · 39.50 s · 30 fps · trilha original 96 BPM
+
+FALAS (Guilherme, ElevenLabs, velocidade natural, sem compressão)
+  0.35–  3.74  [interrupcao] Você saiu de férias. A empresa deixou você descansar?
+  4.14–  9.95  [dependencias] Uma aprovação. Um arquivo. Outra decisão esperando.
+ 10.35– 13.83  [viaja] Quando tudo passa por você, o trabalho também viaja.
+ 14.55– 22.91  [estrutura] A DME desenvolve sistemas, automações e integrações sob medida para organizar processos e conectar informações.
+ 23.31– 28.97  [clareza] Responsáveis definidos. Menos tarefas manuais. Mais clareza para a equipe seguir.
+ 29.35– 32.46  [presente] E mais espaço para você estar presente onde também importa.
+ 32.86– 38.95  [assinatura] DME Technology. Sua operação conectada. Seu tempo de volta. Fale com a DME.
+
+TRILHA: tranquilidade 0–1.86 (ambiência + pad Fá maior) · interrupção 1.98 · tensão leve 1.86–13.88 (pulso, Ré menor) · pausa 13.88–14.50 · organização 14.50–29.25 (pulsação estável, F–C–Dm–B♭) · alívio 29.25–32.76 (piano + ambiência) · assinatura 32.41
+
+EFEITOS
+  1.98  notificação (tela acende)
+  4.94  solicitação 1
+  6.93  solicitação 2
+  8.80  solicitação 3
+ 10.29  câmera recua (revelação)
+ 12.42  sinal percorre até "Aprovação"
+ 13.27  sinal espera em "Aprovação"
+ 15.65  conexão estabelecida 1
+ 15.95  conexão estabelecida 2
+ 16.25  conexão estabelecida 3
+ 16.55  conexão estabelecida 4
+ 16.75  atividade avança 1
+ 16.85  conexão estabelecida 5
+ 17.49  atividade avança 2
+ 17.84  automação (engrenagem)
+ 18.47  atividade avança 3
+ 28.07  decisão humana (revisão)
+ 29.17  concluído
+ 32.41  assinatura 1
+ 32.53  assinatura 2
+ 32.65  assinatura 3
+ 32.91  logo
+ 37.29  CTA "Fale com a DME"
