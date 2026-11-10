@@ -146,7 +146,6 @@ export const Film: React.FC<{captions?: boolean; audio?: boolean}> = ({captions 
 
       {/* leitura dos títulos */}
       <AbsoluteFill style={{background: 'linear-gradient(180deg, rgba(10,11,12,.92) 0%, rgba(10,11,12,.8) 15%, rgba(10,11,12,0) 27%)', opacity: Math.max(shade, P(t, S.estrutura.t0, .4) * (1 - P(t, tCalm + .3, .6)))}} />
-      <Seal t={t} tin={tN[0]} tout={tCalm - .3} />
 
       <Headline t={t} tin={-.6} tout={S.areas.t0 - .2} text="Você saiu de férias…" accent="férias" size={72} />
       <Headline t={t} tin={tTrab - .1} tout={S.viaja.t1 - .2} text="O trabalho também viaja" accent="viaja" size={72} />
