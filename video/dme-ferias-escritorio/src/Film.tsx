@@ -72,7 +72,7 @@ export const Film: React.FC<{captions?: boolean; audio?: boolean}> = ({captions 
   const hp: Pose = {x: 540, y: 1130, s: 1.1, rx: 0, ry: 0, rz: 0};
   const VIAJA: Array<[number, number]> = [[100, 410], [356, 585], [100, 760]], KV = .78;
   const [camY, z] = keyed(t, [
-    [S.estrutura.t0, 706, .56], [mF + .1, 706, .56], [mF + .8, 200, 1.0], [mC, 200, 1.0], [mC + .6, 670, 1.0], [mO, 670, 1.0], [mO + .6, 1170, 1.0], [S.estrutura.t1 - .1, 1170, 1.0],
+    [S.estrutura.t0, 706, .56], [mF - .3, 706, .56], [mF + .45, 200, 1.0], [mC, 200, 1.0], [mC + .5, 670, 1.0], [mO, 670, 1.0], [mO + .5, 1170, 1.0], [S.estrutura.t1 - .1, 1170, 1.0],
     [tE - .75, 200, 1.0], [tI - .55, 200, 1.0], [tI - .05, 670, 1.0], [tRp - .55, 670, 1.0], [tRp - .05, 1170, 1.0], [tCalm - .2, 1170, 1.0], [tCalm + 1.4, 760, .46],
   ]);
   const toFlow = P(t, S.estrutura.t0 - .1, 1.1, EASE_IO);
@@ -150,8 +150,8 @@ export const Film: React.FC<{captions?: boolean; audio?: boolean}> = ({captions 
 
       <Headline t={t} tin={-.6} tout={S.areas.t0 - .2} text="Você saiu de férias…" accent="férias" size={72} />
       <Headline t={t} tin={tTrab - .1} tout={S.viaja.t1 - .2} text="O trabalho também viaja" accent="viaja" size={72} />
-      <Headline t={t} tin={mF - .05} tout={mC - .2} text="Processos organizados" accent="organizados" size={64} />
-      <Headline t={t} tin={mC - .1} tout={mO - .2} text="Sistemas conectados" accent="conectados" size={64} />
+      <Headline t={t} tin={mF - .05} tout={mC - .45} text="Processos organizados" accent="organizados" size={64} />
+      <Headline t={t} tin={mC - .1} tout={mO - .45} text="Sistemas conectados" accent="conectados" size={64} />
       <Headline t={t} tin={mO - .1} tout={S.estrutura.t1 - .15} text="Automação sob medida" accent="sob medida" size={64} />
       <Headline t={t} tin={S.beneficios.t0 + .05} tout={S.beneficios.t1 - .15} text="A equipe sabe como seguir" accent="como seguir" size={64} />
       <Headline t={t} tin={tFocus} tout={tEnd - .2} text="Férias para aproveitar" accent="aproveitar" size={72} />
@@ -175,8 +175,8 @@ const Connections: React.FC<{t: number; cards: Array<{x: number; y: number; k: n
   const spine = P(t, tStart, 1.4, EASE_IO);
   const [sx, sy0] = W2S(SPINE_X, FLOW_Y[0] + 98), [, sy1] = W2S(SPINE_X, DME_Y + 60);
   // token: acompanha a atividade em foco (desce pela espinha)
-  const ty = keyed(t, [[tStart + .9, FLOW_Y[0] + 98], [S.estrutura.v0 + 2.6, FLOW_Y[0] + 98], [S.estrutura.v0 + 3.0, FLOW_Y[1] + 98], [S.estrutura.v0 + 4.0, FLOW_Y[1] + 98],
-    [S.estrutura.v0 + 4.5, FLOW_Y[2] + 98], [tE - .75, FLOW_Y[2] + 98], [tE - .2, FLOW_Y[0] + 98], [tI - .5, FLOW_Y[0] + 98], [tI, FLOW_Y[1] + 98], [tRp - .5, FLOW_Y[1] + 98], [tRp, FLOW_Y[2] + 98]])[0];
+  const ty = keyed(t, [[tStart + .9, FLOW_Y[0] + 98], [wt('estrutura', 'conecta') - .15, FLOW_Y[0] + 98], [wt('estrutura', 'conecta') + .35, FLOW_Y[1] + 98], [wt('estrutura', 'automatiza') - .15, FLOW_Y[1] + 98],
+    [wt('estrutura', 'automatiza') + .35, FLOW_Y[2] + 98], [tE - .75, FLOW_Y[2] + 98], [tE - .2, FLOW_Y[0] + 98], [tI - .5, FLOW_Y[0] + 98], [tI, FLOW_Y[1] + 98], [tRp - .5, FLOW_Y[1] + 98], [tRp, FLOW_Y[2] + 98]])[0];
   const tok = W2S(SPINE_X, ty);
   return (
     <svg width={1080} height={1920} style={{position: 'absolute', inset: 0}}>
@@ -221,9 +221,9 @@ const Signature: React.FC<{t: number; tEnd: number}> = ({t, tEnd}) => {
         <div style={line(l2)}>E para você descansar.</div>
       </div>
       <div style={{position: 'absolute', left: 100, right: 100, top: 1100, textAlign: 'center', ...line(cta)}}>
-        <div style={{fontFamily: UI, fontWeight: 600, fontSize: 44, color: C.ink}}>Envie</div>
+        <div style={{fontFamily: UI, fontWeight: 600, fontSize: 44, color: C.ink}}>Comente</div>
         <div style={{display: 'inline-block', margin: '10px 0', padding: '10px 40px', borderRadius: 22, background: C.accent, fontFamily: HEAD, fontWeight: 700, fontSize: 96, letterSpacing: '.02em', color: '#fff'}}>COMERCIAL</div>
-        <div style={{fontFamily: UI, fontWeight: 600, fontSize: 44, color: C.ink}}>no direct</div>
+        <div style={{fontFamily: UI, fontWeight: 600, fontSize: 44, color: C.ink}}>e receba um diagnóstico</div>
       </div>
     </AbsoluteFill>
   );

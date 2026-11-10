@@ -1,36 +1,36 @@
-MARCAS · DME "Suas férias não precisam virar escritório" · 39.90 s · 30 fps · trilha original 96 BPM
+MARCAS · DME "Suas férias não precisam virar escritório" · 39.30 s · 30 fps · trilha original 96 BPM
 
-FALAS (Guilherme, ElevenLabs, velocidade natural, sem compressão)
-  0.30–  3.64  [ferias] Você saiu de férias. Mas a empresa continua chamando.
-  3.90– 11.29  [areas] O financeiro precisa de aprovação. O comercial espera uma resposta. A operação quer saber o próximo passo.
- 11.70– 14.95  [viaja] Quando tudo depende de você, o trabalho também viaja.
- 15.56– 21.69  [estrutura] A DME organiza processos, conecta sistemas e automatiza tarefas manuais.
- 21.90– 27.19  [beneficios] Solicitações encaminhadas. Informações disponíveis. Responsáveis definidos.
- 27.40– 31.82  [tranquilidade] Menos interrupções. Mais tranquilidade para aproveitar suas férias.
- 31.98– 39.45  [assinatura] DME Technology. Tecnologia para a empresa seguir. E para você descansar. Envie COMERCIAL no direct.
+FALAS (Diego, ElevenLabs, velocidade natural, sem compressão)
+  0.30–  3.92  [ferias] Você saiu de férias. Mas a empresa continua chamando.
+  4.18– 11.05  [areas] O financeiro precisa de aprovação. O comercial espera uma resposta. A operação quer saber o próximo passo.
+ 11.46– 15.09  [viaja] Quando tudo depende de você, o trabalho também viaja.
+ 15.70– 20.48  [estrutura] A DME organiza processos, conecta sistemas e automatiza tarefas manuais.
+ 20.69– 26.31  [beneficios] Solicitações encaminhadas. Informações disponíveis. Responsáveis definidos.
+ 26.52– 30.98  [tranquilidade] Menos interrupções. Mais tranquilidade para aproveitar suas férias.
+ 31.14– 38.85  [assinatura] DME Technology. Tecnologia para a empresa seguir. E para você descansar. Comente COMERCIAL e receba um diagnóstico.
 
-TRILHA: ambiência tranquila 0–2.80 · interrupções 2.80–11.64 (notificações, vibração, ligação breve; pulso grave crescente) · pausa 15.00–15.54 · organização 15.54–27.34 (pulsação estável, F–C–Dm–B♭) · descanso 27.34–31.91 (ambiência + piano) · assinatura 31.91
+TRILHA: ambiência tranquila 0–3.14 · interrupções 3.14–11.40 (notificações, vibração, ligação breve; pulso grave crescente) · pausa 15.14–15.68 · organização 15.68–26.46 (pulsação estável, F–C–Dm–B♭) · descanso 26.46–31.08 (ambiência + piano) · assinatura 31.08
 
 EFEITOS
-  2.80  notificação (equipe)
-  4.07  notificação Mariana · Financeiro
-  6.56  notificação Rafael · Comercial
-  8.95  notificação Camila · Operação
- 10.34  ligação "Empresa" (toque baixo)
- 11.59  as mensagens se desprendem (câmera recua)
- 12.54  conexões convergem para "você"
- 15.90  fluxo: espinha se desenha
- 16.68  Financeiro vira atividade
- 18.01  Comercial vira atividade
- 19.54  Operação vira atividade
- 20.39  status automático
- 22.61  encaminhada (Mariana → gestor)
- 23.87  arquivo vinculado
- 25.53  responsável definido
- 26.73  tarefa automática concluída
- 27.94  descanso: a praia se revela (ondas)
- 31.81  logo
- 31.91  assinatura 1
- 32.03  assinatura 2
- 32.16  assinatura 3
- 36.43  CTA "Envie COMERCIAL no direct"
+  3.14  notificação (equipe)
+  4.48  notificação Mariana · Financeiro
+  6.55  notificação Rafael · Comercial
+  8.59  notificação Camila · Operação
+ 10.12  ligação "Empresa" (toque baixo)
+ 11.35  as mensagens se desprendem (câmera recua)
+ 12.30  conexões convergem para "você"
+ 16.04  fluxo: espinha se desenha
+ 16.63  Financeiro vira atividade
+ 17.64  Comercial vira atividade
+ 18.55  Operação vira atividade
+ 19.40  status automático
+ 21.58  encaminhada (Mariana → gestor)
+ 22.71  arquivo vinculado
+ 24.60  responsável definido
+ 25.80  tarefa automática concluída
+ 27.06  descanso: a praia se revela (ondas)
+ 30.98  logo
+ 31.08  assinatura 1
+ 31.20  assinatura 2
+ 31.32  assinatura 3
+ 35.18  CTA "Comente COMERCIAL e receba um diagnóstico"

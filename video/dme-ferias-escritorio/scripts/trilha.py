@@ -97,7 +97,7 @@ ev('descanso: a praia se revela (ondas)', tCalm + .6, lambda t0: put(fx, whoosh(
 for i, m in enumerate((77, 81, 84)): ev(f'assinatura {i + 1}', tEnd + i * .12, lambda t0, m=m, i=i: put(fx, bell(m, 2.6), t0, .15, (-.3, 0, .3)[i], .6))
 put(L, pad((41, 53, 57, 60, 65), DUR - tEnd + .3, bright=.55), tEnd - .2, .34, 0, .5); put(L, bass(29, 3.0), tEnd, .3)
 ev('logo', tEnd - .1, lambda t0: put(fx, boom(1.4), t0, .16, 0, .3))
-ev('CTA "Envie COMERCIAL no direct"', wt('assinatura', 'descansar') - .1, lambda t0: put(fx, blip(91), t0, .07, 0, .5))
+ev('CTA "Comente COMERCIAL e receba um diagnóstico"', wt('assinatura', 'descansar') - .1, lambda t0: put(fx, blip(91), t0, .07, 0, .5))
 
 ir = [make_ir(2.2, 61 + c) for c in (0, 1)]
 rev = np.stack([conv(send[:, c], ir[c]) for c in (0, 1)], 1)
@@ -121,7 +121,7 @@ subprocess.run(['ffmpeg', '-y', '-v', 'error', '-f', 'f32le', '-ar', str(SR), '-
 
 LEG = {x['id']: x.get('legenda', x['text']) for x in json.load(open(f'{ROOT}/voz/falas.json'))}
 with open(f'{ROOT}/out/marcas-som.txt', 'w') as f:
-    f.write(f'MARCAS · DME "Suas férias não precisam virar escritório" · {DUR:.2f} s · 30 fps · trilha original 96 BPM\n\nFALAS (Guilherme, ElevenLabs, velocidade natural, sem compressão)\n')
+    f.write(f'MARCAS · DME "Suas férias não precisam virar escritório" · {DUR:.2f} s · 30 fps · trilha original 96 BPM\n\nFALAS (Diego, ElevenLabs, velocidade natural, sem compressão)\n')
     for s in TL['scenes']: f.write(f"{s['v0']:6.2f}–{s['v1']:6.2f}  [{s['key']}] {LEG[s['fala']]}\n")
     f.write(f"\nTRILHA: ambiência tranquila 0–{tN0:.2f} · interrupções {tN0:.2f}–{tH:.2f} (notificações, vibração, ligação breve; pulso grave crescente) · "
             f"pausa {T_PAUSE0:.2f}–{T_PAUSE1:.2f} · organização {T_PAUSE1:.2f}–{tCalm:.2f} (pulsação estável, F–C–Dm–B♭) · descanso {tCalm:.2f}–{tEnd:.2f} (ambiência + piano) · assinatura {tEnd:.2f}\n\nEFEITOS\n")
