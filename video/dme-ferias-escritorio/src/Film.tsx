@@ -150,9 +150,9 @@ export const Film: React.FC<{captions?: boolean; audio?: boolean}> = ({captions 
 
       <Headline t={t} tin={-.6} tout={S.areas.t0 - .2} text="Você saiu de férias…" accent="férias" size={72} />
       <Headline t={t} tin={tTrab - .1} tout={S.viaja.t1 - .2} text="O trabalho também viaja" accent="viaja" size={72} />
-      <Headline t={t} tin={mF - .05} tout={mC - .45} text="Processos organizados" accent="organizados" size={64} />
-      <Headline t={t} tin={mC - .1} tout={mO - .45} text="Sistemas conectados" accent="conectados" size={64} />
-      <Headline t={t} tin={mO - .1} tout={S.estrutura.t1 - .15} text="Automação sob medida" accent="sob medida" size={64} />
+      <Headline t={t} tin={mF - .05} tout={mC - .3} text="Processos organizados" accent="organizados" size={64} />
+      <Headline t={t} tin={mC + .02} tout={mO - .3} text="Sistemas conectados" accent="conectados" size={64} />
+      <Headline t={t} tin={mO + .02} tout={S.estrutura.t1 - .15} text="Automação sob medida" accent="sob medida" size={64} />
       <Headline t={t} tin={S.beneficios.t0 + .05} tout={S.beneficios.t1 - .15} text="A equipe sabe como seguir" accent="como seguir" size={64} />
       <Headline t={t} tin={tFocus} tout={tEnd - .2} text="Férias para aproveitar" accent="aproveitar" size={72} />
 

@@ -1,6 +1,6 @@
-# DME · "Suas férias não precisam virar escritório" (Reels, 39,3 s)
+# DME · "Suas férias não precisam virar escritório" (Reels, 38,2 s)
 
-Vídeo vertical 1080 × 1920, 30 fps, feito em Remotion (React + TypeScript), com a voz do Diego (ElevenLabs, locutor publicitário, mais entusiasmado), trilha original procedural, legendas queimadas, SRT e narração separada.
+Vídeo vertical 1080 × 1920, 30 fps, feito em Remotion (React + TypeScript), com a voz do Lendário (ElevenLabs, animada, escolhida entre 3 amostras), trilha original procedural, legendas queimadas, SRT e narração separada.
 
 ## Saídas (`out/`)
 
@@ -25,7 +25,7 @@ node scripts/stills.mjs out/testes 0,150,300   # quadros de teste
 
 **Voz:** `node scripts/gerar_voz.mjs --takes=3 --speed=1.0` gera as tomadas, com o proxy injetando a chave. `python3 scripts/escolher_take.py n1,...,n7 --aplicar --forcar=...` escolhe uma delas. Depois, copie as falas para `src/data/voz/` (json) e `public/assets/audio/falas/` (mp3).
 
-- **Tomadas usadas:** n1:3, n2:3, n3:3, n4:1, n5:3, n6:1, n7:3 (voz Diego, `rpNe0HOx7heUulPiOEaG`, stability 0.4, style 0.35).
+- **Tomadas usadas:** n1:1, n2:2, n3:1, n4:2, n5:1, n6:2, n7:2 (voz Lendário, `4za2kOXGgUd57HRSQ1fn`, stability 0.4, style 0.35). A pronúncia de "DME" foi conferida transcrevendo cada tomada com o speech-to-text da ElevenLabs (scribe_v1). As tomadas que saíam "DM é" foram descartadas.
 - **Velocidade:** 1,0, sem aceleração.
 - **Pronúncia:** o texto enviado à voz grafa "Dê Eme É", e as legendas mostram "DME".
 
@@ -41,7 +41,7 @@ O celular conduz o filme inteiro. As três notificações se desprendem da tela 
 | Estrutura | 15,5–21,8 s | Cada mensagem vira uma atividade, em sequência: Financeiro (etapa e **validação humana do gestor**), Comercial (responsável e histórico) e Operação (status automático). A espinha azul encaminha o fluxo, um marcador acompanha a atividade e o logo DME aparece discreto no fluxo |
 | Benefícios | 21,8–27,3 s | **Encaminhadas:** Mariana → gestor. **Disponíveis:** um arquivo se vincula à proposta. **Definidos:** Camila assume, o próximo passo aparece e uma tarefa automática conclui ("cliente avisado") |
 | Tranquilidade | 27,3–31,9 s | O fluxo se dissolve ao fundo. O celular sai junto com o fluxo e sobra só a praia, com areia, ondas e o foco passando para o mar |
-| Assinatura | 31,1–39,3 s | Fundo institucional escuro, o logo oficial, "Tecnologia para a empresa seguir. E para você descansar." e o CTA "Comente **COMERCIAL** e receba um diagnóstico" (cerca de 4 s) |
+| Assinatura | 28,5–38,2 s | Fundo institucional escuro, o logo oficial, "Tecnologia para a empresa seguir. E para você descansar." e o CTA "Comente **COMERCIAL** e receba um diagnóstico" (cerca de 4 s) |
 
 ## Recursos visuais
 

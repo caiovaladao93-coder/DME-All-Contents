@@ -121,7 +121,7 @@ subprocess.run(['ffmpeg', '-y', '-v', 'error', '-f', 'f32le', '-ar', str(SR), '-
 
 LEG = {x['id']: x.get('legenda', x['text']) for x in json.load(open(f'{ROOT}/voz/falas.json'))}
 with open(f'{ROOT}/out/marcas-som.txt', 'w') as f:
-    f.write(f'MARCAS · DME "Suas férias não precisam virar escritório" · {DUR:.2f} s · 30 fps · trilha original 96 BPM\n\nFALAS (Diego, ElevenLabs, velocidade natural, sem compressão)\n')
+    f.write(f'MARCAS · DME "Suas férias não precisam virar escritório" · {DUR:.2f} s · 30 fps · trilha original 96 BPM\n\nFALAS (Lendário, ElevenLabs, velocidade natural, sem compressão)\n')
     for s in TL['scenes']: f.write(f"{s['v0']:6.2f}–{s['v1']:6.2f}  [{s['key']}] {LEG[s['fala']]}\n")
     f.write(f"\nTRILHA: ambiência tranquila 0–{tN0:.2f} · interrupções {tN0:.2f}–{tH:.2f} (notificações, vibração, ligação breve; pulso grave crescente) · "
             f"pausa {T_PAUSE0:.2f}–{T_PAUSE1:.2f} · organização {T_PAUSE1:.2f}–{tCalm:.2f} (pulsação estável, F–C–Dm–B♭) · descanso {tCalm:.2f}–{tEnd:.2f} (ambiência + piano) · assinatura {tEnd:.2f}\n\nEFEITOS\n")

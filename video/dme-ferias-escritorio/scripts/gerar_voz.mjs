@@ -1,8 +1,8 @@
-// Locução ElevenLabs. Esta peça usa a voz Diego (locutor publicitário, mais entusiasmada), a pedido do usuário.
+// Locução ElevenLabs. Esta peça usa a voz Lendário (animada, escolhida pelo usuário entre 3 amostras).
 // A chave NÃO fica no código: o proxy do ambiente injeta o cabeçalho xi-api-key.
 // Uso: NODE_USE_ENV_PROXY=1 NODE_EXTRA_CA_CERTS=/root/.ccr/ca-bundle.crt node scripts/gerar_voz.mjs [--takes=3] [--so=id,id]
 import fs from 'fs';
-const VOICE = 'rpNe0HOx7heUulPiOEaG' /* Diego - Confident Announcer (pt-BR) */, MODEL = 'eleven_multilingual_v2';
+const VOICE = '4za2kOXGgUd57HRSQ1fn' /* Lendário - Cheerful, Vibrant and Fun (pt-BR) */, MODEL = 'eleven_multilingual_v2';
 const SET = {stability: 0.4, similarity_boost: 0.8, style: 0.35, use_speaker_boost: true, speed: Number(process.argv.find(a => a.startsWith('--speed='))?.split('=')[1] || 0.94)};
 const arg = k => (process.argv.find(a => a.startsWith(`--${k}=`)) || '').split('=')[1];
 const takes = Number(arg('takes') || 3), so = (arg('so') || '').split(',').filter(Boolean);
