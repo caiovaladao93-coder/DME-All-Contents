@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Flávia Valadão Interiores · institucional vertical</title>
+<meta name="viewport" content="width=1080">
+<style>
+  @font-face { font-family: 'Cormorant'; src: url('assets/fonts/cormorant-latin-400-normal.woff2') format('woff2'); font-weight: 400; }
+  @font-face { font-family: 'Cormorant'; src: url('assets/fonts/cormorant-latin-500-normal.woff2') format('woff2'); font-weight: 500; }
+  @font-face { font-family: 'Manrope'; src: url('assets/fonts/manrope-latin-400-normal.woff2') format('woff2'); font-weight: 400; }
+  @font-face { font-family: 'Manrope'; src: url('assets/fonts/manrope-latin-500-normal.woff2') format('woff2'); font-weight: 500; }
+  :root { --verde: #3C4A3B; --areia: #F0EADE; --marfim: #F9F5EE; --texto: #30382F; --bronze: #8B6847; }
+  html, body { margin: 0; background: #000; }
+  #stage { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: var(--marfim) url('assets/marfim-textura.jpg'); }
+  .layer { position: absolute; inset: 0; overflow: hidden; }
+  .cam { position: absolute; left: 0; top: 0; width: 1086px; height: 1448px; transform-origin: 0 0; }
+  .cam img { width: 100%; height: 100%; display: block; }
+  #draw svg { position: absolute; left: 0; top: 0; width: 1086px; height: 1448px; overflow: visible; }
+  #draw polyline { fill: none; stroke: var(--verde); stroke-width: 3.2px; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+  #edge { position: absolute; top: 0; width: 3.2px; height: 1920px; background: var(--verde); transform-origin: 50% 0; }
+  #V img { position: absolute; inset: 0; width: 1080px; height: 1920px; }
+  .title { position: absolute; left: 90px; top: 290px; overflow: hidden; padding: 20px 34px 26px; background: rgba(249,245,238,.92); border-radius: 6px; visibility: hidden; }
+  .title > div { font-family: 'Cormorant'; font-weight: 500; font-size: 92px; line-height: 1.02; letter-spacing: -.005em; color: var(--texto); }
+  #caption { position: absolute; left: 90px; right: 90px; top: 1352px; display: flex; justify-content: center; }
+  #caption span { max-width: 880px; padding: 14px 26px 16px; border-radius: 14px; background: rgba(249,245,238,.86); font-family: 'Manrope'; font-weight: 500; font-size: 42px; line-height: 1.25; color: var(--texto); text-align: center; }
+  #logo { position: absolute; left: 190px; top: 560px; width: 700px; }
+  #logo img { width: 100%; display: block; }
+  #sig1 { position: absolute; left: 90px; right: 90px; top: 1010px; text-align: center; overflow: hidden; padding-bottom: 12px; }
+  #sig1 > div { font-family: 'Cormorant'; font-weight: 500; font-size: 88px; line-height: 1.04; color: var(--verde); }
+  #cta { position: absolute; left: 90px; right: 90px; top: 1180px; text-align: center; }
+  #cta span { display: inline-block; font-family: 'Manrope'; font-weight: 500; font-size: 40px; color: var(--texto); padding: 0 6px 14px; border-bottom: 2px solid var(--bronze); }
+</style>
+</head>
+<body>
+<div id="stage">
+  <!-- bloco 01: detalhe (foto A: nicho de madeira com a borda iluminada) e bloco 03 · composição -->
+  <div class="layer" id="LA"><div class="cam" id="A"><img src="assets/tratadas/foto-entrada-nicho.png"></div></div>
+  <!-- bloco 02: marfim + contorno derivado da foto B, que é revelada por máscara a partir da mesma borda -->
+  <div class="layer" id="ivory1" style="background: var(--marfim) url('assets/marfim-textura.jpg')"></div>
+  <div class="layer" id="LB"><div class="cam" id="B"><img src="assets/tratadas/foto-sala-tv.png"></div></div>
+  <div class="layer" id="draw"><div class="cam" id="D"><svg viewBox="0 0 1086 1448" id="svg"></svg></div></div>
+  <div id="edge"></div>
+  <!-- bloco 04: vídeo real do projeto (quadros tratados, com mistura entre quadros vizinhos) -->
+  <div class="layer" id="V"><img id="v0"><img id="v1"></div>
+  <!-- bloco 05: assinatura -->
+  <div class="layer" id="ivory2" style="background: var(--marfim) url('assets/marfim-textura.jpg')"></div>
+  <div id="logo"><img src="assets/logo-flavia-transparente.png"></div>
+  <div id="sig1"><div>Seu jeito de viver</div></div>
+  <div id="cta"><span>Converse sobre o seu espaço</span></div>
+
+  <div class="title" id="t1" style="left:auto;right:90px;top:330px"><div>Seu espaço,<br>seu jeito</div></div>
+  <div class="title" id="t2"><div>Interiores<br>com intenção</div></div>
+  <div class="title" id="t3" style="left:auto;right:90px"><div>Materiais</div></div>
+  <div class="title" id="t4"><div>Luz</div></div>
+  <div class="title" id="t5"><div>Composição</div></div>
+  <div class="title" id="t6" style="left:auto;right:90px"><div>Cuidado em<br>cada detalhe</div></div>
+  <div id="caption"><span></span></div>
+</div>
+<script src="lib/gsap.min.js"></script>
+<script src="data.js"></script>
+<script>
+const TL = window.TLDATA, CONTORNO = window.CONTORNO;
+const VFRAMES = 107, FPS = 30;
+const $ = (s) => document.querySelector(s);
+
+// ── câmera em coordenadas da foto ORIGINAL (1086 × 1448): centro (cx, cy) e largura do recorte w
+// Limita o recorte à área da imagem (nunca mostra borda vazia) e converte em transform.
+function camTransform(c) {
+  const s = 1080 / c.w, hw = 540 / s, hh = 960 / s;
+  const cx = Math.min(1086 - hw, Math.max(hw, c.cx)), cy = Math.min(1448 - hh, Math.max(hh, c.cy));
+  return `translate(${(540 - cx * s).toFixed(3)}px, ${(960 - cy * s).toFixed(3)}px) scale(${s.toFixed(5)})`;
+}
+const camA = {cx: 395, cy: 500, w: 540}, camB = {cx: 655, cy: 724, w: 814};
+const EDGE_X = 560;                       // borda que conduz: lateral iluminada do nicho (bloco 1) = quina da coluna (bloco 2)
+const mask = {o1: 0, o2: 0, r2: 1200};   // aberturas das máscaras (px a partir da borda)
+const vid = {f: 0};
+
+// contorno: polilinhas reais da foto B
+const svg = $('#svg'), lines = [];
+for (const p of CONTORNO.polys) {
+  const el = document.createElementNS('http://www.w3.org/2000/svg', 'polyline');
+  el.setAttribute('points', p.map((q) => q.join(',')).join(' ')); svg.appendChild(el);
+  const xs = p.map((q) => q[0]), ys = p.map((q) => q[1]);
+  const mx = xs.reduce((a, b) => a + b, 0) / xs.length, my = ys.reduce((a, b) => a + b, 0) / ys.length;
+  lines.push({el, d: Math.hypot((mx - 670) / 1086, (my - 724) / 1448)});
+}
+
+const tl = gsap.timeline({paused: true, defaults: {ease: 'sine.inOut'}});
+const W = (k) => TL.words[k];
+const at = (k, w) => { const n = (x) => x.normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z]/gi, '').toLowerCase(); return W(k).find((x) => n(x[0]) === n(w))[1]; };
+
+// títulos: revelação por máscara (entrada 0,6 s), saída curta (0,3 s)
+function title(id, tin, tout) {
+  const inner = `#${id} > div`;
+  tl.fromTo(`#${id}`, {autoAlpha: 0}, {autoAlpha: 1, duration: .35, ease: 'power1.out', immediateRender: true}, tin)
+    .fromTo(inner, {yPercent: 105}, {yPercent: 0, duration: .6, ease: 'power2.out', immediateRender: true}, tin)
+    .to(`#${id}`, {autoAlpha: 0, duration: .3, ease: 'power1.in'}, tout);
+}
+
+// ── BLOCO 01 · detalhe: deslocamento curto descendo pela borda iluminada do nicho
+tl.to(camA, {cy: 760, duration: 4.2, ease: 'none'}, 0);
+title('t1', .7, 3.45);
+// a borda vira traço e o marfim se abre a partir dela
+tl.fromTo('#edge', {scaleY: 0}, {scaleY: 1, duration: .55, ease: 'power2.inOut'}, 3.35);
+tl.to(mask, {o1: 1250, duration: .7, ease: 'power2.inOut'}, 3.75);
+
+// ── BLOCO 02 · intenção: o contorno se desenha a partir da borda e a foto é revelada pela mesma geometria
+lines.forEach((l) => {
+  const len = l.el.getTotalLength(); l.el.style.strokeDasharray = len;
+  tl.fromTo(l.el, {strokeDashoffset: len}, {strokeDashoffset: 0, duration: .6, ease: 'power1.inOut'}, 4.15 + l.d * 1.5);
+});
+title('t2', 4.6, 9.3);
+tl.to(mask, {r2: 0, duration: 0}, 0).to(mask, {r2: 1250, duration: 1.6, ease: 'power2.inOut'}, 6.0);   // revelação ≈ 1,6 s
+tl.to('#draw', {autoAlpha: 0, duration: .8, ease: 'power1.out'}, 7.3).to('#edge', {autoAlpha: 0, duration: .6}, 7.3);
+// a imagem completa fica visível; depois a câmera se aproxima do sofá (materiais)
+tl.to(camB, {cx: 300, cy: 960, w: 560, duration: 1.9, ease: 'power1.inOut'}, 8.1);
+
+// ── BLOCO 03 · escolhas: materiais (sofá e mantas) → luz (arandela e LED) → composição (jantar e estar)
+tl.to(camB, {cx: 360, w: 520, duration: 1.9, ease: 'none'}, 10.0);
+title('t3', 10.05, 11.6);
+tl.set(camB, {cx: 280, cy: 600, w: 540}, 11.9).to(camB, {cy: 470, duration: 1.9, ease: 'none'}, 11.9);   // corte por posição: a manta clara encontra a parede clara
+title('t4', 11.95, 13.5);
+tl.set('#LB', {autoAlpha: 0}, 13.8).set(camA, {cx: 790, cy: 860, w: 540}, 13.8).to(camA, {cx: 816, cy: 780, duration: 2.8, ease: 'none'}, 13.8);
+title('t5', 13.85, 16.25);
+
+// ── BLOCO 04 · conjunto: vídeo real (deslocamento lateral até o nicho, que passa em primeiro plano)
+tl.set('#V', {autoAlpha: 1}, 16.6).set('#LA', {autoAlpha: 0}, 16.6);
+tl.fromTo(vid, {f: 0}, {f: VFRAMES - 1, duration: 5.6, ease: 'none'}, 16.6);
+title('t6', 17.9, 21.0);
+
+// ── BLOCO 05 · assinatura: a parede clara à direita conduz ao marfim; logo por máscara e opacidade
+tl.to(mask, {o2: 1, duration: .8, ease: 'power2.inOut'}, 21.55);
+tl.fromTo('#logo', {autoAlpha: 0, clipPath: 'inset(0 100% 0 0)'}, {autoAlpha: 1, clipPath: 'inset(0 0% 0 0)', duration: .75, ease: 'power2.out'}, 22.05);
+tl.fromTo('#sig1 > div', {yPercent: 105}, {yPercent: 0, duration: .65, ease: 'power2.out'}, at('assinatura', 'Seu') - .1);
+tl.fromTo('#cta', {autoAlpha: 0, y: 12}, {autoAlpha: 1, y: 0, duration: .6, ease: 'power2.out'}, 26.2);
+tl.set({}, {}, TL.dur);
+
+// legendas (no máximo 2 linhas, quebras por sentido); saem na assinatura, que já traz o texto
+const capEl = $('#caption span'), capBox = $('#caption');
+function caption(t) {
+  const c = TL.captions.find((x) => t >= x.start && t < x.end && x.start < 21.9);
+  if (!c) { capBox.style.opacity = 0; return; }
+  capEl.textContent = c.text;
+  capBox.style.opacity = Math.min(1, (t - c.start) / .2, (c.end - t) / .15 + .0001);
+}
+
+async function apply(t) {
+  $('#A').style.transform = camTransform(camA);
+  $('#B').style.transform = camTransform(camB); $('#D').style.transform = camTransform(camB);
+  // marfim do bloco 2: abre a partir da borda (dois lados, borda suave)
+  const o = mask.o1, f = 60;
+  $('#ivory1').style.opacity = t >= 3.7 && t < 13.8 ? 1 : 0;
+  $('#ivory1').style.webkitMaskImage = `linear-gradient(90deg, transparent ${EDGE_X - o - f}px, #000 ${EDGE_X - o}px, #000 ${EDGE_X + o}px, transparent ${EDGE_X + o + f}px)`;
+  const r = mask.r2;
+  $('#LB').style.webkitMaskImage = `linear-gradient(90deg, transparent ${EDGE_X - r - 90}px, #000 ${EDGE_X - r}px, #000 ${EDGE_X + r}px, transparent ${EDGE_X + r + 90}px)`;
+  $('#LB').style.visibility = t < 5.9 || t >= 13.8 ? 'hidden' : 'visible';
+  $('#LA').style.visibility = (t < 4.5 || (t >= 13.8 && t < 16.6)) ? 'visible' : 'hidden';
+  $('#draw').style.visibility = t >= 4.0 && t < 8.2 ? 'visible' : 'hidden';
+  $('#edge').style.left = (EDGE_X - 1.6) + 'px'; $('#edge').style.visibility = t >= 3.3 && t < 8.0 ? 'visible' : 'hidden';
+  // marfim final: a superfície clara entra pela direita (onde está a parede branca do vídeo)
+  const p = mask.o2, x = 1080 * (1 - p) - 80;
+  $('#ivory2').style.visibility = p > 0 ? 'visible' : 'hidden';
+  $('#ivory2').style.webkitMaskImage = `linear-gradient(90deg, transparent ${x}px, #000 ${x + 160}px)`;
+  // vídeo: quadro atual + vizinho com opacidade fracionária (movimento contínuo a ~0,8× da velocidade original)
+  const V = $('#V'); V.style.visibility = t >= 16.6 && t < 22.5 ? 'visible' : 'hidden';
+  if (V.style.visibility === 'visible') {
+    const i = Math.floor(vid.f), k = vid.f - i, a = $('#v0'), b = $('#v1');
+    const s0 = `assets/tratadas/video-b4/v${String(i).padStart(3, '0')}.jpg`, s1 = `assets/tratadas/video-b4/v${String(Math.min(VFRAMES - 1, i + 1)).padStart(3, '0')}.jpg`;
+    if (!a.src.endsWith(s0)) a.src = s0; if (!b.src.endsWith(s1)) b.src = s1;
+    b.style.opacity = k; await Promise.all([a.decode(), b.decode()]).catch(() => {});
+  }
+  caption(t);
+}
+
+window.renderAt = async (t) => { tl.seek(t, false); await apply(t); };
+// prévia: reproduz a timeline no navegador (sem ?frame=1)
+Promise.all([document.fonts.ready, ...[...document.images].map((im) => im.decode().catch(() => {}))]).then(async () => {
+  await window.renderAt(0); window.__ready = true;
+  if (!location.search.includes('frame=1')) {
+    const audio = new Audio('out/mix.wav'); const t0 = performance.now(); audio.play().catch(() => {});
+    const loop = async () => { const t = (performance.now() - t0) / 1000; if (t < TL.dur) { await window.renderAt(t); requestAnimationFrame(loop); } };
+    loop();
+  }
+});
+</script>
+</body>
+</html>

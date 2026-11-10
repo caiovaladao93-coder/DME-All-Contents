@@ -12,9 +12,9 @@ from sons import SR, ar, bell, conv, fftfilt, band, make_ir, pad, piano, rng
 ROOT = __file__.rsplit('/scripts/', 1)[0]
 TL = json.load(open(f'{ROOT}/timeline.json')); B = {b['key']: b for b in TL['blocks']}
 DUR = TL['dur']; N = int(DUR * SR); BEAT = 60 / 80
-T_REVEAL_END = 7.2      # conclusão do desenho (bloco 2) — manter igual ao do vídeo
-T_ACCENT = 13.6         # mudança mais importante do bloco 3 (entra a composição)
-T_LOGO = B['assinatura']['t0'] + .25
+T_REVEAL_END = 7.6      # conclusão da revelação do desenho (video.html: máscara 6,0–7,6 s)
+T_ACCENT = 13.8         # corte para a composição (video.html)
+T_LOGO = 22.05          # entrada do logo (video.html)
 L = np.zeros((N, 2)); send = np.zeros((N, 2)); EV = []
 def put(sig, t0, g=1.0, pan=0.0, rev=.4):
     i = int(round(t0 * SR));

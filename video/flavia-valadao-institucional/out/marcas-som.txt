@@ -18,8 +18,8 @@ TRILHA E EFEITOS
   0.00  nota de piano (abertura)
   0.00  textura de ambiente (início)
   4.00  acordes e pad (descoberta)
-  7.20  acento delicado: conclusão do desenho
+  7.60  acento delicado: conclusão do desenho
  10.00  pulsação de piano grave (clareza)
- 13.60  acento único do bloco 3 (composição)
+ 13.80  acento único do bloco 3 (composição)
  16.60  abertura da trilha (plano amplo)
- 21.85  resolução no logo (Ré maior + 3 notas)
+ 22.05  resolução no logo (Ré maior + 3 notas)
