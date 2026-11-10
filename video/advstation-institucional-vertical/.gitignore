@@ -1,0 +1,8 @@
+out/testes/
+out/*-bruta.wav
+out/mix-bruto.wav
+out/video-bruto.mp4
+out/*.log
+voz/takes/
+scripts/__pycache__/
+node_modules
