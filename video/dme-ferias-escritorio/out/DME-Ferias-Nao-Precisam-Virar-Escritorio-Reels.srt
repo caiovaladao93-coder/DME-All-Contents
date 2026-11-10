@@ -1,67 +1,67 @@
 1
-00:00:00,300 --> 00:00:01,879
+00:00:00,300 --> 00:00:01,809
 Você saiu de férias.
 
 2
-00:00:01,879 --> 00:00:03,844
+00:00:01,809 --> 00:00:04,122
 Mas a empresa continua chamando.
 
 3
-00:00:03,904 --> 00:00:06,101
+00:00:04,182 --> 00:00:06,307
 O financeiro precisa de aprovação.
 
 4
-00:00:06,412 --> 00:00:08,609
+00:00:06,307 --> 00:00:08,443
 O comercial espera uma resposta.
 
 5
-00:00:08,850 --> 00:00:11,488
+00:00:08,443 --> 00:00:11,255
 A operação quer saber o próximo passo.
 
 6
-00:00:11,698 --> 00:00:15,149
+00:00:11,465 --> 00:00:15,287
 Quando tudo depende de você, o trabalho também viaja.
 
 7
-00:00:15,559 --> 00:00:18,160
+00:00:15,697 --> 00:00:17,787
 A DME organiza processos,
 
 8
-00:00:18,160 --> 00:00:21,889
+00:00:17,787 --> 00:00:20,680
 conecta sistemas e automatiza tarefas manuais.
 
 9
-00:00:21,899 --> 00:00:23,690
+00:00:20,690 --> 00:00:22,710
 Solicitações encaminhadas.
 
 10
-00:00:23,873 --> 00:00:25,489
+00:00:22,710 --> 00:00:24,603
 Informações disponíveis.
 
 11
-00:00:25,533 --> 00:00:27,393
+00:00:24,603 --> 00:00:26,509
 Responsáveis definidos.
 
 12
-00:00:27,403 --> 00:00:28,927
+00:00:26,519 --> 00:00:28,275
 Menos interrupções.
 
 13
-00:00:29,110 --> 00:00:31,975
+00:00:28,284 --> 00:00:31,137
 Mais tranquilidade para aproveitar suas férias.
 
 14
-00:00:31,975 --> 00:00:33,731
+00:00:31,137 --> 00:00:32,484
 DME Technology.
 
 15
-00:00:33,856 --> 00:00:35,902
+00:00:32,484 --> 00:00:34,492
 Tecnologia para a empresa seguir.
 
 16
-00:00:35,946 --> 00:00:37,399
+00:00:34,492 --> 00:00:36,025
 E para você descansar.
 
 17
-00:00:37,525 --> 00:00:39,652
-Envie COMERCIAL no direct.
+00:00:36,025 --> 00:00:39,046
+Comente COMERCIAL e receba um diagnóstico.
