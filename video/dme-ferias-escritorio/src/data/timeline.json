@@ -1,0 +1,580 @@
+{
+ "fps": 30,
+ "dur": 39.902,
+ "frames": 1197,
+ "scenes": [
+  {
+   "key": "ferias",
+   "fala": "n1",
+   "t0": 0.0,
+   "t1": 3.844,
+   "v0": 0.3,
+   "v1": 3.644,
+   "texto": "Você saiu de férias. Mas a empresa continua chamando."
+  },
+  {
+   "key": "areas",
+   "fala": "n2",
+   "t0": 3.844,
+   "t1": 11.638,
+   "v0": 3.904,
+   "v1": 11.288,
+   "texto": "O financeiro precisa de aprovação. O comercial espera uma resposta. A operação quer saber o próximo passo."
+  },
+  {
+   "key": "viaja",
+   "fala": "n3",
+   "t0": 11.638,
+   "t1": 15.499,
+   "v0": 11.698,
+   "v1": 14.949,
+   "texto": "Quando tudo depende de você, o trabalho também viaja."
+  },
+  {
+   "key": "estrutura",
+   "fala": "n4",
+   "t0": 15.499,
+   "t1": 21.839,
+   "v0": 15.559,
+   "v1": 21.689,
+   "texto": "A DME organiza processos, conecta sistemas e automatiza tarefas manuais."
+  },
+  {
+   "key": "beneficios",
+   "fala": "n5",
+   "t0": 21.839,
+   "t1": 27.343,
+   "v0": 21.899,
+   "v1": 27.193,
+   "texto": "Solicitações encaminhadas. Informações disponíveis. Responsáveis definidos."
+  },
+  {
+   "key": "tranquilidade",
+   "fala": "n6",
+   "t0": 27.343,
+   "t1": 31.915,
+   "v0": 27.403,
+   "v1": 31.815,
+   "texto": "Menos interrupções. Mais tranquilidade para aproveitar suas férias."
+  },
+  {
+   "key": "assinatura",
+   "fala": "n7",
+   "t0": 31.915,
+   "t1": 39.902,
+   "v0": 31.975,
+   "v1": 39.452,
+   "texto": "DME Technology. Tecnologia para a empresa seguir. E para você descansar. Envie COMERCIAL no direct."
+  }
+ ],
+ "words": {
+  "ferias": [
+   [
+    "Você",
+    0.3,
+    0.567
+   ],
+   [
+    "saiu",
+    0.637,
+    0.927
+   ],
+   [
+    "de",
+    0.985,
+    1.055
+   ],
+   [
+    "férias.",
+    1.124,
+    1.705
+   ],
+   [
+    "Mas",
+    1.879,
+    2.007
+   ],
+   [
+    "a",
+    2.041,
+    2.065
+   ],
+   [
+    "empresa",
+    2.1,
+    2.401
+   ],
+   [
+    "continua",
+    2.448,
+    2.819
+   ],
+   [
+    "chamando.",
+    2.854,
+    3.644
+   ]
+  ],
+  "areas": [
+   [
+    "O",
+    3.904,
+    3.997
+   ],
+   [
+    "financeiro",
+    4.067,
+    4.601
+   ],
+   [
+    "precisa",
+    4.647,
+    5.019
+   ],
+   [
+    "de",
+    5.065,
+    5.123
+   ],
+   [
+    "aprovação.",
+    5.158,
+    5.901
+   ],
+   [
+    "O",
+    6.412,
+    6.493
+   ],
+   [
+    "comercial",
+    6.563,
+    7.074
+   ],
+   [
+    "espera",
+    7.132,
+    7.515
+   ],
+   [
+    "uma",
+    7.538,
+    7.666
+   ],
+   [
+    "resposta.",
+    7.689,
+    8.409
+   ],
+   [
+    "A",
+    8.85,
+    8.896
+   ],
+   [
+    "operação",
+    8.954,
+    9.488
+   ],
+   [
+    "quer",
+    9.523,
+    9.639
+   ],
+   [
+    "saber",
+    9.686,
+    9.999
+   ],
+   [
+    "o",
+    10.057,
+    10.081
+   ],
+   [
+    "próximo",
+    10.139,
+    10.568
+   ],
+   [
+    "passo.",
+    10.615,
+    11.288
+   ]
+  ],
+  "viaja": [
+   [
+    "Quando",
+    11.698,
+    11.988
+   ],
+   [
+    "tudo",
+    12.035,
+    12.209
+   ],
+   [
+    "depende",
+    12.255,
+    12.615
+   ],
+   [
+    "de",
+    12.662,
+    12.72
+   ],
+   [
+    "você,",
+    12.766,
+    13.277
+   ],
+   [
+    "o",
+    13.451,
+    13.521
+   ],
+   [
+    "trabalho",
+    13.567,
+    13.962
+   ],
+   [
+    "também",
+    13.997,
+    14.229
+   ],
+   [
+    "viaja.",
+    14.264,
+    14.949
+   ]
+  ],
+  "estrutura": [
+   [
+    "A",
+    15.559,
+    15.652
+   ],
+   [
+    "Dê",
+    15.768,
+    15.907
+   ],
+   [
+    "Eme",
+    15.965,
+    16.244
+   ],
+   [
+    "É",
+    16.569,
+    16.685
+   ],
+   [
+    "organiza",
+    16.778,
+    17.173
+   ],
+   [
+    "processos,",
+    17.219,
+    18.032
+   ],
+   [
+    "conecta",
+    18.16,
+    18.636
+   ],
+   [
+    "sistemas",
+    18.694,
+    19.344
+   ],
+   [
+    "e",
+    19.495,
+    19.669
+   ],
+   [
+    "automatiza",
+    19.692,
+    20.342
+   ],
+   [
+    "tarefas",
+    20.412,
+    20.83
+   ],
+   [
+    "manuais.",
+    20.888,
+    21.689
+   ]
+  ],
+  "beneficios": [
+   [
+    "Solicitações",
+    21.899,
+    22.665
+   ],
+   [
+    "encaminhadas.",
+    22.712,
+    23.49
+   ],
+   [
+    "Informações",
+    23.873,
+    24.511
+   ],
+   [
+    "disponíveis.",
+    24.534,
+    25.289
+   ],
+   [
+    "Responsáveis",
+    25.533,
+    26.276
+   ],
+   [
+    "definidos.",
+    26.322,
+    27.193
+   ]
+  ],
+  "tranquilidade": [
+   [
+    "Menos",
+    27.403,
+    27.728
+   ],
+   [
+    "interrupções.",
+    27.786,
+    28.727
+   ],
+   [
+    "Mais",
+    29.11,
+    29.342
+   ],
+   [
+    "tranquilidade",
+    29.388,
+    30.073
+   ],
+   [
+    "para",
+    30.12,
+    30.271
+   ],
+   [
+    "aproveitar",
+    30.294,
+    30.77
+   ],
+   [
+    "suas",
+    30.816,
+    31.014
+   ],
+   [
+    "férias.",
+    31.083,
+    31.815
+   ]
+  ],
+  "assinatura": [
+   [
+    "Dê",
+    31.975,
+    32.242
+   ],
+   [
+    "Eme",
+    32.277,
+    32.567
+   ],
+   [
+    "É",
+    32.614,
+    32.637
+   ],
+   [
+    "Technology.",
+    32.718,
+    33.531
+   ],
+   [
+    "Tecnologia",
+    33.856,
+    34.541
+   ],
+   [
+    "para",
+    34.587,
+    34.75
+   ],
+   [
+    "a",
+    34.773,
+    34.808
+   ],
+   [
+    "empresa",
+    34.866,
+    35.237
+   ],
+   [
+    "seguir.",
+    35.284,
+    35.702
+   ],
+   [
+    "E",
+    35.946,
+    36.027
+   ],
+   [
+    "para",
+    36.097,
+    36.247
+   ],
+   [
+    "você",
+    36.282,
+    36.468
+   ],
+   [
+    "descansar.",
+    36.526,
+    37.199
+   ],
+   [
+    "Envie",
+    37.525,
+    37.977
+   ],
+   [
+    "comercial",
+    38.024,
+    38.581
+   ],
+   [
+    "no",
+    38.616,
+    38.686
+   ],
+   [
+    "direct.",
+    38.744,
+    39.452
+   ]
+  ]
+ },
+ "captions": [
+  {
+   "start": 0.3,
+   "end": 1.879,
+   "text": "Você saiu de férias.",
+   "scene": "ferias"
+  },
+  {
+   "start": 1.879,
+   "end": 3.8440000000000003,
+   "text": "Mas a empresa continua chamando.",
+   "scene": "ferias"
+  },
+  {
+   "start": 3.904,
+   "end": 6.101,
+   "text": "O financeiro precisa de aprovação.",
+   "scene": "areas"
+  },
+  {
+   "start": 6.412,
+   "end": 8.609,
+   "text": "O comercial espera uma resposta.",
+   "scene": "areas"
+  },
+  {
+   "start": 8.85,
+   "end": 11.488,
+   "text": "A operação quer saber o próximo passo.",
+   "scene": "areas"
+  },
+  {
+   "start": 11.698,
+   "end": 15.149,
+   "text": "Quando tudo depende de você, o trabalho também viaja.",
+   "scene": "viaja"
+  },
+  {
+   "start": 15.559,
+   "end": 18.16,
+   "text": "A DME organiza processos,",
+   "scene": "estrutura"
+  },
+  {
+   "start": 18.16,
+   "end": 21.889,
+   "text": "conecta sistemas e automatiza tarefas manuais.",
+   "scene": "estrutura"
+  },
+  {
+   "start": 21.899,
+   "end": 23.689999999999998,
+   "text": "Solicitações encaminhadas.",
+   "scene": "beneficios"
+  },
+  {
+   "start": 23.873,
+   "end": 25.489,
+   "text": "Informações disponíveis.",
+   "scene": "beneficios"
+  },
+  {
+   "start": 25.533,
+   "end": 27.393,
+   "text": "Responsáveis definidos.",
+   "scene": "beneficios"
+  },
+  {
+   "start": 27.403,
+   "end": 28.927,
+   "text": "Menos interrupções.",
+   "scene": "tranquilidade"
+  },
+  {
+   "start": 29.11,
+   "end": 31.975,
+   "text": "Mais tranquilidade para aproveitar suas férias.",
+   "scene": "tranquilidade"
+  },
+  {
+   "start": 31.975,
+   "end": 33.731,
+   "text": "DME Technology.",
+   "scene": "assinatura"
+  },
+  {
+   "start": 33.856,
+   "end": 35.902,
+   "text": "Tecnologia para a empresa seguir.",
+   "scene": "assinatura"
+  },
+  {
+   "start": 35.946,
+   "end": 37.399,
+   "text": "E para você descansar.",
+   "scene": "assinatura"
+  },
+  {
+   "start": 37.525,
+   "end": 39.652,
+   "text": "Envie COMERCIAL no direct.",
+   "scene": "assinatura"
+  }
+ ]
+}

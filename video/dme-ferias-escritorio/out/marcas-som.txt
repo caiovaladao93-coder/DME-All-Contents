@@ -1,0 +1,36 @@
+MARCAS · DME "Suas férias não precisam virar escritório" · 39.90 s · 30 fps · trilha original 96 BPM
+
+FALAS (Guilherme, ElevenLabs, velocidade natural, sem compressão)
+  0.30–  3.64  [ferias] Você saiu de férias. Mas a empresa continua chamando.
+  3.90– 11.29  [areas] O financeiro precisa de aprovação. O comercial espera uma resposta. A operação quer saber o próximo passo.
+ 11.70– 14.95  [viaja] Quando tudo depende de você, o trabalho também viaja.
+ 15.56– 21.69  [estrutura] A DME organiza processos, conecta sistemas e automatiza tarefas manuais.
+ 21.90– 27.19  [beneficios] Solicitações encaminhadas. Informações disponíveis. Responsáveis definidos.
+ 27.40– 31.82  [tranquilidade] Menos interrupções. Mais tranquilidade para aproveitar suas férias.
+ 31.98– 39.45  [assinatura] DME Technology. Tecnologia para a empresa seguir. E para você descansar. Envie COMERCIAL no direct.
+
+TRILHA: ambiência tranquila 0–2.80 · interrupções 2.80–11.64 (notificações, vibração, ligação breve; pulso grave crescente) · pausa 15.00–15.54 · organização 15.54–27.34 (pulsação estável, F–C–Dm–B♭) · descanso 27.34–31.91 (ambiência + piano) · assinatura 31.91
+
+EFEITOS
+  2.80  notificação (equipe)
+  4.07  notificação Mariana · Financeiro
+  6.56  notificação Rafael · Comercial
+  8.95  notificação Camila · Operação
+ 10.34  ligação "Empresa" (toque baixo)
+ 11.59  as mensagens se desprendem (câmera recua)
+ 12.54  conexões convergem para "você"
+ 15.90  fluxo: espinha se desenha
+ 16.68  Financeiro vira atividade
+ 18.01  Comercial vira atividade
+ 19.54  Operação vira atividade
+ 20.39  status automático
+ 22.61  encaminhada (Mariana → gestor)
+ 23.87  arquivo vinculado
+ 25.53  responsável definido
+ 26.73  tarefa automática concluída
+ 29.14  descanso: o celular se acomoda na mesa
+ 31.81  logo
+ 31.91  assinatura 1
+ 32.03  assinatura 2
+ 32.16  assinatura 3
+ 36.43  CTA "Envie COMERCIAL no direct"
