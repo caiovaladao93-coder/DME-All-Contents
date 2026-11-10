@@ -1,0 +1,29 @@
+Marcas de som (s) · SGC Apresentação 39 s
+
+FALAS (Guilherme, ElevenLabs)
+  0.40–  2.86  hook: Você sabe como está a saúde da sua empresa?
+  3.87–  8.23  problem: Custos, margens e decisões importantes nem sempre estão claros.
+  8.80– 13.72  brand: A SGC transforma dúvidas em um diagnóstico inicial de gestão.
+ 14.27– 17.24  questions: Descreva seu negócio e responda dez perguntas.
+ 18.87– 20.63  preview: Veja uma prévia do resultado.
+ 22.60– 29.94  unlock: Após o pagamento único, desbloqueie seu índice de saúde, pontos de atenção e recomendações iniciais.
+ 30.57– 32.80  pdf: Depois, baixe o relatório em PDF.
+ 34.30– 39.18  cta: SGC. Gestão com clareza. Descubra a saúde da sua empresa.
+
+EFEITOS
+  0.00  pulse (hook)
+  1.39  impact (hook)
+  3.60  line (problem)
+  6.93  tick (problem)
+ 10.10  logo (brand)
+ 14.00  swipe (questions)
+ 15.93  swipe (questions)
+ 17.33  tick (questions)
+ 19.60  highlight (preview)
+ 25.07  unlock (unlock)
+ 26.67  highlight (unlock)
+ 31.63  swipe (pdf)
+ 33.70  logo (cta)
+ 35.70  end (cta)
+
+TRILHA: tensão 0–8.60 · progressão Dm–B♭–F–C a partir de 8.60 · bateria leve a partir de 14.00 · arpejo em semicolcheias a partir de 22.40 · resolução em Fá maior e assinatura (Fá–Lá–Dó) em 33.70

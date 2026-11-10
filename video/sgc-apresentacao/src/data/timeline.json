@@ -1,0 +1,29 @@
+{
+  "fps": 30,
+  "scenes": [
+    {"key": "hook", "dur": 108, "voice": 12},
+    {"key": "problem", "dur": 150, "voice": 8},
+    {"key": "brand", "dur": 162, "voice": 6},
+    {"key": "questions", "dur": 138, "voice": 8},
+    {"key": "preview", "dur": 114, "voice": 8},
+    {"key": "unlock", "dur": 237, "voice": 6},
+    {"key": "pdf", "dur": 102, "voice": 8},
+    {"key": "cta", "dur": 177, "voice": 18}
+  ],
+  "sfx": [
+    {"scene": "hook", "f": 0, "k": "pulse"},
+    {"scene": "hook", "f": 42, "k": "impact"},
+    {"scene": "problem", "f": 0, "k": "line"},
+    {"scene": "problem", "f": 100, "k": "tick"},
+    {"scene": "brand", "f": 45, "k": "logo"},
+    {"scene": "questions", "f": 0, "k": "swipe"},
+    {"scene": "questions", "f": 58, "k": "swipe"},
+    {"scene": "questions", "f": 100, "k": "tick"},
+    {"scene": "preview", "f": 30, "k": "highlight"},
+    {"scene": "unlock", "f": 80, "k": "unlock"},
+    {"scene": "unlock", "f": 128, "k": "highlight"},
+    {"scene": "pdf", "f": 40, "k": "swipe"},
+    {"scene": "cta", "f": 0, "k": "logo"},
+    {"scene": "cta", "f": 60, "k": "end"}
+  ]
+}

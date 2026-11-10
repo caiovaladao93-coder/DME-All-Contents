@@ -1,0 +1,10 @@
+[
+ {"id": "hook", "text": "Você sabe como está a saúde da sua empresa?"},
+ {"id": "problem", "text": "Custos, margens e decisões importantes nem sempre estão claros."},
+ {"id": "brand", "text": "A Esse Gê Cê transforma dúvidas em um diagnóstico inicial de gestão.", "legenda": "A SGC transforma dúvidas em um diagnóstico inicial de gestão."},
+ {"id": "questions", "text": "Descreva seu negócio e responda dez perguntas."},
+ {"id": "preview", "text": "Veja uma prévia do resultado."},
+ {"id": "unlock", "text": "Após o pagamento único, desbloqueie seu índice de saúde, pontos de atenção e recomendações iniciais."},
+ {"id": "pdf", "text": "Depois, baixe o relatório em PDF."},
+ {"id": "cta", "text": "Esse Gê Cê. Gestão com clareza. Descubra a saúde da sua empresa.", "legenda": "SGC. Gestão com clareza. Descubra a saúde da sua empresa."}
+]

@@ -1,0 +1,25 @@
+VALIDAÇÃO · 10/11/2026 01:55
+stream|codec_name=h264|width=1920|height=1080|pix_fmt=yuv420p|r_frame_rate=30/1
+stream|codec_name=aac|sample_rate=48000|channels=2|r_frame_rate=0/0
+format|duration=39.600000
+frames: 1188
+    I:         -14.1 LUFS
+    LRA:         4.7 LU
+    Peak:       -1.4 dBFS
+quadros pretos (>0,1 s):
+  nenhum
+
+CHECKLIST DO ROTEIRO (§11)
+[ok] Duração 39,6 s (1.188 quadros), dentro do limite de 40 s
+[ok] Narração sincronizada: cada fala entra no início da sua cena (tempos em marcas-som.txt e na SRT)
+[ok] Pagamento depois das perguntas e da prévia (cenas 04 → 05 → 06)
+[ok] Preço R$ 49,90 (checkout e título "PAGAMENTO ÚNICO R$ 49,90")
+[ok] Botão "Descobrir minha saúde" (cena 05, com destaque e passagem de luz)
+[ok] Botão "Baixar PDF" (cena 07)
+[ok] Identidade: marinho #0A2048, laranja #F86A14, laranja-tinta #AE4A0E sobre claro (design system do SGC)
+[ok] Logo oficial: camadas de static/brand/ do sgc-prototipo, sem redesenho e sem recolorir
+[ok] Sem dados de clientes. O índice de 72% aparece como "Exemplo ilustrativo · índice demonstrativo"
+[ok] Perguntas, opções, pontos de atenção e recomendações aparecem como linhas neutras (nada inventado)
+[ok] Sem confirmação de pagamento: a passagem é um cadeado que abre (símbolo)
+[ok] Sem imagens reais: escritório, mesa, interface e documento gerados em código
+[ok] Render inspecionado: folha de contato, storyboard e quadros de transição. Sem quadros pretos

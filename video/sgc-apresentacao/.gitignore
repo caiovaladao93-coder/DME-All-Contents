@@ -1,0 +1,7 @@
+node_modules
+out/testes/
+*.log
+voz/takes/
+scripts/__pycache__/
+out/render-bruto.mp4
+out/render.log
