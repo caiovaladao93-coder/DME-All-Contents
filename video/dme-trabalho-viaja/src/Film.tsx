@@ -69,7 +69,10 @@ export const Film: React.FC<{captions?: boolean; audio?: boolean}> = ({captions 
   const reorg = P(t, tReorg, 2.2, EASE_IO);
   const toRing = P(t, tPull + .1, 1.2, EASE_IO);
   const ab = P(t, tPull + .1, 1.0, EASE_IO), bc = P(t, tReorg + .8, .7, EASE_IO);
-  const phonePos = L(PHONE0, PHONE1, reorg), phoneScale = lerp(1, .8, reorg);
+  // durante o percurso do token pela cadeia, o celular acompanha a câmera e segue no meio do quadro, à esquerda
+  const follow = P(t, tTok[0] - .7, .6, EASE_IO) * (1 - P(t, tTok[2] + .5, .7, EASE_IO));
+  const phoneBase = L(PHONE0, PHONE1, reorg);
+  const phonePos: V2 = [phoneBase[0], lerp(phoneBase[1], cy - 70, follow)], phoneScale = lerp(1, .8, reorg);
   const calm = P(t, tCalm + .2, 1.0);
   const sig = P(t, tEnd - .78, .42, EASE_IO); // o mundo apaga antes da marca entrar
   const netDim = P(t, tCalm, 1.4);
@@ -120,11 +123,6 @@ export const Film: React.FC<{captions?: boolean; audio?: boolean}> = ({captions 
             {tok ? <circle cx={tok[0]} cy={tok[1]} r={18} fill={C.accent} stroke="#cfe0f2" strokeWidth={3} /> : null}
           </svg>
         </div>
-        {/* celular: protagonista */}
-        <div style={{position: 'absolute', left: phonePos[0], top: phonePos[1], opacity: 1 - .6 * focusAct,
-          transform: `scale(${phoneScale}) perspective(1600px) rotateY(${lerp(-20, -10, reorg).toFixed(2)}deg) rotateX(${8}deg)`}}>
-          <Phone lit={P(t, tLit, .25)} notif={P(t, tLit + .12, .35)} calm={calm} count={1 + (t > tR[1] ? 1 : 0) + (t > tR[2] ? 1 : 0)} glow={t < tPull ? P(t, tLit, .3) * .6 : .3 * (1 - calm) + .3 * calm} />
-        </div>
         {/* pedidos → áreas → etapas (à frente do celular) */}
         <div style={{position: 'absolute', left: 0, top: 0, opacity: (1 - .78 * netDim) * (1 - .55 * focusAct), filter: netDim + focusAct > .05 ? `blur(${(netDim * 5 + focusAct * 3).toFixed(1)}px)` : undefined}}>
           {ENT.map((e, i) => {
@@ -136,6 +134,11 @@ export const Film: React.FC<{captions?: boolean; audio?: boolean}> = ({captions 
               a={e.a} b={e.b} c={e.c} ab={e.a ? ab : 1} bc={bc} waiting={waiting} active={active} />;
           })}
           {P(t, tReorg + 2.2, .5) > 0 ? <OpNode t={t} x={DONE[0]} y={DONE[1]} w={520} scale={nodeK} opacity={P(t, tReorg + 2.2, .5)} b={{icon: 'flag', title: 'Concluído', sub: 'pedido entregue e pago'}} ab={1} bc={0} /> : null}
+        </div>
+        {/* celular: protagonista, à frente das etapas */}
+        <div style={{position: 'absolute', left: phonePos[0], top: phonePos[1], opacity: 1 - .6 * focusAct,
+          transform: `scale(${phoneScale}) perspective(1600px) rotateY(${lerp(-20, -10, reorg).toFixed(2)}deg) rotateX(${8}deg)`}}>
+          <Phone lit={P(t, tLit, .25)} notif={P(t, tLit + .12, .35)} calm={calm} count={1 + (t > tR[1] ? 1 : 0) + (t > tR[2] ? 1 : 0)} glow={t < tPull ? P(t, tLit, .3) * .6 : .3 * (1 - calm) + .3 * calm} />
         </div>
       </div>
 

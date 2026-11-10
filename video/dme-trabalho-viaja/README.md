@@ -16,6 +16,13 @@ A abertura usa uma **foto do Pexels**, "Maquete de smartphone com tela verde", d
 - **Transição:** quando a câmera recua, a foto se dissolve na operação.
 - **Pessoa na foto:** a mão é de uma pessoa anônima e não é apresentada como equipe nem como cliente da DME. A mão que apontava, à direita, ficou fora do recorte.
 
+## Celular da operação
+
+O celular da operação (do segundo plano até o fim) é o aparelho de uma **foto do Pexels** de Arpit Brandings (pexels.com/photo/26109750, licença Pexels). O fundo e a tela cinza foram removidos e o recorte está em `public/assets/photography/celular-recorte.png`. A tela é gerada por baixo do recorte, em `Phone.tsx`.
+
+- **Plano:** o celular fica na frente das etapas.
+- **Percurso do token:** o celular acompanha a câmera, para não ficar sob a legenda.
+
 ## Caso de exemplo (dados fictícios, com selo "Exemplo ilustrativo")
 
 Para o cliente entender a operação, um caso concreto atravessa o filme: o **Pedido 1042 do Cliente Alfa**.

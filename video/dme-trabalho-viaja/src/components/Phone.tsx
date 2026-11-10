@@ -1,16 +1,16 @@
 import React from 'react';
+import {Img, staticFile} from 'remotion';
 import {C} from '../theme/colors';
 import {HEAD, UI} from '../theme/typography';
 
-/** Celular (protagonista): corpo de metal escovado grafite, tela de vidro fumê. Estado da tela por props. */
+/** Celular (protagonista): aparelho real recortado de foto, com a tela gerada por baixo. Estado da tela por props. */
 export const Phone: React.FC<{lit: number; notif: number; calm: number; count: number; glow: number}> = ({lit, notif, calm, count, glow}) => (
-  <div style={{position: 'absolute', left: -150, top: -310, width: 300, height: 620, borderRadius: 46, padding: 12,
-    background: 'linear-gradient(145deg, #4a5158 0%, #23282d 40%, #3a4047 70%, #16191c 100%)',
-    boxShadow: `0 40px 80px rgba(0,0,0,.6), 6px 0 0 #1e2226, 0 0 0 1px rgba(192,198,204,.25), 0 0 ${(60 * glow).toFixed(0)}px rgba(58,110,165,${(0.35 * glow).toFixed(3)})`}}>
-    <div style={{position: 'relative', width: '100%', height: '100%', borderRadius: 36, overflow: 'hidden', background: '#07090b'}}>
+  <div style={{position: 'absolute', left: -152, top: -310, width: 304, height: 620, borderRadius: 46,
+    boxShadow: `0 40px 80px rgba(0,0,0,.6), 0 0 ${(40 * glow).toFixed(0)}px rgba(58,110,165,${(0.22 * glow).toFixed(3)})`}}>
+    {/* tela (fica por baixo da foto recortada do aparelho) */}
+    <div style={{position: 'absolute', left: 6, top: 6, right: 6, bottom: 6, borderRadius: 40, overflow: 'hidden', background: '#07090b'}}>
       {/* tela acesa */}
       <div style={{position: 'absolute', inset: 0, opacity: .38 + .62 * lit, background: 'linear-gradient(170deg, #1d3550 0%, #101b28 55%, #0a0e13 100%)'}}>
-        <div style={{position: 'absolute', left: '50%', top: 16, width: 86, height: 24, marginLeft: -43, borderRadius: 12, background: '#050607'}} />
         <div style={{position: 'absolute', top: 92, width: '100%', textAlign: 'center', fontFamily: UI, fontWeight: 600, fontSize: 19, color: 'rgba(242,244,246,.8)'}}>sábado</div>
         <div style={{position: 'absolute', top: 116, width: '100%', textAlign: 'center', fontFamily: HEAD, fontWeight: 600, fontSize: 84, letterSpacing: '-.02em', color: '#F4F6F8'}}>15:42</div>
         {/* notificação (componente próprio, sem imitar app de terceiros) */}
@@ -33,5 +33,7 @@ export const Phone: React.FC<{lit: number; notif: number; calm: number; count: n
       </div>
       <div style={{position: 'absolute', inset: 0, background: 'linear-gradient(120deg, rgba(255,255,255,.12) 0%, rgba(255,255,255,0) 32%)'}} />
     </div>
+    {/* aparelho real: foto Pexels 26109750 (Arpit Brandings), fundo e tela removidos */}
+    <Img src={staticFile('assets/photography/celular-recorte.png')} style={{position: 'absolute', inset: 0, width: '100%', height: '100%'}} />
   </div>
 );
