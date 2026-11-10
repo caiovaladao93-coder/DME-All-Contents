@@ -1,0 +1,82 @@
+{
+ "fps": 30,
+ "scenes": [
+  {
+   "key": "vin",
+   "name": "Vinheta padrão",
+   "dur": 120,
+   "voice": null
+  },
+  {
+   "key": "v1",
+   "name": "Gancho: cada cliente, uma etapa",
+   "dur": 139,
+   "voice": 4
+  },
+  {
+   "key": "v2",
+   "name": "Dois sistemas",
+   "dur": 208,
+   "voice": 4
+  },
+  {
+   "key": "v3",
+   "name": "Maternidade Legal: jornada",
+   "dur": 214,
+   "voice": 4
+  },
+  {
+   "key": "v4",
+   "name": "Maternidade Legal: etapas do protocolo",
+   "dur": 251,
+   "voice": 4
+  },
+  {
+   "key": "v5",
+   "name": "Maternidade Legal: painel",
+   "dur": 166,
+   "voice": 4
+  },
+  {
+   "key": "v6",
+   "name": "Previdenciário Geral: administrativo",
+   "dur": 216,
+   "voice": 4
+  },
+  {
+   "key": "v7",
+   "name": "Previdenciário Geral: judicial e prazos",
+   "dur": 191,
+   "voice": 4
+  },
+  {
+   "key": "v8",
+   "name": "Financeiro",
+   "dur": 175,
+   "voice": 4
+  },
+  {
+   "key": "v9",
+   "name": "Cartão final",
+   "dur": 110,
+   "voice": 18
+  }
+ ],
+ "sfx": [
+  {
+   "scene": "v2",
+   "f": 0,
+   "k": "swipe"
+  },
+  {
+   "scene": "v6",
+   "f": 0,
+   "k": "swipe"
+  },
+  {
+   "scene": "v9",
+   "f": 4,
+   "k": "logo"
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+Marcas de som (s) · ADV STATION · Apresentação vertical (Instagram)
+
+JINGLE oficial da vinheta: 0,00–3,70
+
+FALAS (Guilherme, ElevenLabs, atempo 1,05)
+  4.13–  8.47  v1: Na advocacia previdenciária, cada cliente está em uma etapa diferente.
+  8.77– 15.40  v2: A ADV Station organiza esse caminho em dois sistemas: Maternidade Legal e Previdenciário Geral.
+ 15.70– 22.51  v3: No Maternidade Legal, a cliente chega pelo comercial, passa pelo relacionamento e segue para o protocolo.
+ 22.83– 30.88  v4: Lá, cada caso avança por etapas: protocolado, em análise, exigência, concedido, implantação e recebendo benefício.
+ 31.20– 36.42  v5: O painel mostra a distribuição por setor, os partos próximos e quem está sem contato.
+ 36.73– 43.63  v6: No Previdenciário Geral, o administrativo organiza cada pedido, da coleta de documentos ao benefício concedido.
+ 43.93– 49.99  v7: No judicial, publicações, perícias, audiências e prazos processuais ficam no mesmo lugar.
+ 50.30– 55.83  v8: E o financeiro mostra a previsão de faturamento, os valores a receber e o fluxo de caixa.
+ 56.60– 58.86  v9: ADV Station. Cada cliente no trilho certo.
+
+EFEITOS
+  8.63  swipe (v2)
+ 36.60  swipe (v6)
+ 56.13  logo (v9)
+
+TRILHA (120 BPM): jingle oficial 0–3,70 · Maternidade Legal em Fá maior (F–Dm–B♭–C) a partir de 4.00 · respiro e virada para o Previdenciário Geral em Ré menor (Dm–B♭–F–C) em 36.60 · piano, baixo e pulsação crescendo · resolução em Fá maior e assinatura (Fá–Lá–Dó) no cartão final em 56.00

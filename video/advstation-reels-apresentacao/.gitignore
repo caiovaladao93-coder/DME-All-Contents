@@ -1,0 +1,8 @@
+node_modules/
+out/testes/
+out/review/
+*.log
+public/assets/audio/falas/takes/
+out/render-bruto.mp4
+out/render.log
+voz/takes/
