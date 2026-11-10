@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>DME · Se você tirar férias (v4, 3D narrado)</title>
+<style>
+@font-face{font-family:Sora;font-weight:600;src:url(fonts/sora-latin-600-normal.woff2) format('woff2')}
+@font-face{font-family:Sora;font-weight:700;src:url(fonts/sora-latin-700-normal.woff2) format('woff2')}
+@font-face{font-family:Sora;font-weight:800;src:url(fonts/sora-latin-800-normal.woff2) format('woff2')}
+@font-face{font-family:Manrope;font-weight:500;src:url(fonts/manrope-latin-500-normal.woff2) format('woff2')}
+@font-face{font-family:Manrope;font-weight:600;src:url(fonts/manrope-latin-600-normal.woff2) format('woff2')}
+@font-face{font-family:Manrope;font-weight:700;src:url(fonts/manrope-latin-700-normal.woff2) format('woff2')}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#0A0B0C}
+#gl{position:absolute;left:0;top:0;width:1080px;height:1920px}
+#ui{position:absolute;inset:0;pointer-events:none;font-family:Manrope,sans-serif}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse 85% 70% at 50% 48%,rgba(0,0,0,0) 55%,rgba(0,0,0,.55) 100%)}
+#topshade{position:absolute;left:0;right:0;top:0;height:900px;background:linear-gradient(180deg,rgba(10,11,12,.72),rgba(10,11,12,0))}
+body.light #topshade,body.light #vig{opacity:0}
+.h{position:absolute;left:90px;width:900px;font-family:Sora;font-weight:700;color:#F2F4F6;letter-spacing:-.025em;line-height:1.03;display:none}
+.c{text-align:center}
+.w{display:inline-block}
+.acc{color:#3A6EA5}
+body.light .h{color:#0A0B0C} body.light .acc{color:#264B71}
+.li{position:absolute;left:90px;font:600 62px/1 Sora;color:#F2F4F6;display:flex;align-items:center;gap:22px;white-space:nowrap;opacity:0}
+.li i{display:block;width:16px;height:16px;border-radius:50%;background:#3A6EA5;opacity:0}
+.li.on i{opacity:1}
+.vb{position:absolute;left:0;right:0;text-align:center;font:700 84px/1 Sora;color:#F2F4F6;letter-spacing:-.02em;display:none}
+#seal{position:absolute;left:90px;top:1500px;font:600 24px/1 Manrope;letter-spacing:.06em;color:rgba(192,198,204,.85);padding:16px 24px;border-radius:30px;border:1px solid rgba(192,198,204,.35);background:rgba(10,11,12,.6);display:none}
+#tech{position:absolute;left:0;right:0;top:1250px;text-align:center;font:600 62px/1 Manrope;letter-spacing:.42em;padding-left:.42em;color:#C0C6CC;display:none}
+#cta{position:absolute;left:150px;top:1390px;width:780px;height:132px;border-radius:66px;display:none;align-items:center;justify-content:center;gap:30px;
+  font:500 44px/132px Manrope;color:#F4F6F8;background:linear-gradient(180deg,#2F5A86,#1D3A58);border:1.5px solid rgba(120,160,205,.6);
+  box-shadow:0 6px 0 #142a40,0 24px 50px rgba(0,0,0,.5),0 1px 0 rgba(255,255,255,.18) inset;overflow:hidden;text-align:center}
+#cta b{font-weight:700;display:inline-block;letter-spacing:.02em}
+#sheenCta{position:absolute;top:-40px;width:120px;height:220px;background:linear-gradient(90deg,rgba(255,255,255,0),rgba(255,255,255,.2),rgba(255,255,255,0));transform:skewX(-20deg)}
+</style>
+</head>
+<body>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="ui">
+  <div id="vig"></div><div id="topshade"></div>
+  <div class="h" id="a1" style="top:300px;font-size:124px" data-t="Se você tirar|[férias],"></div>
+  <div class="h" id="a2" style="top:300px;font-size:124px" data-t="sua empresa|[para?]"></div>
+  <div class="h" id="b1" style="top:300px;font-size:140px" data-t="Você|[aprova]."></div>
+  <div class="h" id="b2" style="top:300px;font-size:140px" data-t="Você|[cobra]."></div>
+  <div class="h" id="b3" style="top:300px;font-size:124px" data-t="Você [lembra]|todo mundo."></div>
+  <div class="h c" id="c1" style="top:330px;font-size:112px" data-t="Isso não é|dedicação."></div>
+  <div class="h c" id="c2" style="top:300px;font-size:200px;font-weight:800" data-t="É|[gargalo]."></div>
+  <div class="h c" id="d1" style="top:480px;font-size:250px;font-weight:800;letter-spacing:-.05em" data-t="Agora"></div>
+  <div class="h c" id="d2" style="top:790px;font-size:88px" data-t="quem segura é|o [processo]."></div>
+  <div class="h" id="e1" style="top:300px;font-size:112px" data-t="Um [fluxo]|bem definido."></div>
+  <div class="h" id="f1" style="top:300px;font-size:120px" data-t="O método|[DME]."></div>
+  <div class="li" id="m0" style="top:1150px"><i></i>Diagnóstico</div>
+  <div class="li" id="m1" style="top:1250px"><i></i>Mapeamento</div>
+  <div class="li" id="m2" style="top:1350px"><i></i>Padronização</div>
+  <div class="li" id="m3" style="top:1450px"><i></i>Automação</div>
+  <div class="h c" id="g1" style="top:300px;font-size:112px" data-t="A rotina no|[automático]."></div>
+  <div class="h c" id="h1" style="top:300px;font-size:140px" data-t="Segunda."></div>
+  <div class="h c" id="h2" style="top:300px;font-size:140px" data-t="Quarta."></div>
+  <div class="h c" id="h3" style="top:300px;font-size:140px" data-t="Sexta."></div>
+  <div id="seal">Exemplo ilustrativo</div>
+  <div class="vb" id="v0">Mapeando</div><div class="vb" id="v1">Padronizando</div><div class="vb" id="v2">Automatizando</div><div class="vb" id="v3">Acompanhando</div>
+  <div class="h c" id="j1" style="top:300px;font-size:86px" data-t="Então, enquanto|você cuida da|[estratégia],"></div>
+  <div class="h c" id="j2" style="top:300px;font-size:104px" data-t="o processo cuida|da [rotina]."></div>
+  <div class="h c" id="k1" style="top:300px;font-size:130px" data-t="E as [férias]?"></div>
+  <div class="h c" id="k2" style="top:300px;font-size:104px" data-t="Agora entram|no [calendário]."></div>
+  <div id="tech">TECHNOLOGY</div>
+  <div id="cta"><div id="sheenCta"></div><span>Envie <b id="ctaKey">COMERCIAL</b> no direct.</span></div>
+</div>
+<script src="dist/bundle.js"></script>
+</body>
+</html>

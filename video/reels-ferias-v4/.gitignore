@@ -1,0 +1,8 @@
+node_modules
+out/testes/
+out/render.log
+out/video-mudo.mp4
+out/mix*.wav
+out/trilha-sem-voz.wav
+voz/takes/
+voz/segmentos/

@@ -1,0 +1,56 @@
+MARCAS · DME Reels "Se você tirar férias" v4 (3D, narrado) · 35.80 s · 30 fps · trilha original 104 BPM
+
+FALAS (Guilherme, ElevenLabs, atempo 1,08)
+  0.08–  2.06  [hook] Se você tirar férias, sua empresa para?
+  2.50–  5.29  [trinca] Você aprova. Você cobra. Você lembra todo mundo.
+  5.70–  7.89  [gargalo] Isso não é dedicação. É gargalo.
+  8.63– 10.61  [agora] Agora, quem segura é o processo.
+ 11.03– 13.14  [fluxo] Entrada, processo, validação, entrega.
+ 13.54– 17.06  [metodo] A DME faz o diagnóstico, mapeia, padroniza e automatiza.
+ 17.46– 19.48  [auto] E a rotina passa a rodar no automático.
+ 19.86– 21.24  [dias] Segunda. Quarta. Sexta.
+ 21.86– 25.52  [verbos] Mapeando. Padronizando. Automatizando. Acompanhando.
+ 25.87– 29.48  [fecho] Então, enquanto você cuida da estratégia, o processo cuida da rotina.
+ 29.88– 31.86  [loop] E as férias? Agora entram no calendário.
+ 32.63– 35.26  [logo] DME Technology. Envie COMERCIAL no direct.
+
+TRILHA: tensão 0–7.94 · SILÊNCIO 7.94–8.61 · "Agora" 8.61 (impacto + sino, Fá maior) · bateria leve e arpejo a partir de 10.91 · piano 25.77–29.78 · subida 29.78 · logo e assinatura Fá–Lá–Dó 32.18
+
+EFEITOS
+  0.99  alerta cai
+  2.10  câmera: hook → próxima
+  2.50  notificação 1
+  3.44  notificação 2
+  4.10  notificação 3
+  4.55  notificações transbordam
+  5.30  câmera: trinca → próxima
+  5.90  blocos no funil
+ 10.61  câmera: agora → próxima
+ 11.03  esfera na plataforma 1
+ 11.53  esfera na plataforma 2
+ 11.98  esfera na plataforma 3
+ 12.48  esfera na plataforma 4
+ 13.14  câmera: fluxo → próxima
+ 14.60  cartão gira (mapeia,)
+ 15.10  cartão gira (padroniza)
+ 15.76  cartão gira (automatiza.)
+ 17.06  câmera: metodo → próxima
+ 18.64  interruptor liga
+ 19.46  câmera: auto → próxima
+ 19.86  celular (segunda.)
+ 20.32  celular (quarta.)
+ 20.67  celular (sexta.)
+ 21.46  câmera: dias → próxima
+ 22.35  cubo gira (padronizando.)
+ 23.31  cubo gira (automatizando.)
+ 24.28  cubo gira (acompanhando.)
+ 25.47  câmera: verbos → próxima
+ 29.48  câmera: fecho → próxima
+ 30.06  chip Férias volta
+ 31.30  Férias encaixa no calendário
+ 31.88  câmera: loop → próxima
+ 32.53  peça do logo 1
+ 32.63  peça do logo 2
+ 32.73  peça do logo 3
+ 32.83  peça do logo 4
+ 34.16  pulso COMERCIAL

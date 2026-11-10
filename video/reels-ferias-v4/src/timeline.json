@@ -1,0 +1,471 @@
+{
+ "dur": 35.805,
+ "scenes": [
+  {
+   "key": "hook",
+   "fala": "f01",
+   "t0": 0.0,
+   "t1": 2.4,
+   "v0": 0.08,
+   "v1": 2.058,
+   "texto": "Se você tirar férias, sua empresa para?"
+  },
+  {
+   "key": "trinca",
+   "fala": "f02",
+   "t0": 2.4,
+   "t1": 5.6,
+   "v0": 2.5,
+   "v1": 5.295,
+   "texto": "Você aprova. Você cobra. Você lembra todo mundo."
+  },
+  {
+   "key": "gargalo",
+   "fala": "f03",
+   "t0": 5.6,
+   "t1": 8.513,
+   "v0": 5.7,
+   "v1": 7.893,
+   "texto": "Isso não é dedicação. É gargalo."
+  },
+  {
+   "key": "agora",
+   "fala": "f04",
+   "t0": 8.513,
+   "t1": 10.91,
+   "v0": 8.633,
+   "v1": 10.61,
+   "texto": "Agora, quem segura é o processo."
+  },
+  {
+   "key": "fluxo",
+   "fala": "f05",
+   "t0": 10.91,
+   "t1": 13.438,
+   "v0": 11.03,
+   "v1": 13.138,
+   "texto": "Entrada, processo, validação, entrega."
+  },
+  {
+   "key": "metodo",
+   "fala": "f06",
+   "t0": 13.438,
+   "t1": 17.364,
+   "v0": 13.538,
+   "v1": 17.064,
+   "texto": "A DME faz o diagnóstico, mapeia, padroniza e automatiza."
+  },
+  {
+   "key": "auto",
+   "fala": "f07",
+   "t0": 17.364,
+   "t1": 19.765,
+   "v0": 17.464,
+   "v1": 19.485,
+   "texto": "E a rotina passa a rodar no automático."
+  },
+  {
+   "key": "dias",
+   "fala": "f08",
+   "t0": 19.765,
+   "t1": 21.765,
+   "v0": 19.865,
+   "v1": 21.241,
+   "texto": "Segunda. Quarta. Sexta."
+  },
+  {
+   "key": "verbos",
+   "fala": "f09",
+   "t0": 21.765,
+   "t1": 25.77,
+   "v0": 21.865,
+   "v1": 25.52,
+   "texto": "Mapeando. Padronizando. Automatizando. Acompanhando."
+  },
+  {
+   "key": "fecho",
+   "fala": "f10",
+   "t0": 25.77,
+   "t1": 29.782,
+   "v0": 25.87,
+   "v1": 29.482,
+   "texto": "Então, enquanto você cuida da estratégia, o processo cuida da rotina."
+  },
+  {
+   "key": "loop",
+   "fala": "f11",
+   "t0": 29.782,
+   "t1": 32.182,
+   "v0": 29.882,
+   "v1": 31.859,
+   "texto": "E as férias? Agora entram no calendário."
+  },
+  {
+   "key": "logo",
+   "fala": "f12",
+   "t0": 32.182,
+   "t1": 35.805,
+   "v0": 32.632,
+   "v1": 35.255,
+   "texto": "DME Technology. Envie COMERCIAL no direct."
+  }
+ ],
+ "words": {
+  "hook": [
+   [
+    "Se",
+    0.08
+   ],
+   [
+    "você",
+    0.252
+   ],
+   [
+    "tirar",
+    0.467
+   ],
+   [
+    "férias,",
+    0.714
+   ],
+   [
+    "sua",
+    1.036
+   ],
+   [
+    "empresa",
+    1.176
+   ],
+   [
+    "para?",
+    1.542
+   ]
+  ],
+  "trinca": [
+   [
+    "Você",
+    2.5
+   ],
+   [
+    "aprova.",
+    2.79
+   ],
+   [
+    "Você",
+    3.435
+   ],
+   [
+    "cobra.",
+    3.715
+   ],
+   [
+    "Você",
+    4.102
+   ],
+   [
+    "lembra",
+    4.328
+   ],
+   [
+    "todo",
+    4.618
+   ],
+   [
+    "mundo.",
+    4.801
+   ]
+  ],
+  "gargalo": [
+   [
+    "Isso",
+    5.7
+   ],
+   [
+    "não",
+    5.968
+   ],
+   [
+    "é",
+    6.141
+   ],
+   [
+    "dedicação.",
+    6.206
+   ],
+   [
+    "É",
+    7.151
+   ],
+   [
+    "gargalo.",
+    7.269
+   ]
+  ],
+  "agora": [
+   [
+    "Agora,",
+    8.633
+   ],
+   [
+    "quem",
+    8.998
+   ],
+   [
+    "segura",
+    9.224
+   ],
+   [
+    "é",
+    9.665
+   ],
+   [
+    "o",
+    9.719
+   ],
+   [
+    "processo.",
+    9.772
+   ]
+  ],
+  "fluxo": [
+   [
+    "Entrada,",
+    11.03
+   ],
+   [
+    "processo,",
+    11.525
+   ],
+   [
+    "validação,",
+    11.977
+   ],
+   [
+    "entrega.",
+    12.481
+   ]
+  ],
+  "metodo": [
+   [
+    "A",
+    13.538
+   ],
+   [
+    "Dê",
+    13.72
+   ],
+   [
+    "Eme",
+    13.892
+   ],
+   [
+    "É",
+    14.065
+   ],
+   [
+    "faz",
+    14.14
+   ],
+   [
+    "o",
+    14.333
+   ],
+   [
+    "diagnóstico,",
+    14.398
+   ],
+   [
+    "mapeia,",
+    14.978
+   ],
+   [
+    "padroniza",
+    15.483
+   ],
+   [
+    "e",
+    16.075
+   ],
+   [
+    "automatiza.",
+    16.14
+   ]
+  ],
+  "auto": [
+   [
+    "E",
+    17.464
+   ],
+   [
+    "a",
+    17.592
+   ],
+   [
+    "rotina",
+    17.646
+   ],
+   [
+    "passa",
+    18.044
+   ],
+   [
+    "a",
+    18.291
+   ],
+   [
+    "rodar",
+    18.345
+   ],
+   [
+    "no",
+    18.614
+   ],
+   [
+    "automático.",
+    18.69
+   ]
+  ],
+  "dias": [
+   [
+    "Segunda.",
+    19.865
+   ],
+   [
+    "Quarta.",
+    20.317
+   ],
+   [
+    "Sexta.",
+    20.672
+   ]
+  ],
+  "verbos": [
+   [
+    "Mapeando.",
+    21.865
+   ],
+   [
+    "Padronizando.",
+    22.65
+   ],
+   [
+    "Automatizando.",
+    23.607
+   ],
+   [
+    "Acompanhando.",
+    24.584
+   ]
+  ],
+  "fecho": [
+   [
+    "Então,",
+    25.87
+   ],
+   [
+    "enquanto",
+    26.182
+   ],
+   [
+    "você",
+    26.493
+   ],
+   [
+    "cuida",
+    26.719
+   ],
+   [
+    "da",
+    27.117
+   ],
+   [
+    "estratégia,",
+    27.203
+   ],
+   [
+    "o",
+    27.772
+   ],
+   [
+    "processo",
+    27.88
+   ],
+   [
+    "cuida",
+    28.396
+   ],
+   [
+    "da",
+    28.708
+   ],
+   [
+    "rotina.",
+    28.815
+   ]
+  ],
+  "loop": [
+   [
+    "E",
+    29.882
+   ],
+   [
+    "as",
+    30.033
+   ],
+   [
+    "férias?",
+    30.161
+   ],
+   [
+    "Agora",
+    30.505
+   ],
+   [
+    "entram",
+    30.752
+   ],
+   [
+    "no",
+    30.989
+   ],
+   [
+    "calendário.",
+    31.075
+   ]
+  ],
+  "logo": [
+   [
+    "Dê",
+    32.632
+   ],
+   [
+    "Eme",
+    32.858
+   ],
+   [
+    "É",
+    33.019
+   ],
+   [
+    "Technology.",
+    33.094
+   ],
+   [
+    "Envie",
+    33.889
+   ],
+   [
+    "comercial",
+    34.159
+   ],
+   [
+    "no",
+    34.546
+   ],
+   [
+    "direct.",
+    34.653
+   ]
+  ]
+ }
+}
