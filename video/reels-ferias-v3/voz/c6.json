@@ -1,0 +1,62 @@
+{
+ "voice_id": "CS07DI8x8kLXeSktyWLG",
+ "model_id": "eleven_multilingual_v2",
+ "voice_settings": {
+  "stability": 0.6,
+  "similarity_boost": 0.8,
+  "style": 0.12,
+  "use_speaker_boost": true,
+  "speed": 1
+ },
+ "text": "No automático.",
+ "alignment": {
+  "characters": [
+   "N",
+   "o",
+   " ",
+   "a",
+   "u",
+   "t",
+   "o",
+   "m",
+   "á",
+   "t",
+   "i",
+   "c",
+   "o",
+   "."
+  ],
+  "character_start_times_seconds": [
+   0,
+   0.116,
+   0.151,
+   0.197,
+   0.221,
+   0.279,
+   0.325,
+   0.395,
+   0.453,
+   0.534,
+   0.592,
+   0.639,
+   0.697,
+   0.813
+  ],
+  "character_end_times_seconds": [
+   0.116,
+   0.151,
+   0.197,
+   0.221,
+   0.279,
+   0.325,
+   0.395,
+   0.453,
+   0.534,
+   0.592,
+   0.639,
+   0.697,
+   0.813,
+   1.115
+  ]
+ }
+}

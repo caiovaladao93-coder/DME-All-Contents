@@ -1,0 +1,11 @@
+out/testes/
+out/contato*.png
+out/render.log
+out/*.mp4.part
+out/video-mudo.mp4
+out/mix.wav
+out/mix-lim.wav
+out/trilha-sem-voz.wav
+voz/takes/
+voz/segmentos/
+voz/narracao.wav

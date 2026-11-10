@@ -42,7 +42,11 @@ Repositório de conteúdo da **DME Technology**: roteiros e vídeos curtos (Reel
 
 - Os vídeos saem **sem áudio** por padrão.
 - Voz sintética local (Kokoro) foi testada e reprovada pelo usuário por soar robótica. **Não usar voz sintética sem pedido explícito.**
-- Para narração, o usuário envia uma gravação humana ou um arquivo do ElevenLabs. Ele não forneceu chave de API, então não peça de novo. Separe as falas por silêncio, encaixe cada uma no início da sua cena, normalize para -14 LUFS (pico -1,5 dBTP) e gere `<nome>-narrado.mp4`.
+- **Narração:** a chave da ElevenLabs está salva no ambiente (o proxy a injeta), então não peça de novo. Use a voz **Guilherme** (`CS07DI8x8kLXeSktyWLG`, `eleven_multilingual_v2`, stability 0.6, similarity 0.8, style 0.12), com 3 tomadas por fala e a escolha por medição (`scripts/escolher_take.py`).
+  - **Sincronia:** gere frases inteiras e recorte nas pausas. Cada trecho entra quando a frase aparece na tela. Se faltar tempo, desacelere a animação naquele trecho (WARP). O modelo é `video/reels-ferias-v3/scripts/sincronizar.py`.
+  - **Mixagem:** normalize para -14 LUFS (pico -1,5 dBTP) e gere `<nome>-narrado.mp4`.
+  - **Gravação humana:** se o usuário enviar uma, separe as falas por silêncio e siga o mesmo fluxo.
+- **Trilha:** original e procedural (numpy). Use silêncio de 0,3 a 0,5 s antes da virada e ducking sob a voz. O modelo é `video/reels-ferias-v3/scripts/trilha.py`.
 - Sempre entregue `marcas-som.txt` com os tempos de frases e efeitos.
 
 ## Mapa do repositório
@@ -52,6 +56,7 @@ Repositório de conteúdo da **DME Technology**: roteiros e vídeos curtos (Reel
 - `roteiros/estudo-referencia-inter-porquinho.md`: estudo de linguagem de um comercial de motion design de referência. Traz a decupagem, os princípios (gancho de situação, interface em componentes, lista + demonstração, fio condutor, transição pelo objeto, pausa antes da virada, loop), a aplicação por marca, as receitas técnicas e um checklist. **Consulte ao roteirizar e animar qualquer peça nova.**
 - `roteiros/reels-ia-versao-da-verdade.md`: primeiro roteiro, descartado por ser fraco. Fica como referência do que evitar.
 - `video/reels-ferias-v2/`: vídeo mais recente e aprovado, que é o **modelo de referência**.
+- `video/reels-ferias-v3/`: a v2 com **narração** (Guilherme) e **trilha original**. A animação é sincronizada à fala pelo `warp.json`, há silêncio antes do "Agora" e as palavras entram com desfoque de movimento mais forte. Saídas: `dme-reels-ferias-v3-narrado.mp4` (35,4 s) e a versão sem áudio.
 - `video/reels-ferias/`: v1 do mesmo vídeo, com a pasta `audio/` do teste de voz sintética.
 - `video/reels-versao-da-verdade/`: primeiro vídeo (descartado).
 - `video/brand/dme-logo.svg`: logo vetorial.
