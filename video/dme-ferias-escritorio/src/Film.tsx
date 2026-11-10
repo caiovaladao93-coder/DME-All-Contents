@@ -95,7 +95,7 @@ export const Film: React.FC<{captions?: boolean; audio?: boolean}> = ({captions 
 
   const shade = Math.max(P(t, .2, .4) * (1 - P(t, S.areas.t0, .4)), P(t, tTrab - .4, .4)) * (1 - sig);
   const PhoneLayer = (
-    <Phone3D pose={pose} blur={phoneBlur} opacity={(1 - .82 * phoneBack) * (1 - sig)}>
+    <Phone3D pose={pose} blur={phoneBlur} opacity={(1 - .82 * P(t, S.estrutura.t0 + .2, .8)) * (1 - P(t, tCalm - .1, 1.0)) * (1 - sig)}>
       <Wallpaper lit={lit * (t > tCalm ? lerp(1, .7, hz) : 1)} />
       <LockClock o={1 - .6 * P(t, S.areas.t0, .5) + .6 * P(t, tCalm, 1)} />
       {t < tH + .02 ? arr.map((r, i) => {
@@ -107,7 +107,6 @@ export const Film: React.FC<{captions?: boolean; audio?: boolean}> = ({captions 
       <CallBanner p={callP} t={t} />
     </Phone3D>
   );
-  const shadowOn = P(t, tCalm + .8, .9);
 
   return (
     <AbsoluteFill style={{background: C.black, overflow: 'hidden'}}>
@@ -119,13 +118,13 @@ export const Film: React.FC<{captions?: boolean; audio?: boolean}> = ({captions 
         <AbsoluteFill style={{background: 'radial-gradient(ellipse 60% 40% at 108% 70%, rgba(38,75,113,.18) 0%, rgba(10,11,12,0) 70%)'}} />
         <AbsoluteFill style={{background: 'linear-gradient(180deg, rgba(10,11,12,0) 70%, rgba(28,31,34,.45) 100%)'}} />
       </AbsoluteFill>
-      {/* mesa da varanda */}
-      {hz > 0 ? <div style={{position: 'absolute', left: -60, right: -60, top: 1080, bottom: -40, opacity: hz * (1 - sig), filter: `blur(${(3 * P(t, tFocus, 1.3, EASE_IO)).toFixed(2)}px)`,
-        background: 'linear-gradient(180deg, #3b332c 0%, #241f1b 14%, #15120f 60%, #0c0a09 100%)', boxShadow: 'inset 0 3px 0 rgba(230,200,165,.18)'}}>
-        <div style={{position: 'absolute', inset: 0, opacity: .3, background: 'repeating-linear-gradient(176deg, rgba(255,235,210,.05) 0 2px, rgba(0,0,0,0) 2px 26px)'}} />
+      {/* praia: areia em primeiro plano e a espuma das ondas indo e voltando (gerado, sem foto) */}
+      {hz > 0 ? <div style={{position: 'absolute', left: -80, right: -80, top: 1230, bottom: -40, opacity: hz * (1 - sig), filter: `blur(${(2.5 * P(t, tFocus, 1.3, EASE_IO)).toFixed(2)}px)`}}>
+        <div style={{position: 'absolute', inset: 0, borderRadius: '50% 50% 0 0 / 26px 26px 0 0', background: 'linear-gradient(180deg, #8a7563 0%, #6b5a4b 10%, #4a3e34 45%, #2a231e 100%)'}} />
+        <div style={{position: 'absolute', inset: 0, opacity: .25, background: 'radial-gradient(ellipse 30% 4% at 30% 30%, rgba(255,235,210,.25), rgba(0,0,0,0)), radial-gradient(ellipse 25% 3% at 70% 55%, rgba(255,235,210,.18), rgba(0,0,0,0))'}} />
+        {[0, 1].map((k) => { const ph = ((t - tCalm) / 3.2 + k * .5) % 1, w = Math.sin(ph * Math.PI);
+          return <div key={k} style={{position: 'absolute', left: 0, right: 0, top: -14 + 46 * w, height: 18, borderRadius: '50%', background: 'rgba(240,232,220,.55)', filter: 'blur(5px)', opacity: .25 + .5 * w}} />; })}
       </div> : null}
-      {shadowOn > 0 ? <div style={{position: 'absolute', left: 590 - 230, top: 1150, width: 460, height: 150, borderRadius: '50%', background: 'radial-gradient(ellipse, rgba(0,0,0,.6) 0%, rgba(0,0,0,0) 70%)',
-        opacity: shadowOn * (1 - sig), filter: `blur(${(4 + 4 * P(t, tFocus, 1.3)).toFixed(1)}px)`}} /> : null}
 
       {t < tCalm ? PhoneLayer : null}
 

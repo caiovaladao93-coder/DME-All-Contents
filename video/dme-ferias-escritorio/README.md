@@ -40,7 +40,7 @@ O celular conduz o filme inteiro. As três notificações se desprendem da tela 
 | Viaja | 11,6–15,5 s | A câmera recua. As mensagens ficam ligadas por linhas finas a um único ponto, "você". Há uma pausa de movimento e de som |
 | Estrutura | 15,5–21,8 s | Cada mensagem vira uma atividade, em sequência: Financeiro (etapa e **validação humana do gestor**), Comercial (responsável e histórico) e Operação (status automático). A espinha azul encaminha o fluxo, um marcador acompanha a atividade e o logo DME aparece discreto no fluxo |
 | Benefícios | 21,8–27,3 s | **Encaminhadas:** Mariana → gestor. **Disponíveis:** um arquivo se vincula à proposta. **Definidos:** Camila assume, o próximo passo aparece e uma tarefa automática conclui ("cliente avisado") |
-| Tranquilidade | 27,3–31,9 s | O fluxo se dissolve ao fundo. O celular deita sobre a mesa da varanda, com a tela em repouso, e o foco passa para o mar |
+| Tranquilidade | 27,3–31,9 s | O fluxo se dissolve ao fundo. O celular sai junto com o fluxo e sobra só a praia, com areia, ondas e o foco passando para o mar |
 | Assinatura | 31,9–39,9 s | Fundo institucional escuro, o logo oficial, "Tecnologia para a empresa seguir. E para você descansar." e o CTA "Envie **COMERCIAL** no direct" (cerca de 3,5 s) |
 
 ## Recursos visuais
@@ -52,7 +52,7 @@ O celular conduz o filme inteiro. As três notificações se desprendem da tela 
 - **Vidro:** um reflexo que se move com a rotação.
 - **Tela:** gerada em React (papel de parede, relógio, notificações e ligação), com componentes próprios no estilo das notificações de celular, sem copiar um aplicativo específico.
 
-**Cenário de férias:** gerado (céu, mar ao entardecer e mesa), sem foto.
+**Cenário de férias:** gerado (céu, mar ao entardecer e areia com ondas), sem foto.
 
 **Dados:** nomes, empresa ("Cliente Horizonte"), pedido 2381 e arquivo são fictícios e editáveis em `src/Film.tsx` (constante `REQ`). O selo "Exemplo ilustrativo" aparece entre 4 e 27 s.
 

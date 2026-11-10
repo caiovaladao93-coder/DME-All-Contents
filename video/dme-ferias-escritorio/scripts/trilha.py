@@ -92,7 +92,7 @@ ev('encaminhada (Mariana → gestor)', tE - .1, lambda t0: [put(fx, blip(79 + 3 
 ev('arquivo vinculado', tI, lambda t0: (put(fx, whoosh(.3), t0 - .2, .08, .3, .2), put(fx, click(), t0 + .1, .2, .3)))
 ev('responsável definido', tRp, lambda t0: put(fx, click(), t0, .18, -.2))
 ev('tarefa automática concluída', tRp + 1.2, lambda t0: put(fx, bell(88, 1.0), t0, .07, 0, .5))
-ev('descanso: o celular se acomoda na mesa', tCalm + 1.8, lambda t0: put(fx, boom(.8), t0, .07, 0, .2))
+ev('descanso: a praia se revela (ondas)', tCalm + .6, lambda t0: put(fx, whoosh(2.4, up=False), t0, .06, 0, .4))
 # ── assinatura (Fá · Lá · Dó) e CTA
 for i, m in enumerate((77, 81, 84)): ev(f'assinatura {i + 1}', tEnd + i * .12, lambda t0, m=m, i=i: put(fx, bell(m, 2.6), t0, .15, (-.3, 0, .3)[i], .6))
 put(L, pad((41, 53, 57, 60, 65), DUR - tEnd + .3, bright=.55), tEnd - .2, .34, 0, .5); put(L, bass(29, 3.0), tEnd, .3)
