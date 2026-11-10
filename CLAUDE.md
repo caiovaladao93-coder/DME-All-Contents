@@ -54,6 +54,7 @@ Repositório de conteúdo da **DME Technology**: roteiros e vídeos curtos (Reel
 - `video/reels-ferias/`: v1 do mesmo vídeo, com a pasta `audio/` do teste de voz sintética.
 - `video/reels-versao-da-verdade/`: primeiro vídeo (descartado).
 - `video/brand/dme-logo.svg`: logo vetorial.
+- `video/sgc-institucional/`: institucional vertical do **SGC** (cliente; repositório `jvramos10/sgc-prototipo`), no modelo HTML da DME, com a marca SGC (marinho `#0A2048` e laranja `#F86A14`). O logo é montado com as camadas oficiais. O roteiro e a fonte de cada afirmação estão em `roteiros/sgc-institucional-vertical.md`.
 - `video/institucional-80s/`: filme institucional de 80 s em **Remotion** (React/TS), com componentes por cena, legendas, SRT e capa. Leia o `README.md` e o `ASSETS-PENDENTES.md` dessa pasta, que listam as fotos e o áudio que ainda faltam. Para peças longas ou com fotografia, prefira esse projeto como base. Para Reels curtos, use o modelo HTML.
 - **Pexels:** o ambiente `dme-all-contents` libera `images.pexels.com`, `videos.pexels.com` e `www.pexels.com`. Busca no site (403) e API (a emissão de chaves está pausada) **não funcionam**. O usuário envia links, e eu extraio o número do item:
   - foto: `https://images.pexels.com/photos/<ID>/pexels-photo-<ID>.jpeg`;
