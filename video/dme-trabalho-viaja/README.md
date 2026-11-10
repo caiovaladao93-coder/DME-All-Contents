@@ -8,6 +8,14 @@ O filme é **um único mundo contínuo**, seguindo o Bang Motion:
 - a câmera recua e revela que tudo converge para o celular;
 - as conexões se redistribuem entre as etapas e os responsáveis, e só a **revisão humana** continua ligada ao celular.
 
+## Abertura com celular real
+
+A abertura usa uma **foto do Pexels**, "Maquete de smartphone com tela verde", de Jakub Zerdzicki (pexels.com/photo/36538967, licença Pexels). A tela verde foi substituída pela nossa com uma máscara de bordas suaves (`public/assets/photography/tela-mascara.png`), e o vazamento verde foi removido (`celular-limpo.jpg`).
+
+- **Câmera:** aproxima até a tela, e as notificações chegam uma a uma, até 9 pedidos.
+- **Transição:** quando a câmera recua, a foto se dissolve na operação.
+- **Pessoa na foto:** a mão é de uma pessoa anônima e não é apresentada como equipe nem como cliente da DME. A mão que apontava, à direita, ficou fora do recorte.
+
 ## Caso de exemplo (dados fictícios, com selo "Exemplo ilustrativo")
 
 Para o cliente entender a operação, um caso concreto atravessa o filme: o **Pedido 1042 do Cliente Alfa**.

@@ -8,6 +8,7 @@ import {Horizon, Table} from './components/Horizon';
 import {Phone} from './components/Phone';
 import {Icon, IconKey, OpNode} from './components/Nodes';
 import {Captions, Headline, Logo} from './components/Type';
+import {Notif, RealPhone} from './components/RealPhone';
 
 loadFonts();
 type V2 = [number, number];
@@ -32,6 +33,18 @@ const ENT: Array<{id: string; a?: Face; b: Face; c: Face; ask0?: V2; ring: V2; c
   {id: 'atend', b: {icon: 'headset', title: 'Atendimento', sub: 'cliente sem retorno'}, c: {icon: 'gear', title: 'Automação', sub: 'nota emitida · cliente avisado'}, ring: [430, 420], chain: [260, -150]},
 ];
 const DONE: V2 = [260, 350];
+/** notificações (fictícias) na tela do celular real: as 3 da fala e uma rajada que faz a tela transbordar */
+const NOTIFS = (tLit: number, tR: number[]): Notif[] => [
+  {at: tLit + .1, from: 'Equipe', text: 'Pode falar rapidinho?', color: '#4b5560', initial: 'E'},
+  {at: tR[0] - .05, from: 'Carla · Financeiro', text: 'Pode aprovar o pagamento do fornecedor?', color: '#3A6EA5', initial: 'C'},
+  {at: tR[1] - .05, from: 'Rafael · Comercial', text: 'Onde está o contrato do cliente Alfa?', color: '#5b6f86', initial: 'R'},
+  {at: tR[2] - .05, from: 'Marina · Operações', text: 'Como seguimos com o pedido 1042?', color: '#264B71', initial: 'M'},
+  {at: tR[2] + .5, from: 'Compras', text: 'A cotação foi aprovada?', color: '#4b5560', initial: 'C'},
+  {at: tR[2] + .78, from: 'Cliente Alfa', text: 'Qual o prazo de entrega?', color: '#5b6f86', initial: 'A'},
+  {at: tR[2] + 1.02, from: 'Financeiro', text: '2 boletos vencem hoje', color: '#3A6EA5', initial: 'F'},
+  {at: tR[2] + 1.22, from: 'RH', text: 'Pode assinar o ponto de ontem?', color: '#4b5560', initial: 'R'},
+  {at: tR[2] + 1.4, from: 'Comercial', text: 'Reunião às 16h, confirma?', color: '#264B71', initial: 'C'},
+];
 const PHONE0: V2 = [0, 0], PHONE1: V2 = [-300, 20];
 
 export const Film: React.FC<{captions?: boolean; audio?: boolean}> = ({captions = true, audio = true}) => {
@@ -126,14 +139,16 @@ export const Film: React.FC<{captions?: boolean; audio?: boolean}> = ({captions 
         </div>
       </div>
 
+      {/* abertura: celular REAL (Pexels), zoom na tela e notificações uma a uma; dissolve na operação quando a câmera recua */}
+      <RealPhone t={t} tLit={tLit} tFull={S.dependencias.t1} tOut={S.viaja.t0 - .1} notifs={NOTIFS(tLit, tR)} />
+
       {/* sombra de leitura do título */}
       <AbsoluteFill style={{background: 'linear-gradient(180deg, rgba(10,11,12,.95) 0%, rgba(10,11,12,.88) 19%, rgba(10,11,12,0) 31%)', opacity: P(t, tLit, .4) * (1 - sig)}} />
       {/* atividade em foco (cena 5) */}
       <Activity t={t} tin={tCard} rows={[tResp - .05, tMan - .05, tClar - .1]} out={S.clareza.t1 - .45} />
       {/* selo dos dados fictícios */}
-      <Seal t={t} tin={tR[0]} tout={tEnd - .7} top={t < tPull ? 236 : 1338} side={t < tPull ? 'right' : 'left'} />
+      <Seal t={t} tin={tR[0]} tout={tEnd - .7} top={t < tPull + .4 ? 236 : 1338} side="left" />
 
-      <Headline t={t} tin={tLit + .05} tout={S.interrupcao.t1 - .3} text="A empresa deixou você descansar?" accent="descansar?" size={72} />
       <Headline t={t} tin={tTrab - .1} tout={S.viaja.t1 - .25} text="O trabalho também viaja" accent="viaja" />
       <Headline t={t} tin={S.estrutura.t0 + .1} tout={wt('estrutura', 'para') - .3} text="Tecnologia sob medida" accent="sob medida" />
       <Headline t={t} tin={wt('estrutura', 'para') - .05} tout={S.estrutura.t1 - .25} text="Processos conectados" accent="conectados" />

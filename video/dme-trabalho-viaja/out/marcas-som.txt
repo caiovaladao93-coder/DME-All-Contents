@@ -16,6 +16,11 @@ EFEITOS
   4.94  solicitação 1
   6.93  solicitação 2
   8.80  solicitação 3
+  9.30  rajada de notificações 1
+  9.58  rajada de notificações 2
+  9.82  rajada de notificações 3
+ 10.02  rajada de notificações 4
+ 10.20  rajada de notificações 5
  10.29  câmera recua (revelação)
  12.42  sinal percorre até "Aprovação"
  13.27  sinal espera em "Aprovação"

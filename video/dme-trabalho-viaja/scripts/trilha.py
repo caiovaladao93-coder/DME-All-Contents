@@ -54,6 +54,7 @@ for tb in np.arange(tLit + .3, T_PAUSE0, BEAT):
     if k in (0, 2): put(L, sub_pulse(26, .8), tb)
     put(L, click(), tb + BEAT / 2, .04 + .04 * (tb - tLit) / (T_PAUSE0 - tLit), .3)
 for i, t0 in enumerate(tR): ev(f'solicitação {i + 1}', t0, lambda t0, i=i: put(fx, blip(84 + i), t0, .14, (-.3, .3, -.2)[i], .3))
+for k, dt in enumerate((.5, .78, 1.02, 1.22, 1.4)): ev(f'rajada de notificações {k + 1}', tR[2] + dt, lambda t0, k=k: put(fx, blip(86 + (k % 3)), t0, .07, (-.3, .3)[k % 2], .3))
 ev('câmera recua (revelação)', tPull - .1, lambda t0: put(fx, whoosh(1.2), t0, .25, 0, .3))
 ev('sinal percorre até "Aprovação"', tTrab, lambda t0: [put(fx, blip(76 + 2 * j), t0 + j * .2, .06, 0, .4) for j in range(4)])
 ev('sinal espera em "Aprovação"', tTrab + .85, lambda t0: put(fx, bell(81, 1.2), t0, .07, 0, .5))
