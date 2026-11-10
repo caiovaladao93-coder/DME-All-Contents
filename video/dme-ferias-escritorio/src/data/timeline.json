@@ -1,7 +1,7 @@
 {
  "fps": 30,
- "dur": 37.811,
- "frames": 1134,
+ "dur": 37.904,
+ "frames": 1137,
  "scenes": [
   {
    "key": "ferias",
@@ -61,9 +61,9 @@
    "key": "assinatura",
    "fala": "n7",
    "t0": 28.524,
-   "t1": 37.811,
+   "t1": 37.904,
    "v0": 28.584,
-   "v1": 37.361,
+   "v1": 37.454,
    "texto": "DME Technology. Tecnologia para a empresa seguir. E para você descansar. Comente COMERCIAL e receba um diagnóstico."
   }
  ],
@@ -387,99 +387,89 @@
   ],
   "assinatura": [
    [
-    "Dê",
+    "Dê-Eme-É",
     28.584,
-    28.805
-   ],
-   [
-    "Eme",
-    28.886,
-    29.223
-   ],
-   [
-    "É",
-    29.281,
-    29.339
+    29.42
    ],
    [
     "Technology.",
-    29.455,
-    30.488
+    29.536,
+    30.581
    ],
    [
     "Tecnologia",
-    30.708,
-    31.474
+    30.801,
+    31.567
    ],
    [
     "para",
-    31.544,
-    31.753
+    31.637,
+    31.846
    ],
    [
     "a",
-    31.869,
-    31.985
+    31.962,
+    32.078
    ],
    [
     "empresa",
-    32.055,
-    32.519
+    32.148,
+    32.612
    ],
    [
     "seguir.",
-    32.566,
-    32.972
+    32.659,
+    33.065
    ],
    [
     "E",
-    33.088,
-    33.169
+    33.181,
+    33.262
    ],
    [
     "para",
-    33.251,
-    33.425
+    33.344,
+    33.518
    ],
    [
     "você",
-    33.46,
-    33.68
+    33.553,
+    33.773
    ],
    [
     "descansar.",
-    33.773,
-    34.423
+    33.866,
+    34.516
    ],
    [
     "Comente",
-    34.539,
-    34.992
+    34.632,
+    35.085
    ],
    [
     "comercial",
-    35.05,
-    35.666
+    35.143,
+    35.759
    ],
    [
     "e",
-    35.724,
-    35.758
+    35.817,
+    35.851
    ],
    [
     "receba",
-    35.782,
-    36.234
-   ],
-   [
-    "um",
-    36.269,
+    35.875,
     36.327
    ],
    [
+    "um",
+    36.362,
+    36.42
+   ],
+   [
     "diagnóstico.",
-    36.397,
-    37.361
+    36.49,
+    37.454
    ]
   ]
  },
@@ -564,25 +554,25 @@
   },
   {
    "start": 28.584,
-   "end": 30.688,
-   "text": "DME Technology.",
+   "end": 30.781,
+   "text": "Dê-Eme-É Technology.",
    "scene": "assinatura"
   },
   {
-   "start": 30.708,
-   "end": 33.088,
+   "start": 30.801,
+   "end": 33.181,
    "text": "Tecnologia para a empresa seguir.",
    "scene": "assinatura"
   },
   {
-   "start": 33.088,
-   "end": 34.539,
+   "start": 33.181,
+   "end": 34.632,
    "text": "E para você descansar.",
    "scene": "assinatura"
   },
   {
-   "start": 34.539,
-   "end": 37.561,
+   "start": 34.632,
+   "end": 37.654,
    "text": "Comente COMERCIAL e receba um diagnóstico.",
    "scene": "assinatura"
   }

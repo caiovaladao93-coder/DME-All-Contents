@@ -1,4 +1,4 @@
-MARCAS · DME "Suas férias não precisam virar escritório" · 37.80 s · 30 fps · trilha original 96 BPM
+MARCAS · DME "Suas férias não precisam virar escritório" · 37.90 s · 30 fps · trilha original 96 BPM
 
 FALAS (Lendário, ElevenLabs, velocidade natural, sem compressão)
   0.30–  3.41  [ferias] Você saiu de férias. Mas a empresa continua chamando.
@@ -7,7 +7,7 @@ FALAS (Lendário, ElevenLabs, velocidade natural, sem compressão)
  14.44– 19.04  [estrutura] A DME organiza processos, conecta sistemas e automatiza tarefas manuais.
  19.25– 23.99  [beneficios] Solicitações encaminhadas. Informações disponíveis. Responsáveis definidos.
  24.20– 28.42  [tranquilidade] Menos interrupções. Mais tranquilidade para aproveitar suas férias.
- 28.58– 37.36  [assinatura] DME Technology. Tecnologia para a empresa seguir. E para você descansar. Comente COMERCIAL e receba um diagnóstico.
+ 28.58– 37.45  [assinatura] DME Technology. Tecnologia para a empresa seguir. E para você descansar. Comente COMERCIAL e receba um diagnóstico.
 
 TRILHA: ambiência tranquila 0–2.63 · interrupções 2.63–10.62 (notificações, vibração, ligação breve; pulso grave crescente) · pausa 13.88–14.42 · organização 14.42–24.14 (pulsação estável, F–C–Dm–B♭) · descanso 24.14–28.52 (ambiência + piano) · assinatura 28.52
 
@@ -33,4 +33,4 @@ EFEITOS
  28.52  assinatura 1
  28.64  assinatura 2
  28.76  assinatura 3
- 33.67  CTA "Comente COMERCIAL e receba um diagnóstico"
+ 33.77  CTA "Comente COMERCIAL e receba um diagnóstico"
