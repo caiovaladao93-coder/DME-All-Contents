@@ -51,17 +51,17 @@ Menos interrupções.
 Mais tranquilidade para aproveitar suas férias.
 
 14
-00:00:28,584 --> 00:00:30,688
-DME Technology.
+00:00:28,584 --> 00:00:30,781
+Dê-Eme-É Technology.
 
 15
-00:00:30,708 --> 00:00:33,088
+00:00:30,801 --> 00:00:33,181
 Tecnologia para a empresa seguir.
 
 16
-00:00:33,088 --> 00:00:34,539
+00:00:33,181 --> 00:00:34,632
 E para você descansar.
 
 17
-00:00:34,539 --> 00:00:37,561
+00:00:34,632 --> 00:00:37,654
 Comente COMERCIAL e receba um diagnóstico.
