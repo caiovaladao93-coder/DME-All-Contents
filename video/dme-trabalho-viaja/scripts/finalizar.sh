@@ -6,7 +6,7 @@ IN=out/render-bruto.mp4; OUT=out/DME-O-Trabalho-Tambem-Viaja-Reels.mp4
 M=$(ffmpeg -hide_banner -i $IN -af loudnorm=I=-14:TP=-1.5:LRA=11:print_format=json -f null - 2>&1 | sed -n '/^{/,/^}/p')
 g(){ echo "$M" | python3 -c "import json,sys;print(json.load(sys.stdin)['$1'])"; }
 ffmpeg -y -v error -i $IN -c:v libx264 -preset slow -crf 16 -pix_fmt yuv420p -colorspace bt709 -color_primaries bt709 -color_trc bt709 \
-  -af "alimiter=limit=0.8:attack=3:release=60:level=disabled,loudnorm=I=-14:TP=-1.5:LRA=11:measured_I=$(g input_i):measured_TP=$(g input_tp):measured_LRA=$(g input_lra):measured_thresh=$(g input_thresh):offset=$(g target_offset):linear=true,aresample=48000" \
+  -af "alimiter=limit=0.7:attack=2:release=60:level=disabled,loudnorm=I=-14:TP=-2.0:LRA=11:measured_I=$(g input_i):measured_TP=$(g input_tp):measured_LRA=$(g input_lra):measured_thresh=$(g input_thresh):offset=$(g target_offset):linear=true,aresample=48000" \
   -c:a aac -b:a 192k -movflags +faststart $OUT
 python3 scripts/extras.py
 ffmpeg -y -v error -ss 2.6 -i $OUT -frames:v 1 out/capa.png

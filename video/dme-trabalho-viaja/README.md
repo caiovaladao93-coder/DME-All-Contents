@@ -8,6 +8,24 @@ O filme é **um único mundo contínuo**, seguindo o Bang Motion:
 - a câmera recua e revela que tudo converge para o celular;
 - as conexões se redistribuem entre as etapas e os responsáveis, e só a **revisão humana** continua ligada ao celular.
 
+## Caso de exemplo (dados fictícios, com selo "Exemplo ilustrativo")
+
+Para o cliente entender a operação, um caso concreto atravessa o filme: o **Pedido 1042 do Cliente Alfa**.
+
+- **Pedidos que chegam ao dono:**
+  - "Carla · Financeiro: Pode aprovar o pagamento?";
+  - "Rafael · Comercial: Onde está o contrato do Alfa?";
+  - "Marina · Operações: Como seguimos com o 1042?".
+- **Áreas paradas (revelação):**
+  - Financeiro: 3 aprovações paradas;
+  - Comercial: contrato sem pasta;
+  - Compras: cotação sem resposta;
+  - Operações: pedido 1042 parado;
+  - Atendimento: cliente sem retorno.
+- **Processo organizado:** Contratos (pasta do cliente Alfa) → Pedido 1042 → Responsável (Marina · Operações) → Automação (nota emitida, cliente avisado) → Aprovação (sua, acima de R$ 3.000) → Concluído.
+- **Cartão da cena 5:** Responsável, o que é automático e o próximo passo ("Sua aprovação · R$ 4.870,00").
+- **Cena 6:** o celular mostra **só a aprovação que é do dono**. As demais etapas seguem com a equipe.
+
 ## Entregáveis (`out/`)
 
 | Arquivo | Conteúdo |
@@ -48,14 +66,13 @@ Para a versão sem legendas queimadas, use a composição `DMETrabalhoViajaSemLe
 **Verificado:**
 - duração de 39,5 s (até 40 s);
 - 1080×1920, 30 fps, H.264 yuv420p, AAC 48 kHz;
-- −14,2 LUFS;
+- −14,4 LUFS, com pico real de −1,9 dBTP;
 - nenhum quadro preto;
 - folha de contato com 23 pontos, incluindo as transições;
 - legendas e títulos dentro das margens de 100/220/350 px;
 - logo oficial e fontes Space Grotesk e Manrope carregadas.
 
 **Pendente:**
-- **Pico real:** −1,3 dBTP, um pouco acima do alvo de −1,5 dBTP.
 - **Áudio não ouvido:** voz e trilha foram conferidas por medição (música cerca de 13 dB abaixo da voz e ducking de −7 dB sob a fala).
 - **Interface do Reels:** a sobreposição com os controles do Instagram foi checada pelas margens, não no aplicativo.
 - **Voz:** usei o Guilherme, voz padrão da DME, na velocidade natural, sem compressão de tempo. Ajustes de interpretação por frase (mais firmeza na DME, acolhimento no final) dependeram da escolha entre 3 tomadas, não de direção fina.

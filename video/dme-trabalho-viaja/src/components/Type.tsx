@@ -26,7 +26,7 @@ export const Captions: React.FC<{t: number; hideFrom: number}> = ({t, hideFrom})
   if (!c) return null;
   const e = P(t, c.start - .05, .18), q = P(t, c.end - .05, .12, EASE_IN);
   return (
-    <div style={{position: 'absolute', left: 100, right: 100, top: 1370, display: 'flex', justifyContent: 'center', opacity: e * (1 - q)}}>
+    <div style={{position: 'absolute', left: 100, right: 100, top: 1400, display: 'flex', justifyContent: 'center', opacity: e * (1 - q)}}>
       <div style={{maxWidth: 880, padding: '14px 26px', borderRadius: 18, background: 'rgba(10,11,12,.72)', border: '1px solid rgba(192,198,204,.12)',
         fontFamily: UI, fontWeight: 600, fontSize: 46, lineHeight: 1.22, color: C.ink, textAlign: 'center'}}>{c.text}</div>
     </div>

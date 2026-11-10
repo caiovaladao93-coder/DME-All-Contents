@@ -31,7 +31,7 @@ tLit = wt('interrupcao', 'empresa') - .15
 tR = [wt('dependencias', 'aprovação.'), wt('dependencias', 'arquivo.'), wt('dependencias', 'decisão')]
 tPull = S['viaja']['t0'] + .15; tTrab = wt('viaja', 'trabalho'); tReorg = S['estrutura']['t0'] + .2
 tTok = [wt('estrutura', 'sistemas,') + .1, wt('estrutura', 'automações') + .1, wt('estrutura', 'integrações') + .15]
-tHuman = S['clareza']['v1'] - .9; tDone = S['clareza']['v1'] - .3; tCalm = S['presente']['t0']; tEnd = S['assinatura']['t0']
+tHuman = S['clareza']['v1'] - .6; tDone = tHuman; tCalm = S['presente']['t0']; tEnd = S['assinatura']['t0']
 T_PAUSE0, T_PAUSE1 = S['viaja']['v1'] + .05, S['estrutura']['v0'] - .05
 
 # ── ambiência de descanso (água/vento suave): ruído filtrado com ondulação lenta
@@ -80,12 +80,11 @@ while t < tEnd - 1e-6:
 for j in range(5): ev(f'conexão estabelecida {j + 1}', tReorg + 1.0 + j * .3, lambda t0: put(fx, click(), t0, .16, .2))
 for j, t0 in enumerate(tTok): ev(f'atividade avança {j + 1}', t0, lambda t0: put(fx, blip(79 + 3 * j), t0, .08, 0, .3))
 ev('automação (engrenagem)', tTok[1] + .35, lambda t0: [put(fx, click(), t0 + k * .12, .07, .3) for k in range(4)])
-ev('decisão humana (revisão)', tHuman, lambda t0: put(fx, blip(84), t0, .1, -.2, .4))
-ev('concluído', tDone + .5, lambda t0: put(fx, bell(84, 1.4), t0, .09, 0, .5))
+ev('só a aprovação chega ao celular', tHuman, lambda t0: (put(fx, blip(84), t0, .1, -.2, .4), put(fx, blip(88), t0 + .5, .08, -.2, .4)))
 # ── alívio e assinatura sonora antecipada (Fá · Lá · Dó)
 for i, m in enumerate((77, 81, 84)): ev(f'assinatura {i + 1}', tEnd - .35 + i * .12, lambda t0, m=m, i=i: put(fx, bell(m, 2.6), t0, .16, (-.3, 0, .3)[i], .6))
 put(L, pad((41, 53, 57, 60, 65), DUR - tEnd + .3, bright=.55), tEnd - .2, .36, 0, .5); put(L, bass(29, 3.0), tEnd, .3)
-ev('logo', tEnd + .15, lambda t0: put(fx, boom(1.4), t0, .18, 0, .3))
+ev('logo', tEnd - .45, lambda t0: put(fx, boom(1.4), t0, .18, 0, .3))
 ev('CTA "Fale com a DME"', wt('assinatura', 'fale') - .15, lambda t0: put(fx, blip(91), t0, .07, 0, .5))
 
 ir = [make_ir(2.2, 61 + c) for c in (0, 1)]
