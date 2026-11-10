@@ -138,10 +138,11 @@ tl.set({}, {}, TL.dur);
 // legendas (no máximo 2 linhas, quebras por sentido); saem na assinatura, que já traz o texto
 const capEl = $('#caption span'), capBox = $('#caption');
 function caption(t) {
-  const c = TL.captions.find((x) => t >= x.start && t < x.end && x.start < 21.9);
-  if (!c) { capBox.style.opacity = 0; return; }
+  const c = TL.captions.find((x) => t >= x.start && t < x.end);
+  if (!c || t >= 21.9) { capBox.style.opacity = 0; return; }
+  const fimSig = Math.min(1, (21.9 - t) / .25);   // a legenda sai quando a assinatura começa
   capEl.textContent = c.text;
-  capBox.style.opacity = Math.min(1, (t - c.start) / .2, (c.end - t) / .15 + .0001);
+  capBox.style.opacity = Math.min(1, (t - c.start) / .2, (c.end - t) / .15 + .0001, fimSig);
 }
 
 async function apply(t) {
