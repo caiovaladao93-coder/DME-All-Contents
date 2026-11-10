@@ -1,0 +1,27 @@
+1
+00:00:00,200 --> 00:00:03,844
+Decisões importantes não deveriam depender apenas de intuição.
+
+2
+00:00:03,933 --> 00:00:10,967
+A SGC é uma metodologia de gestão que ajuda empresas a entender sua operação e agir com mais clareza.
+
+3
+00:00:11,067 --> 00:00:18,333
+Começamos pelo diagnóstico: analisamos faturamento, impostos, logística, margem e custos.
+
+4
+00:00:18,467 --> 00:00:23,829
+Com esses dados, identificamos prioridades e estruturamos um plano de ação.
+
+5
+00:00:23,933 --> 00:00:29,574
+Depois, acompanhamos indicadores e a execução, para que a gestão evolua com direção.
+
+6
+00:00:29,667 --> 00:00:34,147
+Porque crescer exige mais do que trabalhar muito. Exige método.
+
+7
+00:00:34,600 --> 00:00:38,894
+SGC. Clareza para decidir. Direção para crescer.

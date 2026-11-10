@@ -1,0 +1,22 @@
+{
+  "fps": 30,
+  "scenes": [
+    {"key": "s1", "name": "Intuição não basta", "dur": 112, "voice": 6},
+    {"key": "s2", "name": "Quem é a SGC", "dur": 216, "voice": 6},
+    {"key": "s3", "name": "O diagnóstico", "dur": 222, "voice": 4},
+    {"key": "s4", "name": "Do diagnóstico ao plano", "dur": 164, "voice": 4},
+    {"key": "s5", "name": "Acompanhamento", "dur": 172, "voice": 4},
+    {"key": "s6", "name": "Nossa filosofia", "dur": 134, "voice": 4},
+    {"key": "s7", "name": "Assinatura", "dur": 170, "voice": 18}
+  ],
+  "sfx": [
+    {"scene": "s1", "f": 0, "k": "pulse"},
+    {"scene": "s2", "f": 0, "k": "line"},
+    {"scene": "s2", "f": 8, "k": "logo"},
+    {"scene": "s3", "f": 0, "k": "swipe"},
+    {"scene": "s4", "f": 0, "k": "swipe"},
+    {"scene": "s5", "f": 0, "k": "swipe"},
+    {"scene": "s7", "f": 0, "k": "line"},
+    {"scene": "s7", "f": 8, "k": "logo"}
+  ]
+}

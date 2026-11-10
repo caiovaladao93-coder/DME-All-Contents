@@ -1,0 +1,22 @@
+Marcas de som (s) · SGC Institucional vertical (Instagram)
+
+FALAS (Guilherme, ElevenLabs)
+  0.20–  3.54  s1: Decisões importantes não deveriam depender apenas de intuição.
+  3.93– 10.67  s2: A SGC é uma metodologia de gestão que ajuda empresas a entender sua operação e agir com mais clareza.
+ 11.07– 18.03  s3: Começamos pelo diagnóstico: analisamos faturamento, impostos, logística, margem e custos.
+ 18.47– 23.53  s4: Com esses dados, identificamos prioridades e estruturamos um plano de ação.
+ 23.93– 29.27  s5: Depois, acompanhamos indicadores e a execução, para que a gestão evolua com direção.
+ 29.67– 33.85  s6: Porque crescer exige mais do que trabalhar muito. Exige método.
+ 34.60– 38.59  s7: SGC. Clareza para decidir. Direção para crescer.
+
+EFEITOS
+  0.00  pulse (s1)
+  3.73  line (s2)
+  4.00  logo (s2)
+ 10.93  swipe (s3)
+ 18.33  swipe (s4)
+ 23.80  swipe (s5)
+ 34.00  line (s7)
+ 34.27  logo (s7)
+
+TRILHA: tensão 0–3.73 · progressão Dm–B♭–F–C a partir de 3.73 · bateria leve a partir de 10.93 · piano e pulsação crescem até o ápice em 29.53 (cena 06) · resolução em Fá maior e assinatura (Fá–Lá–Dó) em 34.00
