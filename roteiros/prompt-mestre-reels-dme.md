@@ -143,3 +143,17 @@ Batida de 0,577 s. Duração de 33 s.
 ⚠ **Para aprovar:** "Pode marcar as férias." fecha o loop do gancho e é a frase mais memorável do vídeo, mas soa como promessa. Uma alternativa mais neutra é "E as férias? Agora entram no calendário."
 
 **Locução v2 (cerca de 55 palavras):** "Se você tirar férias, sua empresa para? Você aprova. Você cobra. Você lembra todo mundo. Isso não é dedicação. É gargalo. Agora… quem segura é o processo. Diagnóstico, mapeamento, padronização, automação. No automático. Então, enquanto você cuida da estratégia, o processo cuida da rotina. Pode marcar as férias. Envie COMERCIAL no direct."
+
+## 4. Aprendizados da referência de motion design (Inter "Porquinho", 10/11/2026)
+
+O estudo completo está em `roteiros/estudo-referencia-inter-porquinho.md`. Antes de entregar, confira também:
+
+1. **Gancho:** a abertura é uma situação concreta, com dia e hora, e não o produto.
+2. **Texto:** uma frase por tela e uma palavra-chave colorida, montada palavra por palavra com desfoque de movimento.
+3. **Interface:** aparece como componente ampliado com a interação acontecendo (selo "Exemplo ilustrativo").
+4. **Muitos itens:** com 3 itens ou mais, use lista fixa + cartão de demonstração que troca (cerca de 2 s por item, na palavra falada).
+5. **Fio condutor:** um elemento visual recorrente (na DME, o token de aço) aparece no começo, no meio e no fim.
+6. **Cortes:** no máximo 2 ou 3 cortes secos. O resto é transição pelo objeto, máscara ou inversão. Na DME, nada de clarão.
+7. **Trilha:** 0,3 a 0,5 s de silêncio antes do "Agora" e fecho mais denso no logo.
+8. **Loop:** o final volta à situação do gancho.
+

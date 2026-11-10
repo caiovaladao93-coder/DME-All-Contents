@@ -49,6 +49,7 @@ Repositório de conteúdo da **DME Technology**: roteiros e vídeos curtos (Reel
 
 - `roteiros/prompt-mestre-reels-dme.md`: prompt mestre, com diagnóstico do que melhorar e o roteiro "Férias" v2.
 - `roteiros/reels-estilo-comercial-v2.md`: roteiros prontos 1 (CRM, "Quem lembra?") e 2 (agente de voz, "Ninguém atendeu"), ainda não produzidos.
+- `roteiros/estudo-referencia-inter-porquinho.md`: estudo de linguagem de um comercial de motion design de referência. Traz a decupagem, os princípios (gancho de situação, interface em componentes, lista + demonstração, fio condutor, transição pelo objeto, pausa antes da virada, loop), a aplicação por marca, as receitas técnicas e um checklist. **Consulte ao roteirizar e animar qualquer peça nova.**
 - `roteiros/reels-ia-versao-da-verdade.md`: primeiro roteiro, descartado por ser fraco. Fica como referência do que evitar.
 - `video/reels-ferias-v2/`: vídeo mais recente e aprovado, que é o **modelo de referência**.
 - `video/reels-ferias/`: v1 do mesmo vídeo, com a pasta `audio/` do teste de voz sintética.
