@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>ADV Station · cada caso tem seu caminho</title>
+<meta name="viewport" content="width=1080">
+<style>
+  /* Títulos: cadeia serifada do manual (Iowan Old Style → Palatino → Georgia); Gelasio (OFL, métrica Georgia) garante o render.
+     Apoio/legendas: 'Fieldwork' primeiro (PENDENTE: kit Adobe Fonts bloqueado neste ambiente); Nunito Sans (OFL) é PROVISÓRIA. */
+  @font-face { font-family: 'Gelasio'; src: url('assets/fonts/gelasio-latin-600-normal.woff2') format('woff2'); font-weight: 600; }
+  @font-face { font-family: 'Gelasio'; src: url('assets/fonts/gelasio-latin-700-normal.woff2') format('woff2'); font-weight: 700; }
+  @font-face { font-family: 'Apoio'; src: url('assets/fonts/nunito-sans-latin-600-normal.woff2') format('woff2'); font-weight: 400; }
+  @font-face { font-family: 'Apoio'; src: url('assets/fonts/nunito-sans-latin-700-normal.woff2') format('woff2'); font-weight: 700; }
+  :root { --marinho: #16284A; --marinho2: #1F3560; --dourado: #C29B3C; --branco: #FFFFFF; --marfim: #F4F6F9;
+          --serif: 'Iowan Old Style', 'Palatino Linotype', Palatino, 'Gelasio', Georgia, serif; --sans: 'Fieldwork', 'Apoio', sans-serif; }
+  html, body { margin: 0; background: #000; }
+  #stage { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: var(--marinho); }
+  #bg { position: absolute; inset: -400px; background: radial-gradient(ellipse 55% 40% at 50% 45%, #24406f 0%, #1a2f55 45%, #16284A 75%); }
+  #grain { position: absolute; inset: 0; background-image: url('assets/textura.png'); opacity: .55; mix-blend-mode: soft-light; }
+  #rig { position: absolute; left: 0; top: 0; width: 1740px; height: 3100px; transform-origin: 0 0; }
+  #rig svg { position: absolute; left: 0; top: 0; width: 1740px; height: 3100px; overflow: visible; }
+  #shade { position: absolute; left: 0; right: 0; top: 0; height: 760px; background: linear-gradient(180deg, rgba(22,40,74,.92) 0%, rgba(22,40,74,.7) 40%, rgba(22,40,74,0) 100%); }
+  .title { position: absolute; left: 90px; right: 90px; top: 300px; overflow: hidden; padding-bottom: 12px; visibility: hidden; }
+  .title > div { font-family: var(--serif); font-weight: 700; font-size: 86px; line-height: 1.04; color: var(--branco); }
+  .title em { font-style: normal; color: var(--dourado); }
+  .sub { position: absolute; left: 90px; right: 90px; top: 540px; overflow: hidden; visibility: hidden; }
+  .sub > div { font-family: var(--sans); font-weight: 400; font-size: 44px; line-height: 1.22; color: var(--branco); }
+  .rule { position: absolute; left: 90px; top: 512px; height: 3px; width: 120px; background: var(--dourado); transform-origin: 0 50%; visibility: hidden; }
+  #brand { position: absolute; left: 90px; top: 290px; width: 96px; height: 96px; visibility: hidden; padding: 14px; border-radius: 16px; background: var(--marfim); }
+  #brand img { width: 100%; height: 100%; display: block; }
+  #caption { position: absolute; left: 90px; right: 90px; top: 1360px; display: flex; justify-content: center; }
+  #caption span { max-width: 900px; padding: 14px 26px 16px; border-radius: 14px; background: rgba(13,26,49,.82); font-family: var(--sans); font-weight: 400; font-size: 42px; line-height: 1.22; color: var(--branco); text-align: center; }
+  #ivory { position: absolute; inset: 0; background: var(--marfim) radial-gradient(ellipse 70% 45% at 50% 40%, #ffffff 0%, rgba(255,255,255,0) 70%); visibility: hidden; }
+  #ivory .tex { position: absolute; inset: 0; background-image: url('assets/textura.png'); opacity: .12; mix-blend-mode: soft-light; }
+  #logo { position: absolute; left: 390px; top: 610px; width: 300px; height: 300px; visibility: hidden; }
+  #logo img { width: 100%; height: 100%; display: block; }
+  #cta { position: absolute; left: 90px; right: 90px; top: 1020px; text-align: center; visibility: hidden; }
+  #cta span { display: inline-block; font-family: var(--serif); font-weight: 600; font-size: 66px; color: var(--marinho); padding-bottom: 18px; border-bottom: 3px solid var(--dourado); }
+  #tApoia > div { color: var(--marinho); }
+</style>
+</head>
+<body>
+<div id="stage">
+  <div id="bg"></div>
+  <div id="rig"><svg viewBox="0 0 1740 3100" id="world"></svg></div>
+  <div id="grain"></div>
+  <div id="shade"></div>
+  <div id="ivory"><div class="tex"></div></div>
+  <!-- camada de leitura (fora do rig) -->
+  <div id="brand"><img src="assets/brand/advstation-logo.svg"></div>
+  <div class="title" id="tCaminho"><div>Cada caso tem<br>seu <em>caminho</em></div></div>
+  <div class="title" id="tGestao" style="top:420px"><div style="font-size:78px">Gestão para a advocacia <em>previdenciária</em></div></div>
+  <div class="title" id="tOrg"><div><em>Organizar</em></div></div>
+  <div class="title" id="tAcomp"><div><em>Acompanhar</em></div></div>
+  <div class="title" id="tCoord"><div><em>Coordenar</em></div></div>
+  <div class="title" id="tMat"><div>Maternidade<br>Legal</div></div>
+  <div class="rule" id="rMat"></div>
+  <div class="sub" id="sMat"><div>Gestão de casos de salário-maternidade</div></div>
+  <div class="title" id="tPrev"><div>Previdenciário<br>Geral</div></div>
+  <div class="rule" id="rPrev"></div>
+  <div class="sub" id="sPrev0"><div>Gestão para diferentes benefícios previdenciários</div></div>
+  <div class="sub" id="sPrev1"><div>Aposentadorias</div></div>
+  <div class="sub" id="sPrev2"><div>Benefícios por incapacidade</div></div>
+  <div class="sub" id="sPrev3"><div>Pensão por morte</div></div>
+  <div class="sub" id="sPrev4"><div>Auxílio-acidente</div></div>
+  <div class="title" id="tVisao"><div>Uma mesma visão<br>de <em>gestão</em></div></div>
+  <div class="title" id="tApoia"><div>A tecnologia <em>apoia</em></div></div>
+  <div id="logo"><img src="assets/brand/advstation-logo.svg"></div>
+  <div id="cta"><span>Conheça nossas soluções</span></div>
+  <div id="caption"><span></span></div>
+</div>
+<script src="lib/gsap.min.js"></script>
+<script src="data.js"></script>
+<script>
+/* ════════════════════════════════════════════════════════════════════════
+   ADV Station · "Cada caso tem seu caminho. Organização conecta cada etapa."
+   Um único mundo SVG (1740 × 3100) percorrido por uma câmera. Todos os objetos
+   são da mesma família: dossiês e folhas marfim, detalhes marinho, acentos dourados.
+   As transformações são METÁFORAS de gestão, não demonstrações do sistema.
+   Timeline única (GSAP, pausada) + apply(t) determinístico: o estado vem só de t.
+   ════════════════════════════════════════════════════════════════════════ */
+const TL = window.TLDATA, $ = (s) => document.querySelector(s), NS = 'http://www.w3.org/2000/svg';
+const wt = (fid, w) => { const n = (x) => x.normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z]/gi, '').toLowerCase(); return TL.words[fid].find((x) => n(x[0]) === n(w))[1]; };
+const W = $('#world');
+const el = (tag, attrs, parent = W) => { const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); parent.appendChild(e); return e; };
+
+// ── definições: sombra suave para objetos sobrepostos
+const defs = el('defs', {});
+defs.innerHTML = `<filter id="sh" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#06101f" flood-opacity=".45"/></filter>`;
+
+// ── trajetórias (camada 2)
+const P = {
+  p0:   'M 690 700 C 900 700, 1000 980, 1090 1060',
+  main: 'M 1220 1300 C 1220 1420, 1100 1420, 1100 1500 C 1100 1640, 870 1620, 870 1760 L 870 2300',
+  L:    'M 870 2300 C 870 2440, 420 2420, 420 2560 L 420 3000',
+  R:    'M 870 2300 C 870 2440, 1320 2420, 1320 2560 L 1320 2700',
+  r1:   'M 1320 2700 C 1320 2830, 1060 2840, 1060 2985', r2: 'M 1320 2700 C 1320 2860, 1240 2880, 1240 3025',
+  r3:   'M 1320 2700 C 1320 2860, 1400 2880, 1400 3025', r4: 'M 1320 2700 C 1320 2830, 1580 2840, 1580 2985',
+};
+const gPaths = el('g', {}), path = {};
+for (const k in P) {
+  const base = el('path', {d: P[k], fill: 'none', stroke: 'rgba(244,246,249,.32)', 'stroke-width': 7, 'stroke-linecap': 'round'}, gPaths);
+  const gold = el('path', {d: P[k], fill: 'none', stroke: '#C29B3C', 'stroke-width': 7.5, 'stroke-linecap': 'round', opacity: 0}, gPaths);
+  const len = base.getTotalLength(); base.style.strokeDasharray = gold.style.strokeDasharray = len;
+  path[k] = {base, gold, len, draw: 0, lit: 0};
+}
+// pontos de etapa (marcos) — no percurso principal e no percurso da Maternidade
+const STAGES = {main: [[1100, 1500], [870, 1760], [870, 2040]], L: [[420, 2620], [420, 2800], [420, 2980]]};
+const gStages = el('g', {}), stage = {};
+for (const k in STAGES) stage[k] = STAGES[k].map(([x, y]) => {
+  const g = el('g', {transform: `translate(${x} ${y})`}, gStages);
+  const ring = el('circle', {r: 44, fill: 'none', stroke: '#C29B3C', 'stroke-width': 5, opacity: 0}, g);
+  el('circle', {r: 22, fill: '#2B4470', stroke: '#F4F6F9', 'stroke-width': 5}, g);
+  return {g, ring, x, y, on: 0, hit: 0};
+});
+// extremidades das ramificações (Previdenciário Geral)
+const ENDS = [[1060, 2985], [1240, 3025], [1400, 3025], [1580, 2985]];
+const gEnds = el('g', {}), ends = ENDS.map(([x, y]) => {
+  const g = el('g', {transform: `translate(${x} ${y})`, opacity: 0}, gEnds);
+  const ring = el('circle', {r: 52, fill: 'none', stroke: '#C29B3C', 'stroke-width': 5, opacity: 0}, g);
+  el('rect', {x: -30, y: -38, width: 60, height: 76, rx: 6, fill: '#F4F6F9', filter: 'url(#sh)'}, g);
+  el('rect', {x: -30, y: -38, width: 60, height: 12, rx: 4, fill: '#16284A'}, g);
+  el('rect', {x: -18, y: -12, width: 36, height: 6, rx: 3, fill: '#16284A', opacity: .3}, g); el('rect', {x: -18, y: 2, width: 28, height: 6, rx: 3, fill: '#16284A', opacity: .3}, g);
+  return {g, ring, op: 0, hit: 0};
+});
+
+// ── objetos (camada 3)
+function lines(g, x, y, w, n, gap, op = .26) {
+  const ws = [1, .82, .94, .6, .88, .7, .9];
+  for (let i = 0; i < n; i++) el('rect', {x, y: y + i * gap, width: w * ws[i % ws.length], height: 9, rx: 4.5, fill: '#16284A', opacity: op}, g);
+}
+// dossiê: capa marfim, aba, lombada marinho; variante 'mat' (faixa marinho) e 'prev' (marca dourada no canto)
+function dossier(id, cx, cy, s = 1, variant = '') {
+  const g = el('g', {id, filter: 'url(#sh)'});
+  const inner = el('g', {transform: 'translate(-160 -200)'}, g);
+  el('rect', {x: 14, y: -26, width: 130, height: 40, rx: 8, fill: '#E3E8EF'}, inner);           // aba
+  el('rect', {x: 10, y: 8, width: 320, height: 400, rx: 10, fill: '#DCE2EA'}, inner);          // folha de trás
+  el('rect', {x: 0, y: 0, width: 320, height: 400, rx: 10, fill: '#F4F6F9'}, inner);           // capa
+  el('rect', {x: 0, y: 0, width: 22, height: 400, rx: 6, fill: '#16284A'}, inner);              // lombada
+  lines(inner, 60, 70, 210, 5, 34);
+  el('rect', {x: 60, y: 300, width: 120, height: 12, rx: 6, fill: '#16284A', opacity: .5}, inner);
+  if (variant === 'mat') el('rect', {x: 22, y: 250, width: 298, height: 16, fill: '#16284A', opacity: .85}, inner);
+  if (variant === 'prev') el('path', {d: 'M 280 0 L 320 0 L 320 40 Z', fill: '#C29B3C'}, inner);
+  if (!variant) el('rect', {x: 286, y: -10, width: 14, height: 46, rx: 3, fill: '#C29B3C'}, inner); // marcador
+  return {g, x: cx, y: cy, s, r: 0, o: 1};
+}
+// folha
+function sheet(x, y, r) {
+  const g = el('g', {filter: 'url(#sh)'}); const inner = el('g', {transform: 'translate(-120 -155)'}, g);
+  el('rect', {x: 0, y: 0, width: 240, height: 310, rx: 8, fill: '#F4F6F9'}, inner); lines(inner, 34, 50, 172, 6, 34, .22);
+  return {g, x, y, s: .9, r, o: 0};
+}
+// marcador de etapa (aba dourada) — vira ponto de etapa
+function marker(x, y) { const g = el('g', {}); el('rect', {x: -22, y: -12, width: 44, height: 24, rx: 5, fill: '#C29B3C'}, g); el('rect', {x: -22, y: -12, width: 10, height: 24, rx: 3, fill: '#9c7a2b'}, g); return {g, x, y, s: 1, r: -8, o: 0}; }
+// nó de responsabilidade (abstrato, sem personagem)
+function node(x, y) { const g = el('g', {}); el('circle', {r: 44, fill: '#F4F6F9', filter: 'url(#sh)'}, g); el('circle', {r: 17, cy: -8, fill: '#16284A'}, g); el('path', {d: 'M -25 27 C -21 6, 21 6, 25 27 Z', fill: '#16284A'}, g); return {g, x, y, s: 1, r: 0, o: 0}; }
+
+// ordem de desenho: trajetórias → conectores → objetos
+const gConn = el('g', {}); W.insertBefore(gConn, gStages);
+const D1 = dossier('D1', 520, 520), D2 = dossier('D2', 1240, 1080), D3 = dossier('D3', 420, 2560, .86, 'mat'), D4 = dossier('D4', 1320, 2560, .86, 'prev');
+D3.o = 0; D4.o = 0;
+const SH = [sheet(1520, 760, 8), sheet(1500, 1330, -6), sheet(930, 1250, 5)];
+const MK = [marker(260, 1120), marker(560, 1330), marker(330, 1520)];
+const ND = [node(230, 860), node(1560, 1040), node(700, 1460)];
+const NODE_TO = [[1290, 1500], [1060, 1760], [1060, 2040]];                     // responsabilidades distribuídas junto às etapas
+const conn = NODE_TO.map(([x, y], i) => { const l = el('line', {x1: STAGES.main[i][0], y1: STAGES.main[i][1], x2: x, y2: y, stroke: 'rgba(244,246,249,.55)', 'stroke-width': 3, 'stroke-dasharray': '2 10', 'stroke-linecap': 'round', opacity: 0}, gConn); return l; });
+// outras demandas: cada uma com seu percurso (discretas; ganham sentido na visão do conjunto)
+const P2 = {o1: 'M 250 1840 C 250 1990, 200 2060, 200 2220', o2: 'M 1540 1760 C 1540 1900, 1600 1960, 1600 2140'};
+for (const k in P2) { const b0 = el('path', {d: P2[k], fill: 'none', stroke: 'rgba(244,246,249,.22)', 'stroke-width': 7, 'stroke-linecap': 'round', 'stroke-dasharray': '2 16'}, gPaths); path[k] = {base: b0, gold: el('path', {d: P2[k], fill: 'none', stroke: 'none'}, gPaths), len: b0.getTotalLength(), draw: 1, lit: 0}; b0.style.strokeDasharray = 'none'; b0.setAttribute('stroke-dasharray', '2 16'); }
+const D5 = dossier('D5', 250, 1640, .7), D6 = dossier('D6', 1540, 1560, .7); D5.o = 0; D6.o = 0;
+const OBJ = [D1, D2, D3, D4, D5, D6, ...SH, ...MK, ...ND];
+
+// ── estado da câmera e dos progressos (tudo animado pela timeline)
+const cam = {x: 560, y: 560, z: 2.0};
+const st = {d1sheet: 0, mkAlign: 0, shJoin: 0, d2travel: 0, nodeMove: 0, conn: 0, d3travel: 0, simplify: 0, dive: 0};
+const tl = gsap.timeline({paused: true, defaults: {ease: 'sine.inOut'}});
+const camTo = (t, d, x, y, z, ease = 'power2.inOut') => tl.to(cam, {x, y, z, duration: d, ease}, t);
+
+/* BLOCO 01 · cada caso tem seu caminho (0–6,2) — detalhe do dossiê; uma folha desliza e revela a trajetória */
+const SL = sheet(600, 560, 0); SL.s = 1; SL.o = 1; W.insertBefore(SL.g, D1.g); OBJ.push(SL);
+tl.fromTo(SL, {x: 560, r: 0}, {x: 760, r: 6, duration: 1.2, ease: 'power2.out'}, .15);              // a folha sai parcialmente: já há ação no 1º segundo
+tl.fromTo(path.p0, {draw: 0}, {draw: 1, duration: 3.6, ease: 'power1.inOut'}, .9);
+camTo(.2, 1.4, 640, 600, 1.85, 'power1.out'); camTo(1.7, 3.9, 1120, 960, 1.45);                       // acompanha o percurso e descobre o 2º dossiê
+tl.fromTo(D2, {o: 0, s: .92}, {o: 1, s: 1, duration: .8, ease: 'power2.out'}, 3.8);
+
+/* BLOCO 02 · pessoas, documentos, etapas, responsabilidades (6,2–17,6) — o mesmo espaço se revela, ainda disperso */
+camTo(6.2, 1.6, 900, 1000, .95); tl.to(cam, {y: 1040, z: .92, duration: 8.2, ease: 'none'}, 7.8);
+ND.forEach((n, i) => tl.fromTo(n, {o: 0, s: .6}, {o: 1, s: 1, duration: .5, ease: 'power2.out'}, wt('a2', 'pessoas') + i * .12));
+SH.forEach((s, i) => tl.fromTo(s, {o: 0, y: s.y + 40}, {o: 1, y: s.y, duration: .55, ease: 'power2.out'}, wt('a2', 'documentos') + i * .12));
+MK.forEach((m, i) => tl.fromTo(m, {o: 0, s: .5}, {o: 1, s: 1, duration: .45, ease: 'power2.out'}, wt('a2', 'etapas') + i * .12));
+tl.fromTo([D5, D6], {o: 0}, {o: .7, duration: .8}, 10.4);
+// os marcadores se alinham ao percurso principal (que começa a se desenhar): fim do bloco
+tl.fromTo(path.main, {draw: 0}, {draw: .62, duration: 2.0, ease: 'power1.inOut'}, 15.6);
+tl.to(st, {mkAlign: 1, duration: 1.6, ease: 'power2.inOut'}, 16.0);
+camTo(16.2, 1.8, 1180, 1180, 1.3);
+
+/* BLOCO 03 · organizar → acompanhar → coordenar (17,6–29,4) — a mesma composição evolui */
+camTo(18.2, 1.6, 1240, 1110, 1.5);
+tl.to(st, {shJoin: 1, duration: 1.1, ease: 'power2.inOut'}, wt('a4', 'organizar'));                // folhas encontram a estrutura do dossiê
+tl.to(st, {d2travel: 1, duration: 3.0, ease: 'power1.inOut'}, wt('a4', 'acompanhar') - .1);        // o enquadramento acompanha o dossiê pelas etapas
+camTo(wt('a4', 'acompanhar') - .1, 1.0, 1120, 1450, 1.3); camTo(wt('a4', 'acompanhar') + .9, 1.0, 900, 1760, 1.3);
+tl.to(st, {nodeMove: 1, duration: 1.2, ease: 'power2.inOut'}, wt('a4', 'coordenar') - .1);         // responsabilidades distribuídas
+tl.to(st, {conn: 1, duration: .9, ease: 'power1.out'}, wt('a4', 'coordenar') + .9);
+camTo(wt('a4', 'coordenar') + .2, 1.6, 980, 1760, .86);
+// com soluções especializadas: o percurso se bifurca
+tl.to(path.main, {draw: 1, duration: 1.0, ease: 'power1.inOut'}, wt('a4', 'com') - .2);
+tl.fromTo([path.L, path.R], {draw: 0}, {draw: 1, duration: 1.6, ease: 'power1.inOut'}, wt('a4', 'com') + .7);
+camTo(wt('a4', 'com') - .1, 2.0, 870, 2380, .98);
+
+/* BLOCO 04 · Maternidade Legal (29,4–36,3) — a câmera acompanha o primeiro caminho */
+camTo(29.1, 1.5, 560, 2600, 1.15); tl.to(cam, {y: 2830, z: 1.18, duration: 5.0, ease: 'power1.inOut'}, 30.8);
+tl.fromTo(D3, {o: 0, s: .7}, {o: 1, s: .86, duration: .7, ease: 'power2.out'}, 29.5);
+tl.to(st, {d3travel: 1, duration: 4.6, ease: 'power1.inOut'}, 30.6);
+tl.fromTo(path.L, {lit: 0}, {lit: 1, duration: 4.6, ease: 'power1.inOut'}, 30.6);
+
+/* BLOCO 05 · Previdenciário Geral (36,3–46,0) — volta à bifurcação e segue o segundo caminho, que se ramifica */
+camTo(36.0, 1.5, 1330, 2640, 1.08); tl.to(cam, {y: 2690, duration: 8.0, ease: 'none'}, 37.5);
+tl.fromTo(D4, {o: 0, s: .7}, {o: 1, s: .86, duration: .7, ease: 'power2.out'}, 36.5);
+tl.fromTo(path.R, {lit: 0}, {lit: 1, duration: 1.2, ease: 'power1.inOut'}, 37.2);
+const BEN = ['aposentadorias', 'benefícios', 'pensão', 'auxílio-acidente'];
+['r1', 'r2', 'r3', 'r4'].forEach((k, i) => {
+  const t0 = wt('a6', BEN[i]) - .15;
+  tl.fromTo(path[k], {draw: 0}, {draw: 1, duration: .8, ease: 'power2.out'}, t0).fromTo(path[k], {lit: 0}, {lit: 1, duration: .8, ease: 'power2.out'}, t0);
+  tl.fromTo(ends[i], {op: 0}, {op: 1, duration: .4}, t0 + .6).fromTo(ends[i], {hit: 0}, {hit: 1, duration: .5}, t0 + .6);
+  if (i < 3) tl.to(path[k], {lit: .35, duration: .5}, wt('a6', BEN[i + 1]) - .15);
+});
+
+/* BLOCO 06 · a visão do conjunto (46,0–55,8) — o enquadramento se abre: tudo pertence à mesma composição */
+camTo(46.0, 3.0, 880, 1700, .64, 'power2.inOut'); tl.to(cam, {z: .62, y: 1660, duration: 6.6, ease: 'sine.out'}, 49.0);
+tl.to([path.L, path.R, path.main, path.p0, path.r1, path.r2, path.r3, path.r4], {lit: .55, duration: 2.0}, 47.0);
+
+/* BLOCO 07 · a tecnologia apoia (55,8–68) — um dossiê em primeiro plano; o resto se simplifica; a capa vira a superfície marfim */
+tl.to(st, {simplify: 1, duration: 1.8, ease: 'power1.inOut'}, 55.9);
+camTo(55.9, 2.8, 560, 560, 1.45);
+camTo(59.0, 1.9, 560, 600, 7.5, 'power2.in');                                                       // a câmera entra na capa do dossiê
+const SIG = {ivory: 60.75, logo: 61.55, cta: wt('a9', 'Conheça') - .2};
+tl.to('#shade', {opacity: 0, duration: .4}, 60.6);
+
+/* camada de leitura: uma mensagem por vez */
+function title(id, tin, tout) {
+  tl.set(id, {visibility: 'visible'}, tin).fromTo(`${id} > div`, {yPercent: 105, filter: 'blur(6px)'}, {yPercent: 0, filter: 'blur(0px)', duration: .6, ease: 'power2.out', immediateRender: false}, tin)
+    .to(id, {opacity: 0, duration: .3, ease: 'power1.in'}, tout).set(id, {visibility: 'hidden'}, tout + .3);
+}
+const rule = (id, tin, tout) => tl.set(id, {visibility: 'visible'}, tin).fromTo(id, {scaleX: 0}, {scaleX: 1, duration: .5, ease: 'power2.out', immediateRender: false}, tin).to(id, {opacity: 0, duration: .3}, tout);
+const sub = (id, tin, tout) => tl.set(id, {visibility: 'visible'}, tin).fromTo(`${id} > div`, {yPercent: 110}, {yPercent: 0, duration: .45, ease: 'power2.out', immediateRender: false}, tin).to(id, {opacity: 0, duration: .25}, tout).set(id, {visibility: 'hidden'}, tout + .25);
+title('#tCaminho', wt('a1', 'cada') - .1, 5.9);
+tl.set('#brand', {visibility: 'visible'}, wt('a3', 'ADV') - .1).fromTo('#brand', {opacity: 0, clipPath: 'inset(0 100% 0 0)'}, {opacity: 1, clipPath: 'inset(0 0% 0 0)', duration: .6, ease: 'power2.out', immediateRender: false}, wt('a3', 'ADV') - .1).to('#brand', {opacity: 0, duration: .3}, 17.2);
+title('#tGestao', wt('a3', 'gestão') - .1, 17.2);
+title('#tOrg', wt('a4', 'organizar') - .05, wt('a4', 'acompanhar') - .3);
+title('#tAcomp', wt('a4', 'acompanhar') - .05, wt('a4', 'coordenar') - .3);
+title('#tCoord', wt('a4', 'coordenar') - .05, 26.1);
+title('#tMat', wt('a5', 'Maternidade') - .1, 36.0); rule('#rMat', wt('a5', 'Maternidade') + .3, 36.0); sub('#sMat', wt('a5', 'gestão') - .1, 36.0);
+title('#tPrev', wt('a6', 'Previdenciário') - .1, 45.7); rule('#rPrev', wt('a6', 'Previdenciário') + .3, 45.7);
+sub('#sPrev0', wt('a6', 'gestão') - .1, wt('a6', 'aposentadorias') - .15);
+BEN.forEach((b, i) => sub('#sPrev' + (i + 1), wt('a6', b), i < 3 ? wt('a6', BEN[i + 1]) - .15 : 45.7));
+title('#tVisao', wt('a7', 'uma') - .05, 55.5);
+title('#tApoia', wt('a8', 'tecnologia') - .1, 61.2);
+tl.set({}, {}, TL.dur);
+
+// ── aplicação determinística do estado (só depende de t)
+const lerp = (a, b, p) => a + (b - a) * p, clamp = (x) => Math.max(0, Math.min(1, x));
+const ptOn = (k, p) => { const q = path[k].base.getPointAtLength(clamp(p) * path[k].len); return [q.x, q.y]; };
+// place(): desenha o objeto com valores de EXIBIÇÃO (nunca altera o estado animado pela timeline → seek em qualquer ordem)
+function place(o, d = {}) { const x = d.x ?? o.x, y = d.y ?? o.y, r = d.r ?? o.r, sc = d.s ?? o.s, op = d.o ?? o.o;
+  o.g.setAttribute('transform', `translate(${x.toFixed(2)} ${y.toFixed(2)}) rotate(${r.toFixed(2)}) scale(${sc.toFixed(4)})`); o.g.setAttribute('opacity', Math.max(0, op).toFixed(3)); }
+function apply(t) {
+  // câmera
+  $('#rig').style.transform = `translate(${(540 - cam.x * cam.z).toFixed(2)}px, ${(960 - cam.y * cam.z).toFixed(2)}px) scale(${cam.z.toFixed(4)})`;
+  $('#bg').style.transform = `translate(${(-(cam.x - 870) * .06).toFixed(1)}px, ${(-(cam.y - 1550) * .04).toFixed(1)}px)`;
+  for (const k in path) { if (k === 'o1' || k === 'o2') continue; const p = path[k]; p.base.style.strokeDashoffset = (p.len * (1 - p.draw)).toFixed(1); p.gold.style.strokeDashoffset = (p.len * (1 - Math.max(p.lit, k === 'main' ? st.d2travel * .8 : 0))).toFixed(1); p.gold.setAttribute('opacity', (p.lit > 0 || (k === 'main' && st.d2travel > 0)) ? .9 : 0); }
+  const D = new Map(); const sim = st.simplify;
+  // marcadores → pontos de etapa do percurso principal
+  MK.forEach((m, i) => { const [sx, sy] = STAGES.main[i], a = st.mkAlign; D.set(m, {x: lerp(m.x, sx, a), y: lerp(m.y, sy, a), r: lerp(m.r, 0, a), s: lerp(m.s, .6, a), o: m.o * (1 - clamp((a - .85) / .15))}); });
+  stage.main.forEach((sg) => sg.g.setAttribute('opacity', clamp((st.mkAlign - .7) / .3)));
+  // folhas encontram o dossiê 2 (organizar)
+  const tgt = [[1262, 1072, -3], [1268, 1066, 2], [1274, 1060, -1]];
+  SH.forEach((sh, i) => { const a = clamp((st.shJoin - i * .12) / .76); D.set(sh, {x: lerp(sh.x, tgt[i][0], a), y: lerp(sh.y, tgt[i][1], a), r: lerp(sh.r, tgt[i][2], a), s: lerp(sh.s, .98, a)}); });
+  // dossiê 2 percorre as etapas (acompanhar); as folhas vão junto
+  if (st.d2travel > 0) {
+    const [x, y] = ptOn('main', st.d2travel * .8), sc = lerp(1, .52, clamp(st.d2travel * 3));
+    D.set(D2, {x, y, s: sc, r: 0});
+    SH.forEach((sh, i) => D.set(sh, {x: x + (tgt[i][0] - 1240) * sc, y: y + (tgt[i][1] - 1080) * sc, s: .98 * sc, r: tgt[i][2]}));
+  }
+  stage.main.forEach((sg, i) => { const reach = [.12, .48, .78][i]; const h = clamp((st.d2travel - reach) / .12); sg.ring.setAttribute('opacity', (h * (1 - .55 * clamp((st.d2travel - reach - .25) / .2))).toFixed(3)); });
+  // responsabilidades distribuídas (coordenar)
+  ND.forEach((n, i) => D.set(n, {x: lerp(n.x, NODE_TO[i][0], st.nodeMove), y: lerp(n.y, NODE_TO[i][1], st.nodeMove)}));
+  conn.forEach((l) => l.setAttribute('opacity', (st.conn * .9).toFixed(3)));
+  // Maternidade Legal: dossiê 3 percorre as etapas do primeiro caminho
+  stage.L.forEach((sg, i) => { sg.g.setAttribute('opacity', clamp((path.L.draw - .55 - i * .12) / .15)); sg.ring.setAttribute('opacity', clamp((st.d3travel - [.12, .5, .88][i]) / .1).toFixed(3)); });
+  { const [x, y] = ptOn('L', lerp(.38, .97, st.d3travel)); D.set(D3, {x: x + 205, y}); }
+  ends.forEach((e) => { e.g.setAttribute('opacity', e.op.toFixed(3)); e.ring.setAttribute('opacity', (e.hit * .9).toFixed(3)); });
+  // simplificação final: tudo recua, o dossiê 1 fica em primeiro plano
+  [gPaths, gStages, gEnds, gConn].forEach((g) => g.setAttribute('opacity', (1 - .8 * sim).toFixed(3)));
+  OBJ.forEach((o) => { const d = D.get(o) || {}; if (o !== D1 && sim > 0) d.o = (d.o ?? o.o) * (1 - .82 * sim); place(o, d); });
+  // assinatura (estado só por t): marfim, símbolo oficial, CTA — um de cada vez
+  const ease = (x) => 1 - Math.pow(1 - clamp(x), 3);
+  const iv = clamp((t - SIG.ivory) / .2), lg = ease((t - SIG.logo) / .8), ct = ease((t - SIG.cta) / .6);
+  $('#ivory').style.visibility = iv > 0 ? 'visible' : 'hidden'; $('#ivory').style.opacity = iv;
+  $('#logo').style.visibility = lg > 0 ? 'visible' : 'hidden'; $('#logo').style.opacity = lg; $('#logo').style.transform = `translateY(${(16 * (1 - lg)).toFixed(1)}px)`;
+  $('#cta').style.visibility = ct > 0 ? 'visible' : 'hidden'; $('#cta').style.opacity = ct; $('#cta').style.transform = `translateY(${(12 * (1 - ct)).toFixed(1)}px)`;
+  // legendas
+  const c = TL.captions.find((x) => t >= x.start && t < x.end);
+  if (!c || t >= 61.0) $('#caption').style.opacity = 0;
+  else { $('#caption span').textContent = c.text; $('#caption').style.opacity = Math.min(1, (t - c.start) / .2, (c.end - t) / .15 + 1e-4, (61.0 - t) / .25); }
+}
+window.renderAt = async (t) => { tl.seek(t, false); apply(t); };
+
+// revisão: ?debug=1 mostra um scrub; ?frame=1 é o modo limpo de exportação; sem parâmetros toca com áudio
+Promise.all([document.fonts.ready, ...[...document.images].map((im) => im.decode().catch(() => {}))]).then(async () => {
+  await window.renderAt(0); window.__ready = true;
+  const q = location.search;
+  if (q.includes('debug=1')) {
+    const r = document.createElement('input'); Object.assign(r, {type: 'range', min: 0, max: TL.dur, step: 1 / 30, value: 0});
+    Object.assign(r.style, {position: 'fixed', left: '20px', right: '20px', bottom: '20px', width: 'calc(100% - 40px)'}); r.oninput = () => window.renderAt(+r.value); document.body.appendChild(r);
+  } else if (!q.includes('frame=1')) {
+    const audio = new Audio('out/mix.wav'); const t0 = performance.now(); audio.play().catch(() => {});
+    const loop = async () => { const t = (performance.now() - t0) / 1000; if (t < TL.dur) { await window.renderAt(t); requestAnimationFrame(loop); } };
+    loop();
+  }
+});
+</script>
+</body>
+</html>

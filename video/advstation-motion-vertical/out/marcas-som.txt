@@ -1,0 +1,32 @@
+MARCAS · ADV Station · motion graphics vertical · 68.00 s (2040 quadros) · 30 fps · trilha original 92 BPM
+
+BLOCOS
+  0.00–  6.20  caminho
+  6.20– 17.60  rotina
+ 17.60– 29.40  organizacao
+ 29.40– 36.30  maternidade
+ 36.30– 46.00  previdenciario
+ 46.00– 55.80  visao
+ 55.80– 68.00  assinatura
+
+FALAS (Guilherme, ElevenLabs, velocidade natural)
+  0.60–  4.04  Na advocacia previdenciária, cada caso tem seu caminho.
+  6.40– 11.88  São pessoas, documentos, etapas e responsabilidades que precisam ser acompanhados.
+ 12.40– 17.04  A ADV Station é uma família de softwares de gestão desenvolvida para essa rotina.
+ 18.00– 28.31  Nossa proposta é ajudar o escritório a organizar informações, acompanhar os casos e coordenar o trabalho da equipe. Com soluções especializadas.
+ 29.60– 34.94  O Maternidade Legal é voltado à gestão de casos de salário-maternidade.
+ 36.60– 45.28  O Previdenciário Geral atende a gestão de aposentadorias, benefícios por incapacidade, pensão por morte e auxílio-acidente.
+ 46.20– 54.98  Duas soluções para diferentes rotinas, com uma mesma visão de gestão. Mais organização. Mais clareza para acompanhar a operação.
+ 56.00– 61.39  A experiência jurídica continua no centro. A tecnologia apoia o trabalho.
+ 62.20– 64.80  ADV Station. Conheça nossas soluções.
+
+TRILHA E EFEITOS
+  0.00  piano e textura harmônica (abertura, sem vinheta)
+  0.15  textura curta: a folha desliza do dossiê
+  6.20  pulsação discreta entra
+ 17.60  pulsação ganha presença
+ 21.72  acento delicado: folhas encontram o dossiê
+ 25.86  acento delicado: responsabilidades conectadas
+ 29.65  mudança sonora: entra Maternidade Legal
+ 36.65  mudança sonora: entra Previdenciário Geral
+ 61.55  resolução musical na assinatura
