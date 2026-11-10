@@ -12,10 +12,11 @@ export const Cover: React.FC = () => (
   <AbsoluteFill>
     <div style={{position: 'absolute', inset: 0, transform: 'scale(1.04)'}}><Plate k="office" /></div>
     <Scrim top={0.75} bottom={0.8} />
+    <div style={{position: 'absolute', left: 0, right: 0, top: 1150, bottom: 0, background: 'linear-gradient(180deg, rgba(6,20,47,0) 0%, rgba(6,20,47,.92) 35%, #06142F 100%)'}} />
     <div style={{position: 'absolute', left: 90, top: 340, fontFamily: HEAD, fontWeight: 800, fontSize: 156, lineHeight: 1, letterSpacing: '-.02em', color: '#fff'}}>
       INTUIÇÃO<br />NÃO<br /><span style={{color: C.orange}}>BASTA.</span></div>
     <div style={{position: 'absolute', left: 90, top: 866, width: 240, height: 3, background: C.orange}} />
     <div style={{position: 'absolute', left: 90, top: 910, fontFamily: UI, fontWeight: 700, fontSize: 30, letterSpacing: '.18em', color: 'rgba(255,255,255,.8)'}}>GESTÃO COM MÉTODO</div>
-    <div style={{position: 'absolute', left: 90, top: 1290}}><BrandSignature height={300} /></div>
+    <div style={{position: 'absolute', left: 540 - 300 * 532 / 700 / 2, top: 1330}}><BrandSignature height={300} /></div>
   </AbsoluteFill>
 );
