@@ -25,7 +25,7 @@ node scripts/stills.mjs out/testes 0,150,300   # quadros de teste
 
 **Voz:** `node scripts/gerar_voz.mjs --takes=3 --speed=1.0` gera as tomadas, com o proxy injetando a chave. `python3 scripts/escolher_take.py n1,...,n7 --aplicar --forcar=...` escolhe uma delas. Depois, copie as falas para `src/data/voz/` (json) e `public/assets/audio/falas/` (mp3).
 
-- **Tomadas usadas:** n1:1, n2:2, n3:1, n4:2, n5:1, n6:2, n7:8 (voz Lendário, `4za2kOXGgUd57HRSQ1fn`, stability 0.4, style 0.35). A fala da assinatura foi refeita (8 tomadas) e escolhida pela fluidez de "Tecnologia para a empresa seguir. E para você descansar.". A pronúncia de "DME" foi conferida transcrevendo cada tomada com o speech-to-text da ElevenLabs (scribe_v1). As tomadas que saíam "DM é" foram descartadas.
+- **Tomadas usadas:** n1:1, n2:2, n3:1, n4:2, n5:1, n6:2, n7:6 (voz Lendário, `4za2kOXGgUd57HRSQ1fn`, stability 0.4, style 0.35). A fala da assinatura foi refeita com "Dê, Eme, É" separados por vírgula. A tomada foi escolhida pela fluidez de "Tecnologia para a empresa seguir. E para você descansar.". A pronúncia de "DME" foi conferida transcrevendo cada tomada com o speech-to-text da ElevenLabs (scribe_v1). As tomadas que saíam "DM é" foram descartadas. Na assinatura, o teste foi feito com a tomada já misturada à trilha (3 transcrições).
 - **Velocidade:** 1,0, sem aceleração.
 - **Pronúncia:** o texto enviado à voz grafa "Dê Eme É", e as legendas mostram "DME".
 
