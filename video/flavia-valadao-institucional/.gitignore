@@ -1,0 +1,6 @@
+out/testes/
+out/*-bruta.wav
+out/mix-bruto.wav
+voz/takes/
+scripts/__pycache__/
+node_modules

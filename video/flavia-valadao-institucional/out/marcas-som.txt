@@ -1,0 +1,25 @@
+MARCAS · Flávia Valadão Interiores · institucional vertical · 29.00 s (870 quadros) · 30 fps · trilha original 80 BPM
+
+BLOCOS
+  0.00–  4.00  detalhe
+  4.00– 10.00  intencao
+ 10.00– 16.60  escolhas
+ 16.60– 21.60  conjunto
+ 21.60– 29.00  assinatura
+
+FALAS (voz Pri, ElevenLabs, velocidade natural, sem compressão artificial)
+  0.50–  3.05  Um espaço faz parte da sua vida.
+  3.75–  8.90  Na Flávia Valadão Interiores, cada projeto parte do que importa para você.
+  9.40– 17.11  Materiais, luz e composição unem beleza, funcionalidade e personalidade.
+ 17.90– 19.66  Cuidado em cada detalhe.
+ 20.60– 28.68  Flávia Valadão Interiores. Seu jeito de viver, em cada espaço. Vamos conversar sobre o seu?
+
+TRILHA E EFEITOS
+  0.00  nota de piano (abertura)
+  0.00  textura de ambiente (início)
+  4.00  acordes e pad (descoberta)
+  7.20  acento delicado: conclusão do desenho
+ 10.00  pulsação de piano grave (clareza)
+ 13.60  acento único do bloco 3 (composição)
+ 16.60  abertura da trilha (plano amplo)
+ 21.85  resolução no logo (Ré maior + 3 notas)

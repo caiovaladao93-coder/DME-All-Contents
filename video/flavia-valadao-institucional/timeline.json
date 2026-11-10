@@ -1,0 +1,350 @@
+{
+ "fps": 30,
+ "dur": 29.0,
+ "frames": 870,
+ "blocks": [
+  {
+   "key": "detalhe",
+   "t0": 0.0,
+   "t1": 4.0,
+   "fala": "f1",
+   "v0": 0.5,
+   "v1": 3.054
+  },
+  {
+   "key": "intencao",
+   "t0": 4.0,
+   "t1": 10.0,
+   "fala": "f2",
+   "v0": 3.75,
+   "v1": 8.905
+  },
+  {
+   "key": "escolhas",
+   "t0": 10.0,
+   "t1": 16.6,
+   "fala": "f3",
+   "v0": 9.4,
+   "v1": 17.109
+  },
+  {
+   "key": "conjunto",
+   "t0": 16.6,
+   "t1": 21.6,
+   "fala": "f4",
+   "v0": 17.9,
+   "v1": 19.665
+  },
+  {
+   "key": "assinatura",
+   "t0": 21.6,
+   "t1": 29.0,
+   "fala": "f5",
+   "v0": 20.6,
+   "v1": 28.681
+  }
+ ],
+ "words": {
+  "detalhe": [
+   [
+    "Um",
+    0.5,
+    0.651
+   ],
+   [
+    "espaço",
+    0.709,
+    1.243
+   ],
+   [
+    "faz",
+    1.301,
+    1.475
+   ],
+   [
+    "parte",
+    1.545,
+    1.812
+   ],
+   [
+    "da",
+    1.87,
+    1.963
+   ],
+   [
+    "sua",
+    2.021,
+    2.265
+   ],
+   [
+    "vida.",
+    2.323,
+    3.054
+   ]
+  ],
+  "intencao": [
+   [
+    "Na",
+    3.75,
+    3.913
+   ],
+   [
+    "Flávia",
+    3.971,
+    4.284
+   ],
+   [
+    "Valadão",
+    4.33,
+    4.76
+   ],
+   [
+    "Interiores,",
+    4.795,
+    5.712
+   ],
+   [
+    "cada",
+    5.921,
+    6.223
+   ],
+   [
+    "projeto",
+    6.281,
+    6.85
+   ],
+   [
+    "parte",
+    6.92,
+    7.221
+   ],
+   [
+    "do",
+    7.268,
+    7.349
+   ],
+   [
+    "que",
+    7.407,
+    7.477
+   ],
+   [
+    "importa",
+    7.5,
+    7.883
+   ],
+   [
+    "para",
+    7.93,
+    8.139
+   ],
+   [
+    "você.",
+    8.197,
+    8.905
+   ]
+  ],
+  "escolhas": [
+   [
+    "Materiais,",
+    9.4,
+    10.549
+   ],
+   [
+    "luz",
+    10.828,
+    11.269
+   ],
+   [
+    "e",
+    11.397,
+    11.513
+   ],
+   [
+    "composição",
+    11.571,
+    12.546
+   ],
+   [
+    "unem",
+    12.72,
+    13.011
+   ],
+   [
+    "beleza,",
+    13.069,
+    13.905
+   ],
+   [
+    "funcionalidade",
+    14.23,
+    15.437
+   ],
+   [
+    "e",
+    15.646,
+    15.762
+   ],
+   [
+    "personalidade.",
+    15.82,
+    17.109
+   ]
+  ],
+  "conjunto": [
+   [
+    "Cuidado",
+    17.9,
+    18.399
+   ],
+   [
+    "em",
+    18.422,
+    18.48
+   ],
+   [
+    "cada",
+    18.527,
+    18.771
+   ],
+   [
+    "detalhe.",
+    18.829,
+    19.665
+   ]
+  ],
+  "assinatura": [
+   [
+    "Flávia",
+    20.6,
+    21.494
+   ],
+   [
+    "Valadão",
+    21.54,
+    22.063
+   ],
+   [
+    "Interiores.",
+    22.086,
+    23.212
+   ],
+   [
+    "Seu",
+    23.537,
+    23.781
+   ],
+   [
+    "jeito",
+    23.828,
+    24.129
+   ],
+   [
+    "de",
+    24.187,
+    24.28
+   ],
+   [
+    "viver,",
+    24.338,
+    24.942
+   ],
+   [
+    "em",
+    25.07,
+    25.221
+   ],
+   [
+    "cada",
+    25.302,
+    25.639
+   ],
+   [
+    "espaço.",
+    25.674,
+    26.37
+   ],
+   [
+    "Vamos",
+    26.811,
+    27.102
+   ],
+   [
+    "conversar",
+    27.16,
+    27.612
+   ],
+   [
+    "sobre",
+    27.67,
+    27.938
+   ],
+   [
+    "o",
+    27.961,
+    27.984
+   ],
+   [
+    "seu?",
+    28.042,
+    28.681
+   ]
+  ]
+ },
+ "captions": [
+  {
+   "start": 0.5,
+   "end": 3.404,
+   "text": "Um espaço faz parte da sua vida.",
+   "bloco": "detalhe"
+  },
+  {
+   "start": 3.75,
+   "end": 5.921,
+   "text": "Na Flávia Valadão Interiores,",
+   "bloco": "intencao"
+  },
+  {
+   "start": 5.921,
+   "end": 9.255,
+   "text": "cada projeto parte do que importa para você.",
+   "bloco": "intencao"
+  },
+  {
+   "start": 9.4,
+   "end": 12.72,
+   "text": "Materiais, luz e composição",
+   "bloco": "escolhas"
+  },
+  {
+   "start": 12.72,
+   "end": 17.459,
+   "text": "unem beleza, funcionalidade e personalidade.",
+   "bloco": "escolhas"
+  },
+  {
+   "start": 17.9,
+   "end": 20.015,
+   "text": "Cuidado em cada detalhe.",
+   "bloco": "conjunto"
+  },
+  {
+   "start": 20.6,
+   "end": 23.537,
+   "text": "Flávia Valadão Interiores.",
+   "bloco": "assinatura"
+  },
+  {
+   "start": 23.537,
+   "end": 26.72,
+   "text": "Seu jeito de viver, em cada espaço.",
+   "bloco": "assinatura"
+  },
+  {
+   "start": 26.811,
+   "end": 29.0,
+   "text": "Vamos conversar sobre o seu?",
+   "bloco": "assinatura"
+  }
+ ]
+}
