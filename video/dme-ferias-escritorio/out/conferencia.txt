@@ -1,10 +1,10 @@
-CONFERÊNCIA · 10/11/2026 13:22
+CONFERÊNCIA · 10/11/2026 13:33
 stream|codec_name=h264|width=1080|height=1920|pix_fmt=yuv420p|r_frame_rate=30/1
 stream|codec_name=aac|sample_rate=48000|channels=2|r_frame_rate=0/0
 format|duration=40.000000
 quadros: 1197
     I:         -14.3 LUFS
     LRA:         2.8 LU
-    Peak:       -1.7 dBFS
+    Peak:       -1.9 dBFS
 quadros pretos (>0,1 s):
   nenhum
