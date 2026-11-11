@@ -29,10 +29,10 @@ TRILHA E EFEITOS
  19.31  estação 1 acende
  19.49  estação 2 acende
  19.67  estação 3 acende
- 20.45  horário 1
- 21.07  horário 2
- 21.69  horário 3
- 22.31  horário 4
+ 20.67  horário 1
+ 21.27  horário 2
+ 21.87  horário 3
+ 22.47  horário 4
  27.34  loop: o pedido entra de novo
  28.55  a parede se abre
  28.80  o pedido atravessa

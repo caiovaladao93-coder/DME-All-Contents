@@ -23,7 +23,7 @@ const T = {
   sig: S.assinatura.t0, proc: wt('assinatura', 'Processos'), cta: wt('assinatura', 'Comente'),
 };
 const HOURS = ['09:00', '11:00', '15:00', '18:00'];
-const HT = HOURS.map((_, i) => T.monta + .1 + i * .62);
+const HT = HOURS.map((_, i) => T.monta + .32 + i * .6);
 
 // ── o pedido (posição no mundo)
 const tokenY = (t: number): number => {
@@ -263,7 +263,7 @@ export const Film: React.FC<{audio?: boolean; still?: number}> = ({audio = true,
       <Phrase t={t} tin={T.integra - .05} tout={S.metodo.t1 - .2} segs={['Sistemas ', ['conectados.']]} size={100} top={300} />
       {t > T.integra && t < S.metodo.t1 + .1 ? <div style={{position: 'absolute', left: 90, top: 1530, fontFamily: UI, fontWeight: 600, fontSize: 26, color: C.soft, letterSpacing: '.04em',
         padding: '8px 16px', border: `1px solid ${C.line}`, borderRadius: 10, opacity: P(t, T.integra + .2, .3) * (1 - P(t, S.metodo.t1 - .1, .2))}}>Exemplo ilustrativo</div> : null}
-      <Phrase t={t} tin={T.anda - .05} tout={T.monta - .05} segs={['E o caminho volta a ', ['andar.']]} size={96} top={300} />
+      <Phrase t={t} tin={T.anda - .05} tout={T.monta - .12} segs={['E o caminho volta a ', ['andar.']]} size={96} top={300} />
       {/* montagem de tempo: horário troca no mesmo lugar */}
       {HOURS.map((h, i) => <Phrase key={h} t={t} tin={HT[i]} tout={i < 3 ? HT[i + 1] - .3 : S.fluxo.t1 - .2} segs={i === 3 ? [[h]] : [h]} size={200} top={330} align="center" />)}
       <Phrase t={t} tin={T.entao - .05} tout={T.voce - .38} segs={['Então, enquanto o processo ', ['flui,']]} size={96} top={300} />

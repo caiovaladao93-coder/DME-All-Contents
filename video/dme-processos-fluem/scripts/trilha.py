@@ -74,7 +74,7 @@ ev('automação: trilho preenche', tAuto, lambda t0: put(fx, bell(86, 1.4), t0, 
 ev('integração: cabos conectam', tInt + .35, lambda t0: [put(fx, click(), t0 + j * .14, .16, (-.3, .3, -.3)[j]) for j in range(3)])
 ev('o pedido acelera', tAnda + .25, lambda t0: put(fx, whoosh(1.0, up=True), t0, .2, 0, .2))
 for j in range(3): ev(f'estação {j + 1} acende', tAnda + .6 + j * .18, lambda t0: put(fx, blip(88 + 2 * j), t0, .07, 0, .3))
-for j in range(4): ev(f'horário {j + 1}', tMonta + .1 + j * .62, lambda t0: put(fx, blip(91), t0, .06, 0, .3))
+for j in range(4): ev(f'horário {j + 1}', tMonta + .32 + j * .6, lambda t0: put(fx, blip(91), t0, .06, 0, .3))
 # ── fecho mais leve (piano), loop e assinatura
 groove(tFecho, tLoop, MAJ, RM, level=.7, drums=False, keys=True)
 ev('loop: o pedido entra de novo', tLoop, lambda t0: put(fx, whoosh(tE - tLoop, up=True), t0, .14, 0, .2))
