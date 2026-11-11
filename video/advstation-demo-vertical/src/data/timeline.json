@@ -1,0 +1,793 @@
+{
+ "fps": 30,
+ "dur": 68.0,
+ "frames": 2040,
+ "blocks": [
+  {
+   "key": "vinheta",
+   "t0": 0.0,
+   "t1": 3.9
+  },
+  {
+   "key": "contexto",
+   "t0": 3.9,
+   "t1": 14.3
+  },
+  {
+   "key": "ml_clientes",
+   "t0": 14.3,
+   "t1": 23.0
+  },
+  {
+   "key": "ml_etapas",
+   "t0": 23.0,
+   "t1": 30.3
+  },
+  {
+   "key": "pg",
+   "t0": 30.3,
+   "t1": 43.6
+  },
+  {
+   "key": "gerencial",
+   "t0": 43.6,
+   "t1": 49.2
+  },
+  {
+   "key": "portfolio",
+   "t0": 49.2,
+   "t1": 62.5
+  },
+  {
+   "key": "assinatura",
+   "t0": 62.5,
+   "t1": 68.0
+  }
+ ],
+ "falas": [
+  {
+   "fala": "v1",
+   "v0": 4.25,
+   "v1": 7.687
+  },
+  {
+   "fala": "v2",
+   "v0": 8.15,
+   "v1": 14.001
+  },
+  {
+   "fala": "v3",
+   "v0": 14.6,
+   "v1": 22.681
+  },
+  {
+   "fala": "v4",
+   "v0": 23.3,
+   "v1": 29.802
+  },
+  {
+   "fala": "v5",
+   "v0": 30.6,
+   "v1": 37.566
+  },
+  {
+   "fala": "v6",
+   "v0": 38.1,
+   "v1": 43.116
+  },
+  {
+   "fala": "v7",
+   "v0": 43.9,
+   "v1": 48.776
+  },
+  {
+   "fala": "v8",
+   "v0": 49.5,
+   "v1": 56.002
+  },
+  {
+   "fala": "v9",
+   "v0": 56.7,
+   "v1": 62.087
+  },
+  {
+   "fala": "v10",
+   "v0": 63.75,
+   "v1": 66.351
+  }
+ ],
+ "words": {
+  "v1": [
+   [
+    "Na",
+    4.25,
+    4.401
+   ],
+   [
+    "advocacia",
+    4.424,
+    4.97
+   ],
+   [
+    "previdenciária,",
+    5.005,
+    5.806
+   ],
+   [
+    "cada",
+    6.05,
+    6.317
+   ],
+   [
+    "caso",
+    6.375,
+    6.642
+   ],
+   [
+    "tem",
+    6.676,
+    6.793
+   ],
+   [
+    "seu",
+    6.839,
+    6.932
+   ],
+   [
+    "caminho.",
+    6.978,
+    7.687
+   ]
+  ],
+  "v2": [
+   [
+    "A",
+    8.15,
+    8.243
+   ],
+   [
+    "ADV",
+    8.278,
+    8.533
+   ],
+   [
+    "Station",
+    8.626,
+    9.079
+   ],
+   [
+    "é",
+    9.357,
+    9.45
+   ],
+   [
+    "uma",
+    9.497,
+    9.59
+   ],
+   [
+    "família",
+    9.636,
+    9.984
+   ],
+   [
+    "de",
+    10.042,
+    10.112
+   ],
+   [
+    "softwares",
+    10.182,
+    10.681
+   ],
+   [
+    "de",
+    10.716,
+    10.774
+   ],
+   [
+    "gestão",
+    10.832,
+    11.25
+   ],
+   [
+    "desenvolvida",
+    11.285,
+    12.051
+   ],
+   [
+    "para",
+    12.26,
+    12.457
+   ],
+   [
+    "acompanhar",
+    12.481,
+    13.026
+   ],
+   [
+    "essa",
+    13.084,
+    13.235
+   ],
+   [
+    "rotina.",
+    13.282,
+    14.001
+   ]
+  ],
+  "v3": [
+   [
+    "No",
+    14.6,
+    14.751
+   ],
+   [
+    "Maternidade",
+    14.786,
+    15.355
+   ],
+   [
+    "Legal,",
+    15.413,
+    15.935
+   ],
+   [
+    "a",
+    16.26,
+    16.295
+   ],
+   [
+    "organização",
+    16.353,
+    16.968
+   ],
+   [
+    "dos",
+    16.992,
+    17.108
+   ],
+   [
+    "clientes",
+    17.166,
+    17.746
+   ],
+   [
+    "e",
+    17.92,
+    18.048
+   ],
+   [
+    "o",
+    18.095,
+    18.141
+   ],
+   [
+    "acompanhamento",
+    18.187,
+    18.907
+   ],
+   [
+    "das",
+    18.954,
+    19.081
+   ],
+   [
+    "etapas",
+    19.151,
+    19.674
+   ],
+   [
+    "apoiam",
+    19.999,
+    20.521
+   ],
+   [
+    "o",
+    20.544,
+    20.568
+   ],
+   [
+    "trabalho",
+    20.602,
+    21.02
+   ],
+   [
+    "com",
+    21.055,
+    21.171
+   ],
+   [
+    "salário-maternidade.",
+    21.229,
+    22.681
+   ]
+  ],
+  "v4": [
+   [
+    "Da",
+    23.3,
+    23.463
+   ],
+   [
+    "preparação",
+    23.497,
+    24.008
+   ],
+   [
+    "do",
+    24.031,
+    24.089
+   ],
+   [
+    "protocolo",
+    24.136,
+    24.716
+   ],
+   [
+    "ao",
+    24.774,
+    24.844
+   ],
+   [
+    "acompanhamento",
+    24.902,
+    25.622
+   ],
+   [
+    "do",
+    25.668,
+    25.738
+   ],
+   [
+    "desfecho,",
+    25.796,
+    26.4
+   ],
+   [
+    "mais",
+    26.841,
+    27.096
+   ],
+   [
+    "clareza",
+    27.143,
+    27.677
+   ],
+   [
+    "sobre",
+    27.921,
+    28.257
+   ],
+   [
+    "onde",
+    28.304,
+    28.524
+   ],
+   [
+    "cada",
+    28.594,
+    28.861
+   ],
+   [
+    "caso",
+    28.908,
+    29.151
+   ],
+   [
+    "está.",
+    29.186,
+    29.802
+   ]
+  ],
+  "v5": [
+   [
+    "No",
+    30.6,
+    30.751
+   ],
+   [
+    "Previdenciário",
+    30.786,
+    31.494
+   ],
+   [
+    "Geral,",
+    31.529,
+    31.97
+   ],
+   [
+    "a",
+    32.179,
+    32.225
+   ],
+   [
+    "gestão",
+    32.283,
+    32.62
+   ],
+   [
+    "reúne",
+    32.655,
+    32.968
+   ],
+   [
+    "diferentes",
+    33.015,
+    33.526
+   ],
+   [
+    "demandas,",
+    33.549,
+    34.176
+   ],
+   [
+    "com",
+    34.385,
+    34.524
+   ],
+   [
+    "visão",
+    34.559,
+    34.826
+   ],
+   [
+    "das",
+    34.861,
+    34.977
+   ],
+   [
+    "rotinas",
+    35.012,
+    35.488
+   ],
+   [
+    "administrativas",
+    35.546,
+    36.475
+   ],
+   [
+    "e",
+    36.521,
+    36.544
+   ],
+   [
+    "judiciais.",
+    36.591,
+    37.566
+   ]
+  ],
+  "v6": [
+   [
+    "Aposentadorias,",
+    38.1,
+    39.006
+   ],
+   [
+    "benefícios",
+    39.029,
+    39.609
+   ],
+   [
+    "por",
+    39.667,
+    39.783
+   ],
+   [
+    "incapacidade,",
+    39.83,
+    40.677
+   ],
+   [
+    "pensão",
+    40.852,
+    41.211
+   ],
+   [
+    "por",
+    41.246,
+    41.374
+   ],
+   [
+    "morte",
+    41.42,
+    41.746
+   ],
+   [
+    "e",
+    41.769,
+    41.885
+   ],
+   [
+    "auxílio-acidente.",
+    41.908,
+    43.116
+   ]
+  ],
+  "v7": [
+   [
+    "Informações",
+    43.9,
+    44.631
+   ],
+   [
+    "operacionais",
+    44.701,
+    45.444
+   ],
+   [
+    "e",
+    45.502,
+    45.525
+   ],
+   [
+    "financeiras",
+    45.583,
+    46.292
+   ],
+   [
+    "ajudam",
+    46.675,
+    47.22
+   ],
+   [
+    "a",
+    47.255,
+    47.279
+   ],
+   [
+    "enxergar",
+    47.313,
+    47.847
+   ],
+   [
+    "o",
+    47.894,
+    47.917
+   ],
+   [
+    "conjunto.",
+    47.963,
+    48.776
+   ]
+  ],
+  "v8": [
+   [
+    "Duas",
+    49.5,
+    49.755
+   ],
+   [
+    "soluções",
+    49.79,
+    50.231
+   ],
+   [
+    "especializadas",
+    50.289,
+    51.102
+   ],
+   [
+    "para",
+    51.172,
+    51.346
+   ],
+   [
+    "organizar",
+    51.381,
+    51.903
+   ],
+   [
+    "informações,",
+    51.95,
+    52.832
+   ],
+   [
+    "acompanhar",
+    53.041,
+    53.622
+   ],
+   [
+    "casos",
+    53.68,
+    54.156
+   ],
+   [
+    "e",
+    54.33,
+    54.481
+   ],
+   [
+    "coordenar",
+    54.539,
+    55.015
+   ],
+   [
+    "a",
+    55.05,
+    55.073
+   ],
+   [
+    "operação.",
+    55.119,
+    56.002
+   ]
+  ],
+  "v9": [
+   [
+    "A",
+    56.7,
+    56.804
+   ],
+   [
+    "experiência",
+    56.839,
+    57.339
+   ],
+   [
+    "jurídica",
+    57.362,
+    57.815
+   ],
+   [
+    "continua",
+    57.861,
+    58.291
+   ],
+   [
+    "no",
+    58.325,
+    58.407
+   ],
+   [
+    "centro.",
+    58.453,
+    58.894
+   ],
+   [
+    "A",
+    59.591,
+    59.661
+   ],
+   [
+    "tecnologia",
+    59.742,
+    60.485
+   ],
+   [
+    "apoia",
+    60.729,
+    61.158
+   ],
+   [
+    "o",
+    61.193,
+    61.228
+   ],
+   [
+    "trabalho.",
+    61.274,
+    62.087
+   ]
+  ],
+  "v10": [
+   [
+    "ADV",
+    63.75,
+    64.191
+   ],
+   [
+    "Station.",
+    64.307,
+    64.737
+   ],
+   [
+    "Conheça",
+    64.83,
+    65.201
+   ],
+   [
+    "nossas",
+    65.236,
+    65.515
+   ],
+   [
+    "soluções.",
+    65.538,
+    66.351
+   ]
+  ]
+ },
+ "captions": [
+  {
+   "start": 4.25,
+   "end": 8.037,
+   "text": "Na advocacia previdenciária, cada caso tem seu caminho."
+  },
+  {
+   "start": 8.15,
+   "end": 11.285,
+   "text": "A ADV Station é uma família de softwares de gestão"
+  },
+  {
+   "start": 11.285,
+   "end": 14.351,
+   "text": "desenvolvida para acompanhar essa rotina."
+  },
+  {
+   "start": 14.6,
+   "end": 17.92,
+   "text": "No Maternidade Legal, a organização dos clientes"
+  },
+  {
+   "start": 17.92,
+   "end": 19.999,
+   "text": "e o acompanhamento das etapas"
+  },
+  {
+   "start": 19.999,
+   "end": 23.031,
+   "text": "apoiam o trabalho com salário-maternidade."
+  },
+  {
+   "start": 23.3,
+   "end": 26.75,
+   "text": "Da preparação do protocolo ao acompanhamento do desfecho,"
+  },
+  {
+   "start": 26.841,
+   "end": 30.152,
+   "text": "mais clareza sobre onde cada caso está."
+  },
+  {
+   "start": 30.6,
+   "end": 34.385,
+   "text": "No Previdenciário Geral, a gestão reúne diferentes demandas,"
+  },
+  {
+   "start": 34.385,
+   "end": 37.916,
+   "text": "com visão das rotinas administrativas e judiciais."
+  },
+  {
+   "start": 38.1,
+   "end": 40.852,
+   "text": "Aposentadorias, benefícios por incapacidade,"
+  },
+  {
+   "start": 40.852,
+   "end": 43.466,
+   "text": "pensão por morte e auxílio-acidente."
+  },
+  {
+   "start": 43.9,
+   "end": 49.126,
+   "text": "Informações operacionais e financeiras ajudam a enxergar o conjunto."
+  },
+  {
+   "start": 49.5,
+   "end": 51.172,
+   "text": "Duas soluções especializadas"
+  },
+  {
+   "start": 51.172,
+   "end": 56.352,
+   "text": "para organizar informações, acompanhar casos e coordenar a operação."
+  },
+  {
+   "start": 56.7,
+   "end": 59.244,
+   "text": "A experiência jurídica continua no centro."
+  },
+  {
+   "start": 59.591,
+   "end": 62.437,
+   "text": "A tecnologia apoia o trabalho."
+  },
+  {
+   "start": 63.75,
+   "end": 66.701,
+   "text": "ADV Station. Conheça nossas soluções."
+  }
+ ]
+}

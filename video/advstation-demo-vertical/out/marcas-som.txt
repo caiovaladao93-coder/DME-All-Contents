@@ -1,0 +1,35 @@
+MARCAS · ADV Station · demonstração real do produto · 68.00 s (2040 quadros) · 30 fps
+
+BLOCOS
+  0.00–  3.90  vinheta
+  3.90– 14.30  contexto
+ 14.30– 23.00  ml_clientes
+ 23.00– 30.30  ml_etapas
+ 30.30– 43.60  pg
+ 43.60– 49.20  gerencial
+ 49.20– 62.50  portfolio
+ 62.50– 68.00  assinatura
+
+FALAS (Guilherme, ElevenLabs, velocidade natural)
+  4.25–  7.69  Na advocacia previdenciária, cada caso tem seu caminho.
+  8.15– 14.00  A ADV Station é uma família de softwares de gestão desenvolvida para acompanhar essa rotina.
+ 14.60– 22.68  No Maternidade Legal, a organização dos clientes e o acompanhamento das etapas apoiam o trabalho com salário-maternidade.
+ 23.30– 29.80  Da preparação do protocolo ao acompanhamento do desfecho, mais clareza sobre onde cada caso está.
+ 30.60– 37.57  No Previdenciário Geral, a gestão reúne diferentes demandas, com visão das rotinas administrativas e judiciais.
+ 38.10– 43.12  Aposentadorias, benefícios por incapacidade, pensão por morte e auxílio-acidente.
+ 43.90– 48.78  Informações operacionais e financeiras ajudam a enxergar o conjunto.
+ 49.50– 56.00  Duas soluções especializadas para organizar informações, acompanhar casos e coordenar a operação.
+ 56.70– 62.09  A experiência jurídica continua no centro. A tecnologia apoia o trabalho.
+ 63.75– 66.35  ADV Station. Conheça nossas soluções.
+
+TRILHA E EFEITOS
+  0.00  jingle oficial · vinheta de abertura
+  3.70  trilha entra com a cena (textura harmônica e piano)
+  8.00  pulsação discreta
+ 14.69  acento: troca de produto (Maternidade Legal)
+ 16.40  aproximação: clientes
+ 22.90  aproximação: etapas
+ 30.69  acento: troca de produto (Previdenciário Geral)
+ 33.90  aproximação: administrativo
+ 43.70  aproximação: visão gerencial
+ 62.50  jingle oficial · vinheta de encerramento
