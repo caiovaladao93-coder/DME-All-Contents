@@ -5,7 +5,7 @@ import MON from './data/monitor.json';
 import {C} from './theme/colors';
 import {APOIO, SERIF} from './theme/typography';
 import {loadFonts} from './components/Fonts';
-import {Selo, Vinheta} from './components/Brand';
+import {BrandMark, Selo, Vinheta} from './components/Brand';
 
 loadFonts();
 /*
@@ -44,17 +44,22 @@ const EQUIP: Cam = [MON.W / 2, MON.H - 960 / (1080 / MON.W), 1080 / MON.W];
 const EQUIP2: Cam = [MON.W / 2 + 90, EQUIP[1] - 60, EQUIP[2] * .97];                    // enquadramento renovado na troca de produto
 const FRONT: Cam = [SC.x + SC.w / 2, SC.y + SC.h / 2 + 60, 1010 / SC.w];                // tela frontal, moldura parcialmente visível
 
+// ── tempos escritos para a linha antiga (até 68 s) → linha atual (69,5 s), ancorados nas falas r7–r11 regravadas
+const WA: Array<[number, number]> = [[0, 0], [40.5, 40.5], [40.9, wt('r7', 'Aproxime')], [43.06, wt('r7', 'Amplie')], [45.5, wt('r8', 'Informações')], [51.3, wt('r9', 'Duas')],
+  [56.5, wt('r10', 'A')], [61.95, 63.72], [62.8, 64.5], [68, 69.5]];
+const W = (x: number) => { for (let i = 1; i < WA.length; i++) if (x <= WA[i][0]) { const [a, A] = WA[i - 1], [b, B] = WA[i]; return A + (x - a) / (b - a) * (B - A); } return x; };
 // ── tempos (palavras reais)
 const T = {
+  adv: wt('r2', 'ADV'), exp: wt('r10', 'experiência'), tec: wt('r10', 'tecnologia'), r10: wt('r10', 'A'),
   cada: wt('r1', 'Cada'), sua: wt('r1', 'Sua'), familia: wt('r2', 'família'), mat: wt('r3', 'Maternidade'), orgd: wt('r3', 'organizados'),
   onde: wt('r4', 'onde'), exige: wt('r4', 'exige'), prev: wt('r5', 'Previdenciário'), apos: wt('r6', 'Aposentadorias'),
   aprox: wt('r7', 'Aproxime'), amplie: wt('r7', 'Amplie'), info: wt('r8', 'Informações'), fin: wt('r8', 'financeiras'),
   duas: wt('r9', 'Duas'), org: wt('r9', 'organizar'), acomp: wt('r9', 'acompanhar'), coord: wt('r9', 'coordenar'),
 };
 // ── câmera: [tempo, câmera]. Cada aproximação tem destino definido e chega PARADA para a observação.
-const KEYS: Array<[number, Cam]> = [
+const KEYS0: Array<[number, Cam]> = [
   [2.0, [EQUIP[0], EQUIP[1] - 160, EQUIP[2] * .96]], [12.9, [EQUIP[0], EQUIP[1] + 120, EQUIP[2] * 1.05]],   // abertura (aproximação lenta desde o 1º segundo)
-  [16.75, [EQUIP[0], EQUIP[1] + 160, EQUIP[2] * 1.06]], [17.85, R('mlCli', 941, 303, 620)], [20.45, R('mlCli', 941, 303, 620)],   // ML · organização
+  [16.95, [EQUIP[0], EQUIP[1] + 160, EQUIP[2] * 1.06]], [18.0, R('mlCli', 941, 303, 620)], [20.45, R('mlCli', 941, 303, 620)],   // ML · organização
   [21.2, FRONT], [22.45, FRONT], [23.4, R('mlProt', 720, 236, 760, 760)], [25.15, R('mlProt', 720, 236, 760, 760)],              // pergunta na parede → etapas
   [25.85, R('mlProt', 1310, 356, 620)], [28.0, R('mlProt', 1310, 356, 620)],                                                         // → o que exige atenção (tags)
   [28.7, EQUIP2], [30.75, EQUIP2], [31.75, R('pgAdm', 1210, 365, 640)], [34.5, R('pgAdm', 1210, 365, 640)],                         // troca de produto → administrativo
@@ -63,6 +68,7 @@ const KEYS: Array<[number, Cam]> = [
   [45.3, FRONT], [45.65, FRONT], [46.5, R('pgDash', 720, 560, 860, 940)], [51.0, R('pgDash', 720, 560, 860, 940)],                // "…ao conjunto" → painel (operação + financeiro)
   [51.85, EQUIP], [61.6, [EQUIP[0], EQUIP[1] + 200, EQUIP[2] * 1.06]],                                                              // síntese no equipamento
 ];
+const KEYS: Array<[number, Cam]> = KEYS0.map(([a, c]) => [W(a), c]);
 const camAt = (t: number): Cam => {
   if (t <= KEYS[0][0]) return KEYS[0][1];
   for (let i = 1; i < KEYS.length; i++) {
@@ -72,13 +78,13 @@ const camAt = (t: number): Cam => {
   return KEYS[KEYS.length - 1][1];
 };
 // ── estados explícitos de montagem: a legenda só existe no zoom/demonstração
-const ZOOM: Array<[number, number]> = [[17.3, 20.6], [22.9, 28.15], [31.3, 39.85], [42.0, 44.9], [46.3, 51.15]];
+const ZOOM: Array<[number, number]> = ([[17.55, 20.6], [22.9, 28.15], [31.3, 39.85], [42.0, 44.9], [46.3, 51.15]] as Array<[number, number]>).map(([a, b]) => [W(a), W(b)]);
 const zoomVis = (t: number) => ZOOM.reduce((m, [a, b]) => Math.max(m, Math.min(P(t, a, .25), 1 - P(t, b - .2, .2))), 0);
 // ── telas: troca só com câmera parada (EQUIP/FRONT) ou entre layouts idênticos (administrativo → judicial)
-const SCREENS: Array<[number, Tela, number]> = [[0, 'mlCli', 0], [21.3, 'mlProt', .3], [28.95, 'pgAdm', .3], [34.55, 'pgJud', .3], [40.6, 'pgPrazos', .3], [45.35, 'pgDash', .25], [51.9, 'mlCli', .4], [56.0, 'pgDash', .4]];
+const SCREENS: Array<[number, Tela, number]> = ([[0, 'mlCli', 0], [21.3, 'mlProt', .3], [28.95, 'pgAdm', .3], [34.55, 'pgJud', .3], [40.6, 'pgPrazos', .3], [45.35, 'pgDash', .25], [51.9, 'mlCli', .4], [56.0, 'pgDash', .4]] as Array<[number, Tela, number]>).map(([a, x, d]) => [W(a), x, d]);
 // ── destaques: uma região por vez, só durante a observação; escurecimento leve
 type HL = {tela: Tela; x: number; y: number; w: number; h: number; t0: number; t1: number};
-const HLS: HL[] = [
+const HLS: HL[] = ([
   {tela: 'mlCli', x: 766, y: 158, w: 350, h: 290, t0: 18.0, t1: 20.3},           // Setor + Etapa
   {tela: 'mlProt', x: 342, y: 194, w: 666, h: 34, t0: 23.6, t1: 25.05},          // etapas reais do setor de protocolo
   {tela: 'mlProt', x: 1164, y: 320, w: 294, h: 76, t0: 26.0, t1: 27.9},          // tags: sem contato há mais de 10 dias · inadimplente
@@ -87,7 +93,7 @@ const HLS: HL[] = [
   {tela: 'pgPrazos', x: 1206, y: 318, w: 610, h: 214, t0: 42.6, t1: 44.5},       // Vencimento · Dias restantes · Status
   {tela: 'pgDash', x: 318, y: 140, w: 800, h: 112, t0: 46.7, t1: 48.5},          // Operação
   {tela: 'pgDash', x: 318, y: 650, w: 960, h: 106, t0: 48.7, t1: 50.9},          // Financeiro
-];
+] as HL[]).map((h) => ({...h, t0: W(h.t0), t1: W(h.t1)}));
 
 const Shot: React.FC<{tela: Tela; o: number; t: number}> = ({tela, o, t}) => {
   const k = K(tela), h = TELAS[tela].h * k;
@@ -123,14 +129,14 @@ const G: React.FC<{children: React.ReactNode}> = ({children}) => <span style={{c
 export const Film: React.FC<{audio?: boolean; captions?: boolean}> = ({audio = true, captions = true}) => {
   const f = useCurrentFrame(); const t = f / 30;
   const [cx, cy, z] = camAt(t);
-  const toCream = P(t, 61.95, .8, EIO);
+  const toCream = P(t, W(61.95), .73, EIO);
   const chinTop = 960 + (MON.chinY - cy) * z;
   const zv = zoomVis(t);
   const cap = (TL.captions as any[]).find((c) => t >= c.start && t < c.end);
   const synth = (w: string, a: number) => <div style={{opacity: P(t, a, .45), transform: `translateY(${((1 - P(t, a, .5)) * 26).toFixed(1)}px)`}}>{w}</div>;
   return (
     <AbsoluteFill style={{background: C.navy}}>
-      {t > 1.85 && t < 62.85 ? <AbsoluteFill>
+      {t > 1.85 && t < W(62.8) + .05 ? <AbsoluteFill>
         <div style={{position: 'absolute', left: 0, top: 0, width: MON.W, height: MON.H, transformOrigin: '0 0',
           transform: `translate(${(540 - cx * z).toFixed(2)}px, ${(960 - cy * z).toFixed(2)}px) scale(${z.toFixed(5)})`}}>
           <Img src={staticFile('assets/computador/monitor.jpg')} style={{position: 'absolute', left: 0, top: 0, width: MON.W, height: MON.H}} />
@@ -140,13 +146,16 @@ export const Film: React.FC<{audio?: boolean; captions?: boolean}> = ({audio = t
       </AbsoluteFill> : null}
 
       {/* ── PLANO ABERTO: títulos fora do monitor (nunca sobre a interface) */}
-      <Title t={t} t0={T.cada - .05} t1={4.15} size={112}>Cada caso tem<br />seu <G>caminho</G></Title>
-      <Title t={t} t0={T.sua - .05} t1={6.75} size={100} align="right" top={360}>Sua gestão<br />precisa <G>acompanhar</G></Title>
+      <Title t={t} t0={T.cada - .05} t1={T.adv - .4} size={112}>Cada caso tem<br />seu <G>caminho</G></Title>
+      <Title t={t} t0={T.sua - .05} t1={T.adv - .4} size={100} top={600}>Sua gestão<br />precisa <G>acompanhar</G></Title>
+      {(() => { const p = P(t, T.adv - .05, .5), q = P(t, 12.75, .3, EIO); if (p <= 0 || q >= 1) return null;
+        return <div style={{position: 'absolute', left: 0, right: 0, top: 330, display: 'flex', justifyContent: 'center', opacity: Math.min(1, p * 1.5) * (1 - q), transform: `translateY(${((1 - p) * 20).toFixed(1)}px)`}}>
+          <BrandMark size={150} variant="dark" nameSize={40} /></div>; })()}
       {(() => { const p = P(t, T.familia - .15, .5), q = P(t, 12.75, .3, EIO); if (p <= 0 || q >= 1) return null;
-        return <div style={{position: 'absolute', left: 0, right: 0, top: 380, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 22, opacity: Math.min(1, p * 1.5) * (1 - q), transform: `translateY(${((1 - p) * 20).toFixed(1)}px)`}}>
+        return <div style={{position: 'absolute', left: 0, right: 0, top: 640, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 22, opacity: Math.min(1, p * 1.5) * (1 - q), transform: `translateY(${((1 - p) * 20).toFixed(1)}px)`}}>
           <Selo produto="maternidade" nome="Maternidade Legal" u={1.7} /><Selo produto="previdenciario" nome="Previdenciário Geral" u={1.7} /></div>; })()}
-      <Title t={t} t0={T.mat - .1} t1={15.2} size={108}>Maternidade<br />Legal</Title>
-      <Title t={t} t0={15.3} t1={16.35} size={96} top={360}>Informações<br /><G>reunidas</G></Title>
+      <Title t={t} t0={T.mat - .1} t1={16.6} size={108}>Maternidade<br />Legal</Title>
+      <Title t={t} t0={15.3} t1={16.6} size={96} top={600}>Informações<br /><G>reunidas</G></Title>
       <Title t={t} t0={21.25} t1={22.35} size={100} top={300}>Onde está<br />cada <G>caso</G>?</Title>
       <Title t={t} t0={T.prev - .1} t1={30.6} size={104} top={340}>Previdenciário<br />Geral</Title>
       <Title t={t} t0={40.45} t1={41.55} size={100} top={340}>Do detalhe<br />ao <G>conjunto</G></Title>
@@ -154,8 +163,10 @@ export const Film: React.FC<{audio?: boolean; captions?: boolean}> = ({audio = t
       {(() => { const p = P(t, Math.max(T.duas, 51.9), .45), q = P(t, T.org - .45, .3, EIO); if (p <= 0 || q >= 1) return null;
         return <div style={{position: 'absolute', left: 0, right: 0, top: 380, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 22, opacity: Math.min(1, p * 1.5) * (1 - q)}}>
           <Selo produto="maternidade" nome="Maternidade Legal" u={1.7} /><Selo produto="previdenciario" nome="Previdenciário Geral" u={1.7} /></div>; })()}
-      {t > T.org - .2 && t < 58.6 ? <div style={{position: 'absolute', left: 90, top: 300, fontFamily: SERIF, fontWeight: 700, fontSize: 104, lineHeight: 1.08, color: '#fff', opacity: 1 - P(t, 58.25, .3, EIO)}}>
+      {t > T.org - .2 && t < T.r10 ? <div style={{position: 'absolute', left: 90, top: 300, fontFamily: SERIF, fontWeight: 700, fontSize: 104, lineHeight: 1.08, color: '#fff', opacity: 1 - P(t, T.r10 - .35, .3, EIO)}}>
         {synth('Organizar.', T.org - .1)}{synth('Acompanhar.', T.acomp - .1)}<div style={{color: C.gold}}>{synth('Coordenar.', T.coord - .1)}</div></div> : null}
+      <Title t={t} t0={T.exp - .15} t1={W(61.95) - .2} size={86} top={300}>A experiência<br />jurídica continua<br />no <G>centro</G>.</Title>
+      <Title t={t} t0={T.tec - .2} t1={W(61.95) - .2} size={86} top={612}>A <G>tecnologia</G><br />apoia o trabalho.</Title>
 
       {/* ── ZOOM/DEMONSTRAÇÃO: só a legenda (posição fixa, longe do alvo) e a identificação externa dos dados */}
       {zv > 0 ? <div style={{position: 'absolute', right: 90, top: 256, opacity: zv, fontFamily: APOIO, fontWeight: 600, fontSize: 22, letterSpacing: '.06em', color: 'rgba(255,255,255,.85)',
@@ -166,7 +177,7 @@ export const Film: React.FC<{audio?: boolean; captions?: boolean}> = ({audio = t
 
       {/* ── vinheta padrão: abertura curta e encerramento com o CTA */}
       {t < 2.5 ? <Sequence durationInFrames={76}><VinIn /></Sequence> : null}
-      <Sequence from={Math.round(62.8 * 30)}><VinOut /></Sequence>
+      <Sequence from={Math.round(W(62.8) * 30)}><VinOut /></Sequence>
 
       {audio ? <>
         <Audio src={staticFile('assets/audio/trilha.wav')} />
@@ -178,4 +189,4 @@ export const Film: React.FC<{audio?: boolean; captions?: boolean}> = ({audio = t
 
 const VinIn: React.FC = () => { const f = useCurrentFrame(); const t = f / 30; const o = 1 - P(t, 1.95, .5, EIO);
   return <AbsoluteFill style={{clipPath: o < 1 ? `circle(${(o * 140).toFixed(2)}% at 50% 47%)` : undefined}}><Vinheta t0={0} /></AbsoluteFill>; };
-const VinOut: React.FC = () => <AbsoluteFill><Vinheta t0={0} titulo={<>Conheça nossas<br />soluções</>} /></AbsoluteFill>;
+const VinOut: React.FC = () => <AbsoluteFill><Vinheta t0={0} titulo={<>Conheça nossas<br />soluções</>} subtitulo={<span style={{fontFamily: APOIO, fontWeight: 700, fontSize: 46, letterSpacing: '.02em', color: C.vNavy}}>advstation.io</span>} /></AbsoluteFill>;

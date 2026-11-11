@@ -1,13 +1,13 @@
-"""Linha do tempo de 68,0 s (2.040 quadros) a partir das falas REAIS (voz Guilherme, sem aceleração).
-Vinheta padrão curta no início (0–2,2 s, jingle oficial) e no fim (62,8–68,0 s, com a fala da assinatura).
+"""Linha do tempo de 69,5 s (2.085 quadros) a partir das falas REAIS (voz Guilherme, sem aceleração).
+Vinheta padrão curta no início (0–2,2 s, jingle oficial) e no fim (64,6–69,5 s, com a fala da assinatura).
 Saída: src/data/timeline.json (blocos, falas, palavras e legendas)."""
 import json
 ROOT = __file__.rsplit('/scripts/', 1)[0]
-FPS, DUR = 30, 68.0
-VIN0, VIN1 = (0.0, 2.2), (62.8, DUR)
+FPS, DUR = 30, 69.5
+VIN0, VIN1 = (0.0, 2.2), (64.5, DUR)
 BLOCOS = [('vinheta', 0.0, 2.2), ('abertura', 2.2, 13.1), ('ml_organizacao', 13.1, 20.4), ('ml_etapas', 20.4, 27.4), ('troca', 27.4, 30.2),
-          ('pg_demandas', 30.2, 40.2), ('detalhe_conjunto', 40.2, 51.0), ('sintese', 51.0, 62.8), ('assinatura', 62.8, DUR)]
-FALAS = [('r1', 2.35), ('r2', 6.45), ('r3', 13.2), ('r4', 20.45), ('r5', 28.2), ('r6', 34.6), ('r7', 40.9), ('r8', 45.5), ('r9', 51.3), ('r10', 56.5), ('r11', 63.85)]
+          ('pg_demandas', 30.2, 40.2), ('detalhe_conjunto', 40.2, 52.3), ('sintese', 52.3, 64.5), ('assinatura', 64.5, DUR)]
+FALAS = [('r1', 2.35), ('r2', 6.45), ('r3', 13.2), ('r4', 20.45), ('r5', 28.2), ('r6', 34.6), ('r7', 40.8), ('r8', 46.3), ('r9', 52.55), ('r10', 58.3), ('r11', 65.6)]
 QUEBRAS = {'r1': ['caminho.'], 'r2': ['gestão'], 'r3': ['organizados'], 'r4': ['está'], 'r5': ['demandas'], 'r6': ['incapacidade,'], 'r7': ['demanda.'], 'r8': ['financeiras'], 'r9': ['especializadas'], 'r10': ['centro.']}
 falas, words, caps = [], {}, []
 for fid, v0 in FALAS:
@@ -28,7 +28,7 @@ for fid, v0 in FALAS:
             caps.append({'start': blk[0][1], 'end': round(blk[-1][2] + .35, 3), 'text': ' '.join(x[0] for x in blk)}); blk = []
 for x, y in zip(caps, caps[1:]): x['end'] = min(x['end'], y['start'])
 for x, y in zip(falas, falas[1:]): assert x['v1'] < y['v0'] - .2, ('falas sobrepostas', x, y)
-assert falas[-1]['v1'] <= DUR - 1.5
+assert falas[-1]['v1'] <= DUR - .8
 json.dump({'fps': FPS, 'dur': DUR, 'frames': round(DUR * FPS), 'blocks': [dict(zip(('key', 't0', 't1'), b)) for b in BLOCOS], 'falas': falas, 'words': words, 'captions': caps},
           open(f'{ROOT}/src/data/timeline.json', 'w'), ensure_ascii=False, indent=1)
 for f in falas: print(f"{f['fala']:4s} {f['v0']:6.2f}–{f['v1']:6.2f}")

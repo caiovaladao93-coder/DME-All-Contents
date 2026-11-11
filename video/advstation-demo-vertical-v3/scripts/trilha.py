@@ -1,7 +1,7 @@
 """Trilha ORIGINAL (numpy) + jingle OFICIAL da vinheta — ADV Station, demonstração real do produto.
-0–2,2 s: jingle oficial (vinheta de abertura). 2,2–62,7 s: instrumental contemporânea a 92 BPM (textura harmônica sóbria,
+0–2,2 s: jingle oficial (vinheta de abertura). 2,2–64,4 s: instrumental contemporânea a 92 BPM (textura harmônica sóbria,
 piano e pulsação discreta), com acentos discretos nas trocas de produto e pequenos sons nas aproximações importantes.
-62,8 s: jingle oficial (vinheta de encerramento), com ducking sob a fala da assinatura. Sem sons de clique.
+64,5 s: jingle oficial (vinheta de encerramento), com ducking sob a fala da assinatura. Sem sons de clique.
 Saídas: public/assets/audio/trilha.wav (o Remotion mistura as falas), out/mix.wav (conferência), out/narracao.wav, SRT e marcas."""
 import json, subprocess, sys, unicodedata
 sys.path.insert(0, __file__.rsplit('/', 1)[0])
@@ -12,7 +12,7 @@ ROOT = __file__.rsplit('/scripts/', 1)[0]
 TL = json.load(open(f'{ROOT}/src/data/timeline.json')); DUR = TL['dur']; N = int(DUR * SR); BEAT = 60 / 92; BAR = 4 * BEAT
 n_ = lambda x: ''.join(c for c in unicodedata.normalize('NFD', x.lower()) if c.isalnum() and unicodedata.category(c) != 'Mn')
 wt = lambda fid, w: next(x[1] for x in TL['words'][fid] if n_(x[0]) == n_(w))
-M0, M1 = 2.2, 62.7                                     # trecho da trilha entre as vinhetas
+M0, M1 = 2.2, 64.4                                     # trecho da trilha entre as vinhetas
 L = np.zeros((N, 2)); send = np.zeros((N, 2)); EV = []
 def put(sig, t0, g=1.0, pan=0.0, rev=.35):
     i = int(round(t0 * SR))
@@ -55,7 +55,7 @@ music *= vr * 10 ** (-12 / 20) / mr; music *= (10 ** (-5 * env / 20))[:, None]
 raw = subprocess.run(['ffmpeg', '-v', 'error', '-i', f'{ROOT}/public/assets/jingle-vinheta.flac', '-ac', '2', '-ar', str(SR), '-f', 'f32le', '-'], capture_output=True, check=True).stdout
 jg = np.frombuffer(raw, np.float32).astype(np.float64).reshape(-1, 2); jr = np.sqrt(np.mean(jg ** 2))
 jg *= vr * 10 ** (-4 / 20) / jr
-for t0, nome in ((0.0, 'jingle oficial · vinheta de abertura'), (62.8, 'jingle oficial · vinheta de encerramento')):
+for t0, nome in ((0.0, 'jingle oficial · vinheta de abertura'), (64.5, 'jingle oficial · vinheta de encerramento')):
     i = int(t0 * SR); j = min(N, i + len(jg)); seg = jg[:j - i].copy()
     if t0 > 0: seg *= (10 ** (-8 * env[i:j] / 20))[:, None]
     music[i:j] += seg; ev(nome, t0)

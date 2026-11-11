@@ -7,7 +7,7 @@ M=$(ffmpeg -hide_banner -i $IN -af loudnorm=I=-15:TP=-1.5:LRA=11:print_format=js
 g(){ echo "$M" | python3 -c "import json,sys;print(json.load(sys.stdin)['$1'])"; }
 ffmpeg -y -v error -i $IN -c:v libx264 -preset slow -crf 18 -pix_fmt yuv420p -colorspace bt709 -color_primaries bt709 -color_trc bt709 \
   -af "alimiter=limit=0.75:attack=2:release=60:level=disabled,loudnorm=I=-15:TP=-1.5:LRA=11:measured_I=$(g input_i):measured_TP=$(g input_tp):measured_LRA=$(g input_lra):measured_thresh=$(g input_thresh):offset=$(g target_offset):linear=true,aresample=48000" \
-  -c:a aac -b:a 192k -ar 48000 -t 68.0 -movflags +faststart $OUT
+  -c:a aac -b:a 192k -ar 48000 -t 69.5 -movflags +faststart $OUT
 {
   echo "CONFERÊNCIA · $(date '+%d/%m/%Y %H:%M')"
   ffprobe -v error -show_entries stream=codec_name,width,height,r_frame_rate,pix_fmt,sample_rate,channels -show_entries format=duration -of compact $OUT

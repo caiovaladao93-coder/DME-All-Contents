@@ -12,7 +12,7 @@ Esta pasta revisa `video/advstation-demo-vertical-v2`, que fica preservada, assi
 
 **Conceito:** "Cada caso tem seu caminho. Sua gestão precisa acompanhar."
 
-- **Formato:** 9:16, 1080 × 1920, 30 fps, 68,0 s (2.040 quadros).
+- **Formato:** 9:16, 1080 × 1920, 30 fps, 69,5 s (2.085 quadros).
 - **Exportação:** H.264 yuv420p, AAC 48 kHz, faststart.
 - **Projeto:** Remotion, com a vinheta oficial no início e no fim.
 
@@ -23,7 +23,7 @@ Esta pasta revisa `video/advstation-demo-vertical-v2`, que fica preservada, assi
 | `ADV-Station-Institucional-Vertical-v2.mp4` | Master (−15 LUFS, true peak ≤ −1,5 dBTP) |
 | `ADV-Station-Institucional-Vertical-v2.srt` | Legenda completa de toda a narração, inclusive dos trechos em que a legenda queimada fica oculta |
 | `ADV-Station-Institucional-Vertical-v2-narracao.wav` | Locução separada |
-| `capa.png` | Quadro de 5,6 s: computador com a tela real e "Sua gestão precisa acompanhar" |
+| `capa.png` | Quadro de 5,6 s: computador com a tela real e os dois títulos da abertura, com a marca oficial acima |
 | `marcas-som.txt`, `conferencia.txt` | Marcas de áudio e conferência técnica |
 
 ## Estados explícitos (`src/Film.tsx`)
@@ -48,14 +48,14 @@ A legenda depende do **estado** (`zoomVis`) e não só do tempo do áudio.
 | Tempo | Bloco | O que se vê |
 |---|---|---|
 | 0,0–2,2 | Vinheta (encurtada) | Ela se recolhe num círculo e revela o computador |
-| 2,2–13,1 | Abertura | O computador mostra a tela real, com aproximação lenta. "Cada caso tem seu caminho" dá lugar a "Sua gestão precisa acompanhar". Em "família de softwares" entram os dois selos oficiais. Sem legenda |
-| 13,1–20,4 | Maternidade Legal · organização | "Maternidade Legal" e depois "Informações reunidas". O título sai e a câmera chega a **Setor + Etapa** dos clientes |
+| 2,2–13,1 | Abertura | O computador mostra a tela real, com aproximação lenta. "Cada caso tem seu caminho" fica fixo e "Sua gestão precisa acompanhar" entra embaixo; os dois ficam juntos. Em "ADV Station" entra a marca oficial; em "família de softwares", os dois selos abaixo dela. Sem legenda |
+| 13,1–20,4 | Maternidade Legal · organização | "Maternidade Legal" fica fixo e "Informações reunidas" entra embaixo. O título sai e a câmera chega a **Setor + Etapa** dos clientes |
 | 20,4–27,4 | Maternidade Legal · etapas | Tela frontal com "Onde está cada caso?" na parede. A câmera vai às etapas reais do Setor de Protocolo e desliza, sem voltar ao equipamento, até as tags "Sem contato há mais de 10 dias" e "Inadimplente" |
 | 27,4–30,2 | Troca de produto | Saída do zoom, enquadramento renovado do equipamento e "Previdenciário Geral" |
 | 30,2–40,2 | Previdenciário Geral · demandas | **Administrativo** (Benefício · Setor · Etapa). Depois, um corte alinhado para o **Judicial** (Benefício · Nº Processo · Etapa, inclusive Aposentadoria) durante a lista de benefícios, que é **só falada** |
-| 40,2–51,0 | Do detalhe ao conjunto | Título no equipamento. Detalhe: **Prazos Processuais** (Vencimento, Dias restantes, Prioridade, Status). Em "Amplie", a câmera passa pela tela frontal e chega ao **Dashboard Executivo**: Operação, depois Financeiro |
-| 51,0–62,8 | Síntese | Equipamento, selos dos dois produtos e depois a pilha "Organizar. Acompanhar. Coordenar.", na ordem das palavras. O marfim sobe a partir do queixo do monitor |
-| 62,8–68,0 | Assinatura | Vinheta oficial e "Conheça nossas soluções" (mais de 2 s), sem legenda |
+| 40,2–52,3 | Do detalhe ao conjunto | Título no equipamento. Detalhe: **Prazos Processuais** (Vencimento, Dias restantes, Prioridade, Status). Em "Amplie", a câmera passa pela tela frontal e chega ao **Dashboard Executivo**: Operação, depois Financeiro |
+| 52,3–64,5 | Síntese | Equipamento, selos dos dois produtos e depois a pilha "Organizar. Acompanhar. Coordenar.", na ordem das palavras. Depois, "A experiência jurídica continua no centro." e "A tecnologia apoia o trabalho." entram quando faladas e ficam juntas. O marfim sobe a partir do queixo do monitor |
+| 64,5–69,5 | Assinatura | Vinheta oficial, "Conheça nossas soluções" e **advstation.io** (endereço informado pelo cliente), sem legenda |
 
 ## Mapa da demonstração
 
@@ -84,8 +84,9 @@ Nenhum cursor, clique ou mudança de status foi simulado.
 
 **Locução:** Guilherme (`CS07DI8x8kLXeSktyWLG`), sem aceleração.
 
-- **Falas reaproveitadas da v2:** r6, r10 e r11.
+- **Falas reaproveitadas da v2:** r6 e r10.
 - **Falas novas:** as demais, com 3 tomadas cada, escolhidas por medição.
+- **Revisão do timbre (r7, r8, r9 e r11):** as primeiras escolhas de r7 e r8 soavam como outra voz. Foram geradas 6 tomadas novas de cada uma, com o texto vizinho como contexto (`--continuidade`). A escolha foi pela menor distância de timbre (MFCC médio) em relação a r1–r6. Ficaram r7-9, r8-9, r9-9 e r11-8. Essas tomadas são mais pausadas, por isso o filme passou a 69,5 s; as animações depois de 40 s acompanham pela função `W` em `Film.tsx`.
 - **Conferência:** todas foram transcritas pelo speech-to-text da ElevenLabs. "A ADV Station" está correto em r2.
 
 **Trilha:** original a 92 BPM, entre o jingle oficial da abertura e o do encerramento (este com ducking sob a fala). Tem acentos nas trocas de produto e nas aproximações.
@@ -112,7 +113,7 @@ npx remotion render src/index.ts ADVDemo out/render-bruto.mp4 --codec=h264 --crf
 1. **Fieldwork:** o kit da Adobe está bloqueado neste ambiente, então Nunito Sans segue como provisória.
 2. **Navegação:** sem gravações de navegação, as operações são estados reais e estáticos. A troca Administrativo → Judicial é um corte, não um clique.
 3. **Telas da Maternidade Legal:** `ml-clientes.png` continua sendo a captura anterior (1915 px), porque não veio versão nova.
-4. **advstation.io:** a rede bloqueia o site, então o endereço não foi confirmado e ficou fora do CTA.
+4. **advstation.io:** entrou no CTA a pedido do cliente. A rede deste ambiente bloqueia o site, então não foi aberto aqui.
 5. **Revisão humana:**
    - o áudio foi conferido por medição e transcrição, não por escuta humana;
    - a sobreposição da interface do Reels não foi testada no aplicativo.
