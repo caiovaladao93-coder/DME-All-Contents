@@ -120,7 +120,7 @@ const Etiqueta: React.FC<{t: number; t0: number; t1: number; text: string; y: nu
   </div>;
 };
 
-export const Film: React.FC<{audio?: boolean}> = ({audio = true}) => {
+export const Film: React.FC<{audio?: boolean; captions?: boolean}> = ({audio = true, captions = true}) => {
   const f = useCurrentFrame(); const t = f / 30;
   const [cx, cy, z] = camAt(t);
   const inScene = t > 3.5 && t < 62.6;
@@ -163,7 +163,7 @@ export const Film: React.FC<{audio?: boolean}> = ({audio = true}) => {
 
       {demoTag ? <div style={{position: 'absolute', right: 90, top: 256, fontFamily: APOIO, fontWeight: 600, fontSize: 22, letterSpacing: '.08em', color: 'rgba(255,255,255,.78)',
         padding: '6px 14px', borderRadius: 10, background: 'rgba(14,27,51,.7)', opacity: P(t, 14.4, .4) * (1 - P(t, 48.9, .3))}}>Dados demonstrativos</div> : null}
-      {cap && t > 4 && t < 62.4 ? <div style={{position: 'absolute', left: 90, right: 90, top: 1370, display: 'flex', justifyContent: 'center', opacity: Math.min(1, (t - cap.start) / .15, (cap.end - t) / .12)}}>
+      {captions && cap && t > 4 && t < 62.4 ? <div style={{position: 'absolute', left: 90, right: 90, top: 1370, display: 'flex', justifyContent: 'center', opacity: Math.min(1, (t - cap.start) / .15, (cap.end - t) / .12)}}>
         <div style={{maxWidth: 900, padding: '14px 26px 16px', borderRadius: 14, background: 'rgba(10,18,34,.84)', fontFamily: APOIO, fontWeight: 600, fontSize: 42, lineHeight: 1.22, color: '#fff', textAlign: 'center'}}>{cap.text}</div>
       </div> : null}
 

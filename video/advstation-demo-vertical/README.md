@@ -13,7 +13,7 @@ Conceito: **"Cada caso tem seu caminho. A gestão precisa acompanhar."**
 | `ADV-Station-Institucional-Vertical.mp4` | Master (−15 LUFS, true peak ≤ −1,5 dBTP) |
 | `ADV-Station-Institucional-Vertical.srt` | Legendas (no máximo 2 linhas, quebras por sentido) |
 | `ADV-Station-Institucional-Vertical-narracao.wav` | Locução separada |
-| `capa.png` | Capa vertical: computador com tela real, título e marca oficial (versão escura do manual) |
+| `capa.png` | Capa vertical: computador com tela real, título e marca oficial (versão escura do manual, sobre a parede marinho) |
 | `marcas-som.txt`, `conferencia.txt` | Tempos de falas, trilha e jingles; ffprobe, loudness e quadros pretos |
 
 **Prévia:** `npx remotion studio src/index.ts` abre a timeline com scrub (modo de revisão). O render é o modo limpo.
