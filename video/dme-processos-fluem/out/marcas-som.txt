@@ -1,43 +1,44 @@
-MARCAS · DME "Processos que fluem com tecnologia" · 38.63 s · 30 fps · trilha original 120 BPM
+MARCAS · DME "Processos que fluem com tecnologia" · 48.13 s · 30 fps · trilha original 120 BPM
 
 FALAS (Lendário, ElevenLabs, velocidade natural)
-  0.12–  2.16  [gancho] Um pedido entra. E para.
-  2.46–  6.50  [barreiras] Espera um e-mail. Espera uma planilha. Espera alguém lembrar.
-  6.80–  9.31  [caminho] O problema não é a equipe. É o caminho.
-  9.76– 11.53  [virada] Agora, o caminho muda.
- 11.78– 18.46  [metodo] A DME faz o diagnóstico, mapeia, padroniza e automatiza. Integra os sistemas.
- 18.71– 20.25  [fluxo] E o caminho volta a andar.
- 22.76– 27.04  [fecho] Então, enquanto o processo flui, você cuida do que faz a empresa crescer.
- 27.39– 29.48  [loop] Um pedido entra. E flui.
- 30.07– 37.27  [assinatura] DME Technology. Processos que fluem com tecnologia. Comente COMERCIAL e receba um diagnóstico.
+  0.12–  2.41  [gancho] Um pedido entra. E para.
+  2.96–  7.90  [barreiras] Espera um e-mail. Espera uma planilha. Espera alguém lembrar.
+  8.40– 11.36  [caminho] O problema não é a equipe. É o caminho.
+ 11.81– 14.33  [virada] Agora, o caminho muda.
+ 14.83– 23.01  [metodo] A DME faz o diagnóstico, mapeia, padroniza e automatiza. Integra os sistemas.
+ 23.51– 25.05  [fluxo] E o caminho volta a andar.
+ 25.51– 29.39  [horas] Da manhã ao fim do dia, cada pedido segue o seu caminho.
+ 30.04– 34.76  [fecho] Então, enquanto o processo flui, você cuida do que faz a empresa crescer.
+ 35.41– 37.80  [loop] Um pedido entra. E flui.
+ 38.60– 46.55  [assinatura] DME Technology. Processos que fluem com tecnologia. Comente COMERCIAL e receba um diagnóstico.
 
 TRILHA E EFEITOS
   0.00  o pedido entra (queda)
-  1.62  IMPACTO na parede
-  2.41  barreira 1 cai
-  3.71  barreira 2 cai
-  4.98  barreira 3 cai
-  6.80  labirinto se forma
-  9.36  SILÊNCIO (0.40 s) antes do "Agora"
-  9.73  "Agora": as paredes giram (dominó)
- 13.56  diagnóstico: scanner
- 14.46  mapeamento: estações
- 15.26  padronização: blocos se encaixam
- 16.25  automação: trilho preenche
- 17.48  integração: cabos conectam
- 18.96  o pedido acelera
- 19.31  estação 1 acende
- 19.49  estação 2 acende
- 19.67  estação 3 acende
- 20.67  horário 1
- 21.27  horário 2
- 21.87  horário 3
- 22.47  horário 4
- 27.34  loop: o pedido entra de novo
- 28.55  a parede se abre
- 28.80  o pedido atravessa
- 30.52  assinatura 1
- 30.52  logo se monta
- 30.64  assinatura 2
- 30.76  assinatura 3
- 34.24  CTA "Comente COMERCIAL e receba um diagnóstico"
+  1.87  IMPACTO na parede
+  2.91  barreira 1 cai
+  4.66  barreira 2 cai
+  6.38  barreira 3 cai
+  8.40  labirinto se forma
+ 11.41  SILÊNCIO (0.40 s) antes do "Agora"
+ 11.78  "Agora": as paredes giram (dominó)
+ 16.61  diagnóstico: scanner
+ 17.86  mapeamento: estações
+ 19.01  padronização: blocos se encaixam
+ 20.30  automação: trilho preenche
+ 22.03  integração: cabos conectam
+ 23.76  o pedido acelera
+ 24.11  estação 1 acende
+ 24.29  estação 2 acende
+ 24.47  estação 3 acende
+ 25.36  horário 1
+ 25.91  horário 2
+ 26.46  horário 3
+ 27.01  horário 4
+ 35.36  loop: o pedido entra de novo
+ 36.88  a parede se abre
+ 37.13  o pedido atravessa
+ 39.05  assinatura 1
+ 39.05  logo se monta
+ 39.17  assinatura 2
+ 39.29  assinatura 3
+ 43.51  CTA "Comente COMERCIAL e receba um diagnóstico"

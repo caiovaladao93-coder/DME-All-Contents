@@ -75,3 +75,16 @@ Todos estão na lista confirmada:
    - **Lendário:** escolhido por você na última peça DME, mais entusiasmado.
    - **Guilherme:** padrão.
    - **Sem voz:** o padrão do repositório.
+
+## Revisão 2 (após a primeira entrega)
+
+O vídeo segue a frase alternativa ("E o caminho volta a andar."), o CTA "Comente COMERCIAL e receba um diagnóstico" e a voz do Lendário.
+
+**Ajustes pedidos pelo cliente:**
+
+- **Método:** os itens surgem quando falados.
+- **Horários:** a fala nova "Da manhã ao fim do dia, cada pedido segue o seu caminho.", com o rótulo "Ao longo do dia".
+- **Fecho:** cartões alinhados para Estratégia, Clientes e Equipe.
+- **Loop:** a frase sai da tela quando o pedido atravessa.
+- **"Agora":** com pausa antes de "o caminho muda".
+- **Ritmo:** mais pausas em todo o vídeo, com 48 s no total.

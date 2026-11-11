@@ -5,10 +5,10 @@ ROOT = __file__.rsplit('/scripts/', 1)[0]
 FPS = 30
 LEG = {x['id']: x.get('legenda', x['text']) for x in json.load(open(f'{ROOT}/voz/falas.json'))}
 # (cena, fala, entrada da voz depois do início da cena, respiro depois da fala, duração mínima da cena)
-PLAN = [('gancho', 'n1', .12, .25, 0), ('barreiras', 'n2', .05, .25, 0), ('caminho', 'n3', .05, .15, 0),
-        ('virada', 'n4', .3, .2, 0), ('metodo', 'n5', .05, .2, 0), ('fluxo', 'n6', .05, .0, 4.0),
-        ('fecho', 'n7', .1, .3, 0), ('loop', 'n8', .05, .35, 0), ('assinatura', 'n9', .25, 1.35, 0)]
-QUEBRAS = {'n5': ['diagnóstico,', 'automatiza.'], 'n7': ['flui,'], 'n9': ['Technology.', 'tecnologia.']}
+PLAN = [('gancho', 'n1', .12, .5, 0), ('barreiras', 'n2', .05, .45, 0), ('caminho', 'n3', .05, .15, 0),
+        ('virada', 'n4', .3, .45, 0), ('metodo', 'n5', .05, .45, 0), ('fluxo', 'n6', .05, .3, 1.9), ('horas', 'n6b', .15, .5, 0),
+        ('fecho', 'n7', .15, .6, 0), ('loop', 'n8', .05, .55, 0), ('assinatura', 'n9', .25, 1.6, 0)]
+QUEBRAS = {'n5': ['diagnóstico,', 'automatiza.'], 'n6b': ['dia,'], 'n7': ['flui,'], 'n9': ['Technology.', 'tecnologia.']}
 t, scenes, words, caps = 0.0, [], {}, []
 for key, fid, lead, tail, mn in PLAN:
     a = json.load(open(f'{ROOT}/src/data/voz/{fid}.json'))['alignment']; dur = a['character_end_times_seconds'][-1]

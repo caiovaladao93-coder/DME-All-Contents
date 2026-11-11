@@ -13,7 +13,7 @@ export const P = (t: number, a: number, d: number, ease: (x: number) => number =
 export const lerp = (a: number, b: number, p: number) => a + (b - a) * p;
 export const clamp = (x: number, a = 0, b = 1) => Math.min(b, Math.max(a, x));
 
-export type SceneKey = 'gancho' | 'barreiras' | 'caminho' | 'virada' | 'metodo' | 'fluxo' | 'fecho' | 'loop' | 'assinatura';
+export type SceneKey = 'gancho' | 'barreiras' | 'caminho' | 'virada' | 'metodo' | 'fluxo' | 'horas' | 'fecho' | 'loop' | 'assinatura';
 export const S = Object.fromEntries(TL.scenes.map((s) => [s.key, s])) as unknown as Record<SceneKey, {t0: number; t1: number; v0: number; v1: number}>;
 const norm = (x: string) => x.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]/g, '');
 /** instante (s) em que a palavra começa a ser dita (alinhamento real da ElevenLabs) */

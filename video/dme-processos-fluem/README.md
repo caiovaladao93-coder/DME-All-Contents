@@ -1,4 +1,4 @@
-# DME · "Processos que fluem com tecnologia" (Reels, 38,6 s)
+# DME · "Processos que fluem com tecnologia" (Reels, 48,1 s · revisão 2)
 
 Vídeo vertical 1080 × 1920, 30 fps, em Remotion. O roteiro está em `roteiros/reels-processos-que-fluem.md`.
 
@@ -6,6 +6,17 @@ Vídeo vertical 1080 × 1920, 30 fps, em Remotion. O roteiro está em `roteiros/
 
 - **Plano-sequência:** a câmera segue um único **pedido** (token de aço) num mundo contínuo, sem cenas separadas.
 - **Ritmo:** 120 BPM, com impacto no gancho e loop literal no fim.
+
+## Revisão 2 (pedidos do cliente)
+
+1. **Método:** cada item da lista só aparece quando é falado.
+2. **Horários:** ganharam contexto.
+   - Fala nova: "Da manhã ao fim do dia, cada pedido segue o seu caminho."
+   - Na tela: o rótulo "Ao longo do dia" e a frase de apoio.
+3. **Estratégia, Clientes e Equipe:** em cartões alinhados, com ícone em aço e descrição curta, sobre fundo escurecido.
+4. **Loop:** quando a parede abre e o pedido cai, a frase sai pela parte de cima da tela.
+5. **"Agora":** pausa de 0,75 s entre "Agora" e "o caminho muda".
+6. **Ritmo:** pausas inseridas nas falas (`scripts/pausas.py`) e respiros maiores entre as cenas. Cada frase fica mais tempo na tela. A duração passou de 38,7 s para 48,1 s.
 
 ## Saídas (`out/`)
 
@@ -40,7 +51,7 @@ Vídeo vertical 1080 × 1920, 30 fps, em Remotion. O roteiro está em `roteiros/
 
 - **Tomadas:** 3 por fala, geradas com as frases vizinhas como contexto (`previous_text`/`next_text`).
 - **Escolha:** por medição de limpeza e timbre, e pela transcrição (speech-to-text da ElevenLabs).
-- **Usadas:** n1:1, n2:1, n3:3, n4:1, n5:2, n6:2, n7:2, n8:3, n9:1.
+- **Usadas:** n1:1, n2:1, n3:3, n4:1, n5:2, n6:2, n6b:1, n7:2, n8:3, n9:1.
 - **Descarte:** a n6-1 dizia "volta a lhe andar".
 - **Pronúncia de "DME":** o texto enviado grafa "Dê-Eme-É", e todas as tomadas saíram "DME" na transcrição.
 
@@ -55,7 +66,7 @@ Vídeo vertical 1080 × 1920, 30 fps, em Remotion. O roteiro está em `roteiros/
 ```bash
 NODE_USE_ENV_PROXY=1 NODE_EXTRA_CA_CERTS=/root/.ccr/ca-bundle.crt node scripts/gerar_voz.mjs --takes=3
 python3 scripts/escolher_take.py n1,...,n9 --aplicar --forcar=n1:1,n2:1,n3:3,n4:1,n5:2,n6:2,n7:2,n8:3,n9:1
-cp voz/n*.mp3 public/assets/audio/falas/ && cp voz/n*.json src/data/voz/
+python3 scripts/pausas.py          # aplica as pausas às tomadas escolhidas e copia para src/data/voz e public
 python3 scripts/linha_tempo.py && python3 scripts/trilha.py
 node scripts/stills.mjs out/testes 0,60,300          # quadros de teste
 npx remotion render src/index.ts DMEProcessosFluem out/render-bruto.mp4 --codec=h264 --crf=16 --audio-codec=aac --audio-bitrate=192k
@@ -76,4 +87,4 @@ Os tempos vêm das palavras reais (`wt`).
 
 - **Áudio:** conferido por medição e transcrição, não por escuta humana.
 - **Interface do Reels:** a sobreposição não foi testada no aplicativo. O texto fica entre y 250 e 1580, com margens de 90 px.
-- **Duração:** 38,6 s, acima da faixa padrão de 30 a 35 s. A locução do Lendário, em velocidade natural, ocupa cerca de 32 s.
+- **Duração:** 48,1 s, acima da faixa padrão de 30 a 35 s. O aumento foi pedido na revisão para dar mais respiro; dá para encurtar reduzindo as pausas em `scripts/pausas.py` e os respiros em `scripts/linha_tempo.py`.

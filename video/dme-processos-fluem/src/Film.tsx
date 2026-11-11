@@ -23,7 +23,8 @@ const T = {
   sig: S.assinatura.t0, proc: wt('assinatura', 'Processos'), cta: wt('assinatura', 'Comente'),
 };
 const HOURS = ['09:00', '11:00', '15:00', '18:00'];
-const HT = HOURS.map((_, i) => T.monta + .32 + i * .6);
+const HM = wt('horas', 'manhã'), HC = wt('horas', 'cada');
+const HT = HOURS.map((_, i) => S.horas.t0 + i * (HC - .3 - S.horas.t0) / 3);   // 09:00 em manhã … 18:00 antes de cada
 
 // ── o pedido (posição no mundo)
 const tokenY = (t: number): number => {
@@ -43,7 +44,7 @@ const CAM: number[][] = [
   [0, 0, 250, 1.25, 0], [T.para, 0, 290, 1.25, 0], [T.esp[0] - .1, 0, 300, 1.2, 0], [S.barreiras.v1 + .1, 0, 430, .62, 0],
   [S.caminho.t0 + .1, 0, 440, .62, 0], [T.silence0, 0, 600, .36, -3], [T.agora + .02, 0, 600, .36, -3],
   [S.virada.t1 - .05, 0, 760, .5, 0], [S.metodo.t0 + .75, 0, 832, .9, 0], [T.anda + .25, 0, 832, .9, 0],
-  [T.andar + .35, 0, 1160, .9, 0], [T.monta + .55, 0, 1150, .32, 0], [S.fecho.t0 + .2, 0, 1150, .3, 0], [T.loop - .001, 0, 1050, .26, 0],
+  [T.andar + .35, 0, 1160, .9, 0], [T.monta + .55, 0, 1150, .32, 0], [S.horas.t1, 0, 1150, .3, 0], [T.loop - .001, 0, 1050, .26, 0],
   [T.loop, 0, 250, 1.25, 0], [T.eFlui + .1, 0, 290, 1.25, 0], [S.loop.t1, 0, 1100, 1.1, 0],
 ];
 const shake = (t: number) => {
@@ -92,6 +93,12 @@ const CARDS = [
   {k: 'bell', label: 'Lembrete', p0: [0, 330], p1: [-330, 1400], i: 2},
 ];
 const NODES = [900, 1150, 1400];
+const ic = (d: React.ReactNode) => <svg viewBox="0 0 48 48" width="56" height="56" fill="none" stroke="#1C1F22" strokeWidth="3.4" strokeLinecap="round" strokeLinejoin="round">{d}</svg>;
+const VIDA = [
+  {w: 'Estratégia', d: 'Decisões e próximos passos', icon: ic(<><circle cx="24" cy="24" r="16" /><circle cx="24" cy="24" r="8" /><circle cx="24" cy="24" r="1.5" fill="#1C1F22" /></>)},
+  {w: 'Clientes', d: 'Relacionamento e atendimento', icon: ic(<><circle cx="24" cy="17" r="7" /><path d="M10 40c2-8 8-12 14-12s12 4 14 12" /></>)},
+  {w: 'Equipe', d: 'Pessoas e desenvolvimento', icon: ic(<><circle cx="17" cy="18" r="6" /><circle cx="33" cy="18" r="6" /><path d="M5 38c1.5-6 6-9 12-9s10.5 3 12 9M27 30c1-.6 3.5-1 6-1 6 0 10.5 3 12 9" /></>)},
+];
 const STATIONS = ['Pedido', 'Aprovação', 'Entrega'];
 const Card: React.FC<{t: number; c: typeof CARDS[number]}> = ({t, c}) => {
   const tin = T.esp[c.i] - .05, a = P(t, tin, .45, BACK), gone = P(t, T.agora + .05, .3, EASE_IN), back = P(t, T.integra - .05 + c.i * .14, .55, BACK);
@@ -173,14 +180,15 @@ const TokenBox: React.FC<{x: number; y: number; s?: number; speed?: number}> = (
 
 // ── tipografia: frase montada palavra por palavra (desfoque de movimento); saída para cima antes da próxima entrar
 type Seg = string | [string];
-const Phrase: React.FC<{t: number; tin: number; tout: number; segs: Seg[]; size: number; top: number; dark?: boolean; align?: 'left' | 'center'}> = ({t, tin, tout, segs, size, top, dark, align = 'left'}) => {
-  if (t < tin - .01 || t > tout + .32) return null;
+const Phrase: React.FC<{t: number; tin: number; tout: number; segs: Seg[]; size: number; top: number; dark?: boolean; align?: 'left' | 'center'; up?: boolean}> = ({t, tin, tout, segs, size, top, dark, align = 'left', up}) => {
+  if (t < tin - .01 || t > tout + (up ? .7 : .32)) return null;
   const words: Array<[string, boolean]> = [];
   segs.forEach((s) => (typeof s === 'string' ? s : s[0]).split(' ').filter(Boolean).forEach((w) => words.push([w, typeof s !== 'string'])));
-  const q = P(t, tout, .3, EASE_IN);
+  const q = P(t, tout, up ? .65 : .3, EASE_IN);
   return <div style={{position: 'absolute', left: 90, right: 90, top, textAlign: align, fontFamily: HEAD, fontWeight: 800, fontSize: size, lineHeight: 1.04, letterSpacing: '-.025em',
-    color: dark ? C.black : C.ink, opacity: 1 - q, transform: `translateY(${(-40 * q).toFixed(1)}px)`, filter: q > 0 ? `blur(${(8 * q).toFixed(1)}px)` : undefined}}>
+    color: dark ? C.black : C.ink, opacity: up ? 1 : 1 - q, transform: `translateY(${((up ? -(top + 400) : -40) * q).toFixed(1)}px)`, filter: q > 0 && !up ? `blur(${(8 * q).toFixed(1)}px)` : undefined}}>
     {words.map(([w, acc], i) => { const p = tin < 0 ? 1 : P(t, tin + i * .055, .32);
+      if (w === '|') return <br key={i} />;
       return <span key={i} style={{display: 'inline-block', marginRight: '.24em', color: acc ? C.accent : undefined, opacity: p, transform: `translateY(${((1 - p) * 36).toFixed(1)}px)`,
         filter: p < 1 ? `blur(${((1 - p) * 10).toFixed(1)}px)` : undefined}}>{w}</span>; })}
   </div>;
@@ -255,9 +263,10 @@ export const Film: React.FC<{audio?: boolean; still?: number}> = ({audio = true,
       {(() => { const v = P(t, S.metodo.t0 + .15, .4) * (1 - P(t, T.integra - .35, .3, EASE_IN)); if (v <= 0) return null;
         const items = [['Diagnóstico', T.diag], ['Mapeamento', T.mapa], ['Padronização', T.padr], ['Automação', T.auto]] as const;
         return <div style={{position: 'absolute', left: 90, top: 270, opacity: v, transform: `translateY(${(-30 * P(t, T.integra - .35, .3, EASE_IN)).toFixed(1)}px)`}}>
-          {items.map(([w, ta], i) => { const on = P(t, ta - .08, .2) * (i < 3 ? 1 - P(t, items[i + 1][1] - .08, .2) : 1), seen = t > ta;
-            return <div key={w} style={{display: 'flex', alignItems: 'center', gap: 22, height: 86, fontFamily: HEAD, fontWeight: 800, fontSize: 64, letterSpacing: '-.02em',
-              color: on > .5 ? C.ink : seen ? 'rgba(242,244,246,.55)' : 'rgba(192,198,204,.3)', transform: `translateX(${(on * 14).toFixed(1)}px)`}}>
+          {items.map(([w, ta], i) => { const on = P(t, ta - .08, .2) * (i < 3 ? 1 - P(t, items[i + 1][1] - .08, .2) : 1), app = P(t, ta - .12, .4);
+            return <div key={w} style={{display: 'flex', alignItems: 'center', gap: 22, height: 86, fontFamily: HEAD, fontWeight: 800, fontSize: 64, letterSpacing: '-.02em', opacity: app,
+              filter: app < 1 ? `blur(${((1 - app) * 8).toFixed(1)}px)` : undefined,
+              color: on > .5 ? C.ink : 'rgba(242,244,246,.5)', transform: `translateX(${(on * 14 + (1 - app) * -30).toFixed(1)}px)`}}>
               <div style={{width: 14, height: 14 + on * 40, borderRadius: 7, background: on > .3 ? C.accent : 'rgba(192,198,204,.35)'}} />{w}</div>; })}
         </div>; })()}
       <Phrase t={t} tin={T.integra - .05} tout={S.metodo.t1 - .2} segs={['Sistemas ', ['conectados.']]} size={100} top={300} />
@@ -265,19 +274,31 @@ export const Film: React.FC<{audio?: boolean; still?: number}> = ({audio = true,
         padding: '8px 16px', border: `1px solid ${C.line}`, borderRadius: 10, opacity: P(t, T.integra + .2, .3) * (1 - P(t, S.metodo.t1 - .1, .2))}}>Exemplo ilustrativo</div> : null}
       <Phrase t={t} tin={T.anda - .05} tout={T.monta - .12} segs={['E o caminho volta a ', ['andar.']]} size={96} top={300} />
       {/* montagem de tempo: horário troca no mesmo lugar */}
-      {HOURS.map((h, i) => <Phrase key={h} t={t} tin={HT[i]} tout={i < 3 ? HT[i + 1] - .3 : S.fluxo.t1 - .2} segs={i === 3 ? [[h]] : [h]} size={200} top={330} align="center" />)}
+      {(() => { const a = P(t, HM - .35, .4), q = P(t, S.horas.t1 - .3, .3, EASE_IN); if (a <= 0 || q >= 1) return null;
+        return <div style={{position: 'absolute', left: 90, right: 90, top: 280, textAlign: 'center', fontFamily: UI, fontWeight: 700, fontSize: 40, letterSpacing: '.18em', textTransform: 'uppercase',
+          color: C.silver, opacity: a * (1 - q)}}>Ao longo do dia</div>; })()}
+      {HOURS.map((h, i) => { const cut = i < 3 ? HT[i + 1] - .02 : S.horas.t1 - .3; const a = P(t, HT[i], .14), q = i < 3 ? P(t, cut - .12, .12) : P(t, cut, .3, EASE_IN);
+        if (a <= 0 || q >= 1) return null;
+        return <div key={h} style={{position: 'absolute', left: 90, right: 90, top: 340, textAlign: 'center', fontFamily: HEAD, fontWeight: 800, fontSize: 210, letterSpacing: '-.03em', lineHeight: 1,
+          color: i === 3 ? C.accent : C.ink, opacity: a * (1 - q), transform: `translateY(${((1 - a) * 24 - q * 24).toFixed(1)}px)`}}>{h}</div>; })}
+      <Phrase t={t} tin={HC - .1} tout={S.horas.t1 - .3} segs={['Cada pedido segue | o seu ', ['caminho.']]} size={64} top={590} align="center" />
       <Phrase t={t} tin={T.entao - .05} tout={T.voce - .38} segs={['Então, enquanto o processo ', ['flui,']]} size={96} top={300} />
       <Phrase t={t} tin={T.voce - .05} tout={S.fecho.t1 - .25} segs={['você cuida do que faz a empresa ', ['crescer.']]} size={92} top={300} />
-      {/* chips da vida, em 3 profundidades */}
-      {[['Estratégia', 250, 980, 1], ['Clientes', 620, 1200, .8], ['Equipe', 300, 1400, .66]].map(([w, x, y, d], i) => {
-        const a = P(t, T.voce + .2 + i * .18, .5, BACK) * (1 - P(t, S.fecho.t1 - .3, .3, EASE_IN)); if (a <= 0) return null;
-        const dy = Math.sin((t + i) * 1.6) * 10 * (d as number);
-        return <div key={i} style={{position: 'absolute', left: x as number, top: (y as number) + dy, transform: `scale(${((d as number) * a).toFixed(3)})`, transformOrigin: 'left center', opacity: .55 + .45 * (d as number),
-          padding: '22px 38px', borderRadius: 60, background: `linear-gradient(180deg, #2A2F35, ${C.graphite})`, border: '2px solid rgba(192,198,204,.3)', boxShadow: '0 24px 40px rgba(0,0,0,.5)',
-          fontFamily: UI, fontWeight: 700, fontSize: 46, color: C.ink, display: 'flex', alignItems: 'center', gap: 16}}>
-          <div style={{width: 16, height: 16, borderRadius: 8, background: C.accent}} />{w}</div>; })}
-      <Phrase t={t} tin={T.loop + .02} tout={S.loop.t1 - .2} segs={['Um pedido entra.']} size={112} top={290} />
-      <Phrase t={t} tin={T.eFlui - .08} tout={S.loop.t1 - .2} segs={['E ', ['flui.']]} size={112} top={530} />
+      {/* fecho: o que o gestor passa a cuidar — cartões alinhados, mesmo peso */}
+      {(() => { const v = P(t, T.voce - .1, .5) * (1 - P(t, S.fecho.t1 - .35, .3, EASE_IN)); if (v <= 0) return null;
+        return <AbsoluteFill style={{background: 'linear-gradient(180deg, rgba(10,11,12,0) 0%, rgba(10,11,12,.72) 40%, rgba(10,11,12,.8) 100%)', opacity: v}} />; })()}
+      {VIDA.map((c, i) => {
+        const a = P(t, T.voce + .35 + i * .28, .55, EASE_OUT), q = P(t, S.fecho.t1 - .35, .3, EASE_IN); if (a <= 0 || q >= 1) return null;
+        return <div key={c.w} style={{position: 'absolute', left: 90, width: 900, top: 820 + i * 196, height: 168, boxSizing: 'border-box', opacity: a * (1 - q),
+          transform: `translateY(${((1 - a) * 40 - q * 20).toFixed(1)}px)`, display: 'flex', alignItems: 'center', gap: 34, padding: '0 40px',
+          borderRadius: 26, background: `linear-gradient(180deg, #24282D, ${C.graphite})`, border: '1.5px solid rgba(192,198,204,.22)', boxShadow: '0 26px 44px rgba(0,0,0,.5), inset 0 1px 0 rgba(255,255,255,.08)'}}>
+          <div style={{position: 'absolute', left: 0, top: 30, bottom: 30, width: 6, borderRadius: 3, background: C.accent}} />
+          <div style={{width: 96, height: 96, borderRadius: 22, background: STEEL, display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 18px rgba(0,0,0,.45), inset 0 2px 0 rgba(255,255,255,.5)'}}>{c.icon}</div>
+          <div><div style={{fontFamily: HEAD, fontWeight: 800, fontSize: 58, color: C.ink, letterSpacing: '-.02em', lineHeight: 1.05}}>{c.w}</div>
+            <div style={{fontFamily: UI, fontWeight: 600, fontSize: 32, color: C.soft, marginTop: 6}}>{c.d}</div></div>
+        </div>; })}
+      <Phrase t={t} tin={T.loop + .02} tout={T.flui + .45} segs={['Um pedido entra.']} size={112} top={290} up />
+      <Phrase t={t} tin={T.eFlui - .08} tout={T.flui + .45} segs={['E ', ['flui.']]} size={112} top={530} up />
 
       {/* ── assinatura */}
       {t > T.sig - .1 ? <AbsoluteFill style={{opacity: sigP}}>
