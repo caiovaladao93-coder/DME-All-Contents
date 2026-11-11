@@ -1,0 +1,43 @@
+MARCAS · DME "Processos que fluem com tecnologia" · 38.63 s · 30 fps · trilha original 120 BPM
+
+FALAS (Lendário, ElevenLabs, velocidade natural)
+  0.12–  2.16  [gancho] Um pedido entra. E para.
+  2.46–  6.50  [barreiras] Espera um e-mail. Espera uma planilha. Espera alguém lembrar.
+  6.80–  9.31  [caminho] O problema não é a equipe. É o caminho.
+  9.76– 11.53  [virada] Agora, o caminho muda.
+ 11.78– 18.46  [metodo] A DME faz o diagnóstico, mapeia, padroniza e automatiza. Integra os sistemas.
+ 18.71– 20.25  [fluxo] E o caminho volta a andar.
+ 22.76– 27.04  [fecho] Então, enquanto o processo flui, você cuida do que faz a empresa crescer.
+ 27.39– 29.48  [loop] Um pedido entra. E flui.
+ 30.07– 37.27  [assinatura] DME Technology. Processos que fluem com tecnologia. Comente COMERCIAL e receba um diagnóstico.
+
+TRILHA E EFEITOS
+  0.00  o pedido entra (queda)
+  1.62  IMPACTO na parede
+  2.41  barreira 1 cai
+  3.71  barreira 2 cai
+  4.98  barreira 3 cai
+  6.80  labirinto se forma
+  9.36  SILÊNCIO (0.40 s) antes do "Agora"
+  9.73  "Agora": as paredes giram (dominó)
+ 13.56  diagnóstico: scanner
+ 14.46  mapeamento: estações
+ 15.26  padronização: blocos se encaixam
+ 16.25  automação: trilho preenche
+ 17.48  integração: cabos conectam
+ 18.96  o pedido acelera
+ 19.31  estação 1 acende
+ 19.49  estação 2 acende
+ 19.67  estação 3 acende
+ 20.45  horário 1
+ 21.07  horário 2
+ 21.69  horário 3
+ 22.31  horário 4
+ 27.34  loop: o pedido entra de novo
+ 28.55  a parede se abre
+ 28.80  o pedido atravessa
+ 30.52  assinatura 1
+ 30.52  logo se monta
+ 30.64  assinatura 2
+ 30.76  assinatura 3
+ 34.24  CTA "Comente COMERCIAL e receba um diagnóstico"
