@@ -35,7 +35,6 @@ const R = (cx: number, cy: number, w: number, dy = 0): Cam => [sx(cx), sy(cy) - 
 type Cam = [number, number, number];
 const EQUIP: Cam = [MON.W / 2, MON.H - 960 / (1080 / MON.W), 1080 / MON.W];          // equipamento inteiro (largura da foto = 1080)
 const FRONT: Cam = [SC.x + SC.w / 2, SC.y + SC.h / 2 + 60, 1010 / SC.w];             // tela quase frontal, moldura parcialmente visível
-const CHIN: Cam = [MON.W / 2, MON.chinY + 150, 3.2];                                  // queixo branco do monitor (conduz ao marfim da vinheta)
 
 // ── roteiro da câmera (tempo, câmera) e das telas
 const T = {
@@ -53,7 +52,7 @@ const KEYS: Array<[number, Cam]> = [
   [29.7, FRONT], [30.3, EQUIP], [31.2, EQUIP], [32.6, FRONT], [33.6, FRONT], [34.6, R(1190, 350, 640)], [36.0, R(1190, 350, 640)],   // troca de produto pelo equipamento; PG administrativo
   [36.8, R(690, 410, 800)], [37.9, R(690, 410, 800)], [38.9, FRONT], [43.4, FRONT],                                                   // judicial (painel) → visão da tela
   [44.3, R(690, 190, 820)], [45.3, R(1470, 190, 820)], [45.8, R(1470, 190, 820)], [46.6, R(770, 676, 960)], [47.6, R(770, 676, 960)], // gerencial: operação → financeiro
-  [49.0, FRONT], [50.6, EQUIP], [58.0, EQUIP], [61.2, [EQUIP[0], EQUIP[1] + 280, EQUIP[2] * 1.12]], [62.45, CHIN],                    // portfólio; o queixo branco conduz à vinheta
+  [49.0, FRONT], [50.6, EQUIP], [58.0, EQUIP], [61.4, [EQUIP[0], EQUIP[1] + 200, EQUIP[2] * 1.06]],                                   // portfólio; a borda do queixo branco conduz à vinheta
 ];
 const camAt = (t: number): Cam => {
   if (t <= KEYS[0][0]) return KEYS[0][1];
@@ -125,7 +124,8 @@ export const Film: React.FC<{audio?: boolean}> = ({audio = true}) => {
   const f = useCurrentFrame(); const t = f / 30;
   const [cx, cy, z] = camAt(t);
   const inScene = t > 3.5 && t < 62.6;
-  const toCream = P(t, 62.05, .45, EIO);                      // o queixo branco do monitor vira o marfim da vinheta
+  const toCream = P(t, 61.55, .9, EIO);                       // o marfim sobe a partir da borda do queixo branco do monitor
+  const chinTop = 960 + (MON.chinY - cy) * z;
   const detail = Math.min(1, Math.max(0, (z - .5) / .4));    // 0 = equipamento/tela, 1 = detalhe
   const demoTag = t > 14.3 && t < 49.2;
   const cap = (TL.captions as any[]).find((c) => t >= c.start && t < c.end);
@@ -139,7 +139,7 @@ export const Film: React.FC<{audio?: boolean}> = ({audio = true}) => {
         </div>
         {/* leitura dos títulos sobre a interface (mais forte no detalhe) */}
         <AbsoluteFill style={{background: 'linear-gradient(180deg, rgba(14,27,51,.92) 0%, rgba(14,27,51,.75) 18%, rgba(14,27,51,0) 34%)', opacity: .35 + .65 * detail}} />
-        <AbsoluteFill style={{background: '#fbf8f1', opacity: toCream}} />
+        {toCream > 0 ? <AbsoluteFill style={{background: 'radial-gradient(circle at 30% 20%, #fffaf0 0%, #f7f1e3 55%, #eadfca 100%)', clipPath: `inset(${(chinTop * (1 - toCream)).toFixed(1)}px 0 0 0)`}} /> : null}
       </AbsoluteFill> : null}
 
       {/* camada de leitura: uma mensagem por vez */}
