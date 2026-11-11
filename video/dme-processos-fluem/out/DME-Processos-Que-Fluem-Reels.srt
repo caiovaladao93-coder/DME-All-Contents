@@ -1,67 +1,75 @@
 1
-00:00:00,120 --> 00:00:02,413
+00:00:00,120 --> 00:00:02,663
 Um pedido entra. E para.
 
 2
-00:00:02,463 --> 00:00:03,763
+00:00:02,963 --> 00:00:04,339
 Espera um e-mail.
 
 3
-00:00:03,763 --> 00:00:05,029
+00:00:04,713 --> 00:00:06,136
 Espera uma planilha.
 
 4
-00:00:05,029 --> 00:00:06,753
+00:00:06,429 --> 00:00:08,153
 Espera alguém lembrar.
 
 5
-00:00:06,803 --> 00:00:08,486
+00:00:08,403 --> 00:00:10,162
 O problema não é a equipe.
 
 6
-00:00:08,486 --> 00:00:09,561
+00:00:10,536 --> 00:00:11,611
 É o caminho.
 
 7
-00:00:09,761 --> 00:00:11,776
+00:00:11,811 --> 00:00:14,576
 Agora, o caminho muda.
 
 8
-00:00:11,776 --> 00:00:14,458
+00:00:14,826 --> 00:00:17,688
 A DME faz o diagnóstico,
 
 9
-00:00:14,458 --> 00:00:17,128
+00:00:17,858 --> 00:00:21,393
 mapeia, padroniza e automatiza.
 
 10
-00:00:17,128 --> 00:00:18,713
+00:00:21,678 --> 00:00:23,263
 Integra os sistemas.
 
 11
-00:00:18,713 --> 00:00:20,496
+00:00:23,513 --> 00:00:25,296
 E o caminho volta a andar.
 
 12
-00:00:22,763 --> 00:00:24,539
-Então, enquanto o processo flui,
+00:00:25,513 --> 00:00:27,214
+Da manhã ao fim do dia,
 
 13
-00:00:24,539 --> 00:00:27,285
-você cuida do que faz a empresa crescer.
+00:00:27,311 --> 00:00:29,639
+cada pedido segue o seu caminho.
 
 14
-00:00:27,385 --> 00:00:29,725
-Um pedido entra. E flui.
+00:00:30,039 --> 00:00:32,030
+Então, enquanto o processo flui,
 
 15
-00:00:30,075 --> 00:00:31,805
-DME Technology.
+00:00:32,265 --> 00:00:35,011
+você cuida do que faz a empresa crescer.
 
 16
-00:00:31,805 --> 00:00:34,336
-Processos que fluem com tecnologia.
+00:00:35,411 --> 00:00:38,051
+Um pedido entra. E flui.
 
 17
-00:00:34,336 --> 00:00:37,523
+00:00:38,601 --> 00:00:40,465
+DME Technology.
+
+18
+00:00:40,631 --> 00:00:43,238
+Processos que fluem com tecnologia.
+
+19
+00:00:43,612 --> 00:00:46,799
 Comente COMERCIAL e receba um diagnóstico.
