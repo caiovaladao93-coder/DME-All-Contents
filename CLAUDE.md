@@ -10,6 +10,15 @@ Repositório de conteúdo da **DME Technology**: roteiros e vídeos curtos (Reel
 4. Gere o vídeo com a skill `motion-graphics-video`. Parta do vídeo `video/reels-ferias-v2/video.html` como modelo: ele já traz o motor `render(t)`, os helpers, o logo animado e os padrões de cena.
 5. Faça a conferência obrigatória do prompt mestre: folha de contato, quadro 0 legível, capa 3:4, ffprobe e QA de movimento. Só então faça o commit e o push.
 
+## Skill `remotion-motion-graphics` (`.claude/skills/`)
+
+Skill de terceiros (`haidrrrry/claude-remotion-skill`) com técnica de animação em Remotion: curvas de easing, molas, entradas e saídas, verificação por quadros. Use-a como **referência técnica**. Quando ela conflitar com a marca ou com o briefing, valem a marca e o briefing:
+
+- **Granulado, vinheta e fundo "nunca liso":** não usar. Vale a estética de cada marca (DME sem glow nem efeitos; ADV com fundo marinho limpo).
+- **Ken Burns e "respiração" contínua:** não aplicar onde o briefing pede câmera parada durante a leitura ou a observação (peças ADV).
+- **Escalonamento por palavra ou letra:** não usar quando o briefing proíbe animação por letra.
+- **Tema único e tempos derivados de `fps`:** boas práticas; adote sem quebrar os projetos que já usam `timeline.json`.
+
 ## Marca
 
 - **Cores:** #0A0B0C (fundo), #1C1F22 (superfícies), #264B71 (profundidade e assinatura), #C0C6CC (aço), #3A6EA5 (destaque, só na palavra-chave).
