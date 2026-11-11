@@ -14,7 +14,7 @@ loadFonts();
 // ── tempos (palavras reais)
 const T = {
   para: wt('gancho', 'para'), esp: [wt('barreiras', 'Espera', 0), wt('barreiras', 'Espera', 1), wt('barreiras', 'Espera', 2)],
-  prob: wt('caminho', 'problema'), eCam: wt('caminho', 'É'), silence0: S.caminho.v1 + .05,
+  prob: wt('caminho', 'problema'), eCam: wt('caminho', 'É', 1), silence0: S.caminho.v1 + .05,
   agora: wt('virada', 'Agora'), muda: wt('virada', 'caminho'),
   diag: wt('metodo', 'diagnóstico'), mapa: wt('metodo', 'mapeia'), padr: wt('metodo', 'padroniza'), auto: wt('metodo', 'automatiza'), integra: wt('metodo', 'Integra'),
   anda: wt('fluxo', 'E'), andar: wt('fluxo', 'andar'), monta: S.fluxo.v1 + .1,
@@ -255,8 +255,8 @@ export const Film: React.FC<{audio?: boolean; still?: number}> = ({audio = true,
       <Phrase t={t} tin={T.esp[0] - .05} tout={T.esp[1] - .4} segs={['Espera um ', ['e-mail.']]} size={100} top={300} />
       <Phrase t={t} tin={T.esp[1] - .05} tout={T.esp[2] - .4} segs={['Espera uma ', ['planilha.']]} size={100} top={300} />
       <Phrase t={t} tin={T.esp[2] - .05} tout={S.barreiras.t1 - .1} segs={['Espera alguém ', ['lembrar.']]} size={100} top={300} />
-      <Phrase t={t} tin={T.prob - .1} tout={T.eCam - .4} segs={['O problema não é a equipe.']} size={96} top={300} />
-      <Phrase t={t} tin={T.eCam - .05} tout={T.agora - .32} segs={['É o ', ['caminho.']]} size={120} top={300} />
+      <Phrase t={t} tin={T.prob - .1} tout={T.agora - .32} segs={['O problema não é a equipe.']} size={96} top={300} />
+      <Phrase t={t} tin={T.eCam - .05} tout={T.agora - .32} segs={['É o ', ['caminho.']]} size={120} top={540} />
       <Phrase t={t} tin={T.agora - .02} tout={T.muda - .5} segs={['Agora']} size={250} top={330} dark />
       <Phrase t={t} tin={T.muda - .15} tout={S.virada.t1 - .25} segs={['o caminho ', ['muda.']]} size={120} top={300} dark />
       {/* lista do método: item ativo acende na palavra falada */}

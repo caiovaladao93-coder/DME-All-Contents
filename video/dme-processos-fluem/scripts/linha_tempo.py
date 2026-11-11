@@ -21,6 +21,7 @@ for key, fid, lead, tail, mn in PLAN:
         if not cur: st = a['character_start_times_seconds'][i]
         cur += ch; en = a['character_end_times_seconds'][i]
     if cur: ws.append([cur, round(v0 + st, 3), round(v0 + en, 3)])
+    ws = [w for w in ws if not (w[0].startswith('<') or w[0].startswith('time=') or w[0] == '/>')]  # marcações <break>
     disp = [[re.sub(r'^Dê-Eme-É', 'DME', w[0]).replace('comercial', 'COMERCIAL'), w[1], w[2]] for w in ws]
     block = []
     for j, w in enumerate(disp):

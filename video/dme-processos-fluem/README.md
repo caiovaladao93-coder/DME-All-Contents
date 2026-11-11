@@ -18,6 +18,16 @@ Vídeo vertical 1080 × 1920, 30 fps, em Remotion. O roteiro está em `roteiros/
 5. **"Agora":** pausa de 0,75 s entre "Agora" e "o caminho muda".
 6. **Ritmo:** pausas inseridas nas falas (`scripts/pausas.py`) e respiros maiores entre as cenas. Cada frase fica mais tempo na tela. A duração passou de 38,7 s para 48,1 s.
 
+## Revisão 3
+
+- **"O problema não é a equipe.":** fica na tela, e "É o caminho." entra embaixo quando é falado. As duas frases saem juntas, antes do "Agora".
+- **Voz distorcida em "É o caminho" e "Agora":** as tomadas antigas (n3-3 e n4-1) destoavam das demais na medição (tom muito mais agudo, timbre mais escuro).
+  - Foram regravadas com stability 0.5 e style 0.25.
+  - As pausas agora são geradas pela própria voz (`<break>` da ElevenLabs), em vez de inseridas por corte.
+  - Tomadas usadas: n3-5 (0,64 s depois de "equipe.") e n4-6 (0,87 s depois de "Agora.").
+  - Transcrição conferida.
+- **Duração:** 48,9 s.
+
 ## Saídas (`out/`)
 
 | Arquivo | O que é |
@@ -51,7 +61,7 @@ Vídeo vertical 1080 × 1920, 30 fps, em Remotion. O roteiro está em `roteiros/
 
 - **Tomadas:** 3 por fala, geradas com as frases vizinhas como contexto (`previous_text`/`next_text`).
 - **Escolha:** por medição de limpeza e timbre, e pela transcrição (speech-to-text da ElevenLabs).
-- **Usadas:** n1:1, n2:1, n3:3, n4:1, n5:2, n6:2, n6b:1, n7:2, n8:3, n9:1.
+- **Usadas:** n1:1, n2:1, n3:5, n4:6, n5:2, n6:2, n6b:1, n7:2, n8:3, n9:1.
 - **Descarte:** a n6-1 dizia "volta a lhe andar".
 - **Pronúncia de "DME":** o texto enviado grafa "Dê-Eme-É", e todas as tomadas saíram "DME" na transcrição.
 

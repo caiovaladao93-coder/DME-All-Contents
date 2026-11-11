@@ -9,11 +9,13 @@
  },
  {
   "id": "n3",
-  "text": "O problema não é a equipe. É o caminho."
+  "text": "O problema não é a equipe. <break time=\"0.6s\" /> É o caminho.",
+  "legenda": "O problema não é a equipe. É o caminho."
  },
  {
   "id": "n4",
-  "text": "Agora, o caminho muda."
+  "text": "Agora. <break time=\"0.8s\" /> O caminho muda.",
+  "legenda": "Agora, o caminho muda."
  },
  {
   "id": "n5",

@@ -4,12 +4,11 @@ Saída: voz/<id>.mp3 e .json, copiados para src/data/voz e public/assets/audio/f
 import json, shutil, subprocess
 import numpy as np
 SR = 44100
-TOMADA = {'n1': 1, 'n2': 1, 'n3': 3, 'n4': 1, 'n5': 2, 'n6': 2, 'n6b': 1, 'n7': 2, 'n8': 3, 'n9': 1}
+TOMADA = {'n1': 1, 'n2': 1, 'n3': 5, 'n4': 6, 'n5': 2, 'n6': 2, 'n6b': 1, 'n7': 2, 'n8': 3, 'n9': 1}
 PAUSAS = {  # fala: [(palavra, segundos de silêncio a inserir depois dela)]
     'n1': [('entra.', .25)],
     'n2': [('e-mail.', .45), ('planilha.', .45)],
-    'n3': [('equipe.', .45)],
-    'n4': [('Agora,', .75)],
+    # n3 e n4: pausas geradas pela própria voz (<break> da ElevenLabs), sem corte
     'n5': [('diagnóstico,', .35), ('mapeia,', .35), ('padroniza', .3), ('automatiza.', .5)],
     'n6b': [('dia,', .3)],
     'n7': [('flui,', .45)],
