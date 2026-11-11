@@ -13,7 +13,7 @@ Esta é uma evolução de `video/advstation-demo-vertical`, com o texto de narra
 | `ADV-Station-Institucional-Vertical.mp4` | Master (−15 LUFS, true peak ≤ −1,5 dBTP) |
 | `ADV-Station-Institucional-Vertical.srt` | Legendas |
 | `ADV-Station-Institucional-Vertical-narracao.wav` | Locução separada |
-| `capa.png` | Capa: computador com a tela real de clientes, título e marca oficial (versão escura, sobre a parede marinho) |
+| `capa.png` | Capa: quadro de 6,2 s (computador com a tela real de clientes e "Cada caso tem seu caminho") e marca oficial na versão escura, sobre a parede marinho |
 | `marcas-som.txt`, `conferencia.txt` | Marcas de áudio e conferência técnica |
 
 ## Sequência
