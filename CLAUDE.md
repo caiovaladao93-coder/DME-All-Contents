@@ -10,6 +10,10 @@ Repositório de conteúdo da **DME Technology**: roteiros e vídeos curtos (Reel
 4. Gere o vídeo com a skill `motion-graphics-video`. Parta do vídeo `video/reels-ferias-v2/video.html` como modelo: ele já traz o motor `render(t)`, os helpers, o logo animado e os padrões de cena.
 5. Faça a conferência obrigatória do prompt mestre: folha de contato, quadro 0 legível, capa 3:4, ffprobe e QA de movimento. Só então faça o commit e o push.
 
+## Skill `motion-graphics-video` (`.claude/skills/`)
+
+Skill da conta do usuário, sincronizada no claude.ai e copiada para o repositório para ficar versionada junto com os vídeos. Faz vídeos curtos em HTML determinístico (`render(t)`), renderizados com Playwright e ffmpeg. É a skill do passo 4 do fluxo padrão. Se for atualizada no claude.ai, copie a nova versão para cá.
+
 ## Skill `remotion-best-practices` (`.claude/skills/`)
 
 Skill oficial da equipe Remotion (`remotion-dev/skills`, versão 4.0.542). É um roteador para as referências de API: composições, sequências, áudio e voz, legendas, fontes locais, transições, medição de texto, mapas e outros. Consulte-a sempre que escrever ou revisar código Remotion. Os scripts de mapas (`prep-*.mjs`) só rodam se uma peça usar mapas.
