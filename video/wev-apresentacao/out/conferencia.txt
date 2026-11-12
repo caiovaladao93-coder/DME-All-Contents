@@ -1,0 +1,10 @@
+CONFERÊNCIA · 12/11/2026 16:18
+stream|codec_name=h264|width=1920|height=1080|pix_fmt=yuv420p|r_frame_rate=30/1
+stream|codec_name=aac|sample_rate=48000|channels=2|r_frame_rate=0/0
+format|duration=40.500000
+quadros: 1213
+    I:         -14.3 LUFS
+    LRA:         5.0 LU
+    Peak:       -1.6 dBFS
+quadros pretos (>0,1 s):
+  nenhum

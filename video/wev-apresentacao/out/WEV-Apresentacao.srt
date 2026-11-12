@@ -1,0 +1,55 @@
+1
+00:00:00,600 --> 00:00:02,708
+O próximo passo é elétrico.
+
+2
+00:00:03,258 --> 00:00:05,359
+Uma plataforma de recarga multimarcas,
+
+3
+00:00:05,359 --> 00:00:09,917
+que conecta quem dirige, quem oferece energia e quem opera a rede.
+
+4
+00:00:10,367 --> 00:00:11,400
+Para o motorista:
+
+5
+00:00:11,400 --> 00:00:13,339
+encontre a estação no mapa,
+
+6
+00:00:13,339 --> 00:00:15,673
+leia o QR Code do conector,
+
+7
+00:00:15,673 --> 00:00:19,580
+escolha o valor e acompanhe a recarga do início ao fim.
+
+8
+00:00:20,180 --> 00:00:21,213
+Para os parceiros:
+
+9
+00:00:21,213 --> 00:00:24,238
+vendas e repasses visíveis em cada recarga.
+
+10
+00:00:24,738 --> 00:00:25,678
+Na operação:
+
+11
+00:00:25,678 --> 00:00:30,839
+estações, sessões, financeiro e auditoria em um só console.
+
+12
+00:00:31,439 --> 00:00:32,815
+Uma plataforma.
+
+13
+00:00:33,053 --> 00:00:34,847
+Muitas jornadas.
+
+14
+00:00:35,497 --> 00:00:37,976
+Energia em movimento.

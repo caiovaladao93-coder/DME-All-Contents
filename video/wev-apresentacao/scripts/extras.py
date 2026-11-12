@@ -9,5 +9,5 @@ for s in TL['scenes']:
 subprocess.run(['ffmpeg', '-y', '-v', 'error', '-f', 'f64le', '-ar', str(SR), '-ac', '1', '-i', '-', '-af', 'loudnorm=I=-16:TP=-1.5', '-ar', str(SR), f'{ROOT}/out/WEV-Apresentacao-narracao.wav'], input=voz.tobytes(), check=True)
 def ts(x):
     ms = int(round(x * 1000)); h, ms = divmod(ms, 3600000); m, ms = divmod(ms, 60000); s, ms = divmod(ms, 1000); return f'{h:02d}:{m:02d}:{s:02d},{ms:03d}'
-open(f'{ROOT}/out/WEV-Apresentacao-Reels.srt', 'w').write('\n'.join(f"{i}\n{ts(c['start'])} --> {ts(c['end'])}\n{c['text']}\n" for i, c in enumerate(TL['captions'], 1)))
+open(f'{ROOT}/out/WEV-Apresentacao.srt', 'w').write('\n'.join(f"{i}\n{ts(c['start'])} --> {ts(c['end'])}\n{c['text']}\n" for i, c in enumerate(TL['captions'], 1)))
 print('narração e SRT ok')
