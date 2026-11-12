@@ -1,0 +1,655 @@
+{
+ "fps": 30,
+ "dur": 59.9,
+ "frames": 1797,
+ "scenes": [
+  {
+   "key": "abertura",
+   "fala": "n1",
+   "t0": 0.0,
+   "t1": 6.787,
+   "v0": 0.9,
+   "v1": 6.287,
+   "texto": "DME Technology. Tecnologia aplicada aos negócios."
+  },
+  {
+   "key": "quem",
+   "fala": "n2",
+   "t0": 6.787,
+   "t1": 13.438,
+   "v0": 6.987,
+   "v1": 12.838,
+   "texto": "Atuamos onde estratégia, inteligência artificial, automação de processos e sistemas digitais se encontram."
+  },
+  {
+   "key": "premissa",
+   "fala": "n3",
+   "t0": 13.438,
+   "t1": 19.907,
+   "v0": 13.688,
+   "v1": 19.307,
+   "texto": "Partimos de uma premissa: a tecnologia só gera valor quando resolve um problema real."
+  },
+  {
+   "key": "abordagem",
+   "fala": "n4",
+   "t0": 19.907,
+   "t1": 27.677,
+   "v0": 20.157,
+   "v1": 27.077,
+   "texto": "Por isso, não começamos pelas ferramentas. Começamos pelo negócio: processos, desafios e oportunidades."
+  },
+  {
+   "key": "metodo",
+   "fala": "n5",
+   "t0": 27.677,
+   "t1": 32.753,
+   "v0": 27.927,
+   "v1": 32.153,
+   "texto": "Nosso método: entender, planejar e desenvolver."
+  },
+  {
+   "key": "solucoes",
+   "fala": "n6",
+   "t0": 32.753,
+   "t1": 40.894,
+   "v0": 33.003,
+   "v1": 40.294,
+   "texto": "Diagnóstico, mapeamento, padronização e automação de processos, com inteligência artificial e integração de sistemas."
+  },
+  {
+   "key": "proposito",
+   "fala": "n7",
+   "t0": 40.894,
+   "t1": 49.778,
+   "v0": 41.144,
+   "v1": 49.178,
+   "texto": "Soluções sob medida que conectam pessoas, informações e sistemas. Para construir uma forma melhor de operar."
+  },
+  {
+   "key": "assinatura",
+   "fala": "n8",
+   "t0": 49.778,
+   "t1": 59.901,
+   "v0": 50.128,
+   "v1": 58.301,
+   "texto": "DME Technology. Automatizamos processos, devolvemos tempo. Converse com a DME."
+  }
+ ],
+ "words": {
+  "abertura": [
+   [
+    "Dê-Eme-É",
+    0.9,
+    1.48
+   ],
+   [
+    "Technology.",
+    1.597,
+    2.502
+   ],
+   [
+    "Tecnologia",
+    2.943,
+    3.942
+   ],
+   [
+    "aplicada",
+    4.22,
+    4.987
+   ],
+   [
+    "aos",
+    5.045,
+    5.207
+   ],
+   [
+    "negócios.",
+    5.265,
+    6.287
+   ]
+  ],
+  "quem": [
+   [
+    "Atuamos",
+    6.987,
+    7.486
+   ],
+   [
+    "onde",
+    7.556,
+    7.695
+   ],
+   [
+    "estratégia,",
+    7.718,
+    8.415
+   ],
+   [
+    "inteligência",
+    8.438,
+    9.007
+   ],
+   [
+    "artificial,",
+    9.03,
+    9.599
+   ],
+   [
+    "automação",
+    9.622,
+    10.098
+   ],
+   [
+    "de",
+    10.133,
+    10.191
+   ],
+   [
+    "processos",
+    10.238,
+    10.795
+   ],
+   [
+    "e",
+    10.865,
+    10.888
+   ],
+   [
+    "sistemas",
+    10.923,
+    11.318
+   ],
+   [
+    "digitais",
+    11.341,
+    11.84
+   ],
+   [
+    "se",
+    11.863,
+    11.933
+   ],
+   [
+    "encontram.",
+    11.956,
+    12.838
+   ]
+  ],
+  "premissa": [
+   [
+    "Partimos",
+    13.688,
+    14.118
+   ],
+   [
+    "de",
+    14.141,
+    14.187
+   ],
+   [
+    "uma",
+    14.21,
+    14.303
+   ],
+   [
+    "premissa:",
+    14.35,
+    14.919
+   ],
+   [
+    "a",
+    15.337,
+    15.371
+   ],
+   [
+    "tecnologia",
+    15.453,
+    16.219
+   ],
+   [
+    "só",
+    16.265,
+    16.405
+   ],
+   [
+    "gera",
+    16.474,
+    16.73
+   ],
+   [
+    "valor",
+    16.788,
+    17.217
+   ],
+   [
+    "quando",
+    17.287,
+    17.531
+   ],
+   [
+    "resolve",
+    17.577,
+    18.019
+   ],
+   [
+    "um",
+    18.053,
+    18.1
+   ],
+   [
+    "problema",
+    18.135,
+    18.553
+   ],
+   [
+    "real.",
+    18.599,
+    19.307
+   ]
+  ],
+  "abordagem": [
+   [
+    "Por",
+    20.157,
+    20.366
+   ],
+   [
+    "isso,",
+    20.412,
+    20.61
+   ],
+   [
+    "não",
+    20.633,
+    20.761
+   ],
+   [
+    "começamos",
+    20.796,
+    21.341
+   ],
+   [
+    "pelas",
+    21.411,
+    21.631
+   ],
+   [
+    "ferramentas.",
+    21.701,
+    22.421
+   ],
+   [
+    "Começamos",
+    22.851,
+    23.431
+   ],
+   [
+    "pelo",
+    23.501,
+    23.686
+   ],
+   [
+    "negócio:",
+    23.721,
+    24.244
+   ],
+   [
+    "processos,",
+    24.418,
+    25.149
+   ],
+   [
+    "desafios",
+    25.173,
+    25.811
+   ],
+   [
+    "e",
+    25.846,
+    25.869
+   ],
+   [
+    "oportunidades.",
+    25.916,
+    27.077
+   ]
+  ],
+  "metodo": [
+   [
+    "Nosso",
+    27.927,
+    28.229
+   ],
+   [
+    "método:",
+    28.275,
+    28.798
+   ],
+   [
+    "entender,",
+    29.146,
+    29.936
+   ],
+   [
+    "planejar",
+    30.086,
+    30.795
+   ],
+   [
+    "e",
+    30.864,
+    30.98
+   ],
+   [
+    "desenvolver.",
+    31.038,
+    32.153
+   ]
+  ],
+  "solucoes": [
+   [
+    "Diagnóstico,",
+    33.003,
+    33.839
+   ],
+   [
+    "mapeamento,",
+    33.874,
+    34.617
+   ],
+   [
+    "padronização",
+    34.64,
+    35.557
+   ],
+   [
+    "e",
+    35.592,
+    35.685
+   ],
+   [
+    "automação",
+    35.72,
+    36.277
+   ],
+   [
+    "de",
+    36.312,
+    36.37
+   ],
+   [
+    "processos,",
+    36.416,
+    37.055
+   ],
+   [
+    "com",
+    37.09,
+    37.194
+   ],
+   [
+    "inteligência",
+    37.229,
+    37.821
+   ],
+   [
+    "artificial",
+    37.844,
+    38.471
+   ],
+   [
+    "e",
+    38.518,
+    38.587
+   ],
+   [
+    "integração",
+    38.622,
+    39.226
+   ],
+   [
+    "de",
+    39.261,
+    39.319
+   ],
+   [
+    "sistemas.",
+    39.377,
+    40.294
+   ]
+  ],
+  "proposito": [
+   [
+    "Soluções",
+    41.144,
+    41.771
+   ],
+   [
+    "sob",
+    41.899,
+    42.247
+   ],
+   [
+    "medida",
+    42.456,
+    43.071
+   ],
+   [
+    "que",
+    43.222,
+    43.35
+   ],
+   [
+    "conectam",
+    43.408,
+    43.872
+   ],
+   [
+    "pessoas,",
+    43.93,
+    44.534
+   ],
+   [
+    "informações",
+    44.557,
+    45.347
+   ],
+   [
+    "e",
+    45.416,
+    45.475
+   ],
+   [
+    "sistemas.",
+    45.521,
+    46.206
+   ],
+   [
+    "Para",
+    46.659,
+    46.972
+   ],
+   [
+    "construir",
+    47.042,
+    47.483
+   ],
+   [
+    "uma",
+    47.541,
+    47.669
+   ],
+   [
+    "forma",
+    47.727,
+    48.017
+   ],
+   [
+    "melhor",
+    48.075,
+    48.331
+   ],
+   [
+    "de",
+    48.389,
+    48.435
+   ],
+   [
+    "operar.",
+    48.458,
+    49.178
+   ]
+  ],
+  "assinatura": [
+   [
+    "Dê-Eme-É",
+    50.128,
+    51.022
+   ],
+   [
+    "Technology.",
+    51.173,
+    52.078
+   ],
+   [
+    "Automatizamos",
+    52.427,
+    53.39
+   ],
+   [
+    "processos,",
+    53.46,
+    54.25
+   ],
+   [
+    "devolvemos",
+    54.366,
+    54.981
+   ],
+   [
+    "tempo.",
+    55.097,
+    55.608
+   ],
+   [
+    "Converse",
+    56.13,
+    56.746
+   ],
+   [
+    "com",
+    56.804,
+    56.897
+   ],
+   [
+    "a",
+    56.943,
+    56.966
+   ],
+   [
+    "Dê-Eme-É.",
+    57.036,
+    58.301
+   ]
+  ]
+ },
+ "captions": [
+  {
+   "start": 0.9,
+   "end": 2.752,
+   "text": "DME Technology.",
+   "scene": "abertura"
+  },
+  {
+   "start": 2.943,
+   "end": 6.537,
+   "text": "Tecnologia aplicada aos negócios.",
+   "scene": "abertura"
+  },
+  {
+   "start": 6.987,
+   "end": 9.622,
+   "text": "Atuamos onde estratégia, inteligência artificial,",
+   "scene": "quem"
+  },
+  {
+   "start": 9.622,
+   "end": 13.088,
+   "text": "automação de processos e sistemas digitais se encontram.",
+   "scene": "quem"
+  },
+  {
+   "start": 13.688,
+   "end": 15.169,
+   "text": "Partimos de uma premissa:",
+   "scene": "premissa"
+  },
+  {
+   "start": 15.337,
+   "end": 19.557,
+   "text": "a tecnologia só gera valor quando resolve um problema real.",
+   "scene": "premissa"
+  },
+  {
+   "start": 20.157,
+   "end": 22.671,
+   "text": "Por isso, não começamos pelas ferramentas.",
+   "scene": "abordagem"
+  },
+  {
+   "start": 22.851,
+   "end": 27.327,
+   "text": "Começamos pelo negócio: processos, desafios e oportunidades.",
+   "scene": "abordagem"
+  },
+  {
+   "start": 27.927,
+   "end": 32.403,
+   "text": "Nosso método: entender, planejar e desenvolver.",
+   "scene": "metodo"
+  },
+  {
+   "start": 33.003,
+   "end": 37.09,
+   "text": "Diagnóstico, mapeamento, padronização e automação de processos,",
+   "scene": "solucoes"
+  },
+  {
+   "start": 37.09,
+   "end": 40.544,
+   "text": "com inteligência artificial e integração de sistemas.",
+   "scene": "solucoes"
+  },
+  {
+   "start": 41.144,
+   "end": 46.456,
+   "text": "Soluções sob medida que conectam pessoas, informações e sistemas.",
+   "scene": "proposito"
+  },
+  {
+   "start": 46.659,
+   "end": 49.428,
+   "text": "Para construir uma forma melhor de operar.",
+   "scene": "proposito"
+  },
+  {
+   "start": 50.128,
+   "end": 52.328,
+   "text": "DME Technology.",
+   "scene": "assinatura"
+  },
+  {
+   "start": 52.427,
+   "end": 55.858,
+   "text": "Automatizamos processos, devolvemos tempo.",
+   "scene": "assinatura"
+  },
+  {
+   "start": 56.13,
+   "end": 58.551,
+   "text": "Converse com a DME.",
+   "scene": "assinatura"
+  }
+ ]
+}
