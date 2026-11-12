@@ -1,0 +1,30 @@
+MARCAS · W-EV apresentação · 40.43 s · 30 fps · trilha original eletrônica 120 BPM + vinheta e sons do app W-EV
+
+FALAS (Lendário, ElevenLabs; respirações removidas)
+  0.60–  2.46  [abertura] O próximo passo é elétrico.
+  3.26–  9.67  [conecta] Uma plataforma de recarga multimarcas, que conecta quem dirige, quem oferece energia e quem opera a rede.
+ 10.37– 19.33  [motorista] Para o motorista: encontre a estação no mapa, leia o QR Code do conector, escolha o valor e acompanhe a recarga do início ao fim.
+ 20.18– 23.99  [parceiros] Para os parceiros: vendas e repasses visíveis em cada recarga.
+ 24.74– 30.59  [operacao] Na operação: estações, sessões, financeiro e auditoria em um só console.
+ 31.44– 34.60  [jornadas] Uma plataforma. Muitas jornadas.
+ 35.50– 37.73  [assinatura] Energia em movimento.
+
+TRILHA E EFEITOS
+  0.00  riser de abertura
+  1.62  IMPACTO em "elétrico"
+  6.08  nó Motorista
+  7.28  nó Parceiros
+  8.17  nó Operação
+ 10.22  groove completo (Fá–Dó–Rém–Si♭)
+ 11.90  som W-EV "update" (mapa)
+ 14.59  som W-EV "confirmation" (conector identificado)
+ 16.82  som W-EV "charging-start" (recarga)
+ 18.74  som W-EV "complete" (comprovante)
+ 21.21  vendas
+ 21.67  repasse
+ 25.58  painel 1 do console
+ 26.58  painel 2 do console
+ 27.41  painel 3 do console
+ 28.47  painel 4 do console
+ 33.05  acerto em "Muitas jornadas"
+ 35.20  vinheta W-EV (wev-intro, do repositório do cliente)

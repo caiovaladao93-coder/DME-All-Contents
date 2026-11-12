@@ -1,0 +1,31 @@
+[
+ {
+  "id": "n1",
+  "text": "O próximo passo é elétrico."
+ },
+ {
+  "id": "n2",
+  "text": "Uma plataforma de recarga multimarcas, que conecta quem dirige, quem oferece energia e quem opera a rede."
+ },
+ {
+  "id": "n3",
+  "text": "Para o motorista: encontre a estação no mapa, leia o QR Code do conector, escolha o valor e acompanhe a recarga do início ao fim."
+ },
+ {
+  "id": "n4",
+  "text": "Para os parceiros: vendas e repasses visíveis em cada recarga."
+ },
+ {
+  "id": "n5",
+  "text": "Na operação: estações, sessões, financeiro e auditoria em um só console."
+ },
+ {
+  "id": "n6",
+  "text": "Uma plataforma. <break time=\"0.4s\" /> Muitas jornadas.",
+  "legenda": "Uma plataforma. Muitas jornadas."
+ },
+ {
+  "id": "n7",
+  "text": "Energia em movimento."
+ }
+]

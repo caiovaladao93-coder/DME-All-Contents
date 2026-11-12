@@ -1,0 +1,547 @@
+{
+ "fps": 30,
+ "dur": 40.433,
+ "frames": 1213,
+ "scenes": [
+  {
+   "key": "abertura",
+   "fala": "n1",
+   "t0": 0.0,
+   "t1": 3.158,
+   "v0": 0.6,
+   "v1": 2.458,
+   "texto": "O próximo passo é elétrico."
+  },
+  {
+   "key": "conecta",
+   "fala": "n2",
+   "t0": 3.158,
+   "t1": 10.217,
+   "v0": 3.258,
+   "v1": 9.667,
+   "texto": "Uma plataforma de recarga multimarcas, que conecta quem dirige, quem oferece energia e quem opera a rede."
+  },
+  {
+   "key": "motorista",
+   "fala": "n3",
+   "t0": 10.217,
+   "t1": 20.03,
+   "v0": 10.367,
+   "v1": 19.33,
+   "texto": "Para o motorista: encontre a estação no mapa, leia o QR Code do conector, escolha o valor e acompanhe a recarga do início ao fim."
+  },
+  {
+   "key": "parceiros",
+   "fala": "n4",
+   "t0": 20.03,
+   "t1": 24.588,
+   "v0": 20.18,
+   "v1": 23.988,
+   "texto": "Para os parceiros: vendas e repasses visíveis em cada recarga."
+  },
+  {
+   "key": "operacao",
+   "fala": "n5",
+   "t0": 24.588,
+   "t1": 31.289,
+   "v0": 24.738,
+   "v1": 30.589,
+   "texto": "Na operação: estações, sessões, financeiro e auditoria em um só console."
+  },
+  {
+   "key": "jornadas",
+   "fala": "n6",
+   "t0": 31.289,
+   "t1": 35.147,
+   "v0": 31.439,
+   "v1": 34.597,
+   "texto": "Uma plataforma. Muitas jornadas."
+  },
+  {
+   "key": "assinatura",
+   "fala": "n7",
+   "t0": 35.147,
+   "t1": 40.426,
+   "v0": 35.497,
+   "v1": 37.726,
+   "texto": "Energia em movimento."
+  }
+ ],
+ "words": {
+  "abertura": [
+   [
+    "O",
+    0.6,
+    0.67
+   ],
+   [
+    "próximo",
+    0.751,
+    1.076
+   ],
+   [
+    "passo",
+    1.134,
+    1.471
+   ],
+   [
+    "é",
+    1.529,
+    1.575
+   ],
+   [
+    "elétrico.",
+    1.622,
+    2.458
+   ]
+  ],
+  "conecta": [
+   [
+    "Uma",
+    3.258,
+    3.467
+   ],
+   [
+    "plataforma",
+    3.513,
+    4.082
+   ],
+   [
+    "de",
+    4.129,
+    4.187
+   ],
+   [
+    "recarga",
+    4.233,
+    4.628
+   ],
+   [
+    "multimarcas,",
+    4.663,
+    5.336
+   ],
+   [
+    "que",
+    5.359,
+    5.441
+   ],
+   [
+    "conecta",
+    5.499,
+    5.986
+   ],
+   [
+    "quem",
+    6.056,
+    6.219
+   ],
+   [
+    "dirige,",
+    6.277,
+    6.764
+   ],
+   [
+    "quem",
+    6.811,
+    6.938
+   ],
+   [
+    "oferece",
+    6.985,
+    7.461
+   ],
+   [
+    "energia",
+    7.484,
+    7.96
+   ],
+   [
+    "e",
+    8.006,
+    8.053
+   ],
+   [
+    "quem",
+    8.134,
+    8.297
+   ],
+   [
+    "opera",
+    8.366,
+    8.75
+   ],
+   [
+    "a",
+    8.773,
+    8.796
+   ],
+   [
+    "rede.",
+    8.877,
+    9.667
+   ]
+  ],
+  "motorista": [
+   [
+    "Para",
+    10.367,
+    10.611
+   ],
+   [
+    "o",
+    10.634,
+    10.657
+   ],
+   [
+    "motorista:",
+    10.704,
+    11.342
+   ],
+   [
+    "encontre",
+    11.4,
+    11.934
+   ],
+   [
+    "a",
+    11.958,
+    11.981
+   ],
+   [
+    "estação",
+    12.039,
+    12.526
+   ],
+   [
+    "no",
+    12.561,
+    12.643
+   ],
+   [
+    "mapa,",
+    12.701,
+    13.13
+   ],
+   [
+    "leia",
+    13.339,
+    13.687
+   ],
+   [
+    "o",
+    13.804,
+    13.896
+   ],
+   [
+    "QR",
+    13.978,
+    14.256
+   ],
+   [
+    "Code",
+    14.407,
+    14.709
+   ],
+   [
+    "do",
+    14.767,
+    14.848
+   ],
+   [
+    "conector,",
+    14.907,
+    15.522
+   ],
+   [
+    "escolha",
+    15.673,
+    16.172
+   ],
+   [
+    "o",
+    16.207,
+    16.253
+   ],
+   [
+    "valor",
+    16.3,
+    16.729
+   ],
+   [
+    "e",
+    16.752,
+    16.787
+   ],
+   [
+    "acompanhe",
+    16.822,
+    17.368
+   ],
+   [
+    "a",
+    17.414,
+    17.461
+   ],
+   [
+    "recarga",
+    17.53,
+    18.018
+   ],
+   [
+    "do",
+    18.064,
+    18.157
+   ],
+   [
+    "início",
+    18.215,
+    18.587
+   ],
+   [
+    "ao",
+    18.622,
+    18.68
+   ],
+   [
+    "fim.",
+    18.738,
+    19.33
+   ]
+  ],
+  "parceiros": [
+   [
+    "Para",
+    20.18,
+    20.424
+   ],
+   [
+    "os",
+    20.447,
+    20.505
+   ],
+   [
+    "parceiros:",
+    20.575,
+    21.167
+   ],
+   [
+    "vendas",
+    21.213,
+    21.562
+   ],
+   [
+    "e",
+    21.608,
+    21.631
+   ],
+   [
+    "repasses",
+    21.666,
+    22.2
+   ],
+   [
+    "visíveis",
+    22.247,
+    22.734
+   ],
+   [
+    "em",
+    22.792,
+    22.862
+   ],
+   [
+    "cada",
+    22.92,
+    23.164
+   ],
+   [
+    "recarga.",
+    23.199,
+    23.988
+   ]
+  ],
+  "operacao": [
+   [
+    "Na",
+    24.738,
+    24.877
+   ],
+   [
+    "operação:",
+    24.901,
+    25.609
+   ],
+   [
+    "estações,",
+    25.678,
+    26.561
+   ],
+   [
+    "sessões,",
+    26.677,
+    27.397
+   ],
+   [
+    "financeiro",
+    27.513,
+    28.267
+   ],
+   [
+    "e",
+    28.349,
+    28.523
+   ],
+   [
+    "auditoria",
+    28.569,
+    29.266
+   ],
+   [
+    "em",
+    29.347,
+    29.498
+   ],
+   [
+    "um",
+    29.614,
+    29.684
+   ],
+   [
+    "só",
+    29.742,
+    29.835
+   ],
+   [
+    "console.",
+    29.893,
+    30.589
+   ]
+  ],
+  "jornadas": [
+   [
+    "Uma",
+    31.439,
+    31.683
+   ],
+   [
+    "plataforma.",
+    31.741,
+    32.565
+   ],
+   [
+    "Muitas",
+    33.053,
+    33.517
+   ],
+   [
+    "jornadas.",
+    33.575,
+    34.597
+   ]
+  ],
+  "assinatura": [
+   [
+    "Energia",
+    35.497,
+    36.321
+   ],
+   [
+    "em",
+    36.472,
+    36.67
+   ],
+   [
+    "movimento.",
+    36.704,
+    37.726
+   ]
+  ]
+ },
+ "captions": [
+  {
+   "start": 0.6,
+   "end": 2.708,
+   "text": "O próximo passo é elétrico.",
+   "scene": "abertura"
+  },
+  {
+   "start": 3.258,
+   "end": 5.359,
+   "text": "Uma plataforma de recarga multimarcas,",
+   "scene": "conecta"
+  },
+  {
+   "start": 5.359,
+   "end": 9.917,
+   "text": "que conecta quem dirige, quem oferece energia e quem opera a rede.",
+   "scene": "conecta"
+  },
+  {
+   "start": 10.367,
+   "end": 11.4,
+   "text": "Para o motorista:",
+   "scene": "motorista"
+  },
+  {
+   "start": 11.4,
+   "end": 13.339,
+   "text": "encontre a estação no mapa,",
+   "scene": "motorista"
+  },
+  {
+   "start": 13.339,
+   "end": 15.673,
+   "text": "leia o QR Code do conector,",
+   "scene": "motorista"
+  },
+  {
+   "start": 15.673,
+   "end": 19.58,
+   "text": "escolha o valor e acompanhe a recarga do início ao fim.",
+   "scene": "motorista"
+  },
+  {
+   "start": 20.18,
+   "end": 21.213,
+   "text": "Para os parceiros:",
+   "scene": "parceiros"
+  },
+  {
+   "start": 21.213,
+   "end": 24.238,
+   "text": "vendas e repasses visíveis em cada recarga.",
+   "scene": "parceiros"
+  },
+  {
+   "start": 24.738,
+   "end": 25.678,
+   "text": "Na operação:",
+   "scene": "operacao"
+  },
+  {
+   "start": 25.678,
+   "end": 30.839,
+   "text": "estações, sessões, financeiro e auditoria em um só console.",
+   "scene": "operacao"
+  },
+  {
+   "start": 31.439,
+   "end": 32.815,
+   "text": "Uma plataforma.",
+   "scene": "jornadas"
+  },
+  {
+   "start": 33.053,
+   "end": 34.847,
+   "text": "Muitas jornadas.",
+   "scene": "jornadas"
+  },
+  {
+   "start": 35.497,
+   "end": 37.976,
+   "text": "Energia em movimento.",
+   "scene": "assinatura"
+  }
+ ]
+}
