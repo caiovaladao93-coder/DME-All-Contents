@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 610" width="750" height="610">
+  <!-- DME Technology · monograma redesenhado em vetor a partir do arquivo enviado pelo cliente (mockup 3D). -->
+  <defs>
+    <linearGradient id="steel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9AA1A8"/><stop offset=".35" stop-color="#E4E8EB"/>
+      <stop offset=".6" stop-color="#8A9198"/><stop offset="1" stop-color="#C0C6CC"/>
+    </linearGradient>
+  </defs>
+  <g fill="url(#steel)" stroke="#F2F4F6" stroke-opacity=".35" stroke-width="1.5" stroke-linejoin="miter">
+    <path d="M12.5 17.5 L205 17.5 L382.5 177.5 L440 122.5 L522.5 122.5 L382.5 252.5 L182.5 72.5 L77.5 72.5 L77.5 440 L200 440 C230 440 250 420 250 390 L250 210 L310 270 L310 380 C310 445 265 487 205 487 L12.5 487 Z"/>
+    <path d="M135 125 L160 125 L197.5 162.5 L197.5 390 L135 390 Z"/>
+    <path d="M275 17.5 L737.5 17.5 L737.5 132.5 L675 132.5 L675 72.5 L620 72.5 L620 242.5 L737.5 242.5 L737.5 300 L620 300 L620 390 L557.5 390 L557.5 72.5 L425 72.5 L382.5 107.5 Z"/>
+    <path d="M440 270 L502.5 210 L502.5 440 L675 440 L675 395 L737.5 395 L737.5 487 L440 487 Z"/>
+  </g>
+  <text x="14" y="592" font-family="Manrope, sans-serif" font-weight="600" font-size="64" textLength="722" lengthAdjust="spacing" fill="#C0C6CC">TECHNOLOGY</text>
+</svg>

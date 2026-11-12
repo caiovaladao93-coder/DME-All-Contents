@@ -1,0 +1,34 @@
+MARCAS · DME apresentação institucional vertical · 59.90 s · 30 fps · trilha original v2, eletrônica 120 BPM
+
+FALAS (Lendário, ElevenLabs; respirações removidas)
+  0.90–  6.29  [abertura] DME Technology. Tecnologia aplicada aos negócios.
+  6.99– 12.84  [quem] Atuamos onde estratégia, inteligência artificial, automação de processos e sistemas digitais se encontram.
+ 13.69– 19.31  [premissa] Partimos de uma premissa: a tecnologia só gera valor quando resolve um problema real.
+ 20.16– 27.08  [abordagem] Por isso, não começamos pelas ferramentas. Começamos pelo negócio: processos, desafios e oportunidades.
+ 27.93– 32.15  [metodo] Nosso método: entender, planejar e desenvolver.
+ 33.00– 40.29  [solucoes] Diagnóstico, mapeamento, padronização e automação de processos, com inteligência artificial e integração de sistemas.
+ 41.14– 49.18  [proposito] Soluções sob medida que conectam pessoas, informações e sistemas. Para construir uma forma melhor de operar.
+ 50.13– 58.30  [assinatura] DME Technology. Automatizamos processos, devolvemos tempo. Converse com a DME.
+
+TRILHA E EFEITOS
+  0.00  abertura: logo e acorde
+  7.62  anel 1
+  8.34  anel 2
+  9.52  anel 3
+ 10.82  anel 4
+ 11.96  anéis se encontram (DME)
+ 18.14  "problema real"
+ 19.91  groove completo (Fá–Dó–Rém–Si♭)
+ 29.07  método 1
+ 30.01  método 2
+ 30.96  método 3
+ 32.92  soluções 1
+ 33.79  soluções 2
+ 34.56  soluções 3
+ 35.64  soluções 4
+ 43.85  propósito 1
+ 44.48  propósito 2
+ 45.44  propósito 3
+ 46.66  linhas se alinham num fluxo
+ 49.83  assinatura: acorde final e sinos
+ 56.03  CTA "Converse com a DME"
