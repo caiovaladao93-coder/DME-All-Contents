@@ -1,0 +1,31 @@
+MARCAS · DME "Bastidores" · 50.17 s · 30 fps · trilha original v2, eletrônica 120 BPM
+
+FALAS (Lendário, ElevenLabs; respirações removidas)
+  0.15–  1.64  [gancho] Seu cliente vê isto.
+  2.49–  5.74  [flip] Mas, nos bastidores, a sua empresa é isto.
+  6.14– 12.22  [trinca] Informação espalhada. Tarefa repetida. Sistema que não conversa.
+ 12.67– 17.59  [tensao] O problema não é falta de tecnologia. É como o processo está estruturado.
+ 18.04– 21.85  [virada] Agora, a tecnologia começa pelo seu negócio.
+ 22.30– 28.85  [metodo] A DME entende a operação, identifica os gargalos e desenvolve a solução sob medida.
+ 29.30– 33.11  [conecta] Inteligência artificial, automações e sistemas integrados.
+ 33.76– 39.01  [fecho] Então, enquanto a tecnologia opera nos bastidores, o seu negócio avança na frente.
+ 39.81– 48.77  [assinatura] DME Technology. Automatizamos processos, devolvemos tempo. Comente COMERCIAL e receba um diagnóstico.
+
+TRILHA E EFEITOS
+  3.74  GIRO do painel (whoosh) e impacto nos bastidores
+  6.09  informação espalhada
+  8.36  tarefa repetida
+ 10.25  sistema que não conversa
+ 15.44  riser para o "Agora"
+ 17.64  SILÊNCIO (0.40 s) antes do "Agora"
+ 18.04  DROP no "Agora"
+ 23.08  entender: scanner
+ 25.25  identificar: gargalo marcado
+ 26.59  desenvolver: peças se encaixam
+ 29.15  hub IA
+ 30.64  hub Automação
+ 31.59  hub Integração
+ 37.05  GIRO de volta para a frente
+ 38.47  acerto em "frente"
+ 39.61  logo: acorde final e sinos
+ 45.42  CTA

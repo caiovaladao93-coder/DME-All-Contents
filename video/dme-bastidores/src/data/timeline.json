@@ -1,0 +1,643 @@
+{
+ "fps": 30,
+ "dur": 50.167,
+ "frames": 1505,
+ "scenes": [
+  {
+   "key": "gancho",
+   "fala": "n1",
+   "t0": 0.0,
+   "t1": 2.086,
+   "v0": 0.15,
+   "v1": 1.636,
+   "texto": "Seu cliente vê isto."
+  },
+  {
+   "key": "flip",
+   "fala": "n2",
+   "t0": 2.086,
+   "t1": 6.037,
+   "v0": 2.486,
+   "v1": 5.737,
+   "texto": "Mas, nos bastidores, a sua empresa é isto."
+  },
+  {
+   "key": "trinca",
+   "fala": "n3",
+   "t0": 6.037,
+   "t1": 12.571,
+   "v0": 6.137,
+   "v1": 12.221,
+   "texto": "Informação espalhada. Tarefa repetida. Sistema que não conversa."
+  },
+  {
+   "key": "tensao",
+   "fala": "n4",
+   "t0": 12.571,
+   "t1": 17.744,
+   "v0": 12.671,
+   "v1": 17.594,
+   "texto": "O problema não é falta de tecnologia. É como o processo está estruturado."
+  },
+  {
+   "key": "virada",
+   "fala": "n5",
+   "t0": 17.744,
+   "t1": 22.202,
+   "v0": 18.044,
+   "v1": 21.852,
+   "texto": "Agora, a tecnologia começa pelo seu negócio."
+  },
+  {
+   "key": "metodo",
+   "fala": "n6",
+   "t0": 22.202,
+   "t1": 29.2,
+   "v0": 22.302,
+   "v1": 28.85,
+   "texto": "A DME entende a operação, identifica os gargalos e desenvolve a solução sob medida."
+  },
+  {
+   "key": "conecta",
+   "fala": "n7",
+   "t0": 29.2,
+   "t1": 33.608,
+   "v0": 29.3,
+   "v1": 33.108,
+   "texto": "Inteligência artificial, automações e sistemas integrados."
+  },
+  {
+   "key": "fecho",
+   "fala": "n8",
+   "t0": 33.608,
+   "t1": 39.506,
+   "v0": 33.758,
+   "v1": 39.006,
+   "texto": "Então, enquanto a tecnologia opera nos bastidores, o seu negócio avança na frente."
+  },
+  {
+   "key": "assinatura",
+   "fala": "n9",
+   "t0": 39.506,
+   "t1": 50.169,
+   "v0": 39.806,
+   "v1": 48.769,
+   "texto": "DME Technology. Automatizamos processos, devolvemos tempo. Comente COMERCIAL e receba um diagnóstico."
+  }
+ ],
+ "words": {
+  "gancho": [
+   [
+    "Seu",
+    0.15,
+    0.382
+   ],
+   [
+    "cliente",
+    0.429,
+    0.8
+   ],
+   [
+    "vê",
+    0.881,
+    1.067
+   ],
+   [
+    "isto.",
+    1.102,
+    1.636
+   ]
+  ],
+  "flip": [
+   [
+    "Mas,",
+    2.486,
+    2.892
+   ],
+   [
+    "nos",
+    3.008,
+    3.206
+   ],
+   [
+    "bastidores,",
+    3.287,
+    4.065
+   ],
+   [
+    "a",
+    4.239,
+    4.297
+   ],
+   [
+    "sua",
+    4.378,
+    4.553
+   ],
+   [
+    "empresa",
+    4.576,
+    5.017
+   ],
+   [
+    "é",
+    5.052,
+    5.075
+   ],
+   [
+    "isto.",
+    5.156,
+    5.737
+   ]
+  ],
+  "trinca": [
+   [
+    "Informação",
+    6.137,
+    6.985
+   ],
+   [
+    "espalhada.",
+    7.031,
+    7.925
+   ],
+   [
+    "Tarefa",
+    8.413,
+    8.935
+   ],
+   [
+    "repetida.",
+    8.993,
+    9.817
+   ],
+   [
+    "Sistema",
+    10.305,
+    10.874
+   ],
+   [
+    "que",
+    10.92,
+    11.013
+   ],
+   [
+    "não",
+    11.094,
+    11.269
+   ],
+   [
+    "conversa.",
+    11.315,
+    12.221
+   ]
+  ],
+  "tensao": [
+   [
+    "O",
+    12.671,
+    12.752
+   ],
+   [
+    "problema",
+    12.834,
+    13.217
+   ],
+   [
+    "não",
+    13.263,
+    13.391
+   ],
+   [
+    "é",
+    13.437,
+    13.472
+   ],
+   [
+    "falta",
+    13.553,
+    13.902
+   ],
+   [
+    "de",
+    13.936,
+    14.006
+   ],
+   [
+    "tecnologia.",
+    14.064,
+    15.005
+   ],
+   [
+    "É",
+    15.446,
+    15.515
+   ],
+   [
+    "como",
+    15.597,
+    15.829
+   ],
+   [
+    "o",
+    15.852,
+    15.875
+   ],
+   [
+    "processo",
+    15.922,
+    16.444
+   ],
+   [
+    "está",
+    16.467,
+    16.653
+   ],
+   [
+    "estruturado.",
+    16.711,
+    17.594
+   ]
+  ],
+  "virada": [
+   [
+    "Agora.",
+    18.044,
+    18.683
+   ],
+   [
+    "A",
+    19.426,
+    19.495
+   ],
+   [
+    "tecnologia",
+    19.588,
+    20.145
+   ],
+   [
+    "começa",
+    20.192,
+    20.61
+   ],
+   [
+    "pelo",
+    20.668,
+    20.865
+   ],
+   [
+    "seu",
+    20.912,
+    21.051
+   ],
+   [
+    "negócio.",
+    21.086,
+    21.852
+   ]
+  ],
+  "metodo": [
+   [
+    "A",
+    22.302,
+    22.395
+   ],
+   [
+    "Dê-Eme-É",
+    22.511,
+    23.115
+   ],
+   [
+    "entende",
+    23.184,
+    23.811
+   ],
+   [
+    "a",
+    23.904,
+    23.974
+   ],
+   [
+    "operação,",
+    24.02,
+    24.798
+   ],
+   [
+    "identifica",
+    24.949,
+    25.553
+   ],
+   [
+    "os",
+    25.576,
+    25.646
+   ],
+   [
+    "gargalos",
+    25.715,
+    26.307
+   ],
+   [
+    "e",
+    26.365,
+    26.435
+   ],
+   [
+    "desenvolve",
+    26.493,
+    27.05
+   ],
+   [
+    "a",
+    27.085,
+    27.109
+   ],
+   [
+    "solução",
+    27.167,
+    27.689
+   ],
+   [
+    "sob",
+    27.735,
+    27.921
+   ],
+   [
+    "medida.",
+    27.991,
+    28.85
+   ]
+  ],
+  "conecta": [
+   [
+    "Inteligência",
+    29.3,
+    30.031
+   ],
+   [
+    "artificial,",
+    30.055,
+    30.728
+   ],
+   [
+    "automações",
+    30.786,
+    31.599
+   ],
+   [
+    "e",
+    31.668,
+    31.692
+   ],
+   [
+    "sistemas",
+    31.738,
+    32.156
+   ],
+   [
+    "integrados.",
+    32.214,
+    33.108
+   ]
+  ],
+  "fecho": [
+   [
+    "Então,",
+    33.758,
+    34.141
+   ],
+   [
+    "enquanto",
+    34.188,
+    34.559
+   ],
+   [
+    "a",
+    34.582,
+    34.606
+   ],
+   [
+    "tecnologia",
+    34.664,
+    35.325
+   ],
+   [
+    "opera",
+    35.349,
+    35.697
+   ],
+   [
+    "nos",
+    35.732,
+    35.859
+   ],
+   [
+    "bastidores,",
+    35.917,
+    36.649
+   ],
+   [
+    "o",
+    37.009,
+    37.067
+   ],
+   [
+    "seu",
+    37.125,
+    37.264
+   ],
+   [
+    "negócio",
+    37.299,
+    37.729
+   ],
+   [
+    "avança",
+    37.763,
+    38.1
+   ],
+   [
+    "na",
+    38.147,
+    38.216
+   ],
+   [
+    "frente.",
+    38.274,
+    39.006
+   ]
+  ],
+  "assinatura": [
+   [
+    "Dê-Eme-É",
+    39.806,
+    40.549
+   ],
+   [
+    "Technology.",
+    40.723,
+    41.64
+   ],
+   [
+    "Automatizamos",
+    41.977,
+    42.952
+   ],
+   [
+    "processos,",
+    43.022,
+    43.823
+   ],
+   [
+    "devolvemos",
+    43.974,
+    44.589
+   ],
+   [
+    "tempo.",
+    44.682,
+    45.17
+   ],
+   [
+    "Comente",
+    45.518,
+    46.029
+   ],
+   [
+    "comercial",
+    46.087,
+    46.795
+   ],
+   [
+    "e",
+    46.853,
+    46.9
+   ],
+   [
+    "receba",
+    46.923,
+    47.422
+   ],
+   [
+    "um",
+    47.469,
+    47.527
+   ],
+   [
+    "diagnóstico.",
+    47.596,
+    48.769
+   ]
+  ]
+ },
+ "captions": [
+  {
+   "start": 0.15,
+   "end": 1.886,
+   "text": "Seu cliente vê isto.",
+   "scene": "gancho"
+  },
+  {
+   "start": 2.486,
+   "end": 4.239,
+   "text": "Mas, nos bastidores,",
+   "scene": "flip"
+  },
+  {
+   "start": 4.239,
+   "end": 5.987,
+   "text": "a sua empresa é isto.",
+   "scene": "flip"
+  },
+  {
+   "start": 6.137,
+   "end": 8.175,
+   "text": "Informação espalhada.",
+   "scene": "trinca"
+  },
+  {
+   "start": 8.413,
+   "end": 10.067,
+   "text": "Tarefa repetida.",
+   "scene": "trinca"
+  },
+  {
+   "start": 10.305,
+   "end": 12.471,
+   "text": "Sistema que não conversa.",
+   "scene": "trinca"
+  },
+  {
+   "start": 12.671,
+   "end": 15.255,
+   "text": "O problema não é falta de tecnologia.",
+   "scene": "tensao"
+  },
+  {
+   "start": 15.446,
+   "end": 17.844,
+   "text": "É como o processo está estruturado.",
+   "scene": "tensao"
+  },
+  {
+   "start": 18.044,
+   "end": 22.102,
+   "text": "Agora. A tecnologia começa pelo seu negócio.",
+   "scene": "virada"
+  },
+  {
+   "start": 22.302,
+   "end": 24.949,
+   "text": "A DME entende a operação,",
+   "scene": "metodo"
+  },
+  {
+   "start": 24.949,
+   "end": 26.365,
+   "text": "identifica os gargalos",
+   "scene": "metodo"
+  },
+  {
+   "start": 26.365,
+   "end": 29.1,
+   "text": "e desenvolve a solução sob medida.",
+   "scene": "metodo"
+  },
+  {
+   "start": 29.3,
+   "end": 33.358,
+   "text": "Inteligência artificial, automações e sistemas integrados.",
+   "scene": "conecta"
+  },
+  {
+   "start": 33.758,
+   "end": 36.899,
+   "text": "Então, enquanto a tecnologia opera nos bastidores,",
+   "scene": "fecho"
+  },
+  {
+   "start": 37.009,
+   "end": 39.256,
+   "text": "o seu negócio avança na frente.",
+   "scene": "fecho"
+  },
+  {
+   "start": 39.806,
+   "end": 41.89,
+   "text": "DME Technology.",
+   "scene": "assinatura"
+  },
+  {
+   "start": 41.977,
+   "end": 45.42,
+   "text": "Automatizamos processos, devolvemos tempo.",
+   "scene": "assinatura"
+  },
+  {
+   "start": 45.518,
+   "end": 49.019,
+   "text": "Comente COMERCIAL e receba um diagnóstico.",
+   "scene": "assinatura"
+  }
+ ]
+}

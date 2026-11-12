@@ -1,0 +1,44 @@
+[
+ {
+  "id": "n1",
+  "text": "Seu cliente vê isto."
+ },
+ {
+  "id": "n2",
+  "text": "Mas, nos bastidores, a sua empresa é isto."
+ },
+ {
+  "id": "n3",
+  "text": "Informação espalhada. <break time=\"0.35s\" /> Tarefa repetida. <break time=\"0.35s\" /> Sistema que não conversa.",
+  "legenda": "Informação espalhada. Tarefa repetida. Sistema que não conversa."
+ },
+ {
+  "id": "n4",
+  "text": "O problema não é falta de tecnologia. <break time=\"0.4s\" /> É como o processo está estruturado.",
+  "legenda": "O problema não é falta de tecnologia. É como o processo está estruturado."
+ },
+ {
+  "id": "n5",
+  "text": "Agora. <break time=\"0.7s\" /> A tecnologia começa pelo seu negócio.",
+  "legenda": "Agora, a tecnologia começa pelo seu negócio."
+ },
+ {
+  "id": "n6",
+  "text": "A Dê-Eme-É entende a operação, identifica os gargalos e desenvolve a solução sob medida.",
+  "legenda": "A DME entende a operação, identifica os gargalos e desenvolve a solução sob medida."
+ },
+ {
+  "id": "n7",
+  "text": "Inteligência artificial, automações e sistemas integrados."
+ },
+ {
+  "id": "n8",
+  "text": "Então, enquanto a tecnologia opera nos bastidores, <break time=\"0.3s\" /> o seu negócio avança na frente.",
+  "legenda": "Então, enquanto a tecnologia opera nos bastidores, o seu negócio avança na frente."
+ },
+ {
+  "id": "n9",
+  "text": "Dê-Eme-É Technology. <break time=\"0.3s\" /> Automatizamos processos, devolvemos tempo. <break time=\"0.3s\" /> Comente comercial e receba um diagnóstico.",
+  "legenda": "DME Technology. Automatizamos processos, devolvemos tempo. Comente COMERCIAL e receba um diagnóstico."
+ }
+]
