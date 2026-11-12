@@ -28,6 +28,25 @@ Vídeo vertical 1080 × 1920, 30 fps, em Remotion. O roteiro está em `roteiros/
   - Transcrição conferida.
 - **Duração:** 48,9 s.
 
+## Revisão 4
+
+- **Respirações removidas.** O `scripts/pausas.py` agora limpa cada fala (`limpar`):
+  - silêncio a partir de 90 ms depois da última letra;
+  - silêncio no meio das pausas entre frases, onde entra a inspiração;
+  - gate leve abaixo de −48 dB;
+  - fade de 40 ms no fim do arquivo.
+
+  As transcrições continuam idênticas.
+- **Trilha nova** (`scripts/trilha.py`; a anterior ficou em `scripts/trilha_v1.py`): eletrônica original a 120 BPM.
+  - **Gancho:** riser e impacto.
+  - **Barreiras e labirinto:** beat contido em Ré menor, com o filtro abrindo.
+  - **"Agora":** 0,4 s de silêncio e DROP. Vem um groove completo, com bumbo reto, clap, hi-hats em semicolcheia, baixo com sidechain, supersaw e arpejo com delay, em Fá–Dó–Rém–Si♭.
+  - **Fecho:** breakdown sem bumbo.
+  - **Loop:** subida com virada de caixa e novo drop em "flui".
+  - **Assinatura:** acorde final.
+
+  Fica cerca de 10 dB abaixo da voz, com ducking de 6 dB. A inteligibilidade foi conferida por transcrição da mistura.
+
 ## Saídas (`out/`)
 
 | Arquivo | O que é |

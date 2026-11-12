@@ -1,6 +1,6 @@
-MARCAS · DME "Processos que fluem com tecnologia" · 48.93 s · 30 fps · trilha original 120 BPM
+MARCAS · DME "Processos que fluem com tecnologia" · 48.93 s · 30 fps · trilha original v2, eletrônica 120 BPM
 
-FALAS (Lendário, ElevenLabs, velocidade natural)
+FALAS (Lendário, ElevenLabs; respirações removidas)
   0.12–  2.41  [gancho] Um pedido entra. E para.
   2.96–  7.90  [barreiras] Espera um e-mail. Espera uma planilha. Espera alguém lembrar.
   8.40– 11.56  [caminho] O problema não é a equipe. É o caminho.
@@ -13,32 +13,29 @@ FALAS (Lendário, ElevenLabs, velocidade natural)
  39.40– 47.34  [assinatura] DME Technology. Processos que fluem com tecnologia. Comente COMERCIAL e receba um diagnóstico.
 
 TRILHA E EFEITOS
-  0.00  o pedido entra (queda)
+  0.00  riser da queda do pedido
   1.87  IMPACTO na parede
   2.91  barreira 1 cai
   4.66  barreira 2 cai
   6.38  barreira 3 cai
   8.40  labirinto se forma
+  9.61  riser para o "Agora"
  11.61  SILÊNCIO (0.40 s) antes do "Agora"
- 11.98  "Agora": as paredes giram (dominó)
+ 12.01  DROP no "Agora" (paredes giram em dominó)
+ 13.01  groove completo: método, fluxo e horários (Fá–Dó–Rém–Si♭)
  17.41  diagnóstico: scanner
  18.65  mapeamento: estações
  19.80  padronização: blocos se encaixam
- 21.09  automação: trilho preenche
+ 21.09  automação
  22.82  integração: cabos conectam
  24.56  o pedido acelera
- 24.91  estação 1 acende
- 25.09  estação 2 acende
- 25.27  estação 3 acende
  26.16  horário 1
  26.71  horário 2
  27.26  horário 3
  27.81  horário 4
- 36.16  loop: o pedido entra de novo
+ 30.68  breakdown do fecho
+ 36.16  subida e virada de caixa até "flui"
  37.68  a parede se abre
- 37.92  o pedido atravessa
- 39.85  assinatura 1
- 39.85  logo se monta
- 39.97  assinatura 2
- 40.09  assinatura 3
- 44.31  CTA "Comente COMERCIAL e receba um diagnóstico"
+ 37.92  DROP em "flui"
+ 39.85  logo: acorde final (Fá maior) e sinos
+ 44.31  CTA
