@@ -1,0 +1,83 @@
+1
+00:00:00,900 --> 00:00:02,729
+Toda empresa tem uma planta.
+
+2
+00:00:02,967 --> 00:00:05,051
+Poucas conhecem a sua.
+
+3
+00:00:05,601 --> 00:00:08,823
+Por fora, a operação parece funcionar.
+
+4
+00:00:09,473 --> 00:00:13,113
+Por dentro, o trabalho percorre caminhos que ninguém desenhou.
+
+5
+00:00:14,363 --> 00:00:16,250
+Informação que se repete.
+
+6
+00:00:16,499 --> 00:00:18,166
+Aprovação que espera.
+
+7
+00:00:18,357 --> 00:00:20,743
+Tarefa que volta para o início.
+
+8
+00:00:21,393 --> 00:00:23,419
+Isso não é falta de esforço.
+
+9
+00:00:23,669 --> 00:00:25,776
+É falta de engenharia.
+
+10
+00:00:26,026 --> 00:00:28,830
+É aqui que a DME entra.
+
+11
+00:00:29,380 --> 00:00:32,294
+Entendemos o negócio, identificamos os gargalos
+
+12
+00:00:32,294 --> 00:00:38,454
+e redesenhamos o processo: mapeamento, padronização e automação.
+
+13
+00:00:39,104 --> 00:00:42,390
+Com inteligência artificial e integração de sistemas,
+
+14
+00:00:42,390 --> 00:00:45,391
+onde elas resolvem um problema real.
+
+15
+00:00:46,241 --> 00:00:49,312
+O resultado é uma operação desenhada de propósito:
+
+16
+00:00:49,492 --> 00:00:52,853
+clara, conectada e preparada para evoluir.
+
+17
+00:00:53,803 --> 00:00:55,632
+Toda empresa tem uma planta.
+
+18
+00:00:55,870 --> 00:00:58,140
+Agora, você conhece a sua.
+
+19
+00:00:58,590 --> 00:01:00,744
+DME Technology.
+
+20
+00:01:00,831 --> 00:01:03,972
+Tecnologia aplicada aos negócios.
+
+21
+00:01:04,163 --> 00:01:06,688
+Comente como está a sua planta.
