@@ -1,83 +1,79 @@
 1
-00:00:00,900 --> 00:00:02,729
+00:00:00,900 --> 00:00:02,810
 Toda empresa tem uma planta.
 
 2
-00:00:02,967 --> 00:00:05,051
+00:00:03,048 --> 00:00:04,772
 Poucas conhecem a sua.
 
 3
-00:00:05,601 --> 00:00:08,823
+00:00:05,322 --> 00:00:08,266
 Por fora, a operação parece funcionar.
 
 4
-00:00:09,473 --> 00:00:13,113
+00:00:08,916 --> 00:00:12,974
 Por dentro, o trabalho percorre caminhos que ninguém desenhou.
 
 5
-00:00:14,363 --> 00:00:16,250
+00:00:14,224 --> 00:00:16,099
 Informação que se repete.
 
 6
-00:00:16,499 --> 00:00:18,166
+00:00:16,418 --> 00:00:18,061
 Aprovação que espera.
 
 7
-00:00:18,357 --> 00:00:20,743
+00:00:18,264 --> 00:00:20,418
 Tarefa que volta para o início.
 
 8
-00:00:21,393 --> 00:00:23,373
+00:00:21,068 --> 00:00:22,885
 Isso não é falta de esforço.
 
 9
-00:00:23,669 --> 00:00:25,498
+00:00:23,204 --> 00:00:24,847
 É falta de projeto.
 
 10
-00:00:25,748 --> 00:00:28,552
+00:00:25,097 --> 00:00:27,205
 É aqui que a DME entra.
 
 11
-00:00:29,102 --> 00:00:32,016
+00:00:27,755 --> 00:00:30,541
 Entendemos o negócio, identificamos os gargalos
 
 12
-00:00:32,016 --> 00:00:38,176
+00:00:30,541 --> 00:00:36,782
 e redesenhamos o processo: mapeamento, padronização e automação.
 
 13
-00:00:38,826 --> 00:00:42,112
+00:00:37,432 --> 00:00:40,602
 Com inteligência artificial e integração de sistemas,
 
 14
-00:00:42,112 --> 00:00:45,113
+00:00:40,602 --> 00:00:43,905
 onde elas resolvem um problema real.
 
 15
-00:00:45,963 --> 00:00:48,407
+00:00:44,755 --> 00:00:47,478
 Uma operação desenhada com propósito:
 
 16
-00:00:48,552 --> 00:00:51,879
+00:00:47,669 --> 00:00:51,507
 clara, conectada e preparada para evoluir.
 
 17
-00:00:52,829 --> 00:00:54,658
+00:00:52,457 --> 00:00:54,402
 Toda empresa tem uma planta.
 
 18
-00:00:54,896 --> 00:00:57,166
+00:00:54,651 --> 00:00:57,305
 Agora, você conhece a sua.
 
 19
-00:00:57,616 --> 00:00:59,770
+00:00:57,755 --> 00:00:59,619
 DME Technology.
 
 20
-00:00:59,857 --> 00:01:02,998
-Tecnologia aplicada aos negócios.
-
-21
-00:01:03,189 --> 00:01:05,714
-Comente como está a sua planta.
+00:00:59,833 --> 00:01:03,346
+Automatizamos processos. Devolvemos tempo.
