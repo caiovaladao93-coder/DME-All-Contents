@@ -12,7 +12,7 @@ from sons import SR, ar, band, bell, boom, click, conv, fftfilt, hp, hz, lp, mak
 ROOT = __file__.rsplit('/scripts/', 1)[0]
 TL = json.load(open(f'{ROOT}/src/data/timeline.json'))
 S = {s['key']: s for s in TL['scenes']}; DUR = TL['frames'] / 30; N = int(DUR * SR)
-BEAT = 60 / 96; BAR = 4 * BEAT; R = np.random.default_rng(7)
+BEAT = .5; BAR = 4 * BEAT; R = np.random.default_rng(7)   # 120 BPM (versão vibrante)
 n_ = lambda x: ''.join(c for c in unicodedata.normalize('NFD', x.lower()).encode('ascii', 'ignore').decode() if c.isalnum())
 def wt(k, w, nth=0):
     h = [x[1] for x in TL['words'][k] if n_(x[0]) == n_(w)]; return h[nth] if nth < len(h) else h[0]
@@ -103,38 +103,42 @@ def section(t0, t1, prog, roots, kick_on='four', hats='16', claps=True, bass=Tru
                     put(HM, pluck(m, .22, cut * 1.4), ta + dl, .075 * gg * lvl, (.3, -.3, .3)[k], .25)
         t += BAR; bar += 1
 
-# ── levantamento: lapiseira (ticks), pulso grave a 72 BPM e cordas contidas em Ré menor
-for j, t0 in enumerate([.05, .5, .95, 1.4, 1.85, 2.3, 2.75]): put(FX, click(), t0, .12, (-.3, .3)[j % 2], .2)
-ev('lapiseira: a planta se desenha', 0)
-pulse = 60 / 72
-for tb in np.arange(1.0, tSil0, pulse): put(BS, sub_pulse(26, .8), tb, .55)
-put(HM, supersaw((50, 53, 57), tSil0 - .8, 900), .8, .14, 0, .4); put(HM, supersaw((46, 50, 53), tSil0 - SC['laudo'], 1100), SC['laudo'], .1, 0, .4)
-for tb in np.arange(SC['fora'], tSil0, BEAT / 2): put(DR, hat(), tb, .03 + .02 * (tb > SC['laudo']), .2)
-# ── raio-X: varredura e clique de scanner
-put(FX, riser(2.6, .55), tDentro + .2, 1, 0, .2); put(FX, click(), tDentro + 2.85, .3); put(FX, bell(91, .6), tDentro + 2.85, .05, 0, .3); ev('raio-X: varredura e clique do scanner', tDentro + .2)
-# ── laudo: tick grave por figura; relógio da FIG. 02
-for j, t0 in enumerate(figs): put(FX, kick(.8), t0 - .05, .3); put(FX, click(), t0, .22, (-.2, .2, -.2, .2)[j]); ev(f'FIG. 0{j + 1}', t0 - .05)
-for tb in np.arange(figs[1], figs[3], .5): put(FX, click(), tb, .05, .4 * (1 if int(tb * 2) % 2 else -1))
-ev('relógio da FIG. 02 (tique-taque)', figs[1])
+# ── TRILHA VIBRANTE (120 BPM): batida desde o gancho, groove escuro no laudo, breakdown, DROP na virada
+for j, t0 in enumerate([.05, .4, .75, 1.1, 1.45, 1.8]): put(FX, click(), t0, .12, (-.3, .3)[j % 2], .2)
+put(FX, riser(SC['fora'], .45), 0, 1, 0, .2); ev('lapiseira e riser: a planta se desenha', 0)
+put(DR, kick(), SC['fora'] - .05, .7); put(FX, crash(1.6), SC['fora'] - .05, .14, 0, .4); KICKS.append(SC['fora'] - .05); ev('batida entra com a maquete', SC['fora'])
+section(1.0, SC['fora'] - .05, DM, DM_R, kick_on='half', hats='8', claps=False, arp=False, pads=True, cut0=500, cut1=900, lvl=.7)
+section(SC['fora'], tDentro, DM, DM_R, kick_on='four', hats='8', claps=False, arp=True, cut0=900, cut1=1400, lvl=.8)
+# raio-X: subida de filtro + varredura, impacto no fim da varredura
+section(tDentro, SC['laudo'], DM, DM_R, kick_on='half', hats='16', claps=False, arp=True, cut0=700, cut1=2400, lvl=.8)
+put(FX, riser(2.6, .6), tDentro + .2, 1, 0, .2); put(DR, kick(), tDentro + 2.85, .8); put(FX, boom(1.2), tDentro + 2.85, .3, 0, .3); put(FX, click(), tDentro + 2.85, .3); KICKS.append(tDentro + 2.85)
+ev('raio-X: varredura e impacto no fim', tDentro + .2)
+# laudo: groove escuro com clap, acerto por figura
+section(SC['laudo'], SC['tensao'], DM, DM_R, kick_on='four', hats='16', claps=True, arp=True, cut0=1400, cut1=2200, lvl=.9)
+for j, t0 in enumerate(figs): put(FX, kick(.8), t0 - .05, .3); put(FX, crash(.9), t0 - .05, .06, (-.3, .3, -.3, .3)[j], .3); ev(f'FIG. 0{j + 1}', t0 - .05)
+# tensão: breakdown (sem bumbo) e riser até o silêncio
+section(SC['tensao'], tSil0, DM, DM_R, kick_on='none', hats='none', claps=False, bass=False, arp=False, cut0=1200, cut1=1200, lvl=.8)
+put(FX, riser(tSil0 - SC['tensao'], .8), SC['tensao'], 1, 0, .2); ev('breakdown e riser da tensão', SC['tensao'])
 EV.append((round(tSil0, 2), f'SILÊNCIO ({tAgora - tSil0:.2f} s) antes da virada'))
-# ── virada (REV. B): kick abafado + acorde aberto; tema a 96 BPM
-put(DR, kick(), tAgora - .02, .75); put(FX, boom(1.6), tAgora - .02, .3, 0, .4); KICKS.append(tAgora - .02)
-put(HM, supersaw((53, 57, 60, 65, 69), 2.2, 1800), tAgora - .02, .2, 0, .5); ev('virada: REV. B e acorde aberto (Fá)', tAgora)
-section(SC['metodo'] - .1, SC['nova'], UP, UP_R, kick_on='half', hats='8', claps=False, arp=True, cut0=1200, cut1=2600, lvl=.8)
+# virada: DROP
+put(DR, kick(), tAgora - .02, .9); put(FX, boom(1.8), tAgora - .02, .45, 0, .4); put(FX, crash(2.4), tAgora - .02, .25, 0, .4); KICKS.append(tAgora - .02)
+ev('DROP em "É aqui que a DME entra" (REV. B)', tAgora)
+section(tAgora + BEAT, SC['nova'], UP, UP_R, kick_on='four', hats='16', claps=True, arp=True, cut0=1800, cut1=3600, lvl=1.0)
 for j in range(8): put(FX, click(), tPadr + .1 + j * .1, .12, (-1) ** j * .25)
-ev('padronização: caixas se encaixam', tPadr + .1); put(FX, whoosh(1.0), tAuto, .14, 0, .3); ev('automação: pulso percorre o fluxo', tAuto)
+ev('padronização: caixas se encaixam', tPadr + .1); put(FX, whoosh(1.0), tAuto, .16, 0, .3); ev('automação: pulso percorre o fluxo', tAuto)
 for nm, t0 in (('IA', tIA), ('INTEGRAÇÃO', tInt)): put(FX, bell(86, .9), t0 - .1, .06, 0, .4); ev(nm, t0 - .1)
 for j in range(4): put(FX, bell(88 + 2 * j, .8), tOnde + .1 + j * .3, .06, 0, .4); ev(f'check FIG. 0{j + 1}', tOnde + .1 + j * .3)
-# ── execução: a mesma maquete, fluxos azuis; cordas sobem
-put(FX, crash(1.8), SC['nova'], .12, 0, .4); ev('execução: maquete com fluxos azuis', SC['nova'])
-section(SC['nova'], tSig, UP, UP_R, kick_on='four', hats='16', cut0=2400, cut1=3400, lvl=.85)
-put(HM, supersaw((65, 69, 72), tSig - SC['nova'], 2400), SC['nova'], .08, 0, .5)
+# execução: seção mais aberta (supersaw alto), segue no loop
+put(FX, riser(1.2, .5), SC['nova'] - 1.2, 1, 0, .2); put(DR, kick(), SC['nova'], .8); put(FX, crash(2.0), SC['nova'], .2, 0, .4); KICKS.append(SC['nova'])
+ev('execução: maquete com fluxos azuis', SC['nova'])
+section(SC['nova'], tSig, UP, UP_R, kick_on='four', hats='16', claps=True, arp=True, cut0=3200, cut1=3800, lvl=1.0)
+put(HM, supersaw((65, 69, 72, 77), tSig - SC['nova'], 3000), SC['nova'], .1, 0, .5)
 put(FX, bell(84, 1.2), tSua, .07, 0, .5); ev('carimbo APROVADO', tSua)
-# ── assinatura
-put(DR, kick(), tSig + .1, .7); put(FX, boom(1.4), tSig + .1, .2, 0, .3); KICKS.append(tSig + .1)
-put(HM, supersaw((53, 57, 60, 65, 69), DUR - tSig - .1, 2200), tSig + .1, .18, 0, .5); put(BS, bass_note(29, DUR - tSig - .1, 250), tSig + .1, .28)
+# assinatura: acerto final, acorde aberto e sinos
+put(DR, kick(), tSig + .1, .85); put(FX, boom(1.6), tSig + .1, .3, 0, .3); put(FX, crash(2.6), tSig + .1, .2, 0, .4); KICKS.append(tSig + .1)
+put(HM, supersaw((53, 57, 60, 65, 69), DUR - tSig - .1, 2600), tSig + .1, .2, 0, .5); put(BS, bass_note(29, DUR - tSig - .1, 250), tSig + .1, .3)
 for i, m in enumerate((77, 81, 84)): put(FX, bell(m, 2.6), tSig + .1 + i * .12, .12, (-.3, 0, .3)[i], .6)
-ev('assinatura: acorde final e sinos', tSig + .1); ev('CTA "Comente como está a sua planta."', wt('assinatura', 'Comente') - .1)
+ev('assinatura: acorde final e sinos', tSig + .1); ev('slogan "Automatizamos processos. Devolvemos tempo."', wt('assinatura', 'Automatizamos') - .1)
 
 # ── sidechain (baixo e harmonia "respiram" com o bumbo), reverb, silêncio antes do "Agora"
 t = ar(N); sc = np.ones(N)
@@ -159,7 +163,7 @@ env = np.zeros(N); g = 0.0; aa, rr = np.exp(-1 / (.1 * SR)), np.exp(-1 / (.4 * S
 for k in range(N):
     c = aa if fala[k] > g else rr; g = c * g + (1 - c) * fala[k]; env[k] = g
 mr = np.sqrt(np.mean(music[(fala == 0) & (mask > 0)] ** 2))
-music *= np.mean(vr) * 10 ** (-10 / 20) / mr; music *= (10 ** (-6 * env / 20))[:, None]
+music *= np.mean(vr) * 10 ** (-9 / 20) / mr; music *= (10 ** (-6 * env / 20))[:, None]
 pk = np.max(np.abs(music))
 if pk > .75: music *= .75 / pk
 subprocess.run(['ffmpeg', '-y', '-v', 'error', '-f', 'f32le', '-ar', str(SR), '-ac', '2', '-i', '-', '-c:a', 'pcm_s16le', f'{ROOT}/public/assets/audio/trilha.wav'], input=music.astype(np.float32).tobytes(), check=True)

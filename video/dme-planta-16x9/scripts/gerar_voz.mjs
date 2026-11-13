@@ -1,9 +1,9 @@
-// Locução ElevenLabs. Voz Lendário (escolhida pelo usuário para as peças DME).
+// Locução ElevenLabs. Voz padrão: DME Narrador (voz própria da DME, criada por Voice Design). Lendário: --voz=4za2kOXGgUd57HRSQ1fn
 // A chave NÃO fica no código: o proxy do ambiente injeta o cabeçalho xi-api-key.
 // Uso: NODE_USE_ENV_PROXY=1 NODE_EXTRA_CA_CERTS=/root/.ccr/ca-bundle.crt node scripts/gerar_voz.mjs [--takes=3] [--so=id,id]
 import fs from 'fs';
-const VOICE = '4za2kOXGgUd57HRSQ1fn' /* Lendário - Cheerful, Vibrant and Fun (pt-BR) */, MODEL = 'eleven_multilingual_v2';
-const SET = {stability: Number(process.argv.find(a => a.startsWith('--stability='))?.split('=')[1] || 0.4), similarity_boost: 0.8, style: Number(process.argv.find(a => a.startsWith('--style='))?.split('=')[1] || 0.35), use_speaker_boost: true, speed: Number(process.argv.find(a => a.startsWith('--speed='))?.split('=')[1] || 1.0)};
+const VOICE = process.argv.find(a => a.startsWith('--voz='))?.split('=')[1] || 'rvQN0FfieG7shqFeMyqw' /* DME Narrador (voz própria, Voice Design) */, MODEL = 'eleven_multilingual_v2';
+const SET = {stability: Number(process.argv.find(a => a.startsWith('--stability='))?.split('=')[1] || 0.4), similarity_boost: 0.85, style: Number(process.argv.find(a => a.startsWith('--style='))?.split('=')[1] || 0.35), use_speaker_boost: true, speed: Number(process.argv.find(a => a.startsWith('--speed='))?.split('=')[1] || 1.0)};
 const arg = k => (process.argv.find(a => a.startsWith(`--${k}=`)) || '').split('=')[1];
 const takes = Number(arg('takes') || 3), ini = Number(arg('inicio') || 1), so = (arg('so') || '').split(',').filter(Boolean);
 const FALAS = JSON.parse(fs.readFileSync('voz/falas.json', 'utf8'));

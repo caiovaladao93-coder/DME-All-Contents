@@ -1,37 +1,38 @@
-MARCAS · DME "A planta da operação" (16:9) · 67.47 s · 30 fps · trilha original v2, eletrônica 120 BPM
+MARCAS · DME "A planta da operação" (16:9) · 65.50 s · 30 fps · trilha original v2, eletrônica 120 BPM
 
 FALAS (Lendário, ElevenLabs; respirações removidas)
-  0.90–  4.80  [gancho] Toda empresa tem uma planta. Poucas conhecem a sua.
-  5.60–  8.57  [fora] Por fora, a operação parece funcionar.
-  9.47– 12.86  [raiox] Por dentro, o trabalho percorre caminhos que ninguém desenhou.
- 14.36– 20.49  [laudo] Informação que se repete. Aprovação que espera. Tarefa que volta para o início.
- 21.39– 25.25  [tensao] Isso não é falta de esforço. É falta de projeto.
- 25.75– 28.30  [virada] É aqui que a DME entra.
- 29.10– 37.93  [metodo] Entendemos o negócio, identificamos os gargalos e redesenhamos o processo: mapeamento, padronização e automação.
- 38.83– 44.86  [tecnologia] Com inteligência artificial e integração de sistemas, onde elas resolvem um problema real.
- 45.96– 51.63  [nova] Uma operação desenhada com propósito: clara, conectada e preparada para evoluir.
- 52.83– 56.92  [loop] Toda empresa tem uma planta. Agora, você conhece a sua.
- 57.62– 65.46  [assinatura] DME Technology. Tecnologia aplicada aos negócios. Comente como está a sua planta.
+  0.90–  4.52  [gancho] Toda empresa tem uma planta. Poucas conhecem a sua.
+  5.32–  8.02  [fora] Por fora, a operação parece funcionar.
+  8.92– 12.72  [raiox] Por dentro, o trabalho percorre caminhos que ninguém desenhou.
+ 14.22– 20.17  [laudo] Informação que se repete. Aprovação que espera. Tarefa que volta para o início.
+ 21.07– 24.60  [tensao] Isso não é falta de esforço. É falta de projeto.
+ 25.10– 26.95  [virada] É aqui que a DME entra.
+ 27.75– 36.53  [metodo] Entendemos o negócio, identificamos os gargalos e redesenhamos o processo: mapeamento, padronização e automação.
+ 37.43– 43.66  [tecnologia] Com inteligência artificial e integração de sistemas, onde elas resolvem um problema real.
+ 44.76– 51.26  [nova] Uma operação desenhada com propósito: clara, conectada e preparada para evoluir.
+ 52.46– 57.05  [loop] Toda empresa tem uma planta. Agora, você conhece a sua.
+ 57.76– 63.10  [assinatura] DME Technology. Automatizamos processos. Devolvemos tempo.
 
 TRILHA E EFEITOS
-  0.00  lapiseira: a planta se desenha
-  9.67  raio-X: varredura e clique do scanner
- 14.31  FIG. 01
- 16.45  FIG. 02
- 16.50  relógio da FIG. 02 (tique-taque)
- 18.31  FIG. 03
- 21.54  FIG. 04
- 25.30  SILÊNCIO (0.45 s) antes da virada
- 25.75  virada: REV. B e acorde aberto (Fá)
- 34.97  padronização: caixas se encaixam
- 36.53  automação: pulso percorre o fluxo
- 38.91  IA
- 40.47  INTEGRAÇÃO
- 42.21  check FIG. 01
- 42.51  check FIG. 02
- 42.81  check FIG. 03
- 43.11  check FIG. 04
- 45.66  execução: maquete com fluxos azuis
- 56.18  carimbo APROVADO
- 57.42  assinatura: acorde final e sinos
- 63.09  CTA "Comente como está a sua planta."
+  0.00  lapiseira e riser: a planta se desenha
+  5.12  batida entra com a maquete
+  9.12  raio-X: varredura e impacto no fim
+ 14.17  FIG. 01
+ 16.37  FIG. 02
+ 18.21  FIG. 03
+ 20.77  breakdown e riser da tensão
+ 21.22  FIG. 04
+ 24.65  SILÊNCIO (0.45 s) antes da virada
+ 25.10  DROP em "É aqui que a DME entra" (REV. B)
+ 33.37  padronização: caixas se encaixam
+ 34.70  automação: pulso percorre o fluxo
+ 37.56  IA
+ 39.09  INTEGRAÇÃO
+ 40.70  check FIG. 01
+ 41.00  check FIG. 02
+ 41.30  check FIG. 03
+ 41.60  check FIG. 04
+ 44.45  execução: maquete com fluxos azuis
+ 55.95  carimbo APROVADO
+ 57.55  assinatura: acorde final e sinos
+ 59.73  slogan "Automatizamos processos. Devolvemos tempo."

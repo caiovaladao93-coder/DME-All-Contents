@@ -22,7 +22,7 @@ const T = {
   ia: wt('tecnologia', 'inteligência'), integ: wt('tecnologia', 'integração'), onde: wt('tecnologia', 'onde'),
   result: wt('nova', 'Uma'), clara: wt('nova', 'clara'), conect: wt('nova', 'conectada'), prep: wt('nova', 'preparada'),
   toda2: wt('loop', 'Toda'), agora: wt('loop', 'Agora'), sua: wt('loop', 'sua'),
-  sig: S.assinatura.t0, tec: wt('assinatura', 'Tecnologia'), cta: wt('assinatura', 'Comente'),
+  sig: S.assinatura.t0, tec: wt('assinatura', 'Automatizamos'), cta: wt('assinatura', 'Devolvemos'),
 };
 const E = (k: SceneKey) => S[k];
 const MINT = C.accent; // azul DME (palavra-chave / elementos da DME)
@@ -341,11 +341,9 @@ export const Film: React.FC<{audio?: boolean; still?: number}> = ({audio = true,
       {/* ── assinatura */}
       {sig > 0 ? <AbsoluteFill style={{opacity: sig}}>
         <Logo t={t} t0={T.sig + .1} w={440} x={960 - 220} y={220} />
-        <Phrase t={t} tin={T.tec - .1} tout={99} segs={['Tecnologia aplicada aos ', ['negócios.']]} size={52} top={640} left={260} width={1400} align="center" />
-        {(() => { const a = P(t, T.cta - .1, .5, BACK); if (a <= 0) return null;
-          return <div style={{position: 'absolute', left: 960 - 470, width: 940, top: 760, padding: '26px 30px', whiteSpace: 'nowrap', borderRadius: 18, textAlign: 'center', transform: `scale(${a.toFixed(3)})`, boxSizing: 'border-box',
-            border: `2px solid ${MINT}`, background: 'rgba(58,110,165,.12)', fontFamily: HEAD, fontWeight: 800, fontSize: 46, color: C.ink, letterSpacing: '-.02em'}}>
-            Comente como está <span style={{color: MINT}}>a sua planta.</span></div>; })()}
+        <Phrase t={t} tin={T.tec - .1} tout={99} segs={['Automatizamos processos.']} size={60} top={650} left={260} width={1400} align="center" />
+        <Phrase t={t} tin={T.cta - .1} tout={99} segs={[['Devolvemos tempo.']]} size={60} top={730} left={260} width={1400} align="center" />
+        {(() => { const b = P(t, T.cta + .4, 1.0, EASE_IO); return <div style={{position: 'absolute', left: 960 - 260, top: 836, width: 520, height: 3, background: `linear-gradient(90deg, rgba(58,110,165,0), ${MINT}, rgba(58,110,165,0))`, transform: `scaleX(${b.toFixed(3)})`}} />; })()}
       </AbsoluteFill> : null}
 
       {audio ? <>

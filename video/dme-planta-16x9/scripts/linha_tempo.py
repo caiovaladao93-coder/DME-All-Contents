@@ -7,8 +7,8 @@ LEG = {x['id']: x.get('legenda', x['text']) for x in json.load(open(f'{ROOT}/voz
 # (cena, fala, entrada da voz depois do início da cena, respiro depois da fala, duração mínima da cena)
 PLAN = [('gancho', 'n1', .9, .6, 0), ('fora', 'n2', .2, .7, 0), ('raiox', 'n3', .2, 1.2, 0), ('laudo', 'n4', .3, .6, 0),
         ('tensao', 'n5', .3, .2, 0), ('virada', 'n6', .3, .6, 0), ('metodo', 'n7', .2, .7, 0), ('tecnologia', 'n8', .2, .8, 0),
-        ('nova', 'n9', .3, .9, 0), ('loop', 'n10', .3, .4, 0), ('assinatura', 'n11', .3, 2.0, 0)]
-QUEBRAS = {'n1': ['planta.'], 'n4': ['repete.', 'espera.'], 'n5': ['esforço.'], 'n7': ['gargalos'], 'n8': ['sistemas,'], 'n9': ['propósito:'], 'n10': ['planta.'], 'n11': ['Technology.', 'negócios.']}
+        ('nova', 'n9', .3, .9, 0), ('loop', 'n10', .3, .4, 0), ('assinatura', 'n11', .3, 2.4, 0)]
+QUEBRAS = {'n1': ['planta.'], 'n4': ['repete.', 'espera.'], 'n5': ['esforço.'], 'n7': ['gargalos'], 'n8': ['sistemas,'], 'n9': ['propósito:'], 'n10': ['planta.'], 'n11': ['Technology.']}
 t, scenes, words, caps = 0.0, [], {}, []
 for key, fid, lead, tail, mn in PLAN:
     a = json.load(open(f'{ROOT}/src/data/voz/{fid}.json'))['alignment']; dur = a['character_end_times_seconds'][-1]

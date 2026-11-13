@@ -11,6 +11,9 @@ Opções de voz criadas a partir de uma descrição, sem clonar ninguém, com `c
 | `amostras/firme-2.mp3` | idem | ~138 Hz | `Th8yuVVGyHRoQ2aJ08kd` |
 | `amostras/firme-3.mp3` | idem | ~125 Hz | `WMqqRJ1IKs7jaia0d3F8` |
 
-**Escolha:** a voz escolhida é salva na biblioteca da conta (`text-to-voice/create-voice-from-preview`) com o nome "DME Narrador" e passa a ser a voz padrão das peças da DME.
+**Escolhida:** **grave-3** (13/11/2026). Ela foi salva na conta com `salvar_voz.mjs` como **"DME Narrador"**, com voice_id `rvQN0FfieG7shqFeMyqw` (ver `voz-escolhida.json`).
+
+- **Ajustes de geração:** `eleven_multilingual_v2`, stability 0.5, similarity 0.85 e style 0.2.
+- **Primeira peça:** "A planta da operação", na revisão 3.
 
 **Pronúncia de "DME":** algumas prévias leram "DMI", por causa do texto em inglês. Na produção, o texto enviado grafa "Dê-Eme-É", e cada tomada é conferida por transcrição.

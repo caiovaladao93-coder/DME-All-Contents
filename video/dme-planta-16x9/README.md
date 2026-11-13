@@ -74,3 +74,16 @@ npx remotion render src/index.ts DMEPlanta out/render-bruto.mp4 --codec=h264 --c
 
 - **Áudio:** conferido por medição e transcrição, não por escuta humana.
 - **Versão curta de 30 s:** prevista no roteiro (item 9), ainda não feita.
+
+## Revisão 3
+
+- **Voz:** passa a ser a **DME Narrador**, voz própria criada por Voice Design (ver `video/brand/voz-dme/`).
+  - Todas as falas foram regravadas, com 3 tomadas cada, escolhidas por timbre e conferidas por transcrição.
+  - As tomadas antigas do Lendário estão em `voz/takes-lendario/`.
+- **Assinatura:** "DME Technology. Automatizamos processos. Devolvemos tempo.", na fala e na tela, no lugar de "Tecnologia aplicada aos negócios" e do CTA de comentário.
+- **Trilha vibrante a 120 BPM:**
+  - batida desde o gancho e kick quando a maquete ganha volume;
+  - impacto no fim do raio-X e groove escuro com clap no laudo, com um acerto por figura;
+  - breakdown e riser na tensão, 0,45 s de silêncio e **drop** em "É aqui que a DME entra";
+  - groove completo com arpejo no método;
+  - seção aberta com supersaw na execução e acorde final.
