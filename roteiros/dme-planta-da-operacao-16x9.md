@@ -178,8 +178,8 @@ As chamadas se desenham (traço → círculo → texto letra a letra em 0,3 s). 
 
 | | |
 |---|---|
-| **Locução** | "Toda empresa tem uma planta. *(break 0,4)* Agora, você conhece a sua. *(break 0,5)* Dê-Eme-É Technology. Tecnologia aplicada aos negócios. Converse com a Dê-Eme-É." |
-| **Na tela** | **"Toda empresa tem uma planta."** → **"Agora, você conhece *a sua.*"**. As linhas da maquete se recolhem num traço único que desenha o **logo DME** (as 4 peças se montam).<br>Embaixo: **"Tecnologia aplicada aos negócios."** e o CTA **"Converse com a DME"**.<br>O carimbo final, `DOC 001 · REV. B · APROVADO`, entra com um traço azul de assinatura |
+| **Locução** | "Toda empresa tem uma planta. *(break 0,4)* Agora, você conhece a sua. *(break 0,5)* Dê-Eme-É Technology. Tecnologia aplicada aos negócios. Comente como está a sua planta." |
+| **Na tela** | **"Toda empresa tem uma planta."** → **"Agora, você conhece *a sua.*"**. As linhas da maquete se recolhem num traço único que desenha o **logo DME** (as 4 peças se montam).<br>Embaixo: **"Tecnologia aplicada aos negócios."** e o CTA **"Comente como está a sua planta."**.<br>O carimbo final, `DOC 001 · REV. B · APROVADO`, entra com um traço azul de assinatura |
 | **Som** | Acorde final e três notas de assinatura, com cauda de 2 s |
 
 ## 6. Locução completa (para gravação)
@@ -194,7 +194,7 @@ As chamadas se desenham (traço → círculo → texto letra a letra em 0,3 s). 
 > Com inteligência artificial e integração de sistemas, onde elas resolvem um problema real.
 > O resultado é uma operação desenhada de propósito: clara, conectada e preparada para evoluir.
 > Toda empresa tem uma planta. Agora, você conhece a sua.
-> DME Technology. Tecnologia aplicada aos negócios. Converse com a DME.
+> DME Technology. Tecnologia aplicada aos negócios. Comente como está a sua planta.
 
 Tem cerca de 125 palavras, o que dá de 62 a 70 s na voz natural.
 
@@ -235,3 +235,9 @@ Cenas 1, 3, 4 (só FIG. 01 e 03), 6, 7 (compacta), 9 e 10. Serve para anúncio e
 3. **CTA:**
    - "Converse com a DME." (institucional, recomendado para o horizontal);
    - "Comente COMERCIAL e receba um diagnóstico" (usado nos Reels).
+
+## 11. Decisões do cliente (13/11/2026)
+
+- **Voz:** Lendário.
+- **Frase de tensão:** "É falta de engenharia." (mantida).
+- **CTA final:** "Comente como está a sua planta." Fecha o conceito e convida ao comentário.

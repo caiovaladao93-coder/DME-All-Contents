@@ -1,0 +1,838 @@
+{
+ "fps": 30,
+ "dur": 68.433,
+ "frames": 2053,
+ "scenes": [
+  {
+   "key": "gancho",
+   "fala": "n1",
+   "t0": 0.0,
+   "t1": 5.401,
+   "v0": 0.9,
+   "v1": 4.801,
+   "texto": "Toda empresa tem uma planta. Poucas conhecem a sua."
+  },
+  {
+   "key": "fora",
+   "fala": "n2",
+   "t0": 5.401,
+   "t1": 9.273,
+   "v0": 5.601,
+   "v1": 8.573,
+   "texto": "Por fora, a operação parece funcionar."
+  },
+  {
+   "key": "raiox",
+   "fala": "n3",
+   "t0": 9.273,
+   "t1": 14.063,
+   "v0": 9.473,
+   "v1": 12.863,
+   "texto": "Por dentro, o trabalho percorre caminhos que ninguém desenhou."
+  },
+  {
+   "key": "laudo",
+   "fala": "n4",
+   "t0": 14.063,
+   "t1": 21.093,
+   "v0": 14.363,
+   "v1": 20.493,
+   "texto": "Informação que se repete. Aprovação que espera. Tarefa que volta para o início."
+  },
+  {
+   "key": "tensao",
+   "fala": "n5",
+   "t0": 21.093,
+   "t1": 25.726,
+   "v0": 21.393,
+   "v1": 25.526,
+   "texto": "Isso não é falta de esforço. É falta de engenharia."
+  },
+  {
+   "key": "virada",
+   "fala": "n6",
+   "t0": 25.726,
+   "t1": 29.18,
+   "v0": 26.026,
+   "v1": 28.58,
+   "texto": "É aqui que a DME entra."
+  },
+  {
+   "key": "metodo",
+   "fala": "n7",
+   "t0": 29.18,
+   "t1": 38.904,
+   "v0": 29.38,
+   "v1": 38.204,
+   "texto": "Entendemos o negócio, identificamos os gargalos e redesenhamos o processo: mapeamento, padronização e automação."
+  },
+  {
+   "key": "tecnologia",
+   "fala": "n8",
+   "t0": 38.904,
+   "t1": 45.941,
+   "v0": 39.104,
+   "v1": 45.141,
+   "texto": "Com inteligência artificial e integração de sistemas, onde elas resolvem um problema real."
+  },
+  {
+   "key": "nova",
+   "fala": "n9",
+   "t0": 45.941,
+   "t1": 53.503,
+   "v0": 46.241,
+   "v1": 52.603,
+   "texto": "O resultado é uma operação desenhada de propósito: clara, conectada e preparada para evoluir."
+  },
+  {
+   "key": "loop",
+   "fala": "n10",
+   "t0": 53.503,
+   "t1": 58.29,
+   "v0": 53.803,
+   "v1": 57.89,
+   "texto": "Toda empresa tem uma planta. Agora, você conhece a sua."
+  },
+  {
+   "key": "assinatura",
+   "fala": "n11",
+   "t0": 58.29,
+   "t1": 68.438,
+   "v0": 58.59,
+   "v1": 66.438,
+   "texto": "DME Technology. Tecnologia aplicada aos negócios. Comente como está a sua planta."
+  }
+ ],
+ "words": {
+  "gancho": [
+   [
+    "Toda",
+    0.9,
+    1.225
+   ],
+   [
+    "empresa",
+    1.248,
+    1.643
+   ],
+   [
+    "tem",
+    1.689,
+    1.829
+   ],
+   [
+    "uma",
+    1.852,
+    1.945
+   ],
+   [
+    "planta.",
+    2.003,
+    2.479
+   ],
+   [
+    "Poucas",
+    2.967,
+    3.408
+   ],
+   [
+    "conhecem",
+    3.477,
+    4.0
+   ],
+   [
+    "a",
+    4.058,
+    4.081
+   ],
+   [
+    "sua.",
+    4.139,
+    4.801
+   ]
+  ],
+  "fora": [
+   [
+    "Por",
+    5.601,
+    5.822
+   ],
+   [
+    "fora,",
+    5.891,
+    6.263
+   ],
+   [
+    "a",
+    6.298,
+    6.344
+   ],
+   [
+    "operação",
+    6.379,
+    6.983
+   ],
+   [
+    "parece",
+    7.017,
+    7.412
+   ],
+   [
+    "funcionar.",
+    7.482,
+    8.573
+   ]
+  ],
+  "raiox": [
+   [
+    "Por",
+    9.473,
+    9.694
+   ],
+   [
+    "dentro,",
+    9.74,
+    10.1
+   ],
+   [
+    "o",
+    10.146,
+    10.193
+   ],
+   [
+    "trabalho",
+    10.239,
+    10.68
+   ],
+   [
+    "percorre",
+    10.715,
+    11.18
+   ],
+   [
+    "caminhos",
+    11.226,
+    11.632
+   ],
+   [
+    "que",
+    11.691,
+    11.76
+   ],
+   [
+    "ninguém",
+    11.807,
+    12.074
+   ],
+   [
+    "desenhou.",
+    12.12,
+    12.863
+   ]
+  ],
+  "laudo": [
+   [
+    "Informação",
+    14.363,
+    15.106
+   ],
+   [
+    "que",
+    15.129,
+    15.199
+   ],
+   [
+    "se",
+    15.257,
+    15.338
+   ],
+   [
+    "repete.",
+    15.385,
+    16.0
+   ],
+   [
+    "Aprovação",
+    16.499,
+    17.184
+   ],
+   [
+    "que",
+    17.219,
+    17.3
+   ],
+   [
+    "espera.",
+    17.324,
+    17.916
+   ],
+   [
+    "Tarefa",
+    18.357,
+    18.891
+   ],
+   [
+    "que",
+    18.937,
+    19.03
+   ],
+   [
+    "volta",
+    19.146,
+    19.518
+   ],
+   [
+    "para",
+    19.564,
+    19.738
+   ],
+   [
+    "o",
+    19.762,
+    19.785
+   ],
+   [
+    "início.",
+    19.831,
+    20.493
+   ]
+  ],
+  "tensao": [
+   [
+    "Isso",
+    21.393,
+    21.648
+   ],
+   [
+    "não",
+    21.718,
+    21.869
+   ],
+   [
+    "é",
+    21.915,
+    21.95
+   ],
+   [
+    "falta",
+    22.032,
+    22.391
+   ],
+   [
+    "de",
+    22.438,
+    22.508
+   ],
+   [
+    "esforço.",
+    22.531,
+    23.169
+   ],
+   [
+    "É",
+    23.669,
+    23.738
+   ],
+   [
+    "falta",
+    23.854,
+    24.191
+   ],
+   [
+    "de",
+    24.237,
+    24.319
+   ],
+   [
+    "engenharia.",
+    24.354,
+    25.526
+   ]
+  ],
+  "virada": [
+   [
+    "É",
+    26.026,
+    26.142
+   ],
+   [
+    "aqui",
+    26.212,
+    26.502
+   ],
+   [
+    "que",
+    26.583,
+    26.676
+   ],
+   [
+    "a",
+    26.734,
+    26.769
+   ],
+   [
+    "Dê-Eme-É",
+    26.85,
+    27.605
+   ],
+   [
+    "entra.",
+    27.756,
+    28.58
+   ]
+  ],
+  "metodo": [
+   [
+    "Entendemos",
+    29.38,
+    29.949
+   ],
+   [
+    "o",
+    30.007,
+    30.03
+   ],
+   [
+    "negócio,",
+    30.065,
+    30.599
+   ],
+   [
+    "identificamos",
+    30.622,
+    31.4
+   ],
+   [
+    "os",
+    31.47,
+    31.539
+   ],
+   [
+    "gargalos",
+    31.598,
+    32.224
+   ],
+   [
+    "e",
+    32.294,
+    32.41
+   ],
+   [
+    "redesenhamos",
+    32.433,
+    33.072
+   ],
+   [
+    "o",
+    33.142,
+    33.165
+   ],
+   [
+    "processo:",
+    33.211,
+    33.873
+   ],
+   [
+    "mapeamento,",
+    34.337,
+    35.115
+   ],
+   [
+    "padronização",
+    35.15,
+    36.207
+   ],
+   [
+    "e",
+    36.578,
+    36.729
+   ],
+   [
+    "automação.",
+    36.81,
+    38.204
+   ]
+  ],
+  "tecnologia": [
+   [
+    "Com",
+    39.104,
+    39.255
+   ],
+   [
+    "inteligência",
+    39.29,
+    39.928
+   ],
+   [
+    "artificial",
+    39.952,
+    40.695
+   ],
+   [
+    "e",
+    40.753,
+    40.811
+   ],
+   [
+    "integração",
+    40.845,
+    41.438
+   ],
+   [
+    "de",
+    41.461,
+    41.519
+   ],
+   [
+    "sistemas,",
+    41.577,
+    42.239
+   ],
+   [
+    "onde",
+    42.39,
+    42.715
+   ],
+   [
+    "elas",
+    42.773,
+    42.993
+   ],
+   [
+    "resolvem",
+    43.04,
+    43.632
+   ],
+   [
+    "um",
+    43.748,
+    43.841
+   ],
+   [
+    "problema",
+    43.887,
+    44.317
+   ],
+   [
+    "real.",
+    44.363,
+    45.141
+   ]
+  ],
+  "nova": [
+   [
+    "O",
+    46.241,
+    46.334
+   ],
+   [
+    "resultado",
+    46.404,
+    46.903
+   ],
+   [
+    "é",
+    46.926,
+    46.961
+   ],
+   [
+    "uma",
+    47.007,
+    47.135
+   ],
+   [
+    "operação",
+    47.158,
+    47.739
+   ],
+   [
+    "desenhada",
+    47.785,
+    48.238
+   ],
+   [
+    "de",
+    48.273,
+    48.319
+   ],
+   [
+    "propósito:",
+    48.366,
+    49.062
+   ],
+   [
+    "clara,",
+    49.492,
+    50.061
+   ],
+   [
+    "conectada",
+    50.212,
+    50.873
+   ],
+   [
+    "e",
+    50.897,
+    50.92
+   ],
+   [
+    "preparada",
+    50.966,
+    51.477
+   ],
+   [
+    "para",
+    51.524,
+    51.674
+   ],
+   [
+    "evoluir.",
+    51.698,
+    52.603
+   ]
+  ],
+  "loop": [
+   [
+    "Toda",
+    53.803,
+    54.105
+   ],
+   [
+    "empresa",
+    54.128,
+    54.5
+   ],
+   [
+    "tem",
+    54.546,
+    54.674
+   ],
+   [
+    "uma",
+    54.709,
+    54.825
+   ],
+   [
+    "planta.",
+    54.86,
+    55.382
+   ],
+   [
+    "Agora,",
+    55.87,
+    56.322
+   ],
+   [
+    "você",
+    56.346,
+    56.578
+   ],
+   [
+    "conhece",
+    56.659,
+    57.065
+   ],
+   [
+    "a",
+    57.089,
+    57.112
+   ],
+   [
+    "sua.",
+    57.158,
+    57.89
+   ]
+  ],
+  "assinatura": [
+   [
+    "Dê-Eme-É",
+    58.59,
+    59.31
+   ],
+   [
+    "Technology.",
+    59.461,
+    60.494
+   ],
+   [
+    "Tecnologia",
+    60.831,
+    61.62
+   ],
+   [
+    "aplicada",
+    61.69,
+    62.41
+   ],
+   [
+    "aos",
+    62.479,
+    62.746
+   ],
+   [
+    "negócios.",
+    62.839,
+    63.722
+   ],
+   [
+    "Comente",
+    64.163,
+    64.732
+   ],
+   [
+    "como",
+    64.813,
+    65.068
+   ],
+   [
+    "está",
+    65.103,
+    65.37
+   ],
+   [
+    "a",
+    65.405,
+    65.428
+   ],
+   [
+    "sua",
+    65.475,
+    65.649
+   ],
+   [
+    "planta.",
+    65.695,
+    66.438
+   ]
+  ]
+ },
+ "captions": [
+  {
+   "start": 0.9,
+   "end": 2.729,
+   "text": "Toda empresa tem uma planta.",
+   "scene": "gancho"
+  },
+  {
+   "start": 2.967,
+   "end": 5.051,
+   "text": "Poucas conhecem a sua.",
+   "scene": "gancho"
+  },
+  {
+   "start": 5.601,
+   "end": 8.823,
+   "text": "Por fora, a operação parece funcionar.",
+   "scene": "fora"
+  },
+  {
+   "start": 9.473,
+   "end": 13.113,
+   "text": "Por dentro, o trabalho percorre caminhos que ninguém desenhou.",
+   "scene": "raiox"
+  },
+  {
+   "start": 14.363,
+   "end": 16.25,
+   "text": "Informação que se repete.",
+   "scene": "laudo"
+  },
+  {
+   "start": 16.499,
+   "end": 18.166,
+   "text": "Aprovação que espera.",
+   "scene": "laudo"
+  },
+  {
+   "start": 18.357,
+   "end": 20.743,
+   "text": "Tarefa que volta para o início.",
+   "scene": "laudo"
+  },
+  {
+   "start": 21.393,
+   "end": 23.419,
+   "text": "Isso não é falta de esforço.",
+   "scene": "tensao"
+  },
+  {
+   "start": 23.669,
+   "end": 25.776,
+   "text": "É falta de engenharia.",
+   "scene": "tensao"
+  },
+  {
+   "start": 26.026,
+   "end": 28.83,
+   "text": "É aqui que a DME entra.",
+   "scene": "virada"
+  },
+  {
+   "start": 29.38,
+   "end": 32.294,
+   "text": "Entendemos o negócio, identificamos os gargalos",
+   "scene": "metodo"
+  },
+  {
+   "start": 32.294,
+   "end": 38.454,
+   "text": "e redesenhamos o processo: mapeamento, padronização e automação.",
+   "scene": "metodo"
+  },
+  {
+   "start": 39.104,
+   "end": 42.39,
+   "text": "Com inteligência artificial e integração de sistemas,",
+   "scene": "tecnologia"
+  },
+  {
+   "start": 42.39,
+   "end": 45.391,
+   "text": "onde elas resolvem um problema real.",
+   "scene": "tecnologia"
+  },
+  {
+   "start": 46.241,
+   "end": 49.312,
+   "text": "O resultado é uma operação desenhada de propósito:",
+   "scene": "nova"
+  },
+  {
+   "start": 49.492,
+   "end": 52.853,
+   "text": "clara, conectada e preparada para evoluir.",
+   "scene": "nova"
+  },
+  {
+   "start": 53.803,
+   "end": 55.632,
+   "text": "Toda empresa tem uma planta.",
+   "scene": "loop"
+  },
+  {
+   "start": 55.87,
+   "end": 58.14,
+   "text": "Agora, você conhece a sua.",
+   "scene": "loop"
+  },
+  {
+   "start": 58.59,
+   "end": 60.744,
+   "text": "DME Technology.",
+   "scene": "assinatura"
+  },
+  {
+   "start": 60.831,
+   "end": 63.972,
+   "text": "Tecnologia aplicada aos negócios.",
+   "scene": "assinatura"
+  },
+  {
+   "start": 64.163,
+   "end": 66.688,
+   "text": "Comente como está a sua planta.",
+   "scene": "assinatura"
+  }
+ ]
+}
