@@ -47,33 +47,33 @@ Entendemos o negócio, identificamos os gargalos
 e redesenhamos o processo: mapeamento, padronização e automação.
 
 13
-00:00:37,432 --> 00:00:40,602
+00:00:37,432 --> 00:00:40,613
 Com inteligência artificial e integração de sistemas,
 
 14
-00:00:40,602 --> 00:00:43,905
+00:00:40,613 --> 00:00:42,883
 onde elas resolvem um problema real.
 
 15
-00:00:44,755 --> 00:00:47,478
+00:00:43,733 --> 00:00:46,456
 Uma operação desenhada com propósito:
 
 16
-00:00:47,669 --> 00:00:51,507
+00:00:46,647 --> 00:00:50,485
 clara, conectada e preparada para evoluir.
 
 17
-00:00:52,457 --> 00:00:54,402
+00:00:51,435 --> 00:00:53,380
 Toda empresa tem uma planta.
 
 18
-00:00:54,651 --> 00:00:57,305
+00:00:53,629 --> 00:00:56,283
 Agora, você conhece a sua.
 
 19
-00:00:57,755 --> 00:00:59,619
+00:00:56,733 --> 00:00:58,597
 DME Technology.
 
 20
-00:00:59,833 --> 00:01:03,346
+00:00:58,811 --> 00:01:02,324
 Automatizamos processos. Devolvemos tempo.
