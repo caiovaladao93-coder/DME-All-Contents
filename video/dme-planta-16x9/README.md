@@ -2,7 +2,7 @@
 
 Filme horizontal em **linguagem de desenho técnico**, feito em Remotion. O roteiro detalhado está em `roteiros/dme-planta-da-operacao-16x9.md`.
 
-- **Decisões do cliente:** voz do Lendário, a frase "É falta de engenharia." e o CTA "Comente como está a sua planta.".
+- **Decisões do cliente:** voz do Lendário, a frase "É falta de projeto." (revisão 2) e o CTA "Comente como está a sua planta.".
 - **Formato:** 1920 × 1080, 30 fps, H.264 com AAC 48 kHz e −14 LUFS.
 
 ## O que há na tela

@@ -1,7 +1,7 @@
 {
  "fps": 30,
- "dur": 68.433,
- "frames": 2053,
+ "dur": 67.467,
+ "frames": 2024,
  "scenes": [
   {
    "key": "gancho",
@@ -43,63 +43,63 @@
    "key": "tensao",
    "fala": "n5",
    "t0": 21.093,
-   "t1": 25.726,
+   "t1": 25.448,
    "v0": 21.393,
-   "v1": 25.526,
-   "texto": "Isso não é falta de esforço. É falta de engenharia."
+   "v1": 25.248,
+   "texto": "Isso não é falta de esforço. É falta de projeto."
   },
   {
    "key": "virada",
    "fala": "n6",
-   "t0": 25.726,
-   "t1": 29.18,
-   "v0": 26.026,
-   "v1": 28.58,
+   "t0": 25.448,
+   "t1": 28.902,
+   "v0": 25.748,
+   "v1": 28.302,
    "texto": "É aqui que a DME entra."
   },
   {
    "key": "metodo",
    "fala": "n7",
-   "t0": 29.18,
-   "t1": 38.904,
-   "v0": 29.38,
-   "v1": 38.204,
+   "t0": 28.902,
+   "t1": 38.626,
+   "v0": 29.102,
+   "v1": 37.926,
    "texto": "Entendemos o negócio, identificamos os gargalos e redesenhamos o processo: mapeamento, padronização e automação."
   },
   {
    "key": "tecnologia",
    "fala": "n8",
-   "t0": 38.904,
-   "t1": 45.941,
-   "v0": 39.104,
-   "v1": 45.141,
+   "t0": 38.626,
+   "t1": 45.663,
+   "v0": 38.826,
+   "v1": 44.863,
    "texto": "Com inteligência artificial e integração de sistemas, onde elas resolvem um problema real."
   },
   {
    "key": "nova",
    "fala": "n9",
-   "t0": 45.941,
-   "t1": 53.503,
-   "v0": 46.241,
-   "v1": 52.603,
-   "texto": "O resultado é uma operação desenhada de propósito: clara, conectada e preparada para evoluir."
+   "t0": 45.663,
+   "t1": 52.529,
+   "v0": 45.963,
+   "v1": 51.629,
+   "texto": "Uma operação desenhada com propósito: clara, conectada e preparada para evoluir."
   },
   {
    "key": "loop",
    "fala": "n10",
-   "t0": 53.503,
-   "t1": 58.29,
-   "v0": 53.803,
-   "v1": 57.89,
+   "t0": 52.529,
+   "t1": 57.316,
+   "v0": 52.829,
+   "v1": 56.916,
    "texto": "Toda empresa tem uma planta. Agora, você conhece a sua."
   },
   {
    "key": "assinatura",
    "fala": "n11",
-   "t0": 58.29,
-   "t1": 68.438,
-   "v0": 58.59,
-   "v1": 66.438,
+   "t0": 57.316,
+   "t1": 67.464,
+   "v0": 57.616,
+   "v1": 65.464,
    "texto": "DME Technology. Tecnologia aplicada aos negócios. Comente como está a sua planta."
   }
  ],
@@ -301,409 +301,394 @@
    [
     "Isso",
     21.393,
-    21.648
+    21.625
    ],
    [
     "não",
-    21.718,
-    21.869
+    21.672,
+    21.799
    ],
    [
     "é",
-    21.915,
-    21.95
+    21.857,
+    21.892
    ],
    [
     "falta",
-    22.032,
-    22.391
+    21.985,
+    22.357
    ],
    [
     "de",
-    22.438,
-    22.508
+    22.403,
+    22.484
    ],
    [
     "esforço.",
-    22.531,
-    23.169
+    22.508,
+    23.123
    ],
    [
     "É",
     23.669,
-    23.738
+    23.727
    ],
    [
     "falta",
-    23.854,
+    23.843,
     24.191
    ],
    [
     "de",
     24.237,
-    24.319
+    24.307
    ],
    [
-    "engenharia.",
+    "projeto.",
     24.354,
-    25.526
+    25.248
    ]
   ],
   "virada": [
    [
     "É",
-    26.026,
-    26.142
+    25.748,
+    25.864
    ],
    [
     "aqui",
-    26.212,
-    26.502
+    25.934,
+    26.224
    ],
    [
     "que",
-    26.583,
-    26.676
+    26.305,
+    26.398
    ],
    [
     "a",
-    26.734,
-    26.769
+    26.456,
+    26.491
    ],
    [
     "Dê-Eme-É",
-    26.85,
-    27.605
+    26.572,
+    27.327
    ],
    [
     "entra.",
-    27.756,
-    28.58
+    27.478,
+    28.302
    ]
   ],
   "metodo": [
    [
     "Entendemos",
-    29.38,
-    29.949
+    29.102,
+    29.671
    ],
    [
     "o",
-    30.007,
-    30.03
+    29.729,
+    29.752
    ],
    [
     "negócio,",
-    30.065,
-    30.599
+    29.787,
+    30.321
    ],
    [
     "identificamos",
-    30.622,
-    31.4
+    30.344,
+    31.122
    ],
    [
     "os",
-    31.47,
-    31.539
+    31.192,
+    31.261
    ],
    [
     "gargalos",
-    31.598,
-    32.224
+    31.32,
+    31.946
    ],
    [
     "e",
-    32.294,
-    32.41
+    32.016,
+    32.132
    ],
    [
     "redesenhamos",
-    32.433,
-    33.072
+    32.155,
+    32.794
    ],
    [
     "o",
-    33.142,
-    33.165
+    32.864,
+    32.887
    ],
    [
     "processo:",
-    33.211,
-    33.873
+    32.933,
+    33.595
    ],
    [
     "mapeamento,",
-    34.337,
-    35.115
+    34.059,
+    34.837
    ],
    [
     "padronização",
-    35.15,
-    36.207
+    34.872,
+    35.929
    ],
    [
     "e",
-    36.578,
-    36.729
+    36.3,
+    36.451
    ],
    [
     "automação.",
-    36.81,
-    38.204
+    36.532,
+    37.926
    ]
   ],
   "tecnologia": [
    [
     "Com",
-    39.104,
-    39.255
+    38.826,
+    38.977
    ],
    [
     "inteligência",
-    39.29,
-    39.928
+    39.012,
+    39.65
    ],
    [
     "artificial",
-    39.952,
-    40.695
+    39.674,
+    40.417
    ],
    [
     "e",
-    40.753,
-    40.811
+    40.475,
+    40.533
    ],
    [
     "integração",
-    40.845,
-    41.438
+    40.567,
+    41.16
    ],
    [
     "de",
-    41.461,
-    41.519
+    41.183,
+    41.241
    ],
    [
     "sistemas,",
-    41.577,
-    42.239
+    41.299,
+    41.961
    ],
    [
     "onde",
-    42.39,
-    42.715
+    42.112,
+    42.437
    ],
    [
     "elas",
-    42.773,
-    42.993
+    42.495,
+    42.715
    ],
    [
     "resolvem",
-    43.04,
-    43.632
+    42.762,
+    43.354
    ],
    [
     "um",
-    43.748,
-    43.841
+    43.47,
+    43.563
    ],
    [
     "problema",
-    43.887,
-    44.317
+    43.609,
+    44.039
    ],
    [
     "real.",
-    44.363,
-    45.141
+    44.085,
+    44.863
    ]
   ],
   "nova": [
    [
-    "O",
-    46.241,
-    46.334
-   ],
-   [
-    "resultado",
-    46.404,
-    46.903
-   ],
-   [
-    "é",
-    46.926,
-    46.961
-   ],
-   [
-    "uma",
-    47.007,
-    47.135
+    "Uma",
+    45.963,
+    46.126
    ],
    [
     "operação",
-    47.158,
-    47.739
+    46.149,
+    46.706
    ],
    [
     "desenhada",
-    47.785,
-    48.238
+    46.752,
+    47.205
    ],
    [
-    "de",
-    48.273,
-    48.319
+    "com",
+    47.252,
+    47.368
    ],
    [
     "propósito:",
-    48.366,
-    49.062
+    47.414,
+    48.157
    ],
    [
     "clara,",
-    49.492,
-    50.061
+    48.552,
+    49.121
    ],
    [
     "conectada",
-    50.212,
-    50.873
+    49.237,
+    49.945
    ],
    [
     "e",
-    50.897,
-    50.92
+    49.968,
+    49.992
    ],
    [
     "preparada",
-    50.966,
-    51.477
+    50.05,
+    50.584
    ],
    [
     "para",
-    51.524,
-    51.674
+    50.63,
+    50.816
    ],
    [
     "evoluir.",
-    51.698,
-    52.603
+    50.839,
+    51.629
    ]
   ],
   "loop": [
    [
     "Toda",
-    53.803,
-    54.105
+    52.829,
+    53.131
    ],
    [
     "empresa",
-    54.128,
-    54.5
+    53.154,
+    53.526
    ],
    [
     "tem",
-    54.546,
-    54.674
+    53.572,
+    53.7
    ],
    [
     "uma",
-    54.709,
-    54.825
+    53.735,
+    53.851
    ],
    [
     "planta.",
-    54.86,
-    55.382
+    53.886,
+    54.408
    ],
    [
     "Agora,",
-    55.87,
-    56.322
+    54.896,
+    55.348
    ],
    [
     "você",
-    56.346,
-    56.578
+    55.372,
+    55.604
    ],
    [
     "conhece",
-    56.659,
-    57.065
+    55.685,
+    56.091
    ],
    [
     "a",
-    57.089,
-    57.112
+    56.115,
+    56.138
    ],
    [
     "sua.",
-    57.158,
-    57.89
+    56.184,
+    56.916
    ]
   ],
   "assinatura": [
    [
     "Dê-Eme-É",
-    58.59,
-    59.31
+    57.616,
+    58.336
    ],
    [
     "Technology.",
-    59.461,
-    60.494
+    58.487,
+    59.52
    ],
    [
     "Tecnologia",
-    60.831,
-    61.62
+    59.857,
+    60.646
    ],
    [
     "aplicada",
-    61.69,
-    62.41
+    60.716,
+    61.436
    ],
    [
     "aos",
-    62.479,
-    62.746
+    61.505,
+    61.772
    ],
    [
     "negócios.",
-    62.839,
-    63.722
+    61.865,
+    62.748
    ],
    [
     "Comente",
-    64.163,
-    64.732
+    63.189,
+    63.758
    ],
    [
     "como",
-    64.813,
-    65.068
+    63.839,
+    64.094
    ],
    [
     "está",
-    65.103,
-    65.37
+    64.129,
+    64.396
    ],
    [
     "a",
-    65.405,
-    65.428
+    64.431,
+    64.454
    ],
    [
     "sua",
-    65.475,
-    65.649
+    64.501,
+    64.675
    ],
    [
     "planta.",
-    65.695,
-    66.438
+    64.721,
+    65.464
    ]
   ]
  },
@@ -752,85 +737,85 @@
   },
   {
    "start": 21.393,
-   "end": 23.419,
+   "end": 23.373,
    "text": "Isso não é falta de esforço.",
    "scene": "tensao"
   },
   {
    "start": 23.669,
-   "end": 25.776,
-   "text": "É falta de engenharia.",
+   "end": 25.498,
+   "text": "É falta de projeto.",
    "scene": "tensao"
   },
   {
-   "start": 26.026,
-   "end": 28.83,
+   "start": 25.748,
+   "end": 28.552,
    "text": "É aqui que a DME entra.",
    "scene": "virada"
   },
   {
-   "start": 29.38,
-   "end": 32.294,
+   "start": 29.102,
+   "end": 32.016,
    "text": "Entendemos o negócio, identificamos os gargalos",
    "scene": "metodo"
   },
   {
-   "start": 32.294,
-   "end": 38.454,
+   "start": 32.016,
+   "end": 38.176,
    "text": "e redesenhamos o processo: mapeamento, padronização e automação.",
    "scene": "metodo"
   },
   {
-   "start": 39.104,
-   "end": 42.39,
+   "start": 38.826,
+   "end": 42.112,
    "text": "Com inteligência artificial e integração de sistemas,",
    "scene": "tecnologia"
   },
   {
-   "start": 42.39,
-   "end": 45.391,
+   "start": 42.112,
+   "end": 45.113,
    "text": "onde elas resolvem um problema real.",
    "scene": "tecnologia"
   },
   {
-   "start": 46.241,
-   "end": 49.312,
-   "text": "O resultado é uma operação desenhada de propósito:",
+   "start": 45.963,
+   "end": 48.407,
+   "text": "Uma operação desenhada com propósito:",
    "scene": "nova"
   },
   {
-   "start": 49.492,
-   "end": 52.853,
+   "start": 48.552,
+   "end": 51.879,
    "text": "clara, conectada e preparada para evoluir.",
    "scene": "nova"
   },
   {
-   "start": 53.803,
-   "end": 55.632,
+   "start": 52.829,
+   "end": 54.658,
    "text": "Toda empresa tem uma planta.",
    "scene": "loop"
   },
   {
-   "start": 55.87,
-   "end": 58.14,
+   "start": 54.896,
+   "end": 57.166,
    "text": "Agora, você conhece a sua.",
    "scene": "loop"
   },
   {
-   "start": 58.59,
-   "end": 60.744,
+   "start": 57.616,
+   "end": 59.77,
    "text": "DME Technology.",
    "scene": "assinatura"
   },
   {
-   "start": 60.831,
-   "end": 63.972,
+   "start": 59.857,
+   "end": 62.998,
    "text": "Tecnologia aplicada aos negócios.",
    "scene": "assinatura"
   },
   {
-   "start": 64.163,
-   "end": 66.688,
+   "start": 63.189,
+   "end": 65.714,
    "text": "Comente como está a sua planta.",
    "scene": "assinatura"
   }

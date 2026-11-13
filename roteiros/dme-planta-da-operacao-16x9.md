@@ -132,7 +132,7 @@ As chamadas se desenham (traço → círculo → texto letra a letra em 0,3 s). 
 
 | | |
 |---|---|
-| **Locução** | "Isso não é falta de esforço. *(break 0,4)* É falta de *engenharia*." |
+| **Locução** | "Isso não é falta de esforço. *(break 0,5)* É falta de *projeto*." |
 | **Na tela** | A câmera recua para a maquete inteira, com as três figuras visíveis e mais **FIG. 04 — SISTEMAS SEM COMUNICAÇÃO** entre Financeiro e Operação. Títulos: **"Não é falta de esforço."** → **"É falta de *engenharia.*"** |
 | **Imagem** | A maquete inteira escurece levemente; só as linhas tracejadas ficam visíveis, como um mapa de problemas |
 | **Som** | O pulso desacelera; 0,4 s de silêncio total antes da cena 6 |
@@ -188,11 +188,11 @@ As chamadas se desenham (traço → círculo → texto letra a letra em 0,3 s). 
 > Por fora, a operação parece funcionar.
 > Por dentro, o trabalho percorre caminhos que ninguém desenhou.
 > Informação que se repete. Aprovação que espera. Tarefa que volta para o início.
-> Isso não é falta de esforço. É falta de engenharia.
+> Isso não é falta de esforço. É falta de projeto.
 > É aqui que a DME entra.
 > Entendemos o negócio, identificamos os gargalos e redesenhamos o processo: mapeamento, padronização e automação.
 > Com inteligência artificial e integração de sistemas, onde elas resolvem um problema real.
-> O resultado é uma operação desenhada de propósito: clara, conectada e preparada para evoluir.
+> Uma operação desenhada com propósito: clara, conectada e preparada para evoluir.
 > Toda empresa tem uma planta. Agora, você conhece a sua.
 > DME Technology. Tecnologia aplicada aos negócios. Comente como está a sua planta.
 
@@ -241,3 +241,15 @@ Cenas 1, 3, 4 (só FIG. 01 e 03), 6, 7 (compacta), 9 e 10. Serve para anúncio e
 - **Voz:** Lendário.
 - **Frase de tensão:** "É falta de engenharia." (mantida).
 - **CTA final:** "Comente como está a sua planta." Fecha o conceito e convida ao comentário.
+
+## 12. Revisão 2 (pedidos do cliente)
+
+- **Planta baixa:** cada número fica **no lugar do problema que representa**, com glifo e legenda. São eles:
+  - 01 · INFORMAÇÃO REPETIDA (3 cópias no Comercial);
+  - 02 · APROVAÇÃO EM ESPERA (relógio no Financeiro);
+  - 03 · RETRABALHO (seta de volta da Operação ao Atendimento);
+  - 04 · SEM COMUNICAÇÃO (ligação partida entre Financeiro e Operação, substituída pelo selo INTEGRAÇÃO).
+- **Fala e título da cena 9:** passam a ser "Uma operação desenhada com propósito: clara, conectada e preparada para evoluir."
+- **Tensão:**
+  - "Não é falta de esforço." fica na tela e a segunda frase entra embaixo.
+  - "É falta de engenharia." foi trocada por **"É falta de projeto."**. Ela fecha a metáfora da planta (uma planta é um projeto) e conduz à etapa 03 PROJETO.

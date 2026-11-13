@@ -1,17 +1,17 @@
-MARCAS · DME "A planta da operação" (16:9) · 68.43 s · 30 fps · trilha original v2, eletrônica 120 BPM
+MARCAS · DME "A planta da operação" (16:9) · 67.47 s · 30 fps · trilha original v2, eletrônica 120 BPM
 
 FALAS (Lendário, ElevenLabs; respirações removidas)
   0.90–  4.80  [gancho] Toda empresa tem uma planta. Poucas conhecem a sua.
   5.60–  8.57  [fora] Por fora, a operação parece funcionar.
   9.47– 12.86  [raiox] Por dentro, o trabalho percorre caminhos que ninguém desenhou.
  14.36– 20.49  [laudo] Informação que se repete. Aprovação que espera. Tarefa que volta para o início.
- 21.39– 25.53  [tensao] Isso não é falta de esforço. É falta de engenharia.
- 26.03– 28.58  [virada] É aqui que a DME entra.
- 29.38– 38.20  [metodo] Entendemos o negócio, identificamos os gargalos e redesenhamos o processo: mapeamento, padronização e automação.
- 39.10– 45.14  [tecnologia] Com inteligência artificial e integração de sistemas, onde elas resolvem um problema real.
- 46.24– 52.60  [nova] O resultado é uma operação desenhada de propósito: clara, conectada e preparada para evoluir.
- 53.80– 57.89  [loop] Toda empresa tem uma planta. Agora, você conhece a sua.
- 58.59– 66.44  [assinatura] DME Technology. Tecnologia aplicada aos negócios. Comente como está a sua planta.
+ 21.39– 25.25  [tensao] Isso não é falta de esforço. É falta de projeto.
+ 25.75– 28.30  [virada] É aqui que a DME entra.
+ 29.10– 37.93  [metodo] Entendemos o negócio, identificamos os gargalos e redesenhamos o processo: mapeamento, padronização e automação.
+ 38.83– 44.86  [tecnologia] Com inteligência artificial e integração de sistemas, onde elas resolvem um problema real.
+ 45.96– 51.63  [nova] Uma operação desenhada com propósito: clara, conectada e preparada para evoluir.
+ 52.83– 56.92  [loop] Toda empresa tem uma planta. Agora, você conhece a sua.
+ 57.62– 65.46  [assinatura] DME Technology. Tecnologia aplicada aos negócios. Comente como está a sua planta.
 
 TRILHA E EFEITOS
   0.00  lapiseira: a planta se desenha
@@ -21,17 +21,17 @@ TRILHA E EFEITOS
  16.50  relógio da FIG. 02 (tique-taque)
  18.31  FIG. 03
  21.54  FIG. 04
- 25.58  SILÊNCIO (0.45 s) antes da virada
- 26.03  virada: REV. B e acorde aberto (Fá)
- 35.25  padronização: caixas se encaixam
- 36.81  automação: pulso percorre o fluxo
- 39.19  IA
- 40.74  INTEGRAÇÃO
- 42.49  check FIG. 01
- 42.79  check FIG. 02
- 43.09  check FIG. 03
- 43.39  check FIG. 04
- 45.94  execução: maquete com fluxos azuis
- 57.16  carimbo APROVADO
- 58.39  assinatura: acorde final e sinos
- 64.06  CTA "Comente como está a sua planta."
+ 25.30  SILÊNCIO (0.45 s) antes da virada
+ 25.75  virada: REV. B e acorde aberto (Fá)
+ 34.97  padronização: caixas se encaixam
+ 36.53  automação: pulso percorre o fluxo
+ 38.91  IA
+ 40.47  INTEGRAÇÃO
+ 42.21  check FIG. 01
+ 42.51  check FIG. 02
+ 42.81  check FIG. 03
+ 43.11  check FIG. 04
+ 45.66  execução: maquete com fluxos azuis
+ 56.18  carimbo APROVADO
+ 57.42  assinatura: acorde final e sinos
+ 63.09  CTA "Comente como está a sua planta."

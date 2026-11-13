@@ -16,11 +16,11 @@ loadFonts();
 const T = {
   toda: wt('gancho', 'Toda'), poucas: wt('gancho', 'Poucas'), fora: wt('fora', 'Por'), dentro: wt('raiox', 'Por'),
   info: wt('laudo', 'Informação'), aprov: wt('laudo', 'Aprovação'), tarefa: wt('laudo', 'Tarefa'),
-  isso: wt('tensao', 'Isso'), eFalta: wt('tensao', 'É'), eng: wt('tensao', 'engenharia'),
+  isso: wt('tensao', 'Isso'), eFalta: wt('tensao', 'É'), eng: wt('tensao', 'projeto'),
   aqui: wt('virada', 'É'), dme: wt('virada', 'Dê-Eme-É'),
   ent: wt('metodo', 'Entendemos'), ident: wt('metodo', 'identificamos'), redes: wt('metodo', 'redesenhamos'), mapa: wt('metodo', 'mapeamento'), padr: wt('metodo', 'padronização'), auto: wt('metodo', 'automação'),
   ia: wt('tecnologia', 'inteligência'), integ: wt('tecnologia', 'integração'), onde: wt('tecnologia', 'onde'),
-  result: wt('nova', 'O'), clara: wt('nova', 'clara'), conect: wt('nova', 'conectada'), prep: wt('nova', 'preparada'),
+  result: wt('nova', 'Uma'), clara: wt('nova', 'clara'), conect: wt('nova', 'conectada'), prep: wt('nova', 'preparada'),
   toda2: wt('loop', 'Toda'), agora: wt('loop', 'Agora'), sua: wt('loop', 'sua'),
   sig: S.assinatura.t0, tec: wt('assinatura', 'Tecnologia'), cta: wt('assinatura', 'Comente'),
 };
@@ -217,7 +217,9 @@ const FLOW_PTS = (() => { const p: Array<[number, number]> = []; ROOMS.forEach((
 const flowLen = FLOW_PTS.slice(1).reduce((s, p, i) => s + Math.hypot(p[0] - FLOW_PTS[i][0], p[1] - FLOW_PTS[i][1]), 0);
 const flowAt = (u: number): [number, number] => { let d = u * flowLen; for (let i = 1; i < FLOW_PTS.length; i++) { const L = Math.hypot(FLOW_PTS[i][0] - FLOW_PTS[i - 1][0], FLOW_PTS[i][1] - FLOW_PTS[i - 1][1]);
   if (d <= L) return [lerp(FLOW_PTS[i - 1][0], FLOW_PTS[i][0], d / L), lerp(FLOW_PTS[i - 1][1], FLOW_PTS[i][1], d / L)]; d -= L; } return FLOW_PTS[FLOW_PTS.length - 1]; };
-const PFIG: Array<[string, number, number]> = [['01', 1260, 330], ['02', 1480, 560], ['03', 1370, 800], ['04', 1597, 470]];
+// figuras do laudo na planta: cada número fica no problema que representa, com glifo e legenda
+const PFIG: Array<[string, number, number, [string, string?]]> = [['01', ROOMS[1].x + 60, 335, ['INFORMAÇÃO', 'REPETIDA']], ['02', ROOMS[2].x + 60, 335, ['APROVAÇÃO', 'EM ESPERA']],
+  ['03', 1380, 790, ['RETRABALHO']], ['04', ROOMS[3].x - 7.5, 520, ['SEM', 'COMUNICAÇÃO']]];
 const Plan: React.FC<{t: number}> = ({t}) => {
   const v = P(t, E('virada').t0 - .02, .25) * (1 - P(t, E('nova').t0 - .1, .3));
   if (v <= 0) return null;
@@ -236,9 +238,21 @@ const Plan: React.FC<{t: number}> = ({t}) => {
     {/* caos (tracejado) apagando no sentido inverso */}
     {chaos.map((d, i) => <path key={i} d={d} fill="none" stroke="rgba(192,198,204,.75)" strokeWidth="2.4" strokeDasharray="9 8" opacity={(walls) * (1 - erase)} />)}
     {/* figuras numeradas (identificar) */}
-    {PFIG.map(([n, x, y], i) => { const ok = P(t, T.onde + .1 + i * .3, .3, BACK); return <g key={n} opacity={figs} transform={`translate(${x} ${y}) scale(${figs.toFixed(3)})`}>
-      <circle r="22" fill="#0A0B0C" stroke={ok > .5 ? MINT : C.ink} strokeWidth="2.5" /><text y="7" textAnchor="middle" fontFamily="Manrope" fontWeight={800} fontSize="17" fill={C.ink} opacity={1 - ok}>{n}</text>
-      {ok > 0 ? <path d="M-9 0 L-2 7 L10 -7" fill="none" stroke={MINT} strokeWidth="3.5" strokeLinecap="round" opacity={ok} /> : null}</g>; })}
+    {/* glifos dos problemas (somem quando o processo é redesenhado) */}
+    {(() => { const g = figs * (1 - P(t, T.mapa, .5)); if (g <= 0) return null; const [cx, cy] = [ROOMS[1].x + 140, 335], [fx, fy] = [ROOMS[2].x + 140, 335];
+      return <g opacity={g}>
+        {[0, 1, 2].map((k) => <rect key={k} x={cx - 18 + k * 8} y={cy - 22 + k * 8} width="26" height="32" rx="3" fill="#16191C" stroke={C.silver} strokeWidth="1.8" />)}
+        <circle cx={fx} cy={fy} r="20" fill="#16191C" stroke={C.silver} strokeWidth="2" /><line x1={fx} y1={fy} x2={fx + 12 * Math.sin(t * 3)} y2={fy - 12 * Math.cos(t * 3)} stroke={C.ink} strokeWidth="2.5" strokeLinecap="round" />
+        <path d={`M${ROOMS[3].x + 160} 790 L${ROOMS[0].x + 40} 790`} stroke={C.silver} strokeWidth="2.4" strokeDasharray="9 7" fill="none" />
+        <path d={`M${ROOMS[0].x + 56} 780 L${ROOMS[0].x + 40} 790 L${ROOMS[0].x + 56} 800`} stroke={C.silver} strokeWidth="2.4" fill="none" />
+        <line x1={ROOMS[3].x - 52} y1="470" x2={ROOMS[3].x - 20} y2="470" stroke={C.silver} strokeWidth="3" /><line x1={ROOMS[3].x + 5} y1="470" x2={ROOMS[3].x + 37} y2="470" stroke={C.silver} strokeWidth="3" />
+      </g>; })()}
+    {PFIG.map(([n, x, y, lab], i) => { const ok = P(t, T.onde + .1 + i * .3, .3, BACK), a = P(t, T.ident - .1 + i * .15, .4, BACK), hide = i === 3 ? P(t, T.integ - .1, .3) : 0;
+      return <g key={n} opacity={a * (1 - hide)}>
+        <g transform={`translate(${x} ${y}) scale(${a.toFixed(3)})`}><circle r="22" fill="#0A0B0C" stroke={ok > .5 ? MINT : C.ink} strokeWidth="2.5" /><text y="7" textAnchor="middle" fontFamily="Manrope" fontWeight={800} fontSize="17" fill={C.ink} opacity={1 - ok}>{n}</text>
+          {ok > 0 ? <path d="M-9 0 L-2 7 L10 -7" fill="none" stroke={MINT} strokeWidth="3.5" strokeLinecap="round" opacity={ok} /> : null}</g>
+        {lab.map((l, k) => l ? <text key={k} x={x} y={y + 44 + k * 18} textAnchor="middle" fontFamily="Manrope" fontWeight={700} fontSize="13" letterSpacing="1.6" fill={ok > .5 ? MINT : C.silver}>{l}</text> : null)}
+      </g>; })}
     {/* fluxograma: caixas (mapeamento → padronização) e losango de decisão */}
     {BOXES.map((bx, i) => bx.map((b, j) => { const w = lerp(b.w, 140, pad), x = lerp(b.x, ROOMS[i].x + 30, pad), r = lerp(b.r, 0, pad);
       return <g key={`${i}${j}`} opacity={map} transform={`rotate(${r.toFixed(2)} ${x + w / 2} ${b.y + 28})`}>
@@ -313,13 +327,13 @@ export const Film: React.FC<{audio?: boolean; still?: number}> = ({audio = true,
       <Phrase t={t} tin={T.info - .05} tout={T.aprov - .35} segs={['Informação', '|', 'que ', ['se repete.']]} size={64} top={330} />
       <Phrase t={t} tin={T.aprov - .05} tout={T.tarefa - .35} segs={['Aprovação', '|', 'que ', ['espera.']]} size={64} top={330} />
       <Phrase t={t} tin={T.tarefa - .05} tout={E('laudo').t1 - .3} segs={['Tarefa que volta', '|', ['para o início.']]} size={64} top={330} />
-      <Phrase t={t} tin={T.isso - .05} tout={T.eFalta - .35} segs={['Não é falta', '|', 'de esforço.']} size={68} top={330} />
-      <Phrase t={t} tin={T.eFalta - .05} tout={E('tensao').t1 - .1} segs={['É falta de', '|', ['engenharia.']]} size={76} top={330} />
+      <Phrase t={t} tin={T.isso - .05} tout={E('tensao').t1 - .1} segs={['Não é falta', '|', 'de esforço.']} size={66} top={300} />
+      <Phrase t={t} tin={T.eFalta - .05} tout={E('tensao').t1 - .1} segs={['É falta de', '|', ['projeto.']]} size={76} top={470} />
       <Phrase t={t} tin={T.aqui - .05} tout={E('virada').t1 - .3} segs={['É aqui que', '|', 'a ', ['DME'], ' entra.']} size={72} top={330} />
       <Spec t={t} tin={T.ent - .2} tout={E('metodo').t1 - .3} top={300} items={[['01 ENTENDER', T.ent], ['02 IDENTIFICAR', T.ident], ['03 REDESENHAR', T.redes], ['MAPEAMENTO', T.mapa, true], ['PADRONIZAÇÃO', T.padr, true], ['AUTOMAÇÃO', T.auto, true]]} />
       <Phrase t={t} tin={T.ia - .25} tout={T.onde - .35} segs={['Inteligência artificial', '|', 'e ', ['integração.']]} size={60} top={330} />
       <Phrase t={t} tin={T.onde - .05} tout={E('tecnologia').t1 - .3} segs={['Onde resolvem', '|', 'um ', ['problema real.']]} size={64} top={330} />
-      <Phrase t={t} tin={T.result - .05} tout={E('nova').t1 - .3} segs={['Uma operação', '|', 'desenhada', '|', 'de ', ['propósito.']]} size={60} top={250} />
+      <Phrase t={t} tin={T.result - .05} tout={E('nova').t1 - .3} segs={['Uma operação', '|', 'desenhada', '|', 'com ', ['propósito.']]} size={60} top={250} />
       <Spec t={t} tin={T.clara - .2} tout={E('nova').t1 - .3} top={540} items={[['CLARA', T.clara], ['CONECTADA', T.conect], ['PREPARADA PARA EVOLUIR', T.prep]]} />
       <Phrase t={t} tin={T.toda2 - .05} tout={E('loop').t1 - .1} segs={['Toda empresa', '|', 'tem uma planta.']} size={68} top={300} />
       <Phrase t={t} tin={T.agora - .05} tout={E('loop').t1 - .1} segs={['Agora, você', '|', 'conhece ', ['a sua.']]} size={68} top={460} />

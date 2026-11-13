@@ -19,8 +19,8 @@
  },
  {
   "id": "n5",
-  "text": "Isso não é falta de esforço. <break time=\"0.45s\" /> É falta de engenharia.",
-  "legenda": "Isso não é falta de esforço. É falta de engenharia."
+  "text": "Isso não é falta de esforço. <break time=\"0.5s\" /> É falta de projeto.",
+  "legenda": "Isso não é falta de esforço. É falta de projeto."
  },
  {
   "id": "n6",
@@ -38,8 +38,8 @@
  },
  {
   "id": "n9",
-  "text": "O resultado é uma operação desenhada de propósito: <break time=\"0.35s\" /> clara, conectada e preparada para evoluir.",
-  "legenda": "O resultado é uma operação desenhada de propósito: clara, conectada e preparada para evoluir."
+  "text": "Uma operação desenhada com propósito: <break time=\"0.35s\" /> clara, conectada e preparada para evoluir.",
+  "legenda": "Uma operação desenhada com propósito: clara, conectada e preparada para evoluir."
  },
  {
   "id": "n10",
