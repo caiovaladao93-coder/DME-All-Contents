@@ -1,4 +1,4 @@
-MARCAS · DME "A planta da operação" (16:9) · 65.50 s · 30 fps · trilha original v2, eletrônica 120 BPM
+MARCAS · DME "A planta da operação" (16:9) · 64.47 s · 30 fps · trilha original v2, eletrônica 120 BPM
 
 FALAS (Lendário, ElevenLabs; respirações removidas)
   0.90–  4.52  [gancho] Toda empresa tem uma planta. Poucas conhecem a sua.
@@ -8,10 +8,10 @@ FALAS (Lendário, ElevenLabs; respirações removidas)
  21.07– 24.60  [tensao] Isso não é falta de esforço. É falta de projeto.
  25.10– 26.95  [virada] É aqui que a DME entra.
  27.75– 36.53  [metodo] Entendemos o negócio, identificamos os gargalos e redesenhamos o processo: mapeamento, padronização e automação.
- 37.43– 43.66  [tecnologia] Com inteligência artificial e integração de sistemas, onde elas resolvem um problema real.
- 44.76– 51.26  [nova] Uma operação desenhada com propósito: clara, conectada e preparada para evoluir.
- 52.46– 57.05  [loop] Toda empresa tem uma planta. Agora, você conhece a sua.
- 57.76– 63.10  [assinatura] DME Technology. Automatizamos processos. Devolvemos tempo.
+ 37.43– 42.63  [tecnologia] Com inteligência artificial e integração de sistemas, onde elas resolvem um problema real.
+ 43.73– 50.23  [nova] Uma operação desenhada com propósito: clara, conectada e preparada para evoluir.
+ 51.44– 56.03  [loop] Toda empresa tem uma planta. Agora, você conhece a sua.
+ 56.73– 62.07  [assinatura] DME Technology. Automatizamos processos. Devolvemos tempo.
 
 TRILHA E EFEITOS
   0.00  lapiseira e riser: a planta se desenha
@@ -26,13 +26,13 @@ TRILHA E EFEITOS
  25.10  DROP em "É aqui que a DME entra" (REV. B)
  33.37  padronização: caixas se encaixam
  34.70  automação: pulso percorre o fluxo
- 37.56  IA
- 39.09  INTEGRAÇÃO
- 40.70  check FIG. 01
- 41.00  check FIG. 02
- 41.30  check FIG. 03
- 41.60  check FIG. 04
- 44.45  execução: maquete com fluxos azuis
- 55.95  carimbo APROVADO
- 57.55  assinatura: acorde final e sinos
- 59.73  slogan "Automatizamos processos. Devolvemos tempo."
+ 37.52  IA
+ 39.12  INTEGRAÇÃO
+ 40.71  check FIG. 01
+ 41.01  check FIG. 02
+ 41.31  check FIG. 03
+ 41.61  check FIG. 04
+ 43.43  execução: maquete com fluxos azuis
+ 54.93  carimbo APROVADO
+ 56.53  assinatura: acorde final e sinos
+ 58.71  slogan "Automatizamos processos. Devolvemos tempo."

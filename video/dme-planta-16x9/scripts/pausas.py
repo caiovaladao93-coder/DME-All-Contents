@@ -4,7 +4,7 @@ Saída: voz/<id>.mp3 e .json, copiados para src/data/voz e public/assets/audio/f
 import json, shutil, subprocess
 import numpy as np
 SR = 44100
-TOMADA = {'n1': 1, 'n2': 3, 'n3': 2, 'n4': 3, 'n5': 3, 'n6': 2, 'n7': 2, 'n8': 1, 'n9': 2, 'n10': 3, 'n11': 1}  # voz DME Narrador
+TOMADA = {'n1': 1, 'n2': 3, 'n3': 2, 'n4': 3, 'n5': 3, 'n6': 2, 'n7': 2, 'n8': 6, 'n9': 2, 'n10': 3, 'n11': 1}  # voz DME Narrador
 PAUSAS = {}  # pausas desta peça vêm da própria voz (<break>)
 def limpar(x, ch, st, en, margem=.09, fade=.04):
     """Remove respirações: silêncio depois da última letra (+margem) e no miolo das pausas entre frases; gate leve abaixo de −48 dB."""

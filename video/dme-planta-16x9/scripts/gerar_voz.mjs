@@ -12,7 +12,7 @@ for (const [i, f] of FALAS.entries()) {
   for (let k = ini; k < ini + takes; k++) {
     const r = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${VOICE}/with-timestamps?output_format=mp3_44100_192`, {
       method: 'POST', headers: {'xi-api-key': 'proxy-injected', 'content-type': 'application/json'},
-      body: JSON.stringify({text: f.text, model_id: MODEL, voice_settings: SET, language_code: 'pt', previous_text: FALAS[i - 1]?.text, next_text: FALAS[i + 1]?.text})});
+      body: JSON.stringify({text: f.text, model_id: MODEL, voice_settings: SET, language_code: 'pt', previous_text: FALAS[i - 1]?.text, ...(process.argv.includes('--sem-proximo') ? {} : {next_text: FALAS[i + 1]?.text})})});
     if (!r.ok) throw new Error(`${r.status} ${await r.text()}`);
     const d = await r.json();
     fs.writeFileSync(`voz/takes/${f.id}-${k}.mp3`, Buffer.from(d.audio_base64, 'base64'));
