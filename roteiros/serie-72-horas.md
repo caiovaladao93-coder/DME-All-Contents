@@ -116,14 +116,10 @@ A referência (vídeo enviado em 16/11/2026, cerca de 95 s, 9:16) é uma **séri
 - **Efeitos:** foley de objetos (chave, portão, reatores, carimbo, teclado e telefone).
 - **Contagem final:** tique acelerado; o último segundo fica em silêncio.
 
-## 7. Pontos para decidir
+## 7. Decisões (17/11/2026)
 
-1. **Para qual perfil é a série?**
-   - **DME** (com a assinatura "Uma série DME Technology" e o tema operacional).
-   - **Outro perfil ou cliente**, sem marca. Nesse caso o tema pode ser outro.
-2. **Personagens:** a regra da DME proíbe pessoas na tela, por isso o roteiro usa câmera subjetiva e sombras. Se a série for para outro perfil, dá para ilustrar personagens 2D autorais.
-3. **Nomes e dados:**
-   - Júlia, Beto e Sérgio são fictícios;
-   - "60% do faturamento" é um dado da história, não uma afirmação da DME;
-   - confirmar se pode.
-4. **Frequência e duração:** um episódio por semana, de 85–95 s.
+1. **Perfil:** outro perfil, **sem marca DME**. O cartão "Uma série DME Technology" saiu; o fim é "72 HORAS · PARTE 2 · EM BREVE".
+2. **Personagens:** **sem pessoas na tela**, como teste. Câmera subjetiva só com objetos, telas e papéis. A sombra do sócio no vidro também saiu: a porta abre e só a luz entra.
+3. **Dados:** fictícios e permitidos (Júlia, Beto, Sérgio, Atlas Distribuidora, "60% do faturamento", 1.247 pedidos).
+4. **Voz:** voz própria da série, **72 Horas Narrador** (`h8kJ5JnfR302VfkueTp8`, Voice Design, prévia "cronista 2": jovem e enérgica). Personagens: o cliente usa a voz do Guilherme com filtro de telefone; o sócio usa o Lendário, calmo e mais lento.
+5. **Produção:** Parte 1 feita em `video/serie-72-horas/` (cerca de 100 s, contando os 10 s da decisão).

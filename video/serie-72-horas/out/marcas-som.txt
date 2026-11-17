@@ -1,0 +1,56 @@
+MARCAS DE SOM · 72 HORAS · Parte 1 "O GALPÃO"
+
+FALAS
+  1.60–  7.95  gancho     Imagina que você herda a empresa do seu pai… e ela tem 72 horas de vida.
+  8.95– 14.16  cracha     Júlia. 31 anos. Nunca trabalhou lá. Nunca quis.
+ 14.86– 19.02  luzes      06:40 da manhã. Ela acende as luzes.
+ 19.82– 22.65  pedidos    1.247 pedidos parados.
+ 23.85– 27.57  planilhas  Três planilhas. Nenhuma bate com a outra.
+ 28.57– 33.71  quadro     E um quadro cheio de bilhetes. Só o Beto sabe.
+ 34.71– 40.34  beto       O Beto é o único que sabe como tudo funciona… e o Beto pediu demissão ontem.
+ 41.34– 46.62  telefone   08:00 em ponto. O telefone toca. É o maior cliente da empresa.
+ 47.12– 50.83  cliente    Se a entrega não sair hoje, eu cancelo o contrato.
+ 51.73– 57.33  login      Ela tenta entrar no sistema do pai. Senha? “Pergunta pro Beto.”
+ 58.33– 67.06  email      10:15. Chega um e-mail. Remetente: Beto. Assunto: “Eu sei por que os pedidos pararam.”
+ 67.86– 72.66  anexo      No anexo, uma única foto… a mesa do sócio do seu pai.
+ 73.86– 76.88  porta      Nesse exato momento, a porta abre.
+ 77.48– 81.01  socio      Bom dia, Júlia. Vamos conversar sobre vender a empresa?
+ 82.31– 84.49  dez        A Júlia tem 10 segundos.
+ 85.09– 88.71  escolha    Ela abre a foto na frente dele… ou finge que não viu?
+ 90.21– 94.10  contagem   Comenta A ou B. A parte 2 depende de você.
+
+TRILHA E EFEITOS
+  0.00  drone Rém (o episódio todo)
+  0.90  molho de chaves
+  4.19  chave gira na fechadura
+  6.58  tique-taque do relógio (90 BPM) começa
+  7.06  portão de aço sobe + impacto
+  9.05  crachá cai na mesa
+ 13.23  carimbo NENHUM
+ 17.15  reatores acendendo, um a um
+ 19.62  pulso grave em colcheias
+ 19.82  contador 1.247 rolando + impacto + carimbo
+ 25.59  três erros (círculos vermelhos)
+ 29.09  bilhetes de papel
+ 30.89  SILÊNCIO antes de "Só o Beto sabe"
+ 31.34  impacto grave em "Só o Beto sabe"
+ 34.41  batida de coração (Beto → cliente)
+ 34.51  cadeira rangendo sozinha
+ 39.29  carta + carimbo DESLIGADO
+ 42.82  telefone tocando
+ 46.97  chamada atendida
+ 49.18  impacto em "cancelo"
+ 51.53  pulso grave volta (sistema/e-mail)
+ 54.15  teclado + erro de senha
+ 54.94  post-it sai de baixo do teclado
+ 59.59  notificação de e-mail
+ 63.95  assunto digitado
+ 68.63  download do anexo
+ 69.66  pad agudo de suspense (foto)
+ 70.85  IMPACTO: proposta de compra
+ 75.25  maçaneta + porta abrindo
+ 77.18  coração acelera (sócio)
+ 78.79  pasta PROPOSTA desliza
+ 84.89  cartão de decisão
+ 85.14  contagem: tique por segundo
+ 95.14  zero: buzina + TEMPO ESGOTADO

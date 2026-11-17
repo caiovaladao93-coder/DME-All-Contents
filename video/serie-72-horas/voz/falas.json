@@ -1,0 +1,19 @@
+[
+ {"id": "f1", "text": "Imagina que você herda a empresa do seu pai… <break time=\"0.45s\" /> e ela tem setenta e duas horas de vida.", "legenda": "Imagina que você herda a empresa do seu pai… e ela tem 72 horas de vida."},
+ {"id": "f2", "text": "Júlia. <break time=\"0.25s\" /> Trinta e um anos. <break time=\"0.25s\" /> Nunca trabalhou lá. <break time=\"0.3s\" /> Nunca quis.", "legenda": "Júlia. 31 anos. Nunca trabalhou lá. Nunca quis."},
+ {"id": "f3", "text": "Seis e quarenta da manhã. <break time=\"0.3s\" /> Ela acende as luzes.", "legenda": "06:40 da manhã. Ela acende as luzes."},
+ {"id": "f4", "text": "Mil duzentos e quarenta e sete pedidos parados.", "legenda": "1.247 pedidos parados."},
+ {"id": "f5", "text": "Três planilhas. <break time=\"0.3s\" /> Nenhuma bate com a outra.", "legenda": "Três planilhas. Nenhuma bate com a outra."},
+ {"id": "f6", "text": "E um quadro cheio de bilhetes. <break time=\"0.6s\" /> Só o Beto sabe.", "legenda": "E um quadro cheio de bilhetes. Só o Beto sabe."},
+ {"id": "f7", "text": "O Beto é o único que sabe como tudo funciona… <break time=\"0.4s\" /> e o Beto pediu demissão ontem.", "legenda": "O Beto é o único que sabe como tudo funciona… e o Beto pediu demissão ontem."},
+ {"id": "f8", "text": "Oito em ponto. <break time=\"0.3s\" /> O telefone toca. <break time=\"0.3s\" /> É o maior cliente da empresa.", "legenda": "08:00 em ponto. O telefone toca. É o maior cliente da empresa."},
+ {"id": "c1", "text": "Se a entrega não sair hoje, eu cancelo o contrato.", "voz": "cliente"},
+ {"id": "f9", "text": "Ela tenta entrar no sistema do pai. <break time=\"0.3s\" /> Senha? <break time=\"0.5s\" /> Pergunta pro Beto.", "legenda": "Ela tenta entrar no sistema do pai. Senha? “Pergunta pro Beto.”"},
+ {"id": "f10", "text": "Dez e quinze. <break time=\"0.3s\" /> Chega um e-mail. <break time=\"0.3s\" /> Remetente: Beto. <break time=\"0.3s\" /> Assunto: <break time=\"0.25s\" /> Eu sei por que os pedidos pararam.", "legenda": "10:15. Chega um e-mail. Remetente: Beto. Assunto: “Eu sei por que os pedidos pararam.”"},
+ {"id": "f11", "text": "No anexo, uma única foto… <break time=\"0.45s\" /> a mesa do sócio do seu pai.", "legenda": "No anexo, uma única foto… a mesa do sócio do seu pai."},
+ {"id": "f12", "text": "Nesse exato momento, a porta abre."},
+ {"id": "s1", "text": "Bom dia, Júlia. <break time=\"0.35s\" /> Vamos conversar sobre vender a empresa?", "voz": "socio", "legenda": "Bom dia, Júlia. Vamos conversar sobre vender a empresa?"},
+ {"id": "f13", "text": "A Júlia tem dez segundos.", "legenda": "A Júlia tem 10 segundos."},
+ {"id": "f14", "text": "Ela abre a foto na frente dele… <break time=\"0.45s\" /> ou finge que não viu?", "legenda": "Ela abre a foto na frente dele… ou finge que não viu?"},
+ {"id": "f15", "text": "Comenta A ou B. <break time=\"0.35s\" /> A parte dois depende de você.", "legenda": "Comenta A ou B. A parte 2 depende de você."}
+]
