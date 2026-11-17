@@ -1,0 +1,29 @@
+MARCAS DE SOM · Portal Flávia Valadão (16:9)
+
+FALAS (voz Pri)
+  1.40–  5.58  abertura   Seu projeto de interiores, num lugar só seu.
+  6.58– 14.29  login      No portal da Flávia Valadão, cada cliente recebe um acesso exclusivo, com e-mail e senha.
+ 15.39– 28.83  painel     Logo na entrada, você vê em que etapa o projeto está. E o projeto em números: os cômodos, o investimento previsto, o que já foi comprado e o que você já aprovou.
+ 30.03– 36.26  planta     O projeto ganha forma na planta do seu imóvel. É só tocar num cômodo para entrar.
+ 37.56– 44.76  imagens    Dentro de cada cômodo, você vê as imagens do projeto em alta resolução, em tela cheia.
+ 46.16– 57.77  compras    A lista de compras traz cada peça com foto, especificação, onde comprar e quanto custa. Comprou? É só marcar, e a Flávia acompanha.
+ 59.16– 66.69  obra       Na obra, você vê os serviços e os fornecedores de cada cômodo, e aprova os orçamentos por ali mesmo.
+ 67.99– 74.40  plantas    As plantas técnicas ficam prontas para abrir, ou baixar e levar para a obra.
+ 75.70– 86.15  retorno    E, no seu retorno, você aprova o cômodo ou pede um ajuste. A conversa sobre cada escolha fica registrada num só lugar.
+ 87.85– 92.93  assinatura Flávia Valadão Interiores. Seu projeto, sempre à mão.
+
+TRILHA E EFEITOS
+  1.00  piano 80 BPM em Fá maior + pad (o vídeo todo)
+  6.33  capítulo: login
+ 13.56  clique: entrar
+ 15.14  capítulo: painel
+ 29.78  capítulo: planta
+ 35.23  clique: cozinha
+ 37.31  capítulo: imagens
+ 42.91  clique: imagem
+ 45.80  capítulo: compras
+ 54.88  clique: já comprei
+ 58.81  capítulo: obra
+ 67.64  capítulo: plantas
+ 75.35  capítulo: retorno
+ 87.45  acorde final (assinatura)

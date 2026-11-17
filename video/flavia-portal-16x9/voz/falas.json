@@ -1,0 +1,12 @@
+[
+ {"id": "p1", "text": "Seu projeto de interiores, num lugar só seu."},
+ {"id": "p2", "text": "No portal da Flávia Valadão, cada cliente recebe um acesso exclusivo, com e-mail e senha."},
+ {"id": "p3", "text": "Logo na entrada, você vê em que etapa o projeto está. <break time=\"0.35s\" /> E o projeto em números: os cômodos, o investimento previsto, o que já foi comprado e o que você já aprovou.", "legenda": "Logo na entrada, você vê em que etapa o projeto está. E o projeto em números: os cômodos, o investimento previsto, o que já foi comprado e o que você já aprovou."},
+ {"id": "p4", "text": "O projeto ganha forma na planta do seu imóvel. <break time=\"0.3s\" /> É só tocar num cômodo para entrar.", "legenda": "O projeto ganha forma na planta do seu imóvel. É só tocar num cômodo para entrar."},
+ {"id": "p5", "text": "Dentro de cada cômodo, você vê as imagens do projeto em alta resolução, em tela cheia."},
+ {"id": "p6", "text": "A lista de compras traz cada peça com foto, especificação, onde comprar e quanto custa. <break time=\"0.35s\" /> Comprou? <break time=\"0.2s\" /> É só marcar, e a Flávia acompanha.", "legenda": "A lista de compras traz cada peça com foto, especificação, onde comprar e quanto custa. Comprou? É só marcar, e a Flávia acompanha."},
+ {"id": "p7", "text": "Na obra, você vê os serviços e os fornecedores de cada cômodo, e aprova os orçamentos por ali mesmo."},
+ {"id": "p8", "text": "As plantas técnicas ficam prontas para abrir, ou baixar e levar para a obra."},
+ {"id": "p9", "text": "E, no seu retorno, você aprova o cômodo ou pede um ajuste. <break time=\"0.35s\" /> A conversa sobre cada escolha fica registrada num só lugar.", "legenda": "E, no seu retorno, você aprova o cômodo ou pede um ajuste. A conversa sobre cada escolha fica registrada num só lugar."},
+ {"id": "p10", "text": "Flávia Valadão Interiores. <break time=\"0.4s\" /> Seu projeto, sempre à mão.", "legenda": "Flávia Valadão Interiores. Seu projeto, sempre à mão."}
+]
