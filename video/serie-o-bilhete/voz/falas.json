@@ -1,0 +1,18 @@
+[
+ {"id": "n1", "text": "Você acertou os seis números da loteria… <break time=\"0.3s\" /> e a sua mãe doou o bilhete.", "legenda": "Você acertou os seis números da loteria… e a sua mãe doou o bilhete."},
+ {"id": "n2", "text": "Você. <break time=\"0.2s\" /> Vinte e sete anos. <break time=\"0.25s\" /> Saldo na conta: trezentos e doze reais.", "legenda": "Você. 27 anos. Saldo na conta: R$ 312."},
+ {"id": "n3", "text": "O bilhete tava no bolso da calça jeans. <break time=\"0.3s\" /> Aquela rasgada no joelho.", "legenda": "O bilhete tava no bolso da calça jeans. Aquela rasgada no joelho."},
+ {"id": "m1", "text": "Doei pro bazar da igreja, filho. <break time=\"0.3s\" /> Tava velha.", "voz": "mae", "legenda": "Doei pro bazar da igreja, filho. Tava velha."},
+ {"id": "n4", "text": "O bazar fecha às seis. <break time=\"0.35s\" /> Você nunca correu tanto na vida.", "legenda": "O bazar fecha às 18h. Você nunca correu tanto na vida."},
+ {"id": "c1", "text": "Calça jeans? <break time=\"0.25s\" /> Chegou umas trinta hoje, meu bem.", "voz": "cida", "legenda": "Calça jeans? Chegou umas 30 hoje, meu bem."},
+ {"id": "n5", "text": "Uma por uma. <break time=\"0.3s\" /> Nenhuma rasgada no joelho.", "legenda": "Uma por uma. Nenhuma rasgada no joelho."},
+ {"id": "c2", "text": "Ah… a rasgada? <break time=\"0.4s\" /> Vendi agorinha. <break time=\"0.3s\" /> Cinco reais.", "voz": "cida", "legenda": "Ah… a rasgada? Vendi agorinha. Cinco reais."},
+ {"id": "n6", "text": "Cinco reais. <break time=\"0.3s\" /> Pela calça de quarenta e oito milhões.", "legenda": "Cinco reais. Pela calça de 48 milhões."},
+ {"id": "n7", "text": "Quem comprou? <break time=\"0.25s\" /> Um rapaz de moto. <break time=\"0.3s\" /> Esqueceu o capacete.", "legenda": "Quem comprou? Um rapaz de moto. Esqueceu o capacete."},
+ {"id": "n8", "text": "Sete e quarenta. Festa lotada. <break time=\"0.4s\" /> E lá está ela. <break time=\"0.3s\" /> A calça. <break time=\"0.3s\" /> Dançando.", "legenda": "19h40. Festa lotada. E lá está ela. A calça. Dançando."},
+ {"id": "l1", "text": "Que foi? <break time=\"0.2s\" /> Tá olhando minha calça por quê?", "voz": "leo", "legenda": "Que foi? Tá olhando minha calça por quê?"},
+ {"id": "m2", "text": "Filho, antes de doar eu tirei um papelzinho do bolso. <break time=\"0.3s\" /> Joguei no lixo da cozinha.", "voz": "mae", "legenda": "Filho, antes de doar eu tirei um papelzinho do bolso. Joguei no lixo da cozinha."},
+ {"id": "n9", "text": "O caminhão do lixo passa às oito. <break time=\"0.35s\" /> Oito minutos. <break time=\"0.25s\" /> Dois lugares. <break time=\"0.25s\" /> Um bilhete.", "legenda": "O caminhão do lixo passa às 20h. 8 minutos. Dois lugares. Um bilhete."},
+ {"id": "n10", "text": "Você confia na sua mãe… <break time=\"0.45s\" /> ou na calça?", "legenda": "Você confia na sua mãe… ou na calça?"},
+ {"id": "n11", "text": "Comenta A ou B. <break time=\"0.3s\" /> O episódio dois depende de você.", "legenda": "Comenta A ou B. O episódio 2 depende de você."}
+]

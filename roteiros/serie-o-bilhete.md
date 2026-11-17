@@ -83,10 +83,9 @@ O bilhete estava no bolso de uma calça jeans velha, rasgada no joelho, que a m�
 - Trilha original de comédia de perseguição: baixo saltitante e pizzicato a cerca de 120 BPM, com cortes secos nas piadas.
 - Efeitos: "ding" dos números, "record scratch", passos, sino da porta, "swish" das calças, trombone triste, vibração do celular, buzina da contagem.
 
-## 7. Pontos para decidir
+## 7. Decisões (17/11/2026)
 
-1. **Personagens na tela** (recomendado), como na tabela, ou **primeira pessoa** (só as suas mãos, o celular e o que você vê; os outros personagens aparecem de frente para a câmera).
-2. **Tema:** "O Bilhete" (comédia) ou uma das alternativas:
-   - **"Andar 13":** você entra no elevador às 23h e ele para num andar que o prédio não tem (suspense);
-   - **"Grupo errado":** você manda um áudio falando mal da sogra no grupo da família, e tem 2 minutos para apagar antes de ela ver (comédia).
-3. **Vozes dos personagens:** criar três vozes novas por Voice Design (mais autoral) ou usar vozes prontas da biblioteca (mais rápido).
+1. **Formato:** personagens na tela.
+2. **Tema:** "O Bilhete".
+3. **Vozes:** três vozes novas por Voice Design (Mãe, Dona Cida e Léo), salvas na conta; o narrador é a voz "cronista 2". Ver `video/serie-o-bilhete/voz/README.md`.
+4. **Produção:** episódio 1 em `video/serie-o-bilhete/` (cerca de 95 s, contando os 10 s da decisão).
