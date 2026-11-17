@@ -1,0 +1,2412 @@
+{
+ "fps": 30,
+ "dur": 94.033,
+ "frames": 2821,
+ "scenes": [
+  {
+   "key": "notif",
+   "fala": "n1",
+   "t0": 0.0,
+   "t1": 4.752,
+   "v0": 0.05,
+   "v1": 4.602,
+   "texto": "Às 3h12 da manhã, meu vizinho me mandou um áudio."
+  },
+  {
+   "key": "morto",
+   "fala": "n2",
+   "t0": 4.752,
+   "t1": 7.813,
+   "v0": 4.852,
+   "v1": 7.313,
+   "texto": "Às 7h, ele tava morto."
+  },
+  {
+   "key": "fichas",
+   "fala": "n3",
+   "t0": 7.813,
+   "t1": 14.007,
+   "v0": 7.963,
+   "v1": 13.607,
+   "texto": "Eu moro no 301 faz dois meses. Ele era o único que falava comigo."
+  },
+  {
+   "key": "policia",
+   "fala": "n4",
+   "t0": 14.007,
+   "t1": 19.155,
+   "v0": 14.157,
+   "v1": 18.755,
+   "texto": "A polícia disse que foi uma queda. Que ele escorregou no banheiro."
+  },
+  {
+   "key": "play",
+   "fala": "n5",
+   "t0": 19.155,
+   "t1": 23.242,
+   "v0": 19.305,
+   "v1": 22.742,
+   "texto": "Só que eu ainda não tinha ouvido o áudio."
+  },
+  {
+   "key": "audio",
+   "fala": "e1",
+   "t0": 23.242,
+   "t1": 31.945,
+   "v0": 23.642,
+   "v1": 31.045,
+   "texto": "Se acontecer alguma coisa comigo… não foi acidente. Foi o…"
+  },
+  {
+   "key": "denovo",
+   "fala": "n6",
+   "t0": 31.945,
+   "t1": 37.318,
+   "v0": 32.095,
+   "v1": 37.018,
+   "texto": "O áudio acaba aí. Eu ouvi de novo. Com o volume no máximo."
+  },
+  {
+   "key": "fundo",
+   "fala": "n7",
+   "t0": 37.318,
+   "t1": 44.17,
+   "v0": 37.468,
+   "v1": 43.57,
+   "texto": "No fundo… tem um barulho. Chaves. E alguém assobiando."
+  },
+  {
+   "key": "batida",
+   "fala": "n8",
+   "t0": 44.17,
+   "t1": 48.431,
+   "v0": 45.67,
+   "v1": 48.131,
+   "texto": "Eu olhei pelo olho mágico."
+  },
+  {
+   "key": "delegada",
+   "fala": "d1",
+   "t0": 48.431,
+   "t1": 52.781,
+   "v0": 48.631,
+   "v1": 52.381,
+   "texto": "Bom dia. Você ouviu alguma coisa essa noite?"
+  },
+  {
+   "key": "assobio",
+   "fala": "n9",
+   "t0": 52.781,
+   "t1": 59.052,
+   "v0": 52.931,
+   "v1": 58.552,
+   "texto": "Eu ia contar. Até que, atrás dela… alguém começou a assobiar."
+  },
+  {
+   "key": "valdir",
+   "fala": "n10",
+   "t0": 59.052,
+   "t1": 65.129,
+   "v0": 59.202,
+   "v1": 64.729,
+   "texto": "Seu Valdir. O porteiro. Ele tem a chave de todos os apartamentos."
+  },
+  {
+   "key": "chave",
+   "fala": "n11",
+   "t0": 65.129,
+   "t1": 68.8,
+   "v0": 65.329,
+   "v1": 68.2,
+   "texto": "Inclusive… a do meu."
+  },
+  {
+   "key": "entao",
+   "fala": "d2",
+   "t0": 68.8,
+   "t1": 72.365,
+   "v0": 69.0,
+   "v1": 72.065,
+   "texto": "Então? Ouviu ou não ouviu?"
+  },
+  {
+   "key": "mensagem",
+   "fala": "n12",
+   "t0": 72.365,
+   "t1": 76.587,
+   "v0": 73.765,
+   "v1": 76.087,
+   "texto": "Alguém sabe que eu tenho esse áudio."
+  },
+  {
+   "key": "escolha",
+   "fala": "n13",
+   "t0": 76.587,
+   "t1": 83.042,
+   "v0": 76.787,
+   "v1": 82.542,
+   "texto": "Eu mostro o áudio pra delegada… na frente dele? Ou apago e finjo que não ouvi nada?"
+  },
+  {
+   "key": "contagem",
+   "fala": "n14",
+   "t0": 83.042,
+   "t1": 94.042,
+   "v0": 84.042,
+   "v1": 88.013,
+   "texto": "Comenta A ou B. Eu faço o que vocês mandarem."
+  }
+ ],
+ "words": {
+  "notif": [
+   [
+    "Às",
+    0.05,
+    0.213
+   ],
+   [
+    "três",
+    0.259,
+    0.48
+   ],
+   [
+    "e",
+    0.526,
+    0.549
+   ],
+   [
+    "doze",
+    0.596,
+    0.851
+   ],
+   [
+    "da",
+    0.898,
+    0.967
+   ],
+   [
+    "manhã,",
+    1.014,
+    1.49
+   ],
+   [
+    "meu",
+    1.862,
+    1.978
+   ],
+   [
+    "vizinho",
+    2.025,
+    2.303
+   ],
+   [
+    "me",
+    2.327,
+    2.396
+   ],
+   [
+    "mandou",
+    2.443,
+    2.71
+   ],
+   [
+    "um",
+    2.733,
+    2.791
+   ],
+   [
+    "áudio.",
+    2.884,
+    4.602
+   ]
+  ],
+  "morto": [
+   [
+    "Às",
+    4.852,
+    5.038
+   ],
+   [
+    "sete,",
+    5.061,
+    5.34
+   ],
+   [
+    "ele",
+    5.363,
+    5.491
+   ],
+   [
+    "tava",
+    5.525,
+    5.734
+   ],
+   [
+    "morto.",
+    5.781,
+    7.313
+   ]
+  ],
+  "fichas": [
+   [
+    "Eu",
+    7.963,
+    8.172
+   ],
+   [
+    "moro",
+    8.207,
+    8.393
+   ],
+   [
+    "no",
+    8.439,
+    8.52
+   ],
+   [
+    "trezentos",
+    8.555,
+    9.078
+   ],
+   [
+    "e",
+    9.124,
+    9.147
+   ],
+   [
+    "um",
+    9.217,
+    9.287
+   ],
+   [
+    "faz",
+    9.356,
+    9.496
+   ],
+   [
+    "dois",
+    9.542,
+    9.704
+   ],
+   [
+    "meses.",
+    9.763,
+    10.285
+   ],
+   [
+    "Ele",
+    10.634,
+    10.867
+   ],
+   [
+    "era",
+    10.89,
+    10.994
+   ],
+   [
+    "o",
+    11.018,
+    11.041
+   ],
+   [
+    "único",
+    11.11,
+    11.412
+   ],
+   [
+    "que",
+    11.447,
+    11.517
+   ],
+   [
+    "falava",
+    11.563,
+    11.888
+   ],
+   [
+    "comigo.",
+    11.923,
+    13.607
+   ]
+  ],
+  "policia": [
+   [
+    "A",
+    14.157,
+    14.261
+   ],
+   [
+    "polícia",
+    14.343,
+    14.679
+   ],
+   [
+    "disse",
+    14.726,
+    14.946
+   ],
+   [
+    "que",
+    14.981,
+    15.051
+   ],
+   [
+    "foi",
+    15.097,
+    15.237
+   ],
+   [
+    "uma",
+    15.26,
+    15.388
+   ],
+   [
+    "queda.",
+    15.434,
+    15.91
+   ],
+   [
+    "Que",
+    16.294,
+    16.41
+   ],
+   [
+    "ele",
+    16.433,
+    16.537
+   ],
+   [
+    "escorregou",
+    16.561,
+    17.037
+   ],
+   [
+    "no",
+    17.083,
+    17.153
+   ],
+   [
+    "banheiro.",
+    17.199,
+    18.755
+   ]
+  ],
+  "play": [
+   [
+    "Só",
+    19.305,
+    19.514
+   ],
+   [
+    "que",
+    19.56,
+    19.642
+   ],
+   [
+    "eu",
+    19.665,
+    19.735
+   ],
+   [
+    "ainda",
+    19.793,
+    20.06
+   ],
+   [
+    "não",
+    20.106,
+    20.222
+   ],
+   [
+    "tinha",
+    20.245,
+    20.454
+   ],
+   [
+    "ouvido",
+    20.478,
+    20.849
+   ],
+   [
+    "o",
+    20.872,
+    20.896
+   ],
+   [
+    "áudio.",
+    20.977,
+    22.742
+   ]
+  ],
+  "audio": [
+   [
+    "Se",
+    23.642,
+    23.793
+   ],
+   [
+    "acontecer",
+    23.816,
+    24.385
+   ],
+   [
+    "alguma",
+    24.443,
+    24.757
+   ],
+   [
+    "coisa",
+    24.815,
+    25.116
+   ],
+   [
+    "comigo…",
+    25.163,
+    25.871
+   ],
+   [
+    "não",
+    26.409,
+    26.56
+   ],
+   [
+    "foi",
+    26.606,
+    26.792
+   ],
+   [
+    "acidente.",
+    26.838,
+    27.744
+   ],
+   [
+    "Foi",
+    28.258,
+    28.525
+   ],
+   [
+    "o…",
+    28.653,
+    31.045
+   ]
+  ],
+  "denovo": [
+   [
+    "O",
+    32.095,
+    32.176
+   ],
+   [
+    "áudio",
+    32.246,
+    32.443
+   ],
+   [
+    "acaba",
+    32.478,
+    32.803
+   ],
+   [
+    "aí.",
+    32.826,
+    33.233
+   ],
+   [
+    "Eu",
+    33.524,
+    33.686
+   ],
+   [
+    "ouvi",
+    33.733,
+    33.93
+   ],
+   [
+    "de",
+    33.977,
+    34.046
+   ],
+   [
+    "novo.",
+    34.104,
+    34.638
+   ],
+   [
+    "Com",
+    34.964,
+    35.138
+   ],
+   [
+    "o",
+    35.161,
+    35.184
+   ],
+   [
+    "volume",
+    35.207,
+    35.544
+   ],
+   [
+    "no",
+    35.579,
+    35.648
+   ],
+   [
+    "máximo.",
+    35.695,
+    37.018
+   ]
+  ],
+  "fundo": [
+   [
+    "No",
+    37.468,
+    37.631
+   ],
+   [
+    "fundo…",
+    37.689,
+    38.223
+   ],
+   [
+    "tem",
+    38.887,
+    38.91
+   ],
+   [
+    "um",
+    38.957,
+    39.003
+   ],
+   [
+    "barulho.",
+    39.038,
+    39.584
+   ],
+   [
+    "Chaves.",
+    40.191,
+    40.888
+   ],
+   [
+    "E",
+    41.41,
+    41.492
+   ],
+   [
+    "alguém",
+    41.55,
+    41.793
+   ],
+   [
+    "assobiando.",
+    41.84,
+    43.57
+   ]
+  ],
+  "batida": [
+   [
+    "Eu",
+    45.67,
+    45.856
+   ],
+   [
+    "olhei",
+    45.891,
+    46.1
+   ],
+   [
+    "pelo",
+    46.134,
+    46.343
+   ],
+   [
+    "olho",
+    46.378,
+    46.552
+   ],
+   [
+    "mágico.",
+    46.599,
+    48.131
+   ]
+  ],
+  "delegada": [
+   [
+    "Bom",
+    48.631,
+    48.898
+   ],
+   [
+    "dia.",
+    48.968,
+    49.42
+   ],
+   [
+    "Você",
+    49.804,
+    50.083
+   ],
+   [
+    "ouviu",
+    50.141,
+    50.373
+   ],
+   [
+    "alguma",
+    50.431,
+    50.71
+   ],
+   [
+    "coisa",
+    50.744,
+    51.035
+   ],
+   [
+    "essa",
+    51.058,
+    51.209
+   ],
+   [
+    "noite?",
+    51.255,
+    52.381
+   ]
+  ],
+  "assobio": [
+   [
+    "Eu",
+    52.931,
+    53.152
+   ],
+   [
+    "ia",
+    53.198,
+    53.291
+   ],
+   [
+    "contar.",
+    53.349,
+    53.953
+   ],
+   [
+    "Até",
+    54.279,
+    54.534
+   ],
+   [
+    "que,",
+    54.592,
+    54.685
+   ],
+   [
+    "atrás",
+    54.708,
+    54.999
+   ],
+   [
+    "dela…",
+    55.057,
+    55.521
+   ],
+   [
+    "alguém",
+    55.882,
+    56.161
+   ],
+   [
+    "começou",
+    56.207,
+    56.579
+   ],
+   [
+    "a",
+    56.614,
+    56.637
+   ],
+   [
+    "assobiar.",
+    56.66,
+    58.552
+   ]
+  ],
+  "valdir": [
+   [
+    "Seu",
+    59.202,
+    59.423
+   ],
+   [
+    "Valdir.",
+    59.457,
+    60.084
+   ],
+   [
+    "O",
+    60.41,
+    60.503
+   ],
+   [
+    "porteiro.",
+    60.572,
+    61.304
+   ],
+   [
+    "Ele",
+    61.629,
+    61.826
+   ],
+   [
+    "tem",
+    61.873,
+    62.001
+   ],
+   [
+    "a",
+    62.059,
+    62.082
+   ],
+   [
+    "chave",
+    62.14,
+    62.511
+   ],
+   [
+    "de",
+    62.558,
+    62.616
+   ],
+   [
+    "todos",
+    62.674,
+    62.964
+   ],
+   [
+    "os",
+    63.011,
+    63.069
+   ],
+   [
+    "apartamentos.",
+    63.138,
+    64.729
+   ]
+  ],
+  "chave": [
+   [
+    "Inclusive…",
+    65.329,
+    66.246
+   ],
+   [
+    "a",
+    66.772,
+    66.83
+   ],
+   [
+    "do",
+    66.888,
+    66.957
+   ],
+   [
+    "meu.",
+    67.015,
+    68.2
+   ]
+  ],
+  "entao": [
+   [
+    "Então?",
+    69.0,
+    69.697
+   ],
+   [
+    "Ouviu",
+    70.068,
+    70.451
+   ],
+   [
+    "ou",
+    70.509,
+    70.556
+   ],
+   [
+    "não",
+    70.625,
+    70.788
+   ],
+   [
+    "ouviu?",
+    70.846,
+    72.065
+   ]
+  ],
+  "mensagem": [
+   [
+    "Alguém",
+    73.765,
+    74.102
+   ],
+   [
+    "sabe",
+    74.16,
+    74.438
+   ],
+   [
+    "que",
+    74.473,
+    74.543
+   ],
+   [
+    "eu",
+    74.566,
+    74.624
+   ],
+   [
+    "tenho",
+    74.682,
+    74.891
+   ],
+   [
+    "esse",
+    74.926,
+    75.1
+   ],
+   [
+    "áudio.",
+    75.158,
+    76.087
+   ]
+  ],
+  "escolha": [
+   [
+    "Eu",
+    76.787,
+    77.008
+   ],
+   [
+    "mostro",
+    77.054,
+    77.379
+   ],
+   [
+    "o",
+    77.402,
+    77.437
+   ],
+   [
+    "áudio",
+    77.495,
+    77.716
+   ],
+   [
+    "pra",
+    77.751,
+    77.867
+   ],
+   [
+    "delegada…",
+    77.913,
+    78.633
+   ],
+   [
+    "na",
+    79.094,
+    79.198
+   ],
+   [
+    "frente",
+    79.268,
+    79.546
+   ],
+   [
+    "dele?",
+    79.604,
+    80.011
+   ],
+   [
+    "Ou",
+    80.51,
+    80.649
+   ],
+   [
+    "apago",
+    80.707,
+    81.09
+   ],
+   [
+    "e",
+    81.114,
+    81.137
+   ],
+   [
+    "finjo",
+    81.195,
+    81.462
+   ],
+   [
+    "que",
+    81.497,
+    81.566
+   ],
+   [
+    "não",
+    81.601,
+    81.729
+   ],
+   [
+    "ouvi",
+    81.764,
+    81.95
+   ],
+   [
+    "nada?",
+    81.996,
+    82.542
+   ]
+  ],
+  "contagem": [
+   [
+    "Comenta",
+    84.042,
+    84.564
+   ],
+   [
+    "A",
+    84.681,
+    84.704
+   ],
+   [
+    "ou",
+    84.855,
+    84.948
+   ],
+   [
+    "B.",
+    85.006,
+    85.273
+   ],
+   [
+    "Eu",
+    85.564,
+    85.726
+   ],
+   [
+    "faço",
+    85.796,
+    86.086
+   ],
+   [
+    "o",
+    86.109,
+    86.132
+   ],
+   [
+    "que",
+    86.167,
+    86.237
+   ],
+   [
+    "vocês",
+    86.283,
+    86.562
+   ],
+   [
+    "mandarem.",
+    86.62,
+    88.013
+   ]
+  ]
+ },
+ "captions": [
+  {
+   "start": 0.05,
+   "end": 1.79,
+   "words": [
+    [
+     "às 3h12",
+     0.05,
+     0.851
+    ],
+    [
+     "da",
+     0.898,
+     0.967
+    ],
+    [
+     "manhã,",
+     1.014,
+     1.49
+    ]
+   ],
+   "text": "às 3h12 da manhã,",
+   "scene": "notif",
+   "voz": "narrador"
+  },
+  {
+   "start": 1.862,
+   "end": 2.443,
+   "words": [
+    [
+     "meu",
+     1.862,
+     1.978
+    ],
+    [
+     "vizinho",
+     2.025,
+     2.303
+    ],
+    [
+     "me",
+     2.327,
+     2.396
+    ]
+   ],
+   "text": "meu vizinho me",
+   "scene": "notif",
+   "voz": "narrador"
+  },
+  {
+   "start": 2.443,
+   "end": 4.852,
+   "words": [
+    [
+     "mandou",
+     2.443,
+     2.71
+    ],
+    [
+     "um",
+     2.733,
+     2.791
+    ],
+    [
+     "áudio.",
+     2.884,
+     4.602
+    ]
+   ],
+   "text": "mandou um áudio.",
+   "scene": "notif",
+   "voz": "narrador"
+  },
+  {
+   "start": 4.852,
+   "end": 5.363,
+   "words": [
+    [
+     "às 7h,",
+     4.852,
+     5.34
+    ]
+   ],
+   "text": "às 7h,",
+   "scene": "morto",
+   "voz": "narrador"
+  },
+  {
+   "start": 5.363,
+   "end": 7.613,
+   "words": [
+    [
+     "ele",
+     5.363,
+     5.491
+    ],
+    [
+     "tava",
+     5.525,
+     5.734
+    ],
+    [
+     "morto.",
+     5.781,
+     7.313
+    ]
+   ],
+   "text": "ele tava morto.",
+   "scene": "morto",
+   "voz": "narrador"
+  },
+  {
+   "start": 7.963,
+   "end": 8.555,
+   "words": [
+    [
+     "Eu",
+     7.963,
+     8.172
+    ],
+    [
+     "moro",
+     8.207,
+     8.393
+    ],
+    [
+     "no",
+     8.439,
+     8.52
+    ]
+   ],
+   "text": "Eu moro no",
+   "scene": "fichas",
+   "voz": "narrador"
+  },
+  {
+   "start": 8.555,
+   "end": 9.542,
+   "words": [
+    [
+     "301",
+     8.555,
+     9.287
+    ],
+    [
+     "faz",
+     9.356,
+     9.496
+    ]
+   ],
+   "text": "301 faz",
+   "scene": "fichas",
+   "voz": "narrador"
+  },
+  {
+   "start": 9.542,
+   "end": 10.585,
+   "words": [
+    [
+     "dois",
+     9.542,
+     9.704
+    ],
+    [
+     "meses.",
+     9.763,
+     10.285
+    ]
+   ],
+   "text": "dois meses.",
+   "scene": "fichas",
+   "voz": "narrador"
+  },
+  {
+   "start": 10.634,
+   "end": 11.11,
+   "words": [
+    [
+     "Ele",
+     10.634,
+     10.867
+    ],
+    [
+     "era",
+     10.89,
+     10.994
+    ],
+    [
+     "o",
+     11.018,
+     11.041
+    ]
+   ],
+   "text": "Ele era o",
+   "scene": "fichas",
+   "voz": "narrador"
+  },
+  {
+   "start": 11.11,
+   "end": 11.563,
+   "words": [
+    [
+     "único",
+     11.11,
+     11.412
+    ],
+    [
+     "que",
+     11.447,
+     11.517
+    ]
+   ],
+   "text": "único que",
+   "scene": "fichas",
+   "voz": "narrador"
+  },
+  {
+   "start": 11.563,
+   "end": 13.907,
+   "words": [
+    [
+     "falava",
+     11.563,
+     11.888
+    ],
+    [
+     "comigo.",
+     11.923,
+     13.607
+    ]
+   ],
+   "text": "falava comigo.",
+   "scene": "fichas",
+   "voz": "narrador"
+  },
+  {
+   "start": 14.157,
+   "end": 14.981,
+   "words": [
+    [
+     "A",
+     14.157,
+     14.261
+    ],
+    [
+     "polícia",
+     14.343,
+     14.679
+    ],
+    [
+     "disse",
+     14.726,
+     14.946
+    ]
+   ],
+   "text": "A polícia disse",
+   "scene": "policia",
+   "voz": "narrador"
+  },
+  {
+   "start": 14.981,
+   "end": 15.26,
+   "words": [
+    [
+     "que",
+     14.981,
+     15.051
+    ],
+    [
+     "foi",
+     15.097,
+     15.237
+    ]
+   ],
+   "text": "que foi",
+   "scene": "policia",
+   "voz": "narrador"
+  },
+  {
+   "start": 15.26,
+   "end": 16.21,
+   "words": [
+    [
+     "uma",
+     15.26,
+     15.388
+    ],
+    [
+     "queda.",
+     15.434,
+     15.91
+    ]
+   ],
+   "text": "uma queda.",
+   "scene": "policia",
+   "voz": "narrador"
+  },
+  {
+   "start": 16.294,
+   "end": 17.083,
+   "words": [
+    [
+     "Que",
+     16.294,
+     16.41
+    ],
+    [
+     "ele",
+     16.433,
+     16.537
+    ],
+    [
+     "escorregou",
+     16.561,
+     17.037
+    ]
+   ],
+   "text": "Que ele escorregou",
+   "scene": "policia",
+   "voz": "narrador"
+  },
+  {
+   "start": 17.083,
+   "end": 19.055,
+   "words": [
+    [
+     "no",
+     17.083,
+     17.153
+    ],
+    [
+     "banheiro.",
+     17.199,
+     18.755
+    ]
+   ],
+   "text": "no banheiro.",
+   "scene": "policia",
+   "voz": "narrador"
+  },
+  {
+   "start": 19.305,
+   "end": 19.793,
+   "words": [
+    [
+     "Só",
+     19.305,
+     19.514
+    ],
+    [
+     "que",
+     19.56,
+     19.642
+    ],
+    [
+     "eu",
+     19.665,
+     19.735
+    ]
+   ],
+   "text": "Só que eu",
+   "scene": "play",
+   "voz": "narrador"
+  },
+  {
+   "start": 19.793,
+   "end": 20.478,
+   "words": [
+    [
+     "ainda",
+     19.793,
+     20.06
+    ],
+    [
+     "não",
+     20.106,
+     20.222
+    ],
+    [
+     "tinha",
+     20.245,
+     20.454
+    ]
+   ],
+   "text": "ainda não tinha",
+   "scene": "play",
+   "voz": "narrador"
+  },
+  {
+   "start": 20.478,
+   "end": 23.042,
+   "words": [
+    [
+     "ouvido",
+     20.478,
+     20.849
+    ],
+    [
+     "o",
+     20.872,
+     20.896
+    ],
+    [
+     "áudio.",
+     20.977,
+     22.742
+    ]
+   ],
+   "text": "ouvido o áudio.",
+   "scene": "play",
+   "voz": "narrador"
+  },
+  {
+   "start": 23.642,
+   "end": 24.815,
+   "words": [
+    [
+     "Se",
+     23.642,
+     23.793
+    ],
+    [
+     "acontecer",
+     23.816,
+     24.385
+    ],
+    [
+     "alguma",
+     24.443,
+     24.757
+    ]
+   ],
+   "text": "Se acontecer alguma",
+   "scene": "audio",
+   "voz": "elias"
+  },
+  {
+   "start": 24.815,
+   "end": 26.171,
+   "words": [
+    [
+     "coisa",
+     24.815,
+     25.116
+    ],
+    [
+     "comigo…",
+     25.163,
+     25.871
+    ]
+   ],
+   "text": "coisa comigo…",
+   "scene": "audio",
+   "voz": "elias"
+  },
+  {
+   "start": 26.409,
+   "end": 28.044,
+   "words": [
+    [
+     "não",
+     26.409,
+     26.56
+    ],
+    [
+     "foi",
+     26.606,
+     26.792
+    ],
+    [
+     "acidente.",
+     26.838,
+     27.744
+    ]
+   ],
+   "text": "não foi acidente.",
+   "scene": "audio",
+   "voz": "elias"
+  },
+  {
+   "start": 28.258,
+   "end": 31.345,
+   "words": [
+    [
+     "Foi",
+     28.258,
+     28.525
+    ],
+    [
+     "o…",
+     28.653,
+     31.045
+    ]
+   ],
+   "text": "Foi o…",
+   "scene": "audio",
+   "voz": "elias"
+  },
+  {
+   "start": 32.095,
+   "end": 32.478,
+   "words": [
+    [
+     "O",
+     32.095,
+     32.176
+    ],
+    [
+     "áudio",
+     32.246,
+     32.443
+    ]
+   ],
+   "text": "O áudio",
+   "scene": "denovo",
+   "voz": "narrador"
+  },
+  {
+   "start": 32.478,
+   "end": 33.524,
+   "words": [
+    [
+     "acaba",
+     32.478,
+     32.803
+    ],
+    [
+     "aí.",
+     32.826,
+     33.233
+    ]
+   ],
+   "text": "acaba aí.",
+   "scene": "denovo",
+   "voz": "narrador"
+  },
+  {
+   "start": 33.524,
+   "end": 33.977,
+   "words": [
+    [
+     "Eu",
+     33.524,
+     33.686
+    ],
+    [
+     "ouvi",
+     33.733,
+     33.93
+    ]
+   ],
+   "text": "Eu ouvi",
+   "scene": "denovo",
+   "voz": "narrador"
+  },
+  {
+   "start": 33.977,
+   "end": 34.938,
+   "words": [
+    [
+     "de",
+     33.977,
+     34.046
+    ],
+    [
+     "novo.",
+     34.104,
+     34.638
+    ]
+   ],
+   "text": "de novo.",
+   "scene": "denovo",
+   "voz": "narrador"
+  },
+  {
+   "start": 34.964,
+   "end": 35.579,
+   "words": [
+    [
+     "Com",
+     34.964,
+     35.138
+    ],
+    [
+     "o",
+     35.161,
+     35.184
+    ],
+    [
+     "volume",
+     35.207,
+     35.544
+    ]
+   ],
+   "text": "Com o volume",
+   "scene": "denovo",
+   "voz": "narrador"
+  },
+  {
+   "start": 35.579,
+   "end": 37.318,
+   "words": [
+    [
+     "no",
+     35.579,
+     35.648
+    ],
+    [
+     "máximo.",
+     35.695,
+     37.018
+    ]
+   ],
+   "text": "no máximo.",
+   "scene": "denovo",
+   "voz": "narrador"
+  },
+  {
+   "start": 37.468,
+   "end": 38.523,
+   "words": [
+    [
+     "No",
+     37.468,
+     37.631
+    ],
+    [
+     "fundo…",
+     37.689,
+     38.223
+    ]
+   ],
+   "text": "No fundo…",
+   "scene": "fundo",
+   "voz": "narrador"
+  },
+  {
+   "start": 38.887,
+   "end": 39.884,
+   "words": [
+    [
+     "tem",
+     38.887,
+     38.91
+    ],
+    [
+     "um",
+     38.957,
+     39.003
+    ],
+    [
+     "barulho.",
+     39.038,
+     39.584
+    ]
+   ],
+   "text": "tem um barulho.",
+   "scene": "fundo",
+   "voz": "narrador"
+  },
+  {
+   "start": 40.191,
+   "end": 41.188,
+   "words": [
+    [
+     "Chaves.",
+     40.191,
+     40.888
+    ]
+   ],
+   "text": "Chaves.",
+   "scene": "fundo",
+   "voz": "narrador"
+  },
+  {
+   "start": 41.41,
+   "end": 43.87,
+   "words": [
+    [
+     "E",
+     41.41,
+     41.492
+    ],
+    [
+     "alguém",
+     41.55,
+     41.793
+    ],
+    [
+     "assobiando.",
+     41.84,
+     43.57
+    ]
+   ],
+   "text": "E alguém assobiando.",
+   "scene": "fundo",
+   "voz": "narrador"
+  },
+  {
+   "start": 45.67,
+   "end": 46.378,
+   "words": [
+    [
+     "Eu",
+     45.67,
+     45.856
+    ],
+    [
+     "olhei",
+     45.891,
+     46.1
+    ],
+    [
+     "pelo",
+     46.134,
+     46.343
+    ]
+   ],
+   "text": "Eu olhei pelo",
+   "scene": "batida",
+   "voz": "narrador"
+  },
+  {
+   "start": 46.378,
+   "end": 48.431,
+   "words": [
+    [
+     "olho",
+     46.378,
+     46.552
+    ],
+    [
+     "mágico.",
+     46.599,
+     48.131
+    ]
+   ],
+   "text": "olho mágico.",
+   "scene": "batida",
+   "voz": "narrador"
+  },
+  {
+   "start": 48.631,
+   "end": 49.72,
+   "words": [
+    [
+     "Bom",
+     48.631,
+     48.898
+    ],
+    [
+     "dia.",
+     48.968,
+     49.42
+    ]
+   ],
+   "text": "Bom dia.",
+   "scene": "delegada",
+   "voz": "delegada"
+  },
+  {
+   "start": 49.804,
+   "end": 50.744,
+   "words": [
+    [
+     "Você",
+     49.804,
+     50.083
+    ],
+    [
+     "ouviu",
+     50.141,
+     50.373
+    ],
+    [
+     "alguma",
+     50.431,
+     50.71
+    ]
+   ],
+   "text": "Você ouviu alguma",
+   "scene": "delegada",
+   "voz": "delegada"
+  },
+  {
+   "start": 50.744,
+   "end": 52.681,
+   "words": [
+    [
+     "coisa",
+     50.744,
+     51.035
+    ],
+    [
+     "essa",
+     51.058,
+     51.209
+    ],
+    [
+     "noite?",
+     51.255,
+     52.381
+    ]
+   ],
+   "text": "coisa essa noite?",
+   "scene": "delegada",
+   "voz": "delegada"
+  },
+  {
+   "start": 52.931,
+   "end": 54.253,
+   "words": [
+    [
+     "Eu",
+     52.931,
+     53.152
+    ],
+    [
+     "ia",
+     53.198,
+     53.291
+    ],
+    [
+     "contar.",
+     53.349,
+     53.953
+    ]
+   ],
+   "text": "Eu ia contar.",
+   "scene": "assobio",
+   "voz": "narrador"
+  },
+  {
+   "start": 54.279,
+   "end": 54.708,
+   "words": [
+    [
+     "Até",
+     54.279,
+     54.534
+    ],
+    [
+     "que,",
+     54.592,
+     54.685
+    ]
+   ],
+   "text": "Até que,",
+   "scene": "assobio",
+   "voz": "narrador"
+  },
+  {
+   "start": 54.708,
+   "end": 55.821,
+   "words": [
+    [
+     "atrás",
+     54.708,
+     54.999
+    ],
+    [
+     "dela…",
+     55.057,
+     55.521
+    ]
+   ],
+   "text": "atrás dela…",
+   "scene": "assobio",
+   "voz": "narrador"
+  },
+  {
+   "start": 55.882,
+   "end": 56.614,
+   "words": [
+    [
+     "alguém",
+     55.882,
+     56.161
+    ],
+    [
+     "começou",
+     56.207,
+     56.579
+    ]
+   ],
+   "text": "alguém começou",
+   "scene": "assobio",
+   "voz": "narrador"
+  },
+  {
+   "start": 56.614,
+   "end": 58.852,
+   "words": [
+    [
+     "a",
+     56.614,
+     56.637
+    ],
+    [
+     "assobiar.",
+     56.66,
+     58.552
+    ]
+   ],
+   "text": "a assobiar.",
+   "scene": "assobio",
+   "voz": "narrador"
+  },
+  {
+   "start": 59.202,
+   "end": 60.384,
+   "words": [
+    [
+     "Seu",
+     59.202,
+     59.423
+    ],
+    [
+     "Valdir.",
+     59.457,
+     60.084
+    ]
+   ],
+   "text": "Seu Valdir.",
+   "scene": "valdir",
+   "voz": "narrador"
+  },
+  {
+   "start": 60.41,
+   "end": 61.604,
+   "words": [
+    [
+     "O",
+     60.41,
+     60.503
+    ],
+    [
+     "porteiro.",
+     60.572,
+     61.304
+    ]
+   ],
+   "text": "O porteiro.",
+   "scene": "valdir",
+   "voz": "narrador"
+  },
+  {
+   "start": 61.629,
+   "end": 62.14,
+   "words": [
+    [
+     "Ele",
+     61.629,
+     61.826
+    ],
+    [
+     "tem",
+     61.873,
+     62.001
+    ],
+    [
+     "a",
+     62.059,
+     62.082
+    ]
+   ],
+   "text": "Ele tem a",
+   "scene": "valdir",
+   "voz": "narrador"
+  },
+  {
+   "start": 62.14,
+   "end": 63.011,
+   "words": [
+    [
+     "chave",
+     62.14,
+     62.511
+    ],
+    [
+     "de",
+     62.558,
+     62.616
+    ],
+    [
+     "todos",
+     62.674,
+     62.964
+    ]
+   ],
+   "text": "chave de todos",
+   "scene": "valdir",
+   "voz": "narrador"
+  },
+  {
+   "start": 63.011,
+   "end": 65.029,
+   "words": [
+    [
+     "os",
+     63.011,
+     63.069
+    ],
+    [
+     "apartamentos.",
+     63.138,
+     64.729
+    ]
+   ],
+   "text": "os apartamentos.",
+   "scene": "valdir",
+   "voz": "narrador"
+  },
+  {
+   "start": 65.329,
+   "end": 66.546,
+   "words": [
+    [
+     "Inclusive…",
+     65.329,
+     66.246
+    ]
+   ],
+   "text": "Inclusive…",
+   "scene": "chave",
+   "voz": "narrador"
+  },
+  {
+   "start": 66.772,
+   "end": 68.5,
+   "words": [
+    [
+     "a",
+     66.772,
+     66.83
+    ],
+    [
+     "do",
+     66.888,
+     66.957
+    ],
+    [
+     "meu.",
+     67.015,
+     68.2
+    ]
+   ],
+   "text": "a do meu.",
+   "scene": "chave",
+   "voz": "narrador"
+  },
+  {
+   "start": 69.0,
+   "end": 69.997,
+   "words": [
+    [
+     "Então?",
+     69.0,
+     69.697
+    ]
+   ],
+   "text": "Então?",
+   "scene": "entao",
+   "voz": "delegada"
+  },
+  {
+   "start": 70.068,
+   "end": 70.625,
+   "words": [
+    [
+     "Ouviu",
+     70.068,
+     70.451
+    ],
+    [
+     "ou",
+     70.509,
+     70.556
+    ]
+   ],
+   "text": "Ouviu ou",
+   "scene": "entao",
+   "voz": "delegada"
+  },
+  {
+   "start": 70.625,
+   "end": 72.365,
+   "words": [
+    [
+     "não",
+     70.625,
+     70.788
+    ],
+    [
+     "ouviu?",
+     70.846,
+     72.065
+    ]
+   ],
+   "text": "não ouviu?",
+   "scene": "entao",
+   "voz": "delegada"
+  },
+  {
+   "start": 73.765,
+   "end": 74.566,
+   "words": [
+    [
+     "Alguém",
+     73.765,
+     74.102
+    ],
+    [
+     "sabe",
+     74.16,
+     74.438
+    ],
+    [
+     "que",
+     74.473,
+     74.543
+    ]
+   ],
+   "text": "Alguém sabe que",
+   "scene": "mensagem",
+   "voz": "narrador"
+  },
+  {
+   "start": 74.566,
+   "end": 74.926,
+   "words": [
+    [
+     "eu",
+     74.566,
+     74.624
+    ],
+    [
+     "tenho",
+     74.682,
+     74.891
+    ]
+   ],
+   "text": "eu tenho",
+   "scene": "mensagem",
+   "voz": "narrador"
+  },
+  {
+   "start": 74.926,
+   "end": 76.387,
+   "words": [
+    [
+     "esse",
+     74.926,
+     75.1
+    ],
+    [
+     "áudio.",
+     75.158,
+     76.087
+    ]
+   ],
+   "text": "esse áudio.",
+   "scene": "mensagem",
+   "voz": "narrador"
+  },
+  {
+   "start": 76.787,
+   "end": 77.495,
+   "words": [
+    [
+     "Eu",
+     76.787,
+     77.008
+    ],
+    [
+     "mostro",
+     77.054,
+     77.379
+    ],
+    [
+     "o",
+     77.402,
+     77.437
+    ]
+   ],
+   "text": "Eu mostro o",
+   "scene": "escolha",
+   "voz": "narrador"
+  },
+  {
+   "start": 77.495,
+   "end": 78.933,
+   "words": [
+    [
+     "áudio",
+     77.495,
+     77.716
+    ],
+    [
+     "pra",
+     77.751,
+     77.867
+    ],
+    [
+     "delegada…",
+     77.913,
+     78.633
+    ]
+   ],
+   "text": "áudio pra delegada…",
+   "scene": "escolha",
+   "voz": "narrador"
+  },
+  {
+   "start": 79.094,
+   "end": 80.311,
+   "words": [
+    [
+     "na",
+     79.094,
+     79.198
+    ],
+    [
+     "frente",
+     79.268,
+     79.546
+    ],
+    [
+     "dele?",
+     79.604,
+     80.011
+    ]
+   ],
+   "text": "na frente dele?",
+   "scene": "escolha",
+   "voz": "narrador"
+  },
+  {
+   "start": 80.51,
+   "end": 81.195,
+   "words": [
+    [
+     "Ou",
+     80.51,
+     80.649
+    ],
+    [
+     "apago",
+     80.707,
+     81.09
+    ],
+    [
+     "e",
+     81.114,
+     81.137
+    ]
+   ],
+   "text": "Ou apago e",
+   "scene": "escolha",
+   "voz": "narrador"
+  },
+  {
+   "start": 81.195,
+   "end": 81.764,
+   "words": [
+    [
+     "finjo",
+     81.195,
+     81.462
+    ],
+    [
+     "que",
+     81.497,
+     81.566
+    ],
+    [
+     "não",
+     81.601,
+     81.729
+    ]
+   ],
+   "text": "finjo que não",
+   "scene": "escolha",
+   "voz": "narrador"
+  },
+  {
+   "start": 81.764,
+   "end": 82.842,
+   "words": [
+    [
+     "ouvi",
+     81.764,
+     81.95
+    ],
+    [
+     "nada?",
+     81.996,
+     82.542
+    ]
+   ],
+   "text": "ouvi nada?",
+   "scene": "escolha",
+   "voz": "narrador"
+  },
+  {
+   "start": 84.042,
+   "end": 84.855,
+   "words": [
+    [
+     "Comenta",
+     84.042,
+     84.564
+    ],
+    [
+     "A",
+     84.681,
+     84.704
+    ]
+   ],
+   "text": "Comenta A",
+   "scene": "contagem",
+   "voz": "narrador"
+  },
+  {
+   "start": 84.855,
+   "end": 85.564,
+   "words": [
+    [
+     "ou",
+     84.855,
+     84.948
+    ],
+    [
+     "B.",
+     85.006,
+     85.273
+    ]
+   ],
+   "text": "ou B.",
+   "scene": "contagem",
+   "voz": "narrador"
+  },
+  {
+   "start": 85.564,
+   "end": 86.167,
+   "words": [
+    [
+     "Eu",
+     85.564,
+     85.726
+    ],
+    [
+     "faço",
+     85.796,
+     86.086
+    ],
+    [
+     "o",
+     86.109,
+     86.132
+    ]
+   ],
+   "text": "Eu faço o",
+   "scene": "contagem",
+   "voz": "narrador"
+  },
+  {
+   "start": 86.167,
+   "end": 88.313,
+   "words": [
+    [
+     "que",
+     86.167,
+     86.237
+    ],
+    [
+     "vocês",
+     86.283,
+     86.562
+    ],
+    [
+     "mandarem.",
+     86.62,
+     88.013
+    ]
+   ],
+   "text": "que vocês mandarem.",
+   "scene": "contagem",
+   "voz": "narrador"
+  }
+ ]
+}

@@ -80,8 +80,9 @@ Eu me mudei há dois meses para o 301 de um prédio antigo. Seu Elias, o vizinho
 - **Trilha:** original, com drone grave, pulso de coração e silêncios. O **assobio de quatro notas** é o tema da série e volta em todo episódio.
 - **Efeitos:** vibração, porta rangendo, rádio da polícia, batidas na porta, chaves e tique-taque na contagem.
 
-## 7. Pontos para decidir
+## 7. Decisões (17/11/2026)
 
-1. **Nome do perfil:** "Testemunha", "Eu Vi", "Caso Aberto" ou "10 Segundos".
-2. **Voz do "eu":** masculina, feminina ou as duas (testar uma de cada e escolher pelo episódio).
-3. **Tom:** suspense sem sangue (recomendado para o alcance) ou um pouco mais pesado (terror).
+1. **Nome do perfil:** **10 SEGUNDOS**. A temporada é "O prédio".
+2. **Voz do "eu":** masculina, criada por Voice Design (10 Segundos · Narrador). Seu Elias e Delegada Rocha também ganharam vozes novas. Ver `video/dez-segundos-ep1/voz/README.md`.
+3. **Tom:** suspense sem sangue.
+4. **Produção:** episódio 1 em `video/dez-segundos-ep1/` (cerca de 94 s).

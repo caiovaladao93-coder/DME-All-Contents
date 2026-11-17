@@ -1,0 +1,19 @@
+[
+ {"id": "n1", "text": "Às três e doze da manhã, meu vizinho me mandou um áudio.", "legenda": "Às 3h12 da manhã, meu vizinho me mandou um áudio."},
+ {"id": "n2", "text": "Às sete, ele tava morto.", "legenda": "Às 7h, ele tava morto."},
+ {"id": "n3", "text": "Eu moro no trezentos e um faz dois meses. <break time=\"0.3s\" /> Ele era o único que falava comigo.", "legenda": "Eu moro no 301 faz dois meses. Ele era o único que falava comigo."},
+ {"id": "n4", "text": "A polícia disse que foi uma queda. <break time=\"0.3s\" /> Que ele escorregou no banheiro.", "legenda": "A polícia disse que foi uma queda. Que ele escorregou no banheiro."},
+ {"id": "n5", "text": "Só que eu ainda não tinha ouvido o áudio."},
+ {"id": "e1", "text": "Se acontecer alguma coisa comigo… <break time=\"0.5s\" /> não foi acidente. <break time=\"0.4s\" /> Foi o…", "voz": "elias", "legenda": "Se acontecer alguma coisa comigo… não foi acidente. Foi o…"},
+ {"id": "n6", "text": "O áudio acaba aí. <break time=\"0.5s\" /> Eu ouvi de novo. <break time=\"0.25s\" /> Com o volume no máximo.", "legenda": "O áudio acaba aí. Eu ouvi de novo. Com o volume no máximo."},
+ {"id": "n7", "text": "No fundo… <break time=\"0.4s\" /> tem um barulho. <break time=\"0.6s\" /> Chaves. <break time=\"0.3s\" /> E alguém assobiando.", "legenda": "No fundo… tem um barulho. Chaves. E alguém assobiando."},
+ {"id": "n8", "text": "Eu olhei pelo olho mágico."},
+ {"id": "d1", "text": "Bom dia. <break time=\"0.3s\" /> Você ouviu alguma coisa essa noite?", "voz": "delegada", "legenda": "Bom dia. Você ouviu alguma coisa essa noite?"},
+ {"id": "n9", "text": "Eu ia contar. <break time=\"0.3s\" /> Até que, atrás dela… <break time=\"0.4s\" /> alguém começou a assobiar.", "legenda": "Eu ia contar. Até que, atrás dela… alguém começou a assobiar."},
+ {"id": "n10", "text": "Seu Valdir. <break time=\"0.3s\" /> O porteiro. <break time=\"0.3s\" /> Ele tem a chave de todos os apartamentos.", "legenda": "Seu Valdir. O porteiro. Ele tem a chave de todos os apartamentos."},
+ {"id": "n11", "text": "Inclusive… <break time=\"0.5s\" /> a do meu.", "legenda": "Inclusive… a do meu."},
+ {"id": "d2", "text": "Então? <break time=\"0.3s\" /> Ouviu ou não ouviu?", "voz": "delegada", "legenda": "Então? Ouviu ou não ouviu?"},
+ {"id": "n12", "text": "Alguém sabe que eu tenho esse áudio."},
+ {"id": "n13", "text": "Eu mostro o áudio pra delegada… na frente dele? <break time=\"0.45s\" /> Ou apago e finjo que não ouvi nada?", "legenda": "Eu mostro o áudio pra delegada… na frente dele? Ou apago e finjo que não ouvi nada?"},
+ {"id": "n14", "text": "Comenta A ou B. <break time=\"0.3s\" /> Eu faço o que vocês mandarem.", "legenda": "Comenta A ou B. Eu faço o que vocês mandarem."}
+]
