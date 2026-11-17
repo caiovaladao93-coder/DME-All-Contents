@@ -275,7 +275,7 @@ const Play: React.FC<{t: number}> = ({t}) => {
   return (
     <g>
       <CorredorAberto t={t} dark={.25}><Delegada x={430} y={1010} s={1.0} t={t} look={1} /><Valdir x={760} y={930} s={.7} t={t} whistle={t < tL + 1.2} /></CorredorAberto>
-      <g transform="translate(0 520)"><Hands t={t}><Galeria t={t} live={live ? 1 : 0} prog={t >= tL ? prog : undefined} /></Hands></g>
+      <g transform={t >= tL - .05 ? 'translate(540 900) scale(1.5) translate(-540 -560)' : 'translate(0 520)'}><Hands t={t}><Galeria t={t} live={live ? 1 : 0} prog={t >= tL ? prog : undefined} /></Hands></g>
       {live && <Notas x={640} y={1150} t={t} at={tL + .1} c={C.red} />}
     </g>
   );
@@ -318,19 +318,20 @@ const Dia: React.FC<{t: number}> = ({t}) => {
   const k = a.map((x) => back(p(t, x - .1, .35)));
   const hora = ['09:12', '13:40', '19:05', '02:00'];
   const painel = (i: number, x: number, y: number, inner: React.ReactNode) => k[i] > 0 && (
-    <g transform={`translate(${x} ${y}) rotate(${[-2, 1.5, -1, 2][i]}) scale(${k[i]})`}>
+    <g transform={`translate(${x} ${y}) rotate(${[-2, 1.5, -1, 2][i]}) scale(${k[i] * 1.9})`}>
       <rect x={-210} y={-230} width={420} height={460} rx={8} fill={C.night2} stroke={C.night3} strokeWidth={4} />
       <svg x={-200} y={-220} width={400} height={380} viewBox="0 0 400 380">{inner}</svg>
       <Txt x={0} y={204} s={34} f={MONO} w={800} c={i === 3 ? C.red : C.light} a="middle">{hora[i]}</Txt>
     </g>
   );
+  const cur = a.reduce((m, x, i) => (t >= x - .15 ? i : m), 0);
   return (
     <g>
       <rect width={1080} height={1920} fill={C.bg} />
-      {painel(0, 300, 690, <g><rect width={400} height={380} fill="#0B1220" /><circle cx={200} cy={170} r={110} fill="none" stroke={C.light} strokeWidth={10} /><circle cx={200} cy={170} r={8} fill={C.light} /><line x1={200} y1={170} x2={200} y2={95} stroke={C.light} strokeWidth={8} /><line x1={200} y1={170} x2={250} y2={190} stroke={C.light} strokeWidth={6} /><Txt x={200} y={350} s={26} f={MONO} w={800} c={C.gray} a="middle">ACORDADO</Txt></g>)}
-      {painel(1, 780, 690, <g><rect width={400} height={380} fill={C.wood} /><rect x={130} y={90} width={140} height={200} rx={16} fill="#B9BEC6" /><circle cx={200} cy={160} r={34} fill="#6E747C" /><rect x={188} y={120} width={24} height={80} rx={6} fill="#3A3F46" /><Txt x={200} y={350} s={26} f={MONO} w={800} c={C.bg} a="middle">FECHADURA NOVA</Txt></g>)}
-      {painel(2, 300, 1180, <g><rect width={400} height={380} fill={C.wood} /><rect x={60} y={120} width={280} height={36} rx={10} fill="#8D939B" />{Array.from({length: 6}, (_, i) => <ellipse key={i} cx={90 + i * 44} cy={138} rx={22} ry={11} fill="none" stroke="#D8DEE8" strokeWidth={7} />)}<Txt x={200} y={350} s={26} f={MONO} w={800} c={C.bg} a="middle">CORRENTE</Txt></g>)}
-      {painel(3, 780, 1180, <g><rect width={400} height={380} fill="#0A0E16" /><Txt x={200} y={200} s={110} f={MONO} w={800} c={C.red} a="middle">02:00</Txt><Txt x={200} y={350} s={26} f={MONO} w={800} c={C.gray} a="middle">DORMI</Txt></g>)}
+      {cur === 0 && painel(0, 540, 880, <g><rect width={400} height={380} fill="#0B1220" /><circle cx={200} cy={170} r={110} fill="none" stroke={C.light} strokeWidth={10} /><circle cx={200} cy={170} r={8} fill={C.light} /><line x1={200} y1={170} x2={200} y2={95} stroke={C.light} strokeWidth={8} /><line x1={200} y1={170} x2={250} y2={190} stroke={C.light} strokeWidth={6} /><Txt x={200} y={350} s={26} f={MONO} w={800} c={C.gray} a="middle">ACORDADO</Txt></g>)}
+      {cur === 1 && painel(1, 540, 880, <g><rect width={400} height={380} fill={C.wood} /><rect x={130} y={90} width={140} height={200} rx={16} fill="#B9BEC6" /><circle cx={200} cy={160} r={34} fill="#6E747C" /><rect x={188} y={120} width={24} height={80} rx={6} fill="#3A3F46" /><Txt x={200} y={350} s={26} f={MONO} w={800} c={C.bg} a="middle">FECHADURA NOVA</Txt></g>)}
+      {cur === 2 && painel(2, 540, 880, <g><rect width={400} height={380} fill={C.wood} /><rect x={60} y={120} width={280} height={36} rx={10} fill="#8D939B" />{Array.from({length: 6}, (_, i) => <ellipse key={i} cx={90 + i * 44} cy={138} rx={22} ry={11} fill="none" stroke="#D8DEE8" strokeWidth={7} />)}<Txt x={200} y={350} s={26} f={MONO} w={800} c={C.bg} a="middle">CORRENTE</Txt></g>)}
+      {cur === 3 && painel(3, 540, 880, <g><rect width={400} height={380} fill="#0A0E16" /><Txt x={200} y={200} s={110} f={MONO} w={800} c={C.red} a="middle">02:00</Txt><Txt x={200} y={350} s={26} f={MONO} w={800} c={C.gray} a="middle">DORMI</Txt></g>)}
     </g>
   );
 };
@@ -459,11 +460,11 @@ const Captions: React.FC<{t: number}> = ({t}) => {
   return (
     <div style={{position: 'absolute', left: 90, right: 90, top: 1400, height: 180, display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
       {who && <div style={{fontFamily: MONO, fontWeight: 800, fontSize: 24, letterSpacing: 3, color: C.bg, background: C.light, padding: '4px 12px', marginBottom: 8}}>{who}</div>}
-      <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'center', columnGap: 18, fontFamily: HEAD, fontWeight: 800, fontSize: 70, lineHeight: 1.1, textTransform: 'uppercase', fontStyle: who ? 'italic' : 'normal'}}>
+      <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'center', columnGap: 18, fontFamily: HEAD, fontWeight: 800, fontSize: 82, lineHeight: 1.06, textTransform: 'uppercase', fontStyle: who ? 'italic' : 'normal'}}>
         {cap.words.map(([w, s, e], i) => {
           if (t < s - .04) return null;
           const k = eo(p(t, s - .04, .1)); const cur = t >= s - .04 && (t < e + .08 || i === cap.words.length - 1);
-          return <span key={i} style={{opacity: k, transform: `translateY(${(1 - k) * 12}px)`, display: 'inline-block', color: cur ? (danger ? C.red : C.white) : '#9AA3B2', WebkitTextStroke: `9px ${C.bg}`, paintOrder: 'stroke fill'}}>{w}</span>;
+          return <span key={i} style={{opacity: k, transform: `translateY(${(1 - k) * 16}px) scale(${cur ? 1 + (1 - eo(p(t, s - .04, .12))) * .25 + .04 : mix(1.2, 1, k)}) rotate(${cur ? -2 : 0}deg)`, display: 'inline-block', color: cur ? (danger ? C.red : C.white) : '#9AA3B2', WebkitTextStroke: `9px ${C.bg}`, paintOrder: 'stroke fill'}}>{w}</span>;
         })}
       </div>
     </div>
@@ -474,6 +475,29 @@ const SCENES: Array<[string, React.FC<{t: number}>]> = [
   ['foto', Foto], ['recap', Recap], ['play', Play], ['parou', Parou], ['valdir', ValdirFala], ['delegada', DelegadaFala], ['levou', Levou], ['dia', Dia],
   ['notebook', NotebookCena], ['saco', Saco], ['corrente', Corrente], ['passos', Passos],
 ];
+
+
+// ── CÂMERA DINÂMICA (v2): punch-in nas palavras-chave, chicote entre cenas, flash nos impactos e câmera na mão
+const KEYW = new Set(['hoje', 'policia', 'abri', 'assobio', 'parou', 'musica', 'prova', 'celular', 'dormi', 'notebook', 'chao', 'evidencia', 'numero', 'corrente', 'balancando', 'passos', 'subindo', 'delegada', 'porteiro', 'degraus']);
+const PUNCH: number[] = Object.values(WORDS).flat().filter((w) => KEYW.has(norm(w[0]))).map((w) => w[1]);
+const CUTS: number[] = TL.scenes.slice(1).map((s) => s.t0);
+const FLASH: Array<[number, string]> = [[SC.recap.t0 + .1, '#FFFFFF'], [SC.parou.t0, '#FFFFFF'], [W('saco', 'número'), C.red], [SC.escolha.t0, C.red], [T_END + .2, '#FFFFFF']];
+const punchAt = (t: number) => PUNCH.reduce((m, P) => { const d = t - P; if (d < -.02) return m; const k = d < .1 ? eo(d / .1) : Math.exp(-(d - .1) / .45); return Math.max(m, k); }, 0);
+const whipAt = (t: number) => { for (const T of CUTS) { if (t >= T - .12 && t < T) return -eo((t - (T - .12)) / .12) * 420; if (t >= T && t < T + .14) return (1 - eo((t - T) / .14)) * 420; } return 0; };
+const DynCam: React.FC<{t: number; children: React.ReactNode}> = ({t, children}) => {
+  const danger = DANGER.has(TL.scenes.find((s) => t >= s.t0 && t < s.t1)?.key || '');
+  const a = danger ? 7 : 4, sx = Math.sin(t * 5.3) * a + Math.sin(t * 13.7) * a * .4, sy = Math.cos(t * 4.1) * a + Math.sin(t * 11.3) * a * .3;
+  const z = 1 + punchAt(t) * .085, wx = whipAt(t), rot = Math.sin(t * 2.3) * (danger ? .5 : .25);
+  return (
+    <g filter={Math.abs(wx) > 20 ? 'url(#chicote)' : undefined}>
+      <g transform={`translate(${540 + sx + wx} ${960 + sy}) rotate(${rot}) scale(${z}) translate(-540 -960)`}>{children}</g>
+    </g>
+  );
+};
+const Flash: React.FC<{t: number}> = ({t}) => {
+  const f = FLASH.find(([T]) => t >= T && t < T + .2); if (!f) return null;
+  return <rect width={1080} height={1920} fill={f[1]} opacity={.55 * (1 - (t - f[0]) / .2)} />;
+};
 
 export const Film: React.FC<{audio?: boolean; still?: number}> = ({audio = true, still}) => {
   loadFonts();
@@ -491,9 +515,13 @@ export const Film: React.FC<{audio?: boolean; still?: number}> = ({audio = true,
             <feDisplacementMap in="SourceGraphic" in2="mapa" scale={420} xChannelSelector="R" yChannelSelector="G" />
           </filter>
           <filter id="desfoque"><feGaussianBlur stdDeviation={7} /></filter>
+          <filter id="chicote" x="-20%" y="0" width="140%" height="100%"><feGaussianBlur stdDeviation="22 0" /></filter>
         </defs>
-        {cur && !isDec && React.createElement(cur[1], {t})}
-        {isDec && <Decisao t={t} />}
+        <DynCam t={t}>
+          {cur && !isDec && React.createElement(cur[1], {t})}
+          {isDec && <Decisao t={t} />}
+        </DynCam>
+        <Flash t={t} />
       </svg>
       <Hud t={t} />
       <Captions t={t} />

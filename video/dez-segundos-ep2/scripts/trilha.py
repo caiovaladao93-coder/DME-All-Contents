@@ -102,6 +102,19 @@ for k in KN: put(FX, knock(), k, 1.0)
 put(FX, boom(2.5), KN[-1] + .2, .6, 0, .5); ev('BATERAM NA PORTA + corte', KN[0])
 put(FX, whistle(muff=True), KN[-1] + 1.3, .3, 0, .6); ev('assobio final atrás da porta', KN[-1] + 1.3)
 
+
+# ── v2 dinâmica: whoosh em cada corte, risers antes das revelações e pulso grave a 100 BPM
+def riser(d):
+    n = int(d * SR); t = ar(n); return noise(d, 300, 6000) * (t / d) ** 2 * .6 + sweep(200, 900, d, n) * (t / d) ** 2 * .15
+for sc in TL['scenes'][1:]: put(FX, whoosh(.3), sc['t0'] - .15, .32, R.uniform(-.4, .4))
+ev('whoosh em cada corte', TL['scenes'][1]['t0'])
+for T, nome in ((wt('saco', 'número'), 'número'), (S['escolha']['t0'], 'decisão'), (S['recap']['t0'] + .1, 'recap')):
+    put(FX, riser(1.6), T - 1.6, .35); ev(f'riser antes de: {nome}', T - 1.6)
+t = S['recap']['t0']
+while t < S['escolha']['t0']:
+    put(MU, sweep(120, 45, .03, int(.3 * SR)) * np.exp(-ar(int(.3 * SR)) / .12), t, .35); t += .6
+ev('pulso grave a 100 BPM (recap → passos)', S['recap']['t0'])
+
 # ── mixagem
 ir = make_ir(1.6, 4)
 for c in range(2): MU[:, c] += conv(SEND[:, c], ir) * .25; FX[:, c] += conv(SEND[:, c], ir) * .25

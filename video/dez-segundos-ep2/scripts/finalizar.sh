@@ -2,7 +2,7 @@
 # Render bruto → MP4 final (-14 LUFS, pico -1,5 dBTP, yuv420p), narração separada, SRT, capa e conferência.
 set -e
 cd "$(dirname "$0")/.."
-IN=out/render-bruto.mp4; OUT=out/10-Segundos-Ep2-O-Saco-de-Evidencia.mp4
+IN=out/render-bruto.mp4; OUT=out/10-Segundos-Ep2-O-Saco-de-Evidencia-v2.mp4
 M=$(ffmpeg -hide_banner -i $IN -af loudnorm=I=-14:TP=-1.5:LRA=11:print_format=json -f null - 2>&1 | sed -n '/^{/,/^}/p')
 g(){ echo "$M" | python3 -c "import json,sys;print(json.load(sys.stdin)['$1'])"; }
 ffmpeg -y -v error -i $IN -c:v libx264 -preset slow -crf 16 -pix_fmt yuv420p -colorspace bt709 -color_primaries bt709 -color_trc bt709 \

@@ -1,37 +1,42 @@
 MARCAS DE SOM · 10 SEGUNDOS · Ep. 2 "O saco de evidência"
 
 FALAS
-  0.05–  6.80  foto      [n1] Essa foto foi tirada hoje, às 2h47. E o meu celular tá com a polícia.
-  7.25– 12.24  recap     [n2] Ontem de manhã, vocês mandaram eu abrir a porta. Eu abri.
- 12.99– 18.42  play      [n3] Dei o play na foto. E o assobio tocou alto, no corredor inteiro.
- 21.72– 24.32  parou     [n4] O Seu Valdir parou de assobiar.
- 24.92– 30.73  valdir    [v1] Essa música? O Seu Elias assobiava todo dia. Metade do prédio sabe.
- 31.43– 34.47  delegada  [d1] Vou levar o seu celular. É prova.
- 35.02– 39.32  levou     [n5] Ela levou o meu celular… e a única prova que eu tinha.
- 39.97– 47.12  dia       [n6] Passei o dia acordado. Troquei a fechadura. Passei a corrente. Dormi às 2h.
- 47.82– 53.31  notebook  [n7] Às 2h47, essa foto chegou no meu notebook. Enviada do meu celular.
- 53.96– 62.43  saco      [n8] E no chão do meu quarto, do lado da cama… tem um saco de evidência. Com o número que a delegada escreveu.
- 63.53– 67.26  corrente  [n9] Aí eu ouvi a corrente da porta. Balançando.
- 67.86– 70.90  passos    [n10] E passos na escada. Subindo.
- 71.40– 74.92  escolha   [n11] Eu ligo pra delegada… ou bato na porta do porteiro?
- 75.62– 79.15  contagem  [n12] Comenta A ou B. São 10 degraus até o meu andar.
+  0.05–  5.13  foto      [n1] Essa foto foi tirada hoje, às 2h47. E o meu celular tá com a polícia.
+  5.38–  9.69  recap     [n2] Ontem de manhã, vocês mandaram eu abrir a porta. Eu abri.
+ 10.09– 14.92  play      [n3] Dei o play na foto. E o assobio tocou alto, no corredor inteiro.
+ 17.67– 20.04  parou     [n4] O Seu Valdir parou de assobiar.
+ 20.39– 25.32  valdir    [v1] Essa música? O Seu Elias assobiava todo dia. Metade do prédio sabe.
+ 25.71– 28.20  delegada  [d1] Vou levar o seu celular. É prova.
+ 28.55– 32.35  levou     [n5] Ela levou o meu celular… e a única prova que eu tinha.
+ 32.75– 39.07  dia       [n6] Passei o dia acordado. Troquei a fechadura. Passei a corrente. Dormi às 2h.
+ 39.52– 45.81  notebook  [n7] Às 2h47, essa foto chegou no meu notebook. Enviada do meu celular.
+ 46.16– 53.40  saco      [n8] E no chão do meu quarto, do lado da cama… tem um saco de evidência. Com o número que a delegada escreveu.
+ 54.15– 57.81  corrente  [n9] Aí eu ouvi a corrente da porta. Balançando.
+ 58.16– 61.28  passos    [n10] E passos na escada. Subindo.
+ 61.58– 64.57  escolha   [n11] Eu ligo pra delegada… ou bato na porta do porteiro?
+ 65.07– 67.80  contagem  [n12] Comenta A ou B. São 10 degraus até o meu andar.
 
 TRILHA E EFEITOS
   0.00  drone grave Mi menor
   0.00  notificação no notebook (quadro 0)
-  7.20  VOCÊS ESCOLHERAM: A
-  8.60  o porteiro assobia no corredor
- 10.58  minha porta abrindo
- 18.52  PLAY: o assobio da foto toca alto no corredor
- 21.62  silêncio: o porteiro para de assobiar
- 33.16  saco de evidência
- 37.59  porta fecha
- 39.82  montagem: fechadura, corrente, 02:00
- 47.92  02:47 · 1 foto nova
- 59.34  IMPACTO: o número da delegada
- 63.38  a corrente balança (silêncio)
- 67.86  passos na escada
- 71.20  cartão de decisão
- 71.50  10 degraus (um por segundo) + coração
- 81.70  BATERAM NA PORTA + corte
- 83.60  assobio final atrás da porta
+  3.78  riser antes de: recap
+  5.28  pulso grave a 100 BPM (recap → passos)
+  5.28  whoosh em cada corte
+  5.38  VOCÊS ESCOLHERAM: A
+  6.78  o porteiro assobia no corredor
+  8.33  minha porta abrindo
+ 15.02  PLAY: o assobio da foto toca alto no corredor
+ 17.62  silêncio: o porteiro para de assobiar
+ 27.17  saco de evidência
+ 30.71  porta fecha
+ 32.65  montagem: fechadura, corrente, 02:00
+ 39.67  02:47 · 1 foto nova
+ 49.24  riser antes de: número
+ 50.84  IMPACTO: o número da delegada
+ 54.10  a corrente balança (silêncio)
+ 58.26  passos na escada
+ 59.88  riser antes de: decisão
+ 61.48  cartão de decisão
+ 61.78  10 degraus (um por segundo) + coração
+ 71.98  BATERAM NA PORTA + corte
+ 73.88  assobio final atrás da porta

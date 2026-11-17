@@ -4,7 +4,7 @@ Saída: voz/<id>.mp3 e .json, copiados para src/data/voz e public/assets/audio/f
 import json, shutil, subprocess
 import numpy as np
 SR = 44100
-TOMADA = {'n1': 1, 'n2': 1, 'n3': 1, 'n4': 2, 'v1': 1, 'd1': 1, 'n5': 3, 'n6': 3, 'n7': 1, 'n8': 3, 'n9': 1, 'n10': 3, 'n11': 3, 'n12': 2}  # narrador + Seu Valdir + Delegada Rocha
+TOMADA = {'n1': 6, 'n2': 5, 'n3': 6, 'n4': 6, 'v1': 4, 'd1': 4, 'n5': 6, 'n6': 5, 'n7': 4, 'n8': 6, 'n9': 5, 'n10': 6, 'n11': 6, 'n12': 6}  # v2 dinâmica: tomadas 4–6, velocidade 1,12
 PORTA = 'lowpass=f=2300,highpass=f=140,volume=1.25'
 FILTRO = {}  # ep. 2: porta aberta, vozes sem filtro
 PAUSAS = {}  # pausas desta peça vêm da própria voz (<break>)
@@ -25,7 +25,7 @@ def limpar(x, ch, st, en, margem=.09, fade=.04):
     gate = np.clip((20 * np.log10(emax + 1e-9) + 48) / 6, 0, 1).astype(np.float32)
     g[-F:] = np.minimum(g[-F:], np.linspace(1, 0, F))  # sem clique no fim do arquivo
     return (x * g * gate).astype(np.float32)
-MAXGAP = {'n8': .7, 'n11': .6, 'n5': .6}  # pausa máxima entre palavras (s); o resto do silêncio é removido
+MAXGAP = {'n8': .45, 'n11': .4, 'n5': .4}  # pausa máxima entre palavras (s); o resto do silêncio é removido
 def encurtar(x, ch, st, en, g):
     """Encurta silêncios longos entre palavras para no máximo g segundos (corte no meio do silêncio, já limpo); desloca o alinhamento."""
     al = [i for i, c in enumerate(ch) if c.isalpha()]
@@ -56,7 +56,7 @@ for fid, k in TOMADA.items():
         s = int(tcut * SR); x = np.concatenate([x[:s], np.zeros(int(sec * SR), np.float32), x[s:]])
         for i in range(last + 1, len(ch)): st[i] += sec; en[i] += sec
     x = limpar(x, ch, st, en)
-    x = encurtar(x, ch, st, en, MAXGAP.get(fid, .5))
+    x = encurtar(x, ch, st, en, MAXGAP.get(fid, .3))
     subprocess.run(['ffmpeg', '-y', '-v', 'error', '-f', 'f32le', '-ar', str(SR), '-ac', '1', '-i', '-', *(['-af', FILTRO[fid]] if fid in FILTRO else []), '-c:a', 'libmp3lame', '-b:a', '192k', f'voz/{fid}.mp3'], input=x.tobytes(), check=True)
     d['pausas'] = PAUSAS.get(fid, []); json.dump(d, open(f'voz/{fid}.json', 'w'), ensure_ascii=False, indent=1)
     shutil.copy(f'voz/{fid}.json', f'src/data/voz/{fid}.json'); shutil.copy(f'voz/{fid}.mp3', f'public/assets/audio/falas/{fid}.mp3')

@@ -5,10 +5,10 @@ ROOT = __file__.rsplit('/scripts/', 1)[0]
 FPS = 30
 FALAS = {x['id']: x for x in json.load(open(f'{ROOT}/voz/falas.json'))}
 # (cena, fala, entrada da voz depois do início da cena, respiro depois da fala, duração mínima da cena)
-PLAN = [('foto', 'n1', .05, .3, 0), ('recap', 'n2', .15, .6, 0), ('play', 'n3', .15, 3.2, 0), ('parou', 'n4', .1, .4, 0),
-        ('valdir', 'v1', .2, .5, 0), ('delegada', 'd1', .2, .4, 0), ('levou', 'n5', .15, .5, 0), ('dia', 'n6', .15, .5, 0),
-        ('notebook', 'n7', .2, .5, 0), ('saco', 'n8', .15, .7, 0), ('corrente', 'n9', .4, .4, 0), ('passos', 'n10', .2, .3, 0),
-        ('escolha', 'n11', .2, .4, 0), ('contagem', 'n12', .3, 0, 0)]
+PLAN = [('foto', 'n1', .05, .15, 0), ('recap', 'n2', .1, .3, 0), ('play', 'n3', .1, 2.7, 0), ('parou', 'n4', .05, .25, 0),
+        ('valdir', 'v1', .1, .3, 0), ('delegada', 'd1', .1, .25, 0), ('levou', 'n5', .1, .3, 0), ('dia', 'n6', .1, .3, 0),
+        ('notebook', 'n7', .15, .25, 0), ('saco', 'n8', .1, .45, 0), ('corrente', 'n9', .3, .25, 0), ('passos', 'n10', .1, .2, 0),
+        ('escolha', 'n11', .1, .3, 0), ('contagem', 'n12', .2, 0, 0)]
 FIM_APOS_ESCOLHA = 13.2  # 10 degraus (1 por segundo) a partir de escolha.t0 + .3, batida na porta e cartão final
 NUM = [('às duas e quarenta e sete', 'às 2h47'), ('às duas', 'às 2h'), ('dez', '10')]
 norm = lambda w: re.sub(r'[^\wà-ú]', '', w.lower())
