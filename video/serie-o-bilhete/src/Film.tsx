@@ -487,7 +487,7 @@ const Hud: React.FC<{t: number}> = ({t}) => {
     <svg width={1080} height={1920} style={{position: 'absolute', inset: 0}}>
       <g filter="url(#papel)">
         <rect x={84} y={262} width={190} height={58} rx={8} fill={C.tomato} />
-        {!endCard && <rect x={720} y={256} width={276} height={70} rx={8} fill={chip} />}
+        {!endCard && <rect x={664} y={256} width={332} height={70} rx={8} fill={chip} />}
       </g>
       <Txt x={179} y={302} s={30} f={MONO} w={800} c={C.cream} a="middle" ls={2}>● EP. 1</Txt>
       <Txt x={90} y={360} s={24} f={MONO} w={800} c={fg} ls={4} o={.8}>A CALÇA</Txt>
