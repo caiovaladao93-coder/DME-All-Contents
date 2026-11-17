@@ -1,0 +1,16 @@
+[
+ {"id": "n1", "text": "Essa foto foi tirada hoje, às duas e quarenta e sete. <break time=\"0.35s\" /> E o meu celular tá com a polícia.", "legenda": "Essa foto foi tirada hoje, às 2h47. E o meu celular tá com a polícia."},
+ {"id": "n2", "text": "Ontem de manhã, vocês mandaram eu abrir a porta. <break time=\"0.35s\" /> Eu abri.", "legenda": "Ontem de manhã, vocês mandaram eu abrir a porta. Eu abri."},
+ {"id": "n3", "text": "Dei o play na foto. <break time=\"0.3s\" /> E o assobio tocou alto, no corredor inteiro.", "legenda": "Dei o play na foto. E o assobio tocou alto, no corredor inteiro."},
+ {"id": "n4", "text": "O Seu Valdir parou de assobiar."},
+ {"id": "v1", "text": "Essa música? <break time=\"0.35s\" /> O Seu Elias assobiava todo dia. <break time=\"0.3s\" /> Metade do prédio sabe.", "voz": "valdir", "legenda": "Essa música? O Seu Elias assobiava todo dia. Metade do prédio sabe."},
+ {"id": "d1", "text": "Vou levar o seu celular. <break time=\"0.3s\" /> É prova.", "voz": "delegada", "legenda": "Vou levar o seu celular. É prova."},
+ {"id": "n5", "text": "Ela levou o meu celular… <break time=\"0.35s\" /> e a única prova que eu tinha.", "legenda": "Ela levou o meu celular… e a única prova que eu tinha."},
+ {"id": "n6", "text": "Passei o dia acordado. <break time=\"0.25s\" /> Troquei a fechadura. <break time=\"0.25s\" /> Passei a corrente. <break time=\"0.35s\" /> Dormi às duas.", "legenda": "Passei o dia acordado. Troquei a fechadura. Passei a corrente. Dormi às 2h."},
+ {"id": "n7", "text": "Às duas e quarenta e sete, essa foto chegou no meu notebook. <break time=\"0.3s\" /> Enviada do meu celular.", "legenda": "Às 2h47, essa foto chegou no meu notebook. Enviada do meu celular."},
+ {"id": "n8", "text": "E no chão do meu quarto, do lado da cama… <break time=\"0.45s\" /> tem um saco de evidência. <break time=\"0.3s\" /> Com o número que a delegada escreveu.", "legenda": "E no chão do meu quarto, do lado da cama… tem um saco de evidência. Com o número que a delegada escreveu."},
+ {"id": "n9", "text": "Aí eu ouvi a corrente da porta. <break time=\"0.35s\" /> Balançando.", "legenda": "Aí eu ouvi a corrente da porta. Balançando."},
+ {"id": "n10", "text": "E passos na escada. <break time=\"0.3s\" /> Subindo.", "legenda": "E passos na escada. Subindo."},
+ {"id": "n11", "text": "Eu ligo pra delegada… <break time=\"0.45s\" /> ou bato na porta do porteiro?", "legenda": "Eu ligo pra delegada… ou bato na porta do porteiro?"},
+ {"id": "n12", "text": "Comenta A ou B. <break time=\"0.3s\" /> São dez degraus até o meu andar.", "legenda": "Comenta A ou B. São 10 degraus até o meu andar."}
+]
