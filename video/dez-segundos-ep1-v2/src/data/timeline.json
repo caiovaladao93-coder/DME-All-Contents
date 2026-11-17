@@ -1,0 +1,2128 @@
+{
+ "fps": 30,
+ "dur": 78.733,
+ "frames": 2362,
+ "scenes": [
+  {
+   "key": "foto",
+   "fala": "n1",
+   "t0": 0.0,
+   "t1": 4.484,
+   "v0": 0.05,
+   "v1": 4.184,
+   "texto": "Alguém tirou essa foto de mim dormindo… com o meu celular."
+  },
+  {
+   "key": "mensagem",
+   "fala": "n2",
+   "t0": 4.484,
+   "t1": 10.653,
+   "v0": 4.634,
+   "v1": 10.253,
+   "texto": "Dois minutos depois, alguém mandou do meu número uma mensagem pro meu vizinho."
+  },
+  {
+   "key": "morto",
+   "fala": "n3",
+   "t0": 10.653,
+   "t1": 13.203,
+   "v0": 10.753,
+   "v1": 12.703,
+   "texto": "Às 7h, ele tava morto."
+  },
+  {
+   "key": "suspeito",
+   "fala": "n4",
+   "t0": 13.203,
+   "t1": 18.152,
+   "v0": 13.353,
+   "v1": 17.652,
+   "texto": "E a última pessoa que falou com ele… fui eu."
+  },
+  {
+   "key": "policia",
+   "fala": "d1",
+   "t0": 18.152,
+   "t1": 22.02,
+   "v0": 19.252,
+   "v1": 21.62,
+   "texto": "Polícia! Abre a porta."
+  },
+  {
+   "key": "corrente",
+   "fala": "n5",
+   "t0": 22.02,
+   "t1": 28.345,
+   "v0": 22.22,
+   "v1": 27.945,
+   "texto": "Eu moro sozinho. A porta tava trancada. Então como alguém entrou aqui?"
+  },
+  {
+   "key": "som",
+   "fala": "n6",
+   "t0": 28.345,
+   "t1": 37.728,
+   "v0": 28.495,
+   "v1": 34.128,
+   "texto": "Aí eu vi. A foto não era só uma foto. Tinha três segundos de som."
+  },
+  {
+   "key": "cama",
+   "fala": "n7",
+   "t0": 37.728,
+   "t1": 42.933,
+   "v0": 37.928,
+   "v1": 42.433,
+   "texto": "Alguém ficou do lado da minha cama… assobiando."
+  },
+  {
+   "key": "contar",
+   "fala": "d2",
+   "t0": 42.933,
+   "t1": 47.331,
+   "v0": 43.133,
+   "v1": 46.931,
+   "texto": "Eu sei que você tá aí. Vou contar até 10."
+  },
+  {
+   "key": "assobio",
+   "fala": "n8",
+   "t0": 47.331,
+   "t1": 52.208,
+   "v0": 47.481,
+   "v1": 51.708,
+   "texto": "Foi aí que, atrás dela… alguém começou a assobiar."
+  },
+  {
+   "key": "valdir",
+   "fala": "n9",
+   "t0": 52.208,
+   "t1": 58.1,
+   "v0": 52.358,
+   "v1": 57.7,
+   "texto": "Seu Valdir. O porteiro. Ele tem a chave de todos os apartamentos."
+  },
+  {
+   "key": "chave",
+   "fala": "n10",
+   "t0": 58.1,
+   "t1": 61.423,
+   "v0": 58.3,
+   "v1": 60.823,
+   "texto": "Inclusive… a do meu."
+  },
+  {
+   "key": "chegou",
+   "fala": "n11",
+   "t0": 61.423,
+   "t1": 66.42,
+   "v0": 61.623,
+   "v1": 63.62,
+   "texto": "Aí chegou isso."
+  },
+  {
+   "key": "um",
+   "fala": "c1",
+   "t0": 66.42,
+   "t1": 67.824,
+   "v0": 66.72,
+   "v1": 67.324,
+   "texto": "Um."
+  },
+  {
+   "key": "escolha",
+   "fala": "n12",
+   "t0": 67.824,
+   "t1": 72.596,
+   "v0": 67.924,
+   "v1": 72.196,
+   "texto": "Eu abro a porta e mostro a foto… ou apago tudo e saio pela janela?"
+  },
+  {
+   "key": "contagem",
+   "fala": "n13",
+   "t0": 72.596,
+   "t1": 78.72,
+   "v0": 72.796,
+   "v1": 76.187,
+   "texto": "Comenta A ou B. Eu faço o que vocês mandarem."
+  }
+ ],
+ "words": {
+  "foto": [
+   [
+    "Alguém",
+    0.05,
+    0.352
+   ],
+   [
+    "tirou",
+    0.387,
+    0.584
+   ],
+   [
+    "essa",
+    0.63,
+    0.77
+   ],
+   [
+    "foto",
+    0.828,
+    1.072
+   ],
+   [
+    "de",
+    1.118,
+    1.188
+   ],
+   [
+    "mim",
+    1.234,
+    1.374
+   ],
+   [
+    "dormindo…",
+    1.42,
+    2.012
+   ],
+   [
+    "com",
+    2.396,
+    2.524
+   ],
+   [
+    "o",
+    2.547,
+    2.57
+   ],
+   [
+    "meu",
+    2.594,
+    2.721
+   ],
+   [
+    "celular.",
+    2.756,
+    4.184
+   ]
+  ],
+  "mensagem": [
+   [
+    "Dois",
+    4.634,
+    4.913
+   ],
+   [
+    "minutos",
+    4.947,
+    5.214
+   ],
+   [
+    "depois,",
+    5.249,
+    5.911
+   ],
+   [
+    "alguém",
+    6.062,
+    6.341
+   ],
+   [
+    "mandou",
+    6.375,
+    6.689
+   ],
+   [
+    "do",
+    6.735,
+    6.782
+   ],
+   [
+    "meu",
+    6.828,
+    6.944
+   ],
+   [
+    "número",
+    6.991,
+    7.293
+   ],
+   [
+    "uma",
+    7.374,
+    7.525
+   ],
+   [
+    "mensagem",
+    7.571,
+    8.071
+   ],
+   [
+    "pro",
+    8.105,
+    8.21
+   ],
+   [
+    "meu",
+    8.233,
+    8.349
+   ],
+   [
+    "vizinho.",
+    8.384,
+    10.253
+   ]
+  ],
+  "morto": [
+   [
+    "Às",
+    10.753,
+    10.974
+   ],
+   [
+    "sete,",
+    10.997,
+    11.461
+   ],
+   [
+    "ele",
+    11.589,
+    11.751
+   ],
+   [
+    "tava",
+    11.786,
+    11.995
+   ],
+   [
+    "morto.",
+    12.042,
+    12.703
+   ]
+  ],
+  "suspeito": [
+   [
+    "E",
+    13.353,
+    13.516
+   ],
+   [
+    "a",
+    13.562,
+    13.585
+   ],
+   [
+    "última",
+    13.643,
+    13.887
+   ],
+   [
+    "pessoa",
+    13.922,
+    14.259
+   ],
+   [
+    "que",
+    14.282,
+    14.351
+   ],
+   [
+    "falou",
+    14.386,
+    14.607
+   ],
+   [
+    "com",
+    14.642,
+    14.769
+   ],
+   [
+    "ele…",
+    14.862,
+    15.245
+   ],
+   [
+    "fui",
+    15.841,
+    16.108
+   ],
+   [
+    "eu.",
+    16.143,
+    17.652
+   ]
+  ],
+  "policia": [
+   [
+    "Polícia!",
+    19.252,
+    20.204
+   ],
+   [
+    "Abre",
+    20.494,
+    20.785
+   ],
+   [
+    "a",
+    20.808,
+    20.831
+   ],
+   [
+    "porta.",
+    20.877,
+    21.62
+   ]
+  ],
+  "corrente": [
+   [
+    "Eu",
+    22.22,
+    22.406
+   ],
+   [
+    "moro",
+    22.441,
+    22.638
+   ],
+   [
+    "sozinho.",
+    22.684,
+    23.393
+   ],
+   [
+    "A",
+    23.729,
+    23.799
+   ],
+   [
+    "porta",
+    23.88,
+    24.124
+   ],
+   [
+    "tava",
+    24.17,
+    24.333
+   ],
+   [
+    "trancada.",
+    24.368,
+    25.03
+   ],
+   [
+    "Então",
+    25.402,
+    25.681
+   ],
+   [
+    "como",
+    25.715,
+    25.901
+   ],
+   [
+    "alguém",
+    25.924,
+    26.168
+   ],
+   [
+    "entrou",
+    26.203,
+    26.424
+   ],
+   [
+    "aqui?",
+    26.47,
+    27.945
+   ]
+  ],
+  "som": [
+   [
+    "Aí",
+    28.495,
+    28.727
+   ],
+   [
+    "eu",
+    28.75,
+    28.82
+   ],
+   [
+    "vi.",
+    28.878,
+    29.343
+   ],
+   [
+    "A",
+    29.599,
+    29.669
+   ],
+   [
+    "foto",
+    29.762,
+    30.029
+   ],
+   [
+    "não",
+    30.087,
+    30.214
+   ],
+   [
+    "era",
+    30.238,
+    30.365
+   ],
+   [
+    "só",
+    30.412,
+    30.505
+   ],
+   [
+    "uma",
+    30.551,
+    30.679
+   ],
+   [
+    "foto.",
+    30.737,
+    31.259
+   ],
+   [
+    "Tinha",
+    31.632,
+    31.899
+   ],
+   [
+    "três",
+    31.946,
+    32.178
+   ],
+   [
+    "segundos",
+    32.201,
+    32.619
+   ],
+   [
+    "de",
+    32.654,
+    32.712
+   ],
+   [
+    "som.",
+    32.793,
+    34.128
+   ]
+  ],
+  "cama": [
+   [
+    "Alguém",
+    37.928,
+    38.241
+   ],
+   [
+    "ficou",
+    38.288,
+    38.532
+   ],
+   [
+    "do",
+    38.567,
+    38.636
+   ],
+   [
+    "lado",
+    38.694,
+    38.915
+   ],
+   [
+    "da",
+    38.961,
+    39.031
+   ],
+   [
+    "minha",
+    39.077,
+    39.228
+   ],
+   [
+    "cama…",
+    39.286,
+    39.716
+   ],
+   [
+    "assobiando.",
+    40.25,
+    42.433
+   ]
+  ],
+  "contar": [
+   [
+    "Eu",
+    43.133,
+    43.412
+   ],
+   [
+    "sei",
+    43.493,
+    43.667
+   ],
+   [
+    "que",
+    43.713,
+    43.795
+   ],
+   [
+    "você",
+    43.853,
+    44.073
+   ],
+   [
+    "tá",
+    44.155,
+    44.271
+   ],
+   [
+    "aí.",
+    44.294,
+    44.654
+   ],
+   [
+    "Vou",
+    45.026,
+    45.224
+   ],
+   [
+    "contar",
+    45.282,
+    45.642
+   ],
+   [
+    "até",
+    45.7,
+    45.909
+   ],
+   [
+    "dez.",
+    45.978,
+    46.931
+   ]
+  ],
+  "assobio": [
+   [
+    "Foi",
+    47.481,
+    47.736
+   ],
+   [
+    "aí",
+    47.76,
+    47.876
+   ],
+   [
+    "que,",
+    47.922,
+    48.027
+   ],
+   [
+    "atrás",
+    48.05,
+    48.34
+   ],
+   [
+    "dela…",
+    48.398,
+    48.979
+   ],
+   [
+    "alguém",
+    49.235,
+    49.49
+   ],
+   [
+    "começou",
+    49.537,
+    49.885
+   ],
+   [
+    "a",
+    49.92,
+    49.943
+   ],
+   [
+    "assobiar.",
+    49.966,
+    51.708
+   ]
+  ],
+  "valdir": [
+   [
+    "Seu",
+    52.358,
+    52.59
+   ],
+   [
+    "Valdir.",
+    52.637,
+    53.182
+   ],
+   [
+    "O",
+    53.589,
+    53.67
+   ],
+   [
+    "porteiro.",
+    53.751,
+    54.518
+   ],
+   [
+    "Ele",
+    54.809,
+    55.03
+   ],
+   [
+    "tem",
+    55.064,
+    55.192
+   ],
+   [
+    "a",
+    55.25,
+    55.273
+   ],
+   [
+    "chave",
+    55.32,
+    55.633
+   ],
+   [
+    "de",
+    55.668,
+    55.738
+   ],
+   [
+    "todos",
+    55.796,
+    56.016
+   ],
+   [
+    "os",
+    56.051,
+    56.121
+   ],
+   [
+    "apartamentos.",
+    56.167,
+    57.7
+   ]
+  ],
+  "chave": [
+   [
+    "Inclusive…",
+    58.3,
+    59.148
+   ],
+   [
+    "a",
+    59.743,
+    59.813
+   ],
+   [
+    "do",
+    59.859,
+    59.929
+   ],
+   [
+    "meu.",
+    59.987,
+    60.823
+   ]
+  ],
+  "chegou": [
+   [
+    "Aí",
+    61.623,
+    61.832
+   ],
+   [
+    "chegou",
+    61.867,
+    62.169
+   ],
+   [
+    "isso.",
+    62.238,
+    63.62
+   ]
+  ],
+  "um": [
+   [
+    "Um.",
+    66.72,
+    67.324
+   ]
+  ],
+  "escolha": [
+   [
+    "Eu",
+    67.924,
+    68.087
+   ],
+   [
+    "abro",
+    68.133,
+    68.307
+   ],
+   [
+    "a",
+    68.33,
+    68.354
+   ],
+   [
+    "porta",
+    68.4,
+    68.679
+   ],
+   [
+    "e",
+    68.702,
+    68.737
+   ],
+   [
+    "mostro",
+    68.772,
+    69.05
+   ],
+   [
+    "a",
+    69.073,
+    69.097
+   ],
+   [
+    "foto…",
+    69.143,
+    69.631
+   ],
+   [
+    "ou",
+    70.153,
+    70.223
+   ],
+   [
+    "apago",
+    70.281,
+    70.594
+   ],
+   [
+    "tudo",
+    70.652,
+    70.943
+   ],
+   [
+    "e",
+    70.977,
+    71.001
+   ],
+   [
+    "saio",
+    71.047,
+    71.268
+   ],
+   [
+    "pela",
+    71.303,
+    71.477
+   ],
+   [
+    "janela?",
+    71.523,
+    72.196
+   ]
+  ],
+  "contagem": [
+   [
+    "Comenta",
+    72.796,
+    73.295
+   ],
+   [
+    "A",
+    73.342,
+    73.365
+   ],
+   [
+    "ou",
+    73.458,
+    73.539
+   ],
+   [
+    "B.",
+    73.597,
+    73.876
+   ],
+   [
+    "Eu",
+    74.167,
+    74.329
+   ],
+   [
+    "faço",
+    74.387,
+    74.654
+   ],
+   [
+    "o",
+    74.678,
+    74.701
+   ],
+   [
+    "que",
+    74.747,
+    74.817
+   ],
+   [
+    "vocês",
+    74.863,
+    75.13
+   ],
+   [
+    "mandarem.",
+    75.177,
+    76.187
+   ]
+  ]
+ },
+ "captions": [
+  {
+   "start": 0.05,
+   "end": 0.828,
+   "words": [
+    [
+     "Alguém",
+     0.05,
+     0.352
+    ],
+    [
+     "tirou",
+     0.387,
+     0.584
+    ],
+    [
+     "essa",
+     0.63,
+     0.77
+    ]
+   ],
+   "text": "Alguém tirou essa",
+   "scene": "foto",
+   "voz": "narrador"
+  },
+  {
+   "start": 0.828,
+   "end": 1.234,
+   "words": [
+    [
+     "foto",
+     0.828,
+     1.072
+    ],
+    [
+     "de",
+     1.118,
+     1.188
+    ]
+   ],
+   "text": "foto de",
+   "scene": "foto",
+   "voz": "narrador"
+  },
+  {
+   "start": 1.234,
+   "end": 2.312,
+   "words": [
+    [
+     "mim",
+     1.234,
+     1.374
+    ],
+    [
+     "dormindo…",
+     1.42,
+     2.012
+    ]
+   ],
+   "text": "mim dormindo…",
+   "scene": "foto",
+   "voz": "narrador"
+  },
+  {
+   "start": 2.396,
+   "end": 2.594,
+   "words": [
+    [
+     "com",
+     2.396,
+     2.524
+    ],
+    [
+     "o",
+     2.547,
+     2.57
+    ]
+   ],
+   "text": "com o",
+   "scene": "foto",
+   "voz": "narrador"
+  },
+  {
+   "start": 2.594,
+   "end": 4.484,
+   "words": [
+    [
+     "meu",
+     2.594,
+     2.721
+    ],
+    [
+     "celular.",
+     2.756,
+     4.184
+    ]
+   ],
+   "text": "meu celular.",
+   "scene": "foto",
+   "voz": "narrador"
+  },
+  {
+   "start": 4.634,
+   "end": 6.062,
+   "words": [
+    [
+     "Dois",
+     4.634,
+     4.913
+    ],
+    [
+     "minutos",
+     4.947,
+     5.214
+    ],
+    [
+     "depois,",
+     5.249,
+     5.911
+    ]
+   ],
+   "text": "Dois minutos depois,",
+   "scene": "mensagem",
+   "voz": "narrador"
+  },
+  {
+   "start": 6.062,
+   "end": 6.828,
+   "words": [
+    [
+     "alguém",
+     6.062,
+     6.341
+    ],
+    [
+     "mandou",
+     6.375,
+     6.689
+    ],
+    [
+     "do",
+     6.735,
+     6.782
+    ]
+   ],
+   "text": "alguém mandou do",
+   "scene": "mensagem",
+   "voz": "narrador"
+  },
+  {
+   "start": 6.828,
+   "end": 7.571,
+   "words": [
+    [
+     "meu",
+     6.828,
+     6.944
+    ],
+    [
+     "número",
+     6.991,
+     7.293
+    ],
+    [
+     "uma",
+     7.374,
+     7.525
+    ]
+   ],
+   "text": "meu número uma",
+   "scene": "mensagem",
+   "voz": "narrador"
+  },
+  {
+   "start": 7.571,
+   "end": 8.233,
+   "words": [
+    [
+     "mensagem",
+     7.571,
+     8.071
+    ],
+    [
+     "pro",
+     8.105,
+     8.21
+    ]
+   ],
+   "text": "mensagem pro",
+   "scene": "mensagem",
+   "voz": "narrador"
+  },
+  {
+   "start": 8.233,
+   "end": 10.553,
+   "words": [
+    [
+     "meu",
+     8.233,
+     8.349
+    ],
+    [
+     "vizinho.",
+     8.384,
+     10.253
+    ]
+   ],
+   "text": "meu vizinho.",
+   "scene": "mensagem",
+   "voz": "narrador"
+  },
+  {
+   "start": 10.753,
+   "end": 11.589,
+   "words": [
+    [
+     "às 7h,",
+     10.753,
+     11.461
+    ]
+   ],
+   "text": "às 7h,",
+   "scene": "morto",
+   "voz": "narrador"
+  },
+  {
+   "start": 11.589,
+   "end": 13.003,
+   "words": [
+    [
+     "ele",
+     11.589,
+     11.751
+    ],
+    [
+     "tava",
+     11.786,
+     11.995
+    ],
+    [
+     "morto.",
+     12.042,
+     12.703
+    ]
+   ],
+   "text": "ele tava morto.",
+   "scene": "morto",
+   "voz": "narrador"
+  },
+  {
+   "start": 13.353,
+   "end": 13.922,
+   "words": [
+    [
+     "E",
+     13.353,
+     13.516
+    ],
+    [
+     "a",
+     13.562,
+     13.585
+    ],
+    [
+     "última",
+     13.643,
+     13.887
+    ]
+   ],
+   "text": "E a última",
+   "scene": "suspeito",
+   "voz": "narrador"
+  },
+  {
+   "start": 13.922,
+   "end": 14.642,
+   "words": [
+    [
+     "pessoa",
+     13.922,
+     14.259
+    ],
+    [
+     "que",
+     14.282,
+     14.351
+    ],
+    [
+     "falou",
+     14.386,
+     14.607
+    ]
+   ],
+   "text": "pessoa que falou",
+   "scene": "suspeito",
+   "voz": "narrador"
+  },
+  {
+   "start": 14.642,
+   "end": 15.545,
+   "words": [
+    [
+     "com",
+     14.642,
+     14.769
+    ],
+    [
+     "ele…",
+     14.862,
+     15.245
+    ]
+   ],
+   "text": "com ele…",
+   "scene": "suspeito",
+   "voz": "narrador"
+  },
+  {
+   "start": 15.841,
+   "end": 17.952,
+   "words": [
+    [
+     "fui",
+     15.841,
+     16.108
+    ],
+    [
+     "eu.",
+     16.143,
+     17.652
+    ]
+   ],
+   "text": "fui eu.",
+   "scene": "suspeito",
+   "voz": "narrador"
+  },
+  {
+   "start": 19.252,
+   "end": 20.808,
+   "words": [
+    [
+     "Polícia!",
+     19.252,
+     20.204
+    ],
+    [
+     "Abre",
+     20.494,
+     20.785
+    ]
+   ],
+   "text": "Polícia! Abre",
+   "scene": "policia",
+   "voz": "delegada"
+  },
+  {
+   "start": 20.808,
+   "end": 21.92,
+   "words": [
+    [
+     "a",
+     20.808,
+     20.831
+    ],
+    [
+     "porta.",
+     20.877,
+     21.62
+    ]
+   ],
+   "text": "a porta.",
+   "scene": "policia",
+   "voz": "delegada"
+  },
+  {
+   "start": 22.22,
+   "end": 23.693,
+   "words": [
+    [
+     "Eu",
+     22.22,
+     22.406
+    ],
+    [
+     "moro",
+     22.441,
+     22.638
+    ],
+    [
+     "sozinho.",
+     22.684,
+     23.393
+    ]
+   ],
+   "text": "Eu moro sozinho.",
+   "scene": "corrente",
+   "voz": "narrador"
+  },
+  {
+   "start": 23.729,
+   "end": 24.17,
+   "words": [
+    [
+     "A",
+     23.729,
+     23.799
+    ],
+    [
+     "porta",
+     23.88,
+     24.124
+    ]
+   ],
+   "text": "A porta",
+   "scene": "corrente",
+   "voz": "narrador"
+  },
+  {
+   "start": 24.17,
+   "end": 25.33,
+   "words": [
+    [
+     "tava",
+     24.17,
+     24.333
+    ],
+    [
+     "trancada.",
+     24.368,
+     25.03
+    ]
+   ],
+   "text": "tava trancada.",
+   "scene": "corrente",
+   "voz": "narrador"
+  },
+  {
+   "start": 25.402,
+   "end": 26.203,
+   "words": [
+    [
+     "Então",
+     25.402,
+     25.681
+    ],
+    [
+     "como",
+     25.715,
+     25.901
+    ],
+    [
+     "alguém",
+     25.924,
+     26.168
+    ]
+   ],
+   "text": "Então como alguém",
+   "scene": "corrente",
+   "voz": "narrador"
+  },
+  {
+   "start": 26.203,
+   "end": 28.245,
+   "words": [
+    [
+     "entrou",
+     26.203,
+     26.424
+    ],
+    [
+     "aqui?",
+     26.47,
+     27.945
+    ]
+   ],
+   "text": "entrou aqui?",
+   "scene": "corrente",
+   "voz": "narrador"
+  },
+  {
+   "start": 28.495,
+   "end": 29.599,
+   "words": [
+    [
+     "Aí",
+     28.495,
+     28.727
+    ],
+    [
+     "eu",
+     28.75,
+     28.82
+    ],
+    [
+     "vi.",
+     28.878,
+     29.343
+    ]
+   ],
+   "text": "Aí eu vi.",
+   "scene": "som",
+   "voz": "narrador"
+  },
+  {
+   "start": 29.599,
+   "end": 30.238,
+   "words": [
+    [
+     "A",
+     29.599,
+     29.669
+    ],
+    [
+     "foto",
+     29.762,
+     30.029
+    ],
+    [
+     "não",
+     30.087,
+     30.214
+    ]
+   ],
+   "text": "A foto não",
+   "scene": "som",
+   "voz": "narrador"
+  },
+  {
+   "start": 30.238,
+   "end": 30.551,
+   "words": [
+    [
+     "era",
+     30.238,
+     30.365
+    ],
+    [
+     "só",
+     30.412,
+     30.505
+    ]
+   ],
+   "text": "era só",
+   "scene": "som",
+   "voz": "narrador"
+  },
+  {
+   "start": 30.551,
+   "end": 31.559,
+   "words": [
+    [
+     "uma",
+     30.551,
+     30.679
+    ],
+    [
+     "foto.",
+     30.737,
+     31.259
+    ]
+   ],
+   "text": "uma foto.",
+   "scene": "som",
+   "voz": "narrador"
+  },
+  {
+   "start": 31.632,
+   "end": 32.654,
+   "words": [
+    [
+     "Tinha",
+     31.632,
+     31.899
+    ],
+    [
+     "três",
+     31.946,
+     32.178
+    ],
+    [
+     "segundos",
+     32.201,
+     32.619
+    ]
+   ],
+   "text": "Tinha três segundos",
+   "scene": "som",
+   "voz": "narrador"
+  },
+  {
+   "start": 32.654,
+   "end": 34.428,
+   "words": [
+    [
+     "de",
+     32.654,
+     32.712
+    ],
+    [
+     "som.",
+     32.793,
+     34.128
+    ]
+   ],
+   "text": "de som.",
+   "scene": "som",
+   "voz": "narrador"
+  },
+  {
+   "start": 37.928,
+   "end": 38.694,
+   "words": [
+    [
+     "Alguém",
+     37.928,
+     38.241
+    ],
+    [
+     "ficou",
+     38.288,
+     38.532
+    ],
+    [
+     "do",
+     38.567,
+     38.636
+    ]
+   ],
+   "text": "Alguém ficou do",
+   "scene": "cama",
+   "voz": "narrador"
+  },
+  {
+   "start": 38.694,
+   "end": 39.077,
+   "words": [
+    [
+     "lado",
+     38.694,
+     38.915
+    ],
+    [
+     "da",
+     38.961,
+     39.031
+    ]
+   ],
+   "text": "lado da",
+   "scene": "cama",
+   "voz": "narrador"
+  },
+  {
+   "start": 39.077,
+   "end": 40.016,
+   "words": [
+    [
+     "minha",
+     39.077,
+     39.228
+    ],
+    [
+     "cama…",
+     39.286,
+     39.716
+    ]
+   ],
+   "text": "minha cama…",
+   "scene": "cama",
+   "voz": "narrador"
+  },
+  {
+   "start": 40.25,
+   "end": 42.733,
+   "words": [
+    [
+     "assobiando.",
+     40.25,
+     42.433
+    ]
+   ],
+   "text": "assobiando.",
+   "scene": "cama",
+   "voz": "narrador"
+  },
+  {
+   "start": 43.133,
+   "end": 43.853,
+   "words": [
+    [
+     "Eu",
+     43.133,
+     43.412
+    ],
+    [
+     "sei",
+     43.493,
+     43.667
+    ],
+    [
+     "que",
+     43.713,
+     43.795
+    ]
+   ],
+   "text": "Eu sei que",
+   "scene": "contar",
+   "voz": "delegada"
+  },
+  {
+   "start": 43.853,
+   "end": 44.954,
+   "words": [
+    [
+     "você",
+     43.853,
+     44.073
+    ],
+    [
+     "tá",
+     44.155,
+     44.271
+    ],
+    [
+     "aí.",
+     44.294,
+     44.654
+    ]
+   ],
+   "text": "você tá aí.",
+   "scene": "contar",
+   "voz": "delegada"
+  },
+  {
+   "start": 45.026,
+   "end": 47.231,
+   "words": [
+    [
+     "Vou",
+     45.026,
+     45.224
+    ],
+    [
+     "contar",
+     45.282,
+     45.642
+    ],
+    [
+     "até 10.",
+     45.7,
+     46.931
+    ]
+   ],
+   "text": "Vou contar até 10.",
+   "scene": "contar",
+   "voz": "delegada"
+  },
+  {
+   "start": 47.481,
+   "end": 48.05,
+   "words": [
+    [
+     "Foi",
+     47.481,
+     47.736
+    ],
+    [
+     "aí",
+     47.76,
+     47.876
+    ],
+    [
+     "que,",
+     47.922,
+     48.027
+    ]
+   ],
+   "text": "Foi aí que,",
+   "scene": "assobio",
+   "voz": "narrador"
+  },
+  {
+   "start": 48.05,
+   "end": 49.235,
+   "words": [
+    [
+     "atrás",
+     48.05,
+     48.34
+    ],
+    [
+     "dela…",
+     48.398,
+     48.979
+    ]
+   ],
+   "text": "atrás dela…",
+   "scene": "assobio",
+   "voz": "narrador"
+  },
+  {
+   "start": 49.235,
+   "end": 49.92,
+   "words": [
+    [
+     "alguém",
+     49.235,
+     49.49
+    ],
+    [
+     "começou",
+     49.537,
+     49.885
+    ]
+   ],
+   "text": "alguém começou",
+   "scene": "assobio",
+   "voz": "narrador"
+  },
+  {
+   "start": 49.92,
+   "end": 52.008,
+   "words": [
+    [
+     "a",
+     49.92,
+     49.943
+    ],
+    [
+     "assobiar.",
+     49.966,
+     51.708
+    ]
+   ],
+   "text": "a assobiar.",
+   "scene": "assobio",
+   "voz": "narrador"
+  },
+  {
+   "start": 52.358,
+   "end": 53.482,
+   "words": [
+    [
+     "Seu",
+     52.358,
+     52.59
+    ],
+    [
+     "Valdir.",
+     52.637,
+     53.182
+    ]
+   ],
+   "text": "Seu Valdir.",
+   "scene": "valdir",
+   "voz": "narrador"
+  },
+  {
+   "start": 53.589,
+   "end": 54.809,
+   "words": [
+    [
+     "O",
+     53.589,
+     53.67
+    ],
+    [
+     "porteiro.",
+     53.751,
+     54.518
+    ]
+   ],
+   "text": "O porteiro.",
+   "scene": "valdir",
+   "voz": "narrador"
+  },
+  {
+   "start": 54.809,
+   "end": 55.32,
+   "words": [
+    [
+     "Ele",
+     54.809,
+     55.03
+    ],
+    [
+     "tem",
+     55.064,
+     55.192
+    ],
+    [
+     "a",
+     55.25,
+     55.273
+    ]
+   ],
+   "text": "Ele tem a",
+   "scene": "valdir",
+   "voz": "narrador"
+  },
+  {
+   "start": 55.32,
+   "end": 56.051,
+   "words": [
+    [
+     "chave",
+     55.32,
+     55.633
+    ],
+    [
+     "de",
+     55.668,
+     55.738
+    ],
+    [
+     "todos",
+     55.796,
+     56.016
+    ]
+   ],
+   "text": "chave de todos",
+   "scene": "valdir",
+   "voz": "narrador"
+  },
+  {
+   "start": 56.051,
+   "end": 58.0,
+   "words": [
+    [
+     "os",
+     56.051,
+     56.121
+    ],
+    [
+     "apartamentos.",
+     56.167,
+     57.7
+    ]
+   ],
+   "text": "os apartamentos.",
+   "scene": "valdir",
+   "voz": "narrador"
+  },
+  {
+   "start": 58.3,
+   "end": 59.448,
+   "words": [
+    [
+     "Inclusive…",
+     58.3,
+     59.148
+    ]
+   ],
+   "text": "Inclusive…",
+   "scene": "chave",
+   "voz": "narrador"
+  },
+  {
+   "start": 59.743,
+   "end": 61.123,
+   "words": [
+    [
+     "a",
+     59.743,
+     59.813
+    ],
+    [
+     "do",
+     59.859,
+     59.929
+    ],
+    [
+     "meu.",
+     59.987,
+     60.823
+    ]
+   ],
+   "text": "a do meu.",
+   "scene": "chave",
+   "voz": "narrador"
+  },
+  {
+   "start": 61.623,
+   "end": 63.92,
+   "words": [
+    [
+     "Aí",
+     61.623,
+     61.832
+    ],
+    [
+     "chegou",
+     61.867,
+     62.169
+    ],
+    [
+     "isso.",
+     62.238,
+     63.62
+    ]
+   ],
+   "text": "Aí chegou isso.",
+   "scene": "chegou",
+   "voz": "narrador"
+  },
+  {
+   "start": 66.72,
+   "end": 67.624,
+   "words": [
+    [
+     "Um.",
+     66.72,
+     67.324
+    ]
+   ],
+   "text": "Um.",
+   "scene": "um",
+   "voz": "delegada"
+  },
+  {
+   "start": 67.924,
+   "end": 68.4,
+   "words": [
+    [
+     "Eu",
+     67.924,
+     68.087
+    ],
+    [
+     "abro",
+     68.133,
+     68.307
+    ],
+    [
+     "a",
+     68.33,
+     68.354
+    ]
+   ],
+   "text": "Eu abro a",
+   "scene": "escolha",
+   "voz": "narrador"
+  },
+  {
+   "start": 68.4,
+   "end": 69.073,
+   "words": [
+    [
+     "porta",
+     68.4,
+     68.679
+    ],
+    [
+     "e",
+     68.702,
+     68.737
+    ],
+    [
+     "mostro",
+     68.772,
+     69.05
+    ]
+   ],
+   "text": "porta e mostro",
+   "scene": "escolha",
+   "voz": "narrador"
+  },
+  {
+   "start": 69.073,
+   "end": 69.931,
+   "words": [
+    [
+     "a",
+     69.073,
+     69.097
+    ],
+    [
+     "foto…",
+     69.143,
+     69.631
+    ]
+   ],
+   "text": "a foto…",
+   "scene": "escolha",
+   "voz": "narrador"
+  },
+  {
+   "start": 70.153,
+   "end": 70.977,
+   "words": [
+    [
+     "ou",
+     70.153,
+     70.223
+    ],
+    [
+     "apago",
+     70.281,
+     70.594
+    ],
+    [
+     "tudo",
+     70.652,
+     70.943
+    ]
+   ],
+   "text": "ou apago tudo",
+   "scene": "escolha",
+   "voz": "narrador"
+  },
+  {
+   "start": 70.977,
+   "end": 71.303,
+   "words": [
+    [
+     "e",
+     70.977,
+     71.001
+    ],
+    [
+     "saio",
+     71.047,
+     71.268
+    ]
+   ],
+   "text": "e saio",
+   "scene": "escolha",
+   "voz": "narrador"
+  },
+  {
+   "start": 71.303,
+   "end": 72.496,
+   "words": [
+    [
+     "pela",
+     71.303,
+     71.477
+    ],
+    [
+     "janela?",
+     71.523,
+     72.196
+    ]
+   ],
+   "text": "pela janela?",
+   "scene": "escolha",
+   "voz": "narrador"
+  },
+  {
+   "start": 72.796,
+   "end": 73.458,
+   "words": [
+    [
+     "Comenta",
+     72.796,
+     73.295
+    ],
+    [
+     "A",
+     73.342,
+     73.365
+    ]
+   ],
+   "text": "Comenta A",
+   "scene": "contagem",
+   "voz": "narrador"
+  },
+  {
+   "start": 73.458,
+   "end": 74.167,
+   "words": [
+    [
+     "ou",
+     73.458,
+     73.539
+    ],
+    [
+     "B.",
+     73.597,
+     73.876
+    ]
+   ],
+   "text": "ou B.",
+   "scene": "contagem",
+   "voz": "narrador"
+  },
+  {
+   "start": 74.167,
+   "end": 74.747,
+   "words": [
+    [
+     "Eu",
+     74.167,
+     74.329
+    ],
+    [
+     "faço",
+     74.387,
+     74.654
+    ],
+    [
+     "o",
+     74.678,
+     74.701
+    ]
+   ],
+   "text": "Eu faço o",
+   "scene": "contagem",
+   "voz": "narrador"
+  },
+  {
+   "start": 74.747,
+   "end": 76.487,
+   "words": [
+    [
+     "que",
+     74.747,
+     74.817
+    ],
+    [
+     "vocês",
+     74.863,
+     75.13
+    ],
+    [
+     "mandarem.",
+     75.177,
+     76.187
+    ]
+   ],
+   "text": "que vocês mandarem.",
+   "scene": "contagem",
+   "voz": "narrador"
+  }
+ ]
+}

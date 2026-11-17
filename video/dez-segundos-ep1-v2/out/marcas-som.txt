@@ -1,0 +1,38 @@
+MARCAS DE SOM · 10 SEGUNDOS · Ep. 1 v2 "A foto das 3h10"
+
+FALAS
+  0.05–  4.18  foto      [n1] Alguém tirou essa foto de mim dormindo… com o meu celular.
+  4.63– 10.25  mensagem  [n2] Dois minutos depois, alguém mandou do meu número uma mensagem pro meu vizinho.
+ 10.75– 12.70  morto     [n3] Às 7h, ele tava morto.
+ 13.35– 17.65  suspeito  [n4] E a última pessoa que falou com ele… fui eu.
+ 19.25– 21.62  policia   [d1] Polícia! Abre a porta.
+ 22.22– 27.95  corrente  [n5] Eu moro sozinho. A porta tava trancada. Então como alguém entrou aqui?
+ 28.50– 34.13  som       [n6] Aí eu vi. A foto não era só uma foto. Tinha três segundos de som.
+ 37.93– 42.43  cama      [n7] Alguém ficou do lado da minha cama… assobiando.
+ 43.13– 46.93  contar    [d2] Eu sei que você tá aí. Vou contar até 10.
+ 47.48– 51.71  assobio   [n8] Foi aí que, atrás dela… alguém começou a assobiar.
+ 52.36– 57.70  valdir    [n9] Seu Valdir. O porteiro. Ele tem a chave de todos os apartamentos.
+ 58.30– 60.82  chave     [n10] Inclusive… a do meu.
+ 61.62– 63.62  chegou    [n11] Aí chegou isso.
+ 66.72– 67.32  um        [c1] Um.
+ 67.92– 72.20  escolha   [n12] Eu abro a porta e mostro a foto… ou apago tudo e saio pela janela?
+ 72.80– 76.19  contagem  [n13] Comenta A ou B. Eu faço o que vocês mandarem.
+
+TRILHA E EFEITOS
+  0.00  clique de câmera (quadro 0)
+  0.00  drone grave Mi menor (o episódio todo)
+  6.38  mensagem enviada do meu número
+ 10.65  IMPACTO: olho mágico, fita no 302
+ 16.14  carimbo SUSPEITO
+ 18.30  BAM BAM BAM na porta (música para)
+ 22.12  corrente balançando
+ 34.28  FOTO AO VIVO: respiração + ASSOBIO de 4 notas
+ 37.73  coração
+ 45.98  "Vou contar até dez"
+ 49.23  assobio atrás da delegada
+ 55.32  chaves do porteiro
+ 59.99  IMPACTO em "a do meu" (silêncio antes)
+ 63.52  "Mostra a foto e você é o próximo." + foto da minha porta
+ 66.72  contagem 1..10: tique por segundo + coração
+ 76.32  A MAÇANETA GIRA + corte
+ 77.52  assobio final

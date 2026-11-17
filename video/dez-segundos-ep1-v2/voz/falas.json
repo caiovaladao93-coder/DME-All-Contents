@@ -1,0 +1,82 @@
+[
+ {
+  "id": "n1",
+  "text": "Alguém tirou essa foto de mim dormindo… <break time=\"0.3s\" /> com o meu celular.",
+  "legenda": "Alguém tirou essa foto de mim dormindo… com o meu celular."
+ },
+ {
+  "id": "n2",
+  "text": "Dois minutos depois, alguém mandou do meu número uma mensagem pro meu vizinho."
+ },
+ {
+  "id": "n3",
+  "text": "Às sete, ele tava morto.",
+  "legenda": "Às 7h, ele tava morto."
+ },
+ {
+  "id": "n4",
+  "text": "E a última pessoa que falou com ele… <break time=\"0.45s\" /> fui eu.",
+  "legenda": "E a última pessoa que falou com ele… fui eu."
+ },
+ {
+  "id": "d1",
+  "text": "Polícia! <break time=\"0.25s\" /> Abre a porta.",
+  "voz": "delegada",
+  "legenda": "Polícia! Abre a porta."
+ },
+ {
+  "id": "n5",
+  "text": "Eu moro sozinho. <break time=\"0.25s\" /> A porta tava trancada. <break time=\"0.3s\" /> Então como alguém entrou aqui?",
+  "legenda": "Eu moro sozinho. A porta tava trancada. Então como alguém entrou aqui?"
+ },
+ {
+  "id": "n6",
+  "text": "Aí eu vi. <break time=\"0.3s\" /> A foto não era só uma foto. <break time=\"0.25s\" /> Tinha três segundos de som.",
+  "legenda": "Aí eu vi. A foto não era só uma foto. Tinha três segundos de som."
+ },
+ {
+  "id": "n7",
+  "text": "Alguém ficou do lado da minha cama… <break time=\"0.45s\" /> assobiando.",
+  "legenda": "Alguém ficou do lado da minha cama… assobiando."
+ },
+ {
+  "id": "d2",
+  "text": "Eu sei que você tá aí. <break time=\"0.3s\" /> Vou contar até dez.",
+  "voz": "delegada",
+  "legenda": "Eu sei que você tá aí. Vou contar até 10."
+ },
+ {
+  "id": "n8",
+  "text": "Foi aí que, atrás dela… <break time=\"0.4s\" /> alguém começou a assobiar.",
+  "legenda": "Foi aí que, atrás dela… alguém começou a assobiar."
+ },
+ {
+  "id": "n9",
+  "text": "Seu Valdir. <break time=\"0.3s\" /> O porteiro. <break time=\"0.3s\" /> Ele tem a chave de todos os apartamentos.",
+  "legenda": "Seu Valdir. O porteiro. Ele tem a chave de todos os apartamentos."
+ },
+ {
+  "id": "n10",
+  "text": "Inclusive… <break time=\"0.5s\" /> a do meu.",
+  "legenda": "Inclusive… a do meu."
+ },
+ {
+  "id": "n11",
+  "text": "Aí chegou isso."
+ },
+ {
+  "id": "n12",
+  "text": "Eu abro a porta e mostro a foto… <break time=\"0.45s\" /> ou apago tudo e saio pela janela?",
+  "legenda": "Eu abro a porta e mostro a foto… ou apago tudo e saio pela janela?"
+ },
+ {
+  "id": "n13",
+  "text": "Comenta A ou B. <break time=\"0.3s\" /> Eu faço o que vocês mandarem.",
+  "legenda": "Comenta A ou B. Eu faço o que vocês mandarem."
+ },
+ {
+  "id": "dc",
+  "text": "Um. <break time=\"0.6s\" /> Dois. <break time=\"0.6s\" /> Três. <break time=\"0.6s\" /> Quatro. <break time=\"0.6s\" /> Cinco. <break time=\"0.6s\" /> Seis. <break time=\"0.6s\" /> Sete. <break time=\"0.6s\" /> Oito. <break time=\"0.6s\" /> Nove. <break time=\"0.7s\" /> Dez.",
+  "voz": "delegada"
+ }
+]

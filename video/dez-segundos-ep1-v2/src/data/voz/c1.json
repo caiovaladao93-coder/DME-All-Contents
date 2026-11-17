@@ -1,0 +1,22 @@
+{
+ "voice_id": "sua1mPTtoAGPaBXx5eNr",
+ "text": "Um.",
+ "origem": "dc-1",
+ "alignment": {
+  "characters": [
+   "U",
+   "m",
+   "."
+  ],
+  "character_start_times_seconds": [
+   0.0,
+   0.302,
+   0.604
+  ],
+  "character_end_times_seconds": [
+   0.302,
+   0.604,
+   0.604
+  ]
+ }
+}
