@@ -139,7 +139,7 @@ def pop_in(t, t0, d=.25):
 
 # ═══ CENA 1 · CADA BATIDA = +1 BOLA ═════════════════════════════════════════
 def cena1(T0, DUR):
-    NMAX, RB, RR, TH, GAPH, OM, G = 1300, 12.0, 420.0, 16.0, .34, .55, 1500.0
+    NMAX, RB, RR, TH, GAPH, OM, G = 1300, 12.0, 420.0, 16.0, .2, .55, 1500.0
     x = np.zeros(NMAX); y = np.zeros(NMAX); vx = np.zeros(NMAX); vy = np.zeros(NMAX); viva = np.zeros(NMAX, np.int64); cor = np.zeros(NMAX, np.int64)
     x[0], y[0], vx[0], vy[0], viva[0] = CX, CY - 150, 380, -200, 1; n = 1; fug = 0
     sprs = [sprite(c, RB) for c in PAL]; ca = np.zeros(4096, np.int64); cb = np.zeros(4096, np.int64)
@@ -162,7 +162,7 @@ def cena1(T0, DUR):
                         vx[i] -= 2 * vn * ux; vy[i] -= 2 * vn * uy
                         sp = math.hypot(vx[i], vy[i])
                         if sp < 900: vx[i] *= 900 / sp; vy[i] *= 900 / sp
-                        if n < NMAX:
+                        if n < min(NMAX, 2 ** (t / 1.6) + 1):
                             a = R.uniform(-.6, .6); c, s = math.cos(a), math.sin(a)
                             x[n], y[n] = x[i] - ux * 3, y[i] - uy * 3; vx[n], vy[n] = (vx[i] * c - vy[i] * s) * .95, (vx[i] * s + vy[i] * c) * .95
                             viva[n] = 1; cor[n] = (cor[i] + 1) % len(PAL); n += 1
@@ -205,7 +205,7 @@ def cena2(T0, DUR_MAX):
             dt = 1 / FPS / SUB; bvy += G * dt; bx += bvx * dt; by += bvy * dt
             if k < K:
                 dx, dy = bx - CX, by - CY; d = math.hypot(dx, dy) + 1e-9
-                gh = .26 + .5 * max(0, (t - t_ring - 1.6)) / 2.0  # a brecha alarga se a bola demorar
+                gh = .3 + .6 * max(0, (t - t_ring - 1.0)) / 1.5  # a brecha alarga se a bola demorar
                 gap = a0[k] + om[k] * t
                 if d > rr[k] - TH / 2 - RB:
                     ang = math.atan2(dy, dx); dg = abs((ang - gap + math.pi) % (2 * math.pi) - math.pi)
@@ -220,7 +220,7 @@ def cena2(T0, DUR_MAX):
                     else:
                         ux, uy = dx / d, dy / d; vn = bvx * ux + bvy * uy
                         if vn > 0:
-                            bvx -= 2 * vn * ux; bvy -= 2 * vn * uy; sp = math.hypot(bvx, bvy)
+                            bvx -= 2 * vn * ux; bvy -= 2 * vn * uy; aj = R.uniform(-.35, .35); bvx, bvy = bvx * math.cos(aj) - bvy * math.sin(aj), bvx * math.sin(aj) + bvy * math.cos(aj); sp = math.hypot(bvx, bvy)
                             if sp < 950: bvx *= 950 / sp; bvy *= 950 / sp
                             EV.append((T0 + t, 'bate2', k))
                         bx, by = CX + ux * (rr[k] - TH / 2 - RB), CY + uy * (rr[k] - TH / 2 - RB)
@@ -229,7 +229,7 @@ def cena2(T0, DUR_MAX):
         for fr in frags: fr[3] += G * .7 / FPS; fr[0] += fr[2] / FPS; fr[1] += fr[3] / FPS
         img = BG.copy()
         for j in range(k, K):
-            gh = .26 + .5 * max(0, (t - t_ring - 1.6)) / 2.0 if j == k else .26
+            gh = .3 + .6 * max(0, (t - t_ring - 1.0)) / 1.5 if j == k else .3
             anel(img, CX, CY, rr[j], TH, a0[j] + om[j] * t, gh, .75 + .25 * (j == k), 1.0)
         for fr in frags:
             age = t - fr[5]
@@ -238,14 +238,14 @@ def cena2(T0, DUR_MAX):
         blit(img, spr, bx, by, 1.0)
         poe_texto(img, '2/3', 30, 120, 270, (150, 160, 180), 1, '600', 6)
         poe_texto(img, 'SERÁ QUE ELA ESCAPA?', 58, 540, 330)
-        if livre is None: poe_texto(img, f'{K - k} anéis', 104, 540, 455, (46, 196, 241), 1, '800', 12, pop_in(t, t_ring) if k else 1)
+        if livre is None: poe_texto(img, f'{K - k} ' + ('anel' if K - k == 1 else 'anéis'), 104, 540, 455, (46, 196, 241), 1, '800', 12, pop_in(t, t_ring) if k else 1)
         else: poe_texto(img, 'LIVRE!', 150, 540, 455, (61, 220, 132), 1, '800', 14, pop_in(t, livre, .35))
         yield img, {}
         f += 1
 
 # ═══ CENA 3 · QUAL COR VENCE? ═══════════════════════════════════════════════
 def cena3(T0, DUR_MAX):
-    TEAMS = [0, 5, 3, 2]; NOMES = ['VERMELHO', 'AZUL', 'VERDE', 'AMARELO']; PER = 70; N = PER * 4; RB, RH, OM, SPD = 15.0, 440.0, .35, 520.0
+    TEAMS = [0, 5, 3, 2]; NOMES = ['VERMELHO', 'AZUL', 'VERDE', 'AMARELO']; PER = 95; N = PER * 4; RB, RH, OM, SPD = 15.0, 440.0, .35, 520.0
     x = np.zeros(N); y = np.zeros(N); vx = np.zeros(N); vy = np.zeros(N); viva = np.ones(N, np.int64); team = np.zeros(N, np.int64)
     for tm in range(4):
         ac = math.pi / 4 + tm * math.pi / 2; cx0, cy0 = CX + 210 * math.cos(ac), CY + 210 * math.sin(ac)
@@ -253,7 +253,7 @@ def cena3(T0, DUR_MAX):
             i = tm * PER + q; rq, aq = 95 * math.sqrt(R.random()), R.uniform(0, 2 * math.pi)
             x[i], y[i] = cx0 + rq * math.cos(aq), cy0 + rq * math.sin(aq); a = R.uniform(0, 2 * math.pi); vx[i], vy[i] = math.cos(a) * SPD, math.sin(a) * SPD; team[i] = tm
     sprs = [sprite(PAL[c], RB) for c in TEAMS]; ca = np.zeros(8192, np.int64); cb = np.zeros(8192, np.int64)
-    fim = None; venc = None; f = 0; T_GO = 2.2; ultimo_lider = -1
+    fim = None; venc = None; f = 0; T_GO = 3.0; ultimo_lider = -1
     while True:
         t = f / FPS
         if fim is not None and t > fim + 3.6: break
@@ -273,7 +273,7 @@ def cena3(T0, DUR_MAX):
                 nc = colisoes(x, y, vx, vy, viva, N, RB, 2 * RB + 1, ca, cb)
                 for q in range(nc):
                     i, j = ca[q], cb[q]
-                    if team[i] != team[j]:
+                    if team[i] != team[j] and R.random() < .22:  # nem toda batida converte: a disputa dura mais
                         if sp0[i] >= sp0[j]: team[j] = team[i]; EV.append((T0 + t, 'conv', int(team[i])))
                         else: team[i] = team[j]; EV.append((T0 + t, 'conv', int(team[j])))
                 sp = np.hypot(vx, vy) + 1e-6; vx *= SPD / sp; vy *= SPD / sp
@@ -325,8 +325,8 @@ def main():
             if gf % 150 == 0: print(nome, round(gf / FPS, 1), 's', flush=True)
         LAST[0] = prev
     LAST = [None]
-    roda(cena1(0.0, 20.5), 'cena1')
-    roda(cena2(gf / FPS, 24.0), 'cena2')
+    roda(cena1(0.0, 22.5), 'cena1')
+    roda(cena2(gf / FPS, 26.0), 'cena2')
     roda(cena3(gf / FPS, 21.0), 'cena3')
     if out: out.stdin.close(); out.wait()
     json.dump({'dur': gf / FPS, 'marcos': marcos, 'eventos': EV}, open(f'{ROOT}/out/eventos.json', 'w'))
