@@ -1,0 +1,83 @@
+1
+00:00:00,350 --> 00:00:03,340
+O gargalo quase nunca está onde a empresa procura.
+
+2
+00:00:03,540 --> 00:00:05,160
+Parece falta de gente.
+
+3
+00:00:05,235 --> 00:00:07,877
+Quase sempre é processo.
+
+4
+00:00:08,427 --> 00:00:11,011
+Na clínica, o paciente liga às sete da noite.
+
+5
+00:00:11,086 --> 00:00:12,857
+Ninguém atende.
+
+6
+00:00:13,007 --> 00:00:16,246
+Um agente de voz com IA atende, qualifica,
+
+7
+00:00:16,246 --> 00:00:20,037
+registra no CRM e passa para a equipe.
+
+8
+00:00:20,687 --> 00:00:21,894
+Na empresa de serviços,
+
+9
+00:00:21,894 --> 00:00:25,117
+o retorno da proposta depende da memória de alguém.
+
+10
+00:00:25,267 --> 00:00:29,836
+CRM personalizado, com retornos automáticos.
+
+11
+00:00:30,436 --> 00:00:31,330
+Na distribuidora,
+
+12
+00:00:31,330 --> 00:00:34,494
+o mesmo pedido é digitado em dois sistemas.
+
+13
+00:00:34,644 --> 00:00:36,427
+Integração de sistemas.
+
+14
+00:00:37,177 --> 00:00:38,001
+Na construtora,
+
+15
+00:00:38,001 --> 00:00:40,399
+só uma pessoa sabe montar o orçamento.
+
+16
+00:00:40,549 --> 00:00:43,585
+Mapeamento e padronização do processo.
+
+17
+00:00:44,335 --> 00:00:46,756
+Cada empresa trava num ponto diferente.
+
+18
+00:00:46,878 --> 00:00:52,480
+Por isso, a DME entende, planeja e desenvolve sob medida.
+
+19
+00:00:52,830 --> 00:00:55,123
+Onde a sua operação trava?
+
+20
+00:00:55,673 --> 00:00:57,177
+DME Technology.
+
+21
+00:00:57,229 --> 00:00:59,127
+Envie COMERCIAL no direct.
