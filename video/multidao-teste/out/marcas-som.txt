@@ -1,0 +1,24 @@
+MARCAS DE SOM · 1 CONTRA 10.000 (sem narração)
+
+  0.00  gancho: impacto + riser
+  2.60  batida entra (128 BPM)
+  2.60  estouros na frente (pelas baixas)
+  2.60  tiros do canhão (7/s)
+  3.20  portal +20 aparece
+  5.20  portal ×2 aparece
+  8.80  portal ×5 aparece
+ 12.00  portal ×10 aparece
+ 19.20  ONDA 2
+ 24.60  PORTA DOURADA ×20 (drop)
+ 24.60  portal ×20 aparece
+ 32.20  CHEFÃO
+ 34.00  pisadas do chefão (1,2 s)
+ 44.25  portal ×20 quebra
+ 44.85  portal ×10 quebra
+ 45.50  portal ×5 quebra
+ 45.50  sirene de alarme
+ 47.40  portal ×2 quebra
+ 48.15  portal +20 quebra
+ 49.30  último soldado: só coração
+ 50.60  DERROTA (descendente)
+ 54.60  escolha: tique por segundo
