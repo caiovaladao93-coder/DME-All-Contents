@@ -173,7 +173,7 @@ def main():
             poe_texto(img, 'VOLTA EM DOBRO', 92, 540, 395, (255, 214, 64), 1, '800', 11, pop_in(t, .15))
             poe_texto(img, 'Quanto o buraco aguenta? Chuta!', 44, 540, 1560, (255, 255, 255), 1, '800', 7)
         elif not loop:
-            poe_texto(img, fmt(vivas), 140, 540, 300, (255, 255, 255), 1, '800', 14)
+            poe_texto(img, fmt(NMAX if t_cheio is not None else vivas), 140, 540, 300, (255, 255, 255), 1, '800', 14)
             if t_exp is None:
                 pct = int(round(100 * rh / RA)); quente = t_cheio is not None
                 poe_texto(img, f'buraco: {pct}% da arena', 40, 540, 400, (255, 77, 90) if quente else (255, 214, 64), 1, '800', 6, 1 + (.06 * math.sin(t * 20) if quente else 0))
