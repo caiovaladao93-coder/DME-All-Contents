@@ -1,0 +1,13 @@
+[
+ {"id": "n1", "text": "Mesma empresa. <break time=\"0.25s\" /> Mesmo dia. <break time=\"0.25s\" /> Uma diferença.", "legenda": "Mesma empresa. Mesmo dia. Uma diferença."},
+ {"id": "n2", "text": "Oito e doze. Chega um pedido."},
+ {"id": "n3", "text": "De um lado, ele é digitado em dois sistemas. <break time=\"0.2s\" /> Do outro, os sistemas são integrados.", "legenda": "De um lado, ele é digitado em dois sistemas. Do outro, os sistemas são integrados."},
+ {"id": "n4", "text": "Dez e meia. A proposta sai, com retorno prometido para a tarde."},
+ {"id": "n5", "text": "Quatro da tarde. De um lado, o retorno depende de alguém lembrar. <break time=\"0.2s\" /> Do outro, o Cê-Erre-Eme faz o retorno automático.", "legenda": "Quatro da tarde. De um lado, o retorno depende de alguém lembrar. Do outro, o CRM faz o retorno automático."},
+ {"id": "n6", "text": "Sete e sete da noite. Um cliente liga."},
+ {"id": "n7", "text": "De um lado, caixa postal. <break time=\"0.2s\" /> Do outro, um agente de voz com I-A atende, qualifica, registra no Cê-Erre-Eme e passa para a equipe.", "legenda": "De um lado, caixa postal. Do outro, um agente de voz com IA atende, qualifica, registra no CRM e passa para a equipe."},
+ {"id": "n8", "text": "Mesmo esforço. <break time=\"0.25s\" /> A diferença é o processo.", "legenda": "Mesmo esforço. A diferença é o processo."},
+ {"id": "n9", "text": "A Dê-Eme-É entende a sua operação, planeja e desenvolve a solução sob medida.", "legenda": "A DME entende a sua operação, planeja e desenvolve a solução sob medida."},
+ {"id": "n10", "text": "De que lado está a sua empresa?"},
+ {"id": "n11", "text": "Dê-Eme-É Technology. <break time=\"0.25s\" /> Envie COMERCIAL no direct.", "legenda": "DME Technology. Envie COMERCIAL no direct."}
+]

@@ -1,0 +1,36 @@
+MARCAS · DME "Mesmo dia" (9:16) · 59.67 s · 30 fps · trilha original, 120 BPM, Ré menor (o dia) → Fá maior (a diferença)
+
+FALAS (DME Narrador, ElevenLabs, 1,1×; respirações removidas)
+  0.30–  3.69  [gancho] Mesma empresa. Mesmo dia. Uma diferença.
+  4.49–  6.91  [pedido] Oito e doze. Chega um pedido.
+  7.21– 12.45  [pedido2] De um lado, ele é digitado em dois sistemas. Do outro, os sistemas são integrados.
+ 13.45– 17.17  [proposta] Dez e meia. A proposta sai, com retorno prometido para a tarde.
+ 17.87– 26.27  [retorno] Quatro da tarde. De um lado, o retorno depende de alguém lembrar. Do outro, o CRM faz o retorno automático.
+ 27.37– 29.93  [ligacao] Sete e sete da noite. Um cliente liga.
+ 30.23– 39.10  [ligacao2] De um lado, caixa postal. Do outro, um agente de voz com IA atende, qualifica, registra no CRM e passa para a equipe.
+ 40.55– 44.49  [diferenca] Mesmo esforço. A diferença é o processo.
+ 45.30– 50.91  [metodo] A DME entende a sua operação, planeja e desenvolve a solução sob medida.
+ 51.71– 53.57  [pergunta] De que lado está a sua empresa?
+ 54.57– 58.38  [assinatura] DME Technology. Envie COMERCIAL no direct.
+
+TRILHA E EFEITOS
+  3.69  relógio rola até 08:12
+  8.30  empresa A: digitado em 2 sistemas (pendência +1)
+ 11.54  empresa B: sistemas integrados
+ 12.65  relógio rola até 10:30
+ 17.07  relógio rola até 16:00
+ 20.93  empresa A: depende de alguém lembrar (pendência +1)
+ 23.42  empresa B: CRM · retorno automático
+ 26.57  relógio rola até 19:07
+ 29.17  telefone tocando (19:07)
+ 30.88  empresa A: caixa postal (pendência +1)
+ 32.93  empresa B: agente de voz com IA
+ 34.49  verbos do agente: atende, qualifica, registra, passa
+ 39.90  carimbos: "3 PENDÊNCIAS PARA AMANHÃ" × "DIA FECHADO"
+ 40.12  SILÊNCIO (0.43 s) antes de "Mesmo esforço"
+ 40.55  a trilha volta em Fá maior: "A diferença é o processo"
+ 46.02  placa 1: ENTENDE
+ 47.43  placa 2: PLANEJA
+ 48.11  placa 3: DESENVOLVE
+ 51.51  pergunta: os painéis A e B voltam (loop)
+ 54.27  assinatura: logo, acorde final e sinos
