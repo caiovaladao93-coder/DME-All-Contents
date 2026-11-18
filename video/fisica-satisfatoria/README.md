@@ -39,3 +39,23 @@ python3 scripts/gerar.py && python3 scripts/som.py && bash scripts/finalizar.sh
 ```
 python3 scripts/guerra.py && python3 scripts/som_guerra.py
 ```
+
+## Linha "1 bola → explode o espaço" (um formato por vídeo)
+
+Regra da série: todo vídeo **começa com 1 bola**, ela se multiplica e **explode o espaço** no fim. Cada vídeo usa **um mecanismo só**, diferente dos outros.
+
+### 1 · Anel musical (`scripts/anel_musical.py` + `scripts/som_anel.py` → `out/Anel-Musical.mp4`, 61,6 s)
+- **Gancho:** "QUANTAS BOLAS CABEM AQUI DENTRO? Chuta nos comentários!"
+- O anel tem 12 segmentos coloridos e gira. Cada segmento é uma nota (pentatônica de Lá menor). A bola que bate acende o segmento, toca a nota e solta uma bola nova da cor dele (~dobra a cada 4,8 s, até 1.900).
+- Ao lotar: **PRESSÃO** (barra, tremor, ronco, rangidos). Os segmentos se soltam um a um, cada um tocando a própria nota, e o anel **estoura**: "ESTOUROU! Você chutou quanto?".
+- **Loop:** o último quadro volta ao anel inteiro com 1 bola no centro, igual ao quadro 0.
+
+### Próximos mecanismos (um por vídeo)
+1. **Divisão celular:** cada batida divide a bola em duas menores, até virar "areia" que transborda.
+2. **Ampulheta:** cada bola que passa pelo gargalo vira duas; a ampulheta gira e a areia de bolas enche os dois lados até rachar o vidro.
+3. **Engrenagens:** bolas caem em engrenagens girando; cada dente que toca duplica a bola; a máquina engasga e quebra.
+4. **Balão elástico:** a borda é uma membrana que estica com a pressão (molas) até estourar.
+5. **Buraco negro invertido:** cada bola que cai no centro sai como duas pelas bordas; o centro cresce até engolir a tela.
+6. **Camadas de vidro:** anéis concêntricos de vidro, cada um com resistência visível, que trincam e quebram por dentro.
+7. **Espiral:** a bola desce uma espiral; cada volta completa dobra as bolas, até a espiral entupir e explodir.
+8. **Teclado/Plinko:** pinos que tocam notas e multiplicam; o funil entope e transborda.
