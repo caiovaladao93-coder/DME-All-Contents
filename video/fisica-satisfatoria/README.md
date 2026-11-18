@@ -50,9 +50,15 @@ Regra da série: todo vídeo **começa com 1 bola**, ela se multiplica e **explo
 - Ao lotar: **PRESSÃO** (barra, tremor, ronco, rangidos). Os segmentos se soltam um a um, cada um tocando a própria nota, e o anel **estoura**: "ESTOUROU! Você chutou quanto?".
 - **Loop:** o último quadro volta ao anel inteiro com 1 bola no centro, igual ao quadro 0.
 
+### 2 · Ampulheta (`scripts/ampulheta.py` + `scripts/som_ampulheta.py` → `out/Ampulheta.mp4`, 67,9 s)
+- **Gancho:** "CADA BOLA QUE PASSA PELO GARGALO VIRA DUAS · Quantas viradas até quebrar? Chuta!"
+- Começa com 1 bola no bulbo de cima. Cada bola dobra **uma vez por virada** ao atravessar o gargalo. Quando o bulbo de cima esvazia (ou para de escoar), a ampulheta vira sozinha (12 viradas, até 1.200 bolas). Cada virada tem uma cor nova.
+- **Paredes por SDF:** dois bulbos, o gargalo e um funil a 45° que leva ao gargalo (sem ele, as bolas paravam no fundo quase plano). Tudo num referencial que gira.
+- **Final:** "ENTUPIU!" → "O VIDRO VAI QUEBRAR!" (trincas) → explosão em cacos → "QUEBROU NA VIRADA 12! Você acertou?" → loop com 1 bola.
+
 ### Próximos mecanismos (um por vídeo)
 1. **Divisão celular:** cada batida divide a bola em duas menores, até virar "areia" que transborda.
-2. **Ampulheta:** cada bola que passa pelo gargalo vira duas; a ampulheta gira e a areia de bolas enche os dois lados até rachar o vidro.
+2. ~~Ampulheta~~ (feito).
 3. **Engrenagens:** bolas caem em engrenagens girando; cada dente que toca duplica a bola; a máquina engasga e quebra.
 4. **Balão elástico:** a borda é uma membrana que estica com a pressão (molas) até estourar.
 5. **Buraco negro invertido:** cada bola que cai no centro sai como duas pelas bordas; o centro cresce até engolir a tela.
