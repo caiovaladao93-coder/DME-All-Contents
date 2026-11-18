@@ -1,0 +1,814 @@
+{
+ "fps": 30,
+ "dur": 59.867,
+ "frames": 1796,
+ "scenes": [
+  {
+   "key": "gancho",
+   "fala": "n1",
+   "t0": 0.0,
+   "t1": 2.69,
+   "v0": 0.3,
+   "v1": 2.39,
+   "texto": "Você abriu a empresa pra ter liberdade."
+  },
+  {
+   "key": "sem",
+   "fala": "n2",
+   "t0": 2.69,
+   "t1": 5.048,
+   "v0": 2.79,
+   "v1": 4.648,
+   "texto": "Hoje, nada anda sem você."
+  },
+  {
+   "key": "msgs",
+   "fala": "n3",
+   "t0": 5.048,
+   "t1": 12.489,
+   "v0": 5.348,
+   "v1": 11.989,
+   "texto": "Aprova o orçamento. Atende o cliente. Passa a senha. Acha a planilha. Lembra da proposta."
+  },
+  {
+   "key": "montagem",
+   "fala": "n4",
+   "t0": 12.489,
+   "t1": 17.09,
+   "v0": 12.689,
+   "v1": 16.59,
+   "texto": "No almoço. Na janta. No sábado."
+  },
+  {
+   "key": "gargalo",
+   "fala": "n5",
+   "t0": 17.09,
+   "t1": 20.005,
+   "v0": 17.29,
+   "v1": 19.705,
+   "texto": "Você virou o gargalo da própria empresa."
+  },
+  {
+   "key": "agora",
+   "fala": "n6",
+   "t0": 20.005,
+   "t1": 21.605,
+   "v0": 20.455,
+   "v1": 21.105,
+   "texto": "Agora."
+  },
+  {
+   "key": "crm",
+   "fala": "n7",
+   "t0": 21.605,
+   "t1": 25.649,
+   "v0": 21.805,
+   "v1": 25.149,
+   "texto": "O retorno prometido? O CRM faz automático."
+  },
+  {
+   "key": "agente",
+   "fala": "n8",
+   "t0": 25.649,
+   "t1": 33.958,
+   "v0": 25.799,
+   "v1": 33.508,
+   "texto": "A ligação fora do horário? Um agente de voz com IA atende, qualifica, registra e passa para a equipe."
+  },
+  {
+   "key": "processo",
+   "fala": "n9",
+   "t0": 33.958,
+   "t1": 38.323,
+   "v0": 34.108,
+   "v1": 37.823,
+   "texto": "O que só você sabe vira processo, mapeado e padronizado."
+  },
+  {
+   "key": "integra",
+   "fala": "n10",
+   "t0": 38.323,
+   "t1": 41.588,
+   "v0": 38.473,
+   "v1": 40.888,
+   "texto": "E os sistemas conversam entre si."
+  },
+  {
+   "key": "metodo",
+   "fala": "n11",
+   "t0": 41.588,
+   "t1": 47.168,
+   "v0": 41.888,
+   "v1": 46.718,
+   "texto": "A DME entende, planeja e desenvolve sob medida."
+  },
+  {
+   "key": "fecho",
+   "fala": "n12",
+   "t0": 47.168,
+   "t1": 53.937,
+   "v0": 47.368,
+   "v1": 52.337,
+   "texto": "Então, enquanto você cuida do crescimento, o processo segura a rotina."
+  },
+  {
+   "key": "assinatura",
+   "fala": "n13",
+   "t0": 53.937,
+   "t1": 59.867,
+   "v0": 54.237,
+   "v1": 59.067,
+   "texto": "DME Technology. Automatizamos processos. Devolvemos tempo."
+  }
+ ],
+ "words": {
+  "gancho": [
+   [
+    "Você",
+    0.3,
+    0.544
+   ],
+   [
+    "abriu",
+    0.602,
+    0.822
+   ],
+   [
+    "a",
+    0.846,
+    0.869
+   ],
+   [
+    "empresa",
+    0.892,
+    1.264
+   ],
+   [
+    "pra",
+    1.298,
+    1.415
+   ],
+   [
+    "ter",
+    1.461,
+    1.589
+   ],
+   [
+    "liberdade.",
+    1.624,
+    2.39
+   ]
+  ],
+  "sem": [
+   [
+    "Hoje,",
+    2.79,
+    3.254
+   ],
+   [
+    "nada",
+    3.336,
+    3.661
+   ],
+   [
+    "anda",
+    3.684,
+    3.893
+   ],
+   [
+    "sem",
+    3.939,
+    4.044
+   ],
+   [
+    "você.",
+    4.079,
+    4.648
+   ]
+  ],
+  "msgs": [
+   [
+    "Aprova",
+    5.348,
+    5.859
+   ],
+   [
+    "o",
+    5.928,
+    5.952
+   ],
+   [
+    "orçamento.",
+    5.987,
+    6.788
+   ],
+   [
+    "Atende",
+    7.101,
+    7.449
+   ],
+   [
+    "o",
+    7.473,
+    7.496
+   ],
+   [
+    "cliente.",
+    7.519,
+    8.111
+   ],
+   [
+    "Passa",
+    8.448,
+    8.785
+   ],
+   [
+    "a",
+    8.831,
+    8.854
+   ],
+   [
+    "senha.",
+    8.912,
+    9.353
+   ],
+   [
+    "Acha",
+    9.702,
+    9.934
+   ],
+   [
+    "a",
+    9.957,
+    9.98
+   ],
+   [
+    "planilha.",
+    10.015,
+    10.549
+   ],
+   [
+    "Lembra",
+    10.863,
+    11.165
+   ],
+   [
+    "da",
+    11.199,
+    11.257
+   ],
+   [
+    "proposta.",
+    11.304,
+    11.989
+   ]
+  ],
+  "montagem": [
+   [
+    "No",
+    12.689,
+    12.793
+   ],
+   [
+    "almoço.",
+    12.852,
+    13.386
+   ],
+   [
+    "Na",
+    13.815,
+    13.931
+   ],
+   [
+    "janta.",
+    13.989,
+    14.512
+   ],
+   [
+    "No",
+    14.941,
+    15.057
+   ],
+   [
+    "sábado.",
+    15.104,
+    16.59
+   ]
+  ],
+  "gargalo": [
+   [
+    "Você",
+    17.29,
+    17.557
+   ],
+   [
+    "virou",
+    17.615,
+    17.847
+   ],
+   [
+    "o",
+    17.87,
+    17.894
+   ],
+   [
+    "gargalo",
+    17.94,
+    18.37
+   ],
+   [
+    "da",
+    18.416,
+    18.509
+   ],
+   [
+    "própria",
+    18.567,
+    18.915
+   ],
+   [
+    "empresa.",
+    18.939,
+    19.705
+   ]
+  ],
+  "agora": [
+   [
+    "Agora.",
+    20.455,
+    21.105
+   ]
+  ],
+  "crm": [
+   [
+    "O",
+    21.805,
+    21.886
+   ],
+   [
+    "retorno",
+    21.944,
+    22.281
+   ],
+   [
+    "prometido?",
+    22.316,
+    22.966
+   ],
+   [
+    "O",
+    23.279,
+    23.349
+   ],
+   [
+    "Cê-Erre-Eme",
+    23.43,
+    24.034
+   ],
+   [
+    "faz",
+    24.092,
+    24.29
+   ],
+   [
+    "automático.",
+    24.348,
+    25.149
+   ]
+  ],
+  "agente": [
+   [
+    "A",
+    25.799,
+    25.869
+   ],
+   [
+    "ligação",
+    25.927,
+    26.263
+   ],
+   [
+    "fora",
+    26.298,
+    26.496
+   ],
+   [
+    "do",
+    26.542,
+    26.612
+   ],
+   [
+    "horário?",
+    26.647,
+    27.215
+   ],
+   [
+    "Um",
+    27.529,
+    27.61
+   ],
+   [
+    "agente",
+    27.645,
+    27.947
+   ],
+   [
+    "de",
+    27.993,
+    28.051
+   ],
+   [
+    "voz",
+    28.109,
+    28.307
+   ],
+   [
+    "com",
+    28.365,
+    28.493
+   ],
+   [
+    "I-A",
+    28.574,
+    28.818
+   ],
+   [
+    "atende,",
+    28.957,
+    29.595
+   ],
+   [
+    "qualifica,",
+    29.654,
+    30.315
+   ],
+   [
+    "registra",
+    30.373,
+    30.954
+   ],
+   [
+    "e",
+    31.07,
+    31.186
+   ],
+   [
+    "passa",
+    31.256,
+    31.558
+   ],
+   [
+    "para",
+    31.604,
+    31.778
+   ],
+   [
+    "a",
+    31.801,
+    31.825
+   ],
+   [
+    "equipe.",
+    31.883,
+    33.508
+   ]
+  ],
+  "processo": [
+   [
+    "O",
+    34.108,
+    34.212
+   ],
+   [
+    "que",
+    34.282,
+    34.375
+   ],
+   [
+    "só",
+    34.421,
+    34.526
+   ],
+   [
+    "você",
+    34.584,
+    34.77
+   ],
+   [
+    "sabe",
+    34.851,
+    35.153
+   ],
+   [
+    "vira",
+    35.199,
+    35.408
+   ],
+   [
+    "processo,",
+    35.443,
+    36.07
+   ],
+   [
+    "mapeado",
+    36.128,
+    36.627
+   ],
+   [
+    "e",
+    36.651,
+    36.674
+   ],
+   [
+    "padronizado.",
+    36.72,
+    37.823
+   ]
+  ],
+  "integra": [
+   [
+    "E",
+    38.473,
+    38.612
+   ],
+   [
+    "os",
+    38.67,
+    38.728
+   ],
+   [
+    "sistemas",
+    38.752,
+    39.17
+   ],
+   [
+    "conversam",
+    39.228,
+    39.692
+   ],
+   [
+    "entre",
+    39.75,
+    39.959
+   ],
+   [
+    "si.",
+    40.006,
+    40.888
+   ]
+  ],
+  "metodo": [
+   [
+    "A",
+    41.888,
+    41.992
+   ],
+   [
+    "Dê-Eme-É",
+    42.074,
+    42.55
+   ],
+   [
+    "entende,",
+    42.84,
+    43.479
+   ],
+   [
+    "planeja",
+    43.583,
+    44.175
+   ],
+   [
+    "e",
+    44.28,
+    44.384
+   ],
+   [
+    "desenvolve",
+    44.442,
+    44.976
+   ],
+   [
+    "sob",
+    45.023,
+    45.185
+   ],
+   [
+    "medida.",
+    45.267,
+    46.718
+   ]
+  ],
+  "fecho": [
+   [
+    "Então,",
+    47.368,
+    47.879
+   ],
+   [
+    "enquanto",
+    48.065,
+    48.425
+   ],
+   [
+    "você",
+    48.471,
+    48.657
+   ],
+   [
+    "cuida",
+    48.726,
+    48.993
+   ],
+   [
+    "do",
+    49.028,
+    49.098
+   ],
+   [
+    "crescimento,",
+    49.133,
+    49.899
+   ],
+   [
+    "o",
+    50.259,
+    50.317
+   ],
+   [
+    "processo",
+    50.375,
+    50.839
+   ],
+   [
+    "segura",
+    50.897,
+    51.315
+   ],
+   [
+    "a",
+    51.339,
+    51.362
+   ],
+   [
+    "rotina.",
+    51.42,
+    52.337
+   ]
+  ],
+  "assinatura": [
+   [
+    "Dê-Eme-É",
+    54.237,
+    54.864
+   ],
+   [
+    "Technology.",
+    54.968,
+    55.77
+   ],
+   [
+    "Automatizamos",
+    56.106,
+    56.826
+   ],
+   [
+    "processos.",
+    56.872,
+    57.581
+   ],
+   [
+    "Devolvemos",
+    57.894,
+    58.463
+   ],
+   [
+    "tempo.",
+    58.533,
+    59.067
+   ]
+  ]
+ },
+ "captions": [
+  {
+   "start": 0.3,
+   "end": 2.64,
+   "text": "Você abriu a empresa pra ter liberdade.",
+   "scene": "gancho"
+  },
+  {
+   "start": 2.79,
+   "end": 4.898,
+   "text": "Hoje, nada anda sem você.",
+   "scene": "sem"
+  },
+  {
+   "start": 5.348,
+   "end": 8.361,
+   "text": "Aprova o orçamento. Atende o cliente.",
+   "scene": "msgs"
+  },
+  {
+   "start": 8.448,
+   "end": 10.799,
+   "text": "Passa a senha. Acha a planilha.",
+   "scene": "msgs"
+  },
+  {
+   "start": 10.863,
+   "end": 12.239,
+   "text": "Lembra da proposta.",
+   "scene": "msgs"
+  },
+  {
+   "start": 12.689,
+   "end": 16.84,
+   "text": "No almoço. Na janta. No sábado.",
+   "scene": "montagem"
+  },
+  {
+   "start": 17.29,
+   "end": 19.955,
+   "text": "Você virou o gargalo da própria empresa.",
+   "scene": "gargalo"
+  },
+  {
+   "start": 20.455,
+   "end": 21.355,
+   "text": "Agora.",
+   "scene": "agora"
+  },
+  {
+   "start": 21.805,
+   "end": 23.216,
+   "text": "O retorno prometido?",
+   "scene": "crm"
+  },
+  {
+   "start": 23.279,
+   "end": 25.399,
+   "text": "O CRM faz automático.",
+   "scene": "crm"
+  },
+  {
+   "start": 25.799,
+   "end": 27.465,
+   "text": "A ligação fora do horário?",
+   "scene": "agente"
+  },
+  {
+   "start": 27.529,
+   "end": 30.373,
+   "text": "Um agente de voz com IA atende, qualifica,",
+   "scene": "agente"
+  },
+  {
+   "start": 30.373,
+   "end": 33.758,
+   "text": "registra e passa para a equipe.",
+   "scene": "agente"
+  },
+  {
+   "start": 34.108,
+   "end": 38.073,
+   "text": "O que só você sabe vira processo, mapeado e padronizado.",
+   "scene": "processo"
+  },
+  {
+   "start": 38.473,
+   "end": 41.138,
+   "text": "E os sistemas conversam entre si.",
+   "scene": "integra"
+  },
+  {
+   "start": 41.888,
+   "end": 46.968,
+   "text": "A DME entende, planeja e desenvolve sob medida.",
+   "scene": "metodo"
+  },
+  {
+   "start": 47.368,
+   "end": 50.149,
+   "text": "Então, enquanto você cuida do crescimento,",
+   "scene": "fecho"
+  },
+  {
+   "start": 50.259,
+   "end": 52.587,
+   "text": "o processo segura a rotina.",
+   "scene": "fecho"
+  },
+  {
+   "start": 54.237,
+   "end": 56.02,
+   "text": "DME Technology.",
+   "scene": "assinatura"
+  },
+  {
+   "start": 56.106,
+   "end": 59.317,
+   "text": "Automatizamos processos. Devolvemos tempo.",
+   "scene": "assinatura"
+  }
+ ]
+}

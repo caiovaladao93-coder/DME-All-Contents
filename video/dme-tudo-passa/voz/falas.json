@@ -1,0 +1,15 @@
+[
+ {"id": "n1", "text": "Você abriu a empresa pra ter liberdade."},
+ {"id": "n2", "text": "Hoje, nada anda sem você."},
+ {"id": "n3", "text": "Aprova o orçamento. <break time=\"0.25s\" /> Atende o cliente. <break time=\"0.25s\" /> Passa a senha. <break time=\"0.25s\" /> Acha a planilha. <break time=\"0.25s\" /> Lembra da proposta.", "legenda": "Aprova o orçamento. Atende o cliente. Passa a senha. Acha a planilha. Lembra da proposta."},
+ {"id": "n4", "text": "No almoço. <break time=\"0.35s\" /> Na janta. <break time=\"0.35s\" /> No sábado.", "legenda": "No almoço. Na janta. No sábado."},
+ {"id": "n5", "text": "Você virou o gargalo da própria empresa."},
+ {"id": "n6", "text": "Agora."},
+ {"id": "n7", "text": "O retorno prometido? <break time=\"0.2s\" /> O Cê-Erre-Eme faz automático.", "legenda": "O retorno prometido? O CRM faz automático."},
+ {"id": "n8", "text": "A ligação fora do horário? <break time=\"0.2s\" /> Um agente de voz com I-A atende, qualifica, registra e passa para a equipe.", "legenda": "A ligação fora do horário? Um agente de voz com IA atende, qualifica, registra e passa para a equipe."},
+ {"id": "n9", "text": "O que só você sabe vira processo, mapeado e padronizado."},
+ {"id": "n10", "text": "E os sistemas conversam entre si."},
+ {"id": "n11", "text": "A Dê-Eme-É entende, planeja e desenvolve sob medida.", "legenda": "A DME entende, planeja e desenvolve sob medida."},
+ {"id": "n12", "text": "Então, enquanto você cuida do crescimento, <break time=\"0.2s\" /> o processo segura a rotina.", "legenda": "Então, enquanto você cuida do crescimento, o processo segura a rotina."},
+ {"id": "n13", "text": "Dê-Eme-É Technology. <break time=\"0.3s\" /> Automatizamos processos. <break time=\"0.25s\" /> Devolvemos tempo.", "legenda": "DME Technology. Automatizamos processos. Devolvemos tempo."}
+]

@@ -1,0 +1,37 @@
+MARCAS · DME "Tudo passa por você" (9:16) · 59.87 s · 30 fps · trilha original, 120 BPM, Ré menor (sobrecarga) → Fá maior (depois do Agora)
+
+FALAS (DME Narrador, ElevenLabs, 1,1×; respirações removidas)
+  0.30–  2.39  [gancho] Você abriu a empresa pra ter liberdade.
+  2.79–  4.65  [sem] Hoje, nada anda sem você.
+  5.35– 11.99  [msgs] Aprova o orçamento. Atende o cliente. Passa a senha. Acha a planilha. Lembra da proposta.
+ 12.69– 16.59  [montagem] No almoço. Na janta. No sábado.
+ 17.29– 19.70  [gargalo] Você virou o gargalo da própria empresa.
+ 20.45– 21.11  [agora] Agora.
+ 21.80– 25.15  [crm] O retorno prometido? O CRM faz automático.
+ 25.80– 33.51  [agente] A ligação fora do horário? Um agente de voz com IA atende, qualifica, registra e passa para a equipe.
+ 34.11– 37.82  [processo] O que só você sabe vira processo, mapeado e padronizado.
+ 38.47– 40.89  [integra] E os sistemas conversam entre si.
+ 41.89– 46.72  [metodo] A DME entende, planeja e desenvolve sob medida.
+ 47.37– 52.34  [fecho] Então, enquanto você cuida do crescimento, o processo segura a rotina.
+ 54.24– 59.07  [assinatura] DME Technology. Automatizamos processos. Devolvemos tempo.
+
+TRILHA E EFEITOS
+  5.23  notificação 1
+  6.98  notificação 2
+  8.33  notificação 3
+  9.58  notificação 4
+ 10.74  notificação 5
+ 12.49  enxurrada de notificações (almoço, janta, sábado)
+ 17.09  gargalo: ronco grave subindo
+ 20.02  SILÊNCIO (0.43 s) antes do "Agora"
+ 20.45  AGORA: impacto, harmonia abre para Fá maior
+ 23.23  linha redesenhada: CRM · retorno automático
+ 27.45  linha redesenhada: agente de voz com IA
+ 35.00  linha redesenhada: processo padronizado
+ 39.03  linha redesenhada: integração de sistemas
+ 42.79  placa 1: ENTENDE
+ 43.53  placa 2: PLANEJA
+ 44.39  placa 3: DESENVOLVE
+ 49.03  linha VOCÊ → CRESCIMENTO
+ 51.63  loop: "Você abriu a empresa pra ter liberdade."
+ 53.94  assinatura: logo, slogan, acorde final

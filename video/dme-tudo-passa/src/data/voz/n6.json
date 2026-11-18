@@ -1,0 +1,39 @@
+{
+ "voice_id": "rvQN0FfieG7shqFeMyqw",
+ "model_id": "eleven_multilingual_v2",
+ "voice_settings": {
+  "stability": 0.5,
+  "similarity_boost": 0.85,
+  "style": 0.2,
+  "use_speaker_boost": true,
+  "speed": 1.1
+ },
+ "text": "Agora.",
+ "alignment": {
+  "characters": [
+   "A",
+   "g",
+   "o",
+   "r",
+   "a",
+   "."
+  ],
+  "character_start_times_seconds": [
+   0,
+   0.151,
+   0.221,
+   0.325,
+   0.383,
+   0.488
+  ],
+  "character_end_times_seconds": [
+   0.151,
+   0.221,
+   0.325,
+   0.383,
+   0.488,
+   0.65
+  ]
+ },
+ "pausas": []
+}
