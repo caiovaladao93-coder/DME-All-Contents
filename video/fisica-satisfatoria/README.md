@@ -73,7 +73,12 @@ Regra da série: todo vídeo **começa com 1 bola**, ela se multiplica e **explo
 - **Gancho:** "CADA BOLA QUE CAI NO BURACO VOLTA EM DOBRO · Quanto o buraco aguenta? Chuta!"
 - A arena é circular, com um buraco negro no centro. A gravidade é radial, com atrito leve, então as órbitas viram espirais e o disco de acreção gira. Cada bola engolida volta em dobro pela borda, em órbita; as cores mudam a cada 45 bolas engolidas.
 - O buraco cresce com a raiz do total engolido ("buraco: N% da arena"). Com 1.500 bolas, "O BURACO ESTÁ INCHANDO!"; a 52% da arena, "IMPLODINDO..." (tudo é puxado para o centro). Vem então o BOOM: o anel se parte em 16 pedaços e as bolas voam. Fecha com "ENGOLIU N BOLAS! Você chutou quanto?" → loop com 1 bola.
-- Som: glup grave a cada bola engolida e nota subindo nas que voltam; zumbido que cresce com o buraco; sirene na arena cheia; sucção na implosão; boom e acorde.
+- **Versão 2 (mais satisfatória):**
+  - rastros que viram espirais coloridas em volta do buraco;
+  - uma onda na borda a cada bola que volta em dobro;
+  - o buraco pulsa a cada bola engolida e o disco de acreção tem 4 braços;
+  - zoom lento enquanto o buraco incha e tremor na implosão.
+- **Som:** as bolas engolidas tocam um arpejo no tempo (semicolcheias a 120 BPM, Lám–Fá–Dó–Sol) e as 60 primeiras fazem um "glup". Há também um zumbido que cresce com o buraco, uma sirene quando a arena enche, sucção na implosão e boom com acorde no fim.
 - Teste rápido sem desenho: `RAPIDO=1 python3 scripts/buraco.py`.
 
 ### Próximos mecanismos (um por vídeo)
