@@ -27,6 +27,10 @@ Skill de terceiros (`haidrrrry/claude-remotion-skill`) com técnica de animaçã
 - **Escalonamento por palavra ou letra:** não usar quando o briefing proíbe animação por letra.
 - **Tema único e tempos derivados de `fps`:** boas práticas; adote sem quebrar os projetos que já usam `timeline.json`.
 
+## Skill `copywriting` (`.agents/skills/copywriting`, link em `.claude/skills/`)
+
+Skill de terceiros (`coreyhaines31/marketingskills`, versão 2.3.6, instalada com `npx skills add`; trava em `skills-lock.json`). Serve para escrever ou reescrever textos de página e escolher título, promessa e mensagem, e ajuda a evitar vícios de texto de IA. Só tem markdown, sem scripts. Valem as regras deste arquivo: nas peças da DME, só as afirmações da lista de fatos confirmados, e respostas em português do Brasil.
+
 ## Marca
 
 - **Cores:** #0A0B0C (fundo), #1C1F22 (superfícies), #264B71 (profundidade e assinatura), #C0C6CC (aço), #3A6EA5 (destaque, só na palavra-chave).

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "skills": {
+    "copywriting": {
+      "source": "coreyhaines31/marketingskills",
+      "commit": "73573e94a06a39965978b3fa1f9c1eace8cebc7c",
+      "sourceType": "github",
+      "skillPath": "skills/copywriting/SKILL.md",
+      "computedHash": "6b86be15d7e8397c27d339fbcbf72718854f96f096ca617889e45b5b8174c393"
+    }
+  }
+}
