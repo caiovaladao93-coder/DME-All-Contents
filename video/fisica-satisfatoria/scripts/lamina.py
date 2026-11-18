@@ -20,7 +20,7 @@ SPLIT = .38                              # duração da abertura das metades
 EV = []
 
 @njit(cache=True)
-def passo(x, y, vx, vy, viva, n, dt, th, cut, t, cool, ativo):
+def passo(x, y, vx, vy, viva, n, dt, th, cut, t, cool, ativo, cortar):
     dxb, dyb = math.cos(th), math.sin(th); nc = 0
     for b in range(n):
         if viva[b] == 0: continue
@@ -39,7 +39,7 @@ def passo(x, y, vx, vy, viva, n, dt, th, cut, t, cool, ativo):
             if abs(e) < RB + 9:
                 sg = 1.0 if e >= 0 else -1.0; x[b] += -dyb * sg * (RB + 9 - abs(e)); y[b] += dxb * sg * (RB + 9 - abs(e))
             continue
-        if s < L and abs(e) < 3.5 and t - cool[b] > 1.0 and nc < cut.shape[0]:
+        if cortar and s < L and abs(e) < 3.5 and t - cool[b] > 1.0 and nc < cut.shape[0]:
             cut[nc] = b; nc += 1
         sp = math.sqrt(vx[b] ** 2 + vy[b] ** 2)
         if sp < VMIN and sp > 1e-6: vx[b] *= VMIN / sp; vy[b] *= VMIN / sp
@@ -104,7 +104,7 @@ def main():
         ativo = t_exp is None
         for _ in range(SUB):
             dt = 1 / FPS / SUB; th += om * dt
-            nc = passo(x, y, vx, vy, viva, n, dt, th, cut, t, cool, ativo and t_cheio is None)
+            nc = passo(x, y, vx, vy, viva, n, dt, th, cut, t, cool, ativo, t_cheio is None)
             c_, s_ = math.cos(th), math.sin(th); nx, ny = -s_, c_
             for q in range(nc):
                 b = cut[q]
@@ -186,7 +186,7 @@ def main():
         elif not loop:
             poe_texto(img, fmt(n), 76, 540, 410, (255, 214, 64), 1, '800', 10)
             if t_exp is None:
-                if t_cheio is None: poe_texto(img, f'volta {volta}', 40, 540, 1560, (200, 210, 230), 1, '700', 6)
+                if t_cheio is None: poe_texto(img, f'volta {volta}', 40, 540, 1560, (200, 210, 230), 1, '600', 6)
                 else: poe_texto(img, 'TRAVOU...' if t_trava is not None else 'TRAVANDO...', 60, 540, 1560, (255, 77, 90), 1, '800', 9, 1 + .06 * math.sin(t * 22))
             else:
                 poe_texto(img, 'QUEBROU!', 170, 540, 800, (255, 214, 64), min(1, (t - t_exp) * 6), '800', 16, pop_in(t, t_exp, .3))
