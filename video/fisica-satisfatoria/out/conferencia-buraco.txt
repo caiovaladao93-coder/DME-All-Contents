@@ -1,0 +1,8 @@
+CONFERÊNCIA · 18/11/2026 13:40
+stream|codec_name=h264|width=1080|height=1920|r_frame_rate=30/1
+stream|codec_name=aac|r_frame_rate=0/0
+format|duration=62.000000
+    I:         -14.0 LUFS
+    Peak:       -3.2 dBFS
+quadros pretos:
+  nenhum

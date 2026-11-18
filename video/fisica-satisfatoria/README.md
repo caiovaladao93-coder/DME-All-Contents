@@ -69,12 +69,19 @@ Regra da série: todo vídeo **começa com 1 bola**, ela se multiplica e **explo
 - "velocidade da máquina: N%" cai com a carga; cheia → "TRAVANDO..." (tremor) → "TRAVOU!" (trincas) → explosão: cada engrenagem se parte em 6 pedaços e as paredes voam → "QUEBROU! TRAVOU COM 2.400 BOLAS! Você chutou quanto?" → loop.
 - Som: um tique por dente que passa (o ritmo sai da velocidade real), notas por engrenagem, rangidos metálicos, baque, silêncio e explosão com pedaços de metal.
 
+### 5 · Buraco negro invertido (`scripts/buraco.py` + `scripts/som_buraco.py` → `out/Buraco-Negro.mp4`, 62,0 s)
+- **Gancho:** "CADA BOLA QUE CAI NO BURACO VOLTA EM DOBRO · Quanto o buraco aguenta? Chuta!"
+- A arena é circular, com um buraco negro no centro. A gravidade é radial, com atrito leve, então as órbitas viram espirais e o disco de acreção gira. Cada bola engolida volta em dobro pela borda, em órbita; as cores mudam a cada 45 bolas engolidas.
+- O buraco cresce com a raiz do total engolido ("buraco: N% da arena"). Com 1.500 bolas, "O BURACO ESTÁ INCHANDO!"; a 52% da arena, "IMPLODINDO..." (tudo é puxado para o centro). Vem então o BOOM: o anel se parte em 16 pedaços e as bolas voam. Fecha com "ENGOLIU N BOLAS! Você chutou quanto?" → loop com 1 bola.
+- Som: glup grave a cada bola engolida e nota subindo nas que voltam; zumbido que cresce com o buraco; sirene na arena cheia; sucção na implosão; boom e acorde.
+- Teste rápido sem desenho: `RAPIDO=1 python3 scripts/buraco.py`.
+
 ### Próximos mecanismos (um por vídeo)
 1. **Divisão celular:** cada batida divide a bola em duas menores, até virar "areia" que transborda.
 2. ~~Ampulheta~~ (feito).
 3. ~~Engrenagens~~ (feito).
 4. ~~Balão elástico~~ (feito).
-5. **Buraco negro invertido:** cada bola que cai no centro sai como duas pelas bordas; o centro cresce até engolir a tela.
+5. ~~Buraco negro invertido~~ (feito).
 6. **Camadas de vidro:** anéis concêntricos de vidro, cada um com resistência visível, que trincam e quebram por dentro.
 7. **Espiral:** a bola desce uma espiral; cada volta completa dobra as bolas, até a espiral entupir e explodir.
 8. **Teclado/Plinko:** pinos que tocam notas e multiplicam; o funil entope e transborda.
