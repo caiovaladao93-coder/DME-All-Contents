@@ -1,0 +1,39 @@
+MARCAS · DME "Onde a operação trava" (9:16) · 59.97 s · 30 fps · trilha original, 120 BPM, Ré menor → Fá maior
+
+FALAS (DME Narrador, ElevenLabs, 1,1×; respirações removidas)
+  0.35–  3.09  [gancho] O gargalo quase nunca está onde a empresa procura.
+  3.54–  7.63  [processo] Parece falta de gente. Quase sempre é processo.
+  8.43– 12.61  [c1p] Na clínica, o paciente liga às sete da noite. Ninguém atende.
+ 13.01– 19.79  [c1s] Um agente de voz com IA atende, qualifica, registra no CRM e passa para a equipe.
+ 20.69– 24.87  [c2p] Na empresa de serviços, o retorno da proposta depende da memória de alguém.
+ 25.27– 29.59  [c2s] CRM personalizado, com retornos automáticos.
+ 30.44– 34.24  [c3p] Na distribuidora, o mesmo pedido é digitado em dois sistemas.
+ 34.64– 36.18  [c3s] Integração de sistemas.
+ 37.18– 40.15  [c4p] Na construtora, só uma pessoa sabe montar o orçamento.
+ 40.55– 43.34  [c4s] Mapeamento e padronização do processo.
+ 44.34– 52.23  [metodo] Cada empresa trava num ponto diferente. Por isso, a DME entende, planeja e desenvolve sob medida.
+ 52.83– 54.87  [pergunta] Onde a sua operação trava?
+ 55.67– 58.88  [assinatura] DME Technology. Envie COMERCIAL no direct.
+
+TRILHA E EFEITOS
+  0.20  marcador procura nos 4 setores (ticks)
+  5.04  gargalo escondido encontrado (planta geral)
+  8.68  marcador trava no gargalo · caso 01
+ 12.96  solução · caso 01 (fluxo fica azul)
+ 14.47  verbos do agente: atende, qualifica, registra, passa
+ 19.99  troca de caso (c2)
+ 20.94  marcador trava no gargalo · caso 02
+ 25.22  solução · caso 02 (fluxo fica azul)
+ 29.74  troca de caso (c3)
+ 30.69  marcador trava no gargalo · caso 03
+ 34.59  solução · caso 03 (fluxo fica azul)
+ 36.48  troca de caso (c4)
+ 37.43  marcador trava no gargalo · caso 04
+ 40.50  solução · caso 04 (fluxo fica azul)
+ 43.54  SILÊNCIO (0,4 s) antes do método
+ 43.94  método: volta da trilha
+ 48.14  placa 1: ENTENDE
+ 48.77  placa 2: PLANEJA
+ 49.58  placa 3: DESENVOLVE
+ 52.88  pergunta: o marcador volta a procurar (loop)
+ 55.42  assinatura: logo, acorde final e sinos

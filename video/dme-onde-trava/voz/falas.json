@@ -1,0 +1,15 @@
+[
+ {"id": "n1", "text": "O gargalo quase nunca está onde a empresa procura."},
+ {"id": "n2", "text": "Parece falta de gente. <break time=\"0.25s\" /> Quase sempre é processo.", "legenda": "Parece falta de gente. Quase sempre é processo."},
+ {"id": "n3", "text": "Na clínica, o paciente liga às sete da noite. <break time=\"0.2s\" /> Ninguém atende.", "legenda": "Na clínica, o paciente liga às sete da noite. Ninguém atende."},
+ {"id": "n4", "text": "Um agente de voz com I-A atende, qualifica, registra no Cê-Erre-Eme e passa para a equipe.", "legenda": "Um agente de voz com IA atende, qualifica, registra no CRM e passa para a equipe."},
+ {"id": "n5", "text": "Na empresa de serviços, o retorno da proposta depende da memória de alguém."},
+ {"id": "n6", "text": "Cê-Erre-Eme personalizado, com retornos automáticos.", "legenda": "CRM personalizado, com retornos automáticos."},
+ {"id": "n7", "text": "Na distribuidora, o mesmo pedido é digitado em dois sistemas."},
+ {"id": "n8", "text": "Integração de sistemas."},
+ {"id": "n9", "text": "Na construtora, só uma pessoa sabe montar o orçamento."},
+ {"id": "n10", "text": "Mapeamento e padronização do processo."},
+ {"id": "n11", "text": "Cada empresa trava num ponto diferente. <break time=\"0.25s\" /> Por isso, a Dê-Eme-É entende, planeja e desenvolve sob medida.", "legenda": "Cada empresa trava num ponto diferente. Por isso, a DME entende, planeja e desenvolve sob medida."},
+ {"id": "n12", "text": "Onde a sua operação trava?"},
+ {"id": "n13", "text": "Dê-Eme-É Technology. <break time=\"0.25s\" /> Envie COMERCIAL no direct.", "legenda": "DME Technology. Envie COMERCIAL no direct."}
+]

@@ -1,0 +1,860 @@
+{
+ "fps": 30,
+ "dur": 59.967,
+ "frames": 1799,
+ "scenes": [
+  {
+   "key": "gancho",
+   "fala": "n1",
+   "t0": 0.0,
+   "t1": 3.44,
+   "v0": 0.35,
+   "v1": 3.09,
+   "texto": "O gargalo quase nunca está onde a empresa procura."
+  },
+  {
+   "key": "processo",
+   "fala": "n2",
+   "t0": 3.44,
+   "t1": 8.077,
+   "v0": 3.54,
+   "v1": 7.627,
+   "texto": "Parece falta de gente. Quase sempre é processo."
+  },
+  {
+   "key": "c1p",
+   "fala": "n3",
+   "t0": 8.077,
+   "t1": 12.857,
+   "v0": 8.427,
+   "v1": 12.607,
+   "texto": "Na clínica, o paciente liga às sete da noite. Ninguém atende."
+  },
+  {
+   "key": "c1s",
+   "fala": "n4",
+   "t0": 12.857,
+   "t1": 20.337,
+   "v0": 13.007,
+   "v1": 19.787,
+   "texto": "Um agente de voz com IA atende, qualifica, registra no CRM e passa para a equipe."
+  },
+  {
+   "key": "c2p",
+   "fala": "n5",
+   "t0": 20.337,
+   "t1": 25.117,
+   "v0": 20.687,
+   "v1": 24.867,
+   "texto": "Na empresa de serviços, o retorno da proposta depende da memória de alguém."
+  },
+  {
+   "key": "c2s",
+   "fala": "n6",
+   "t0": 25.117,
+   "t1": 30.086,
+   "v0": 25.267,
+   "v1": 29.586,
+   "texto": "CRM personalizado, com retornos automáticos."
+  },
+  {
+   "key": "c3p",
+   "fala": "n7",
+   "t0": 30.086,
+   "t1": 34.494,
+   "v0": 30.436,
+   "v1": 34.244,
+   "texto": "Na distribuidora, o mesmo pedido é digitado em dois sistemas."
+  },
+  {
+   "key": "c3s",
+   "fala": "n8",
+   "t0": 34.494,
+   "t1": 36.827,
+   "v0": 34.644,
+   "v1": 36.177,
+   "texto": "Integração de sistemas."
+  },
+  {
+   "key": "c4p",
+   "fala": "n9",
+   "t0": 36.827,
+   "t1": 40.399,
+   "v0": 37.177,
+   "v1": 40.149,
+   "texto": "Na construtora, só uma pessoa sabe montar o orçamento."
+  },
+  {
+   "key": "c4s",
+   "fala": "n10",
+   "t0": 40.399,
+   "t1": 43.935,
+   "v0": 40.549,
+   "v1": 43.335,
+   "texto": "Mapeamento e padronização do processo."
+  },
+  {
+   "key": "metodo",
+   "fala": "n11",
+   "t0": 43.935,
+   "t1": 52.68,
+   "v0": 44.335,
+   "v1": 52.23,
+   "texto": "Cada empresa trava num ponto diferente. Por isso, a DME entende, planeja e desenvolve sob medida."
+  },
+  {
+   "key": "pergunta",
+   "fala": "n12",
+   "t0": 52.68,
+   "t1": 55.423,
+   "v0": 52.83,
+   "v1": 54.873,
+   "texto": "Onde a sua operação trava?"
+  },
+  {
+   "key": "assinatura",
+   "fala": "n13",
+   "t0": 55.423,
+   "t1": 59.977,
+   "v0": 55.673,
+   "v1": 58.877,
+   "texto": "DME Technology. Envie COMERCIAL no direct."
+  }
+ ],
+ "words": {
+  "gancho": [
+   [
+    "O",
+    0.35,
+    0.513
+   ],
+   [
+    "gargalo",
+    0.571,
+    0.954
+   ],
+   [
+    "quase",
+    1.012,
+    1.279
+   ],
+   [
+    "nunca",
+    1.337,
+    1.592
+   ],
+   [
+    "está",
+    1.615,
+    1.801
+   ],
+   [
+    "onde",
+    1.859,
+    2.033
+   ],
+   [
+    "a",
+    2.057,
+    2.08
+   ],
+   [
+    "empresa",
+    2.103,
+    2.451
+   ],
+   [
+    "procura.",
+    2.486,
+    3.09
+   ]
+  ],
+  "processo": [
+   [
+    "Parece",
+    3.54,
+    3.888
+   ],
+   [
+    "falta",
+    3.946,
+    4.213
+   ],
+   [
+    "de",
+    4.26,
+    4.341
+   ],
+   [
+    "gente.",
+    4.388,
+    4.91
+   ],
+   [
+    "Quase",
+    5.235,
+    5.525
+   ],
+   [
+    "sempre",
+    5.583,
+    5.839
+   ],
+   [
+    "é",
+    5.862,
+    5.885
+   ],
+   [
+    "processo.",
+    5.92,
+    7.627
+   ]
+  ],
+  "c1p": [
+   [
+    "Na",
+    8.427,
+    8.578
+   ],
+   [
+    "clínica,",
+    8.624,
+    9.007
+   ],
+   [
+    "o",
+    9.031,
+    9.066
+   ],
+   [
+    "paciente",
+    9.1,
+    9.53
+   ],
+   [
+    "liga",
+    9.576,
+    9.785
+   ],
+   [
+    "às",
+    9.809,
+    9.855
+   ],
+   [
+    "sete",
+    9.89,
+    10.134
+   ],
+   [
+    "da",
+    10.18,
+    10.25
+   ],
+   [
+    "noite.",
+    10.296,
+    10.761
+   ],
+   [
+    "Ninguém",
+    11.086,
+    11.388
+   ],
+   [
+    "atende.",
+    11.434,
+    12.607
+   ]
+  ],
+  "c1s": [
+   [
+    "Um",
+    13.007,
+    13.123
+   ],
+   [
+    "agente",
+    13.17,
+    13.448
+   ],
+   [
+    "de",
+    13.495,
+    13.553
+   ],
+   [
+    "voz",
+    13.611,
+    13.82
+   ],
+   [
+    "com",
+    13.878,
+    13.994
+   ],
+   [
+    "I-A",
+    14.064,
+    14.365
+   ],
+   [
+    "atende,",
+    14.47,
+    15.201
+   ],
+   [
+    "qualifica,",
+    15.306,
+    16.06
+   ],
+   [
+    "registra",
+    16.246,
+    16.757
+   ],
+   [
+    "no",
+    16.803,
+    16.908
+   ],
+   [
+    "Cê-Erre-Eme",
+    16.978,
+    18.034
+   ],
+   [
+    "e",
+    18.092,
+    18.231
+   ],
+   [
+    "passa",
+    18.301,
+    18.591
+   ],
+   [
+    "para",
+    18.638,
+    18.789
+   ],
+   [
+    "a",
+    18.812,
+    18.835
+   ],
+   [
+    "equipe.",
+    18.882,
+    19.787
+   ]
+  ],
+  "c2p": [
+   [
+    "Na",
+    20.687,
+    20.815
+   ],
+   [
+    "empresa",
+    20.838,
+    21.186
+   ],
+   [
+    "de",
+    21.233,
+    21.291
+   ],
+   [
+    "serviços,",
+    21.337,
+    21.86
+   ],
+   [
+    "o",
+    21.894,
+    21.918
+   ],
+   [
+    "retorno",
+    21.964,
+    22.37
+   ],
+   [
+    "da",
+    22.417,
+    22.487
+   ],
+   [
+    "proposta",
+    22.533,
+    22.974
+   ],
+   [
+    "depende",
+    23.021,
+    23.392
+   ],
+   [
+    "da",
+    23.45,
+    23.531
+   ],
+   [
+    "memória",
+    23.578,
+    23.973
+   ],
+   [
+    "de",
+    24.019,
+    24.066
+   ],
+   [
+    "alguém.",
+    24.1,
+    24.867
+   ]
+  ],
+  "c2s": [
+   [
+    "Cê-Erre-Eme",
+    25.267,
+    26.196
+   ],
+   [
+    "personalizado,",
+    26.265,
+    27.136
+   ],
+   [
+    "com",
+    27.159,
+    27.264
+   ],
+   [
+    "retornos",
+    27.31,
+    27.728
+   ],
+   [
+    "automáticos.",
+    27.786,
+    29.586
+   ]
+  ],
+  "c3p": [
+   [
+    "Na",
+    30.436,
+    30.587
+   ],
+   [
+    "distribuidora,",
+    30.622,
+    31.307
+   ],
+   [
+    "o",
+    31.33,
+    31.365
+   ],
+   [
+    "mesmo",
+    31.423,
+    31.701
+   ],
+   [
+    "pedido",
+    31.748,
+    32.119
+   ],
+   [
+    "é",
+    32.177,
+    32.224
+   ],
+   [
+    "digitado",
+    32.27,
+    32.735
+   ],
+   [
+    "em",
+    32.758,
+    32.804
+   ],
+   [
+    "dois",
+    32.862,
+    33.037
+   ],
+   [
+    "sistemas.",
+    33.06,
+    34.244
+   ]
+  ],
+  "c3s": [
+   [
+    "Integração",
+    34.644,
+    35.213
+   ],
+   [
+    "de",
+    35.236,
+    35.294
+   ],
+   [
+    "sistemas.",
+    35.341,
+    36.177
+   ]
+  ],
+  "c4p": [
+   [
+    "Na",
+    37.177,
+    37.305
+   ],
+   [
+    "construtora,",
+    37.351,
+    37.978
+   ],
+   [
+    "só",
+    38.001,
+    38.129
+   ],
+   [
+    "uma",
+    38.175,
+    38.292
+   ],
+   [
+    "pessoa",
+    38.326,
+    38.617
+   ],
+   [
+    "sabe",
+    38.663,
+    38.849
+   ],
+   [
+    "montar",
+    38.884,
+    39.186
+   ],
+   [
+    "o",
+    39.232,
+    39.255
+   ],
+   [
+    "orçamento.",
+    39.313,
+    40.149
+   ]
+  ],
+  "c4s": [
+   [
+    "Mapeamento",
+    40.549,
+    41.164
+   ],
+   [
+    "e",
+    41.188,
+    41.211
+   ],
+   [
+    "padronização",
+    41.28,
+    42.0
+   ],
+   [
+    "do",
+    42.023,
+    42.082
+   ],
+   [
+    "processo.",
+    42.116,
+    43.335
+   ]
+  ],
+  "metodo": [
+   [
+    "Cada",
+    44.335,
+    44.556
+   ],
+   [
+    "empresa",
+    44.579,
+    44.962
+   ],
+   [
+    "trava",
+    45.008,
+    45.322
+   ],
+   [
+    "num",
+    45.357,
+    45.461
+   ],
+   [
+    "ponto",
+    45.519,
+    45.763
+   ],
+   [
+    "diferente.",
+    45.798,
+    46.506
+   ],
+   [
+    "Por",
+    46.878,
+    47.029
+   ],
+   [
+    "isso,",
+    47.087,
+    47.412
+   ],
+   [
+    "a",
+    47.516,
+    47.574
+   ],
+   [
+    "Dê-Eme-É",
+    47.632,
+    48.143
+   ],
+   [
+    "entende,",
+    48.19,
+    48.747
+   ],
+   [
+    "planeja",
+    48.816,
+    49.351
+   ],
+   [
+    "e",
+    49.455,
+    49.571
+   ],
+   [
+    "desenvolve",
+    49.629,
+    50.175
+   ],
+   [
+    "sob",
+    50.21,
+    50.361
+   ],
+   [
+    "medida.",
+    50.43,
+    52.23
+   ]
+  ],
+  "pergunta": [
+   [
+    "Onde",
+    52.83,
+    53.109
+   ],
+   [
+    "a",
+    53.143,
+    53.167
+   ],
+   [
+    "sua",
+    53.213,
+    53.364
+   ],
+   [
+    "operação",
+    53.399,
+    53.863
+   ],
+   [
+    "trava?",
+    53.898,
+    54.873
+   ]
+  ],
+  "assinatura": [
+   [
+    "Dê-Eme-É",
+    55.673,
+    56.149
+   ],
+   [
+    "Technology.",
+    56.253,
+    56.927
+   ],
+   [
+    "Envie",
+    57.229,
+    57.542
+   ],
+   [
+    "COMERCIAL",
+    57.589,
+    58.099
+   ],
+   [
+    "no",
+    58.158,
+    58.227
+   ],
+   [
+    "direct.",
+    58.285,
+    58.877
+   ]
+  ]
+ },
+ "captions": [
+  {
+   "start": 0.35,
+   "end": 3.34,
+   "text": "O gargalo quase nunca está onde a empresa procura.",
+   "scene": "gancho"
+  },
+  {
+   "start": 3.54,
+   "end": 5.16,
+   "text": "Parece falta de gente.",
+   "scene": "processo"
+  },
+  {
+   "start": 5.235,
+   "end": 7.877,
+   "text": "Quase sempre é processo.",
+   "scene": "processo"
+  },
+  {
+   "start": 8.427,
+   "end": 11.011,
+   "text": "Na clínica, o paciente liga às sete da noite.",
+   "scene": "c1p"
+  },
+  {
+   "start": 11.086,
+   "end": 12.857,
+   "text": "Ninguém atende.",
+   "scene": "c1p"
+  },
+  {
+   "start": 13.007,
+   "end": 16.246,
+   "text": "Um agente de voz com IA atende, qualifica,",
+   "scene": "c1s"
+  },
+  {
+   "start": 16.246,
+   "end": 20.037,
+   "text": "registra no CRM e passa para a equipe.",
+   "scene": "c1s"
+  },
+  {
+   "start": 20.687,
+   "end": 21.894,
+   "text": "Na empresa de serviços,",
+   "scene": "c2p"
+  },
+  {
+   "start": 21.894,
+   "end": 25.117,
+   "text": "o retorno da proposta depende da memória de alguém.",
+   "scene": "c2p"
+  },
+  {
+   "start": 25.267,
+   "end": 29.836,
+   "text": "CRM personalizado, com retornos automáticos.",
+   "scene": "c2s"
+  },
+  {
+   "start": 30.436,
+   "end": 31.33,
+   "text": "Na distribuidora,",
+   "scene": "c3p"
+  },
+  {
+   "start": 31.33,
+   "end": 34.494,
+   "text": "o mesmo pedido é digitado em dois sistemas.",
+   "scene": "c3p"
+  },
+  {
+   "start": 34.644,
+   "end": 36.427,
+   "text": "Integração de sistemas.",
+   "scene": "c3s"
+  },
+  {
+   "start": 37.177,
+   "end": 38.001,
+   "text": "Na construtora,",
+   "scene": "c4p"
+  },
+  {
+   "start": 38.001,
+   "end": 40.399,
+   "text": "só uma pessoa sabe montar o orçamento.",
+   "scene": "c4p"
+  },
+  {
+   "start": 40.549,
+   "end": 43.585,
+   "text": "Mapeamento e padronização do processo.",
+   "scene": "c4s"
+  },
+  {
+   "start": 44.335,
+   "end": 46.756,
+   "text": "Cada empresa trava num ponto diferente.",
+   "scene": "metodo"
+  },
+  {
+   "start": 46.878,
+   "end": 52.48,
+   "text": "Por isso, a DME entende, planeja e desenvolve sob medida.",
+   "scene": "metodo"
+  },
+  {
+   "start": 52.83,
+   "end": 55.123,
+   "text": "Onde a sua operação trava?",
+   "scene": "pergunta"
+  },
+  {
+   "start": 55.673,
+   "end": 57.177,
+   "text": "DME Technology.",
+   "scene": "assinatura"
+  },
+  {
+   "start": 57.229,
+   "end": 59.127,
+   "text": "Envie COMERCIAL no direct.",
+   "scene": "assinatura"
+  }
+ ]
+}
