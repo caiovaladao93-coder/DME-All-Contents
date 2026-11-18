@@ -4,3 +4,7 @@ out/
 !out/marcas-som.txt
 !out/conferencia.txt
 scripts/__pycache__/
+!out/Guerra-de-Cores.mp4
+!out/capa-guerra.png
+!out/marcas-som-guerra.txt
+!out/conferencia-guerra.txt

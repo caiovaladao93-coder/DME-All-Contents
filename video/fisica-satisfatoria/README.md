@@ -21,3 +21,21 @@ python3 scripts/gerar.py && python3 scripts/som.py && bash scripts/finalizar.sh
 ```
 
 **Outras mecânicas para próximos testes:** funil com pinos (Plinko) e apostas, corrida de bolas num labirinto, "a última bola que sobrar", espiral que encolhe, bolas que crescem a cada batida, duelo de duas cores com escudos, cronômetro com "vai estourar em 10 s".
+
+## Guerra de cores · "6 cores. Só 1 sobrevive." (9:16, 81,3 s)
+
+`scripts/guerra.py` (física e desenho) e `scripts/som_guerra.py` (som). Saída: `out/Guerra-de-Cores.mp4`.
+
+- 6 cores × 60 bolas. Numa colisão, a bola mais rápida pode converter a outra. A chance de conversão sobe com o tempo desde a última eliminação, para sair uma eliminação a cada ~8–12 s.
+- **A arena perde um lado a cada cor eliminada:** hexágono → pentágono → quadrado → triângulo → final num círculo. A área é constante, e a forma se transforma em 1 s.
+- **Na tela:**
+  - "Escolha a sua cor!" com 3-2-1;
+  - placar ao vivo;
+  - "X ELIMINADO!" na cor de quem sai;
+  - "FINAL: X × Y";
+  - "X SOBREVIVEU! Qual cor você escolheu? Comenta!".
+- **Som:** cada conversão toca a nota da cor. Eliminação: impacto e frase descendente. Final: silêncio de 0,4 s, riser e acorde. Vitória: fanfarra. A base sobe de intensidade a cada eliminação.
+
+```
+python3 scripts/guerra.py && python3 scripts/som_guerra.py
+```
