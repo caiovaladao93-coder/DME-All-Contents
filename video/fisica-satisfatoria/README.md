@@ -63,10 +63,16 @@ Regra da série: todo vídeo **começa com 1 bola**, ela se multiplica e **explo
 - **Final:** "POW! ESTOUROU COM 1.500 BOLAS! Você chutou quanto?" → loop com o balão murcho e 1 bola.
 - Teste rápido sem desenho: `RAPIDO=1 python3 scripts/balao.py`.
 
+### 4 · Engrenagens (`scripts/engrenagens.py` + `scripts/som_engrenagens.py` → `out/Engrenagens.mp4`, 61,4 s)
+- **Gancho:** "CADA DENTE QUE TOCA DUPLICA A BOLA · Quantas até a máquina travar? Chuta!"
+- Máquina com 3 engrenagens **engrenadas de verdade** (14, 10 e 14 dentes; razão de giro e fase calculadas para os dentes se encaixarem). A colisão usa o perfil do dente (normal pelo gradiente) e a velocidade da superfície arremessa as bolas. A bola que toca a ponta de um dente ganha uma cópia (até 2.400).
+- "velocidade da máquina: N%" cai com a carga; cheia → "TRAVANDO..." (tremor) → "TRAVOU!" (trincas) → explosão: cada engrenagem se parte em 6 pedaços e as paredes voam → "QUEBROU! TRAVOU COM 2.400 BOLAS! Você chutou quanto?" → loop.
+- Som: um tique por dente que passa (o ritmo sai da velocidade real), notas por engrenagem, rangidos metálicos, baque, silêncio e explosão com pedaços de metal.
+
 ### Próximos mecanismos (um por vídeo)
 1. **Divisão celular:** cada batida divide a bola em duas menores, até virar "areia" que transborda.
 2. ~~Ampulheta~~ (feito).
-3. **Engrenagens:** bolas caem em engrenagens girando; cada dente que toca duplica a bola; a máquina engasga e quebra.
+3. ~~Engrenagens~~ (feito).
 4. ~~Balão elástico~~ (feito).
 5. **Buraco negro invertido:** cada bola que cai no centro sai como duas pelas bordas; o centro cresce até engolir a tela.
 6. **Camadas de vidro:** anéis concêntricos de vidro, cada um com resistência visível, que trincam e quebram por dentro.

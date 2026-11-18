@@ -1,0 +1,8 @@
+MARCAS DE SOM · ENGRENAGENS (sem narração; 410 notas das duplicações, 140 tiques de dente)
+
+  0.00  ding (o mesmo do fim: loop)
+ 52.10  MÁQUINA CHEIA (2400 bolas): rangido metálico, a máquina perde velocidade
+ 55.10  TRAVOU: baque pesado; trincas
+ 56.30  silêncio antes da explosão
+ 56.70  EXPLOSÃO: as engrenagens se partem (2400 bolas)
+ 59.70  volta à máquina vazia (loop)
