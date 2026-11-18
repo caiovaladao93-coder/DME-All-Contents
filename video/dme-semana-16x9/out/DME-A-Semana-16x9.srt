@@ -1,0 +1,75 @@
+1
+00:00:00,400 --> 00:00:02,833
+Essa é a semana de quem tem uma empresa.
+
+2
+00:00:03,183 --> 00:00:05,918
+Cobrar retorno. Redigitar pedido.
+
+3
+00:00:05,993 --> 00:00:08,808
+Atender ligação. Procurar arquivo.
+
+4
+00:00:08,872 --> 00:00:10,399
+Explicar de novo.
+
+5
+00:00:10,849 --> 00:00:13,142
+Toda semana, as mesmas tarefas.
+
+6
+00:00:13,692 --> 00:00:14,975
+E a estratégia?
+
+7
+00:00:15,120 --> 00:00:17,564
+Ficou pra sexta, às sete da noite.
+
+8
+00:00:18,064 --> 00:00:19,800
+Agora, a mesma semana.
+
+9
+00:00:19,922 --> 00:00:21,890
+Com processo.
+
+10
+00:00:22,440 --> 00:00:26,684
+O retorno, o CRM faz automático.
+
+11
+00:00:27,234 --> 00:00:28,523
+A ligação fora do horário,
+
+12
+00:00:28,523 --> 00:00:31,263
+um agente de voz com IA atende, qualifica,
+
+13
+00:00:31,263 --> 00:00:34,264
+registra e passa para a equipe.
+
+14
+00:00:34,814 --> 00:00:36,562
+O pedido entra uma vez:
+
+15
+00:00:36,764 --> 00:00:38,454
+os sistemas são integrados.
+
+16
+00:00:39,004 --> 00:00:43,619
+E o que só você sabe vira processo, mapeado e padronizado.
+
+17
+00:00:44,569 --> 00:00:50,160
+A DME entende a sua operação, planeja e desenvolve sob medida.
+
+18
+00:00:51,210 --> 00:00:52,830
+DME Technology.
+
+19
+00:00:52,917 --> 00:00:56,243
+Automatizamos processos. Devolvemos tempo.
