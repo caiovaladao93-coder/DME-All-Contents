@@ -81,6 +81,18 @@ Regra da série: todo vídeo **começa com 1 bola**, ela se multiplica e **explo
 - **Som:** as bolas engolidas tocam um arpejo no tempo (semicolcheias a 120 BPM, Lám–Fá–Dó–Sol) e as 60 primeiras fazem um "glup". Há também um zumbido que cresce com o buraco, uma sirene quando a arena enche, sucção na implosão e boom com acorde no fim.
 - Teste rápido sem desenho: `RAPIDO=1 python3 scripts/buraco.py`.
 
+### 6 · Lâmina (`scripts/lamina.py` + `scripts/som_lamina.py` → `out/Lamina.mp4`, 61,0 s)
+- **Formato:** o estilo "anel + arma girando no centro" de uma referência enviada pelo usuário, com arte, título e mecânica próprios. No topo, o título "LÂMINA" e o contador.
+- **Gancho:** "Cada corte = +1 bola · Quantas até a lâmina quebrar? Chuta!"
+- 1 bola quica no anel branco. A lâmina (cabo vermelho com faixas, guarda e lâmina de aço com fio) gira do centro, cada vez mais rápido, com rastro. Cada vez que acerta uma bola, ela é cortada em duas, e a metade nova sai pelo lado de trás da lâmina. Há uma onda no ponto do corte e rastros nas bolas; as cores mudam a cada 30 cortes.
+- **Final:** com 1.500 bolas, "TRAVANDO..." (a lâmina perde rotação) → "VAI QUEBRAR!" (tremor e trincas) → a lâmina parte em 4 e o anel em 16 → "QUEBROU! N CORTES! Você chutou quanto?" → loop.
+- **Som:**
+  - os cortes tocam um arpejo no tempo (120 BPM, Lám–Fá–Dó–Sol), e os 60 primeiros também fazem um "shing" de aço;
+  - há um swish a cada meia volta, acelerando com a rotação real;
+  - rangido metálico enquanto a lâmina trava, trincas e estalo;
+  - no fim, boom, pedaços de aço e acorde.
+- Teste rápido sem desenho: `RAPIDO=1 python3 scripts/lamina.py`.
+
 ### Próximos mecanismos (um por vídeo)
 1. **Divisão celular:** cada batida divide a bola em duas menores, até virar "areia" que transborda.
 2. ~~Ampulheta~~ (feito).
