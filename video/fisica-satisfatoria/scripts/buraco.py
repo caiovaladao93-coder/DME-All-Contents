@@ -6,6 +6,7 @@ Saída: out/buraco-mudo.mp4 e out/eventos-buraco.json (som: scripts/som_buraco.p
 import json, math, os, subprocess, sys
 import numpy as np
 from numba import njit
+from PIL import Image
 sys.path.insert(0, __file__.rsplit('/', 1)[0])
 from gerar import BG, FPS, H, ROOT, SUB, W, anel, blit, colisoes, fmt, poe_texto, pop_in, segmento, sprite
 
@@ -66,11 +67,12 @@ def nasce(x, y, vx, vy, viva, cor, n, gen):
 def main():
     NB = NMAX + 400
     x = np.zeros(NB); y = np.zeros(NB); vx = np.zeros(NB); vy = np.zeros(NB); viva = np.zeros(NB, np.int64); cor = np.zeros(NB, np.int64)
-    x[0], y[0], vx[0], vy[0], viva[0] = CX, CY - 300, 300.0, 0.0, 1; n = 1   # 1 bola no alto, com velocidade lateral
+    x[0], y[0], vx[0], vy[0], viva[0] = CX, CY - 300, 170.0, 0.0, 1; n = 1   # 1 bola no alto, com velocidade lateral
     sprs = [sprite(c, RB) for c in HUE]; ca = np.zeros(32768, np.int64); cb = np.zeros(32768, np.int64); absv = np.zeros(4096, np.int64)
     out = None if RAPIDO else subprocess.Popen(['ffmpeg', '-y', '-v', 'error', '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-s', f'{W}x{H}', '-r', str(FPS), '-i', '-',
                                                 '-c:v', 'libx264', '-preset', 'medium', '-crf', '17', '-pix_fmt', 'yuv420p', f'{ROOT}/out/buraco-mudo.mp4'], stdin=subprocess.PIPE)
     T0 = 1.0; total = 0; rh = 22.0; t_cheio = t_imp = t_exp = None; f = 0; vivas = 1; pedacos = []
+    trail = np.zeros((H, W, 3), np.float32); rips = []; ult_rip = -9.0; pulso = 0.0
     while True:
         t = f / FPS
         ativo = t_imp is None
@@ -91,6 +93,8 @@ def main():
                     for _k in range(filhos):
                         # reaproveita posições livres antes de crescer o vetor
                         if n < NB: nasce(x, y, vx, vy, viva, cor, n, gen); n += 1; vivas += 1
+                        if len(rips) < 40 and t - ult_rip > .02: rips.append((x[n - 1], y[n - 1], t, int(cor[n - 1]))); ult_rip = t
+                    pulso = 1.0
                     EV.append((t, 'engole', filhos))
                 if ativo: colisoes(x, y, vx, vy, viva, n, RB, 2 * RB + 1, ca, cb)
                 # compacta quando o vetor encher (mantém só as vivas)
@@ -122,17 +126,22 @@ def main():
             if t > 95: break
             continue
         # ── desenho
-        img = BG.copy()
         loop = t_exp is not None and t > t_exp + 3.0
+        # rastros: camada que se apaga devagar, somada ao fundo
+        trail *= .80
+        if not loop:
+            for i in np.nonzero(viva > 0)[0]: blit(trail, sprs[cor[i]], x[i], y[i], .55)
+        img = BG + trail * .9
+        pulso *= .75
         if not loop:
             # disco de acreção: 3 braços em espiral girando em volta do buraco
             if rh > 8 and t_exp is None:
-                for arm in range(3):
+                for arm in range(4):
                     for q in range(26):
                         u0, u1 = q / 26, (q + 1) / 26
-                        a0 = -t * 2.2 + arm * 2.094 + u0 * 3.2; a1 = -t * 2.2 + arm * 2.094 + u1 * 3.2
+                        a0 = -t * 2.2 + arm * 1.5708 + u0 * 3.2; a1 = -t * 2.2 + arm * 1.5708 + u1 * 3.2
                         r0, r1 = rh * (1.15 + 1.6 * u0), rh * (1.15 + 1.6 * u1)
-                        segmento(img, CX + r0 * math.cos(a0), CY + r0 * math.sin(a0), CX + r1 * math.cos(a1), CY + r1 * math.sin(a1), 3, .28 * (1 - u0), .9)
+                        segmento(img, CX + r0 * math.cos(a0), CY + r0 * math.sin(a0), CX + r1 * math.cos(a1), CY + r1 * math.sin(a1), 3, .42 * (1 - u0), 1.0)
             if t_exp is None: anel(img, CX, CY, RA + 6, 12, 0.0, -1.0, 1.0, 1.0)
             else:
                 k = t - t_exp
@@ -141,12 +150,23 @@ def main():
                     for j in range(5):
                         b0, b1 = aa + j * (2 * math.pi / 16) / 5, aa + (j + 1) * (2 * math.pi / 16) / 5
                         segmento(img, CX + ox + (RA + 6) * math.cos(b0), CY + oy + (RA + 6) * math.sin(b0), CX + ox + (RA + 6) * math.cos(b1), CY + oy + (RA + 6) * math.sin(b1), 12, max(0, 1 - k / 2.2), 1.0)
+            # ondas onde as bolas voltam em dobro
+            rips = [r_ for r_ in rips if t - r_[2] < .45]
+            for rx, ry, rt, rc in rips:
+                u = (t - rt) / .45; anel(img, rx, ry, 6 + 46 * u, 3, 0.0, -1.0, 1.0, .7 * (1 - u))
             for i in np.nonzero(viva > 0)[0]: blit(img, sprs[cor[i]], x[i], y[i], 1.0)
-            if t_exp is None: buraco(img, CX, CY, rh, 1.0)
+            if t_exp is None: buraco(img, CX, CY, rh * (1 + .07 * pulso), 1.0)
             if t_exp is not None and t - t_exp < .25: img = img + (255 - img) * (1 - (t - t_exp) / .25) * .8
         else:
             k_ = min(1.0, (t - t_exp - 3.0) / .8); tmp = BG.copy(); anel(tmp, CX, CY, RA + 6, 12, 0.0, -1.0, 1.0, 1.0); buraco(tmp, CX, CY, 22.0, 1.0)
             blit(tmp, sprs[0], CX, CY - 300, 1.0); img = img * (1 - k_) + tmp * k_
+        # câmera: zoom lento enquanto o buraco incha e tremor na implosão
+        z = 1.0; sx = sy = 0.0
+        if t_cheio is not None and not loop: z = 1 + .08 * min(1.0, (t - t_cheio) / 6.0) * (1 - (min(1.0, (t - t_exp) / .5) if t_exp is not None else 0))
+        if t_imp is not None and t_exp is None: a_ = 14 * (t - t_imp) / .7; sx, sy = R.uniform(-a_, a_), R.uniform(-a_, a_)
+        if z > 1.001 or sx or sy:
+            cw, ch = W / z, H / z; x0, y0 = CX - cw / 2 + sx, CY - ch * (CY / H) + sy
+            img = np.asarray(Image.fromarray(np.clip(img, 0, 255).astype(np.uint8)).resize((W, H), Image.BILINEAR, box=(x0, y0, x0 + cw, y0 + ch)), np.float32)
         # textos
         if t < 3.6:
             poe_texto(img, 'CADA BOLA QUE CAI NO BURACO', 56, 540, 300, (255, 255, 255), 1, '800', 9, pop_in(t, 0))

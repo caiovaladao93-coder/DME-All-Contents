@@ -1,6 +1,5 @@
 """Som ORIGINAL (numpy) do BURACO NEGRO INVERTIDO a partir de out/eventos-buraco.json.
-Cada bola engolida faz um "glup" grave que desce, e as que voltam em dobro tocam uma nota que sobe (escala pentatônica,
-mais aguda conforme o buraco engole mais); um zumbido grave cresce com o buraco; base a 120 BPM cada vez mais cheia.
+As bolas engolidas tocam um arpejo no tempo (semicolcheias a 120 BPM, Lám–Fá–Dó–Sol) e as 60 primeiras fazem um "glup"; um zumbido grave cresce com o buraco; base a 120 BPM cada vez mais cheia.
 Arena cheia = sirene grave subindo; implosão = sucção ao contrário; explosão = boom, crash e acorde; loop = ding.
 Saída: out/som-buraco.wav e out/marcas-som-buraco.txt."""
 import json, subprocess, sys
@@ -34,13 +33,20 @@ while t < t_imp - .1:
 n_ = int((t_imp - 1.0) * SR); tt = S.ar(n_); cnt = np.interp(tt + 1.0, eng, tot) if eng else np.zeros(n_)
 sz = np.sqrt(cnt) / (np.sqrt(len(eng)) + 1e-9); f = 70 - 30 * sz
 put(FX, np.sin(2 * np.pi * np.cumsum(f) / SR) * (.15 + .85 * sz) ** 1.5 * .5, 1.0, .35)
-# glup de cada bola engolida e nota das que voltam (limitados a 1 a cada 45 ms)
-ult, cnt_n = -9.0, 0
-for i, (t, tp, fil) in enumerate([e for e in EVS if e[1] == 'engole']):
-    if t - ult < .045: continue
-    put(FX, glup(), t, .22, R.uniform(-.2, .2)); ult = t; cnt_n += 1
-    m = ESC[min(len(ESC) - 1, int(np.log2(i + 2)))] + R.choice([0, 0, 12])
-    put(FX, S.marimba(m), t + .05, .2 if fil == 2 else .1, R.uniform(-.6, .6))
+# música da física: as bolas engolidas tocam um arpejo NO TEMPO (semicolcheias a 120 BPM), na harmonia Lám–Fá–Dó–Sol.
+# No começo, cada bola também faz o seu "glup" no instante exato em que cai.
+ACORDES = [[57, 60, 64, 69, 72, 76], [53, 57, 60, 65, 69, 72], [60, 64, 67, 72, 76, 79], [55, 59, 62, 67, 71, 74]]
+eng_arr = np.array(eng); cnt_n = 0; idx = 0; slot = .125; t = 1.0
+while t < t_imp - .05:
+    c = int(np.sum((eng_arr >= t) & (eng_arr < t + slot)))
+    if c:
+        ch = ACORDES[int((t - 1.0) // 2.0) % 4]; m = ch[idx % len(ch)]; idx += 1
+        g = .16 + .1 * min(1.0, np.log1p(c) / 3)
+        put(FX, S.marimba(m), t, g, ((idx % 6) - 2.5) / 3)
+        if c >= 3: put(FX, S.bell(m + 12, .6), t, .04, -((idx % 6) - 2.5) / 3)
+        cnt_n += 1
+    t += slot
+for i, te in enumerate(eng[:60]): put(FX, glup(), te, .25, 0)
 MARCAS.append((eng[0] if eng else 1.0, 'primeira bola engolida: volta em dobro'))
 if t_ch is not None:
     n_ = int((t_imp - t_ch) * SR); tt = S.ar(n_); u = tt / tt[-1]
