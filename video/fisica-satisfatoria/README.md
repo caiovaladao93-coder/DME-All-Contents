@@ -101,6 +101,19 @@ Regra da série: todo vídeo **começa com 1 bola**, ela se multiplica e **explo
   - rangido ao travar, trincas, 0,35 s de silêncio e a quebra com boom.
 - Teste rápido sem desenho: `RAPIDO=1 python3 scripts/lamina.py`.
 
+### 7 · Serra (`scripts/serra.py` + `scripts/som_serra.py` → `out/Serra.mp4`, 67,8 s)
+- **Formato:** o mesmo da Lâmina (anel branco, título "SERRA" no topo, contador, bolas de uma cor só e sem efeitos), com outro cortante: um disco de serra circular de aço que ricocheteia dentro do anel em alta rotação. O desenho do disco tem 26 dentes desfocados pela rotação, reflexo que gira, furos de alívio e cubo.
+- **Corte:** toda bola em que a serra encosta é cortada ao meio. As metades se abrem dos dois lados do caminho da serra, com um risco branco rápido. Chega a 2.051 bolas em cerca de 59 s.
+- **Final:** "TRAVANDO..." (a serra perde rotação e vira obstáculo) → "TRAVOU..." (tremor e trincas) → o disco parte em 4, o anel em 16 e as bolas voam → "QUEBROU! N CORTES! Você chutou quanto?" → loop.
+- **Som:**
+  - zumbido contínuo da serra que segue a rotação real (dentes ~108 Hz e chiado) e afunda a cada corte;
+  - cada corte faz "zzt" e um "tsk" afinado em arpejo;
+  - sino cada vez que o total dobra e "tlim" metálico nos ricochetes;
+  - cama calma em Lá menor, com batida leve depois de 30 s;
+  - o zumbido cai até parar quando a serra trava;
+  - quebra com boom, pedaços e acorde.
+- Teste rápido sem desenho: `RAPIDO=1 python3 scripts/serra.py`.
+
 ### Próximos mecanismos (um por vídeo)
 1. **Divisão celular:** cada batida divide a bola em duas menores, até virar "areia" que transborda.
 2. ~~Ampulheta~~ (feito).

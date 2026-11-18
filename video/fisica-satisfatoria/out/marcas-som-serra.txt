@@ -1,0 +1,23 @@
+MARCAS DE SOM · SERRA (sem narração; 430 cortes tocados de 2050)
+
+  0.00  ding (o mesmo do fim: loop)
+  0.50  a serra liga: zumbido contínuo (dentes ~108 Hz + chiado)
+  1.10  dobrou: 2 bolas
+  1.10  primeiro corte: "zzt" + "tsk" afinado
+  1.70  ricochetes no anel: "tlim" metálico
+  3.53  dobrou: 4 bolas
+  7.93  dobrou: 8 bolas
+ 13.70  dobrou: 16 bolas
+ 19.40  dobrou: 32 bolas
+ 24.87  dobrou: 64 bolas
+ 30.00  entra batida leve
+ 31.47  dobrou: 128 bolas
+ 37.77  dobrou: 256 bolas
+ 44.17  dobrou: 512 bolas
+ 51.43  dobrou: 1024 bolas
+ 59.37  ANEL LOTADO: a serra perde rotação (o zumbido cai até parar)
+ 59.37  dobrou: 2048 bolas
+ 61.77  serra parada: trincas
+ 62.82  silêncio antes de quebrar
+ 63.17  QUEBROU: a serra parte em 4 e o anel em 16 (2050 cortes)
+ 66.17  volta à serra inteira com 1 bola (loop)
