@@ -12,9 +12,9 @@ from gerar import BG, FPS, H, ROOT, SUB, W, anel, blit, colisoes, fmt, poe_texto
 RAPIDO = os.environ.get('RAPIDO') == '1'
 R = np.random.default_rng(808)
 CX, CY, RA, RB = 540.0, 1000.0, 430.0, 7.0
-L, LH, BT = 424.0, 70.0, 6.0             # lâmina vai até quase o anel
-OM = 2 * math.pi / 5.4                   # uma volta a cada 5,4 s
-NMAX = 2048; VMIN, VMAX = 55.0, 140.0
+L, LH, BT = 335.0, 70.0, 6.0             # lâmina mais curta que o anel: as bolas entram e saem do alcance
+OM = 2 * math.pi / 3.2                   # uma volta a cada 3,2 s
+NMAX = 2048; VMIN, VMAX = 150.0, 280.0
 COR = np.array([255, 96, 70], np.float32)  # uma cor só
 SPLIT = .38                              # duração da abertura das metades
 EV = []
@@ -39,7 +39,7 @@ def passo(x, y, vx, vy, viva, n, dt, th, cut, t, cool, ativo, cortar):
             if abs(e) < RB + 9:
                 sg = 1.0 if e >= 0 else -1.0; x[b] += -dyb * sg * (RB + 9 - abs(e)); y[b] += dxb * sg * (RB + 9 - abs(e))
             continue
-        if cortar and s < L and abs(e) < 3.5 and t - cool[b] > 1.0 and nc < cut.shape[0]:
+        if cortar and s < L and abs(e) < 4.5 and t - cool[b] > 1.0 and nc < cut.shape[0]:
             cut[nc] = b; nc += 1
         sp = math.sqrt(vx[b] ** 2 + vy[b] ** 2)
         if sp < VMIN and sp > 1e-6: vx[b] *= VMIN / sp; vy[b] *= VMIN / sp
@@ -128,7 +128,7 @@ def main():
             vx[m] = dx / d * sp; vy[m] = dy / d * sp - 200; viva[m] = 2
             for k in range(16):
                 a0 = k * 2 * math.pi / 16; am = a0 + math.pi / 16; spd = R.uniform(500, 1100); pedacos.append([a0, math.cos(am) * spd, math.sin(am) * spd, R.uniform(-3, 3)])
-            th_q = th; lam = [[0, LH, -300, -500, -4], [LH, 200, 200, -700, 5], [220, 320, -150, -900, -6], [320, L, 400, -600, 7]]
+            th_q = th; lam = [[0, LH, -300, -500, -4], [LH, 200, 200, -700, 5], [200, 270, -150, -900, -6], [270, L, 400, -600, 7]]
         if t_exp is not None:
             m = viva == 2; vy[m] += 900 / FPS
             viva[(viva == 2) & ((y > H + 60) | (y < -60) | (x < -60) | (x > W + 60))] = 0
