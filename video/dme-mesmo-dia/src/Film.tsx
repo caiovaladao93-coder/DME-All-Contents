@@ -112,7 +112,7 @@ const Panel: React.FC<{t: number; side: Side; top: number; dim: number}> = ({t, 
       </div>; })() : null}
     {/* carimbo de fim de dia */}
     {(() => { const k = P(t, E('diferenca').t0 - .2, .45, BACK); if (k <= 0) return null;
-      return <div style={{position: 'absolute', right: 30, top: 290, padding: '10px 18px', borderRadius: 8, border: `2.5px solid ${isB ? A : C.silver}`, fontFamily: UI, fontWeight: 800, fontSize: 22, letterSpacing: '.16em',
+      return <div style={{position: 'absolute', right: 30, top: 336, padding: '10px 18px', borderRadius: 8, border: `2.5px solid ${isB ? A : C.silver}`, fontFamily: UI, fontWeight: 800, fontSize: 22, letterSpacing: '.16em',
         color: isB ? '#DCE8F5' : C.ink, background: isB ? 'rgba(58,110,165,.25)' : 'rgba(10,11,12,.6)', opacity: clamp(k * 2), transform: `rotate(-3deg) scale(${(1.3 - .3 * k).toFixed(3)})`}}>{isB ? 'DIA FECHADO' : `${pend} PENDÊNCIAS PARA AMANHÃ`}</div>; })()}
   </div>;
 };
@@ -204,7 +204,7 @@ export const Film: React.FC<{audio?: boolean; still?: number}> = ({audio = true,
       {pv > 0 ? <div style={{position: 'absolute', inset: 0, opacity: pv, transform: `translateY(${slide.toFixed(1)}px)`}}>
         <Panel t={Math.min(t, met.t0)} side="A" top={690} dim={dimA} />
         <Panel t={Math.min(t, met.t0)} side="B" top={1135} dim={0} />
-        {qA > 0 ? ['A', 'B'].map((s, i) => <div key={s} style={{position: 'absolute', right: 96, top: 690 + i * 445 + 300, width: 92, height: 92, borderRadius: 46, border: `3px solid ${i ? A : C.silver}`,
+        {qA > 0 ? ['A', 'B'].map((s, i) => <div key={s} style={{position: 'absolute', left: 14, top: 690 + i * 445 + 104, width: 92, height: 92, borderRadius: 46, border: `3px solid ${i ? A : C.silver}`,
           display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: HEAD, fontWeight: 800, fontSize: 52, color: i ? A : C.ink, background: '#0A0B0C', transform: `scale(${qA.toFixed(3)})`}}>{s}</div>) : null}
       </div> : null}
       <Metodo t={t} />
