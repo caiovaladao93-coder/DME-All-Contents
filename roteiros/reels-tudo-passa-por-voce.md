@@ -27,3 +27,8 @@ CRM com retorno automático; agente de voz com IA (atende fora do horário, qual
 
 1. "É um emprego que não te deixa sair." É a frase mais forte do vídeo, mas pode soar dura. Alternativa: "Você virou o gargalo da própria empresa."
 2. "O processo cuida da rotina." Já usamos essa estrutura no "Férias", mas soa como promessa. Alternativa: "o processo segura a rotina."
+
+## Decisões do usuário (produzido em `video/dme-tudo-passa/`)
+
+- Usar as alternativas: "Você virou o gargalo da própria empresa." e "o processo segura a rotina".
+- Sem "Envie COMERCIAL no direct." no final: a assinatura fica com o logo e o slogan.
