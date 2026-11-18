@@ -1,0 +1,33 @@
+MARCAS DE SOM · física satisfatória (sem narração; cada batida toca uma nota)
+
+  0.00  início da cena1
+ 20.10  estouro do anel (LOTOU!)
+ 20.13  estouro do anel (LOTOU!)
+ 22.50  início da cena2
+ 24.77  anel 1 quebra
+ 26.37  anel 2 quebra
+ 28.73  anel 3 quebra
+ 28.77  anel 4 quebra
+ 31.70  anel 5 quebra
+ 34.17  anel 6 quebra
+ 37.63  anel 7 quebra
+ 39.60  anel 8 quebra
+ 41.67  anel 9 quebra
+ 44.03  LIVRE!
+ 44.03  anel 10 quebra
+ 46.27  início da cena3
+ 49.80  novo líder: cor 0
+ 49.83  novo líder: cor 2
+ 50.23  novo líder: cor 0
+ 50.33  novo líder: cor 2
+ 50.50  novo líder: cor 0
+ 51.80  novo líder: cor 2
+ 51.83  novo líder: cor 0
+ 51.90  novo líder: cor 2
+ 53.00  novo líder: cor 0
+ 53.07  novo líder: cor 2
+ 53.23  novo líder: cor 0
+ 57.37  novo líder: cor 2
+ 57.40  novo líder: cor 0
+ 57.43  novo líder: cor 2
+ 67.30  vitória da cor 2
