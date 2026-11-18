@@ -56,11 +56,18 @@ Regra da série: todo vídeo **começa com 1 bola**, ela se multiplica e **explo
 - **Paredes por SDF:** dois bulbos, o gargalo e um funil a 45° que leva ao gargalo (sem ele, as bolas paravam no fundo quase plano). Tudo num referencial que gira.
 - **Final:** "ENTUPIU!" → "O VIDRO VAI QUEBRAR!" (trincas) → explosão em cacos → "QUEBROU NA VIRADA 12! Você acertou?" → loop com 1 bola.
 
+### 3 · Balão elástico (`scripts/balao.py` + `scripts/som_balao.py` → `out/Balao-Elastico.mp4`, 59,8 s)
+- **Gancho:** "CADA BATIDA NA BORDA CRIA MAIS UMA BOLA · Quantas até estourar? Chuta!"
+- A borda é uma **membrana** de 140 nós ligados por molas, presa ao nó do barbante. A pressão interna (∝ nº de bolas / área) e os impactos a esticam. Um controle suave faz a esticada seguir uma curva pelo nº de bolas (100% → ~235% com 1.500 bolas), depois sobe devagar até 255% e **rasga** no segmento mais esticado.
+- A borracha fica mais fina e mais clara conforme estica; o texto "borracha esticada: N%" fica vermelho e pulsa perto do limite. Som: notas das batidas, tom de borracha que sobe, rangidos cada vez mais frequentes, silêncio de 0,4 s e o POW (estalo, boom e flap da borracha).
+- **Final:** "POW! ESTOUROU COM 1.500 BOLAS! Você chutou quanto?" → loop com o balão murcho e 1 bola.
+- Teste rápido sem desenho: `RAPIDO=1 python3 scripts/balao.py`.
+
 ### Próximos mecanismos (um por vídeo)
 1. **Divisão celular:** cada batida divide a bola em duas menores, até virar "areia" que transborda.
 2. ~~Ampulheta~~ (feito).
 3. **Engrenagens:** bolas caem em engrenagens girando; cada dente que toca duplica a bola; a máquina engasga e quebra.
-4. **Balão elástico:** a borda é uma membrana que estica com a pressão (molas) até estourar.
+4. ~~Balão elástico~~ (feito).
 5. **Buraco negro invertido:** cada bola que cai no centro sai como duas pelas bordas; o centro cresce até engolir a tela.
 6. **Camadas de vidro:** anéis concêntricos de vidro, cada um com resistência visível, que trincam e quebram por dentro.
 7. **Espiral:** a bola desce uma espiral; cada volta completa dobra as bolas, até a espiral entupir e explodir.
