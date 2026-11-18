@@ -1,0 +1,761 @@
+{
+ "fps": 30,
+ "dur": 57.4,
+ "frames": 1722,
+ "scenes": [
+  {
+   "key": "gancho",
+   "fala": "n1",
+   "t0": 0.0,
+   "t1": 2.983,
+   "v0": 0.4,
+   "v1": 2.583,
+   "texto": "Essa é a semana de quem tem uma empresa."
+  },
+  {
+   "key": "tarefas",
+   "fala": "n2",
+   "t0": 2.983,
+   "t1": 10.649,
+   "v0": 3.183,
+   "v1": 10.149,
+   "texto": "Cobrar retorno. Redigitar pedido. Atender ligação. Procurar arquivo. Explicar de novo."
+  },
+  {
+   "key": "cheia",
+   "fala": "n3",
+   "t0": 10.649,
+   "t1": 13.492,
+   "v0": 10.849,
+   "v1": 12.892,
+   "texto": "Toda semana, as mesmas tarefas."
+  },
+  {
+   "key": "estrategia",
+   "fala": "n4",
+   "t0": 13.492,
+   "t1": 17.614,
+   "v0": 13.692,
+   "v1": 17.314,
+   "texto": "E a estratégia? Ficou pra sexta, às sete da noite."
+  },
+  {
+   "key": "agora",
+   "fala": "n5",
+   "t0": 17.614,
+   "t1": 22.24,
+   "v0": 18.064,
+   "v1": 21.64,
+   "texto": "Agora, a mesma semana. Com processo."
+  },
+  {
+   "key": "crm",
+   "fala": "n6",
+   "t0": 22.24,
+   "t1": 27.034,
+   "v0": 22.44,
+   "v1": 26.434,
+   "texto": "O retorno, o CRM faz automático."
+  },
+  {
+   "key": "agente",
+   "fala": "n7",
+   "t0": 27.034,
+   "t1": 34.614,
+   "v0": 27.234,
+   "v1": 34.014,
+   "texto": "A ligação fora do horário, um agente de voz com IA atende, qualifica, registra e passa para a equipe."
+  },
+  {
+   "key": "integra",
+   "fala": "n8",
+   "t0": 34.614,
+   "t1": 38.804,
+   "v0": 34.814,
+   "v1": 38.204,
+   "texto": "O pedido entra uma vez: os sistemas são integrados."
+  },
+  {
+   "key": "processo",
+   "fala": "n9",
+   "t0": 38.804,
+   "t1": 44.269,
+   "v0": 39.004,
+   "v1": 43.369,
+   "texto": "E o que só você sabe vira processo, mapeado e padronizado."
+  },
+  {
+   "key": "metodo",
+   "fala": "n10",
+   "t0": 44.269,
+   "t1": 50.91,
+   "v0": 44.569,
+   "v1": 49.91,
+   "texto": "A DME entende a sua operação, planeja e desenvolve sob medida."
+  },
+  {
+   "key": "assinatura",
+   "fala": "n11",
+   "t0": 50.91,
+   "t1": 57.393,
+   "v0": 51.21,
+   "v1": 55.993,
+   "texto": "DME Technology. Automatizamos processos. Devolvemos tempo."
+  }
+ ],
+ "words": {
+  "gancho": [
+   [
+    "Essa",
+    0.4,
+    0.713
+   ],
+   [
+    "é",
+    0.783,
+    0.818
+   ],
+   [
+    "a",
+    0.853,
+    0.888
+   ],
+   [
+    "semana",
+    0.946,
+    1.294
+   ],
+   [
+    "de",
+    1.34,
+    1.398
+   ],
+   [
+    "quem",
+    1.445,
+    1.561
+   ],
+   [
+    "tem",
+    1.619,
+    1.735
+   ],
+   [
+    "uma",
+    1.782,
+    1.874
+   ],
+   [
+    "empresa.",
+    1.898,
+    2.583
+   ]
+  ],
+  "tarefas": [
+   [
+    "Cobrar",
+    3.183,
+    3.566
+   ],
+   [
+    "retorno.",
+    3.613,
+    4.193
+   ],
+   [
+    "Redigitar",
+    4.483,
+    5.006
+   ],
+   [
+    "pedido.",
+    5.064,
+    5.668
+   ],
+   [
+    "Atender",
+    5.993,
+    6.411
+   ],
+   [
+    "ligação.",
+    6.457,
+    7.13
+   ],
+   [
+    "Procurar",
+    7.455,
+    7.897
+   ],
+   [
+    "arquivo.",
+    7.943,
+    8.558
+   ],
+   [
+    "Explicar",
+    8.872,
+    9.313
+   ],
+   [
+    "de",
+    9.371,
+    9.429
+   ],
+   [
+    "novo.",
+    9.487,
+    10.149
+   ]
+  ],
+  "cheia": [
+   [
+    "Toda",
+    10.849,
+    11.116
+   ],
+   [
+    "semana,",
+    11.162,
+    11.627
+   ],
+   [
+    "as",
+    11.673,
+    11.813
+   ],
+   [
+    "mesmas",
+    11.882,
+    12.231
+   ],
+   [
+    "tarefas.",
+    12.277,
+    12.892
+   ]
+  ],
+  "estrategia": [
+   [
+    "E",
+    13.692,
+    13.82
+   ],
+   [
+    "a",
+    13.866,
+    13.889
+   ],
+   [
+    "estratégia?",
+    13.924,
+    14.725
+   ],
+   [
+    "Ficou",
+    15.12,
+    15.375
+   ],
+   [
+    "pra",
+    15.422,
+    15.55
+   ],
+   [
+    "sexta,",
+    15.608,
+    16.118
+   ],
+   [
+    "às",
+    16.188,
+    16.327
+   ],
+   [
+    "sete",
+    16.362,
+    16.618
+   ],
+   [
+    "da",
+    16.664,
+    16.734
+   ],
+   [
+    "noite.",
+    16.792,
+    17.314
+   ]
+  ],
+  "agora": [
+   [
+    "Agora,",
+    18.064,
+    18.528
+   ],
+   [
+    "a",
+    18.586,
+    18.644
+   ],
+   [
+    "mesma",
+    18.703,
+    18.993
+   ],
+   [
+    "semana.",
+    19.028,
+    19.55
+   ],
+   [
+    "Com",
+    19.922,
+    20.061
+   ],
+   [
+    "processo.",
+    20.107,
+    21.64
+   ]
+  ],
+  "crm": [
+   [
+    "O",
+    22.44,
+    22.579
+   ],
+   [
+    "retorno,",
+    22.637,
+    23.334
+   ],
+   [
+    "o",
+    23.438,
+    23.52
+   ],
+   [
+    "Cê-Erre-Eme",
+    23.578,
+    24.565
+   ],
+   [
+    "faz",
+    24.669,
+    24.925
+   ],
+   [
+    "automático.",
+    24.983,
+    26.434
+   ]
+  ],
+  "agente": [
+   [
+    "A",
+    27.234,
+    27.315
+   ],
+   [
+    "ligação",
+    27.373,
+    27.745
+   ],
+   [
+    "fora",
+    27.78,
+    27.965
+   ],
+   [
+    "do",
+    28.0,
+    28.07
+   ],
+   [
+    "horário,",
+    28.116,
+    28.476
+   ],
+   [
+    "um",
+    28.523,
+    28.627
+   ],
+   [
+    "agente",
+    28.685,
+    28.952
+   ],
+   [
+    "de",
+    28.999,
+    29.057
+   ],
+   [
+    "voz",
+    29.115,
+    29.312
+   ],
+   [
+    "com",
+    29.37,
+    29.486
+   ],
+   [
+    "I-A",
+    29.556,
+    29.858
+   ],
+   [
+    "atende,",
+    29.962,
+    30.543
+   ],
+   [
+    "qualifica,",
+    30.589,
+    31.205
+   ],
+   [
+    "registra",
+    31.263,
+    31.774
+   ],
+   [
+    "e",
+    31.832,
+    31.936
+   ],
+   [
+    "passa",
+    31.994,
+    32.284
+   ],
+   [
+    "para",
+    32.331,
+    32.493
+   ],
+   [
+    "a",
+    32.517,
+    32.54
+   ],
+   [
+    "equipe.",
+    32.609,
+    34.014
+   ]
+  ],
+  "integra": [
+   [
+    "O",
+    34.814,
+    34.93
+   ],
+   [
+    "pedido",
+    34.988,
+    35.325
+   ],
+   [
+    "entra",
+    35.383,
+    35.627
+   ],
+   [
+    "uma",
+    35.662,
+    35.812
+   ],
+   [
+    "vez:",
+    35.859,
+    36.312
+   ],
+   [
+    "os",
+    36.764,
+    36.869
+   ],
+   [
+    "sistemas",
+    36.892,
+    37.287
+   ],
+   [
+    "são",
+    37.31,
+    37.461
+   ],
+   [
+    "integrados.",
+    37.496,
+    38.204
+   ]
+  ],
+  "processo": [
+   [
+    "E",
+    39.004,
+    39.074
+   ],
+   [
+    "o",
+    39.132,
+    39.155
+   ],
+   [
+    "que",
+    39.201,
+    39.283
+   ],
+   [
+    "só",
+    39.329,
+    39.434
+   ],
+   [
+    "você",
+    39.48,
+    39.654
+   ],
+   [
+    "sabe",
+    39.724,
+    40.002
+   ],
+   [
+    "vira",
+    40.061,
+    40.258
+   ],
+   [
+    "processo,",
+    40.316,
+    40.943
+   ],
+   [
+    "mapeado",
+    40.978,
+    41.605
+   ],
+   [
+    "e",
+    41.663,
+    41.744
+   ],
+   [
+    "padronizado.",
+    41.802,
+    43.369
+   ]
+  ],
+  "metodo": [
+   [
+    "A",
+    44.569,
+    44.673
+   ],
+   [
+    "Dê-Eme-É",
+    44.743,
+    45.208
+   ],
+   [
+    "entende",
+    45.289,
+    45.707
+   ],
+   [
+    "a",
+    45.742,
+    45.765
+   ],
+   [
+    "sua",
+    45.811,
+    45.951
+   ],
+   [
+    "operação,",
+    45.985,
+    46.612
+   ],
+   [
+    "planeja",
+    46.682,
+    47.17
+   ],
+   [
+    "e",
+    47.239,
+    47.321
+   ],
+   [
+    "desenvolve",
+    47.379,
+    47.936
+   ],
+   [
+    "sob",
+    47.994,
+    48.191
+   ],
+   [
+    "medida.",
+    48.261,
+    49.91
+   ]
+  ],
+  "assinatura": [
+   [
+    "Dê-Eme-É",
+    51.21,
+    51.744
+   ],
+   [
+    "Technology.",
+    51.814,
+    52.58
+   ],
+   [
+    "Automatizamos",
+    52.917,
+    53.671
+   ],
+   [
+    "processos.",
+    53.718,
+    54.507
+   ],
+   [
+    "Devolvemos",
+    54.856,
+    55.424
+   ],
+   [
+    "tempo.",
+    55.482,
+    55.993
+   ]
+  ]
+ },
+ "captions": [
+  {
+   "start": 0.4,
+   "end": 2.833,
+   "text": "Essa é a semana de quem tem uma empresa.",
+   "scene": "gancho"
+  },
+  {
+   "start": 3.183,
+   "end": 5.918,
+   "text": "Cobrar retorno. Redigitar pedido.",
+   "scene": "tarefas"
+  },
+  {
+   "start": 5.993,
+   "end": 8.808,
+   "text": "Atender ligação. Procurar arquivo.",
+   "scene": "tarefas"
+  },
+  {
+   "start": 8.872,
+   "end": 10.399,
+   "text": "Explicar de novo.",
+   "scene": "tarefas"
+  },
+  {
+   "start": 10.849,
+   "end": 13.142,
+   "text": "Toda semana, as mesmas tarefas.",
+   "scene": "cheia"
+  },
+  {
+   "start": 13.692,
+   "end": 14.975,
+   "text": "E a estratégia?",
+   "scene": "estrategia"
+  },
+  {
+   "start": 15.12,
+   "end": 17.564,
+   "text": "Ficou pra sexta, às sete da noite.",
+   "scene": "estrategia"
+  },
+  {
+   "start": 18.064,
+   "end": 19.8,
+   "text": "Agora, a mesma semana.",
+   "scene": "agora"
+  },
+  {
+   "start": 19.922,
+   "end": 21.89,
+   "text": "Com processo.",
+   "scene": "agora"
+  },
+  {
+   "start": 22.44,
+   "end": 26.684,
+   "text": "O retorno, o CRM faz automático.",
+   "scene": "crm"
+  },
+  {
+   "start": 27.234,
+   "end": 28.523,
+   "text": "A ligação fora do horário,",
+   "scene": "agente"
+  },
+  {
+   "start": 28.523,
+   "end": 31.263,
+   "text": "um agente de voz com IA atende, qualifica,",
+   "scene": "agente"
+  },
+  {
+   "start": 31.263,
+   "end": 34.264,
+   "text": "registra e passa para a equipe.",
+   "scene": "agente"
+  },
+  {
+   "start": 34.814,
+   "end": 36.562,
+   "text": "O pedido entra uma vez:",
+   "scene": "integra"
+  },
+  {
+   "start": 36.764,
+   "end": 38.454,
+   "text": "os sistemas são integrados.",
+   "scene": "integra"
+  },
+  {
+   "start": 39.004,
+   "end": 43.619,
+   "text": "E o que só você sabe vira processo, mapeado e padronizado.",
+   "scene": "processo"
+  },
+  {
+   "start": 44.569,
+   "end": 50.16,
+   "text": "A DME entende a sua operação, planeja e desenvolve sob medida.",
+   "scene": "metodo"
+  },
+  {
+   "start": 51.21,
+   "end": 52.83,
+   "text": "DME Technology.",
+   "scene": "assinatura"
+  },
+  {
+   "start": 52.917,
+   "end": 56.243,
+   "text": "Automatizamos processos. Devolvemos tempo.",
+   "scene": "assinatura"
+  }
+ ]
+}
