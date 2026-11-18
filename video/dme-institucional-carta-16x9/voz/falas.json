@@ -1,0 +1,13 @@
+[
+ {"id": "n1", "text": "Você lembra por que abriu a sua empresa?"},
+ {"id": "n2", "text": "Provavelmente não foi pra responder mensagem no almoço."},
+ {"id": "n3", "text": "Nem pra ser a única pessoa que sabe onde fica cada arquivo."},
+ {"id": "n4", "text": "Isso acontece quando a empresa cresce mais rápido que os processos."},
+ {"id": "n5", "text": "A Dê-Eme-É trabalha exatamente nesse ponto.", "legenda": "A DME trabalha exatamente nesse ponto."},
+ {"id": "n6", "text": "Primeiro, entende como a sua operação funciona hoje, onde ela trava e quem fica esperando quem."},
+ {"id": "n7", "text": "Depois, mapeia e padroniza cada etapa."},
+ {"id": "n8", "text": "E desenvolve a solução sob medida, com inteligência artificial, automação e integração de sistemas."},
+ {"id": "n9", "text": "Um Cê-Erre-Eme que faz o retorno que ninguém lembrou. <break time=\"0.3s\" /> Um agente de voz com I-A que atende o cliente das sete da noite e passa para a sua equipe.", "legenda": "Um CRM que faz o retorno que ninguém lembrou. Um agente de voz com IA que atende o cliente das sete da noite e passa para a sua equipe."},
+ {"id": "n10", "text": "Pra você voltar a cuidar do que fez você abrir a empresa."},
+ {"id": "n11", "text": "Dê-Eme-É Technology. <break time=\"0.3s\" /> Automatizamos processos. <break time=\"0.25s\" /> Devolvemos tempo.", "legenda": "DME Technology. Automatizamos processos. Devolvemos tempo."}
+]

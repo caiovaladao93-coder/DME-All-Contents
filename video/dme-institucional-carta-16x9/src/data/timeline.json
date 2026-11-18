@@ -1,0 +1,868 @@
+{
+ "fps": 30,
+ "dur": 59.667,
+ "frames": 1790,
+ "scenes": [
+  {
+   "key": "gancho",
+   "fala": "n1",
+   "t0": 0.0,
+   "t1": 4.019,
+   "v0": 0.4,
+   "v1": 3.419,
+   "texto": "Você lembra por que abriu a sua empresa?"
+  },
+  {
+   "key": "almoco",
+   "fala": "n2",
+   "t0": 4.019,
+   "t1": 7.591,
+   "v0": 4.219,
+   "v1": 7.191,
+   "texto": "Provavelmente não foi pra responder mensagem no almoço."
+  },
+  {
+   "key": "arquivo",
+   "fala": "n3",
+   "t0": 7.591,
+   "t1": 11.82,
+   "v0": 7.791,
+   "v1": 11.32,
+   "texto": "Nem pra ser a única pessoa que sabe onde fica cada arquivo."
+  },
+  {
+   "key": "cresce",
+   "fala": "n4",
+   "t0": 11.82,
+   "t1": 16.421,
+   "v0": 12.02,
+   "v1": 15.921,
+   "texto": "Isso acontece quando a empresa cresce mais rápido que os processos."
+  },
+  {
+   "key": "dme",
+   "fala": "n5",
+   "t0": 16.421,
+   "t1": 20.436,
+   "v0": 16.871,
+   "v1": 19.936,
+   "texto": "A DME trabalha exatamente nesse ponto."
+  },
+  {
+   "key": "entender",
+   "fala": "n6",
+   "t0": 20.436,
+   "t1": 27.22,
+   "v0": 20.636,
+   "v1": 26.72,
+   "texto": "Primeiro, entende como a sua operação funciona hoje, onde ela trava e quem fica esperando quem."
+  },
+  {
+   "key": "planejar",
+   "fala": "n7",
+   "t0": 27.22,
+   "t1": 30.76,
+   "v0": 27.42,
+   "v1": 30.16,
+   "texto": "Depois, mapeia e padroniza cada etapa."
+  },
+  {
+   "key": "desenvolver",
+   "fala": "n8",
+   "t0": 30.76,
+   "t1": 38.898,
+   "v0": 30.96,
+   "v1": 38.298,
+   "texto": "E desenvolve a solução sob medida, com inteligência artificial, automação e integração de sistemas."
+  },
+  {
+   "key": "provas",
+   "fala": "n9",
+   "t0": 38.898,
+   "t1": 49.179,
+   "v0": 39.098,
+   "v1": 48.479,
+   "texto": "Um CRM que faz o retorno que ninguém lembrou. Um agente de voz com IA que atende o cliente das sete da noite e passa para a sua equipe."
+  },
+  {
+   "key": "fecho",
+   "fala": "n10",
+   "t0": 49.179,
+   "t1": 53.344,
+   "v0": 49.479,
+   "v1": 52.544,
+   "texto": "Pra você voltar a cuidar do que fez você abrir a empresa."
+  },
+  {
+   "key": "assinatura",
+   "fala": "n11",
+   "t0": 53.344,
+   "t1": 59.652,
+   "v0": 53.644,
+   "v1": 58.752,
+   "texto": "DME Technology. Automatizamos processos. Devolvemos tempo."
+  }
+ ],
+ "words": {
+  "gancho": [
+   [
+    "Você",
+    0.4,
+    0.655
+   ],
+   [
+    "lembra",
+    0.725,
+    1.004
+   ],
+   [
+    "por",
+    1.039,
+    1.166
+   ],
+   [
+    "que",
+    1.213,
+    1.294
+   ],
+   [
+    "abriu",
+    1.34,
+    1.561
+   ],
+   [
+    "a",
+    1.607,
+    1.631
+   ],
+   [
+    "sua",
+    1.665,
+    1.782
+   ],
+   [
+    "empresa?",
+    1.805,
+    3.419
+   ]
+  ],
+  "almoco": [
+   [
+    "Provavelmente",
+    4.219,
+    4.939
+   ],
+   [
+    "não",
+    4.985,
+    5.078
+   ],
+   [
+    "foi",
+    5.113,
+    5.252
+   ],
+   [
+    "pra",
+    5.287,
+    5.403
+   ],
+   [
+    "responder",
+    5.426,
+    5.833
+   ],
+   [
+    "mensagem",
+    5.879,
+    6.378
+   ],
+   [
+    "no",
+    6.402,
+    6.483
+   ],
+   [
+    "almoço.",
+    6.529,
+    7.191
+   ]
+  ],
+  "arquivo": [
+   [
+    "Nem",
+    7.791,
+    7.988
+   ],
+   [
+    "pra",
+    8.023,
+    8.139
+   ],
+   [
+    "ser",
+    8.186,
+    8.337
+   ],
+   [
+    "a",
+    8.383,
+    8.406
+   ],
+   [
+    "única",
+    8.464,
+    8.697
+   ],
+   [
+    "pessoa",
+    8.743,
+    9.103
+   ],
+   [
+    "que",
+    9.138,
+    9.231
+   ],
+   [
+    "sabe",
+    9.289,
+    9.532
+   ],
+   [
+    "onde",
+    9.567,
+    9.707
+   ],
+   [
+    "fica",
+    9.765,
+    10.032
+   ],
+   [
+    "cada",
+    10.09,
+    10.334
+   ],
+   [
+    "arquivo.",
+    10.357,
+    11.32
+   ]
+  ],
+  "cresce": [
+   [
+    "Isso",
+    12.02,
+    12.252
+   ],
+   [
+    "acontece",
+    12.287,
+    12.763
+   ],
+   [
+    "quando",
+    12.809,
+    13.007
+   ],
+   [
+    "a",
+    13.03,
+    13.053
+   ],
+   [
+    "empresa",
+    13.088,
+    13.46
+   ],
+   [
+    "cresce",
+    13.506,
+    13.796
+   ],
+   [
+    "mais",
+    13.843,
+    14.04
+   ],
+   [
+    "rápido",
+    14.098,
+    14.446
+   ],
+   [
+    "que",
+    14.481,
+    14.551
+   ],
+   [
+    "os",
+    14.574,
+    14.632
+   ],
+   [
+    "processos.",
+    14.679,
+    15.921
+   ]
+  ],
+  "dme": [
+   [
+    "A",
+    16.871,
+    16.964
+   ],
+   [
+    "Dê-Eme-É",
+    17.057,
+    17.614
+   ],
+   [
+    "trabalha",
+    17.73,
+    18.206
+   ],
+   [
+    "exatamente",
+    18.253,
+    18.856
+   ],
+   [
+    "nesse",
+    18.903,
+    19.1
+   ],
+   [
+    "ponto.",
+    19.158,
+    19.936
+   ]
+  ],
+  "entender": [
+   [
+    "Primeiro,",
+    20.636,
+    21.24
+   ],
+   [
+    "entende",
+    21.309,
+    21.751
+   ],
+   [
+    "como",
+    21.797,
+    21.971
+   ],
+   [
+    "a",
+    21.994,
+    22.018
+   ],
+   [
+    "sua",
+    22.064,
+    22.238
+   ],
+   [
+    "operação",
+    22.285,
+    22.784
+   ],
+   [
+    "funciona",
+    22.819,
+    23.225
+   ],
+   [
+    "hoje,",
+    23.271,
+    23.678
+   ],
+   [
+    "onde",
+    23.817,
+    24.061
+   ],
+   [
+    "ela",
+    24.084,
+    24.212
+   ],
+   [
+    "trava",
+    24.258,
+    24.699
+   ],
+   [
+    "e",
+    24.816,
+    24.932
+   ],
+   [
+    "quem",
+    24.99,
+    25.117
+   ],
+   [
+    "fica",
+    25.164,
+    25.361
+   ],
+   [
+    "esperando",
+    25.384,
+    25.802
+   ],
+   [
+    "quem.",
+    25.872,
+    26.72
+   ]
+  ],
+  "planejar": [
+   [
+    "Depois,",
+    27.42,
+    27.826
+   ],
+   [
+    "mapeia",
+    27.85,
+    28.279
+   ],
+   [
+    "e",
+    28.314,
+    28.337
+   ],
+   [
+    "padroniza",
+    28.395,
+    29.022
+   ],
+   [
+    "cada",
+    29.08,
+    29.324
+   ],
+   [
+    "etapa.",
+    29.347,
+    30.16
+   ]
+  ],
+  "desenvolver": [
+   [
+    "E",
+    30.96,
+    31.064
+   ],
+   [
+    "desenvolve",
+    31.146,
+    31.668
+   ],
+   [
+    "a",
+    31.691,
+    31.715
+   ],
+   [
+    "solução",
+    31.749,
+    32.167
+   ],
+   [
+    "sob",
+    32.191,
+    32.365
+   ],
+   [
+    "medida,",
+    32.446,
+    33.015
+   ],
+   [
+    "com",
+    33.085,
+    33.224
+   ],
+   [
+    "inteligência",
+    33.259,
+    33.886
+   ],
+   [
+    "artificial,",
+    33.909,
+    34.722
+   ],
+   [
+    "automação",
+    34.791,
+    35.534
+   ],
+   [
+    "e",
+    35.674,
+    35.767
+   ],
+   [
+    "integração",
+    35.801,
+    36.359
+   ],
+   [
+    "de",
+    36.393,
+    36.452
+   ],
+   [
+    "sistemas.",
+    36.498,
+    38.298
+   ]
+  ],
+  "provas": [
+   [
+    "Um",
+    39.098,
+    39.261
+   ],
+   [
+    "Cê-Erre-Eme",
+    39.33,
+    40.073
+   ],
+   [
+    "que",
+    40.131,
+    40.201
+   ],
+   [
+    "faz",
+    40.271,
+    40.445
+   ],
+   [
+    "o",
+    40.514,
+    40.538
+   ],
+   [
+    "retorno",
+    40.584,
+    41.014
+   ],
+   [
+    "que",
+    41.072,
+    41.141
+   ],
+   [
+    "ninguém",
+    41.188,
+    41.455
+   ],
+   [
+    "lembrou.",
+    41.501,
+    42.047
+   ],
+   [
+    "Um",
+    42.418,
+    42.5
+   ],
+   [
+    "agente",
+    42.546,
+    42.86
+   ],
+   [
+    "de",
+    42.906,
+    42.964
+   ],
+   [
+    "voz",
+    43.022,
+    43.231
+   ],
+   [
+    "com",
+    43.289,
+    43.417
+   ],
+   [
+    "I-A",
+    43.51,
+    43.777
+   ],
+   [
+    "que",
+    43.939,
+    44.055
+   ],
+   [
+    "atende",
+    44.09,
+    44.404
+   ],
+   [
+    "o",
+    44.439,
+    44.462
+   ],
+   [
+    "cliente",
+    44.497,
+    44.857
+   ],
+   [
+    "das",
+    44.903,
+    45.031
+   ],
+   [
+    "sete",
+    45.054,
+    45.309
+   ],
+   [
+    "da",
+    45.356,
+    45.425
+   ],
+   [
+    "noite",
+    45.483,
+    45.89
+   ],
+   [
+    "e",
+    46.006,
+    46.145
+   ],
+   [
+    "passa",
+    46.215,
+    46.482
+   ],
+   [
+    "para",
+    46.528,
+    46.679
+   ],
+   [
+    "a",
+    46.703,
+    46.726
+   ],
+   [
+    "sua",
+    46.761,
+    46.9
+   ],
+   [
+    "equipe.",
+    46.935,
+    48.479
+   ]
+  ],
+  "fecho": [
+   [
+    "Pra",
+    49.479,
+    49.665
+   ],
+   [
+    "você",
+    49.7,
+    49.874
+   ],
+   [
+    "voltar",
+    49.943,
+    50.257
+   ],
+   [
+    "a",
+    50.292,
+    50.315
+   ],
+   [
+    "cuidar",
+    50.338,
+    50.686
+   ],
+   [
+    "do",
+    50.744,
+    50.803
+   ],
+   [
+    "que",
+    50.849,
+    50.919
+   ],
+   [
+    "fez",
+    50.977,
+    51.139
+   ],
+   [
+    "você",
+    51.197,
+    51.395
+   ],
+   [
+    "abrir",
+    51.453,
+    51.731
+   ],
+   [
+    "a",
+    51.755,
+    51.778
+   ],
+   [
+    "empresa.",
+    51.801,
+    52.544
+   ]
+  ],
+  "assinatura": [
+   [
+    "Dê-Eme-É",
+    53.644,
+    54.224
+   ],
+   [
+    "Technology.",
+    54.341,
+    55.153
+   ],
+   [
+    "Automatizamos",
+    55.513,
+    56.256
+   ],
+   [
+    "processos.",
+    56.314,
+    57.15
+   ],
+   [
+    "Devolvemos",
+    57.475,
+    58.102
+   ],
+   [
+    "tempo.",
+    58.184,
+    58.752
+   ]
+  ]
+ },
+ "captions": [
+  {
+   "start": 0.4,
+   "end": 3.669,
+   "text": "Você lembra por que abriu a sua empresa?",
+   "scene": "gancho"
+  },
+  {
+   "start": 4.219,
+   "end": 7.441,
+   "text": "Provavelmente não foi pra responder mensagem no almoço.",
+   "scene": "almoco"
+  },
+  {
+   "start": 7.791,
+   "end": 11.57,
+   "text": "Nem pra ser a única pessoa que sabe onde fica cada arquivo.",
+   "scene": "arquivo"
+  },
+  {
+   "start": 12.02,
+   "end": 16.171,
+   "text": "Isso acontece quando a empresa cresce mais rápido que os processos.",
+   "scene": "cresce"
+  },
+  {
+   "start": 16.871,
+   "end": 20.186,
+   "text": "A DME trabalha exatamente nesse ponto.",
+   "scene": "dme"
+  },
+  {
+   "start": 20.636,
+   "end": 23.817,
+   "text": "Primeiro, entende como a sua operação funciona hoje,",
+   "scene": "entender"
+  },
+  {
+   "start": 23.817,
+   "end": 26.97,
+   "text": "onde ela trava e quem fica esperando quem.",
+   "scene": "entender"
+  },
+  {
+   "start": 27.42,
+   "end": 30.41,
+   "text": "Depois, mapeia e padroniza cada etapa.",
+   "scene": "planejar"
+  },
+  {
+   "start": 30.96,
+   "end": 33.085,
+   "text": "E desenvolve a solução sob medida,",
+   "scene": "desenvolver"
+  },
+  {
+   "start": 33.085,
+   "end": 38.548,
+   "text": "com inteligência artificial, automação e integração de sistemas.",
+   "scene": "desenvolver"
+  },
+  {
+   "start": 39.098,
+   "end": 42.297,
+   "text": "Um CRM que faz o retorno que ninguém lembrou.",
+   "scene": "provas"
+  },
+  {
+   "start": 42.418,
+   "end": 46.006,
+   "text": "Um agente de voz com IA que atende o cliente das sete da noite",
+   "scene": "provas"
+  },
+  {
+   "start": 46.006,
+   "end": 48.729,
+   "text": "e passa para a sua equipe.",
+   "scene": "provas"
+  },
+  {
+   "start": 49.479,
+   "end": 52.794,
+   "text": "Pra você voltar a cuidar do que fez você abrir a empresa.",
+   "scene": "fecho"
+  },
+  {
+   "start": 53.644,
+   "end": 55.403,
+   "text": "DME Technology.",
+   "scene": "assinatura"
+  },
+  {
+   "start": 55.513,
+   "end": 59.002,
+   "text": "Automatizamos processos. Devolvemos tempo.",
+   "scene": "assinatura"
+  }
+ ]
+}
