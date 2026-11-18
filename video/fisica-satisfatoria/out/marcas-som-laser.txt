@@ -1,0 +1,22 @@
+MARCAS DE SOM · LASER (sem narração; 391 cortes tocados de 2049)
+
+  0.00  ding (o mesmo do fim: loop)
+  0.80  o laser liga: zumbido elétrico contínuo
+  1.73  dobrou: 2 bolas
+  1.73  primeiro corte: "zip" de laser + "tsk" afinado
+ 11.53  dobrou: 4 bolas
+ 15.70  dobrou: 8 bolas
+ 20.33  dobrou: 16 bolas
+ 24.97  dobrou: 32 bolas
+ 29.67  dobrou: 64 bolas
+ 30.00  entra batida leve
+ 35.47  dobrou: 128 bolas
+ 45.50  dobrou: 256 bolas
+ 49.87  dobrou: 512 bolas
+ 54.33  dobrou: 1024 bolas
+ 61.30  ANEL LOTADO: o laser superaquece (zumbido sobe, feixe engrossa e pisca)
+ 61.30  dobrou: 2048 bolas
+ 63.90  queimando: estalos elétricos
+ 64.75  silêncio antes de quebrar
+ 65.10  QUEIMOU: o feixe apaga e o anel explode em 16 (2049 cortes)
+ 68.10  volta ao emissor com 1 bola (loop)

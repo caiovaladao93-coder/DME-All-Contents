@@ -114,6 +114,18 @@ Regra da série: todo vídeo **começa com 1 bola**, ela se multiplica e **explo
   - quebra com boom, pedaços e acorde.
 - Teste rápido sem desenho: `RAPIDO=1 python3 scripts/serra.py`.
 
+### 8 · Laser (`scripts/laser.py` + `scripts/som_laser.py` → `out/Laser.mp4`, 69,7 s)
+- **Formato:** o mesmo da Lâmina e da Serra (anel branco, título "LASER" no topo, contador, bolas de uma cor só e sem efeitos), com outro cortante: um emissor de aço anda pela borda do anel e dispara um feixe vermelho que reflete 2 vezes nas paredes (3 trechos). O ângulo do feixe abre e fecha, então a figura gira, "respira" e varre o anel inteiro.
+- **Corte:** toda bola que o feixe atravessa é cortada ao meio (metades e risco branco, como na Lâmina). Cada metade só pode ser cortada de novo depois de 2,5 s, para o crescimento ficar gradual. O primeiro corte acontece logo no começo, e o vídeo chega a 2.050 bolas em cerca de 61 s.
+- **Final:** "SUPERAQUECENDO..." (o feixe engrossa, pisca e acelera) → "QUEIMANDO..." (o feixe falha e apaga) → o anel explode → "QUEIMOU! N CORTES! Você chutou quanto?" → loop.
+- **Som:**
+  - zumbido elétrico contínuo que sobe no superaquecimento;
+  - cada corte faz um "zip" de laser e um "tsk" afinado em arpejo;
+  - sino cada vez que o total dobra;
+  - cama calma com batida leve depois de 30 s;
+  - estalos elétricos ao queimar, boom e acorde.
+- Teste rápido sem desenho: `RAPIDO=1 python3 scripts/laser.py`.
+
 ### Próximos mecanismos (um por vídeo)
 1. **Divisão celular:** cada batida divide a bola em duas menores, até virar "areia" que transborda.
 2. ~~Ampulheta~~ (feito).
