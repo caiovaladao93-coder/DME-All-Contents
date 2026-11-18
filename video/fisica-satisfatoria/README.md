@@ -81,11 +81,15 @@ Regra da série: todo vídeo **começa com 1 bola**, ela se multiplica e **explo
 - **Som:** as bolas engolidas tocam um arpejo no tempo (semicolcheias a 120 BPM, Lám–Fá–Dó–Sol) e as 60 primeiras fazem um "glup". Há também um zumbido que cresce com o buraco, uma sirene quando a arena enche, sucção na implosão e boom com acorde no fim.
 - Teste rápido sem desenho: `RAPIDO=1 python3 scripts/buraco.py`.
 
-### 6 · Lâmina (`scripts/lamina.py` + `scripts/som_lamina.py` → `out/Lamina.mp4`, 70,1 s · v2 calma)
+### 6 · Lâmina (`scripts/lamina.py` + `scripts/som_lamina.py` → `out/Lamina.mp4`, 62,1 s · v3)
 - **Formato:** o estilo "anel + arma girando no centro" de uma referência enviada pelo usuário, com arte, título e mecânica próprios. No topo, "LÂMINA" e o contador; embaixo, "volta N".
 - **Gancho:** "Cada corte = ×2 · Quantas até ela quebrar? Chuta!"
-- **v2 (pedido do usuário):**
-  - a lâmina gira devagar e com velocidade constante (uma volta a cada 5,4 s);
+- **v3 (pedido do usuário: "não precisa ser tão lento"):**
+  - a lâmina gira com velocidade constante, uma volta a cada 3,2 s, e vai até 78% do raio, então as bolas entram e saem do alcance;
+  - as bolas andam a 150–280 px/s;
+  - chega a 2.052 bolas em cerca de 54 s.
+- **v2 (calma):**
+  - a lâmina dava uma volta a cada 5,4 s;
   - toda bola que ela atravessa é cortada ao meio: as duas metades se abrem na linha do corte, um risco branco rápido marca o corte, e as metades se afastam e viram bolas inteiras;
   - como a lâmina varre o anel inteiro, as bolas quase dobram a cada volta (1 → 2.050 em 11 voltas);
   - as bolas são de uma cor só, sem rastro nem onda, e andam devagar (55–140 px/s).

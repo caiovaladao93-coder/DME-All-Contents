@@ -1,21 +1,26 @@
-MARCAS DE SOM · LÂMINA v2 (sem narração; 397 cortes tocados de 2049)
+MARCAS DE SOM · LÂMINA v2 (sem narração; 336 cortes tocados de 2051)
 
   0.00  ding (o mesmo do fim: loop)
-  3.27  primeiro corte: a bola abre em duas metades ("tsk" afinado)
-  5.40  volta 1 completa (×2)
- 10.77  volta 2 completa (×2)
- 16.20  volta 3 completa (×2)
- 21.60  volta 4 completa (×2)
- 27.00  volta 5 completa (×2)
- 32.37  volta 6 completa (×2)
- 37.77  volta 7 completa (×2)
- 43.17  volta 8 completa (×2)
- 48.57  entra uma batida leve nas últimas voltas
- 48.57  volta 9 completa (×2)
- 53.97  volta 10 completa (×2)
- 59.37  volta 11 completa (×2)
- 61.93  ANEL LOTADO: a lâmina trava, rangido metálico
- 64.07  lâmina parada: trincas
- 65.12  silêncio antes de quebrar
- 65.47  QUEBROU: a lâmina parte em 4 e o anel em 16 (2049 cortes)
- 68.47  volta à lâmina inteira com 1 bola (loop)
+  1.77  primeiro corte: a bola abre em duas metades ("tsk" afinado)
+  3.20  volta 1 completa (×2)
+  6.37  volta 2 completa (×2)
+  9.57  volta 3 completa (×2)
+ 12.80  volta 4 completa (×2)
+ 16.00  volta 5 completa (×2)
+ 19.20  volta 6 completa (×2)
+ 22.40  volta 7 completa (×2)
+ 25.60  volta 8 completa (×2)
+ 28.80  volta 9 completa (×2)
+ 32.00  volta 10 completa (×2)
+ 35.20  volta 11 completa (×2)
+ 38.40  volta 12 completa (×2)
+ 41.57  volta 13 completa (×2)
+ 44.77  entra uma batida leve nas últimas voltas
+ 44.77  volta 14 completa (×2)
+ 47.97  volta 15 completa (×2)
+ 51.17  volta 16 completa (×2)
+ 53.90  ANEL LOTADO: a lâmina trava, rangido metálico
+ 56.07  lâmina parada: trincas
+ 57.12  silêncio antes de quebrar
+ 57.47  QUEBROU: a lâmina parte em 4 e o anel em 16 (2051 cortes)
+ 60.47  volta à lâmina inteira com 1 bola (loop)
