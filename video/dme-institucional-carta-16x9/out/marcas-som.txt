@@ -1,0 +1,34 @@
+MARCAS · DME institucional "Por que você abriu a sua empresa?" (16:9) · 59.67 s · 30 fps · trilha original, 120 BPM, Ré menor (o dono hoje) → Fá maior (a DME)
+
+FALAS (DME Narrador, ElevenLabs, 1,1×; respirações removidas)
+  0.40–  3.42  [gancho] Você lembra por que abriu a sua empresa?
+  4.22–  7.19  [almoco] Provavelmente não foi pra responder mensagem no almoço.
+  7.79– 11.32  [arquivo] Nem pra ser a única pessoa que sabe onde fica cada arquivo.
+ 12.02– 15.92  [cresce] Isso acontece quando a empresa cresce mais rápido que os processos.
+ 16.87– 19.94  [dme] A DME trabalha exatamente nesse ponto.
+ 20.64– 26.72  [entender] Primeiro, entende como a sua operação funciona hoje, onde ela trava e quem fica esperando quem.
+ 27.42– 30.16  [planejar] Depois, mapeia e padroniza cada etapa.
+ 30.96– 38.30  [desenvolver] E desenvolve a solução sob medida, com inteligência artificial, automação e integração de sistemas.
+ 39.10– 48.48  [provas] Um CRM que faz o retorno que ninguém lembrou. Um agente de voz com IA que atende o cliente das sete da noite e passa para a sua equipe.
+ 49.48– 52.54  [fecho] Pra você voltar a cuidar do que fez você abrir a empresa.
+ 53.64– 58.75  [assinatura] DME Technology. Automatizamos processos. Devolvemos tempo.
+
+TRILHA E EFEITOS
+  0.20  porta "ABERTO" range e abre um pouco
+  5.63  celular vibra no almoço (notificação)
+  8.36  pasta "SÓ EU SEI" sobe
+ 12.02  escada da empresa sobe; régua dos processos fica para trás
+ 16.44  SILÊNCIO (0.43 s) antes da DME
+ 16.87  DME entra: a régua se alinha (Fá maior)
+ 20.54  placa 01
+ 24.26  marcador no gargalo ("quem espera quem")
+ 27.32  placa 02
+ 27.85  etapas se alinham
+ 31.05  placa 03
+ 33.16  selos IA, AUTOMAÇÃO, INTEGRAÇÃO
+ 41.35  CRM: retorno enviado
+ 43.94  agente: atendida
+ 44.90  agente: qualificada
+ 46.07  agente: transferida para comercial
+ 51.15  a porta "ABERTO" se abre por inteiro (loop)
+ 53.34  assinatura: logo, slogan, acorde final

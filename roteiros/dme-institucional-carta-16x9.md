@@ -53,3 +53,8 @@
 - **C:** "E a pergunta do começo volta a ter resposta." É mais sutil, sem promessa direta.
 
 **CTA (linha 12):** manter "Converse com a DME." (o CTA institucional da marca) ou terminar só com o slogan, como nos dois últimos vídeos?
+
+## Decisões do usuário (produzido em `video/dme-institucional-carta-16x9/`)
+
+- Fecho A: "Pra você voltar a cuidar do que fez você abrir a empresa."
+- Sem CTA: termina com o logo e o slogan.

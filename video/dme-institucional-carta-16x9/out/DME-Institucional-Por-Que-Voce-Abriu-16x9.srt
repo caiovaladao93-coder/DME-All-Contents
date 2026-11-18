@@ -1,0 +1,63 @@
+1
+00:00:00,400 --> 00:00:03,669
+Você lembra por que abriu a sua empresa?
+
+2
+00:00:04,219 --> 00:00:07,441
+Provavelmente não foi pra responder mensagem no almoço.
+
+3
+00:00:07,791 --> 00:00:11,570
+Nem pra ser a única pessoa que sabe onde fica cada arquivo.
+
+4
+00:00:12,020 --> 00:00:16,171
+Isso acontece quando a empresa cresce mais rápido que os processos.
+
+5
+00:00:16,871 --> 00:00:20,186
+A DME trabalha exatamente nesse ponto.
+
+6
+00:00:20,636 --> 00:00:23,817
+Primeiro, entende como a sua operação funciona hoje,
+
+7
+00:00:23,817 --> 00:00:26,970
+onde ela trava e quem fica esperando quem.
+
+8
+00:00:27,420 --> 00:00:30,410
+Depois, mapeia e padroniza cada etapa.
+
+9
+00:00:30,960 --> 00:00:33,085
+E desenvolve a solução sob medida,
+
+10
+00:00:33,085 --> 00:00:38,548
+com inteligência artificial, automação e integração de sistemas.
+
+11
+00:00:39,098 --> 00:00:42,297
+Um CRM que faz o retorno que ninguém lembrou.
+
+12
+00:00:42,418 --> 00:00:46,006
+Um agente de voz com IA que atende o cliente das sete da noite
+
+13
+00:00:46,006 --> 00:00:48,729
+e passa para a sua equipe.
+
+14
+00:00:49,479 --> 00:00:52,794
+Pra você voltar a cuidar do que fez você abrir a empresa.
+
+15
+00:00:53,644 --> 00:00:55,403
+DME Technology.
+
+16
+00:00:55,513 --> 00:00:59,002
+Automatizamos processos. Devolvemos tempo.
