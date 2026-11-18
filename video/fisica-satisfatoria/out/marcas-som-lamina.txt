@@ -1,10 +1,21 @@
-MARCAS DE SOM · LÂMINA (sem narração; 243 notas no tempo, 1499 cortes)
+MARCAS DE SOM · LÂMINA v2 (sem narração; 397 cortes tocados de 2049)
 
   0.00  ding (o mesmo do fim: loop)
-  0.60  a lâmina começa a girar (swish a cada meia volta, acelerando)
-  7.97  primeiro corte: a bola vira duas
- 51.37  ARENA CHEIA (1.500 bolas): a lâmina trava, rangido metálico
- 54.90  lâmina parada: trincas
- 56.00  silêncio antes de quebrar
- 56.30  QUEBROU: a lâmina parte em 4 e o anel em 16 (1499 cortes)
- 59.30  volta à lâmina inteira com 1 bola (loop)
+  3.27  primeiro corte: a bola abre em duas metades ("tsk" afinado)
+  5.40  volta 1 completa (×2)
+ 10.77  volta 2 completa (×2)
+ 16.20  volta 3 completa (×2)
+ 21.60  volta 4 completa (×2)
+ 27.00  volta 5 completa (×2)
+ 32.37  volta 6 completa (×2)
+ 37.77  volta 7 completa (×2)
+ 43.17  volta 8 completa (×2)
+ 48.57  entra uma batida leve nas últimas voltas
+ 48.57  volta 9 completa (×2)
+ 53.97  volta 10 completa (×2)
+ 59.37  volta 11 completa (×2)
+ 61.93  ANEL LOTADO: a lâmina trava, rangido metálico
+ 64.07  lâmina parada: trincas
+ 65.12  silêncio antes de quebrar
+ 65.47  QUEBROU: a lâmina parte em 4 e o anel em 16 (2049 cortes)
+ 68.47  volta à lâmina inteira com 1 bola (loop)
