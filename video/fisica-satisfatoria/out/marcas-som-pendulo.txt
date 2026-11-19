@@ -1,0 +1,21 @@
+MARCAS DE SOM · PÊNDULO (sem narração; 64 tique-taques, 2052 cortes)
+
+  0.00  ding (o mesmo do fim: loop)
+  0.50  tique-taque nos extremos do balanço + "vuuush" da lâmina passando
+  0.83  dobrou: 2 bolas
+  0.83  primeiro corte: "tsk" afinado
+ 10.97  dobrou: 4 bolas
+ 15.20  dobrou: 8 bolas
+ 20.97  dobrou: 16 bolas
+ 25.77  dobrou: 32 bolas
+ 31.23  dobrou: 64 bolas
+ 37.13  dobrou: 128 bolas
+ 42.17  dobrou: 256 bolas
+ 47.90  dobrou: 512 bolas
+ 53.93  dobrou: 1024 bolas
+ 60.03  ANEL LOTADO: o pêndulo perde força (tique-taque enfraquece), rangido
+ 60.03  dobrou: 2048 bolas
+ 64.03  parou: trincas
+ 65.08  silêncio antes de quebrar
+ 65.43  SE SOLTOU: a lâmina cai e o anel explode (2052 cortes)
+ 68.43  volta ao pêndulo parado com 1 bola (loop)

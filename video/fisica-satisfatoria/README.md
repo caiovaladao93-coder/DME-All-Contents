@@ -137,6 +137,19 @@ Regra da série: todo vídeo **começa com 1 bola**, ela se multiplica e **explo
   - rangido e snips falhos ao emperrar, trincas, silêncio e a quebra.
 - Teste rápido sem desenho: `RAPIDO=1 python3 scripts/tesoura.py`.
 
+### 10 · Pêndulo (`scripts/pendulo.py` + `scripts/som_pendulo.py` → `out/Pendulo.mp4`, 70,1 s)
+- **Formato:** o mesmo da Lâmina, da Serra, do Laser e da Tesoura (anel branco, título "PÊNDULO" no topo, contador, bolas de uma cor só e sem efeitos), com outro cortante: um pêndulo de relógio gigante preso no alto do anel (suporte e pivô), com haste de aço e lâmina em meia-lua com fio claro na ponta.
+- **Mecânica:** o pêndulo balança ±50°, com ida de 1 s no tempo da música (120 BPM). Toda bola que a lâmina atravessa é cortada ao meio. Chega a 2.053 bolas em cerca de 60 s.
+- **Final:** "PERDENDO FORÇA..." (a amplitude cai em 4 s) → "PAROU..." (tremor e trincas) → a haste se solta, a lâmina cai girando e o anel explode → "SE SOLTOU! N CORTES! Você chutou quanto?" → loop.
+- **Som:**
+  - tique-taque de relógio nos extremos e "vuuush" da lâmina passando;
+  - "tsk" afinado em arpejo a cada corte e sino cada vez que o total dobra;
+  - baixo e chimbal no tempo;
+  - o tique-taque enfraquece quando o pêndulo perde força;
+  - trincas, silêncio e a queda com boom.
+- **Mixagem:** compressor rápido antes do loudnorm, para segurar o pico dos tique-taques depois da codificação AAC.
+- Teste rápido sem desenho: `RAPIDO=1 python3 scripts/pendulo.py`.
+
 ### Próximos mecanismos (um por vídeo)
 1. **Divisão celular:** cada batida divide a bola em duas menores, até virar "areia" que transborda.
 2. ~~Ampulheta~~ (feito).

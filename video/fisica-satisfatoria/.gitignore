@@ -44,3 +44,7 @@ scripts/__pycache__/
 !out/capa-tesoura.png
 !out/marcas-som-tesoura.txt
 !out/conferencia-tesoura.txt
+!out/Pendulo.mp4
+!out/capa-pendulo.png
+!out/marcas-som-pendulo.txt
+!out/conferencia-pendulo.txt
