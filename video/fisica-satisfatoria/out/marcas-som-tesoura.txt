@@ -1,0 +1,20 @@
+MARCAS DE SOM · TESOURA (sem narração; 64 snips, 2048 cortes)
+
+  0.00  ding (o mesmo do fim: loop)
+  2.00  primeiro SNIP: "shhk" + estalo; cada snip toca um arpejo com as bolas cortadas
+  2.93  dobrou: 2 bolas
+  9.87  dobrou: 4 bolas
+ 17.93  dobrou: 8 bolas
+ 21.83  dobrou: 16 bolas
+ 27.83  dobrou: 32 bolas
+ 32.93  dobrou: 64 bolas
+ 38.97  dobrou: 128 bolas
+ 44.90  dobrou: 256 bolas
+ 50.87  dobrou: 512 bolas
+ 57.87  dobrou: 1024 bolas
+ 64.83  ANEL LOTADO: a tesoura emperra (tenta fechar e não consegue), rangido
+ 64.83  dobrou: 2048 bolas
+ 67.23  emperrou: trincas
+ 68.28  silêncio antes de quebrar
+ 68.63  QUEBROU: o parafuso estoura, as lâminas se separam e o anel explode (2048 cortes)
+ 71.63  volta à tesoura inteira com 1 bola (loop)

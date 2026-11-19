@@ -126,6 +126,17 @@ Regra da série: todo vídeo **começa com 1 bola**, ela se multiplica e **explo
   - estalos elétricos ao queimar, boom e acorde.
 - Teste rápido sem desenho: `RAPIDO=1 python3 scripts/laser.py`.
 
+### 9 · Tesoura (`scripts/tesoura.py` + `scripts/som_tesoura.py` → `out/Tesoura.mp4`, 73,3 s)
+- **Formato:** o mesmo da Lâmina, da Serra e do Laser (anel branco, título "TESOURA" no topo, contador, bolas de uma cor só e sem efeitos), com outro cortante: uma tesoura gigante no centro, com lâminas de aço afuniladas com fio, cabos vermelhos com argolas e parafuso no pivô.
+- **Mecânica:** a tesoura gira devagar e dá um SNIP a cada 1 s, no tempo da música (120 BPM): abre (0,6 s), segura (0,1 s) e fecha num estalo (0,3 s). Toda bola varrida pelas lâminas enquanto elas fecham é cortada ao meio, num corte coletivo e ritmado. Chega a 2.049 bolas em cerca de 65 s (64 snips).
+- **Final:** "EMPERRANDO..." (a tesoura não fecha mais e treme) → "EMPERROU..." (trincas) → o parafuso estoura, as lâminas se separam e o anel explode → "QUEBROU! N CORTES! Você chutou quanto?" → loop.
+- **Som:**
+  - cada snip faz "shhk" de lâminas raspando, estalo do fechamento e um arpejo rápido com os cortes daquele snip;
+  - sino cada vez que o total dobra;
+  - baixo e chimbal no tempo, com bumbo depois de 30 s;
+  - rangido e snips falhos ao emperrar, trincas, silêncio e a quebra.
+- Teste rápido sem desenho: `RAPIDO=1 python3 scripts/tesoura.py`.
+
 ### Próximos mecanismos (um por vídeo)
 1. **Divisão celular:** cada batida divide a bola em duas menores, até virar "areia" que transborda.
 2. ~~Ampulheta~~ (feito).
