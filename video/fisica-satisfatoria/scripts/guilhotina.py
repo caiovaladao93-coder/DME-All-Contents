@@ -14,7 +14,7 @@ from tesoura import poligono
 RAPIDO = os.environ.get('RAPIDO') == '1'
 R = np.random.default_rng(1010)
 CX, CY, RA, RB = 540.0, 1085.0, 430.0, 13.0
-SLOPE = .22                               # inclinação do fio
+SLOPE = .15                               # inclinação do fio
 YTOP, YBOT = CY - RA - 55, CY + RA + 62   # posição do fio no alto e embaixo (no centro)
 HB = 92.0                                # altura da lâmina acima do fio
 XR = RA + 34                              # trilhos
