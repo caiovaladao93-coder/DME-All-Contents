@@ -13,10 +13,10 @@ from tesoura import poligono
 
 RAPIDO = os.environ.get('RAPIDO') == '1'
 R = np.random.default_rng(1010)
-CX, CY, RA, RB = 540.0, 1000.0, 430.0, 13.0
+CX, CY, RA, RB = 540.0, 1085.0, 430.0, 13.0
 SLOPE = .22                               # inclinação do fio
-YTOP, YBOT = CY - RA - 75, CY + RA + 80   # posição do fio no alto e embaixo (no centro)
-HB = 120.0                                # altura da lâmina acima do fio
+YTOP, YBOT = CY - RA - 55, CY + RA + 62   # posição do fio no alto e embaixo (no centro)
+HB = 92.0                                # altura da lâmina acima do fio
 XR = RA + 34                              # trilhos
 CIC, T1, SUBIDA, PAUSA, QUEDA = 6.5, 2.6, 4.2, 1.0, .38
 NDESC = 9                                 # descidas que cortam (2^9 = 512); a 10ª trava
@@ -163,16 +163,16 @@ def main():
         poe_texto(img, 'GUILHOTINA', 104, 540, 270, (255, 255, 255), 1, '800', 12)
         if t < 3.4:
             poe_texto(img, 'Cada descida = ×2', 50, 540, 372, (255, 214, 64), 1, '800', 8, pop_in(t, .1))
-            poe_texto(img, 'Quantas até ela travar? Chuta!', 44, 540, 1600, (255, 255, 255), 1, '800', 7)
+            poe_texto(img, 'Quantas até ela travar? Chuta!', 44, 540, 1700, (255, 255, 255), 1, '800', 7)
         elif not loop:
             poe_texto(img, fmt(n), 72, 540, 372, (255, 214, 64), 1, '800', 10, 1 + .25 * max(0, 1 - (t - ultimo_x2) / .35))
             if t - ultimo_x2 < .9 and t_trava is None: poe_texto(img, '×2', 64, 760, 372, (255, 255, 255), min(1, (.9 - (t - ultimo_x2)) * 3), '800', 9, pop_in(t, ultimo_x2, .25))
             if t_exp is None:
-                if t_trava is not None: poe_texto(img, 'TRAVOU NO MEIO!', 58, 540, 1600, (255, 77, 90), 1, '800', 9, 1 + .06 * math.sin(t * 22))
+                if t_trava is not None: poe_texto(img, 'TRAVOU NO MEIO!', 58, 540, 1700, (255, 77, 90), 1, '800', 9, 1 + .06 * math.sin(t * 22))
             else:
                 poe_texto(img, 'QUEBROU!', 170, 540, 800, (255, 214, 64), min(1, (t - t_exp) * 6), '800', 16, pop_in(t, t_exp, .3))
                 poe_texto(img, f'{fmt(cortes)} CORTES!', 64, 540, 960, (255, 255, 255), min(1, max(0, (t - t_exp - .3) * 4)), '800', 10)
-                poe_texto(img, 'Você chutou quanto?', 52, 540, 1600, (255, 255, 255), min(1, max(0, (t - t_exp - .9) * 3)), '800', 8)
+                poe_texto(img, 'Você chutou quanto?', 52, 540, 1700, (255, 255, 255), min(1, max(0, (t - t_exp - .9) * 3)), '800', 8)
         out.stdin.write(np.clip(img, 0, 255).astype(np.uint8).tobytes())
         if f % 300 == 0: print(round(t, 1), 's ·', n, 'bolas', flush=True)
         f += 1
