@@ -150,6 +150,18 @@ Regra da série: todo vídeo **começa com 1 bola**, ela se multiplica e **explo
 - **Mixagem:** compressor rápido antes do loudnorm, para segurar o pico dos tique-taques depois da codificação AAC.
 - Teste rápido sem desenho: `RAPIDO=1 python3 scripts/pendulo.py`.
 
+### 11 · Guilhotina (`scripts/guilhotina.py` + `scripts/som_guilhotina.py` → `out/Guilhotina.mp4`)
+- **Formato:** o mesmo da série de cortantes (anel branco, título "GUILHOTINA", contador, bolas de uma cor só e sem efeitos), com **bolas maiores** (raio 13, a pedido do usuário). É uma guilhotina com trilhos dos dois lados do anel, travessa, peso e lâmina de aço com fio inclinado.
+- **Mecânica:** a lâmina sobe devagar (4,2 s, com catraca), segura no alto (suspense) e desce de uma vez (0,38 s), atravessando o anel inteiro. Toda bola cruzada é cortada ao meio, então o total quase dobra a cada descida, com "×2" ao lado do contador. Na subida, a lâmina passa por trás das bolas. São 9 descidas que cortam, até cerca de 480–510 bolas: algumas escapam do corte por estarem se movendo no instante da passada.
+- **Final:** na 10ª descida, com o anel lotado, a lâmina "TRAVOU NO MEIO!" (tremor e trincas) → o anel explode e a lâmina cai girando → "QUEBROU! N CORTES! Você chutou quanto?" → loop.
+- **Som:**
+  - catraca "tec-tec-tec" e rangido na subida, e pulso grave no suspense;
+  - "SHHHNK" e baque na descida, com um arpejo de "tsk" afinados que sobe com os cortes e um sino "×2";
+  - estalo, rangido e trincas ao travar;
+  - explosão com acorde.
+- **Mixagem:** compressor antes do loudnorm, como no Pêndulo.
+- Teste rápido sem desenho: `RAPIDO=1 python3 scripts/guilhotina.py`.
+
 ### Próximos mecanismos (um por vídeo)
 1. **Divisão celular:** cada batida divide a bola em duas menores, até virar "areia" que transborda.
 2. ~~Ampulheta~~ (feito).
