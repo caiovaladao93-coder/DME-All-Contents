@@ -1,0 +1,16 @@
+MARCAS DE SOM · FIO DE AÇO (sem narração; 256 cortes)
+
+  0.00  ding (o mesmo do fim: loop)
+  1.00  cortes: nota dedilhada da corda (pentatônica; meio do fio = grave, perto da roldana = agudo)
+  1.57  ×2 → 2 bolas (sino)
+ 11.30  ×2 → 4 bolas (sino)
+ 19.83  ×2 → 8 bolas (sino)
+ 30.90  ×2 → 16 bolas (sino)
+ 39.87  ×2 → 32 bolas (sino)
+ 48.23  ×2 → 64 bolas (sino)
+ 56.70  ×2 → 128 bolas (sino)
+ 64.33  LOTOU: o fio para, enverga e range com a tensão subindo
+ 64.33  ×2 → 256 bolas (sino)
+ 67.58  silêncio antes de arrebentar
+ 67.93  ARREBENTOU: "TWANG", boom e o anel explode (256 cortes)
+ 70.93  volta ao fio esticado com 1 bola (loop)

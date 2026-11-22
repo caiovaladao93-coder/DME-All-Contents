@@ -162,6 +162,17 @@ Regra da série: todo vídeo **começa com 1 bola**, ela se multiplica e **explo
 - **Mixagem:** compressor antes do loudnorm, como no Pêndulo.
 - Teste rápido sem desenho: `RAPIDO=1 python3 scripts/guilhotina.py`.
 
+### 12 · Fio de aço (`scripts/fio.py` + `scripts/som_fio.py` → `out/Fio-de-Aco.mp4`)
+- **Formato:** o mesmo da série de cortantes, com **bolas ainda maiores** (raio 18, a pedido do usuário). Um fio de aço esticado atravessa o anel de ponta a ponta, preso a duas roldanas na borda.
+- **Mecânica:** o fio gira devagar (meia volta a cada 7 s) e varre o anel inteiro. Toda bola que ele atravessa é cortada ao meio, e o total vai de 1 a 256 (72,6 s). O fio funciona como uma corda: cada corte belisca o fio, que vibra no ponto do corte.
+- **Final:** com o anel lotado, o fio para, enverga como um arco ("O FIO ESTÁ ENVERGANDO...") e treme → "ARREBENTOU!": as pontas chicoteiam, o anel explode → "256 CORTES! Você chutou quanto?" → loop.
+- **Som:**
+  - cada corte é uma nota dedilhada (Karplus-Strong) numa pentatônica: o meio do fio soa grave e perto da roldana soa agudo, e a escala sobe a cada meia volta;
+  - zumbido grave do fio, rangido das roldanas a cada meia volta, sino a cada ×2 e cama em Lá menor;
+  - tensão que sobe enquanto o fio enverga, "TWANG", boom e acorde.
+- **Mixagem:** compressor antes do loudnorm (−14,1 LUFS, pico −4,2 dBFS).
+- Teste rápido sem desenho: `RAPIDO=1 python3 scripts/fio.py`.
+
 ### Próximos mecanismos (um por vídeo)
 1. **Divisão celular:** cada batida divide a bola em duas menores, até virar "areia" que transborda.
 2. ~~Ampulheta~~ (feito).

@@ -164,7 +164,7 @@ def main():
             if t_snap is None:
                 if t_cheio is not None: poe_texto(img, 'O FIO ESTÁ ENVERGANDO...', 52, 540, 1620, (255, 77, 90), 1, '800', 9, 1 + .06 * math.sin(t * 22))
             else:
-                poe_texto(img, 'ARREBENTOU!', 140, 540, 820, (255, 214, 64), min(1, (t - t_snap) * 6), '800', 16, pop_in(t, t_snap, .3))
+                poe_texto(img, 'ARREBENTOU!', 118, 540, 820, (255, 214, 64), min(1, (t - t_snap) * 6), '800', 16, pop_in(t, t_snap, .3))
                 poe_texto(img, f'{fmt(cortes)} CORTES!', 64, 540, 980, (255, 255, 255), min(1, max(0, (t - t_snap - .3) * 4)), '800', 10)
                 poe_texto(img, 'Você chutou quanto?', 52, 540, 1620, (255, 255, 255), min(1, max(0, (t - t_snap - .9) * 3)), '800', 8)
         out.stdin.write(np.clip(img, 0, 255).astype(np.uint8).tobytes())
