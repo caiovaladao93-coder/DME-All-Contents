@@ -1,0 +1,66 @@
+MARCAS DE SOM · SARAMAR EP. 1 (narração: Saramar Narrador, tomada 2)
+
+ -0.05  fala: "ESSA PÁGINA TEM"
+  0.00  violão dedilhado em Ré maior (72 BPM) e mar
+  0.05  plim no número de seguidores
+  0.91  fala: "DOIS SEGUIDORES"
+  2.77  fala: "E AQUI"
+  3.74  fala: "CADA SEGUIDOR VIRA"
+  5.04  fala: "UM MORADOR"
+  6.50  sopros de vento nas passagens de câmera
+  6.66  fala: "ESSA É SARAMAR"
+  8.25  fala: "UMA ILHA CERCADA"
+  9.25  fala: "DE SEGREDOS QUE"
+ 10.05  fala: "NINGUÉM DESVENDOU"
+ 12.11  fala: "MAS"
+ 12.34  fala: "POR ENQUANTO"
+ 12.50  estalos da fogueira
+ 13.51  fala: "TUDO O QUE"
+ 13.97  fala: "EXISTE É UMA"
+ 14.68  fala: "PRAIA"
+ 15.41  fala: "DOIS MORADORES E"
+ 16.61  fala: "UMA FOGUEIRA"
+ 18.19  fala: "UM DELES JUNTA"
+ 19.21  fala: "A MADEIRA QUE"
+ 19.91  fala: "O MAR TROUXE"
+ 21.00  tora cai na pilha
+ 21.16  fala: "O OUTRO LIMPA"
+ 21.20  vassoura na areia
+ 21.87  fala: "A AREIA E"
+ 22.79  fala: "ERGUE AS PRIMEIRAS"
+ 22.80  marteladas enquanto as paredes sobem
+ 23.59  fala: "PAREDES"
+ 25.03  fala: "É A PRIMEIRA"
+ 25.10  telhado: a cabana fica pronta (baque e acorde)
+ 25.59  fala: "CABANA"
+ 26.70  fala: "O PRIMEIRO ACAMPAMENTO"
+ 29.22  fala: "NÃO TEM PORTO"
+ 30.36  fala: "NÃO TEM FAROL"
+ 31.75  fala: "SÓ OS DOIS"
+ 33.15  fala: "E O MAR"
+ 33.30  zoom de afastar sobre o mar
+ 33.48  fala: "INTEIRO PELA FRENTE"
+ 35.40  anoitece: o violão some, fica um acorde grave e os grilos
+ 35.57  fala: "MAS TODA VILA"
+ 36.49  fala: "COMEÇOU ASSIM"
+ 36.70  o farol do ilhéu pisca: nota grave
+ 37.95  silêncio antes de "A cada novo seguidor"
+ 38.41  fala: "A CADA NOVO"
+ 38.45  amanhece: a trilha volta cheia, com pulso a 96 BPM
+ 38.70  8 "plins" que sobem: uma cabana nova (+1) para cada um
+ 39.18  fala: "SEGUIDOR"
+ 40.07  fala: "SARAMAR CRESCE"
+ 41.72  fala: "MAIS CABANAS"
+ 42.75  fala: "BARCOS"
+ 43.33  fala: "PESCADORES"
+ 44.72  fala: "UM FAROL"
+ 45.95  fala: "ATÉ CHEGARMOS AOS"
+ 46.00  mistério: drone grave e notas menores
+ 47.01  fala: "SEGREDOS DA ILHA"
+ 47.75  o rosto de pedra abre os olhos: ronco grave
+ 49.23  fala: "SEGUE A PÁGINA"
+ 49.30  volta ao acampamento: o terreno vazio com a placa "?"
+ 49.30  volta o violão calmo do começo (loop)
+ 50.70  fala: "A PRÓXIMA CABANA"
+ 51.85  fala: "PODE SER A"
+ 52.51  fala: "SUA"

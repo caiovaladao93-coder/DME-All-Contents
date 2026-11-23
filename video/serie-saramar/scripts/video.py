@@ -225,8 +225,12 @@ LEG = pedacos()
 
 def texto(d, x, y, partes, sz, alpha=1.0):
     """partes: [(texto, cor)] centralizado em x"""
-    f = fonte(sz); esp = f.getlength(' ')
-    larg = sum(f.getlength(s) for s, _ in partes) + esp * (len(partes) - 1); cx = x - larg / 2
+    while True:
+        f = fonte(sz); esp = f.getlength(' ')
+        larg = sum(f.getlength(s) for s, _ in partes) + esp * (len(partes) - 1)
+        if larg <= 900 or sz <= 30: break
+        sz -= 2
+    cx = x - larg / 2
     for s, c in partes:
         d.text((cx, y), s, font=f, fill=c + (int(255 * alpha),), anchor='lm', stroke_width=max(4, sz // 9), stroke_fill=CONTORNO + (int(255 * alpha),))
         cx += f.getlength(s) + esp

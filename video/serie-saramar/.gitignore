@@ -2,3 +2,4 @@ out/testes/
 out/*-mudo.mp4
 *.pyc
 __pycache__/
+!out/Saramar-Ep1.mp4
