@@ -7,11 +7,14 @@ const SET = {stability: 0.5, similarity_boost: 0.85, style: 0.25, use_speaker_bo
 const B = t => ` <break time="${t}s" /> `;
 const TEXTO = 'Essa página tem cinquenta seguidores.' + B(.5) +
   'No último episódio, Saramar tinha dois moradores e uma cabana.' + B(.4) + 'Agora, chegaram mais quarenta e oito.' + B(.6) +
-  'E dessa vez, ninguém ia construir de qualquer jeito.' + B(.5) +
-  'Primeiro, os dois mais antigos marcaram as ruas.' + B(.3) + 'Depois, dividiram os lotes.' + B(.2) + 'Um pra cada morador.' + B(.5) +
-  'E as cabanas foram subindo, rua por rua, cada uma com o nome do seu dono.' + B(.5) +
-  'No meio, uma praça.' + B(.2) + 'Um poço.' + B(.2) + 'Uma horta pra todo mundo.' + B(.5) +
-  'Cinquenta moradores.' + B(.2) + 'Cinquenta cabanas.' + B(.2) + 'Nada fora do lugar.' + B(.8) +
+  'E dessa vez, ninguém ia construir de qualquer jeito.' + B(.6) +
+  'Primeiro, abriram espaço.' + B(.4) + 'Só o necessário.' + B(.5) +
+  'Cada árvore derrubada virou madeira pra uma casa.' + B(.6) +
+  'Depois, os dois mais antigos marcaram as ruas.' + B(.3) +
+  'E dividiram lotes pequenos, um do lado do outro, pra sobrar lugar pra quem ainda vai chegar.' + B(.6) +
+  'E aí, cada um construiu a sua cabana.' + B(.4) + 'Rua por rua.' + B(.3) + 'Cada uma com o nome do seu dono.' + B(.5) +
+  'No meio, uma praça.' + B(.3) + 'Um poço, cavado à mão.' + B(.3) + 'E uma horta pra todo mundo.' + B(.5) +
+  'Cinquenta moradores.' + B(.2) + 'Cinquenta cabanas.' + B(.3) + 'E ainda sobra muita ilha.' + B(.8) +
   'Mas lembra da garrafa que o mar trouxe?' + B(.5) + 'Dentro dela, tinha um mapa.' + B(.4) +
   'Um mapa antigo, que mostra o que a ilha realmente esconde.' + B(.4) +
   'E cada segredo pede muito mais gente do que a gente imaginava.' + B(.4) +
@@ -25,7 +28,7 @@ for (let k = 1; k <= Number(process.argv[2] || 3); k++) {
     body: JSON.stringify({text: TEXTO, model_id: 'eleven_multilingual_v2', voice_settings: SET, language_code: 'pt'})});
   if (!r.ok) throw new Error(`${r.status} ${await r.text()}`);
   const d = await r.json();
-  fs.writeFileSync(`voz/takes/ep2-${k}.mp3`, Buffer.from(d.audio_base64, 'base64'));
-  fs.writeFileSync(`voz/takes/ep2-${k}.json`, JSON.stringify({voice_id: VOICE, voice_settings: SET, text: TEXTO, alignment: d.alignment}, null, 1));
+  fs.writeFileSync(`voz/takes/ep2v2-${k}.mp3`, Buffer.from(d.audio_base64, 'base64'));
+  fs.writeFileSync(`voz/takes/ep2v2-${k}.json`, JSON.stringify({voice_id: VOICE, voice_settings: SET, text: TEXTO, alignment: d.alignment}, null, 1));
   console.log('tomada', k);
 }

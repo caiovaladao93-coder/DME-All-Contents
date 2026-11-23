@@ -21,7 +21,11 @@ O perfil começa com 2 seguidores. O episódio passa pela ilha e pelos mistério
 
 Também estão em `out/`: `capa-ep1.png`, `marcas-som-ep1.txt` e `conferencia-ep1.txt`.
 
-## Ep. 2 · "A vila" (63,8 s) · `out/Saramar-Ep2.mp4`
+## Ep. 2 · "A vila" v2 (77,0 s) · `out/Saramar-Ep2.mp4`
+
+Na v2, a vila é compacta: cabanas de 11×9 coladas, em 5 ruas × 10 lotes e uma rua livre. As árvores da área viram objetos que os moradores derrubam no machado: 133 árvores, cada morador com até 3, com tremor, tombo em 45° e 90°, toco e tora carregada até as pilhas. Cada morador espera no seu lote e constrói a cabana com o martelo (1,6 s de obra, com andaime). O poço é cavado à pá e a horta é plantada. A narração é a tomada `ep2v2-2`. O texto abaixo descreve a v1, que tem a mesma estrutura.
+
+### v1 (63,8 s)
 
 - **Vídeo:** `scripts/ep2.py`. Usa a mesma ilha do ep. 1: importa `video.py`, que monta `BASE`, e reconstrói o chão sem árvores para abrir a clareira da vila. São 6 ruas × 9 lotes (casinhas 14×12), com a avenida central até a praça. As cabanas sobem da praça para cima, cada uma com o @nick do dono (`dados/moradores-ep2.json`), e no máximo 3 nicks aparecem na tela ao mesmo tempo, em 3 alturas. O mapa antigo é a própria ilha em sépia, com pinos de cadeado e as metas ×100.
 - **Narração:** `scripts/gerar_voz_ep2.mjs` (tomada `ep2-3`). As pausas foram encurtadas com `python3 scripts/encurtar.py ep2-3 voz/ep2`.

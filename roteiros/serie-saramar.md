@@ -61,7 +61,21 @@ O plano final é o mesmo acampamento do plano 4, o que fecha o loop.
 
 ---
 
-# Ep. 2 · "A vila" (50 seguidores, 63,8 s)
+# Ep. 2 · "A vila" (50 seguidores; v2 com 77,0 s)
+
+**v2 (atual):** a pedido do usuário, as cabanas ficaram menores e coladas (11×9, 5 ruas × 10 lotes e uma rua livre), ocupando cerca de 1/3 da área, para caber quem ainda vai chegar. O vídeo ficou mais longo e ganhou animação:
+
+- os 48 novos moradores derrubam 133 árvores no machado: a árvore treme e tomba, e as toras vão para as pilhas;
+- os dois mais antigos fincam as estacas;
+- cada morador espera no seu lote e constrói a própria cabana com o martelo, e o @nick aparece quando ela fica pronta;
+- o poço é cavado à pá e a horta é plantada;
+- "E ainda sobra muita ilha" mostra a vila pequena diante da ilha.
+
+A garrafa e o mapa verdadeiro continuam iguais. A árvore gigante voltou à posição do ep. 1.
+
+A narração da v2 acrescenta: "Primeiro, abriram espaço. Só o necessário. Cada árvore derrubada virou madeira pra uma casa.", "E dividiram lotes pequenos, um do lado do outro, pra sobrar lugar pra quem ainda vai chegar.", "E aí, cada um construiu a sua cabana.", "Um poço, cavado à mão." e "E ainda sobra muita ilha."
+
+## v1 (63,8 s)
 
 **Pedido do usuário:** a vila cresce de forma organizada, sem amontoar, e cada morador tem o seu nick. As metas foram multiplicadas por 100, nada é liberado neste episódio e a criatura continua "???". Os nicks estão em `video/serie-saramar/dados/moradores-ep2.json` (35 nicks; os outros 15 moradores aparecem sem nome, como "+1").
 
@@ -78,7 +92,7 @@ O plano final é o mesmo acampamento do plano 4, o que fecha o loop.
 | Rosto de pedra | 1.000 | **100.000** |
 | Fundo do mar | ??? | **???** |
 
-A troca é justificada na história: a garrafa que chegou no fim do ep. 1 traz um mapa antigo, "o mapa verdadeiro". No mapa verdadeiro, a árvore gigante fica um pouco mais ao norte, porque a vila ocupa o lugar antigo.
+A troca é justificada na história: a garrafa que chegou no fim do ep. 1 traz um mapa antigo, "o mapa verdadeiro". Na v1, a árvore gigante ficava um pouco mais ao norte no mapa verdadeiro; na v2, com a vila compacta, ela voltou ao lugar original.
 
 ## Roteiro
 

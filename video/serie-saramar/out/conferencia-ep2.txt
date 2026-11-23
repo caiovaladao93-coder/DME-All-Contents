@@ -1,9 +1,9 @@
-CONFERÊNCIA · Saramar-Ep2.mp4 (A vila)
+CONFERÊNCIA · Saramar-Ep2.mp4 (A vila, v2: vila compacta e animação de corte e construção)
 stream|codec_name=h264|width=1080|height=1920|r_frame_rate=30/1
 stream|codec_name=aac|r_frame_rate=0/0
-format|duration=63.800000
-    I:         -14.2 LUFS
-    Peak:       -1.7 dBFS
-narração conferida por transcrição (ElevenLabs Scribe) no áudio final: texto idêntico ao roteiro
+format|duration=76.966667
+    I:         -14.0 LUFS
+    Peak:       -1.4 dBFS
+narração conferida por transcrição (ElevenLabs Scribe) no áudio final
 nicks: 35 (dados/moradores-ep2.json), no máximo 3 na tela ao mesmo tempo; 15 moradores sem nick (+1)
-final sem chiado: agudos >4 kHz ~3% nos 2 s finais
+vila compacta: 50 cabanas 11x9 em 5 ruas x 10 lotes (+1 rua livre), cerca de 1/3 da área da v1

@@ -1,4 +1,4 @@
-"""SARAMAR ep. 2 "A vila" · trilha e efeitos ORIGINAIS (numpy) + mixagem com a narração.
+"""SARAMAR ep. 2 "A vila" (v2) · trilha e efeitos ORIGINAIS (numpy) + mixagem com a narração.
 Violão dedilhado em Ré maior (o tema do ep. 1), que ganha pulso (96 BPM) quando as cabanas sobem; cada cabana toca uma nota
 de uma escala que sobe rua por rua; estacas, cordas e enxadas na planta; a garrafa: rolha e papel; o mapa antigo: papel
 desenrolando, pinos com carimbo e um drone grave no fundo do mar; fecho quente com a fogueira.
@@ -94,28 +94,39 @@ a, b = E['chegada']
 for k in range(3): put(FX, baque(60, .4), a + .8 + k * .35, .35, (k - 1) * .5)
 for k in range(24): put(FX, filt(ruido(int(.08 * SR)), 300, 2000) * np.exp(-ar(int(.08 * SR)) / .03), a + 1.2 + k * .13, .1, R.uniform(-.6, .6))
 MARCAS.append((a, 'barcos encostam e os 48 sobem a praia (passos na areia)'))
-a, b = E['limpa']
-for k in range(10): put(FX, toc(500 + 60 * k), a + .3 + k * (b - a - .6) / 10, .3, R.uniform(-.5, .5))
-put(FX, whoosh(1.2), a + .2, .15); MARCAS.append((a, 'clareira: machadadas e as árvores saem'))
+def estalo():
+    n = int(.35 * SR); t = ar(n); return filt(ruido(n), 700, 4000) * np.exp(-t / .05) * (1 + np.sin(2 * np.pi * 37 * t))
+a, b = E['corte']
+for i, tf in enumerate(E['quedas']):
+    pan = R.uniform(-.7, .7)
+    if i % 3 == 0:
+        for c in range(3): put(FX, toc(520 + 40 * (i % 5)), tf - .75 + c * .26, .22, pan)       # machadadas
+    if i % 2 == 0: put(FX, estalo(), tf, .16, pan); put(FX, baque(55, .4), tf + .5, .22, pan)    # estala e cai
+MARCAS.append((a, f'corte: machadadas, estalos e {len(E["quedas"])} árvores caindo; as toras vão para as pilhas'))
+for k in range(8): put(FX, filt(ruido(int(.3 * SR)), 400, 3000) * np.exp(-ar(int(.3 * SR)) / .08), a + 2.5 + k * .6, .1, R.uniform(-.6, .6))
 a, b = E['ruas']
 for k in range(14): put(FX, toc(1800), a + .2 + k * (b - a - .4) / 14, .22, (k % 2 - .5) * .6)
 MARCAS.append((a, 'estacas batidas: as ruas são marcadas'))
 a, b = E['lotes']
 for k in range(10): put(FX, filt(ruido(int(.2 * SR)), 800, 4000) * np.sin(np.pi * ar(int(.2 * SR)) / .2), a + .2 + k * (b - a - .4) / 10, .12)
 MARCAS.append((a, 'cordas esticadas: os lotes são divididos'))
-ESC = [62, 64, 66, 69, 71, 74, 76, 78, 81]          # pentatônica de Ré: cada coluna uma nota, cada rua sobe um degrau
+ESC = [62, 64, 66, 69, 71, 74, 76, 78, 81, 83]      # pentatônica de Ré: cada coluna uma nota, cada rua sobe um degrau
 for i, tc in enumerate(E['casas']):
-    rua, col = i // 9, i % 9
-    put(FX, plim(ESC[col] + 2 * min(rua, 4)) * .9, tc, .2, (col - 4) / 5); put(FX, toc(900 + 40 * col), tc, .18, (col - 4) / 5)
-MARCAS.append((E['casas'][0], '50 cabanas: cada uma toca uma nota (escala que sobe rua por rua) com uma martelada'))
-put(FX, plim(74), E['praca'], .25); put(FX, baque(90, .3), E['poco'], .4); put(FX, plim(81), E['poco'] + .05, .2)
+    rua, col = i // 10, i % 10; pan = (col - 4.5) / 5.5
+    for c in range(3): put(FX, toc(1100 + 60 * (i % 4)), tc - E['obra'] + .3 + c * .4, .1, pan)    # marteladas da obra
+    put(FX, plim(ESC[col] + 2 * min(rua, 4)) * .9, tc, .2, pan)
+MARCAS.append((E['casas'][0], '50 cabanas: marteladas na obra e, quando cada uma fica pronta, uma nota (escala que sobe rua por rua)'))
+put(FX, plim(74), E['praca'], .25)
+for k in range(5): put(FX, filt(ruido(int(.15 * SR)), 300, 2200) * np.exp(-ar(int(.15 * SR)) / .05), E['poco'] - .8 + k * .32, .2, (k % 2 - .5) * .6)   # pá
+put(FX, baque(90, .3), E['poco'] + .8, .4); put(FX, plim(81), E['poco'] + .85, .2)
 for k in range(6): put(FX, filt(ruido(int(.12 * SR)), 400, 2500) * np.exp(-ar(int(.12 * SR)) / .04), E['horta'] + k * .12, .12)
 MARCAS.append((E['praca'], 'praça, poço (água) e horta (terra mexida)'))
 a, b = E['tudo']; put(FX, plim(86), a + .1, .22); put(FX, plim(90), a + 1.3, .2); put(FX, plim(93), a + 2.6, .22)
 MARCAS.append((a, '"Cinquenta moradores. Cinquenta cabanas.": três notas que fecham a vila'))
+put(FX, whoosh(1.6), E['sobra'] - .1, .2); MARCAS.append((E['sobra'], '"E ainda sobra muita ilha": a câmera se afasta (sopro)'))
 a, b = E['garrafa']
-n = int(.15 * SR); put(FX, np.sin(2 * np.pi * np.cumsum(900 - 500 * ar(n) / .15) / SR) * np.exp(-ar(n) / .05), b - 1.0, .4)
-MARCAS.append((b - 1.0, 'garrafa: a rolha sai ("plóc")'))
+n = int(.15 * SR); put(FX, np.sin(2 * np.pi * np.cumsum(900 - 500 * ar(n) / .15) / SR) * np.exp(-ar(n) / .05), E['rolha'], .4)
+MARCAS.append((E['rolha'], 'garrafa: a rolha sai ("plóc")'))
 a, b = E['mapa']
 put(FX, papel(.9), a, .3); MARCAS.append((a, 'o mapa desenrola (papel)'))
 for k, tp in enumerate(E['pinos']): put(FX, carimbo(), tp, .45, (k % 3 - 1) * .4)
@@ -140,7 +151,7 @@ for c in range(2):
 xf = np.minimum(1, np.arange(len(cauda)) / (.3 * SR))[:, None]; mix[i0:] = mix[i0:] * (1 - xf) + cauda * xf
 subprocess.run(['ffmpeg', '-y', '-v', 'error', '-f', 'f64le', '-ar', str(SR), '-ac', '2', '-i', '-', '-c:a', 'pcm_s16le', f'{ROOT}/out/trilha-ep2.wav'], input=mix.tobytes(), check=True)
 with open(f'{ROOT}/out/marcas-som-ep2.txt', 'w') as f:
-    f.write('MARCAS DE SOM · SARAMAR EP. 2 "A VILA" (narração: Saramar Narrador, tomada ep2-3 com pausas encurtadas)\n\n')
+    f.write('MARCAS DE SOM · SARAMAR EP. 2 "A VILA" (narração: Saramar Narrador, tomada ep2v2-2 com pausas encurtadas)\n\n')
     for a, b, s in EV['legendas']: MARCAS.append((a, f'fala: "{s}"'))
     for t, s in sorted(MARCAS): f.write(f'{t:6.2f}  {s}\n')
 print('trilha ep2 ok', round(DUR, 2), 's')

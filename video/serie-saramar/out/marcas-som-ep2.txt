@@ -1,81 +1,93 @@
-MARCAS DE SOM · SARAMAR EP. 2 "A VILA" (narração: Saramar Narrador, tomada ep2-3 com pausas encurtadas)
+MARCAS DE SOM · SARAMAR EP. 2 "A VILA" (narração: Saramar Narrador, tomada ep2v2-2 com pausas encurtadas)
 
  -0.05  fala: "ESSA PÁGINA TEM"
   0.00  violão dedilhado em Ré maior (72 BPM), o tema de Saramar
   0.05  plim no número de seguidores (50)
   0.89  fala: "CINQUENTA SEGUIDORES"
-  2.69  fala: "NO ÚLTIMO EPISÓDIO"
-  4.34  fala: "SARAMAR TINHA DOIS"
-  5.47  fala: "MORADORES E UMA"
-  6.45  fala: "CABANA"
-  7.32  barcos encostam e os 48 sobem a praia (passos na areia)
-  7.47  fala: "AGORA"
-  8.29  fala: "CHEGARAM MAIS QUARENTA"
-  9.42  fala: "E OITO"
- 10.55  fala: "E DESSA VEZ"
- 10.60  clareira: machadadas e as árvores saem
- 11.67  fala: "NINGUÉM IA CONSTRUIR"
- 12.84  fala: "DE QUALQUER JEITO"
- 14.28  fala: "PRIMEIRO"
- 14.33  estacas batidas: as ruas são marcadas
- 15.17  fala: "OS DOIS MAIS"
- 15.89  fala: "ANTIGOS MARCARAM"
- 16.91  fala: "AS RUAS"
- 18.00  fala: "DEPOIS"
- 18.05  cordas esticadas: os lotes são divididos
- 18.50  fala: "DIVIDIRAM OS LOTES"
- 20.05  fala: "UM PRA CADA"
- 20.87  fala: "MORADOR"
- 21.95  fala: "E AS CABANAS"
- 22.10  50 cabanas: cada uma toca uma nota (escala que sobe rua por rua) com uma martelada
- 22.10  as cabanas sobem: a trilha ganha pulso (96 BPM)
- 22.63  fala: "FORAM SUBINDO"
- 23.59  fala: "RUA POR RUA"
- 24.59  fala: "CADA UMA COM"
- 25.34  fala: "O NOME DO"
- 25.81  fala: "SEU DONO"
- 26.82  fala: "NO MEIO"
- 26.87  praça, poço (água) e horta (terra mexida)
- 27.39  fala: "UMA PRAÇA"
- 28.55  fala: "UM POÇO"
- 29.63  fala: "UMA HORTA PRA"
- 30.32  fala: "TODO MUNDO"
- 31.38  fala: "CINQUENTA MORADORES"
- 31.43  "Cinquenta moradores. Cinquenta cabanas.": três notas que fecham a vila
- 33.02  fala: "CINQUENTA CABANAS"
- 34.58  fala: "NADA FORA DO"
- 35.21  fala: "LUGAR"
- 36.32  garrafa: a música para, fica um acorde suspenso
- 36.42  fala: "MAS LEMBRA DA"
- 37.01  fala: "GARRAFA QUE O"
- 37.66  fala: "MAR TROUXE"
- 38.89  fala: "DENTRO DELA"
- 39.72  fala: "TINHA UM MAPA"
- 39.96  garrafa: a rolha sai ("plóc")
- 40.96  mapa antigo: acorde menor; no fundo do mar, drone grave
- 40.96  o mapa desenrola (papel)
- 41.11  fala: "UM MAPA ANTIGO"
- 42.31  fala: "QUE MOSTRA O"
- 42.93  fala: "QUE A ILHA"
- 43.44  fala: "REALMENTE ESCONDE"
- 45.07  fala: "E CADA SEGREDO"
- 45.22  8 pinos de meta carimbados no mapa (metas ×100)
- 46.13  fala: "PEDE MUITO MAIS"
- 47.04  fala: "GENTE DO QUE"
- 47.71  fala: "A GENTE IMAGINAVA"
- 49.33  fala: "MIL SEGUIDORES"
- 50.62  fala: "PRA CACHOEIRA"
- 51.97  fala: "CEM MIL"
- 52.66  fala: "PRO ROSTO DE"
- 53.30  fala: "PEDRA"
- 54.30  fala: "E O QUE"
- 54.35  fundo do mar: nota grave e o drone
- 54.67  fala: "VIVE NO FUNDO"
- 55.37  fala: "DO MAR"
- 56.46  fala: "NINGUÉM SABE"
- 57.78  volta o violão calmo; anoitece na vila
- 57.78  último lote vazio, com a placa "?" e @SEU_NOME_AQUI?
- 57.93  fala: "SEGUE A PÁGINA"
- 59.38  fala: "A PRÓXIMA CABANA"
- 60.32  fala: "PODE TER O"
- 60.84  fala: "SEU NOME"
+  2.50  fala: "NO ÚLTIMO EPISÓDIO"
+  4.04  fala: "SARAMAR TINHA DOIS"
+  5.15  fala: "MORADORES E UMA"
+  6.11  fala: "CABANA"
+  6.95  barcos encostam e os 48 sobem a praia (passos na areia)
+  7.10  fala: "AGORA"
+  7.90  fala: "CHEGARAM MAIS QUARENTA"
+  9.06  fala: "E OITO"
+ 10.11  fala: "E DESSA VEZ"
+ 11.31  fala: "NINGUÉM IA CONSTRUIR"
+ 12.48  fala: "DE QUALQUER JEITO"
+ 13.93  fala: "PRIMEIRO"
+ 13.98  corte: machadadas, estalos e 133 árvores caindo; as toras vão para as pilhas
+ 14.82  fala: "ABRIRAM ESPAÇO"
+ 16.27  fala: "SÓ O NECESSÁRIO"
+ 18.14  fala: "CADA ÁRVORE DERRUBADA"
+ 19.67  fala: "VIROU MADEIRA PRA"
+ 20.55  fala: "UMA CASA"
+ 21.68  fala: "DEPOIS"
+ 21.73  estacas batidas: as ruas são marcadas
+ 22.58  fala: "OS DOIS MAIS"
+ 23.34  fala: "ANTIGOS MARCARAM"
+ 24.31  fala: "AS RUAS"
+ 25.39  fala: "E DIVIDIRAM LOTES"
+ 25.44  cordas esticadas: os lotes são divididos
+ 26.45  fala: "PEQUENOS"
+ 27.34  fala: "UM DO LADO"
+ 27.93  fala: "DO OUTRO"
+ 28.75  fala: "PRA SOBRAR LUGAR"
+ 29.75  fala: "PRA QUEM AINDA"
+ 30.51  fala: "VAI CHEGAR"
+ 31.63  fala: "E AÍ"
+ 32.47  fala: "CADA UM CONSTRUIU"
+ 32.81  50 cabanas: marteladas na obra e, quando cada uma fica pronta, uma nota (escala que sobe rua por rua)
+ 32.81  as cabanas sobem: a trilha ganha pulso (96 BPM)
+ 33.48  fala: "A SUA CABANA"
+ 34.80  fala: "RUA POR RUA"
+ 36.34  fala: "CADA UMA COM"
+ 36.99  fala: "O NOME DO"
+ 37.44  fala: "SEU DONO"
+ 38.44  fala: "NO MEIO"
+ 38.49  praça, poço (água) e horta (terra mexida)
+ 39.15  fala: "UMA PRAÇA"
+ 40.31  fala: "UM POÇO"
+ 40.87  fala: "CAVADO À MÃO"
+ 42.18  fala: "E UMA HORTA"
+ 42.84  fala: "PRA TODO MUNDO"
+ 44.08  fala: "CINQUENTA MORADORES"
+ 44.13  "Cinquenta moradores. Cinquenta cabanas.": três notas que fecham a vila
+ 45.77  fala: "CINQUENTA CABANAS"
+ 47.54  fala: "E AINDA SOBRA"
+ 47.59  "E ainda sobra muita ilha": a câmera se afasta (sopro)
+ 48.32  fala: "MUITA ILHA"
+ 49.75  garrafa: a música para, fica um acorde suspenso
+ 49.85  fala: "MAS LEMBRA DA"
+ 50.47  fala: "GARRAFA QUE O"
+ 51.04  fala: "MAR TROUXE"
+ 52.21  fala: "DENTRO DELA"
+ 52.26  garrafa: a rolha sai ("plóc")
+ 52.84  fala: "TINHA UM MAPA"
+ 53.99  mapa antigo: acorde menor; no fundo do mar, drone grave
+ 53.99  o mapa desenrola (papel)
+ 54.14  fala: "UM MAPA ANTIGO"
+ 55.36  fala: "QUE MOSTRA O"
+ 56.19  fala: "QUE A ILHA"
+ 56.65  fala: "REALMENTE ESCONDE"
+ 58.15  fala: "E CADA SEGREDO"
+ 58.30  8 pinos de meta carimbados no mapa (metas ×100)
+ 59.12  fala: "PEDE MUITO MAIS"
+ 60.03  fala: "GENTE DO QUE"
+ 60.70  fala: "A GENTE IMAGINAVA"
+ 62.24  fala: "MIL SEGUIDORES"
+ 63.36  fala: "PRA CACHOEIRA"
+ 64.62  fala: "CEM MIL"
+ 65.38  fala: "PRO ROSTO DE"
+ 66.09  fala: "PEDRA"
+ 67.10  fala: "E O QUE"
+ 67.15  fundo do mar: nota grave e o drone
+ 67.51  fala: "VIVE NO FUNDO"
+ 68.35  fala: "DO MAR"
+ 69.46  fala: "NINGUÉM SABE"
+ 70.74  volta o violão calmo; anoitece na vila
+ 70.74  último lote vazio, com a placa "?" e @SEU_NOME_AQUI?
+ 70.89  fala: "SEGUE A PÁGINA"
+ 72.36  fala: "A PRÓXIMA CABANA"
+ 73.42  fala: "PODE TER O"
+ 74.00  fala: "SEU NOME"
