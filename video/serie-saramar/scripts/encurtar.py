@@ -2,8 +2,10 @@
 Entrada: voz/takes/<tomada>.mp3/.json → saída: voz/narracao.wav e voz/palavras.json"""
 import json, re, subprocess, sys
 import numpy as np
-SR = 48000; TOM = sys.argv[1] if len(sys.argv) > 1 else 'ep1v3-2'; PMAX = .38
-LONGAS = {'Uma': .45, 'Mas,': .7, 'Mas': .7, 'A': .55, 'Cada': .6, 'Segue': .45}   # pausa antes destas palavras (primeira ocorrência após frase)
+SR = 48000; TOM = sys.argv[1] if len(sys.argv) > 1 else 'ep1v3-2'
+SAIDA = sys.argv[2] if len(sys.argv) > 2 else 'voz'            # pasta de saída (ep. 2: voz/ep2)
+PMAX = .38
+LONGAS = {'Uma': .45, 'Mas,': .7, 'Mas': .7, 'A': .55, 'Cada': .6, 'Segue': .45} if SAIDA == 'voz' else {'Mas': .75, 'E': .45, 'Segue': .5, 'ninguém': .45}   # pausa antes destas palavras (primeira ocorrência após frase)
 A = json.load(open(f'voz/takes/{TOM}.json'))['alignment']
 ch, t0, t1 = A['characters'], A['character_start_times_seconds'], A['character_end_times_seconds']
 txt = ''.join(ch); pal = []
@@ -28,8 +30,8 @@ for c0, c1 in partes: mask[int(c0 * SR):int(c1 * SR)] = False
 def mapa(t): return t - sum(min(c1, t) - c0 for c0, c1 in partes if t > c0)
 y = x[mask]
 fade = int(.01 * SR)
-subprocess.run(['ffmpeg', '-y', '-v', 'error', '-f', 'f32le', '-ar', str(SR), '-ac', '1', '-i', '-', 'voz/narracao.wav'], input=y.tobytes(), check=True)
+subprocess.run(['ffmpeg', '-y', '-v', 'error', '-f', 'f32le', '-ar', str(SR), '-ac', '1', '-i', '-', f'{SAIDA}/narracao.wav'], input=y.tobytes(), check=True)
 out = [{'w': w, 'a': round(mapa(a), 3), 'b': round(mapa(b), 3)} for w, a, b in pal]
-json.dump(out, open('voz/palavras.json', 'w'), ensure_ascii=False, indent=0)
+json.dump(out, open(f'{SAIDA}/palavras.json', 'w'), ensure_ascii=False, indent=0)
 print(TOM, len(x) / SR, '→', round(len(y) / SR, 2), 's ·', len(partes), 'cortes')
 for i, p in enumerate(out): print(i, p['w'], p['a'], end=' | ')
