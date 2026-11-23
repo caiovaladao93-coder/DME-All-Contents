@@ -10,9 +10,21 @@ from mundo import P, WW, WH
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 W, H, FPS = 1080, 1920, 30
-DUR = 55.0
 CX, CY = M.CAMP
-PAL = json.load(open(f'{ROOT}/voz/palavras.json'))
+PAL = json.load(open(f'{ROOT}/voz/palavras.json'))          # narração atual (v2, com os lugares e as metas)
+PAL1 = json.load(open(f'{ROOT}/voz/palavras-v1.json'))      # narração da v1: as cenas antigas foram marcadas nela
+DUR = round(PAL[-1]['b'] + 2.0, 2)
+def Wd(i): return PAL[i]['a']
+# trechos novos: montagem dos lugares (palavras 23–53) e mapa de metas (133–142)
+NOVAS = set(range(23, 54)) | set(range(133, 143))
+_iN = [i for i in range(len(PAL)) if i not in NOVAS]
+ANC_N = np.array([0.0] + [PAL[i]['a'] for i in _iN] + [DUR]); ANC_V = np.array([0.0] + [p['a'] for p in PAL1] + [55.0])
+MONT = (Wd(23) - .3, Wd(54) - .25)
+MAPA = (Wd(133) - .35, Wd(143) - .25)
+def t_velho(tn):
+    """tempo da narração nova → tempo da linha do tempo antiga (as cenas da v1 continuam iguais)"""
+    return float(np.interp(tn, ANC_N, ANC_V))
+def t_novo(tv): return float(np.interp(tv, ANC_V, ANC_N))
 
 # ── mundo estático ───────────────────────────────────────────────────────────────────────────────
 BASE, MORRO, AREIA = M.base()
@@ -26,6 +38,8 @@ BASE[cl & M.TERRA & ~AREIA] = P['grama3']
 terra_batida = ((M.XX - CX) / 20) ** 2 + ((M.YY - (CY - 4)) / 12) ** 2 + .35 * M.ruido(2, 30, 5) < 1
 BASE[terra_batida & ~AREIA] = P['grama'] * .5 + P['areia2'] * .5
 BASE[terra_batida & ~AREIA & (M.ruido(2, 40, 8) > .4)] = P['areia2']
+livre |= M.areas_livres()
+M.lugares_base(BASE)
 M.arvores(BASE, livre)
 M.rosto(BASE)                                         # versão de olhos fechados (o quadro redesenha quando abre)
 AGUA = ~M.TERRA
@@ -123,6 +137,8 @@ def presente(img, t, final=False):
         for k in range(0, 20, 2): img[ly + 14, lx + k] = P['madeira2']; img[ly, lx + k] = P['madeira2']
         for k in range(0, 14, 2): img[ly + k, lx] = P['madeira2']; img[ly + k, lx + 19] = P['madeira2']
         M.placa(img, lx + 6, ly + 10, t)
+        gx = PRAIA[0] + 18 - min(6, (t - 49.3) * 1.5); gy = PRAIA[1] + 16 + math.sin(t * 2.4) * 1.2      # garrafa com mensagem chegando
+        M.blit(img, M.GARRAFA, gx, gy)
 
 CASAS = [(CX - 40, CY - 30), (CX + 22, CY - 34), (CX - 58, CY - 8), (CX + 36, CY - 6), (CX - 30, CY - 58), (CX + 8, CY - 60), (CX - 74, CY - 34), (CX + 50, CY - 40)]
 T_CASA = [38.7 + i * .38 for i in range(len(CASAS))]
@@ -162,24 +178,39 @@ GLOW_ILHEU = brilho(M.ILHEU[0], M.ILHEU[1] - 16, 30)
 GLOW_NAVIO = brilho(M.NAVIO[0] + 4, M.NAVIO[1], 26)
 GLOW_ROSTO = brilho(M.ROSTO[0], M.ROSTO[1] - 6, 30)
 QUENTE = np.array([1.0, .62, .28], np.float32)
+FRIO = np.array([.35, 1.0, .9], np.float32)
+GLOW_TEMPLO = brilho(M.LAGOA[0], M.LAGOA[1] - 1, 30)
+GLOW_PEDRAS = brilho(M.PEDRAS[0], M.PEDRAS[1], 22)
+GLOW_ARV = brilho(M.ARVORE[0] + 1, M.ARVORE[1] + 12, 12)
+LUZ_CENA = {'cachoeira': ((1, 1, 1), 0.0), 'templo': ((.62, .68, .86), 0.0), 'pedras': ((.8, .8, .92), 0.0), 'arvore': ((.95, .9, .82), 0.0),
+            'mar': ((.45, .55, .8), 0.0), 'mapa': ((.92, .92, .92), 0.0)}
 
-def mundo_quadro(t):
+def mundo_quadro(t, tn=None, cena=None):
+    tn = t if tn is None else tn
     img = BASE.copy()
     # água: ondinhas que acendem e somem, espuma que respira na costa
     on = np.sin(t * DSP * 1.6 + DPH) > .55
     for k in range(3): img[DY[on], DX[on] + k] = P['onda']
     esp = ESP & (M.DIST_MAR < 1.6 + 1.3 * np.sin(t * 1.3 + M.XX * .07 + M.YY * .05))
     img[esp] = P['espuma']
+    # lugares para explorar (sempre no mapa)
+    M.cachoeira(img, tn)
+    M.templo(img, tn, brilho=1.0 if cena == 'templo' else .5)
+    M.circulo(img, tn, brilho=1.0 if (cena == 'pedras' and tn >= Wd(38)) else 0.0)
+    M.arvore_gigante(img, tn, luz=1.0 if cena == 'arvore' else .3)
+    M.tesouro(img, tn)
+    if cena == 'mar': M.sombra_mar(img, tn - Wd(50) + 1.0, k=min(1.0, max(0.0, (tn - Wd(50) + .3) / .6)), olho=min(1.0, max(0.0, (tn - Wd(52)) / .3)))
     # mistérios
     M.navio(img, t, luz=1.0 if 46 <= t < 47.1 else .6)
     M.farol(img, M.ILHEU[0], M.ILHEU[1] + 6, aceso=farol_ilheu(t), alto=20)
     if 47.1 <= t < 49.3: M.rosto(img, olhos=(t - 47.75) / .5 if t >= 47.75 else 0, t=t)
     if 38.45 <= t < 46.0: futuro(img, t)
     else: presente(img, t, final=t >= 49.3)
-    amb, gf = luz(t)
+    amb, gf = luz(t) if cena is None else LUZ_CENA[cena]
     org = img.copy()
     emis = np.zeros((WH, WW), bool)
-    for c in ('luz', 'fogo1', 'fogo2', 'fogo3'): emis |= np.abs(img - P[c]).sum(-1) < 30
+    for c in ('luz', 'fogo1', 'fogo2', 'fogo3', 'runa'):
+        emis |= np.abs(img - P[c]).sum(-1) < 30
     img *= np.array(amb, np.float32)
     lum = GLOW_F * gf
     if 38.45 <= t < 46 and t >= 44.8: lum = lum + GLOW_FAROL * 1.2
@@ -187,7 +218,11 @@ def mundo_quadro(t):
     if fi > 0: lum = lum + GLOW_ILHEU * fi * 1.3
     if 46 <= t < 47.1: lum = lum + GLOW_NAVIO * 1.8
     elif t < 12: lum = lum + GLOW_NAVIO * .5
-    if 47.75 <= t < 49.3: lum = lum + GLOW_ROSTO * min(1, (t - 47.75) / .5) * 1.1
+    if 47.75 <= t < 49.3 and cena is None: lum = lum + GLOW_ROSTO * min(1, (t - 47.75) / .5) * 1.1
+    if cena == 'arvore': lum = lum + GLOW_ARV * .9
+    if cena in ('templo', 'pedras'):
+        g = GLOW_TEMPLO if cena == 'templo' else GLOW_PEDRAS * (1.0 if tn >= Wd(38) else 0)
+        img = img * (1 + g[..., None] * .5 * FRIO) + g[..., None] * 30 * FRIO
     img = img * (1 + lum[..., None] * .45 * QUENTE) + lum[..., None] * 22 * QUENTE
     img[emis] = org[emis] * 1.08
     return img
@@ -235,17 +270,17 @@ def texto(d, x, y, partes, sz, alpha=1.0):
         d.text((cx, y), s, font=f, fill=c + (int(255 * alpha),), anchor='lm', stroke_width=max(4, sz // 9), stroke_fill=CONTORNO + (int(255 * alpha),))
         cx += f.getlength(s) + esp
 
-def sobrepor(fr, t):
+def sobrepor(fr, t, tn):
     camada = Image.new('RGBA', (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(camada)
     # cabeçalho
-    a = min(1, t / .3) * (1 - ease((t - 10.9) / .5))
+    a = min(1, tn / .3) * (1 - ease((tn - MONT[0] + .4) / .4))
     if a > 0:
         texto(d, 540, 300, [('ESSA PÁGINA TEM', CREME)], 58, a)
         texto(d, 540, 430, [('2', OURO)], 190, a)
         texto(d, 540, 560, [('SEGUIDORES', CREME)], 58, a)
     for a0, b0, ws, ch in LEG:
-        if a0 <= t < b0:
-            al = min(1, (t - a0) / .08) * min(1, (b0 - t) / .08)
+        if a0 <= tn < b0:
+            al = min(1, (tn - a0) / .08) * min(1, (b0 - tn) / .08)
             texto(d, 540, 1500, [(w, OURO if j == ch else CREME) for j, w in enumerate(ws)], 64, al)
     # "+1" sobre cada cabana nova
     if 38.45 <= t < 41.7:
@@ -255,24 +290,67 @@ def sobrepor(fr, t):
             if 0 <= u < 1.1:
                 sx = (x + 11 - cx) * z + W / 2; sy = (y - 4 - cx * 0 - cy) * z + H / 2 - u * 60
                 texto(d, sx, sy, [('+1', OURO)], 54, min(1, (1.1 - u) / .3))
+    if MAPA[0] <= tn < MAPA[1]: pinos(d, tn)
     return Image.alpha_composite(fr.convert('RGBA'), camada).convert('RGB')
+
+# ── mapa de metas ────────────────────────────────────────────────────────────────────────────────
+MCAM = (260, 490, 2.6)
+PINOS = [('2', M.CAMP, True), ('10', M.CACHOEIRA, False), ('25', M.TESOURO, False), ('50', M.LAGOA, False), ('100', M.PEDRAS, False),
+         ('250', M.ARVORE, False), ('500', M.NAVIO, False), ('1.000', M.ROSTO, False), ('???', (112, 610), False)]
+VERDE = (120, 220, 120)
+def pinos(d, tn):
+    cx, cy, z = MCAM
+    for k, (rot, (x, y), aberto) in enumerate(PINOS):
+        u = tn - (MAPA[0] + .25 + k * .33)
+        if u < 0: continue
+        s = min(1.0, u / .18); al = min(1.0, (MAPA[1] - tn) / .2)
+        sx, sy = (x - cx) * z + W / 2, (y - cy) * z + H / 2
+        r = int(22 * s)
+        d.ellipse((sx - r, sy - r, sx + r, sy + r), fill=(24, 22, 30, int(235 * al)), outline=(VERDE if aberto else OURO) + (int(255 * al),), width=5)
+        if s > .6:
+            if aberto:   # check
+                d.line([(sx - 9, sy), (sx - 2, sy + 7), (sx + 10, sy - 8)], fill=VERDE + (int(255 * al),), width=6)
+            else:        # cadeado em pixels
+                d.rectangle((sx - 9, sy - 2, sx + 9, sy + 11), fill=OURO + (int(255 * al),))
+                d.rectangle((sx - 6, sy - 11, sx + 6, sy - 2), outline=OURO + (int(255 * al),), width=4)
+                d.rectangle((sx - 2, sy + 2, sx + 2, sy + 7), fill=(24, 22, 30, int(255 * al)))
+            texto(d, sx, sy - 52, [(rot, VERDE if aberto else OURO)], 46 if len(rot) < 4 else 42, al * min(1, (u - .1) / .15) if u > .1 else 0)
+    a = min(1, (tn - MAPA[0]) / .3) * min(1, (MAPA[1] - tn) / .2)
+    texto(d, 540, 1590, [('METAS EM SEGUIDORES', CREME)], 40, a)
 
 # ── quadro ───────────────────────────────────────────────────────────────────────────────────────
 VY, VX = np.mgrid[0:H, 0:W]
 VIN = (1 - .5 * np.clip(np.hypot((VX - W / 2) / (W * .62), (VY - H / 2) / (H * .6)) - .45, 0, 1) ** 1.5).astype(np.float32)[..., None]
 SX, SY = np.arange(W) - W / 2, np.arange(H) - H / 2
 
-def quadro(t):
-    img = mundo_quadro(t)
-    cx, cy, z = camera(t)
+CENAS = [('cachoeira', MONT[0], Wd(29) - .1, (205, 268, 9.0), (205, 266, 11.0)),
+         ('templo', Wd(29) - .1, Wd(34) - .1, (172, 422, 8.5), (172, 420, 10.5)),
+         ('pedras', Wd(34) - .1, Wd(40) - .1, (318, 386, 9.0), (318, 384, 11.5)),
+         ('arvore', Wd(40) - .1, Wd(45) - .1, (262, 494, 8.0), (262, 494, 10.5)),
+         ('mar', Wd(45) - .1, MONT[1], (M.SOMBRA[0] - 30, M.SOMBRA[1] + 4, 5.0), (M.SOMBRA[0] - 22, M.SOMBRA[1] + 2, 6.8))]
+def cena_de(tn):
+    for c in CENAS:
+        if c[1] <= tn < c[2]:
+            u = ease((tn - c[1]) / (c[2] - c[1])); return c[0], tuple(lerp(c[3][j], c[4][j], u) for j in range(3))
+    if MAPA[0] <= tn < MAPA[1]:
+        u = ease((tn - MAPA[0]) / (MAPA[1] - MAPA[0])); return 'mapa', (MCAM[0], MCAM[1], MCAM[2] * (1 + .02 * u))
+    return None, None
+
+def quadro(tn):
+    t = t_velho(tn)
+    cena, cam = cena_de(tn)
+    img = mundo_quadro(t, tn, cena)
+    cx, cy, z = camera(t) if cam is None else cam
     xs = np.clip(np.floor(cx + SX / z).astype(int), 0, WW - 1); ys = np.clip(np.floor(cy + SY / z).astype(int), 0, WH - 1)
     fr = img[ys][:, xs] * VIN
     # transição suave entre noite e dia (fade a partir do preto) e no fim do vídeo
     for tc in (38.45,):
         if tc <= t < tc + .25: fr *= (t - tc) / .25
-    if t > DUR - .6: fr *= max(0, (DUR - t) / .6) * .3 + .7
+    for tc in [c[1] for c in CENAS] + [MONT[1], MAPA[0], MAPA[1]]:      # piscada curta nos cortes da montagem
+        if tc <= tn < tc + .1: fr = fr * .55 + 255 * .45 * (1 - (tn - tc) / .1)
+    if tn > DUR - .6: fr *= max(0, (DUR - tn) / .6) * .3 + .7
     fr = Image.fromarray(np.clip(fr, 0, 255).astype(np.uint8))
-    return sobrepor(fr, t)
+    return sobrepor(fr, t, tn)
 
 def main():
     if len(sys.argv) > 1:
@@ -287,7 +365,9 @@ def main():
         ff.stdin.write(np.asarray(quadro(f / FPS)).tobytes())
         if f % 150 == 0: print(round(f / FPS, 1), 's', flush=True)
     ff.stdin.close(); ff.wait()
-    json.dump({'dur': DUR, 'casas': T_CASA, 'legendas': [(a, b, ' '.join(ws)) for a, b, ws, _ in LEG]}, open(f'{ROOT}/out/eventos-ep1.json', 'w'), ensure_ascii=False, indent=1)
+    json.dump({'dur': DUR, 'casas': [t_novo(x) for x in T_CASA], 'mont': MONT, 'mapa': MAPA, 'cenas': [(c[0], c[1], c[2]) for c in CENAS],
+               'pinos': [MAPA[0] + .25 + k * .33 for k in range(len(PINOS))], 'velho_para_novo': [ANC_V.tolist(), ANC_N.tolist()],
+               'palavras': {i: PAL[i]['a'] for i in (38, 44, 50, 52)}, 'legendas': [(a, b, ' '.join(ws)) for a, b, ws, _ in LEG]}, open(f'{ROOT}/out/eventos-ep1.json', 'w'), ensure_ascii=False, indent=1)
     print('fim', n, 'quadros')
 
 if __name__ == '__main__':

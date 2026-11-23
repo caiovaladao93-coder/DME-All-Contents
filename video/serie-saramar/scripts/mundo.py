@@ -271,3 +271,125 @@ def varal(img, x, y):
     for k in range(1, 14):
         img[y + 1 + (k % 3 == 0), x + k] = P['rede']
         if k % 2: img[y + 2:y + 4, x + k] = P['rede'] * .9
+
+# ── lugares para explorar (ep. 1 v2) ─────────────────────────────────────────────────────────────
+P.update({k: hexc(v) for k, v in dict(runa='#7ff2e0', agua='#4fa6c8', agua2='#86cde0', caverna='#1b1d24', garrafa='#4e9a6a', rolha='#c9a36a',
+                                       copa='#2f7a35', copa2='#235e2a', copa3='#4c9a44', porta='#3a2414').items()})
+CACHOEIRA = (205, 262)
+RIO = [(205, 280), (186, 296), (160, 302), (134, 318), (104, 330), (80, 336)]
+LAGOA = (172, 420)
+PEDRAS = (318, 384)
+ARVORE = (262, 490)
+def _costa_leste(y):
+    row = np.nonzero(TERRA[int(y), :400])[0]; return int(row.max()) if len(row) else 380
+TESOURO = (_costa_leste(600) - 7, 600)
+SOMBRA = (150, 765)
+
+def areas_livres():
+    """máscara das clareiras dos lugares novos (sem árvores)"""
+    m = np.zeros((WH, WW), bool)
+    for (x, y), (rx, ry) in [(LAGOA, (40, 30)), (PEDRAS, (26, 22)), (ARVORE, (30, 28)), (CACHOEIRA, (16, 22))]:
+        m |= ((XX - x) / rx) ** 2 + ((YY - y) / ry) ** 2 < 1
+    for (a, b) in zip(RIO, RIO[1:]):
+        for k in range(30):
+            u = k / 29; x, y = a[0] + (b[0] - a[0]) * u, a[1] + (b[1] - a[1]) * u
+            m |= (XX - x) ** 2 + (YY - y) ** 2 < 8 ** 2
+    return m
+
+def lugares_base(img):
+    """desenha no terreno estático: rio, poço da cachoeira, lagoa, clareiras"""
+    for (a, b) in zip(RIO, RIO[1:]):
+        for k in range(40):
+            u = k / 39; x, y = a[0] + (b[0] - a[0]) * u, a[1] + (b[1] - a[1]) * u
+            d = (XX - x) ** 2 + (YY - y) ** 2
+            img[(d < 4.5 ** 2) & TERRA & (img[..., 0] != P['agua'][0])] = P['areia2']
+    for (a, b) in zip(RIO, RIO[1:]):
+        for k in range(40):
+            u = k / 39; x, y = a[0] + (b[0] - a[0]) * u, a[1] + (b[1] - a[1]) * u
+            img[((XX - x) ** 2 + (YY - y) ** 2 < 3.2 ** 2) & TERRA] = P['agua']
+    poco = ((XX - CACHOEIRA[0]) / 11) ** 2 + ((YY - (CACHOEIRA[1] + 16)) / 7) ** 2 < 1
+    img[poco] = P['agua']; img[poco & (((XX - CACHOEIRA[0]) / 8) ** 2 + ((YY - (CACHOEIRA[1] + 16)) / 4) ** 2 < 1)] = P['raso']
+    lg = ((XX - LAGOA[0]) / 32) ** 2 + ((YY - LAGOA[1]) / 22) ** 2 + .12 * ruido(2, 20, 61) < 1
+    borda = ndimage.binary_dilation(lg, iterations=2) & ~lg
+    img[borda] = P['areia2']; img[lg] = P['raso']; img[lg & (((XX - LAGOA[0]) / 24) ** 2 + ((YY - LAGOA[1]) / 15) ** 2 < 1)] = P['mar2']
+    for (x, y), (rx, ry) in [(PEDRAS, (22, 18)), (ARVORE, (26, 24))]:
+        cl = ((XX - x) / rx) ** 2 + ((YY - y) / ry) ** 2 + .15 * ruido(2, 30, 71) < 1
+        img[cl] = P['grama3']
+    return lg
+
+def cachoeira(img, t):
+    x, y = CACHOEIRA
+    # paredão escuro com a boca da caverna atrás da queda
+    img[y - 8:y + 12, x - 12:x + 13] = P['pedra2']; img[y - 8, x - 12:x + 13] = P['pedra4']
+    for k in range(-8, 9):
+        h = int(10 * math.sqrt(max(0, 1 - (k / 9) ** 2)))
+        img[y + 12 - h:y + 12, x + k] = P['caverna']
+    # queda d'água listrada que desce
+    for yy in range(y - 8, y + 13):
+        for xx in range(x - 5, x + 6):
+            s = (yy - t * 40 + (xx * 7) % 5) % 6
+            img[yy, xx] = P['branco'] if s < 1.2 else (P['agua2'] if s < 3.5 else P['agua'])
+    for k in range(6):   # espuma no poço
+        ph = (t * 1.7 + k / 6) % 1; px = int(x - 8 + 16 * ((k * .37) % 1)); py = int(y + 13 + ph * 4)
+        img[py, px] = P['espuma']
+
+def templo(img, t, brilho=1.0):
+    """ruína afundada na lagoa: topo de pirâmide em degraus + pilares, runa que pulsa"""
+    x, y = LAGOA
+    for r, c in [(10, P['pedra2']), (7, P['pedra']), (4, P['pedra3'])]:
+        img[y - r:y + r - 2, x - r:x + r] = c
+    img[y - 10, x - 10:x + 10] = P['pedra4']
+    for dx, dy in [(-22, -8), (-20, 8), (20, -9), (22, 7), (0, -18), (0, 16)]:
+        img[y + dy - 2:y + dy + 2, x + dx - 2:x + dx + 2] = P['pedra']; img[y + dy + 2, x + dx - 2:x + dx + 2] = P['pedra4']
+    p = brilho * (.55 + .45 * math.sin(t * 3.1) ** 2)
+    runa = [(0, -3), (0, -2), (0, -1), (0, 0), (0, 1), (-1, -2), (1, -2), (-2, 0), (2, 0), (-1, 1), (1, 1)]
+    for dx, dy in runa: img[y + dy, x + dx] = P['pedra3'] * (1 - p) + P['runa'] * p
+    for k in range(4):   # brilhos sob a água
+        ph = (t * .6 + k / 4) % 1; img[int(y + 12 + 3 * math.sin(k)), int(x - 14 + 9 * k)] = P['agua2'] * (1 - ph) + P['runa'] * ph * .5
+
+PEDRA_E = spr(['.aa.', 'abbc', 'abbc', 'abbc', 'abcc', 'dddd'], {'a': P['pedra3'], 'b': P['pedra'], 'c': P['pedra2'], 'd': P['grama4']})
+def circulo(img, t, brilho=0.0):
+    x, y = PEDRAS
+    for k in range(8):
+        a = k * math.pi / 4 + .2
+        blit(img, PEDRA_E, x + 14 * math.cos(a) - 2, y + 11 * math.sin(a) - 4)
+    img[y - 2:y + 2, x - 4:x + 4] = P['pedra2']; img[y - 2, x - 4:x + 4] = P['pedra3']
+    p = brilho * (.6 + .4 * math.sin(t * 4) ** 2)
+    for dx in (-2, 0, 2): img[y, x + dx] = P['pedra2'] * (1 - p) + P['runa'] * p
+
+def arvore_gigante(img, t, luz=0.0):
+    x, y = ARVORE
+    img[y + 4:y + 16, x - 5:x + 6] = P['tronco']; img[y + 4:y + 16, x + 4:x + 6] = P['tronco2']
+    for k, (dx, dy) in enumerate([(-9, 16), (8, 16), (-6, 17), (6, 17)]): img[y + dy, x + dx - 2:x + dx + 2] = P['tronco2']
+    img[y + 9:y + 16, x - 2:x + 2] = P['porta']; img[y + 8, x - 1:x + 1] = P['porta']
+    k = .6 + .4 * math.sin(t * 2) ** 2
+    img[y + 12, x + 1] = P['porta'] * (1 - luz * k) + P['luz'] * luz * k
+    for r, c in [(20, P['copa2']), (17, P['copa']), (10, P['copa3'])]:
+        cc = ((XX[y - 22:y + 8, x - 22:x + 23] - x) / r) ** 2 + ((YY[y - 22:y + 8, x - 22:x + 23] - (y - 6)) / (r * .8)) ** 2 < 1
+        sub = img[y - 22:y + 8, x - 22:x + 23]; sub[cc] = c
+    for dx, dy in [(-12, -10), (-6, -16), (5, -14), (12, -6), (-14, 0), (2, -4), (9, 2)]:
+        img[y - 6 + dy:y - 6 + dy + 2, x + dx:x + dx + 3] = P['folha3']
+
+def tesouro(img, t):
+    x, y = TESOURO
+    for k in range(5): img[y + k, x + k] = P['vermelho']; img[y + k, x + 4 - k] = P['vermelho']
+    img[y - 1:y + 6, x + 8] = P['madeira2']; img[y - 2, x + 7:x + 10] = P['pedra']
+
+def sombra_mar(img, t, k=1.0, olho=0.0):
+    """uma criatura enorme passando por baixo d'água: só a sombra (e um olho no fim)"""
+    x0, y0 = SOMBRA
+    if k <= 0: return
+    for s in range(26):
+        u = s / 25; cx = x0 + 120 * (t * .22 % 1) - 60 - s * 4.2; cy = y0 + 10 * math.sin(t * 1.3 - s * .35)
+        r = 13 * math.sin(math.pi * min(1, u * 1.1 + .1)) ** .7 + 1.5
+        y1, y2, x1, x2 = int(cy - r), int(cy + r) + 1, int(cx - r), int(cx + r) + 1
+        if x2 < 0 or x1 >= WW: continue
+        yy, xx = np.mgrid[y1:y2, max(0, x1):min(WW, x2)]
+        m = (xx - cx) ** 2 + (yy - cy) ** 2 < r * r
+        m2 = (xx - cx) ** 2 + (yy - cy) ** 2 < (r * .6) ** 2
+        img[yy[m], xx[m]] *= 1 - .18 * k; img[yy[m2], xx[m2]] *= 1 - .18 * k
+        if s == 0 and olho > 0:
+            ex, ey = int(cx + r * .35), int(cy - r * .35)
+            img[ey, ex:ex + 2] = P['luz'] * olho + img[ey, ex] * (1 - olho)
+
+GARRAFA = spr(['..r', '.gg', 'gGg', 'gg.'], {'r': P['rolha'], 'g': P['garrafa'], 'G': P['agua2']})
