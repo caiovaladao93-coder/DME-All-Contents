@@ -1,0 +1,4 @@
+out/testes/
+out/*-mudo.mp4
+*.pyc
+__pycache__/
