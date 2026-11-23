@@ -58,3 +58,44 @@ A v2 tem 67,7 s.
 | 12 | Volta à fogueira; ao lado, um terreno vazio com uma placa "?". | Segue a página. A próxima cabana pode ser a sua. |
 
 O plano final é o mesmo acampamento do plano 4, o que fecha o loop.
+
+---
+
+# Ep. 2 · "A vila" (50 seguidores, 63,8 s)
+
+**Pedido do usuário:** a vila cresce de forma organizada, sem amontoar, e cada morador tem o seu nick. As metas foram multiplicadas por 100, nada é liberado neste episódio e a criatura continua "???". Os nicks estão em `video/serie-saramar/dados/moradores-ep2.json` (35 nicks; os outros 15 moradores aparecem sem nome, como "+1").
+
+## Metas novas (o "mapa verdadeiro" da garrafa)
+
+| Lugar | Ep. 1 | Ep. 2 |
+|---|---|---|
+| Cachoeira | 10 | **1.000** |
+| X na praia | 25 | **2.500** |
+| Templo da lagoa | 50 | **5.000** |
+| Círculo de pedras | 100 | **10.000** |
+| Árvore gigante | 250 | **25.000** |
+| Navio encalhado | 500 | **50.000** |
+| Rosto de pedra | 1.000 | **100.000** |
+| Fundo do mar | ??? | **???** |
+
+A troca é justificada na história: a garrafa que chegou no fim do ep. 1 traz um mapa antigo, "o mapa verdadeiro". No mapa verdadeiro, a árvore gigante fica um pouco mais ao norte, porque a vila ocupa o lugar antigo.
+
+## Roteiro
+
+| Tela | Narração |
+|---|---|
+| Ilha de cima e "ESSA PÁGINA TEM **50** SEGUIDORES". | Essa página tem cinquenta seguidores. |
+| O acampamento do ep. 1. | No último episódio, Saramar tinha dois moradores e uma cabana. |
+| 3 barcos encostam e 48 moradores sobem a praia. | Agora, chegaram mais quarenta e oito. |
+| As árvores somem num dissolve em pixels e abre a clareira. | E dessa vez, ninguém ia construir de qualquer jeito. |
+| Estacas e cordas: avenida central e 6 ruas. | Primeiro, os dois mais antigos marcaram as ruas. |
+| Lotes tracejados (6 ruas × 9 lotes). | Depois, dividiram os lotes. Um pra cada morador. |
+| As cabanas sobem rua por rua, cada uma com o @nick do dono e o contador "CABANAS n/50". | E as cabanas foram subindo, rua por rua, cada uma com o nome do seu dono. |
+| Praça de terra, poço e 3 canteiros de horta. | No meio, uma praça. Um poço. Uma horta pra todo mundo. |
+| A vila inteira, com cada morador na frente da sua casa. | Cinquenta moradores. Cinquenta cabanas. Nada fora do lugar. |
+| Um morador busca a garrafa na praia e tira a rolha. | Mas lembra da garrafa que o mar trouxe? Dentro dela, tinha um mapa. |
+| O mapa antigo em sépia desenrola: "SARAMAR · O MAPA VERDADEIRO", com a vila marcada "50 OK". | Um mapa antigo, que mostra o que a ilha realmente esconde. |
+| Pinos com cadeado e as metas ×100. | E cada segredo pede muito mais gente do que a gente imaginava. |
+| Zoom na cachoeira (1.000) e no rosto (100.000). | Mil seguidores, pra cachoeira. Cem mil, pro rosto de pedra. |
+| Corcovas da criatura desenhadas no mar e o pino "???". | E o que vive no fundo do mar... ninguém sabe. |
+| Anoitece na vila: o último lote vazio, com a placa "?" e "@SEU_NOME_AQUI?". | Segue a página. A próxima cabana pode ter o seu nome. |

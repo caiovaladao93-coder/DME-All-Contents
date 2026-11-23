@@ -21,6 +21,13 @@ O perfil começa com 2 seguidores. O episódio passa pela ilha e pelos mistério
 
 Também estão em `out/`: `capa-ep1.png`, `marcas-som-ep1.txt` e `conferencia-ep1.txt`.
 
+## Ep. 2 · "A vila" (63,8 s) · `out/Saramar-Ep2.mp4`
+
+- **Vídeo:** `scripts/ep2.py`. Usa a mesma ilha do ep. 1: importa `video.py`, que monta `BASE`, e reconstrói o chão sem árvores para abrir a clareira da vila. São 6 ruas × 9 lotes (casinhas 14×12), com a avenida central até a praça. As cabanas sobem da praça para cima, cada uma com o @nick do dono (`dados/moradores-ep2.json`), e no máximo 3 nicks aparecem na tela ao mesmo tempo, em 3 alturas. O mapa antigo é a própria ilha em sépia, com pinos de cadeado e as metas ×100.
+- **Narração:** `scripts/gerar_voz_ep2.mjs` (tomada `ep2-3`). As pausas foram encurtadas com `python3 scripts/encurtar.py ep2-3 voz/ep2`.
+- **Som:** `scripts/trilha_ep2.py`. Cada cabana toca uma nota da pentatônica de Ré: a coluna define a nota e cada rua sobe um degrau. Também há estacas, cordas, a rolha, o papel do mapa e um carimbo por pino.
+- Também estão em `out/`: `capa-ep2.png`, `marcas-som-ep2.txt` e `conferencia-ep2.txt`.
+
 ## Próximos episódios
 
 Troque o número no cabeçalho de `video.py` pelo número real de seguidores e acrescente ao mundo o que eles "construíram". Os mistérios (o rosto, o navio, o farol do ilhéu) são os ganchos para revelar quando o perfil bater metas.

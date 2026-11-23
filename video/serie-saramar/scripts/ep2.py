@@ -372,13 +372,14 @@ def sobrepor(base, t, cam, mapa=False):
         if T_CASAS[0] <= t < T_TUDO[0] + 1.0:
             for i, tc in enumerate(T_CASA):
                 u = t - tc
-                if not (0 <= u < .95): continue
-                x, y = LOTES[i]; sx = (x + 7 - cx) * z + W / 2; sy = (y - cy) * z + H / 2 - 30 - (i % 3) * 46
-                nk = nick_de(i); al = min(1, u / .08) * min(1, (.95 - u) / .2)
-                rot, cor, sz = (f'@{nk}', CREME, 34) if nk else ('+1', OURO, 40)
+                VIDA = 3 * DT_CASA - .02                     # no máximo 3 nicks na tela, um em cada altura
+                if not (0 <= u < VIDA): continue
+                x, y = LOTES[i]; sx = (x + 7 - cx) * z + W / 2; sy = (y - cy) * z + H / 2 - 34 - (i % 3) * 54
+                nk = nick_de(i); al = min(1, u / .06) * min(1, (VIDA - u) / .1)
+                rot, cor, sz = (f'@{nk}', CREME, 38) if nk else ('+1', OURO, 42)
                 f = V.fonte(sz); larg = f.getlength(rot)
                 sx = min(max(sx, 70 + larg / 2), W - 70 - larg / 2)
-                texto(d, sx, sy - u * 18, [(rot, cor)], sz, al)
+                texto(d, sx, sy - u * 12, [(rot, cor)], sz, al)
         if t >= T_FIM + 1.2:
             x, y = LOTE_EXTRA; sx = (x + 7 - cx) * z + W / 2; sy = (y - cy) * z + H / 2 - 70
             texto(d, sx, sy, [('@SEU_NOME_AQUI?', OURO)], 46, min(1, (t - T_FIM - 1.2) / .4))

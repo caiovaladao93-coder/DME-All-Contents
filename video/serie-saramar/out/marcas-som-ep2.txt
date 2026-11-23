@@ -1,0 +1,81 @@
+MARCAS DE SOM · SARAMAR EP. 2 "A VILA" (narração: Saramar Narrador, tomada ep2-3 com pausas encurtadas)
+
+ -0.05  fala: "ESSA PÁGINA TEM"
+  0.00  violão dedilhado em Ré maior (72 BPM), o tema de Saramar
+  0.05  plim no número de seguidores (50)
+  0.89  fala: "CINQUENTA SEGUIDORES"
+  2.69  fala: "NO ÚLTIMO EPISÓDIO"
+  4.34  fala: "SARAMAR TINHA DOIS"
+  5.47  fala: "MORADORES E UMA"
+  6.45  fala: "CABANA"
+  7.32  barcos encostam e os 48 sobem a praia (passos na areia)
+  7.47  fala: "AGORA"
+  8.29  fala: "CHEGARAM MAIS QUARENTA"
+  9.42  fala: "E OITO"
+ 10.55  fala: "E DESSA VEZ"
+ 10.60  clareira: machadadas e as árvores saem
+ 11.67  fala: "NINGUÉM IA CONSTRUIR"
+ 12.84  fala: "DE QUALQUER JEITO"
+ 14.28  fala: "PRIMEIRO"
+ 14.33  estacas batidas: as ruas são marcadas
+ 15.17  fala: "OS DOIS MAIS"
+ 15.89  fala: "ANTIGOS MARCARAM"
+ 16.91  fala: "AS RUAS"
+ 18.00  fala: "DEPOIS"
+ 18.05  cordas esticadas: os lotes são divididos
+ 18.50  fala: "DIVIDIRAM OS LOTES"
+ 20.05  fala: "UM PRA CADA"
+ 20.87  fala: "MORADOR"
+ 21.95  fala: "E AS CABANAS"
+ 22.10  50 cabanas: cada uma toca uma nota (escala que sobe rua por rua) com uma martelada
+ 22.10  as cabanas sobem: a trilha ganha pulso (96 BPM)
+ 22.63  fala: "FORAM SUBINDO"
+ 23.59  fala: "RUA POR RUA"
+ 24.59  fala: "CADA UMA COM"
+ 25.34  fala: "O NOME DO"
+ 25.81  fala: "SEU DONO"
+ 26.82  fala: "NO MEIO"
+ 26.87  praça, poço (água) e horta (terra mexida)
+ 27.39  fala: "UMA PRAÇA"
+ 28.55  fala: "UM POÇO"
+ 29.63  fala: "UMA HORTA PRA"
+ 30.32  fala: "TODO MUNDO"
+ 31.38  fala: "CINQUENTA MORADORES"
+ 31.43  "Cinquenta moradores. Cinquenta cabanas.": três notas que fecham a vila
+ 33.02  fala: "CINQUENTA CABANAS"
+ 34.58  fala: "NADA FORA DO"
+ 35.21  fala: "LUGAR"
+ 36.32  garrafa: a música para, fica um acorde suspenso
+ 36.42  fala: "MAS LEMBRA DA"
+ 37.01  fala: "GARRAFA QUE O"
+ 37.66  fala: "MAR TROUXE"
+ 38.89  fala: "DENTRO DELA"
+ 39.72  fala: "TINHA UM MAPA"
+ 39.96  garrafa: a rolha sai ("plóc")
+ 40.96  mapa antigo: acorde menor; no fundo do mar, drone grave
+ 40.96  o mapa desenrola (papel)
+ 41.11  fala: "UM MAPA ANTIGO"
+ 42.31  fala: "QUE MOSTRA O"
+ 42.93  fala: "QUE A ILHA"
+ 43.44  fala: "REALMENTE ESCONDE"
+ 45.07  fala: "E CADA SEGREDO"
+ 45.22  8 pinos de meta carimbados no mapa (metas ×100)
+ 46.13  fala: "PEDE MUITO MAIS"
+ 47.04  fala: "GENTE DO QUE"
+ 47.71  fala: "A GENTE IMAGINAVA"
+ 49.33  fala: "MIL SEGUIDORES"
+ 50.62  fala: "PRA CACHOEIRA"
+ 51.97  fala: "CEM MIL"
+ 52.66  fala: "PRO ROSTO DE"
+ 53.30  fala: "PEDRA"
+ 54.30  fala: "E O QUE"
+ 54.35  fundo do mar: nota grave e o drone
+ 54.67  fala: "VIVE NO FUNDO"
+ 55.37  fala: "DO MAR"
+ 56.46  fala: "NINGUÉM SABE"
+ 57.78  volta o violão calmo; anoitece na vila
+ 57.78  último lote vazio, com a placa "?" e @SEU_NOME_AQUI?
+ 57.93  fala: "SEGUE A PÁGINA"
+ 59.38  fala: "A PRÓXIMA CABANA"
+ 60.32  fala: "PODE TER O"
+ 60.84  fala: "SEU NOME"

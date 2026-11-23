@@ -1,0 +1,9 @@
+CONFERÊNCIA · Saramar-Ep2.mp4 (A vila)
+stream|codec_name=h264|width=1080|height=1920|r_frame_rate=30/1
+stream|codec_name=aac|r_frame_rate=0/0
+format|duration=63.800000
+    I:         -14.2 LUFS
+    Peak:       -1.7 dBFS
+narração conferida por transcrição (ElevenLabs Scribe) no áudio final: texto idêntico ao roteiro
+nicks: 35 (dados/moradores-ep2.json), no máximo 3 na tela ao mesmo tempo; 15 moradores sem nick (+1)
+final sem chiado: agudos >4 kHz ~3% nos 2 s finais
