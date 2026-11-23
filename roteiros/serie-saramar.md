@@ -15,7 +15,32 @@ Aparecem na abertura e no fim. São ganchos para os próximos episódios.
 2. **O navio encalhado:** um casco antigo no recife, com uma luz acesa no porão.
 3. **O farol do ilhéu:** um farol num ilhéu ao longe, que acende sozinho à noite, sem ninguém lá.
 
-## Roteiro do ep. 1 (cerca de 50 s)
+## Lugares para explorar e metas (v2)
+
+A pedido do usuário, a ilha ganhou mais lugares para explorar. Cada um tem uma **meta de seguidores** no mapa do fim do vídeo. O perfil precisa cumprir essas metas: quando bater cada uma, o episódio seguinte abre aquele lugar.
+
+| Meta | Lugar | O que se vê |
+|---|---|---|
+| 2 ✓ | Acampamento | dois moradores, fogueira, primeira cabana |
+| 10 | Cachoeira | uma queda d'água no penhasco, com a boca de uma caverna atrás; o rio desce até o mar |
+| 25 | "X" na praia leste | um X vermelho na areia e uma pá |
+| 50 | Templo da lagoa | uma pirâmide afundada com pilares e uma runa que pulsa em verde-água |
+| 100 | Círculo de pedras | 8 pedras em pé e um altar; a runa acende em "ergueu" |
+| 250 | Árvore gigante | uma copa enorme e uma porta no tronco, com a fechadura acesa |
+| 500 | Navio encalhado | o casco no recife, com luz no porão |
+| 1.000 | Rosto de pedra | um rosto no morro que abre os olhos |
+| ??? | Fundo do mar | a sombra de uma criatura enorme passando, e um olho que brilha |
+
+Além disso, uma **garrafa com mensagem** chega à praia do acampamento no último plano. É o gancho do ep. 2.
+
+## Roteiro do ep. 1 (v1, cerca de 50 s)
+
+A v2 tem a mesma sequência, mais duas inserções:
+
+- **Depois de "desvendou":** "Uma cachoeira que esconde uma caverna. Um templo engolido pela lagoa. Pedras que ninguém sabe quem ergueu. Uma árvore com uma porta. E, no fundo do mar… alguma coisa se mexe."
+- **Antes de "Segue a página":** "Cada meta de seguidores abre um lugar novo do mapa."
+
+A v2 tem 67,7 s.
 
 | # | Tela | Narração |
 |---|---|---|

@@ -1,66 +1,89 @@
-MARCAS DE SOM · SARAMAR EP. 1 (narração: Saramar Narrador, tomada 2)
+MARCAS DE SOM · SARAMAR EP. 1 (narração: Saramar Narrador, tomada ep1v3-2 com pausas encurtadas)
 
  -0.05  fala: "ESSA PÁGINA TEM"
   0.00  violão dedilhado em Ré maior (72 BPM) e mar
   0.05  plim no número de seguidores
-  0.91  fala: "DOIS SEGUIDORES"
-  2.77  fala: "E AQUI"
-  3.74  fala: "CADA SEGUIDOR VIRA"
-  5.04  fala: "UM MORADOR"
-  6.50  sopros de vento nas passagens de câmera
-  6.66  fala: "ESSA É SARAMAR"
-  8.25  fala: "UMA ILHA CERCADA"
-  9.25  fala: "DE SEGREDOS QUE"
- 10.05  fala: "NINGUÉM DESVENDOU"
- 12.11  fala: "MAS"
- 12.34  fala: "POR ENQUANTO"
- 12.50  estalos da fogueira
- 13.51  fala: "TUDO O QUE"
- 13.97  fala: "EXISTE É UMA"
- 14.68  fala: "PRAIA"
- 15.41  fala: "DOIS MORADORES E"
- 16.61  fala: "UMA FOGUEIRA"
- 18.19  fala: "UM DELES JUNTA"
- 19.21  fala: "A MADEIRA QUE"
- 19.91  fala: "O MAR TROUXE"
- 21.00  tora cai na pilha
- 21.16  fala: "O OUTRO LIMPA"
- 21.20  vassoura na areia
- 21.87  fala: "A AREIA E"
- 22.79  fala: "ERGUE AS PRIMEIRAS"
- 22.80  marteladas enquanto as paredes sobem
- 23.59  fala: "PAREDES"
- 25.03  fala: "É A PRIMEIRA"
- 25.10  telhado: a cabana fica pronta (baque e acorde)
- 25.59  fala: "CABANA"
- 26.70  fala: "O PRIMEIRO ACAMPAMENTO"
- 29.22  fala: "NÃO TEM PORTO"
- 30.36  fala: "NÃO TEM FAROL"
- 31.75  fala: "SÓ OS DOIS"
- 33.15  fala: "E O MAR"
- 33.30  zoom de afastar sobre o mar
- 33.48  fala: "INTEIRO PELA FRENTE"
- 35.40  anoitece: o violão some, fica um acorde grave e os grilos
- 35.57  fala: "MAS TODA VILA"
- 36.49  fala: "COMEÇOU ASSIM"
- 36.70  o farol do ilhéu pisca: nota grave
- 37.95  silêncio antes de "A cada novo seguidor"
- 38.41  fala: "A CADA NOVO"
- 38.45  amanhece: a trilha volta cheia, com pulso a 96 BPM
- 38.70  8 "plins" que sobem: uma cabana nova (+1) para cada um
- 39.18  fala: "SEGUIDOR"
- 40.07  fala: "SARAMAR CRESCE"
- 41.72  fala: "MAIS CABANAS"
- 42.75  fala: "BARCOS"
- 43.33  fala: "PESCADORES"
- 44.72  fala: "UM FAROL"
- 45.95  fala: "ATÉ CHEGARMOS AOS"
- 46.00  mistério: drone grave e notas menores
- 47.01  fala: "SEGREDOS DA ILHA"
- 47.75  o rosto de pedra abre os olhos: ronco grave
- 49.23  fala: "SEGUE A PÁGINA"
- 49.30  volta ao acampamento: o terreno vazio com a placa "?"
- 49.30  volta o violão calmo do começo (loop)
- 50.70  fala: "A PRÓXIMA CABANA"
- 51.85  fala: "PODE SER A"
- 52.51  fala: "SUA"
+  0.96  fala: "DOIS SEGUIDORES"
+  2.39  fala: "E AQUI"
+  3.48  fala: "CADA SEGUIDOR VIRA"
+  4.51  fala: "UM MORADOR"
+  5.54  sopros de vento nas passagens de câmera
+  5.63  fala: "ESSA É SARAMAR"
+  7.01  fala: "UMA ILHA CERCADA"
+  7.98  fala: "DE SEGREDOS QUE"
+  8.75  fala: "NINGUÉM DESVENDOU"
+ 10.06  cachoeira: água caindo
+ 10.31  fala: "UMA CACHOEIRA QUE"
+ 11.26  fala: "ESCONDE UMA CAVERNA"
+ 12.90  templo: runa acende (sino cristalino)
+ 12.95  fala: "UM TEMPLO ENGOLIDO"
+ 14.09  fala: "PELA LAGOA"
+ 15.32  fala: "PEDRAS QUE NINGUÉM"
+ 16.30  fala: "SABE QUEM ERGUEU"
+ 16.73  pedras: zumbido grave quando a runa acende
+ 17.85  fala: "UMA ÁRVORE COM"
+ 18.65  fala: "UMA PORTA"
+ 18.91  árvore: rangido de porta
+ 19.89  fala: "E"
+ 20.00  fala: "NO FUNDO DO"
+ 20.62  fala: "MAR"
+ 21.65  fala: "ALGUMA COISA SE"
+ 21.70  fundo do mar: a trilha baixa e a criatura geme grave
+ 22.51  fala: "MEXE"
+ 23.82  fala: "MAS"
+ 24.05  fala: "POR ENQUANTO"
+ 24.22  estalos da fogueira
+ 25.07  fala: "TUDO O QUE"
+ 25.53  fala: "EXISTE É UMA"
+ 26.19  fala: "PRAIA"
+ 26.99  fala: "DOIS MORADORES E"
+ 28.13  fala: "UMA FOGUEIRA"
+ 29.34  fala: "UM DELES JUNTA"
+ 30.24  fala: "A MADEIRA QUE"
+ 30.86  fala: "O MAR TROUXE"
+ 31.95  tora cai na pilha
+ 32.12  fala: "O OUTRO"
+ 32.16  vassoura na areia
+ 32.97  fala: "LIMPA A AREIA"
+ 34.22  fala: "E ERGUE AS"
+ 34.42  marteladas enquanto as paredes sobem
+ 34.80  fala: "PRIMEIRAS PAREDES"
+ 36.40  fala: "É A PRIMEIRA"
+ 36.47  telhado: a cabana fica pronta (baque e acorde)
+ 36.98  fala: "CABANA"
+ 37.98  fala: "O PRIMEIRO ACAMPAMENTO"
+ 39.77  fala: "NÃO TEM PORTO"
+ 40.96  fala: "NÃO TEM FAROL"
+ 42.22  fala: "SÓ OS DOIS"
+ 43.62  fala: "E O MAR"
+ 43.77  zoom de afastar sobre o mar
+ 43.95  fala: "INTEIRO PELA FRENTE"
+ 45.72  anoitece: o violão some, fica um acorde grave e os grilos
+ 45.88  fala: "MAS TODA VILA"
+ 46.67  fala: "COMEÇOU ASSIM"
+ 46.86  o farol do ilhéu pisca: nota grave
+ 47.86  silêncio antes de "A cada novo seguidor"
+ 48.22  fala: "A CADA NOVO"
+ 48.25  amanhece: a trilha volta cheia, com pulso a 96 BPM
+ 48.48  8 "plins" que sobem: uma cabana nova (+1) para cada um
+ 48.95  fala: "SEGUIDOR"
+ 49.82  fala: "SARAMAR CRESCE"
+ 51.38  fala: "MAIS CABANAS"
+ 52.22  fala: "BARCOS"
+ 52.72  fala: "PESCADORES"
+ 54.08  fala: "UM FAROL"
+ 55.38  fala: "ATÉ CHEGARMOS AOS"
+ 55.43  mistério: drone grave e notas menores
+ 56.36  fala: "SEGREDOS DA ILHA"
+ 57.05  o rosto de pedra abre os olhos: ronco grave
+ 58.10  mapa de metas: 9 pinos com "plim"
+ 58.15  fala: "CADA META DE"
+ 58.88  fala: "SEGUIDORES ABRE"
+ 60.01  fala: "UM LUGAR NOVO"
+ 60.85  fala: "DO MAPA"
+ 61.97  fala: "SEGUE A PÁGINA"
+ 62.03  volta ao acampamento: o terreno vazio com a placa "?"
+ 62.03  volta o violão calmo do começo (loop)
+ 63.55  fala: "A PRÓXIMA CABANA"
+ 64.49  fala: "PODE SER A"
+ 65.07  fala: "SUA"
