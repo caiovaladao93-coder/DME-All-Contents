@@ -1,7 +1,8 @@
-CONFERÊNCIA · Saramar-Ep1.mp4 (v2, com lugares para explorar e mapa de metas)
+CONFERÊNCIA · Saramar-Ep1.mp4 (v2.1, final sem chiado)
 stream|codec_name=h264|width=1080|height=1920|r_frame_rate=30/1
 stream|codec_name=aac|r_frame_rate=0/0
 format|duration=67.700000
     I:         -14.1 LUFS
-    Peak:       -1.5 dBFS
+    Peak:       -1.4 dBFS
 narração conferida por transcrição (ElevenLabs Scribe) no áudio final: texto idêntico ao roteiro
+final: mar e fogueira somem depois da última fala; violão sem o ruído do ataque; agudos >4 kHz no trecho final caíram de cerca de 16% para cerca de 4% da energia

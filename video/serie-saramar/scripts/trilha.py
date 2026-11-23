@@ -29,7 +29,8 @@ def corda(m, d=2.2, brilho=.5):
     p = max(2, int(round(SR / hz(m)))); n = int(d * SR); buf = R.uniform(-1, 1, p); y = np.zeros(n)
     for i in range(0, n, p):
         seg = buf.copy(); y[i:i + p] = seg[:min(p, n - i)]; buf = .997 * (brilho * seg + (1 - brilho) * np.roll(seg, -1))
-    t = ar(n); y = y / (np.abs(y).max() + 1e-9) * np.exp(-t / 1.4) * np.minimum(1, t / .002)
+    y = filt(y, 40, 5000)                                   # tira o chiado do ataque da corda
+    t = ar(n); y = y / (np.abs(y).max() + 1e-9) * np.exp(-t / 1.4) * np.minimum(1, t / .004)
     _pc[k] = y; return y
 def pad(ms, d):
     n = int(d * SR); t = ar(n); s = sum(np.sin(2 * np.pi * hz(m) * t + .3 * np.sin(2 * np.pi * .2 * t)) for m in ms) / len(ms)
@@ -67,13 +68,15 @@ dedilhado(MAPA[0], DUR, 72, .5); MARCAS.append((Nt(49.3), 'volta o violão calmo
 
 # ── ambiente ─────────────────────────────────────────────────────────────────────────────────────
 n = N; tt = ar(n)
-mar = filt(ruido(n), 150, 1800) * (.5 + .5 * np.sin(2 * np.pi * tt / 6.5) ** 2)
+mar = filt(ruido(n), 120, 900) * (.5 + .5 * np.sin(2 * np.pi * tt / 6.5) ** 2)          # mar grave (sem chiado)
+FIM_VOZ = EV['fim_voz'] if 'fim_voz' in EV else DUR - 2.0
+saida = np.clip((FIM_VOZ + 1.2 - tt) / 1.2, 0, 1)                                       # ambiente some depois da última fala
 amb_mar = np.where((tt >= Nt(46.0)) & (tt < Nt(49.3)), .4, 1.0)
-put(FX, mar * amb_mar * .08, 0)
-fogo = filt(ruido(n), 800, 6000) * (R.random(n) < .0009).astype(float) * 2.5
+put(FX, mar * amb_mar * saida * .08, 0)
+fogo = filt(ruido(n), 500, 2800) * (R.random(n) < .0006).astype(float) * 2.5          # estalos mais secos e graves
 fogo = np.convolve(fogo, np.exp(-ar(600) / .002), 'same')
 env_fogo = ((tt >= Nt(12.5)) & (tt < Nt(41.7))) | (tt >= Nt(49.3))
-put(FX, fogo * env_fogo * .35, 0)
+put(FX, fogo * env_fogo * saida * .25, 0)
 MARCAS.append((Nt(12.5), 'estalos da fogueira'))
 # grilos à noite
 grilo = np.sin(2 * np.pi * 4300 * tt) * (np.sin(2 * np.pi * 28 * tt) > .6) * (np.sin(2 * np.pi * 1.1 * tt) > 0)
@@ -143,7 +146,13 @@ i0, i1 = int(Nt(37.95) * SR), int(Nt(38.45) * SR); MU[i0:i1] *= np.linspace(1, 0
 musica = (MU * .55 + FX) * duck[:, None]
 musica /= np.abs(musica).max() + 1e-9
 mix = musica * .32 + VOZ[:, None] / (np.abs(VOZ).max() + 1e-9) * .8
-fo = int(.8 * SR); mix[-fo:] *= np.linspace(1, 0, fo)[:, None]
+fo = int(1.6 * SR); mix[-fo:] *= (np.linspace(1, 0, fo) ** 2)[:, None]
+# fecho limpo: depois da última fala, um passa-baixa que vai fechando (6 kHz → 2 kHz)
+i0 = int((FIM_VOZ - .2) * SR); cauda = mix[i0:].copy()
+for c in range(2):
+    X = np.fft.rfft(cauda[:, c]); f = np.fft.rfftfreq(len(cauda), 1 / SR); X[f > 3500] *= .15; X[f > 6000] = 0
+    cauda[:, c] = np.fft.irfft(X, len(cauda))
+xf = np.minimum(1, np.arange(len(cauda)) / (.3 * SR))[:, None]; mix[i0:] = mix[i0:] * (1 - xf) + cauda * xf
 subprocess.run(['ffmpeg', '-y', '-v', 'error', '-f', 'f64le', '-ar', str(SR), '-ac', '2', '-i', '-', '-c:a', 'pcm_s16le', f'{ROOT}/out/trilha-ep1.wav'], input=mix.tobytes(), check=True)
 with open(f'{ROOT}/out/marcas-som-ep1.txt', 'w') as f:
     f.write('MARCAS DE SOM · SARAMAR EP. 1 (narração: Saramar Narrador, tomada ep1v3-2 com pausas encurtadas)\n\n')

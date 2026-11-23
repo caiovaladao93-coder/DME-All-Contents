@@ -367,7 +367,7 @@ def main():
     ff.stdin.close(); ff.wait()
     json.dump({'dur': DUR, 'casas': [t_novo(x) for x in T_CASA], 'mont': MONT, 'mapa': MAPA, 'cenas': [(c[0], c[1], c[2]) for c in CENAS],
                'pinos': [MAPA[0] + .25 + k * .33 for k in range(len(PINOS))], 'velho_para_novo': [ANC_V.tolist(), ANC_N.tolist()],
-               'palavras': {i: PAL[i]['a'] for i in (38, 44, 50, 52)}, 'legendas': [(a, b, ' '.join(ws)) for a, b, ws, _ in LEG]}, open(f'{ROOT}/out/eventos-ep1.json', 'w'), ensure_ascii=False, indent=1)
+               'palavras': {i: PAL[i]['a'] for i in (38, 44, 50, 52)}, 'fim_voz': PAL[-1]['b'], 'legendas': [(a, b, ' '.join(ws)) for a, b, ws, _ in LEG]}, open(f'{ROOT}/out/eventos-ep1.json', 'w'), ensure_ascii=False, indent=1)
     print('fim', n, 'quadros')
 
 if __name__ == '__main__':
