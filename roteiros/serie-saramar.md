@@ -113,3 +113,34 @@ A troca é justificada na história: a garrafa que chegou no fim do ep. 1 traz u
 | Zoom na cachoeira (1.000) e no rosto (100.000). | Mil seguidores, pra cachoeira. Cem mil, pro rosto de pedra. |
 | Corcovas da criatura desenhadas no mar e o pino "???". | E o que vive no fundo do mar... ninguém sabe. |
 | Anoitece na vila: o último lote vazio, com a placa "?" e "@SEU_NOME_AQUI?". | Segue a página. A próxima cabana pode ter o seu nome. |
+
+---
+
+# Ep. 3 · "A árvore" (100 seguidores; 57,9 s)
+
+**Pedido do usuário:** episódio com 100 seguidores e "algo diferente de só cabanas", para gerar engajamento: **o comentário mais curtido do vídeo vai morar na construção nova**. As 50 cabanas novas saem **sem nome** ("+1"); os nicks entram depois.
+
+- **A vila cresce até a árvore gigante.** A rua vazia do ep. 2 enche (10 cabanas), duas ruas novas sobem mata adentro (20) e param na árvore da porta. Um morador ergue o machado, desiste e a fechadura acende. A vila **desvia pela esquerda**, em 4 ruas curtas (20). A rua de cima de todas fica com 5 lotes vazios e a placa "?" para o ep. 4.
+- **A construção diferente:** um **farol listrado com a casa do faroleiro** (pedra e telhado azul, a primeira que não é de madeira), na ponta da praia sul, onde o ep. 1 já mostrava um farol na montagem. Fica "ainda sem dono", com a placa "?" e "@???". O mais curtido mora lá.
+- **Porto:** píer construído tábua por tábua, 3 barcos amarrados, 2 varais de rede e 6 pescadores (moradores antigos).
+- **Gancho:** na primeira noite, uma luz tremula **atrás da cachoeira**; o mapa verdadeiro marca "100 OK" na vila e a cachoeira em vermelho, "FALTAM 900".
+- **Voz:** Saramar Narrador, tomada `ep3-1` (3 tomadas, conferidas por transcrição, todas sem erro), pausas encurtadas com `scripts/encurtar.py ep3-1 voz/ep3`.
+
+## Roteiro
+
+| Tela | Narração |
+|---|---|
+| Ilha de cima e "ESSA PÁGINA TEM **100** SEGUIDORES". | Essa página tem cem seguidores. |
+| A vila do ep. 2 e a rua vazia de cima. | No último episódio, a vila tinha cinquenta cabanas. E uma rua vazia, esperando. |
+| 6 barcos encostam e 50 moradores sobem a praia. | Agora, chegaram mais cinquenta. |
+| A rua vazia ganha 10 cabanas ("+1" e o contador "CABANAS n/100"). | A rua de cima encheu primeiro. |
+| Machados derrubam a mata, estacas e duas ruas novas, 20 cabanas. | Depois, abriram mais duas ruas. Mata adentro. |
+| A árvore gigante; a fechadura acende; um morador ergue o machado e desiste. | Até chegar na árvore. A da porta. Ninguém teve coragem de cortar. |
+| A mata da esquerda cai e 20 cabanas sobem ao lado da árvore. | Então, a vila desviou dela. |
+| Plano aberto, "CABANAS 100/100". | Cem moradores. Cem cabanas. |
+| Píer tábua por tábua, barcos, redes, pescadores. | Mas cem pessoas comem muito. Então veio o píer. Os barcos. As redes. |
+| O farol sobe; a casa de pedra com telhado azul; placa "?" e "@???". | E na ponta da praia, uma construção diferente. Um farol. Com uma casa embaixo. Ainda sem dono. |
+| Anoitece (janelas acesas, facho do farol girando); a câmera sobe até a cachoeira e uma luz tremula lá atrás. | Na primeira noite com cem moradores, alguém viu uma luz… atrás da cachoeira. |
+| Mapa verdadeiro: "100 OK" e a cachoeira em vermelho, "FALTAM 900". | Faltam novecentos seguidores pra cachoeira. |
+| O farol à noite: "O MAIS CURTIDO MORA AQUI" e "COMENTA!". | O comentário mais curtido desse vídeo vai morar no farol. |
+| Os lotes vazios de cima, a placa "?" e "@SEU_NOME_AQUI?". | Segue a página. A próxima cabana pode ter o seu nome. |

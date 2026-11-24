@@ -5,7 +5,9 @@ import numpy as np
 SR = 48000; TOM = sys.argv[1] if len(sys.argv) > 1 else 'ep1v3-2'
 SAIDA = sys.argv[2] if len(sys.argv) > 2 else 'voz'            # pasta de saída (ep. 2: voz/ep2)
 PMAX = .38
-LONGAS = {'Uma': .45, 'Mas,': .7, 'Mas': .7, 'A': .55, 'Cada': .6, 'Segue': .45} if SAIDA == 'voz' else {'Mas': .75, 'E': .45, 'Segue': .5, 'ninguém': .45}   # pausa antes destas palavras (primeira ocorrência após frase)
+LONGAS = {'Uma': .45, 'Mas,': .7, 'Mas': .7, 'A': .55, 'Cada': .6, 'Segue': .45} if SAIDA == 'voz' else {'Mas': .75, 'E': .45, 'Segue': .5, 'ninguém': .45}
+if SAIDA == 'voz/ep3':   # ep. 3: respiro antes das viradas (o píer, o farol, a noite, as metas e o fecho)
+    LONGAS = {'Mas': .6, 'E': .5, 'Na': .75, 'Faltam': .55, 'O': .5, 'Segue': .45, 'Ninguém': .4, 'Então,': .45}   # pausa antes destas palavras (primeira ocorrência após frase)
 A = json.load(open(f'voz/takes/{TOM}.json'))['alignment']
 ch, t0, t1 = A['characters'], A['character_start_times_seconds'], A['character_end_times_seconds']
 txt = ''.join(ch); pal = []

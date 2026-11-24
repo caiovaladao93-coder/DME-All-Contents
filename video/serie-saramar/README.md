@@ -32,6 +32,13 @@ Na v2, a vila é compacta: cabanas de 11×9 coladas, em 5 ruas × 10 lotes e uma
 - **Som:** `scripts/trilha_ep2.py`. Cada cabana toca uma nota da pentatônica de Ré: a coluna define a nota e cada rua sobe um degrau. Também há estacas, cordas, a rolha, o papel do mapa e um carimbo por pino.
 - Também estão em `out/`: `capa-ep2.png`, `marcas-som-ep2.txt` e `conferencia-ep2.txt`.
 
+## Ep. 3 · "A árvore" (57,9 s, 100 seguidores) · `out/Saramar-Ep3.mp4`
+
+- **Vídeo:** `scripts/ep3.py`. Parte da vila exatamente como o ep. 2 terminou (importa `ep2.py` e pega o quadro com todas as cabanas prontas). A vila cresce até a árvore gigante: a rua vazia enche, duas ruas novas sobem mata adentro, um morador ergue o machado diante da árvore e desiste (a fechadura acende), e a vila desvia pela esquerda. São 100 cabanas; as 50 novas saem sem nome ("+1"). Depois vêm o píer, 3 barcos, redes e pescadores, e a construção diferente: **um farol com a casa do faroleiro** (pedra e telhado azul), "ainda sem dono", porque **o comentário mais curtido do vídeo vai morar lá**. À noite, uma luz tremula atrás da cachoeira, e o mapa verdadeiro marca "100 OK" e "FALTAM 900" na cachoeira. Renderiza em cerca de 2 min.
+- **Narração:** `scripts/gerar_voz_ep3.mjs` (tomada `ep3-1`, conferida por transcrição) e `python3 scripts/encurtar.py ep3-1 voz/ep3`.
+- **Som:** `scripts/trilha_ep3.py` (o mesmo violão; o pulso para diante da árvore; tábuas do píer, sino do farol, grilos à noite, dois tons na luz da cachoeira; mixagem a −14 LUFS).
+- **Site:** `ep3.py` também expõe o que o site da ilha lê (`LOTES`, `LIVRES`, `NICKS`, `SPR`, `frente_lote`, `METAS`, `rua_de`, `mundo(t, 'site')` de dia). No repositório `ilha-saramar`: `python3 scripts/export_episodio.py --ep 3 --videos <esta pasta>`.
+
 ## Próximos episódios
 
 Troque o número no cabeçalho de `video.py` pelo número real de seguidores e acrescente ao mundo o que eles "construíram". Os mistérios (o rosto, o navio, o farol do ilhéu) são os ganchos para revelar quando o perfil bater metas.

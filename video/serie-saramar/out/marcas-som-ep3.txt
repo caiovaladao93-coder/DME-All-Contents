@@ -1,0 +1,78 @@
+MARCAS DE SOM · SARAMAR EP. 3 "A ÁRVORE" (narração: Saramar Narrador, tomada ep3-1 com pausas encurtadas)
+
+ -0.05  fala: "ESSA PÁGINA TEM"
+  0.00  violão dedilhado em Ré maior (72 BPM), o tema de Saramar
+  0.05  plim no número de seguidores (100)
+  0.83  fala: "CEM SEGUIDORES"
+  2.19  fala: "NO ÚLTIMO EPISÓDIO"
+  3.38  fala: "A VILA TINHA"
+  4.01  fala: "CINQUENTA CABANAS"
+  5.74  fala: "E UMA RUA"
+  6.26  fala: "VAZIA"
+  6.95  fala: "ESPERANDO"
+  7.79  6 barcos encostam e os 50 sobem a praia (passos na areia)
+  8.04  fala: "AGORA"
+  8.59  fala: "CHEGARAM MAIS CINQUENTA"
+ 10.11  as cabanas sobem: a trilha ganha pulso (96 BPM)
+ 10.34  fala: "A RUA DE"
+ 10.71  50 cabanas novas: marteladas e uma nota por cabana (sobe rua por rua)
+ 10.88  fala: "CIMA ENCHEU PRIMEIRO"
+ 12.70  fala: "DEPOIS"
+ 13.59  fala: "ABRIRAM MAIS DUAS"
+ 13.94  101 árvores derrubadas no machado (duas levas: mata adentro e o desvio)
+ 14.45  fala: "RUAS"
+ 15.45  fala: "MATA ADENTRO"
+ 15.50  estacas batidas nas ruas novas
+ 16.86  fala: "ATÉ CHEGAR NA"
+ 17.61  fala: "ÁRVORE"
+ 18.51  fala: "A DA PORTA"
+ 18.56  a árvore da porta: a música para, acorde suspenso e zumbido grave quando a fechadura acende
+ 19.70  fala: "NINGUÉM TEVE CORAGEM"
+ 20.64  fala: "DE CORTAR"
+ 21.18  "Então, a vila desviou dela.": o pulso volta
+ 21.76  fala: "ENTÃO"
+ 22.36  fala: "A VILA DESVIOU"
+ 23.03  fala: "DELA"
+ 23.79  fala: "CEM MORADORES"
+ 23.84  "Cem moradores. Cem cabanas.": três notas
+ 25.14  fala: "CEM CABANAS"
+ 26.62  fala: "MAS CEM PESSOAS"
+ 27.42  fala: "COMEM MUITO"
+ 28.62  fala: "ENTÃO VEIO O"
+ 28.68  píer: tábuas pregadas uma a uma
+ 29.15  fala: "PÍER"
+ 29.91  fala: "OS BARCOS"
+ 29.96  barcos amarrados e redes estendidas
+ 30.92  fala: "AS REDES"
+ 32.06  fala: "E NA PONTA"
+ 32.59  fala: "DA PRAIA"
+ 33.41  fala: "UMA CONSTRUÇÃO DIFERENTE"
+ 34.31  o farol sobe pedra por pedra e toca um sino
+ 35.16  fala: "UM FAROL"
+ 36.22  fala: "COM UMA CASA"
+ 36.89  fala: "EMBAIXO"
+ 37.92  fala: "AINDA SEM DONO"
+ 37.97  "Ainda sem dono.": placa e @???
+ 39.31  anoitece: acorde menor, sem pulso
+ 39.31  noite: grilos e o mar mais baixo
+ 39.66  fala: "NA PRIMEIRA NOITE"
+ 40.59  fala: "COM CEM MORADORES"
+ 42.21  fala: "ALGUÉM VIU UMA"
+ 42.95  fala: "LUZ"
+ 43.00  a luz atrás da cachoeira: dois tons que batem (mistério)
+ 43.89  fala: "ATRÁS DA CACHOEIRA"
+ 45.44  o mapa verdadeiro desenrola (papel)
+ 45.64  fala: "FALTAM NOVECENTOS"
+ 45.94  "100 OK" carimbado na vila; a cachoeira em vermelho: FALTAM 900
+ 46.59  fala: "SEGUIDORES PRA CACHOEIRA"
+ 48.28  volta o violão calmo, à noite, no farol
+ 48.53  fala: "O COMENTÁRIO MAIS"
+ 49.36  fala: "CURTIDO DESSE VÍDEO"
+ 49.89  "COMENTA!" sobre o farol
+ 50.41  fala: "VAI MORAR NO"
+ 50.97  fala: "FAROL"
+ 51.82  lotes vazios com a placa "?" e @SEU_NOME_AQUI?
+ 51.87  fala: "SEGUE A PÁGINA"
+ 53.21  fala: "A PRÓXIMA CABANA"
+ 54.26  fala: "PODE TER O"
+ 54.88  fala: "SEU NOME"
