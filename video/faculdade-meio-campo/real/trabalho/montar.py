@@ -32,8 +32,8 @@ LEG = [  # legendas sincronizadas com o áudio (tempos de saída)
     (13.20, 16.00, None, '“Caraca… quase, moleque!”'),
     (19.30, 20.95, None, '“É, errei o palpite.”'),
     (20.72, 23.00, 'Amigo', '“Semana que vem é aqui em casa!”'),
-    (23.50, 25.75, 'Locução', '“Meio-Campo. O jogo é melhor com limite.”'),
-    (25.75, 29.70, 'Locução', '“Ministério da Fazenda adverte: apostar faz você perder dinheiro.”'),
+    (23.50, 26.05, 'Locução', '“Meio-Campo. O jogo é melhor com limite.”'),
+    (26.05, 29.70, 'Locução', '“Ministério da Fazenda adverte: aposta não é investimento.”'),
 ]
 T_SAI = 11.75             # bola passa raspando a trave e sai (sincronizado com o "uuuh" e com o corte para a reação)
 
@@ -260,7 +260,7 @@ MARCAS = {'plano2': [(905, 300, 1024, 576)],          # controle remoto com logo
 # ── sobreposições (legenda, faixa, 18+) e tela final ─────────────────────────────────────────────
 FAIXA = Image.new('RGBA', (W, H), (0, 0, 0, 0)); _d = ImageDraw.Draw(FAIXA)
 _d.rectangle([0, 960, W, H], fill=(0, 0, 0, 255))
-_d.text((W / 2 - 40, 1020), 'Ministério da Fazenda adverte: Apostar faz você perder dinheiro', font=fonte('Bold', 44), fill=(255, 255, 255, 255), anchor='mm')
+_d.text((W / 2 - 40, 1020), 'Ministério da Fazenda adverte: Aposta não é investimento', font=fonte('Bold', 44), fill=(255, 255, 255, 255), anchor='mm')
 _d.ellipse([1788, 978, 1872, 1062], fill=(255, 255, 255, 255)); _d.text((1830, 1020), '18+', font=fonte('ExtraBold', 34), fill=(0, 0, 0, 255), anchor='mm')
 
 def legenda(d, t, y):

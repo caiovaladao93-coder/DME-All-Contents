@@ -35,3 +35,6 @@ Trabalho de faculdade (Legislação Publicitária). A casa de apostas é **fict�
 - **0** pixel de verde-chroma puro sobrou em qualquer quadro.
 - A transcrição do áudio final confere com todas as falas, sem cortes.
 - Quadros de checagem em `trabalho/checagem/` e `trabalho/checagem/final/`.
+
+## Revisão 2
+A pedido do usuário, a advertência (faixa, legenda e locução) passou a ser "Ministério da Fazenda adverte: Aposta não é investimento". O chiado de fundo foi retirado: redução de ruído mais forte nas falas e no ambiente dos planos, com corte de agudos, e torcida e TV com banda mais grave. A energia acima de 4 kHz no fundo ficou entre 0,2% e 1,4%.
