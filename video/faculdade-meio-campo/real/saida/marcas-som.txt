@@ -1,0 +1,12 @@
+MARCAS DE SOM · MEIO-CAMPO "A RESENHA" (versão com gravações reais)
+
+  0.00  ambiente: som de sala dos próprios planos
+ 11.65  TV: "uuuh" da torcida quando a bola passa raspando a trave
+ 13.24  minha reação (áudio original): "Caraca… quase, moleque!"
+ 16.15  TV: apito final (sintetizado)
+ 19.38  minha fala (áudio original): "É, errei o palpite."
+ 20.72  AMIGO (voz "Meio-Campo Caio", fora de quadro, reverb de sala): "Semana que vem é aqui em casa!"
+ 21.03  meu riso (áudio original), sob a fala do amigo
+ 23.50  LOCUTOR (voz "Meio-Campo Locutor"): "Meio-Campo. O jogo é melhor com limite. Ministério da Fazenda adverte: apostar faz você perder dinheiro." (termina em 29.54 s)
+
+Mixagem: vozes à frente; ambiente + TV ~15 dB abaixo, com ducking; fade do fundo nos últimos 1,5 s; total -16 LUFS (pico -1,5 dBTP).
