@@ -487,7 +487,7 @@ def main():
 
 # ── o que o site lê (scripts/export_episodio.py do ilha-saramar) ─────────────────────────────────
 ESTADO_SITE = True              # export_episodio.py pede mundo(DUR, 'site'): de dia, sem a noite do fim
-NICKS = []                       # cabanas sem nome neste episódio; o morador do farol entra depois
+NICKS = list(E.NICKS)            # os nicks do ep. 2 continuam nas mesmas cabanas; as 50 novas saem sem nome
 LIBERADAS = []
 # construções especiais (o site abre um card próprio): a casa do farol é do comentário mais curtido do ep. 3
 CONSTRUCOES = [{'id': 'farol', 'nome': 'Casa do farol', 'x': FX - 6, 'y': FY - 30, 'largura': CASA_F[0] + 17 - (FX - 6), 'altura': 32,
