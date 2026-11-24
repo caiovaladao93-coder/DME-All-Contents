@@ -1,4 +1,6 @@
-# ADV Station · anúncio vertical (31,1 s) · `out/ADV-Station-Anuncio-Vertical.mp4`
+# ADV Station · anúncio vertical v2 comercial (36,8 s) · `out/ADV-Station-Anuncio-Vertical.mp4`
+
+A v2 é **comercial**: gancho grande, um título de benefício por cena, legenda palavra a palavra, botão de CTA pulsando e trilha a 120 BPM. A narração é a tomada `anuncio2-3`, com as pausas encurtadas por `scripts/encurtar.py`. A v1, institucional, está descrita em `roteiros/advstation-anuncio-vertical.md` e no histórico do git.
 
 Anúncio no formato "produto em uso" (roteiro e decisões em `roteiros/advstation-anuncio-vertical.md`). É feito em **Remotion**, com a marca, as fontes e as telas reais do projeto `advstation-demo-vertical-v3`; o `node_modules` é um link para o desse projeto.
 

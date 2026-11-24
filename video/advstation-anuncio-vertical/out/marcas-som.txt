@@ -1,18 +1,22 @@
-MARCAS DE SOM · ADV STATION · ANÚNCIO VERTICAL (voz Guilherme, tomada anuncio-1)
+MARCAS DE SOM · ADV STATION · ANÚNCIO VERTICAL v2 COMERCIAL (voz Guilherme, tomada anuncio2-3 com pausas encurtadas)
 
-  0.00  fala: "Advogado previdenciário: cada caso tem o seu caminho."
-  0.00  trilha original: piano e pad em Sol maior, pulso leve a 100 BPM
-  2.76  fala: "Na ADV Station, cada cliente aparece com o setor e a etapa em que está."
-  8.28  selo 1 entra (sino)
-  8.58  destaques dourados nas regiões reais (toque suave)
-  9.85  fala: "Um clique, e o protocolo mostra o que precisa de atenção."
- 10.18  clique do cursor em "Protocolo" e troca de tela
- 13.10  selo 2 entra (sino)
- 14.10  clique do cursor em "Trocar de sistema" e troca de tela
- 14.35  fala: "No Previdenciário Geral, os prazos aparecem em ordem: vencidos, do dia e os próximos."
- 16.21  selo 3 entra (sino)
- 21.27  fala: "E o dashboard reúne a operação e o financeiro do escritório."
- 21.32  clique do cursor em "Dashboard" e troca de tela
- 21.52  selo 4 entra (sino)
- 25.47  cartão final: jingle oficial da vinheta ADV Station
- 25.62  fala: "ADV Station. Conheça nossas soluções."
+  0.00  fala: "Advogado previdenciário: onde está cada caso do seu escritório agora?"
+  0.00  trilha original: piano e pad em Sol maior; gancho só com piano e batida leve
+  4.84  a janela entra: batida cheia a 120 BPM (bumbo, palma, chocalho)
+  4.84  impacto grave a cada troca de título
+  5.04  fala: "Com a ADV Station, você bate o olho e vê o setor e a etapa de cada cliente."
+  7.95  destaques dourados nas regiões reais (toque suave)
+  8.96  selo 1 entra (sino)
+ 10.63  fala: "Um clique, e aparece quem está sem contato e quem está inadimplente."
+ 10.93  clique do cursor em "Protocolo" e troca de tela
+ 12.88  selo 2 entra (sino)
+ 15.49  clique do cursor em "Trocar de sistema" e troca de tela
+ 15.74  fala: "Os prazos vêm em ordem: o que venceu, o que vence hoje e o que vem aí."
+ 15.95  selo 3 entra (sino)
+ 21.08  fala: "E o dashboard mostra a operação e o financeiro numa tela só."
+ 21.13  clique do cursor em "Dashboard" e troca de tela
+ 22.16  selo 4 entra (sino)
+ 25.33  fala: "Maternidade Legal e Previdenciário Geral: feitos pra advocacia previdenciária."
+ 29.65  crescendo antes do CTA e impacto no "Acesse advstation.io"
+ 31.05  CTA: jingle oficial da vinheta ADV Station
+ 31.20  fala: "Acesse advstation.io e veja na prática."
